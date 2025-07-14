@@ -1,0 +1,30 @@
+// This file contains settings for Visual Studio Code to enhance the development experience
+// and ensure consistent formatting and linting across the project.
+// Taken directly from the typeshed repository.
+{
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "never"
+    },
+    // Set file associations to support comments syntax highlighting
+    "files.associations": {
+        "settings.default.json": "jsonc",
+        "pyrightconfig*.json": "jsonc",
+        ".flake8": "properties",
+        "stubtest_allowlist*.txt": "properties",
+        "**/stubtest_allowlist/*.txt": "properties",
+        "pytype_exclude_list.txt": "properties"
+    },
+    "files.exclude": {
+        "**/.git": false, // I like to see my .git directory
+        "**/.*_cache": false,
+        "**/__pycache__": true
+    },
+    "[json][jsonc][yaml][python][toml]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    }
+}
