@@ -1,0 +1,5 @@
+version = "2026"
+upstream_repository = ""
+
+[tool.stubtest]
+platforms = ["win32"]
