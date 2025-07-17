@@ -9,6 +9,17 @@ def curveEPCtx(bezier: bool = ..., degree: int = ..., exists: bool = ..., histor
     The curveEPCtx command creates a new context for creating curves by placing
     edit points.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 5:
+        cmds.curveEPCtx( degree=5 )
+        # To query the degree of an existing context:
+        cmds.curveEPCtx( 'curveEPCtx1', q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveEPCtx( 'curveEPCtx1', e=True, degree=7 )
+    ```
+
     ---
     - Args:
         - bezier (bez): Use bezier curves
@@ -30,6 +41,17 @@ def curveEPCtx(bez: bool = ..., d: int = ..., ex: bool = ..., ch: bool = ..., i1
     
     The curveEPCtx command creates a new context for creating curves by placing
     edit points.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 5:
+        cmds.curveEPCtx( degree=5 )
+        # To query the degree of an existing context:
+        cmds.curveEPCtx( 'curveEPCtx1', q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveEPCtx( 'curveEPCtx1', e=True, degree=7 )
+    ```
 
     ---
     - Args:
@@ -53,6 +75,17 @@ def curveEPCtx(bezier: bool = ..., bez: bool = ..., degree: int = ..., d: int = 
     The curveEPCtx command creates a new context for creating curves by placing
     edit points.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 5:
+        cmds.curveEPCtx( degree=5 )
+        # To query the degree of an existing context:
+        cmds.curveEPCtx( 'curveEPCtx1', q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveEPCtx( 'curveEPCtx1', e=True, degree=7 )
+    ```
+
     ---
     - Args:
         - bezier (bez): Use bezier curves
@@ -75,6 +108,17 @@ def curveEPCtx(bezier: bool = ..., degree: int = ..., image1: str = ..., image2:
     The curveEPCtx command creates a new context for creating curves by placing
     edit points.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 5:
+        cmds.curveEPCtx( degree=5 )
+        # To query the degree of an existing context:
+        cmds.curveEPCtx( 'curveEPCtx1', q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveEPCtx( 'curveEPCtx1', e=True, degree=7 )
+    ```
+
     ---
     - Args:
         - bezier (bez): Use bezier curves
@@ -94,6 +138,17 @@ def curveEPCtx(bez: bool = ..., d: int = ..., i1: str = ..., i2: str = ..., i3: 
     
     The curveEPCtx command creates a new context for creating curves by placing
     edit points.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 5:
+        cmds.curveEPCtx( degree=5 )
+        # To query the degree of an existing context:
+        cmds.curveEPCtx( 'curveEPCtx1', q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveEPCtx( 'curveEPCtx1', e=True, degree=7 )
+    ```
 
     ---
     - Args:
@@ -115,6 +170,17 @@ def curveEPCtx(bezier: bool = ..., bez: bool = ..., degree: int = ..., d: int = 
     The curveEPCtx command creates a new context for creating curves by placing
     edit points.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 5:
+        cmds.curveEPCtx( degree=5 )
+        # To query the degree of an existing context:
+        cmds.curveEPCtx( 'curveEPCtx1', q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveEPCtx( 'curveEPCtx1', e=True, degree=7 )
+    ```
+
     ---
     - Args:
         - bezier (bez): Use bezier curves
@@ -134,6 +200,17 @@ def curveEPCtx(bezier: bool = ..., degree: int = ..., image1: str = ..., image2:
     
     The curveEPCtx command creates a new context for creating curves by placing
     edit points.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 5:
+        cmds.curveEPCtx( degree=5 )
+        # To query the degree of an existing context:
+        cmds.curveEPCtx( 'curveEPCtx1', q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveEPCtx( 'curveEPCtx1', e=True, degree=7 )
+    ```
 
     ---
     - Args:
@@ -155,6 +232,17 @@ def curveEPCtx(bez: bool = ..., d: int = ..., i1: str = ..., i2: str = ..., i3: 
     The curveEPCtx command creates a new context for creating curves by placing
     edit points.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 5:
+        cmds.curveEPCtx( degree=5 )
+        # To query the degree of an existing context:
+        cmds.curveEPCtx( 'curveEPCtx1', q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveEPCtx( 'curveEPCtx1', e=True, degree=7 )
+    ```
+
     ---
     - Args:
         - bezier (bez): Use bezier curves
@@ -174,6 +262,17 @@ def curveEPCtx(bezier: bool = ..., bez: bool = ..., degree: int = ..., d: int = 
     
     The curveEPCtx command creates a new context for creating curves by placing
     edit points.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 5:
+        cmds.curveEPCtx( degree=5 )
+        # To query the degree of an existing context:
+        cmds.curveEPCtx( 'curveEPCtx1', q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveEPCtx( 'curveEPCtx1', e=True, degree=7 )
+    ```
 
     ---
     - Args:

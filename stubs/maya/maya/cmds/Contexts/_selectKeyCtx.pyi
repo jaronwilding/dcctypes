@@ -9,6 +9,14 @@ def selectKeyCtx(contextName: contextName, exists: bool = ..., history: bool = .
     This command creates a context which may be used to select keyframes within
     the graph editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a select key context for the graph editor
+        #
+        cmds.selectKeyCtx( 'selectKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -25,6 +33,14 @@ def selectKeyCtx(contextName: contextName, ex: bool = ..., ch: bool = ..., i1: s
     
     This command creates a context which may be used to select keyframes within
     the graph editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a select key context for the graph editor
+        #
+        cmds.selectKeyCtx( 'selectKeyContext' )
+    ```
 
     ---
     - Args:
@@ -43,6 +59,14 @@ def selectKeyCtx(contextName: contextName, exists: bool = ..., ex: bool = ..., h
     This command creates a context which may be used to select keyframes within
     the graph editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a select key context for the graph editor
+        #
+        cmds.selectKeyCtx( 'selectKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -60,6 +84,14 @@ def selectKeyCtx(contextName: contextName, image1: str = ..., image2: str = ...,
     This command creates a context which may be used to select keyframes within
     the graph editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a select key context for the graph editor
+        #
+        cmds.selectKeyCtx( 'selectKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -74,6 +106,14 @@ def selectKeyCtx(contextName: contextName, i1: str = ..., i2: str = ..., i3: str
     
     This command creates a context which may be used to select keyframes within
     the graph editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a select key context for the graph editor
+        #
+        cmds.selectKeyCtx( 'selectKeyContext' )
+    ```
 
     ---
     - Args:
@@ -90,6 +130,14 @@ def selectKeyCtx(contextName: contextName, image1: str = ..., i1: str = ..., ima
     This command creates a context which may be used to select keyframes within
     the graph editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a select key context for the graph editor
+        #
+        cmds.selectKeyCtx( 'selectKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -104,6 +152,14 @@ def selectKeyCtx(contextName: contextName, image1: str = ..., image2: str = ...,
     
     This command creates a context which may be used to select keyframes within
     the graph editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a select key context for the graph editor
+        #
+        cmds.selectKeyCtx( 'selectKeyContext' )
+    ```
 
     ---
     - Args:
@@ -120,6 +176,14 @@ def selectKeyCtx(contextName: contextName, i1: str = ..., i2: str = ..., i3: str
     This command creates a context which may be used to select keyframes within
     the graph editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a select key context for the graph editor
+        #
+        cmds.selectKeyCtx( 'selectKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -134,6 +198,14 @@ def selectKeyCtx(contextName: contextName, image1: str = ..., i1: str = ..., ima
     
     This command creates a context which may be used to select keyframes within
     the graph editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a select key context for the graph editor
+        #
+        cmds.selectKeyCtx( 'selectKeyContext' )
+    ```
 
     ---
     - Args:

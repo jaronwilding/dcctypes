@@ -9,6 +9,16 @@ def displayCull([objects]: [objects], backFaceCulling: bool = ...) -> None:
     This command is responsible for setting the display culling property of back
     faces of surfaces.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.displayCull( bfc=True )
+        cmds.displayCull( bfc=False )
+        cmds.displayCull( q=True, bfc=True )
+        # Returns 0 if the back-face-culling on the selected object is false.
+        # Returns 1 if the back-face-culling on the selected object is true.
+    ```
+
     ---
     - Args:
         - [objects]: Input item(s).
@@ -20,6 +30,16 @@ def displayCull([objects]: [objects], bfc: bool = ...) -> None:
     
     This command is responsible for setting the display culling property of back
     faces of surfaces.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.displayCull( bfc=True )
+        cmds.displayCull( bfc=False )
+        cmds.displayCull( q=True, bfc=True )
+        # Returns 0 if the back-face-culling on the selected object is false.
+        # Returns 1 if the back-face-culling on the selected object is true.
+    ```
 
     ---
     - Args:
@@ -33,6 +53,16 @@ def displayCull([objects]: [objects], backFaceCulling: bool = ..., bfc: bool = .
     This command is responsible for setting the display culling property of back
     faces of surfaces.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.displayCull( bfc=True )
+        cmds.displayCull( bfc=False )
+        cmds.displayCull( q=True, bfc=True )
+        # Returns 0 if the back-face-culling on the selected object is false.
+        # Returns 1 if the back-face-culling on the selected object is true.
+    ```
+
     ---
     - Args:
         - [objects]: Input item(s).
@@ -44,6 +74,16 @@ def displayCull([objects]: [objects], backFaceCulling: bool = ..., query: bool =
     
     This command is responsible for setting the display culling property of back
     faces of surfaces.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.displayCull( bfc=True )
+        cmds.displayCull( bfc=False )
+        cmds.displayCull( q=True, bfc=True )
+        # Returns 0 if the back-face-culling on the selected object is false.
+        # Returns 1 if the back-face-culling on the selected object is true.
+    ```
 
     ---
     - Args:
@@ -58,6 +98,16 @@ def displayCull([objects]: [objects], bfc: bool = ..., q: bool = ...) -> None:
     This command is responsible for setting the display culling property of back
     faces of surfaces.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.displayCull( bfc=True )
+        cmds.displayCull( bfc=False )
+        cmds.displayCull( q=True, bfc=True )
+        # Returns 0 if the back-face-culling on the selected object is false.
+        # Returns 1 if the back-face-culling on the selected object is true.
+    ```
+
     ---
     - Args:
         - [objects]: Input item(s).
@@ -71,48 +121,19 @@ def displayCull([objects]: [objects], backFaceCulling: bool = ..., bfc: bool = .
     This command is responsible for setting the display culling property of back
     faces of surfaces.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.displayCull( bfc=True )
+        cmds.displayCull( bfc=False )
+        cmds.displayCull( q=True, bfc=True )
+        # Returns 0 if the back-face-culling on the selected object is false.
+        # Returns 1 if the back-face-culling on the selected object is true.
+    ```
+
     ---
     - Args:
         - [objects]: Input item(s).
         - backFaceCulling (bfc): Enable/disable culling of back faces.
         - query (q): Query mode flag
-    """
-@overload #Overload for displayCull in ['edit']
-def displayCull([objects]: [objects], backFaceCulling: bool = ..., edit: bool = ...) -> None:
-    """displayCull is undoable, queryable, and NOT editable.
-    
-    This command is responsible for setting the display culling property of back
-    faces of surfaces.
-
-    ---
-    - Args:
-        - [objects]: Input item(s).
-        - backFaceCulling (bfc): Enable/disable culling of back faces.
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for displayCull in ['edit']
-def displayCull([objects]: [objects], bfc: bool = ..., e: bool = ...) -> None:
-    """displayCull is undoable, queryable, and NOT editable.
-    
-    This command is responsible for setting the display culling property of back
-    faces of surfaces.
-
-    ---
-    - Args:
-        - [objects]: Input item(s).
-        - backFaceCulling (bfc): Enable/disable culling of back faces.
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for displayCull in ['edit']
-def displayCull([objects]: [objects], backFaceCulling: bool = ..., bfc: bool = ..., edit: bool = ..., e: bool = ...) -> None:
-    """displayCull is undoable, queryable, and NOT editable.
-    
-    This command is responsible for setting the display culling property of back
-    faces of surfaces.
-
-    ---
-    - Args:
-        - [objects]: Input item(s).
-        - backFaceCulling (bfc): Enable/disable culling of back faces.
-        - edit (e): Edit mode flag
     """

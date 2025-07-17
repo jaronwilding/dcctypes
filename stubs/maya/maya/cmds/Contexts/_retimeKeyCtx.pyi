@@ -3,11 +3,19 @@
 from typing import Any, overload
 
 @overload #Overload for retimeKeyCtx in ['create']
-def retimeKeyCtx(contextName: contextName, exists: bool = ..., history: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., name: str = ..., snapOnFrame: bool = ...) -> bool:
+def retimeKeyCtx(contextName: contextName, exists: bool = ..., history: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., name: str = ...) -> bool:
     """retimeKeyCtx is undoable, queryable, and editable.
     
     This command creates a context which may be used to scale keyframes within the
     graph editor using the retime tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context for the graph editor
+        #
+        cmds.retimeKeyCtx( 'retimeKeyContext' )
+    ```
 
     ---
     - Args:
@@ -18,14 +26,21 @@ def retimeKeyCtx(contextName: contextName, exists: bool = ..., history: bool = .
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
         - name (n): If this is a tool command, name the tool appropriately.
-        - snapOnFrame (sof): When set, the retime markers will snap on frames as they are moved.
     """
 @overload #Overload for retimeKeyCtx in ['create']
-def retimeKeyCtx(contextName: contextName, ex: bool = ..., ch: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., n: str = ..., sof: bool = ...) -> bool:
+def retimeKeyCtx(contextName: contextName, ex: bool = ..., ch: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., n: str = ...) -> bool:
     """retimeKeyCtx is undoable, queryable, and editable.
     
     This command creates a context which may be used to scale keyframes within the
     graph editor using the retime tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context for the graph editor
+        #
+        cmds.retimeKeyCtx( 'retimeKeyContext' )
+    ```
 
     ---
     - Args:
@@ -36,14 +51,21 @@ def retimeKeyCtx(contextName: contextName, ex: bool = ..., ch: bool = ..., i1: s
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
         - name (n): If this is a tool command, name the tool appropriately.
-        - snapOnFrame (sof): When set, the retime markers will snap on frames as they are moved.
     """
 @overload #Overload for retimeKeyCtx in ['create']
-def retimeKeyCtx(contextName: contextName, exists: bool = ..., ex: bool = ..., history: bool = ..., ch: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., name: str = ..., n: str = ..., snapOnFrame: bool = ..., sof: bool = ...) -> bool:
+def retimeKeyCtx(contextName: contextName, exists: bool = ..., ex: bool = ..., history: bool = ..., ch: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., name: str = ..., n: str = ...) -> bool:
     """retimeKeyCtx is undoable, queryable, and editable.
     
     This command creates a context which may be used to scale keyframes within the
     graph editor using the retime tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context for the graph editor
+        #
+        cmds.retimeKeyCtx( 'retimeKeyContext' )
+    ```
 
     ---
     - Args:
@@ -54,7 +76,6 @@ def retimeKeyCtx(contextName: contextName, exists: bool = ..., ex: bool = ..., h
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
         - name (n): If this is a tool command, name the tool appropriately.
-        - snapOnFrame (sof): When set, the retime markers will snap on frames as they are moved.
     """
 @overload #Overload for retimeKeyCtx in ['query']
 def retimeKeyCtx(contextName: contextName, image1: str = ..., image2: str = ..., image3: str = ..., snapOnFrame: bool = ..., query: bool = ...) -> bool:
@@ -62,6 +83,14 @@ def retimeKeyCtx(contextName: contextName, image1: str = ..., image2: str = ...,
     
     This command creates a context which may be used to scale keyframes within the
     graph editor using the retime tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context for the graph editor
+        #
+        cmds.retimeKeyCtx( 'retimeKeyContext' )
+    ```
 
     ---
     - Args:
@@ -79,6 +108,14 @@ def retimeKeyCtx(contextName: contextName, i1: str = ..., i2: str = ..., i3: str
     This command creates a context which may be used to scale keyframes within the
     graph editor using the retime tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context for the graph editor
+        #
+        cmds.retimeKeyCtx( 'retimeKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -95,6 +132,14 @@ def retimeKeyCtx(contextName: contextName, image1: str = ..., i1: str = ..., ima
     This command creates a context which may be used to scale keyframes within the
     graph editor using the retime tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context for the graph editor
+        #
+        cmds.retimeKeyCtx( 'retimeKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -110,6 +155,14 @@ def retimeKeyCtx(contextName: contextName, image1: str = ..., image2: str = ...,
     
     This command creates a context which may be used to scale keyframes within the
     graph editor using the retime tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context for the graph editor
+        #
+        cmds.retimeKeyCtx( 'retimeKeyContext' )
+    ```
 
     ---
     - Args:
@@ -128,6 +181,14 @@ def retimeKeyCtx(contextName: contextName, i1: str = ..., i2: str = ..., i3: str
     This command creates a context which may be used to scale keyframes within the
     graph editor using the retime tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context for the graph editor
+        #
+        cmds.retimeKeyCtx( 'retimeKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -144,6 +205,14 @@ def retimeKeyCtx(contextName: contextName, image1: str = ..., i1: str = ..., ima
     
     This command creates a context which may be used to scale keyframes within the
     graph editor using the retime tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context for the graph editor
+        #
+        cmds.retimeKeyCtx( 'retimeKeyContext' )
+    ```
 
     ---
     - Args:

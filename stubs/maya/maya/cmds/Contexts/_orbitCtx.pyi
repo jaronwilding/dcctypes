@@ -8,6 +8,12 @@ def orbitCtx(alternateContext: bool = ..., exists: bool = ..., history: bool = .
     
     Create, edit, or query an orbit context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.orbitCtx( 'orbitContext', os=30.0, lo=False )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -26,6 +32,12 @@ def orbitCtx(ac: bool = ..., ex: bool = ..., ch: bool = ..., i1: str = ..., i2: 
     """orbitCtx is undoable, queryable, and editable.
     
     Create, edit, or query an orbit context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.orbitCtx( 'orbitContext', os=30.0, lo=False )
+    ```
 
     ---
     - Args:
@@ -46,6 +58,12 @@ def orbitCtx(alternateContext: bool = ..., ac: bool = ..., exists: bool = ..., e
     
     Create, edit, or query an orbit context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.orbitCtx( 'orbitContext', os=30.0, lo=False )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -65,6 +83,12 @@ def orbitCtx(alternateContext: bool = ..., image1: str = ..., image2: str = ...,
     
     Create, edit, or query an orbit context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.orbitCtx( 'orbitContext', os=30.0, lo=False )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -81,6 +105,12 @@ def orbitCtx(ac: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., lo: bo
     """orbitCtx is undoable, queryable, and editable.
     
     Create, edit, or query an orbit context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.orbitCtx( 'orbitContext', os=30.0, lo=False )
+    ```
 
     ---
     - Args:
@@ -99,6 +129,12 @@ def orbitCtx(alternateContext: bool = ..., ac: bool = ..., image1: str = ..., i1
     
     Create, edit, or query an orbit context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.orbitCtx( 'orbitContext', os=30.0, lo=False )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -111,53 +147,65 @@ def orbitCtx(alternateContext: bool = ..., ac: bool = ..., image1: str = ..., i1
         - query (q): Query mode flag
     """
 @overload #Overload for orbitCtx in ['edit']
-def orbitCtx(alternateContext: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., localOrbit: bool = ..., orbitScale: float = ..., toolName: str = ..., edit: bool = ...) -> str:
+def orbitCtx(image1: str = ..., image2: str = ..., image3: str = ..., localOrbit: bool = ..., orbitScale: float = ..., edit: bool = ...) -> str:
     """orbitCtx is undoable, queryable, and editable.
     
     Create, edit, or query an orbit context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.orbitCtx( 'orbitContext', os=30.0, lo=False )
+    ```
+
     ---
     - Args:
-        - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
         - localOrbit (lo): Orbit around the camera's center of interest.
         - orbitScale (os): In degrees of rotation per 100 pixels of cursor drag.
-        - toolName (tn): Name of the specific tool to which this command refers.
         - edit (e): Edit mode flag
     """
 @overload #Overload for orbitCtx in ['edit']
-def orbitCtx(ac: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., lo: bool = ..., os: float = ..., tn: str = ..., e: bool = ...) -> str:
+def orbitCtx(i1: str = ..., i2: str = ..., i3: str = ..., lo: bool = ..., os: float = ..., e: bool = ...) -> str:
     """orbitCtx is undoable, queryable, and editable.
     
     Create, edit, or query an orbit context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.orbitCtx( 'orbitContext', os=30.0, lo=False )
+    ```
+
     ---
     - Args:
-        - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
         - localOrbit (lo): Orbit around the camera's center of interest.
         - orbitScale (os): In degrees of rotation per 100 pixels of cursor drag.
-        - toolName (tn): Name of the specific tool to which this command refers.
         - edit (e): Edit mode flag
     """
 @overload #Overload for orbitCtx in ['edit']
-def orbitCtx(alternateContext: bool = ..., ac: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., localOrbit: bool = ..., lo: bool = ..., orbitScale: float = ..., os: float = ..., toolName: str = ..., tn: str = ..., edit: bool = ..., e: bool = ...) -> str:
+def orbitCtx(image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., localOrbit: bool = ..., lo: bool = ..., orbitScale: float = ..., os: float = ..., edit: bool = ..., e: bool = ...) -> str:
     """orbitCtx is undoable, queryable, and editable.
     
     Create, edit, or query an orbit context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.orbitCtx( 'orbitContext', os=30.0, lo=False )
+    ```
+
     ---
     - Args:
-        - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
         - localOrbit (lo): Orbit around the camera's center of interest.
         - orbitScale (os): In degrees of rotation per 100 pixels of cursor drag.
-        - toolName (tn): Name of the specific tool to which this command refers.
         - edit (e): Edit mode flag
     """

@@ -13,6 +13,24 @@ def removeMultiInstance(attribute: attribute, allChildren: bool = ..., b: bool =
     broken (with the -b true) flag, then the command will fail if connections
     exist.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.createNode('choice',n='choice')
+        cmds.setAttr('choice.input[0]',2.0)
+        cmds.setAttr('choice.input[4]',4.0)
+        cmds.connectAttr('choice.input[8]','choice.input[100]')
+        # This will remove the element with index 4 from the input of
+        # the choice node as long as there are no incoming or outgoing
+        # connections to the attribute.
+        #
+        cmds.removeMultiInstance( 'choice.input[4]' )
+        # This will remove the element with index 100 from the input of
+        # the choice node, breaking any existing connections first.
+        #
+        cmds.removeMultiInstance( 'choice.input[100]', b=True )
+    ```
+
     ---
     - Args:
         - attribute: Input item(s).
@@ -30,6 +48,24 @@ def removeMultiInstance(attribute: attribute, all: bool = ...) -> bool:
     broken (with the -b true) flag, then the command will fail if connections
     exist.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.createNode('choice',n='choice')
+        cmds.setAttr('choice.input[0]',2.0)
+        cmds.setAttr('choice.input[4]',4.0)
+        cmds.connectAttr('choice.input[8]','choice.input[100]')
+        # This will remove the element with index 4 from the input of
+        # the choice node as long as there are no incoming or outgoing
+        # connections to the attribute.
+        #
+        cmds.removeMultiInstance( 'choice.input[4]' )
+        # This will remove the element with index 100 from the input of
+        # the choice node, breaking any existing connections first.
+        #
+        cmds.removeMultiInstance( 'choice.input[100]', b=True )
+    ```
+
     ---
     - Args:
         - attribute: Input item(s).
@@ -46,6 +82,24 @@ def removeMultiInstance(attribute: attribute, allChildren: bool = ..., all: bool
     incoming and outgoing connections to that instance. If the connections are not
     broken (with the -b true) flag, then the command will fail if connections
     exist.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.createNode('choice',n='choice')
+        cmds.setAttr('choice.input[0]',2.0)
+        cmds.setAttr('choice.input[4]',4.0)
+        cmds.connectAttr('choice.input[8]','choice.input[100]')
+        # This will remove the element with index 4 from the input of
+        # the choice node as long as there are no incoming or outgoing
+        # connections to the attribute.
+        #
+        cmds.removeMultiInstance( 'choice.input[4]' )
+        # This will remove the element with index 100 from the input of
+        # the choice node, breaking any existing connections first.
+        #
+        cmds.removeMultiInstance( 'choice.input[100]', b=True )
+    ```
 
     ---
     - Args:

@@ -8,6 +8,16 @@ def polySplitCtx(enablesnap: bool = ..., exists: bool = ..., image1: str = ..., 
     
     Create a new context to split facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly split context, then switch to it
+        cmds.polySplitCtx('polySplitCtx1')
+        cmds.setToolTo('polySplitCtx1')
+    ```
+
     ---
     - Args:
         - enablesnap (es): Enable/disable custom magnet snapping to start/middle/end of edge
@@ -27,6 +37,16 @@ def polySplitCtx(es: bool = ..., ex: bool = ..., i1: str = ..., i2: str = ..., i
     """polySplitCtx is undoable, queryable, and editable.
     
     Create a new context to split facets on polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly split context, then switch to it
+        cmds.polySplitCtx('polySplitCtx1')
+        cmds.setToolTo('polySplitCtx1')
+    ```
 
     ---
     - Args:
@@ -48,6 +68,16 @@ def polySplitCtx(enablesnap: bool = ..., es: bool = ..., exists: bool = ..., ex:
     
     Create a new context to split facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly split context, then switch to it
+        cmds.polySplitCtx('polySplitCtx1')
+        cmds.setToolTo('polySplitCtx1')
+    ```
+
     ---
     - Args:
         - enablesnap (es): Enable/disable custom magnet snapping to start/middle/end of edge
@@ -67,6 +97,16 @@ def polySplitCtx(enablesnap: bool = ..., image1: str = ..., image2: str = ..., i
     """polySplitCtx is undoable, queryable, and editable.
     
     Create a new context to split facets on polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly split context, then switch to it
+        cmds.polySplitCtx('polySplitCtx1')
+        cmds.setToolTo('polySplitCtx1')
+    ```
 
     ---
     - Args:
@@ -88,6 +128,16 @@ def polySplitCtx(es: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., ms
     
     Create a new context to split facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly split context, then switch to it
+        cmds.polySplitCtx('polySplitCtx1')
+        cmds.setToolTo('polySplitCtx1')
+    ```
+
     ---
     - Args:
         - enablesnap (es): Enable/disable custom magnet snapping to start/middle/end of edge
@@ -107,6 +157,16 @@ def polySplitCtx(enablesnap: bool = ..., es: bool = ..., image1: str = ..., i1: 
     """polySplitCtx is undoable, queryable, and editable.
     
     Create a new context to split facets on polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly split context, then switch to it
+        cmds.polySplitCtx('polySplitCtx1')
+        cmds.setToolTo('polySplitCtx1')
+    ```
 
     ---
     - Args:
@@ -128,6 +188,16 @@ def polySplitCtx(enablesnap: bool = ..., image1: str = ..., image2: str = ..., i
     
     Create a new context to split facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly split context, then switch to it
+        cmds.polySplitCtx('polySplitCtx1')
+        cmds.setToolTo('polySplitCtx1')
+    ```
+
     ---
     - Args:
         - enablesnap (es): Enable/disable custom magnet snapping to start/middle/end of edge
@@ -148,6 +218,16 @@ def polySplitCtx(es: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., ms
     
     Create a new context to split facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly split context, then switch to it
+        cmds.polySplitCtx('polySplitCtx1')
+        cmds.setToolTo('polySplitCtx1')
+    ```
+
     ---
     - Args:
         - enablesnap (es): Enable/disable custom magnet snapping to start/middle/end of edge
@@ -167,6 +247,16 @@ def polySplitCtx(enablesnap: bool = ..., es: bool = ..., image1: str = ..., i1: 
     """polySplitCtx is undoable, queryable, and editable.
     
     Create a new context to split facets on polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly split context, then switch to it
+        cmds.polySplitCtx('polySplitCtx1')
+        cmds.setToolTo('polySplitCtx1')
+    ```
 
     ---
     - Args:

@@ -10,6 +10,16 @@ def deleteAttrPattern(allPatterns: bool = ..., patternName: str = ..., patternTy
     command provides a way to remove patterns from memory so that only the ones of
     interest will show.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.deleteAttrPattern( patternType="xmlPattern" )
+        // Result: [myXMLPattern, myOtherXMLPattern] //
+        cmds.deleteAttrPattern( patternName="myJSONPattern" )
+        // Result: myJSONPattern //
+    ```
+
     ---
     - Args:
         - allPatterns (all): If specified it means delete all known attribute patterns.
@@ -24,6 +34,16 @@ def deleteAttrPattern(all: bool = ..., pn: str = ..., pt: str = ...) -> str:
     command provides a way to remove patterns from memory so that only the ones of
     interest will show.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.deleteAttrPattern( patternType="xmlPattern" )
+        // Result: [myXMLPattern, myOtherXMLPattern] //
+        cmds.deleteAttrPattern( patternName="myJSONPattern" )
+        // Result: myJSONPattern //
+    ```
+
     ---
     - Args:
         - allPatterns (all): If specified it means delete all known attribute patterns.
@@ -37,6 +57,16 @@ def deleteAttrPattern(allPatterns: bool = ..., all: bool = ..., patternName: str
     After a while the list of attribute patterns could become cluttered. This
     command provides a way to remove patterns from memory so that only the ones of
     interest will show.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.deleteAttrPattern( patternType="xmlPattern" )
+        // Result: [myXMLPattern, myOtherXMLPattern] //
+        cmds.deleteAttrPattern( patternName="myJSONPattern" )
+        // Result: myJSONPattern //
+    ```
 
     ---
     - Args:

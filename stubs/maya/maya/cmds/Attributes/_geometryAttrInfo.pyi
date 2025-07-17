@@ -16,6 +16,47 @@ def geometryAttrInfo(attribute: attribute, boundingBox: bool = ..., castToEdges:
     componentTag expression is used, the requested indices will be the indices
     that match the subset as defined by that expression.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.polyCylinder(n="myGeo", r=1, h=6, sx=4, sy=5, sz=1)[0]
+        cmds.select(['myGeo.vtx[12:23]', 'myGeo.vtx[25]'])
+        clusterNode, clusterHandle = cmds.cluster()
+        cmds.move(1.0, 0, 0, clusterHandle, absolute=True)
+        # Find the groupId for the cluster node to test our queries
+        gid = cmds.getAttr('{0}.input[0].groupId'.format(clusterNode))
+        # Get the number of points
+        n0 = cmds.geometryAttrInfo('myGeo.outMesh', pc=True)
+        n1 = cmds.geometryAttrInfo('myGeo.outMesh', gid=gid, pc=True)
+        print "Deforming {0} out of {1} points".format(n1, n0)
+        # Deforming 13 out of 26 points
+        # Get the indices that are being deformed
+        cmds.geometryAttrInfo('myGeo.outMesh', gid=gid, pi=True)
+        # Result: [12L, 13L, 14L, 15L, 16L, 17L, 18L, 19L, 20L, 21L, 22L, 23L, 25L] #
+        # Get the components that are being deformed
+        cmds.geometryAttrInfo('myGeo.outMesh', gid=gid, cmp=True)
+        # Result: [u'vtx[12:23]', u'vtx[25]'] #
+        # Get the bounding box of the total geometry
+        cmds.geometryAttrInfo('myGeo.outMesh', bb=True)
+        # Result: [-1.0, 2.0, -3.0, 3.0, -1.0, 1.0] #
+        # Get the bounding box of what is being deformed
+        cmds.geometryAttrInfo('myGeo.outMesh', gid=gid, bb=True)
+        # Result: [0.0, 2.0, 0.6000001430511475, 3.0, -1.0, 1.0] #
+        # Get the node chain leading up to the cluster]
+        cmds.geometryAttrInfo('cluster1.outputGeometry[0]', nch=True)
+        # Result: [u'polyCylinder1', u'myGeoShapeOrig', u'groupParts2', u'tweak1', u'cluster1GroupParts', u'cluster1'] #
+        # Get the deformer chain leading up to the cluster
+        cmds.geometryAttrInfo('cluster1.outputGeometry[0]', dch=True)
+        # Result: [u'tweak1', u'cluster1'] #
+        # Get the plug chain leading up to the cluster
+        cmds.geometryAttrInfo('cluster1.outputGeometry[0]', pch=True)
+        # Result: [u'polyCylinder1.output', u'myGeoShapeOrig.inMesh', u'myGeoShapeOrig.worldMesh[0]', u'groupParts2.inputGeometry', u'groupParts2.outputGeometry', u'tweak1.input[0].inputGeometry', u'tweak1.outputGeometry[0]', u'cluster1GroupParts.inputGeometry', u'cluster1GroupParts.outputGeometry', u'cluster1.input[0].inputGeometry', u'cluster1.outputGeometry[0]'] #
+        # Get the output plug chain leading up to the cluster
+        cmds.geometryAttrInfo('cluster1.outputGeometry[0]', och=True)
+        # Result: [u'polyCylinder1.output', u'myGeoShapeOrig.worldMesh[0]', u'groupParts2.outputGeometry', u'tweak1.outputGeometry[0]', u'cluster1GroupParts.outputGeometry', u'cluster1.outputGeometry[0]'] #
+    ```
+
     ---
     - Args:
         - attribute: Input item(s).
@@ -60,6 +101,47 @@ def geometryAttrInfo(attribute: attribute, bb: bool = ..., cte: bool = ..., ctf:
     componentTag expression is used, the requested indices will be the indices
     that match the subset as defined by that expression.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.polyCylinder(n="myGeo", r=1, h=6, sx=4, sy=5, sz=1)[0]
+        cmds.select(['myGeo.vtx[12:23]', 'myGeo.vtx[25]'])
+        clusterNode, clusterHandle = cmds.cluster()
+        cmds.move(1.0, 0, 0, clusterHandle, absolute=True)
+        # Find the groupId for the cluster node to test our queries
+        gid = cmds.getAttr('{0}.input[0].groupId'.format(clusterNode))
+        # Get the number of points
+        n0 = cmds.geometryAttrInfo('myGeo.outMesh', pc=True)
+        n1 = cmds.geometryAttrInfo('myGeo.outMesh', gid=gid, pc=True)
+        print "Deforming {0} out of {1} points".format(n1, n0)
+        # Deforming 13 out of 26 points
+        # Get the indices that are being deformed
+        cmds.geometryAttrInfo('myGeo.outMesh', gid=gid, pi=True)
+        # Result: [12L, 13L, 14L, 15L, 16L, 17L, 18L, 19L, 20L, 21L, 22L, 23L, 25L] #
+        # Get the components that are being deformed
+        cmds.geometryAttrInfo('myGeo.outMesh', gid=gid, cmp=True)
+        # Result: [u'vtx[12:23]', u'vtx[25]'] #
+        # Get the bounding box of the total geometry
+        cmds.geometryAttrInfo('myGeo.outMesh', bb=True)
+        # Result: [-1.0, 2.0, -3.0, 3.0, -1.0, 1.0] #
+        # Get the bounding box of what is being deformed
+        cmds.geometryAttrInfo('myGeo.outMesh', gid=gid, bb=True)
+        # Result: [0.0, 2.0, 0.6000001430511475, 3.0, -1.0, 1.0] #
+        # Get the node chain leading up to the cluster]
+        cmds.geometryAttrInfo('cluster1.outputGeometry[0]', nch=True)
+        # Result: [u'polyCylinder1', u'myGeoShapeOrig', u'groupParts2', u'tweak1', u'cluster1GroupParts', u'cluster1'] #
+        # Get the deformer chain leading up to the cluster
+        cmds.geometryAttrInfo('cluster1.outputGeometry[0]', dch=True)
+        # Result: [u'tweak1', u'cluster1'] #
+        # Get the plug chain leading up to the cluster
+        cmds.geometryAttrInfo('cluster1.outputGeometry[0]', pch=True)
+        # Result: [u'polyCylinder1.output', u'myGeoShapeOrig.inMesh', u'myGeoShapeOrig.worldMesh[0]', u'groupParts2.inputGeometry', u'groupParts2.outputGeometry', u'tweak1.input[0].inputGeometry', u'tweak1.outputGeometry[0]', u'cluster1GroupParts.inputGeometry', u'cluster1GroupParts.outputGeometry', u'cluster1.input[0].inputGeometry', u'cluster1.outputGeometry[0]'] #
+        # Get the output plug chain leading up to the cluster
+        cmds.geometryAttrInfo('cluster1.outputGeometry[0]', och=True)
+        # Result: [u'polyCylinder1.output', u'myGeoShapeOrig.worldMesh[0]', u'groupParts2.outputGeometry', u'tweak1.outputGeometry[0]', u'cluster1GroupParts.outputGeometry', u'cluster1.outputGeometry[0]'] #
+    ```
+
     ---
     - Args:
         - attribute: Input item(s).
@@ -103,6 +185,47 @@ def geometryAttrInfo(attribute: attribute, boundingBox: bool = ..., bb: bool = .
     specific groupId or by a componentTag expression. For example, when a
     componentTag expression is used, the requested indices will be the indices
     that match the subset as defined by that expression.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.polyCylinder(n="myGeo", r=1, h=6, sx=4, sy=5, sz=1)[0]
+        cmds.select(['myGeo.vtx[12:23]', 'myGeo.vtx[25]'])
+        clusterNode, clusterHandle = cmds.cluster()
+        cmds.move(1.0, 0, 0, clusterHandle, absolute=True)
+        # Find the groupId for the cluster node to test our queries
+        gid = cmds.getAttr('{0}.input[0].groupId'.format(clusterNode))
+        # Get the number of points
+        n0 = cmds.geometryAttrInfo('myGeo.outMesh', pc=True)
+        n1 = cmds.geometryAttrInfo('myGeo.outMesh', gid=gid, pc=True)
+        print "Deforming {0} out of {1} points".format(n1, n0)
+        # Deforming 13 out of 26 points
+        # Get the indices that are being deformed
+        cmds.geometryAttrInfo('myGeo.outMesh', gid=gid, pi=True)
+        # Result: [12L, 13L, 14L, 15L, 16L, 17L, 18L, 19L, 20L, 21L, 22L, 23L, 25L] #
+        # Get the components that are being deformed
+        cmds.geometryAttrInfo('myGeo.outMesh', gid=gid, cmp=True)
+        # Result: [u'vtx[12:23]', u'vtx[25]'] #
+        # Get the bounding box of the total geometry
+        cmds.geometryAttrInfo('myGeo.outMesh', bb=True)
+        # Result: [-1.0, 2.0, -3.0, 3.0, -1.0, 1.0] #
+        # Get the bounding box of what is being deformed
+        cmds.geometryAttrInfo('myGeo.outMesh', gid=gid, bb=True)
+        # Result: [0.0, 2.0, 0.6000001430511475, 3.0, -1.0, 1.0] #
+        # Get the node chain leading up to the cluster]
+        cmds.geometryAttrInfo('cluster1.outputGeometry[0]', nch=True)
+        # Result: [u'polyCylinder1', u'myGeoShapeOrig', u'groupParts2', u'tweak1', u'cluster1GroupParts', u'cluster1'] #
+        # Get the deformer chain leading up to the cluster
+        cmds.geometryAttrInfo('cluster1.outputGeometry[0]', dch=True)
+        # Result: [u'tweak1', u'cluster1'] #
+        # Get the plug chain leading up to the cluster
+        cmds.geometryAttrInfo('cluster1.outputGeometry[0]', pch=True)
+        # Result: [u'polyCylinder1.output', u'myGeoShapeOrig.inMesh', u'myGeoShapeOrig.worldMesh[0]', u'groupParts2.inputGeometry', u'groupParts2.outputGeometry', u'tweak1.input[0].inputGeometry', u'tweak1.outputGeometry[0]', u'cluster1GroupParts.inputGeometry', u'cluster1GroupParts.outputGeometry', u'cluster1.input[0].inputGeometry', u'cluster1.outputGeometry[0]'] #
+        # Get the output plug chain leading up to the cluster
+        cmds.geometryAttrInfo('cluster1.outputGeometry[0]', och=True)
+        # Result: [u'polyCylinder1.output', u'myGeoShapeOrig.worldMesh[0]', u'groupParts2.outputGeometry', u'tweak1.outputGeometry[0]', u'cluster1GroupParts.outputGeometry', u'cluster1.outputGeometry[0]'] #
+    ```
 
     ---
     - Args:

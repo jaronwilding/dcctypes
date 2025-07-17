@@ -8,6 +8,21 @@ def contextInfo([context name]: [context name], c: bool = ..., escapeContext: bo
     
     This command allows you to get information on named contexts.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a particle tool context, then switch to it
+        cmds.dynParticleCtx('dynParticleCtx1')
+        cmds.setToolTo('dynParticleCtx1')
+        # Get the class type of the current context
+        ctx = cmds.currentCtx()
+        cmds.contextInfo(ctx, c=True)
+        # Result: dynParticle #
+        # Get the title of the current context
+        cmds.contextInfo(ctx, t=True)
+        # Result: Particle Tool #
+    ```
+
     ---
     - Args:
         - [context name]: Input item(s).
@@ -25,6 +40,21 @@ def contextInfo([context name]: [context name], esc: bool = ..., ex: bool = ...,
     
     This command allows you to get information on named contexts.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a particle tool context, then switch to it
+        cmds.dynParticleCtx('dynParticleCtx1')
+        cmds.setToolTo('dynParticleCtx1')
+        # Get the class type of the current context
+        ctx = cmds.currentCtx()
+        cmds.contextInfo(ctx, c=True)
+        # Result: dynParticle #
+        # Get the title of the current context
+        cmds.contextInfo(ctx, t=True)
+        # Result: Particle Tool #
+    ```
+
     ---
     - Args:
         - [context name]: Input item(s).
@@ -41,6 +71,21 @@ def contextInfo([context name]: [context name], c: bool = ..., escapeContext: bo
     """contextInfo is undoable, queryable, and editable.
     
     This command allows you to get information on named contexts.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a particle tool context, then switch to it
+        cmds.dynParticleCtx('dynParticleCtx1')
+        cmds.setToolTo('dynParticleCtx1')
+        # Get the class type of the current context
+        ctx = cmds.currentCtx()
+        cmds.contextInfo(ctx, c=True)
+        # Result: dynParticle #
+        # Get the title of the current context
+        cmds.contextInfo(ctx, t=True)
+        # Result: Particle Tool #
+    ```
 
     ---
     - Args:

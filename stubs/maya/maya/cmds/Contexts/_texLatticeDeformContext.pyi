@@ -9,6 +9,14 @@ def texLatticeDeformContext(contextName: contextName, envelope: float = ..., exi
     This command creates a context which may be used to deform UV maps with
     lattice manipulator. This context only works in the texture UV editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a lattice manipulator with 4 x 4 lattice.
+        #
+        cmds.texLatticeDeformContext( 'latticeContext', latticeColumns=4, latticeRows=4 )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -31,6 +39,14 @@ def texLatticeDeformContext(contextName: contextName, ev: float = ..., ex: bool 
     
     This command creates a context which may be used to deform UV maps with
     lattice manipulator. This context only works in the texture UV editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a lattice manipulator with 4 x 4 lattice.
+        #
+        cmds.texLatticeDeformContext( 'latticeContext', latticeColumns=4, latticeRows=4 )
+    ```
 
     ---
     - Args:
@@ -55,6 +71,14 @@ def texLatticeDeformContext(contextName: contextName, envelope: float = ..., ev:
     This command creates a context which may be used to deform UV maps with
     lattice manipulator. This context only works in the texture UV editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a lattice manipulator with 4 x 4 lattice.
+        #
+        cmds.texLatticeDeformContext( 'latticeContext', latticeColumns=4, latticeRows=4 )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -78,6 +102,14 @@ def texLatticeDeformContext(contextName: contextName, envelope: float = ..., ima
     This command creates a context which may be used to deform UV maps with
     lattice manipulator. This context only works in the texture UV editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a lattice manipulator with 4 x 4 lattice.
+        #
+        cmds.texLatticeDeformContext( 'latticeContext', latticeColumns=4, latticeRows=4 )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -98,6 +130,14 @@ def texLatticeDeformContext(contextName: contextName, ev: float = ..., i1: str =
     
     This command creates a context which may be used to deform UV maps with
     lattice manipulator. This context only works in the texture UV editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a lattice manipulator with 4 x 4 lattice.
+        #
+        cmds.texLatticeDeformContext( 'latticeContext', latticeColumns=4, latticeRows=4 )
+    ```
 
     ---
     - Args:
@@ -120,6 +160,14 @@ def texLatticeDeformContext(contextName: contextName, envelope: float = ..., ev:
     This command creates a context which may be used to deform UV maps with
     lattice manipulator. This context only works in the texture UV editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a lattice manipulator with 4 x 4 lattice.
+        #
+        cmds.texLatticeDeformContext( 'latticeContext', latticeColumns=4, latticeRows=4 )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -140,6 +188,14 @@ def texLatticeDeformContext(contextName: contextName, envelope: float = ..., ima
     
     This command creates a context which may be used to deform UV maps with
     lattice manipulator. This context only works in the texture UV editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a lattice manipulator with 4 x 4 lattice.
+        #
+        cmds.texLatticeDeformContext( 'latticeContext', latticeColumns=4, latticeRows=4 )
+    ```
 
     ---
     - Args:
@@ -162,6 +218,14 @@ def texLatticeDeformContext(contextName: contextName, ev: float = ..., i1: str =
     This command creates a context which may be used to deform UV maps with
     lattice manipulator. This context only works in the texture UV editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a lattice manipulator with 4 x 4 lattice.
+        #
+        cmds.texLatticeDeformContext( 'latticeContext', latticeColumns=4, latticeRows=4 )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -182,6 +246,14 @@ def texLatticeDeformContext(contextName: contextName, envelope: float = ..., ev:
     
     This command creates a context which may be used to deform UV maps with
     lattice manipulator. This context only works in the texture UV editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a lattice manipulator with 4 x 4 lattice.
+        #
+        cmds.texLatticeDeformContext( 'latticeContext', latticeColumns=4, latticeRows=4 )
+    ```
 
     ---
     - Args:

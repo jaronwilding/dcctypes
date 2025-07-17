@@ -9,6 +9,15 @@ def twoPointArcCtx(degree: int = ..., exists: bool = ..., history: bool = ..., i
     The twoPointArcCtx command creates a new context for creating two point
     circular arcs
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 1:
+        cmds.twoPointArcCtx( degree=1 )
+        # To query the degree of an existing context:
+        cmds.twoPointArcCtx( 'arcContext1', q=True, degree=True )
+    ```
+
     ---
     - Args:
         - degree (d): Valid values are 1 or 3. Default degree 3.
@@ -26,6 +35,15 @@ def twoPointArcCtx(d: int = ..., ex: bool = ..., ch: bool = ..., i1: str = ..., 
     
     The twoPointArcCtx command creates a new context for creating two point
     circular arcs
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 1:
+        cmds.twoPointArcCtx( degree=1 )
+        # To query the degree of an existing context:
+        cmds.twoPointArcCtx( 'arcContext1', q=True, degree=True )
+    ```
 
     ---
     - Args:
@@ -45,6 +63,15 @@ def twoPointArcCtx(degree: int = ..., d: int = ..., exists: bool = ..., ex: bool
     The twoPointArcCtx command creates a new context for creating two point
     circular arcs
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 1:
+        cmds.twoPointArcCtx( degree=1 )
+        # To query the degree of an existing context:
+        cmds.twoPointArcCtx( 'arcContext1', q=True, degree=True )
+    ```
+
     ---
     - Args:
         - degree (d): Valid values are 1 or 3. Default degree 3.
@@ -63,6 +90,15 @@ def twoPointArcCtx(degree: int = ..., image1: str = ..., image2: str = ..., imag
     The twoPointArcCtx command creates a new context for creating two point
     circular arcs
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 1:
+        cmds.twoPointArcCtx( degree=1 )
+        # To query the degree of an existing context:
+        cmds.twoPointArcCtx( 'arcContext1', q=True, degree=True )
+    ```
+
     ---
     - Args:
         - degree (d): Valid values are 1 or 3. Default degree 3.
@@ -78,6 +114,15 @@ def twoPointArcCtx(d: int = ..., i1: str = ..., i2: str = ..., i3: str = ..., s:
     
     The twoPointArcCtx command creates a new context for creating two point
     circular arcs
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 1:
+        cmds.twoPointArcCtx( degree=1 )
+        # To query the degree of an existing context:
+        cmds.twoPointArcCtx( 'arcContext1', q=True, degree=True )
+    ```
 
     ---
     - Args:
@@ -95,6 +140,15 @@ def twoPointArcCtx(degree: int = ..., d: int = ..., image1: str = ..., i1: str =
     The twoPointArcCtx command creates a new context for creating two point
     circular arcs
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 1:
+        cmds.twoPointArcCtx( degree=1 )
+        # To query the degree of an existing context:
+        cmds.twoPointArcCtx( 'arcContext1', q=True, degree=True )
+    ```
+
     ---
     - Args:
         - degree (d): Valid values are 1 or 3. Default degree 3.
@@ -110,6 +164,15 @@ def twoPointArcCtx(degree: int = ..., image1: str = ..., image2: str = ..., imag
     
     The twoPointArcCtx command creates a new context for creating two point
     circular arcs
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 1:
+        cmds.twoPointArcCtx( degree=1 )
+        # To query the degree of an existing context:
+        cmds.twoPointArcCtx( 'arcContext1', q=True, degree=True )
+    ```
 
     ---
     - Args:
@@ -127,6 +190,15 @@ def twoPointArcCtx(d: int = ..., i1: str = ..., i2: str = ..., i3: str = ..., s:
     The twoPointArcCtx command creates a new context for creating two point
     circular arcs
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 1:
+        cmds.twoPointArcCtx( degree=1 )
+        # To query the degree of an existing context:
+        cmds.twoPointArcCtx( 'arcContext1', q=True, degree=True )
+    ```
+
     ---
     - Args:
         - degree (d): Valid values are 1 or 3. Default degree 3.
@@ -142,6 +214,15 @@ def twoPointArcCtx(degree: int = ..., d: int = ..., image1: str = ..., i1: str =
     
     The twoPointArcCtx command creates a new context for creating two point
     circular arcs
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 1:
+        cmds.twoPointArcCtx( degree=1 )
+        # To query the degree of an existing context:
+        cmds.twoPointArcCtx( 'arcContext1', q=True, degree=True )
+    ```
 
     ---
     - Args:

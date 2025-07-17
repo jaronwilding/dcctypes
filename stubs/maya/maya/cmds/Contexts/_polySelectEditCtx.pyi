@@ -8,6 +8,16 @@ def polySelectEditCtx(absoluteOffset: bool = ..., adjustEdgeFlow: float = ..., a
     
     Create a new context to select and edit polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=5, sy=5, n='pPlane1')
+        # Create a new poly select and edit context, then switch to it
+        cmds.polySelectEditCtx('polySelectEditCtx1')
+        cmds.setToolTo('polySelectEditCtx1')
+    ```
+
     ---
     - Args:
         - absoluteOffset (abo): This flag is deprecated. Use splitType/stp instead. This flag is deprecated. Use splitType/stp instead.
@@ -34,6 +44,16 @@ def polySelectEditCtx(abo: bool = ..., aef: float = ..., ac: bool = ..., de: boo
     """polySelectEditCtx is undoable, queryable, and editable.
     
     Create a new context to select and edit polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=5, sy=5, n='pPlane1')
+        # Create a new poly select and edit context, then switch to it
+        cmds.polySelectEditCtx('polySelectEditCtx1')
+        cmds.setToolTo('polySelectEditCtx1')
+    ```
 
     ---
     - Args:
@@ -62,6 +82,16 @@ def polySelectEditCtx(absoluteOffset: bool = ..., abo: bool = ..., adjustEdgeFlo
     
     Create a new context to select and edit polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=5, sy=5, n='pPlane1')
+        # Create a new poly select and edit context, then switch to it
+        cmds.polySelectEditCtx('polySelectEditCtx1')
+        cmds.setToolTo('polySelectEditCtx1')
+    ```
+
     ---
     - Args:
         - absoluteOffset (abo): This flag is deprecated. Use splitType/stp instead. This flag is deprecated. Use splitType/stp instead.
@@ -89,6 +119,16 @@ def polySelectEditCtx(absoluteOffset: bool = ..., adjustEdgeFlow: float = ..., d
     
     Create a new context to select and edit polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=5, sy=5, n='pPlane1')
+        # Create a new poly select and edit context, then switch to it
+        cmds.polySelectEditCtx('polySelectEditCtx1')
+        cmds.setToolTo('polySelectEditCtx1')
+    ```
+
     ---
     - Args:
         - absoluteOffset (abo): This flag is deprecated. Use splitType/stp instead. This flag is deprecated. Use splitType/stp instead.
@@ -114,6 +154,16 @@ def polySelectEditCtx(abo: bool = ..., aef: float = ..., de: bool = ..., div: in
     """polySelectEditCtx is undoable, queryable, and editable.
     
     Create a new context to select and edit polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=5, sy=5, n='pPlane1')
+        # Create a new poly select and edit context, then switch to it
+        cmds.polySelectEditCtx('polySelectEditCtx1')
+        cmds.setToolTo('polySelectEditCtx1')
+    ```
 
     ---
     - Args:
@@ -141,6 +191,16 @@ def polySelectEditCtx(absoluteOffset: bool = ..., abo: bool = ..., adjustEdgeFlo
     
     Create a new context to select and edit polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=5, sy=5, n='pPlane1')
+        # Create a new poly select and edit context, then switch to it
+        cmds.polySelectEditCtx('polySelectEditCtx1')
+        cmds.setToolTo('polySelectEditCtx1')
+    ```
+
     ---
     - Args:
         - absoluteOffset (abo): This flag is deprecated. Use splitType/stp instead. This flag is deprecated. Use splitType/stp instead.
@@ -166,6 +226,16 @@ def polySelectEditCtx(absoluteOffset: bool = ..., adjustEdgeFlow: float = ..., d
     """polySelectEditCtx is undoable, queryable, and editable.
     
     Create a new context to select and edit polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=5, sy=5, n='pPlane1')
+        # Create a new poly select and edit context, then switch to it
+        cmds.polySelectEditCtx('polySelectEditCtx1')
+        cmds.setToolTo('polySelectEditCtx1')
+    ```
 
     ---
     - Args:
@@ -193,6 +263,16 @@ def polySelectEditCtx(abo: bool = ..., aef: float = ..., de: bool = ..., div: in
     
     Create a new context to select and edit polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=5, sy=5, n='pPlane1')
+        # Create a new poly select and edit context, then switch to it
+        cmds.polySelectEditCtx('polySelectEditCtx1')
+        cmds.setToolTo('polySelectEditCtx1')
+    ```
+
     ---
     - Args:
         - absoluteOffset (abo): This flag is deprecated. Use splitType/stp instead. This flag is deprecated. Use splitType/stp instead.
@@ -218,6 +298,16 @@ def polySelectEditCtx(absoluteOffset: bool = ..., abo: bool = ..., adjustEdgeFlo
     """polySelectEditCtx is undoable, queryable, and editable.
     
     Create a new context to select and edit polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=5, sy=5, n='pPlane1')
+        # Create a new poly select and edit context, then switch to it
+        cmds.polySelectEditCtx('polySelectEditCtx1')
+        cmds.setToolTo('polySelectEditCtx1')
+    ```
 
     ---
     - Args:

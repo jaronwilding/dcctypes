@@ -12,6 +12,20 @@ def curveRGBColor(hueSaturationValue: bool = ..., list: bool = ..., listNames: b
     number of characters. These colors are part of the UI and not part of the
     saved data for a model. This command is not undoable.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set all "translateX" curves to draw magenta
+        cmds.curveRGBColor( 'translateX', 1, 0, 1 )
+        # Set all curves whose names end in "Y" to draw yellow
+        cmds.curveRGBColor( '*Y', 1, 1, 0 )
+        # Remove the custom color for "translateX" curves
+        # (which will revert to the standard UI color)
+        cmds.curveRGBColor( r=True, 'translateX' )
+        # List the currently defined custom curve colors
+        cmds.curveRGBColor( list=True )
+    ```
+
     ---
     - Args:
         - hueSaturationValue (hsv): Indicates that rgb values are really hsv values.
@@ -30,6 +44,20 @@ def curveRGBColor(hsv: bool = ..., l: bool = ..., ln: bool = ..., r: bool = ...,
     wildcards "?", which marches a single character, and "*", which matches any
     number of characters. These colors are part of the UI and not part of the
     saved data for a model. This command is not undoable.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set all "translateX" curves to draw magenta
+        cmds.curveRGBColor( 'translateX', 1, 0, 1 )
+        # Set all curves whose names end in "Y" to draw yellow
+        cmds.curveRGBColor( '*Y', 1, 1, 0 )
+        # Remove the custom color for "translateX" curves
+        # (which will revert to the standard UI color)
+        cmds.curveRGBColor( r=True, 'translateX' )
+        # List the currently defined custom curve colors
+        cmds.curveRGBColor( list=True )
+    ```
 
     ---
     - Args:
@@ -50,6 +78,20 @@ def curveRGBColor(hueSaturationValue: bool = ..., hsv: bool = ..., list: bool = 
     number of characters. These colors are part of the UI and not part of the
     saved data for a model. This command is not undoable.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set all "translateX" curves to draw magenta
+        cmds.curveRGBColor( 'translateX', 1, 0, 1 )
+        # Set all curves whose names end in "Y" to draw yellow
+        cmds.curveRGBColor( '*Y', 1, 1, 0 )
+        # Remove the custom color for "translateX" curves
+        # (which will revert to the standard UI color)
+        cmds.curveRGBColor( r=True, 'translateX' )
+        # List the currently defined custom curve colors
+        cmds.curveRGBColor( list=True )
+    ```
+
     ---
     - Args:
         - hueSaturationValue (hsv): Indicates that rgb values are really hsv values.
@@ -69,6 +111,20 @@ def curveRGBColor(hueSaturationValue: bool = ..., query: bool = ...) -> float[]:
     number of characters. These colors are part of the UI and not part of the
     saved data for a model. This command is not undoable.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set all "translateX" curves to draw magenta
+        cmds.curveRGBColor( 'translateX', 1, 0, 1 )
+        # Set all curves whose names end in "Y" to draw yellow
+        cmds.curveRGBColor( '*Y', 1, 1, 0 )
+        # Remove the custom color for "translateX" curves
+        # (which will revert to the standard UI color)
+        cmds.curveRGBColor( r=True, 'translateX' )
+        # List the currently defined custom curve colors
+        cmds.curveRGBColor( list=True )
+    ```
+
     ---
     - Args:
         - hueSaturationValue (hsv): Indicates that rgb values are really hsv values.
@@ -83,6 +139,20 @@ def curveRGBColor(hsv: bool = ..., q: bool = ...) -> float[]:
     wildcards "?", which marches a single character, and "*", which matches any
     number of characters. These colors are part of the UI and not part of the
     saved data for a model. This command is not undoable.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set all "translateX" curves to draw magenta
+        cmds.curveRGBColor( 'translateX', 1, 0, 1 )
+        # Set all curves whose names end in "Y" to draw yellow
+        cmds.curveRGBColor( '*Y', 1, 1, 0 )
+        # Remove the custom color for "translateX" curves
+        # (which will revert to the standard UI color)
+        cmds.curveRGBColor( r=True, 'translateX' )
+        # List the currently defined custom curve colors
+        cmds.curveRGBColor( list=True )
+    ```
 
     ---
     - Args:
@@ -99,53 +169,22 @@ def curveRGBColor(hueSaturationValue: bool = ..., hsv: bool = ..., query: bool =
     number of characters. These colors are part of the UI and not part of the
     saved data for a model. This command is not undoable.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set all "translateX" curves to draw magenta
+        cmds.curveRGBColor( 'translateX', 1, 0, 1 )
+        # Set all curves whose names end in "Y" to draw yellow
+        cmds.curveRGBColor( '*Y', 1, 1, 0 )
+        # Remove the custom color for "translateX" curves
+        # (which will revert to the standard UI color)
+        cmds.curveRGBColor( r=True, 'translateX' )
+        # List the currently defined custom curve colors
+        cmds.curveRGBColor( list=True )
+    ```
+
     ---
     - Args:
         - hueSaturationValue (hsv): Indicates that rgb values are really hsv values.
         - query (q): Query mode flag
-    """
-@overload #Overload for curveRGBColor in ['edit']
-def curveRGBColor(hueSaturationValue: bool = ..., edit: bool = ...) -> float[]:
-    """curveRGBColor is undoable, queryable, and NOT editable.
-    
-    This command creates, changes or removes custom curve colors, which are used
-    to draw the curves in the Graph Editor. The custom curve names may contain the
-    wildcards "?", which marches a single character, and "*", which matches any
-    number of characters. These colors are part of the UI and not part of the
-    saved data for a model. This command is not undoable.
-
-    ---
-    - Args:
-        - hueSaturationValue (hsv): Indicates that rgb values are really hsv values.
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for curveRGBColor in ['edit']
-def curveRGBColor(hsv: bool = ..., e: bool = ...) -> float[]:
-    """curveRGBColor is undoable, queryable, and NOT editable.
-    
-    This command creates, changes or removes custom curve colors, which are used
-    to draw the curves in the Graph Editor. The custom curve names may contain the
-    wildcards "?", which marches a single character, and "*", which matches any
-    number of characters. These colors are part of the UI and not part of the
-    saved data for a model. This command is not undoable.
-
-    ---
-    - Args:
-        - hueSaturationValue (hsv): Indicates that rgb values are really hsv values.
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for curveRGBColor in ['edit']
-def curveRGBColor(hueSaturationValue: bool = ..., hsv: bool = ..., edit: bool = ..., e: bool = ...) -> float[]:
-    """curveRGBColor is undoable, queryable, and NOT editable.
-    
-    This command creates, changes or removes custom curve colors, which are used
-    to draw the curves in the Graph Editor. The custom curve names may contain the
-    wildcards "?", which marches a single character, and "*", which matches any
-    number of characters. These colors are part of the UI and not part of the
-    saved data for a model. This command is not undoable.
-
-    ---
-    - Args:
-        - hueSaturationValue (hsv): Indicates that rgb values are really hsv values.
-        - edit (e): Edit mode flag
     """

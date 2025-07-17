@@ -9,6 +9,21 @@ def curveMoveEPCtx(exists: bool = ..., image1: str = ..., image2: str = ..., ima
     The curveMoveEPCtx command creates a new context for moving curve edit points
     using a manipulator. Edit points can only be moved one at a time.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a curve
+        cmds.curve(p=[(0, 0, 0), (3, 5, 6), (5, 6, 7), (9, 9, 9), (12, 10, 2)], k=[0,0,0,1,2,2,2])
+        # Result: curve1 #
+        # Change the selection mode to components, and set edit-point selection mask on only
+        cmds.selectMode(co=True)
+        cmds.selectType(allComponents=False, editPoint=True)
+        # Create a new curve edit point editor context, then switch to it
+        # You can move the edit points using manipulator
+        cmds.curveMoveEPCtx('curveMoveEPCtx1')
+        cmds.setToolTo('curveMoveEPCtx1')
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -22,6 +37,21 @@ def curveMoveEPCtx(ex: bool = ..., i1: str = ..., i2: str = ..., i3: str = ...) 
     
     The curveMoveEPCtx command creates a new context for moving curve edit points
     using a manipulator. Edit points can only be moved one at a time.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a curve
+        cmds.curve(p=[(0, 0, 0), (3, 5, 6), (5, 6, 7), (9, 9, 9), (12, 10, 2)], k=[0,0,0,1,2,2,2])
+        # Result: curve1 #
+        # Change the selection mode to components, and set edit-point selection mask on only
+        cmds.selectMode(co=True)
+        cmds.selectType(allComponents=False, editPoint=True)
+        # Create a new curve edit point editor context, then switch to it
+        # You can move the edit points using manipulator
+        cmds.curveMoveEPCtx('curveMoveEPCtx1')
+        cmds.setToolTo('curveMoveEPCtx1')
+    ```
 
     ---
     - Args:
@@ -37,6 +67,21 @@ def curveMoveEPCtx(exists: bool = ..., ex: bool = ..., image1: str = ..., i1: st
     The curveMoveEPCtx command creates a new context for moving curve edit points
     using a manipulator. Edit points can only be moved one at a time.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a curve
+        cmds.curve(p=[(0, 0, 0), (3, 5, 6), (5, 6, 7), (9, 9, 9), (12, 10, 2)], k=[0,0,0,1,2,2,2])
+        # Result: curve1 #
+        # Change the selection mode to components, and set edit-point selection mask on only
+        cmds.selectMode(co=True)
+        cmds.selectType(allComponents=False, editPoint=True)
+        # Create a new curve edit point editor context, then switch to it
+        # You can move the edit points using manipulator
+        cmds.curveMoveEPCtx('curveMoveEPCtx1')
+        cmds.setToolTo('curveMoveEPCtx1')
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -50,6 +95,21 @@ def curveMoveEPCtx(image1: str = ..., image2: str = ..., image3: str = ..., quer
     
     The curveMoveEPCtx command creates a new context for moving curve edit points
     using a manipulator. Edit points can only be moved one at a time.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a curve
+        cmds.curve(p=[(0, 0, 0), (3, 5, 6), (5, 6, 7), (9, 9, 9), (12, 10, 2)], k=[0,0,0,1,2,2,2])
+        # Result: curve1 #
+        # Change the selection mode to components, and set edit-point selection mask on only
+        cmds.selectMode(co=True)
+        cmds.selectType(allComponents=False, editPoint=True)
+        # Create a new curve edit point editor context, then switch to it
+        # You can move the edit points using manipulator
+        cmds.curveMoveEPCtx('curveMoveEPCtx1')
+        cmds.setToolTo('curveMoveEPCtx1')
+    ```
 
     ---
     - Args:
@@ -65,6 +125,21 @@ def curveMoveEPCtx(i1: str = ..., i2: str = ..., i3: str = ..., q: bool = ...) -
     The curveMoveEPCtx command creates a new context for moving curve edit points
     using a manipulator. Edit points can only be moved one at a time.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a curve
+        cmds.curve(p=[(0, 0, 0), (3, 5, 6), (5, 6, 7), (9, 9, 9), (12, 10, 2)], k=[0,0,0,1,2,2,2])
+        # Result: curve1 #
+        # Change the selection mode to components, and set edit-point selection mask on only
+        cmds.selectMode(co=True)
+        cmds.selectType(allComponents=False, editPoint=True)
+        # Create a new curve edit point editor context, then switch to it
+        # You can move the edit points using manipulator
+        cmds.curveMoveEPCtx('curveMoveEPCtx1')
+        cmds.setToolTo('curveMoveEPCtx1')
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -78,6 +153,21 @@ def curveMoveEPCtx(image1: str = ..., i1: str = ..., image2: str = ..., i2: str 
     
     The curveMoveEPCtx command creates a new context for moving curve edit points
     using a manipulator. Edit points can only be moved one at a time.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a curve
+        cmds.curve(p=[(0, 0, 0), (3, 5, 6), (5, 6, 7), (9, 9, 9), (12, 10, 2)], k=[0,0,0,1,2,2,2])
+        # Result: curve1 #
+        # Change the selection mode to components, and set edit-point selection mask on only
+        cmds.selectMode(co=True)
+        cmds.selectType(allComponents=False, editPoint=True)
+        # Create a new curve edit point editor context, then switch to it
+        # You can move the edit points using manipulator
+        cmds.curveMoveEPCtx('curveMoveEPCtx1')
+        cmds.setToolTo('curveMoveEPCtx1')
+    ```
 
     ---
     - Args:
@@ -93,6 +183,21 @@ def curveMoveEPCtx(image1: str = ..., image2: str = ..., image3: str = ..., edit
     The curveMoveEPCtx command creates a new context for moving curve edit points
     using a manipulator. Edit points can only be moved one at a time.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a curve
+        cmds.curve(p=[(0, 0, 0), (3, 5, 6), (5, 6, 7), (9, 9, 9), (12, 10, 2)], k=[0,0,0,1,2,2,2])
+        # Result: curve1 #
+        # Change the selection mode to components, and set edit-point selection mask on only
+        cmds.selectMode(co=True)
+        cmds.selectType(allComponents=False, editPoint=True)
+        # Create a new curve edit point editor context, then switch to it
+        # You can move the edit points using manipulator
+        cmds.curveMoveEPCtx('curveMoveEPCtx1')
+        cmds.setToolTo('curveMoveEPCtx1')
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -107,6 +212,21 @@ def curveMoveEPCtx(i1: str = ..., i2: str = ..., i3: str = ..., e: bool = ...) -
     The curveMoveEPCtx command creates a new context for moving curve edit points
     using a manipulator. Edit points can only be moved one at a time.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a curve
+        cmds.curve(p=[(0, 0, 0), (3, 5, 6), (5, 6, 7), (9, 9, 9), (12, 10, 2)], k=[0,0,0,1,2,2,2])
+        # Result: curve1 #
+        # Change the selection mode to components, and set edit-point selection mask on only
+        cmds.selectMode(co=True)
+        cmds.selectType(allComponents=False, editPoint=True)
+        # Create a new curve edit point editor context, then switch to it
+        # You can move the edit points using manipulator
+        cmds.curveMoveEPCtx('curveMoveEPCtx1')
+        cmds.setToolTo('curveMoveEPCtx1')
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -120,6 +240,21 @@ def curveMoveEPCtx(image1: str = ..., i1: str = ..., image2: str = ..., i2: str 
     
     The curveMoveEPCtx command creates a new context for moving curve edit points
     using a manipulator. Edit points can only be moved one at a time.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a curve
+        cmds.curve(p=[(0, 0, 0), (3, 5, 6), (5, 6, 7), (9, 9, 9), (12, 10, 2)], k=[0,0,0,1,2,2,2])
+        # Result: curve1 #
+        # Change the selection mode to components, and set edit-point selection mask on only
+        cmds.selectMode(co=True)
+        cmds.selectType(allComponents=False, editPoint=True)
+        # Create a new curve edit point editor context, then switch to it
+        # You can move the edit points using manipulator
+        cmds.curveMoveEPCtx('curveMoveEPCtx1')
+        cmds.setToolTo('curveMoveEPCtx1')
+    ```
 
     ---
     - Args:

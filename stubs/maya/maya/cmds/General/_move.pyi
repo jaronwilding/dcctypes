@@ -36,6 +36,16 @@ def move(float float float [objects]: float float float [objects], absolute: boo
     local space. In other words, the worldspace distance moved will depend on the
     transformations applied to the object unless this flag is specified.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.polySphere()
+        cmds.move( 1, 1, 1 )
+        cmds.move( 5, y=True )
+        cmds.move( '1in', '1in', '1in', relative=True, objectSpace=True, worldSpaceDistance=True )
+        cmds.move( 0, 0, 0, 'pSphere1', absolute=True )
+    ```
+
     ---
     - Args:
         - float float float [objects]: Input item(s).
@@ -111,6 +121,16 @@ def move(float float float [objects]: float float float [objects], a: bool = ...
     local space. In other words, the worldspace distance moved will depend on the
     transformations applied to the object unless this flag is specified.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.polySphere()
+        cmds.move( 1, 1, 1 )
+        cmds.move( 5, y=True )
+        cmds.move( '1in', '1in', '1in', relative=True, objectSpace=True, worldSpaceDistance=True )
+        cmds.move( 0, 0, 0, 'pSphere1', absolute=True )
+    ```
+
     ---
     - Args:
         - float float float [objects]: Input item(s).
@@ -185,6 +205,16 @@ def move(float float float [objects]: float float float [objects], absolute: boo
     without this flag, is to treat the x,y,z values as units in object space or
     local space. In other words, the worldspace distance moved will depend on the
     transformations applied to the object unless this flag is specified.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.polySphere()
+        cmds.move( 1, 1, 1 )
+        cmds.move( 5, y=True )
+        cmds.move( '1in', '1in', '1in', relative=True, objectSpace=True, worldSpaceDistance=True )
+        cmds.move( 0, 0, 0, 'pSphere1', absolute=True )
+    ```
 
     ---
     - Args:

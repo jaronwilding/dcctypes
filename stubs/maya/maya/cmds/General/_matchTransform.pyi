@@ -12,6 +12,20 @@ def matchTransform([objects...]: [objects...], pivots: bool = ..., position: boo
     If no flags are specified then the command will match position, rotation and
     scaling.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a cone and randomly transform it
+        cmds.polyCone(n='cone1')
+        cmds.scale(0.2, 2.0, 0.2);
+        cmds.rotate(20, 45, 70)
+        cmds.move(-2, 0, 2)
+        # create a cylinder
+        cmds.polyCylinder(n='cylinder1')
+        # modify the cylinder's transform to match the cone
+        cmds.matchTransform('cylinder1','cone1')
+    ```
+
     ---
     - Args:
         - [objects...]: Input item(s).
@@ -42,6 +56,20 @@ def matchTransform([objects...]: [objects...], piv: bool = ..., pos: bool = ...,
     If no flags are specified then the command will match position, rotation and
     scaling.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a cone and randomly transform it
+        cmds.polyCone(n='cone1')
+        cmds.scale(0.2, 2.0, 0.2);
+        cmds.rotate(20, 45, 70)
+        cmds.move(-2, 0, 2)
+        # create a cylinder
+        cmds.polyCylinder(n='cylinder1')
+        # modify the cylinder's transform to match the cone
+        cmds.matchTransform('cylinder1','cone1')
+    ```
+
     ---
     - Args:
         - [objects...]: Input item(s).
@@ -71,6 +99,20 @@ def matchTransform([objects...]: [objects...], pivots: bool = ..., piv: bool = .
     
     If no flags are specified then the command will match position, rotation and
     scaling.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a cone and randomly transform it
+        cmds.polyCone(n='cone1')
+        cmds.scale(0.2, 2.0, 0.2);
+        cmds.rotate(20, 45, 70)
+        cmds.move(-2, 0, 2)
+        # create a cylinder
+        cmds.polyCylinder(n='cylinder1')
+        # modify the cylinder's transform to match the cone
+        cmds.matchTransform('cylinder1','cone1')
+    ```
 
     ---
     - Args:

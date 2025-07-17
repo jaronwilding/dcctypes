@@ -17,6 +17,23 @@ def showHidden([objects...]: [objects...], above: bool = ..., allObjects: bool =
     
     See also: hide
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a sphere and group it, then hide the sphere and the group.
+        cmds.sphere( n='sphere1' )
+        cmds.group( n='group1' )
+        cmds.hide( 'group1', 'sphere1' )
+        # make the sphere visible. Note that you still can't see it
+        # because the group is invisible.
+        cmds.showHidden( 'sphere1' )
+        # make the sphere and the group visible.
+        cmds.showHidden( 'sphere1', above=True )
+        # make everything visible. This will make the cameras (which are
+        # normally invisible) visible as well.
+        cmds.showHidden( all=True )
+    ```
+
     ---
     - Args:
         - [objects...]: Input item(s).
@@ -40,6 +57,23 @@ def showHidden([objects...]: [objects...], a: bool = ..., all: bool = ..., b: bo
     
     See also: hide
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a sphere and group it, then hide the sphere and the group.
+        cmds.sphere( n='sphere1' )
+        cmds.group( n='group1' )
+        cmds.hide( 'group1', 'sphere1' )
+        # make the sphere visible. Note that you still can't see it
+        # because the group is invisible.
+        cmds.showHidden( 'sphere1' )
+        # make the sphere and the group visible.
+        cmds.showHidden( 'sphere1', above=True )
+        # make everything visible. This will make the cameras (which are
+        # normally invisible) visible as well.
+        cmds.showHidden( all=True )
+    ```
+
     ---
     - Args:
         - [objects...]: Input item(s).
@@ -62,6 +96,23 @@ def showHidden([objects...]: [objects...], above: bool = ..., a: bool = ..., all
     flag.
     
     See also: hide
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a sphere and group it, then hide the sphere and the group.
+        cmds.sphere( n='sphere1' )
+        cmds.group( n='group1' )
+        cmds.hide( 'group1', 'sphere1' )
+        # make the sphere visible. Note that you still can't see it
+        # because the group is invisible.
+        cmds.showHidden( 'sphere1' )
+        # make the sphere and the group visible.
+        cmds.showHidden( 'sphere1', above=True )
+        # make everything visible. This will make the cameras (which are
+        # normally invisible) visible as well.
+        cmds.showHidden( all=True )
+    ```
 
     ---
     - Args:

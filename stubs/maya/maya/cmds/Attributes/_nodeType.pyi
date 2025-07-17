@@ -27,6 +27,21 @@ def nodeType(string: str, apiType: bool = ..., derived: bool = ..., inherited: b
     This makes it possible to query the hierarchy of node types without needing to
     have instances of each node type.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sphere( n='balloon' )
+        # Find the type of node created by the sphere command
+        cmds.nodeType( 'balloon' )
+        # Result: transform #
+        # What is the API type of the balloon node?
+        cmds.nodeType( 'balloon', api=True )
+        # Result: kTransform #
+        # Which node types derive from camera?
+        cmds.nodeType( 'camera', derived=True, isTypeName=True )
+        # Result: [u'stereoRigCamera', u'camera'] #
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -62,6 +77,21 @@ def nodeType(string: str, api: bool = ..., d: bool = ..., i: bool = ..., itn: bo
     This makes it possible to query the hierarchy of node types without needing to
     have instances of each node type.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sphere( n='balloon' )
+        # Find the type of node created by the sphere command
+        cmds.nodeType( 'balloon' )
+        # Result: transform #
+        # What is the API type of the balloon node?
+        cmds.nodeType( 'balloon', api=True )
+        # Result: kTransform #
+        # Which node types derive from camera?
+        cmds.nodeType( 'camera', derived=True, isTypeName=True )
+        # Result: [u'stereoRigCamera', u'camera'] #
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -96,6 +126,21 @@ def nodeType(string: str, apiType: bool = ..., api: bool = ..., derived: bool = 
     taken to be the name of a node type rather than the name of a specific node.
     This makes it possible to query the hierarchy of node types without needing to
     have instances of each node type.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sphere( n='balloon' )
+        # Find the type of node created by the sphere command
+        cmds.nodeType( 'balloon' )
+        # Result: transform #
+        # What is the API type of the balloon node?
+        cmds.nodeType( 'balloon', api=True )
+        # Result: kTransform #
+        # Which node types derive from camera?
+        cmds.nodeType( 'camera', derived=True, isTypeName=True )
+        # Result: [u'stereoRigCamera', u'camera'] #
+    ```
 
     ---
     - Args:

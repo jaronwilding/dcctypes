@@ -8,6 +8,12 @@ def manipRotateLimitsCtx(exists: bool = ..., history: bool = ..., image1: str = 
     
     Create a context for the rotate limits manipulator.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.manipRotateLimitsCtx()
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -22,6 +28,12 @@ def manipRotateLimitsCtx(ex: bool = ..., ch: bool = ..., i1: str = ..., i2: str 
     """manipRotateLimitsCtx is undoable, queryable, and editable.
     
     Create a context for the rotate limits manipulator.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.manipRotateLimitsCtx()
+    ```
 
     ---
     - Args:
@@ -38,6 +50,12 @@ def manipRotateLimitsCtx(exists: bool = ..., ex: bool = ..., history: bool = ...
     
     Create a context for the rotate limits manipulator.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.manipRotateLimitsCtx()
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -53,6 +71,12 @@ def manipRotateLimitsCtx(image1: str = ..., image2: str = ..., image3: str = ...
     
     Create a context for the rotate limits manipulator.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.manipRotateLimitsCtx()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -65,6 +89,12 @@ def manipRotateLimitsCtx(i1: str = ..., i2: str = ..., i3: str = ..., q: bool = 
     """manipRotateLimitsCtx is undoable, queryable, and editable.
     
     Create a context for the rotate limits manipulator.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.manipRotateLimitsCtx()
+    ```
 
     ---
     - Args:
@@ -79,6 +109,12 @@ def manipRotateLimitsCtx(image1: str = ..., i1: str = ..., image2: str = ..., i2
     
     Create a context for the rotate limits manipulator.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.manipRotateLimitsCtx()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -91,6 +127,12 @@ def manipRotateLimitsCtx(image1: str = ..., image2: str = ..., image3: str = ...
     """manipRotateLimitsCtx is undoable, queryable, and editable.
     
     Create a context for the rotate limits manipulator.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.manipRotateLimitsCtx()
+    ```
 
     ---
     - Args:
@@ -105,6 +147,12 @@ def manipRotateLimitsCtx(i1: str = ..., i2: str = ..., i3: str = ..., e: bool = 
     
     Create a context for the rotate limits manipulator.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.manipRotateLimitsCtx()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -117,6 +165,12 @@ def manipRotateLimitsCtx(image1: str = ..., i1: str = ..., image2: str = ..., i2
     """manipRotateLimitsCtx is undoable, queryable, and editable.
     
     Create a context for the rotate limits manipulator.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.manipRotateLimitsCtx()
+    ```
 
     ---
     - Args:

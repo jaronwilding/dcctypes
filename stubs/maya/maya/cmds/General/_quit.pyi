@@ -8,6 +8,13 @@ def quit(abort: bool = ..., exitCode: int = ..., force: bool = ...) -> None:
     
     This command is used to exit the application.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.quit()
+        cmds.quit(force=True)
+    ```
+
     ---
     - Args:
         - abort (a): Will quit without saving like -force, but will also prevent preferences/hotkeys/colors from being saved.  Use at your own risk.
@@ -20,6 +27,13 @@ def quit(a: bool = ..., ec: int = ..., f: bool = ...) -> None:
     
     This command is used to exit the application.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.quit()
+        cmds.quit(force=True)
+    ```
+
     ---
     - Args:
         - abort (a): Will quit without saving like -force, but will also prevent preferences/hotkeys/colors from being saved.  Use at your own risk.
@@ -31,6 +45,13 @@ def quit(abort: bool = ..., a: bool = ..., exitCode: int = ..., ec: int = ..., f
     """quit is undoable, NOT queryable, and NOT editable.
     
     This command is used to exit the application.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.quit()
+        cmds.quit(force=True)
+    ```
 
     ---
     - Args:

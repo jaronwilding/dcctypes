@@ -3,39 +3,63 @@
 from typing import Any, overload
 
 @overload #Overload for xformConstraint in ['create']
-def xformConstraint(alongNormal: int = ..., type: str = ...) -> None:
+def xformConstraint(type: str = ...) -> None:
     """xformConstraint is undoable, queryable, and editable.
     
     This command allows you to change the transform constraint used by the
     transform tools during component transforms.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Return the current transform constraint
+        cmds.xformConstraint(query=True, type=True)
+        # Constrain moving components to the surface
+        cmds.symmetricModelling(type="surface")
+    ```
+
     ---
     - Args:
-        - alongNormal (n): When set the transform constraint will first be applied along the vertex normals of the components being transformed. When queried, returns the current state of this option.
         - type (t): Set the type of transform constraint to use. When queried, returns the current transform constraint as a string.none - no constraintsurface - constrain components to their surfaceedge - constrain components to surface edges
     """
 @overload #Overload for xformConstraint in ['create']
-def xformConstraint(n: int = ..., t: str = ...) -> None:
+def xformConstraint(t: str = ...) -> None:
     """xformConstraint is undoable, queryable, and editable.
     
     This command allows you to change the transform constraint used by the
     transform tools during component transforms.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Return the current transform constraint
+        cmds.xformConstraint(query=True, type=True)
+        # Constrain moving components to the surface
+        cmds.symmetricModelling(type="surface")
+    ```
+
     ---
     - Args:
-        - alongNormal (n): When set the transform constraint will first be applied along the vertex normals of the components being transformed. When queried, returns the current state of this option.
         - type (t): Set the type of transform constraint to use. When queried, returns the current transform constraint as a string.none - no constraintsurface - constrain components to their surfaceedge - constrain components to surface edges
     """
 @overload #Overload for xformConstraint in ['create']
-def xformConstraint(alongNormal: int = ..., n: int = ..., type: str = ..., t: str = ...) -> None:
+def xformConstraint(type: str = ..., t: str = ...) -> None:
     """xformConstraint is undoable, queryable, and editable.
     
     This command allows you to change the transform constraint used by the
     transform tools during component transforms.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Return the current transform constraint
+        cmds.xformConstraint(query=True, type=True)
+        # Constrain moving components to the surface
+        cmds.symmetricModelling(type="surface")
+    ```
+
     ---
     - Args:
-        - alongNormal (n): When set the transform constraint will first be applied along the vertex normals of the components being transformed. When queried, returns the current state of this option.
         - type (t): Set the type of transform constraint to use. When queried, returns the current transform constraint as a string.none - no constraintsurface - constrain components to their surfaceedge - constrain components to surface edges
     """
 @overload #Overload for xformConstraint in ['query']
@@ -44,6 +68,15 @@ def xformConstraint(alongNormal: int = ..., live: bool = ..., type: str = ..., q
     
     This command allows you to change the transform constraint used by the
     transform tools during component transforms.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Return the current transform constraint
+        cmds.xformConstraint(query=True, type=True)
+        # Constrain moving components to the surface
+        cmds.symmetricModelling(type="surface")
+    ```
 
     ---
     - Args:
@@ -59,6 +92,15 @@ def xformConstraint(n: int = ..., l: bool = ..., t: str = ..., q: bool = ...) ->
     This command allows you to change the transform constraint used by the
     transform tools during component transforms.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Return the current transform constraint
+        cmds.xformConstraint(query=True, type=True)
+        # Constrain moving components to the surface
+        cmds.symmetricModelling(type="surface")
+    ```
+
     ---
     - Args:
         - alongNormal (n): When set the transform constraint will first be applied along the vertex normals of the components being transformed. When queried, returns the current state of this option.
@@ -72,6 +114,15 @@ def xformConstraint(alongNormal: int = ..., n: int = ..., live: bool = ..., l: b
     
     This command allows you to change the transform constraint used by the
     transform tools during component transforms.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Return the current transform constraint
+        cmds.xformConstraint(query=True, type=True)
+        # Constrain moving components to the surface
+        cmds.symmetricModelling(type="surface")
+    ```
 
     ---
     - Args:
@@ -87,6 +138,15 @@ def xformConstraint(alongNormal: int = ..., type: str = ..., edit: bool = ...) -
     This command allows you to change the transform constraint used by the
     transform tools during component transforms.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Return the current transform constraint
+        cmds.xformConstraint(query=True, type=True)
+        # Constrain moving components to the surface
+        cmds.symmetricModelling(type="surface")
+    ```
+
     ---
     - Args:
         - alongNormal (n): When set the transform constraint will first be applied along the vertex normals of the components being transformed. When queried, returns the current state of this option.
@@ -100,6 +160,15 @@ def xformConstraint(n: int = ..., t: str = ..., e: bool = ...) -> None:
     This command allows you to change the transform constraint used by the
     transform tools during component transforms.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Return the current transform constraint
+        cmds.xformConstraint(query=True, type=True)
+        # Constrain moving components to the surface
+        cmds.symmetricModelling(type="surface")
+    ```
+
     ---
     - Args:
         - alongNormal (n): When set the transform constraint will first be applied along the vertex normals of the components being transformed. When queried, returns the current state of this option.
@@ -112,6 +181,15 @@ def xformConstraint(alongNormal: int = ..., n: int = ..., type: str = ..., t: st
     
     This command allows you to change the transform constraint used by the
     transform tools during component transforms.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Return the current transform constraint
+        cmds.xformConstraint(query=True, type=True)
+        # Constrain moving components to the surface
+        cmds.symmetricModelling(type="surface")
+    ```
 
     ---
     - Args:

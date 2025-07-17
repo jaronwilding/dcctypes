@@ -21,6 +21,26 @@ def reorderContainer(back: bool = ..., front: bool = ..., relative: int = ...) -
     the effects of reordering, use the -unsortedOrder flag in conjunction with the
     -nodeList flag.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a container
+        cmds.sphere( n='sphere1' )
+        cmds.sphere( n='sphere2' )
+        cmds.sphere( n='sphere3' )
+        cmds.sphere( n='sphere4' )
+        cmds.container( addNode=['sphere1', 'sphere2', 'sphere3', 'sphere4'], n='sphereCon' )
+        # The container sphereCon contains sphere1, sphere2, sphere3 and sphere4.
+        # The command below moves sphere2 before sphere1.
+        cmds.reorderContainer( 'sphere2', r=-1 )
+        # make sphere1 the first sibling
+        cmds.reorderContainer( 'sphere1', front=True )
+        # move sphere3 forward 2 siblings. Moving it forward one
+        # sibling would put it at the end. Moving it forward again
+        # puts it at the beginning.
+        cmds.reorderContainer( 'sphere3', r=2 )
+    ```
+
     ---
     - Args:
         - back (b): Move object(s) to back of container contents list
@@ -45,6 +65,26 @@ def reorderContainer(b: bool = ..., f: bool = ..., r: int = ...) -> None:
     command's -nodeList flag will return a sorted list of contained nodes. To see
     the effects of reordering, use the -unsortedOrder flag in conjunction with the
     -nodeList flag.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a container
+        cmds.sphere( n='sphere1' )
+        cmds.sphere( n='sphere2' )
+        cmds.sphere( n='sphere3' )
+        cmds.sphere( n='sphere4' )
+        cmds.container( addNode=['sphere1', 'sphere2', 'sphere3', 'sphere4'], n='sphereCon' )
+        # The container sphereCon contains sphere1, sphere2, sphere3 and sphere4.
+        # The command below moves sphere2 before sphere1.
+        cmds.reorderContainer( 'sphere2', r=-1 )
+        # make sphere1 the first sibling
+        cmds.reorderContainer( 'sphere1', front=True )
+        # move sphere3 forward 2 siblings. Moving it forward one
+        # sibling would put it at the end. Moving it forward again
+        # puts it at the beginning.
+        cmds.reorderContainer( 'sphere3', r=2 )
+    ```
 
     ---
     - Args:
@@ -71,6 +111,26 @@ def reorderContainer(back: bool = ..., b: bool = ..., front: bool = ..., f: bool
     the effects of reordering, use the -unsortedOrder flag in conjunction with the
     -nodeList flag.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a container
+        cmds.sphere( n='sphere1' )
+        cmds.sphere( n='sphere2' )
+        cmds.sphere( n='sphere3' )
+        cmds.sphere( n='sphere4' )
+        cmds.container( addNode=['sphere1', 'sphere2', 'sphere3', 'sphere4'], n='sphereCon' )
+        # The container sphereCon contains sphere1, sphere2, sphere3 and sphere4.
+        # The command below moves sphere2 before sphere1.
+        cmds.reorderContainer( 'sphere2', r=-1 )
+        # make sphere1 the first sibling
+        cmds.reorderContainer( 'sphere1', front=True )
+        # move sphere3 forward 2 siblings. Moving it forward one
+        # sibling would put it at the end. Moving it forward again
+        # puts it at the beginning.
+        cmds.reorderContainer( 'sphere3', r=2 )
+    ```
+
     ---
     - Args:
         - back (b): Move object(s) to back of container contents list
@@ -95,6 +155,26 @@ def reorderContainer(back: bool = ..., front: bool = ..., relative: int = ..., q
     command's -nodeList flag will return a sorted list of contained nodes. To see
     the effects of reordering, use the -unsortedOrder flag in conjunction with the
     -nodeList flag.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a container
+        cmds.sphere( n='sphere1' )
+        cmds.sphere( n='sphere2' )
+        cmds.sphere( n='sphere3' )
+        cmds.sphere( n='sphere4' )
+        cmds.container( addNode=['sphere1', 'sphere2', 'sphere3', 'sphere4'], n='sphereCon' )
+        # The container sphereCon contains sphere1, sphere2, sphere3 and sphere4.
+        # The command below moves sphere2 before sphere1.
+        cmds.reorderContainer( 'sphere2', r=-1 )
+        # make sphere1 the first sibling
+        cmds.reorderContainer( 'sphere1', front=True )
+        # move sphere3 forward 2 siblings. Moving it forward one
+        # sibling would put it at the end. Moving it forward again
+        # puts it at the beginning.
+        cmds.reorderContainer( 'sphere3', r=2 )
+    ```
 
     ---
     - Args:
@@ -122,6 +202,26 @@ def reorderContainer(b: bool = ..., f: bool = ..., r: int = ..., q: bool = ...) 
     the effects of reordering, use the -unsortedOrder flag in conjunction with the
     -nodeList flag.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a container
+        cmds.sphere( n='sphere1' )
+        cmds.sphere( n='sphere2' )
+        cmds.sphere( n='sphere3' )
+        cmds.sphere( n='sphere4' )
+        cmds.container( addNode=['sphere1', 'sphere2', 'sphere3', 'sphere4'], n='sphereCon' )
+        # The container sphereCon contains sphere1, sphere2, sphere3 and sphere4.
+        # The command below moves sphere2 before sphere1.
+        cmds.reorderContainer( 'sphere2', r=-1 )
+        # make sphere1 the first sibling
+        cmds.reorderContainer( 'sphere1', front=True )
+        # move sphere3 forward 2 siblings. Moving it forward one
+        # sibling would put it at the end. Moving it forward again
+        # puts it at the beginning.
+        cmds.reorderContainer( 'sphere3', r=2 )
+    ```
+
     ---
     - Args:
         - back (b): Move object(s) to back of container contents list
@@ -147,6 +247,26 @@ def reorderContainer(back: bool = ..., b: bool = ..., front: bool = ..., f: bool
     command's -nodeList flag will return a sorted list of contained nodes. To see
     the effects of reordering, use the -unsortedOrder flag in conjunction with the
     -nodeList flag.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a container
+        cmds.sphere( n='sphere1' )
+        cmds.sphere( n='sphere2' )
+        cmds.sphere( n='sphere3' )
+        cmds.sphere( n='sphere4' )
+        cmds.container( addNode=['sphere1', 'sphere2', 'sphere3', 'sphere4'], n='sphereCon' )
+        # The container sphereCon contains sphere1, sphere2, sphere3 and sphere4.
+        # The command below moves sphere2 before sphere1.
+        cmds.reorderContainer( 'sphere2', r=-1 )
+        # make sphere1 the first sibling
+        cmds.reorderContainer( 'sphere1', front=True )
+        # move sphere3 forward 2 siblings. Moving it forward one
+        # sibling would put it at the end. Moving it forward again
+        # puts it at the beginning.
+        cmds.reorderContainer( 'sphere3', r=2 )
+    ```
 
     ---
     - Args:
@@ -174,6 +294,26 @@ def reorderContainer(back: bool = ..., front: bool = ..., relative: int = ..., e
     the effects of reordering, use the -unsortedOrder flag in conjunction with the
     -nodeList flag.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a container
+        cmds.sphere( n='sphere1' )
+        cmds.sphere( n='sphere2' )
+        cmds.sphere( n='sphere3' )
+        cmds.sphere( n='sphere4' )
+        cmds.container( addNode=['sphere1', 'sphere2', 'sphere3', 'sphere4'], n='sphereCon' )
+        # The container sphereCon contains sphere1, sphere2, sphere3 and sphere4.
+        # The command below moves sphere2 before sphere1.
+        cmds.reorderContainer( 'sphere2', r=-1 )
+        # make sphere1 the first sibling
+        cmds.reorderContainer( 'sphere1', front=True )
+        # move sphere3 forward 2 siblings. Moving it forward one
+        # sibling would put it at the end. Moving it forward again
+        # puts it at the beginning.
+        cmds.reorderContainer( 'sphere3', r=2 )
+    ```
+
     ---
     - Args:
         - back (b): Move object(s) to back of container contents list
@@ -200,6 +340,26 @@ def reorderContainer(b: bool = ..., f: bool = ..., r: int = ..., e: bool = ...) 
     the effects of reordering, use the -unsortedOrder flag in conjunction with the
     -nodeList flag.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a container
+        cmds.sphere( n='sphere1' )
+        cmds.sphere( n='sphere2' )
+        cmds.sphere( n='sphere3' )
+        cmds.sphere( n='sphere4' )
+        cmds.container( addNode=['sphere1', 'sphere2', 'sphere3', 'sphere4'], n='sphereCon' )
+        # The container sphereCon contains sphere1, sphere2, sphere3 and sphere4.
+        # The command below moves sphere2 before sphere1.
+        cmds.reorderContainer( 'sphere2', r=-1 )
+        # make sphere1 the first sibling
+        cmds.reorderContainer( 'sphere1', front=True )
+        # move sphere3 forward 2 siblings. Moving it forward one
+        # sibling would put it at the end. Moving it forward again
+        # puts it at the beginning.
+        cmds.reorderContainer( 'sphere3', r=2 )
+    ```
+
     ---
     - Args:
         - back (b): Move object(s) to back of container contents list
@@ -225,6 +385,26 @@ def reorderContainer(back: bool = ..., b: bool = ..., front: bool = ..., f: bool
     command's -nodeList flag will return a sorted list of contained nodes. To see
     the effects of reordering, use the -unsortedOrder flag in conjunction with the
     -nodeList flag.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a container
+        cmds.sphere( n='sphere1' )
+        cmds.sphere( n='sphere2' )
+        cmds.sphere( n='sphere3' )
+        cmds.sphere( n='sphere4' )
+        cmds.container( addNode=['sphere1', 'sphere2', 'sphere3', 'sphere4'], n='sphereCon' )
+        # The container sphereCon contains sphere1, sphere2, sphere3 and sphere4.
+        # The command below moves sphere2 before sphere1.
+        cmds.reorderContainer( 'sphere2', r=-1 )
+        # make sphere1 the first sibling
+        cmds.reorderContainer( 'sphere1', front=True )
+        # move sphere3 forward 2 siblings. Moving it forward one
+        # sibling would put it at the end. Moving it forward again
+        # puts it at the beginning.
+        cmds.reorderContainer( 'sphere3', r=2 )
+    ```
 
     ---
     - Args:

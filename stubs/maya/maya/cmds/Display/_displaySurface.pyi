@@ -10,6 +10,15 @@ def displaySurface([objects...]: [objects...], flipNormals: bool = ..., twoSided
     Typically this command applies to NURBS or poly mesh surfaces and ignores
     other type of objects.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sphere(n='mySphere1')
+        cmds.sphere(n='mySphere2')
+        cmds.displaySurface( ['mySphere1', 'mySphere2'], two=False )
+        cmds.displaySurface( xRay=True )
+    ```
+
     ---
     - Args:
         - [objects...]: Input item(s).
@@ -26,6 +35,15 @@ def displaySurface([objects...]: [objects...], flp: bool = ..., two: bool = ...,
     Typically this command applies to NURBS or poly mesh surfaces and ignores
     other type of objects.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sphere(n='mySphere1')
+        cmds.sphere(n='mySphere2')
+        cmds.displaySurface( ['mySphere1', 'mySphere2'], two=False )
+        cmds.displaySurface( xRay=True )
+    ```
+
     ---
     - Args:
         - [objects...]: Input item(s).
@@ -41,6 +59,15 @@ def displaySurface([objects...]: [objects...], flipNormals: bool = ..., flp: boo
     This command toggles display options on the specified or active surfaces.
     Typically this command applies to NURBS or poly mesh surfaces and ignores
     other type of objects.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sphere(n='mySphere1')
+        cmds.sphere(n='mySphere2')
+        cmds.displaySurface( ['mySphere1', 'mySphere2'], two=False )
+        cmds.displaySurface( xRay=True )
+    ```
 
     ---
     - Args:

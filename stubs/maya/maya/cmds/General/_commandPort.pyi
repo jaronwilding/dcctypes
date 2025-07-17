@@ -23,6 +23,18 @@ def commandPort(bufferSize: int = ..., close: bool = ..., echoOutput: bool = ...
     The query flag can be used to determine if a given command port exists. See
     examples below.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Open a command port with the default name "mayaCommand".
+        cmds.commandPort()
+        # Close the command port with the default name. Open client connections
+        # are not broken.
+        cmds.commandPort( cl=True )
+        # Query to see if the command command port "mayaCommand" exists.
+        cmds.commandPort( 'mayaCommand', q=True )
+    ```
+
     ---
     - Args:
         - bufferSize (bs): Commands and results are each subject to size limits. This option allows the user to specify the size of the buffer used to communicate with Maya. If unspecified the default buffer size is 4096 characters. Commands longer than bufferSize
@@ -63,6 +75,18 @@ def commandPort(bs: int = ..., cl: bool = ..., eo: bool = ..., lp: bool = ..., n
     The query flag can be used to determine if a given command port exists. See
     examples below.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Open a command port with the default name "mayaCommand".
+        cmds.commandPort()
+        # Close the command port with the default name. Open client connections
+        # are not broken.
+        cmds.commandPort( cl=True )
+        # Query to see if the command command port "mayaCommand" exists.
+        cmds.commandPort( 'mayaCommand', q=True )
+    ```
+
     ---
     - Args:
         - bufferSize (bs): Commands and results are each subject to size limits. This option allows the user to specify the size of the buffer used to communicate with Maya. If unspecified the default buffer size is 4096 characters. Commands longer than bufferSize
@@ -102,6 +126,18 @@ def commandPort(bufferSize: int = ..., bs: int = ..., close: bool = ..., cl: boo
     
     The query flag can be used to determine if a given command port exists. See
     examples below.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Open a command port with the default name "mayaCommand".
+        cmds.commandPort()
+        # Close the command port with the default name. Open client connections
+        # are not broken.
+        cmds.commandPort( cl=True )
+        # Query to see if the command command port "mayaCommand" exists.
+        cmds.commandPort( 'mayaCommand', q=True )
+    ```
 
     ---
     - Args:

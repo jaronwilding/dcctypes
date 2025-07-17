@@ -8,6 +8,17 @@ def propModCtx(string: str, animCurve: str = ..., animCurveFalloff: [float, floa
     
     Controls the proportional move context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Edit type of propmod context.
+        cmds.propModCtx( 'PropMod', e=True, t=1 )
+        # Activate propmod context.
+        cmds.setToolTo( 'PropMod' )
+        # Change the type and dropoff.
+        cmds.propModCtx( 'PropMod', e=True, d=(0, 1, 0) )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -39,6 +50,17 @@ def propModCtx(string: str, ac: str = ..., acf: [float, float] = ..., acp: str =
     """propModCtx is undoable, queryable, and editable.
     
     Controls the proportional move context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Edit type of propmod context.
+        cmds.propModCtx( 'PropMod', e=True, t=1 )
+        # Activate propmod context.
+        cmds.setToolTo( 'PropMod' )
+        # Change the type and dropoff.
+        cmds.propModCtx( 'PropMod', e=True, d=(0, 1, 0) )
+    ```
 
     ---
     - Args:
@@ -72,6 +94,17 @@ def propModCtx(string: str, animCurve: str = ..., ac: str = ..., animCurveFallof
     
     Controls the proportional move context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Edit type of propmod context.
+        cmds.propModCtx( 'PropMod', e=True, t=1 )
+        # Activate propmod context.
+        cmds.setToolTo( 'PropMod' )
+        # Change the type and dropoff.
+        cmds.propModCtx( 'PropMod', e=True, d=(0, 1, 0) )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -103,6 +136,17 @@ def propModCtx(string: str, animCurve: str = ..., animCurveFalloff: [float, floa
     """propModCtx is undoable, queryable, and editable.
     
     Controls the proportional move context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Edit type of propmod context.
+        cmds.propModCtx( 'PropMod', e=True, t=1 )
+        # Activate propmod context.
+        cmds.setToolTo( 'PropMod' )
+        # Change the type and dropoff.
+        cmds.propModCtx( 'PropMod', e=True, d=(0, 1, 0) )
+    ```
 
     ---
     - Args:
@@ -136,6 +180,17 @@ def propModCtx(string: str, ac: str = ..., acf: [float, float] = ..., acp: str =
     
     Controls the proportional move context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Edit type of propmod context.
+        cmds.propModCtx( 'PropMod', e=True, t=1 )
+        # Activate propmod context.
+        cmds.setToolTo( 'PropMod' )
+        # Change the type and dropoff.
+        cmds.propModCtx( 'PropMod', e=True, d=(0, 1, 0) )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -167,6 +222,17 @@ def propModCtx(string: str, animCurve: str = ..., ac: str = ..., animCurveFallof
     """propModCtx is undoable, queryable, and editable.
     
     Controls the proportional move context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Edit type of propmod context.
+        cmds.propModCtx( 'PropMod', e=True, t=1 )
+        # Activate propmod context.
+        cmds.setToolTo( 'PropMod' )
+        # Change the type and dropoff.
+        cmds.propModCtx( 'PropMod', e=True, d=(0, 1, 0) )
+    ```
 
     ---
     - Args:
@@ -200,6 +266,17 @@ def propModCtx(string: str, animCurve: str = ..., animCurveFalloff: [float, floa
     
     Controls the proportional move context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Edit type of propmod context.
+        cmds.propModCtx( 'PropMod', e=True, t=1 )
+        # Activate propmod context.
+        cmds.setToolTo( 'PropMod' )
+        # Change the type and dropoff.
+        cmds.propModCtx( 'PropMod', e=True, d=(0, 1, 0) )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -232,6 +309,17 @@ def propModCtx(string: str, ac: str = ..., acf: [float, float] = ..., acp: str =
     
     Controls the proportional move context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Edit type of propmod context.
+        cmds.propModCtx( 'PropMod', e=True, t=1 )
+        # Activate propmod context.
+        cmds.setToolTo( 'PropMod' )
+        # Change the type and dropoff.
+        cmds.propModCtx( 'PropMod', e=True, d=(0, 1, 0) )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -263,6 +351,17 @@ def propModCtx(string: str, animCurve: str = ..., ac: str = ..., animCurveFallof
     """propModCtx is undoable, queryable, and editable.
     
     Controls the proportional move context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Edit type of propmod context.
+        cmds.propModCtx( 'PropMod', e=True, t=1 )
+        # Activate propmod context.
+        cmds.setToolTo( 'PropMod' )
+        # Change the type and dropoff.
+        cmds.propModCtx( 'PropMod', e=True, d=(0, 1, 0) )
+    ```
 
     ---
     - Args:

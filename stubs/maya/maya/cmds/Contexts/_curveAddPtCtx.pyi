@@ -9,6 +9,14 @@ def curveAddPtCtx(exists: bool = ..., image1: str = ..., image2: str = ..., imag
     The curveAddPtCtx command creates a new curve add points context, which adds
     either control vertices (CVs) or edit points to an existing curve.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context:
+        cmds.curveAddPtCtx("CurveAddPtCtx")
+        cmds.setToolTo("CurveAddPtCtx")
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -22,6 +30,14 @@ def curveAddPtCtx(ex: bool = ..., i1: str = ..., i2: str = ..., i3: str = ...) -
     
     The curveAddPtCtx command creates a new curve add points context, which adds
     either control vertices (CVs) or edit points to an existing curve.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context:
+        cmds.curveAddPtCtx("CurveAddPtCtx")
+        cmds.setToolTo("CurveAddPtCtx")
+    ```
 
     ---
     - Args:
@@ -37,6 +53,14 @@ def curveAddPtCtx(exists: bool = ..., ex: bool = ..., image1: str = ..., i1: str
     The curveAddPtCtx command creates a new curve add points context, which adds
     either control vertices (CVs) or edit points to an existing curve.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context:
+        cmds.curveAddPtCtx("CurveAddPtCtx")
+        cmds.setToolTo("CurveAddPtCtx")
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -50,6 +74,14 @@ def curveAddPtCtx(image1: str = ..., image2: str = ..., image3: str = ..., query
     
     The curveAddPtCtx command creates a new curve add points context, which adds
     either control vertices (CVs) or edit points to an existing curve.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context:
+        cmds.curveAddPtCtx("CurveAddPtCtx")
+        cmds.setToolTo("CurveAddPtCtx")
+    ```
 
     ---
     - Args:
@@ -65,6 +97,14 @@ def curveAddPtCtx(i1: str = ..., i2: str = ..., i3: str = ..., q: bool = ...) ->
     The curveAddPtCtx command creates a new curve add points context, which adds
     either control vertices (CVs) or edit points to an existing curve.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context:
+        cmds.curveAddPtCtx("CurveAddPtCtx")
+        cmds.setToolTo("CurveAddPtCtx")
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -78,6 +118,14 @@ def curveAddPtCtx(image1: str = ..., i1: str = ..., image2: str = ..., i2: str =
     
     The curveAddPtCtx command creates a new curve add points context, which adds
     either control vertices (CVs) or edit points to an existing curve.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context:
+        cmds.curveAddPtCtx("CurveAddPtCtx")
+        cmds.setToolTo("CurveAddPtCtx")
+    ```
 
     ---
     - Args:
@@ -93,6 +141,14 @@ def curveAddPtCtx(image1: str = ..., image2: str = ..., image3: str = ..., edit:
     The curveAddPtCtx command creates a new curve add points context, which adds
     either control vertices (CVs) or edit points to an existing curve.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context:
+        cmds.curveAddPtCtx("CurveAddPtCtx")
+        cmds.setToolTo("CurveAddPtCtx")
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -107,6 +163,14 @@ def curveAddPtCtx(i1: str = ..., i2: str = ..., i3: str = ..., e: bool = ...) ->
     The curveAddPtCtx command creates a new curve add points context, which adds
     either control vertices (CVs) or edit points to an existing curve.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context:
+        cmds.curveAddPtCtx("CurveAddPtCtx")
+        cmds.setToolTo("CurveAddPtCtx")
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -120,6 +184,14 @@ def curveAddPtCtx(image1: str = ..., i1: str = ..., image2: str = ..., i2: str =
     
     The curveAddPtCtx command creates a new curve add points context, which adds
     either control vertices (CVs) or edit points to an existing curve.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context:
+        cmds.curveAddPtCtx("CurveAddPtCtx")
+        cmds.setToolTo("CurveAddPtCtx")
+    ```
 
     ---
     - Args:

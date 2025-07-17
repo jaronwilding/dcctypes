@@ -9,6 +9,28 @@ def draggerContext([name]: [name], cursor: str = ..., dragCommand: script = ...,
     The draggerContext allows the user to program the behavior of the mouse or an
     equivalent dragging device in MEL.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Procedure called on press
+        def SampleContextPress():
+        pressPosition = cmds.draggerContext( 'sampleContext', query=True, anchorPoint=True)
+        print ("Press: " + str(pressPosition))
+        # Procedure called on drag
+        def SampleContextDrag():
+        dragPosition = cmds.draggerContext( 'sampleContext', query=True, dragPoint=True)
+        button = cmds.draggerContext( 'sampleContext', query=True, button=True)
+        modifier = cmds.draggerContext( 'sampleContext', query=True, modifier=True)
+        print ("Drag: " + str(dragPosition) + "  Button is " + str(button) + "  Modifier is " + modifier + "\n")
+        message = str(dragPosition[0]) + ", " + str(dragPosition[1])
+        cmds.draggerContext( 'sampleContext', edit=True, drawString=message)
+        # Define draggerContext with press and drag procedures
+        cmds.draggerContext( 'sampleContext', pressCommand='SampleContextPress()', dragCommand='SampleContextDrag()', cursor='hand' );
+        # Set the tool to the sample context created
+        # Results can be observed by dragging mouse around main window
+        cmds.setToolTo('sampleContext')
+    ```
+
     ---
     - Args:
         - [name]: Input item(s).
@@ -44,6 +66,28 @@ def draggerContext([name]: [name], cur: str = ..., dc: script = ..., ds: str = .
     
     The draggerContext allows the user to program the behavior of the mouse or an
     equivalent dragging device in MEL.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Procedure called on press
+        def SampleContextPress():
+        pressPosition = cmds.draggerContext( 'sampleContext', query=True, anchorPoint=True)
+        print ("Press: " + str(pressPosition))
+        # Procedure called on drag
+        def SampleContextDrag():
+        dragPosition = cmds.draggerContext( 'sampleContext', query=True, dragPoint=True)
+        button = cmds.draggerContext( 'sampleContext', query=True, button=True)
+        modifier = cmds.draggerContext( 'sampleContext', query=True, modifier=True)
+        print ("Drag: " + str(dragPosition) + "  Button is " + str(button) + "  Modifier is " + modifier + "\n")
+        message = str(dragPosition[0]) + ", " + str(dragPosition[1])
+        cmds.draggerContext( 'sampleContext', edit=True, drawString=message)
+        # Define draggerContext with press and drag procedures
+        cmds.draggerContext( 'sampleContext', pressCommand='SampleContextPress()', dragCommand='SampleContextDrag()', cursor='hand' );
+        # Set the tool to the sample context created
+        # Results can be observed by dragging mouse around main window
+        cmds.setToolTo('sampleContext')
+    ```
 
     ---
     - Args:
@@ -81,6 +125,28 @@ def draggerContext([name]: [name], cursor: str = ..., cur: str = ..., dragComman
     The draggerContext allows the user to program the behavior of the mouse or an
     equivalent dragging device in MEL.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Procedure called on press
+        def SampleContextPress():
+        pressPosition = cmds.draggerContext( 'sampleContext', query=True, anchorPoint=True)
+        print ("Press: " + str(pressPosition))
+        # Procedure called on drag
+        def SampleContextDrag():
+        dragPosition = cmds.draggerContext( 'sampleContext', query=True, dragPoint=True)
+        button = cmds.draggerContext( 'sampleContext', query=True, button=True)
+        modifier = cmds.draggerContext( 'sampleContext', query=True, modifier=True)
+        print ("Drag: " + str(dragPosition) + "  Button is " + str(button) + "  Modifier is " + modifier + "\n")
+        message = str(dragPosition[0]) + ", " + str(dragPosition[1])
+        cmds.draggerContext( 'sampleContext', edit=True, drawString=message)
+        # Define draggerContext with press and drag procedures
+        cmds.draggerContext( 'sampleContext', pressCommand='SampleContextPress()', dragCommand='SampleContextDrag()', cursor='hand' );
+        # Set the tool to the sample context created
+        # Results can be observed by dragging mouse around main window
+        cmds.setToolTo('sampleContext')
+    ```
+
     ---
     - Args:
         - [name]: Input item(s).
@@ -111,11 +177,33 @@ def draggerContext([name]: [name], cursor: str = ..., cur: str = ..., dragComman
             context.
     """
 @overload #Overload for draggerContext in ['query']
-def draggerContext([name]: [name], anchorPoint: [float, float, float] = ..., button: int = ..., currentStep: int = ..., cursor: str = ..., dragCommand: script = ..., dragPoint: [float, float, float] = ..., drawString: str = ..., finalize: script = ..., helpString: str = ..., holdCommand: script = ..., image1: str = ..., image2: str = ..., image3: str = ..., initialize: script = ..., modifier: str = ..., plane: [float, float, float] = ..., prePressCommand: script = ..., pressCommand: script = ..., projection: str = ..., releaseCommand: script = ..., snapping: bool = ..., space: str = ..., stepsCount: int = ..., undoMode: str = ..., query: bool = ...) -> str:
+def draggerContext([name]: [name], anchorPoint: [float, float, float] = ..., button: int = ..., currentStep: int = ..., cursor: str = ..., dragCommand: script = ..., dragPoint: [float, float, float] = ..., finalize: script = ..., helpString: str = ..., holdCommand: script = ..., image1: str = ..., image2: str = ..., image3: str = ..., initialize: script = ..., modifier: str = ..., prePressCommand: script = ..., pressCommand: script = ..., projection: str = ..., releaseCommand: script = ..., snapping: bool = ..., space: str = ..., stepsCount: int = ..., undoMode: str = ..., query: bool = ...) -> str:
     """draggerContext is undoable, queryable, and editable.
     
     The draggerContext allows the user to program the behavior of the mouse or an
     equivalent dragging device in MEL.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Procedure called on press
+        def SampleContextPress():
+        pressPosition = cmds.draggerContext( 'sampleContext', query=True, anchorPoint=True)
+        print ("Press: " + str(pressPosition))
+        # Procedure called on drag
+        def SampleContextDrag():
+        dragPosition = cmds.draggerContext( 'sampleContext', query=True, dragPoint=True)
+        button = cmds.draggerContext( 'sampleContext', query=True, button=True)
+        modifier = cmds.draggerContext( 'sampleContext', query=True, modifier=True)
+        print ("Drag: " + str(dragPosition) + "  Button is " + str(button) + "  Modifier is " + modifier + "\n")
+        message = str(dragPosition[0]) + ", " + str(dragPosition[1])
+        cmds.draggerContext( 'sampleContext', edit=True, drawString=message)
+        # Define draggerContext with press and drag procedures
+        cmds.draggerContext( 'sampleContext', pressCommand='SampleContextPress()', dragCommand='SampleContextDrag()', cursor='hand' );
+        # Set the tool to the sample context created
+        # Results can be observed by dragging mouse around main window
+        cmds.setToolTo('sampleContext')
+    ```
 
     ---
     - Args:
@@ -126,7 +214,6 @@ def draggerContext([name]: [name], anchorPoint: [float, float, float] = ..., but
         - cursor (cur): Cursor displayed while context is active.  Valid values are: "default", "hand", "crossHair", "dolly", "track", and "tumble".
         - dragCommand (dc): Command called when mouse dragger is dragged.
         - dragPoint (dp): Drag point (double array) current position of dragger during drag.
-        - drawString (ds): A string to be drawn at the current position of the pointer.
         - finalize (fnz): Command called when the tool is exited.
         - helpString (hs): Help string for context
         - holdCommand (hc): Command called when mouse dragger is held.
@@ -135,7 +222,6 @@ def draggerContext([name]: [name], anchorPoint: [float, float, float] = ..., but
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
         - initialize (inz): Command called when the tool is entered.
         - modifier (mo): Returns the current modifier type:  ctrl, alt or none.
-        - plane (pl): Provide normal of projection plane (see -projection flag for details).
         - prePressCommand (ppc): Command called when mouse dragger is pressed. It is called before pressCommand, so it can be used for initialization of context.
         - pressCommand (pc): Command called when mouse dragger is pressed.
         - projection (pr): Sets current projection of drag point. Valid types are:viewPlaneproject to view planeobjectViewPlaneproject to object plane (parallel to view plane)objectPlaneproject to specified plane defined by object location and normal (default)
@@ -151,11 +237,33 @@ def draggerContext([name]: [name], anchorPoint: [float, float, float] = ..., but
         - query (q): Query mode flag
     """
 @overload #Overload for draggerContext in ['query']
-def draggerContext([name]: [name], ap: [float, float, float] = ..., bu: int = ..., cs: int = ..., cur: str = ..., dc: script = ..., dp: [float, float, float] = ..., ds: str = ..., fnz: script = ..., hs: str = ..., hc: script = ..., i1: str = ..., i2: str = ..., i3: str = ..., inz: script = ..., mo: str = ..., pl: [float, float, float] = ..., ppc: script = ..., pc: script = ..., pr: str = ..., rc: script = ..., snp: bool = ..., sp: str = ..., sc: int = ..., um: str = ..., q: bool = ...) -> str:
+def draggerContext([name]: [name], ap: [float, float, float] = ..., bu: int = ..., cs: int = ..., cur: str = ..., dc: script = ..., dp: [float, float, float] = ..., fnz: script = ..., hs: str = ..., hc: script = ..., i1: str = ..., i2: str = ..., i3: str = ..., inz: script = ..., mo: str = ..., ppc: script = ..., pc: script = ..., pr: str = ..., rc: script = ..., snp: bool = ..., sp: str = ..., sc: int = ..., um: str = ..., q: bool = ...) -> str:
     """draggerContext is undoable, queryable, and editable.
     
     The draggerContext allows the user to program the behavior of the mouse or an
     equivalent dragging device in MEL.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Procedure called on press
+        def SampleContextPress():
+        pressPosition = cmds.draggerContext( 'sampleContext', query=True, anchorPoint=True)
+        print ("Press: " + str(pressPosition))
+        # Procedure called on drag
+        def SampleContextDrag():
+        dragPosition = cmds.draggerContext( 'sampleContext', query=True, dragPoint=True)
+        button = cmds.draggerContext( 'sampleContext', query=True, button=True)
+        modifier = cmds.draggerContext( 'sampleContext', query=True, modifier=True)
+        print ("Drag: " + str(dragPosition) + "  Button is " + str(button) + "  Modifier is " + modifier + "\n")
+        message = str(dragPosition[0]) + ", " + str(dragPosition[1])
+        cmds.draggerContext( 'sampleContext', edit=True, drawString=message)
+        # Define draggerContext with press and drag procedures
+        cmds.draggerContext( 'sampleContext', pressCommand='SampleContextPress()', dragCommand='SampleContextDrag()', cursor='hand' );
+        # Set the tool to the sample context created
+        # Results can be observed by dragging mouse around main window
+        cmds.setToolTo('sampleContext')
+    ```
 
     ---
     - Args:
@@ -166,7 +274,6 @@ def draggerContext([name]: [name], ap: [float, float, float] = ..., bu: int = ..
         - cursor (cur): Cursor displayed while context is active.  Valid values are: "default", "hand", "crossHair", "dolly", "track", and "tumble".
         - dragCommand (dc): Command called when mouse dragger is dragged.
         - dragPoint (dp): Drag point (double array) current position of dragger during drag.
-        - drawString (ds): A string to be drawn at the current position of the pointer.
         - finalize (fnz): Command called when the tool is exited.
         - helpString (hs): Help string for context
         - holdCommand (hc): Command called when mouse dragger is held.
@@ -175,7 +282,6 @@ def draggerContext([name]: [name], ap: [float, float, float] = ..., bu: int = ..
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
         - initialize (inz): Command called when the tool is entered.
         - modifier (mo): Returns the current modifier type:  ctrl, alt or none.
-        - plane (pl): Provide normal of projection plane (see -projection flag for details).
         - prePressCommand (ppc): Command called when mouse dragger is pressed. It is called before pressCommand, so it can be used for initialization of context.
         - pressCommand (pc): Command called when mouse dragger is pressed.
         - projection (pr): Sets current projection of drag point. Valid types are:viewPlaneproject to view planeobjectViewPlaneproject to object plane (parallel to view plane)objectPlaneproject to specified plane defined by object location and normal (default)
@@ -191,11 +297,33 @@ def draggerContext([name]: [name], ap: [float, float, float] = ..., bu: int = ..
         - query (q): Query mode flag
     """
 @overload #Overload for draggerContext in ['query']
-def draggerContext([name]: [name], anchorPoint: [float, float, float] = ..., ap: [float, float, float] = ..., button: int = ..., bu: int = ..., currentStep: int = ..., cs: int = ..., cursor: str = ..., cur: str = ..., dragCommand: script = ..., dc: script = ..., dragPoint: [float, float, float] = ..., dp: [float, float, float] = ..., drawString: str = ..., ds: str = ..., finalize: script = ..., fnz: script = ..., helpString: str = ..., hs: str = ..., holdCommand: script = ..., hc: script = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., initialize: script = ..., inz: script = ..., modifier: str = ..., mo: str = ..., plane: [float, float, float] = ..., pl: [float, float, float] = ..., prePressCommand: script = ..., ppc: script = ..., pressCommand: script = ..., pc: script = ..., projection: str = ..., pr: str = ..., releaseCommand: script = ..., rc: script = ..., snapping: bool = ..., snp: bool = ..., space: str = ..., sp: str = ..., stepsCount: int = ..., sc: int = ..., undoMode: str = ..., um: str = ..., query: bool = ..., q: bool = ...) -> str:
+def draggerContext([name]: [name], anchorPoint: [float, float, float] = ..., ap: [float, float, float] = ..., button: int = ..., bu: int = ..., currentStep: int = ..., cs: int = ..., cursor: str = ..., cur: str = ..., dragCommand: script = ..., dc: script = ..., dragPoint: [float, float, float] = ..., dp: [float, float, float] = ..., finalize: script = ..., fnz: script = ..., helpString: str = ..., hs: str = ..., holdCommand: script = ..., hc: script = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., initialize: script = ..., inz: script = ..., modifier: str = ..., mo: str = ..., prePressCommand: script = ..., ppc: script = ..., pressCommand: script = ..., pc: script = ..., projection: str = ..., pr: str = ..., releaseCommand: script = ..., rc: script = ..., snapping: bool = ..., snp: bool = ..., space: str = ..., sp: str = ..., stepsCount: int = ..., sc: int = ..., undoMode: str = ..., um: str = ..., query: bool = ..., q: bool = ...) -> str:
     """draggerContext is undoable, queryable, and editable.
     
     The draggerContext allows the user to program the behavior of the mouse or an
     equivalent dragging device in MEL.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Procedure called on press
+        def SampleContextPress():
+        pressPosition = cmds.draggerContext( 'sampleContext', query=True, anchorPoint=True)
+        print ("Press: " + str(pressPosition))
+        # Procedure called on drag
+        def SampleContextDrag():
+        dragPosition = cmds.draggerContext( 'sampleContext', query=True, dragPoint=True)
+        button = cmds.draggerContext( 'sampleContext', query=True, button=True)
+        modifier = cmds.draggerContext( 'sampleContext', query=True, modifier=True)
+        print ("Drag: " + str(dragPosition) + "  Button is " + str(button) + "  Modifier is " + modifier + "\n")
+        message = str(dragPosition[0]) + ", " + str(dragPosition[1])
+        cmds.draggerContext( 'sampleContext', edit=True, drawString=message)
+        # Define draggerContext with press and drag procedures
+        cmds.draggerContext( 'sampleContext', pressCommand='SampleContextPress()', dragCommand='SampleContextDrag()', cursor='hand' );
+        # Set the tool to the sample context created
+        # Results can be observed by dragging mouse around main window
+        cmds.setToolTo('sampleContext')
+    ```
 
     ---
     - Args:
@@ -206,7 +334,6 @@ def draggerContext([name]: [name], anchorPoint: [float, float, float] = ..., ap:
         - cursor (cur): Cursor displayed while context is active.  Valid values are: "default", "hand", "crossHair", "dolly", "track", and "tumble".
         - dragCommand (dc): Command called when mouse dragger is dragged.
         - dragPoint (dp): Drag point (double array) current position of dragger during drag.
-        - drawString (ds): A string to be drawn at the current position of the pointer.
         - finalize (fnz): Command called when the tool is exited.
         - helpString (hs): Help string for context
         - holdCommand (hc): Command called when mouse dragger is held.
@@ -215,7 +342,6 @@ def draggerContext([name]: [name], anchorPoint: [float, float, float] = ..., ap:
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
         - initialize (inz): Command called when the tool is entered.
         - modifier (mo): Returns the current modifier type:  ctrl, alt or none.
-        - plane (pl): Provide normal of projection plane (see -projection flag for details).
         - prePressCommand (ppc): Command called when mouse dragger is pressed. It is called before pressCommand, so it can be used for initialization of context.
         - pressCommand (pc): Command called when mouse dragger is pressed.
         - projection (pr): Sets current projection of drag point. Valid types are:viewPlaneproject to view planeobjectViewPlaneproject to object plane (parallel to view plane)objectPlaneproject to specified plane defined by object location and normal (default)
@@ -236,6 +362,28 @@ def draggerContext([name]: [name], cursor: str = ..., dragCommand: script = ...,
     
     The draggerContext allows the user to program the behavior of the mouse or an
     equivalent dragging device in MEL.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Procedure called on press
+        def SampleContextPress():
+        pressPosition = cmds.draggerContext( 'sampleContext', query=True, anchorPoint=True)
+        print ("Press: " + str(pressPosition))
+        # Procedure called on drag
+        def SampleContextDrag():
+        dragPosition = cmds.draggerContext( 'sampleContext', query=True, dragPoint=True)
+        button = cmds.draggerContext( 'sampleContext', query=True, button=True)
+        modifier = cmds.draggerContext( 'sampleContext', query=True, modifier=True)
+        print ("Drag: " + str(dragPosition) + "  Button is " + str(button) + "  Modifier is " + modifier + "\n")
+        message = str(dragPosition[0]) + ", " + str(dragPosition[1])
+        cmds.draggerContext( 'sampleContext', edit=True, drawString=message)
+        # Define draggerContext with press and drag procedures
+        cmds.draggerContext( 'sampleContext', pressCommand='SampleContextPress()', dragCommand='SampleContextDrag()', cursor='hand' );
+        # Set the tool to the sample context created
+        # Results can be observed by dragging mouse around main window
+        cmds.setToolTo('sampleContext')
+    ```
 
     ---
     - Args:
@@ -271,6 +419,28 @@ def draggerContext([name]: [name], cur: str = ..., dc: script = ..., ds: str = .
     The draggerContext allows the user to program the behavior of the mouse or an
     equivalent dragging device in MEL.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Procedure called on press
+        def SampleContextPress():
+        pressPosition = cmds.draggerContext( 'sampleContext', query=True, anchorPoint=True)
+        print ("Press: " + str(pressPosition))
+        # Procedure called on drag
+        def SampleContextDrag():
+        dragPosition = cmds.draggerContext( 'sampleContext', query=True, dragPoint=True)
+        button = cmds.draggerContext( 'sampleContext', query=True, button=True)
+        modifier = cmds.draggerContext( 'sampleContext', query=True, modifier=True)
+        print ("Drag: " + str(dragPosition) + "  Button is " + str(button) + "  Modifier is " + modifier + "\n")
+        message = str(dragPosition[0]) + ", " + str(dragPosition[1])
+        cmds.draggerContext( 'sampleContext', edit=True, drawString=message)
+        # Define draggerContext with press and drag procedures
+        cmds.draggerContext( 'sampleContext', pressCommand='SampleContextPress()', dragCommand='SampleContextDrag()', cursor='hand' );
+        # Set the tool to the sample context created
+        # Results can be observed by dragging mouse around main window
+        cmds.setToolTo('sampleContext')
+    ```
+
     ---
     - Args:
         - [name]: Input item(s).
@@ -304,6 +474,28 @@ def draggerContext([name]: [name], cursor: str = ..., cur: str = ..., dragComman
     
     The draggerContext allows the user to program the behavior of the mouse or an
     equivalent dragging device in MEL.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Procedure called on press
+        def SampleContextPress():
+        pressPosition = cmds.draggerContext( 'sampleContext', query=True, anchorPoint=True)
+        print ("Press: " + str(pressPosition))
+        # Procedure called on drag
+        def SampleContextDrag():
+        dragPosition = cmds.draggerContext( 'sampleContext', query=True, dragPoint=True)
+        button = cmds.draggerContext( 'sampleContext', query=True, button=True)
+        modifier = cmds.draggerContext( 'sampleContext', query=True, modifier=True)
+        print ("Drag: " + str(dragPosition) + "  Button is " + str(button) + "  Modifier is " + modifier + "\n")
+        message = str(dragPosition[0]) + ", " + str(dragPosition[1])
+        cmds.draggerContext( 'sampleContext', edit=True, drawString=message)
+        # Define draggerContext with press and drag procedures
+        cmds.draggerContext( 'sampleContext', pressCommand='SampleContextPress()', dragCommand='SampleContextDrag()', cursor='hand' );
+        # Set the tool to the sample context created
+        # Results can be observed by dragging mouse around main window
+        cmds.setToolTo('sampleContext')
+    ```
 
     ---
     - Args:

@@ -9,6 +9,14 @@ def keyframeRegionDirectKeyCtx(contextName: contextName, exists: bool = ..., his
     This command creates a context which may be used to directly manipulate
     keyframes within the dope sheet editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a direct key context for the dope sheet editor
+        #
+        cmds.keyframeRegionDirectKeyCtx( 'keyframeRegionDirectKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -29,6 +37,14 @@ def keyframeRegionDirectKeyCtx(contextName: contextName, ex: bool = ..., ch: boo
     
     This command creates a context which may be used to directly manipulate
     keyframes within the dope sheet editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a direct key context for the dope sheet editor
+        #
+        cmds.keyframeRegionDirectKeyCtx( 'keyframeRegionDirectKeyContext' )
+    ```
 
     ---
     - Args:
@@ -51,6 +67,14 @@ def keyframeRegionDirectKeyCtx(contextName: contextName, exists: bool = ..., ex:
     This command creates a context which may be used to directly manipulate
     keyframes within the dope sheet editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a direct key context for the dope sheet editor
+        #
+        cmds.keyframeRegionDirectKeyCtx( 'keyframeRegionDirectKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -72,6 +96,14 @@ def keyframeRegionDirectKeyCtx(contextName: contextName, image1: str = ..., imag
     This command creates a context which may be used to directly manipulate
     keyframes within the dope sheet editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a direct key context for the dope sheet editor
+        #
+        cmds.keyframeRegionDirectKeyCtx( 'keyframeRegionDirectKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -86,6 +118,14 @@ def keyframeRegionDirectKeyCtx(contextName: contextName, i1: str = ..., i2: str 
     
     This command creates a context which may be used to directly manipulate
     keyframes within the dope sheet editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a direct key context for the dope sheet editor
+        #
+        cmds.keyframeRegionDirectKeyCtx( 'keyframeRegionDirectKeyContext' )
+    ```
 
     ---
     - Args:
@@ -102,6 +142,14 @@ def keyframeRegionDirectKeyCtx(contextName: contextName, image1: str = ..., i1: 
     This command creates a context which may be used to directly manipulate
     keyframes within the dope sheet editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a direct key context for the dope sheet editor
+        #
+        cmds.keyframeRegionDirectKeyCtx( 'keyframeRegionDirectKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -116,6 +164,14 @@ def keyframeRegionDirectKeyCtx(contextName: contextName, image1: str = ..., imag
     
     This command creates a context which may be used to directly manipulate
     keyframes within the dope sheet editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a direct key context for the dope sheet editor
+        #
+        cmds.keyframeRegionDirectKeyCtx( 'keyframeRegionDirectKeyContext' )
+    ```
 
     ---
     - Args:
@@ -132,6 +188,14 @@ def keyframeRegionDirectKeyCtx(contextName: contextName, i1: str = ..., i2: str 
     This command creates a context which may be used to directly manipulate
     keyframes within the dope sheet editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a direct key context for the dope sheet editor
+        #
+        cmds.keyframeRegionDirectKeyCtx( 'keyframeRegionDirectKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -146,6 +210,14 @@ def keyframeRegionDirectKeyCtx(contextName: contextName, image1: str = ..., i1: 
     
     This command creates a context which may be used to directly manipulate
     keyframes within the dope sheet editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a direct key context for the dope sheet editor
+        #
+        cmds.keyframeRegionDirectKeyCtx( 'keyframeRegionDirectKeyContext' )
+    ```
 
     ---
     - Args:

@@ -9,6 +9,16 @@ def jointCtx([object]: [object], autoJointOrient: str = ..., autoOrientSecondary
     The joint context command (jointCtx) updates the parameters of the joint tool.
     The options for the tool will be set by the flags the user specifies.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Create a joint context that makes a ikHandle with an ikRPSolver.
+        #    The use the tool.
+        #
+        cmds.jointCtx( 'myJointContext', createIKHandle=True, solverTypeH='ikRPsolver' )
+        cmds.setToolTo( 'myJointContext' )
+    ```
+
     ---
     - Args:
         - [object]: Input item(s).
@@ -50,6 +60,16 @@ def jointCtx([object]: [object], ajo: str = ..., aos: bool = ..., apH: bool = ..
     
     The joint context command (jointCtx) updates the parameters of the joint tool.
     The options for the tool will be set by the flags the user specifies.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Create a joint context that makes a ikHandle with an ikRPSolver.
+        #    The use the tool.
+        #
+        cmds.jointCtx( 'myJointContext', createIKHandle=True, solverTypeH='ikRPsolver' )
+        cmds.setToolTo( 'myJointContext' )
+    ```
 
     ---
     - Args:
@@ -93,6 +113,16 @@ def jointCtx([object]: [object], autoJointOrient: str = ..., ajo: str = ..., aut
     The joint context command (jointCtx) updates the parameters of the joint tool.
     The options for the tool will be set by the flags the user specifies.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Create a joint context that makes a ikHandle with an ikRPSolver.
+        #    The use the tool.
+        #
+        cmds.jointCtx( 'myJointContext', createIKHandle=True, solverTypeH='ikRPsolver' )
+        cmds.setToolTo( 'myJointContext' )
+    ```
+
     ---
     - Args:
         - [object]: Input item(s).
@@ -134,6 +164,16 @@ def jointCtx([object]: [object], autoJointOrient: str = ..., autoOrientSecondary
     
     The joint context command (jointCtx) updates the parameters of the joint tool.
     The options for the tool will be set by the flags the user specifies.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Create a joint context that makes a ikHandle with an ikRPSolver.
+        #    The use the tool.
+        #
+        cmds.jointCtx( 'myJointContext', createIKHandle=True, solverTypeH='ikRPsolver' )
+        cmds.setToolTo( 'myJointContext' )
+    ```
 
     ---
     - Args:
@@ -177,6 +217,16 @@ def jointCtx([object]: [object], ajo: str = ..., aos: bool = ..., apH: bool = ..
     The joint context command (jointCtx) updates the parameters of the joint tool.
     The options for the tool will be set by the flags the user specifies.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Create a joint context that makes a ikHandle with an ikRPSolver.
+        #    The use the tool.
+        #
+        cmds.jointCtx( 'myJointContext', createIKHandle=True, solverTypeH='ikRPsolver' )
+        cmds.setToolTo( 'myJointContext' )
+    ```
+
     ---
     - Args:
         - [object]: Input item(s).
@@ -218,6 +268,16 @@ def jointCtx([object]: [object], autoJointOrient: str = ..., ajo: str = ..., aut
     
     The joint context command (jointCtx) updates the parameters of the joint tool.
     The options for the tool will be set by the flags the user specifies.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Create a joint context that makes a ikHandle with an ikRPSolver.
+        #    The use the tool.
+        #
+        cmds.jointCtx( 'myJointContext', createIKHandle=True, solverTypeH='ikRPsolver' )
+        cmds.setToolTo( 'myJointContext' )
+    ```
 
     ---
     - Args:
@@ -261,6 +321,16 @@ def jointCtx([object]: [object], autoJointOrient: str = ..., autoOrientSecondary
     The joint context command (jointCtx) updates the parameters of the joint tool.
     The options for the tool will be set by the flags the user specifies.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Create a joint context that makes a ikHandle with an ikRPSolver.
+        #    The use the tool.
+        #
+        cmds.jointCtx( 'myJointContext', createIKHandle=True, solverTypeH='ikRPsolver' )
+        cmds.setToolTo( 'myJointContext' )
+    ```
+
     ---
     - Args:
         - [object]: Input item(s).
@@ -303,6 +373,16 @@ def jointCtx([object]: [object], ajo: str = ..., aos: bool = ..., apH: bool = ..
     The joint context command (jointCtx) updates the parameters of the joint tool.
     The options for the tool will be set by the flags the user specifies.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Create a joint context that makes a ikHandle with an ikRPSolver.
+        #    The use the tool.
+        #
+        cmds.jointCtx( 'myJointContext', createIKHandle=True, solverTypeH='ikRPsolver' )
+        cmds.setToolTo( 'myJointContext' )
+    ```
+
     ---
     - Args:
         - [object]: Input item(s).
@@ -344,6 +424,16 @@ def jointCtx([object]: [object], autoJointOrient: str = ..., ajo: str = ..., aut
     
     The joint context command (jointCtx) updates the parameters of the joint tool.
     The options for the tool will be set by the flags the user specifies.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Create a joint context that makes a ikHandle with an ikRPSolver.
+        #    The use the tool.
+        #
+        cmds.jointCtx( 'myJointContext', createIKHandle=True, solverTypeH='ikRPsolver' )
+        cmds.setToolTo( 'myJointContext' )
+    ```
 
     ---
     - Args:

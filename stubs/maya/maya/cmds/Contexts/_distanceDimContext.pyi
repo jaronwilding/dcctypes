@@ -8,6 +8,12 @@ def distanceDimContext(exists: bool = ..., history: bool = ..., image1: str = ..
     
     Command used to register the distanceDimCtx tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.distanceDimContext()
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -22,6 +28,12 @@ def distanceDimContext(ex: bool = ..., ch: bool = ..., i1: str = ..., i2: str = 
     """distanceDimContext is undoable, queryable, and editable.
     
     Command used to register the distanceDimCtx tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.distanceDimContext()
+    ```
 
     ---
     - Args:
@@ -38,6 +50,12 @@ def distanceDimContext(exists: bool = ..., ex: bool = ..., history: bool = ..., 
     
     Command used to register the distanceDimCtx tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.distanceDimContext()
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -53,6 +71,12 @@ def distanceDimContext(image1: str = ..., image2: str = ..., image3: str = ..., 
     
     Command used to register the distanceDimCtx tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.distanceDimContext()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -65,6 +89,12 @@ def distanceDimContext(i1: str = ..., i2: str = ..., i3: str = ..., q: bool = ..
     """distanceDimContext is undoable, queryable, and editable.
     
     Command used to register the distanceDimCtx tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.distanceDimContext()
+    ```
 
     ---
     - Args:
@@ -79,6 +109,12 @@ def distanceDimContext(image1: str = ..., i1: str = ..., image2: str = ..., i2: 
     
     Command used to register the distanceDimCtx tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.distanceDimContext()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -91,6 +127,12 @@ def distanceDimContext(image1: str = ..., image2: str = ..., image3: str = ..., 
     """distanceDimContext is undoable, queryable, and editable.
     
     Command used to register the distanceDimCtx tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.distanceDimContext()
+    ```
 
     ---
     - Args:
@@ -105,6 +147,12 @@ def distanceDimContext(i1: str = ..., i2: str = ..., i3: str = ..., e: bool = ..
     
     Command used to register the distanceDimCtx tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.distanceDimContext()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -117,6 +165,12 @@ def distanceDimContext(image1: str = ..., i1: str = ..., image2: str = ..., i2: 
     """distanceDimContext is undoable, queryable, and editable.
     
     Command used to register the distanceDimCtx tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.distanceDimContext()
+    ```
 
     ---
     - Args:

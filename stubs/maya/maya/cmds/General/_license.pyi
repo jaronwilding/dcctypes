@@ -10,6 +10,12 @@ def license(borrow: bool = ..., info: bool = ..., isBorrowed: bool = ..., isExpo
     executed without flags. If one of the above flags is specified then the
     specified version information is returned.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.license(showProductInfoDialog=True)
+    ```
+
     ---
     - Args:
         - borrow (b): This flag is obsolete and no longer supported.
@@ -33,6 +39,12 @@ def license(b: bool = ..., i: bool = ..., ib: bool = ..., ie: bool = ..., it: bo
     executed without flags. If one of the above flags is specified then the
     specified version information is returned.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.license(showProductInfoDialog=True)
+    ```
+
     ---
     - Args:
         - borrow (b): This flag is obsolete and no longer supported.
@@ -55,6 +67,12 @@ def license(borrow: bool = ..., b: bool = ..., info: bool = ..., i: bool = ..., 
     This command displays version information about the application if it is
     executed without flags. If one of the above flags is specified then the
     specified version information is returned.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.license(showProductInfoDialog=True)
+    ```
 
     ---
     - Args:

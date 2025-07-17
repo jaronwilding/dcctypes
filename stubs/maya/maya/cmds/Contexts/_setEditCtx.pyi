@@ -8,6 +8,12 @@ def setEditCtx(name: name, exists: bool = ..., history: bool = ..., image1: str 
     
     This command creates a tool that can be used to modify set membership.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.setEditCtx( 'setEditContext' )
+    ```
+
     ---
     - Args:
         - name: Input item(s).
@@ -23,6 +29,12 @@ def setEditCtx(name: name, ex: bool = ..., ch: bool = ..., i1: str = ..., i2: st
     """setEditCtx is undoable, queryable, and editable.
     
     This command creates a tool that can be used to modify set membership.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.setEditCtx( 'setEditContext' )
+    ```
 
     ---
     - Args:
@@ -40,6 +52,12 @@ def setEditCtx(name: name, exists: bool = ..., ex: bool = ..., history: bool = .
     
     This command creates a tool that can be used to modify set membership.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.setEditCtx( 'setEditContext' )
+    ```
+
     ---
     - Args:
         - name: Input item(s).
@@ -56,6 +74,12 @@ def setEditCtx(name: name, image1: str = ..., image2: str = ..., image3: str = .
     
     This command creates a tool that can be used to modify set membership.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.setEditCtx( 'setEditContext' )
+    ```
+
     ---
     - Args:
         - name: Input item(s).
@@ -69,6 +93,12 @@ def setEditCtx(name: name, i1: str = ..., i2: str = ..., i3: str = ..., q: bool 
     """setEditCtx is undoable, queryable, and editable.
     
     This command creates a tool that can be used to modify set membership.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.setEditCtx( 'setEditContext' )
+    ```
 
     ---
     - Args:
@@ -84,6 +114,12 @@ def setEditCtx(name: name, image1: str = ..., i1: str = ..., image2: str = ..., 
     
     This command creates a tool that can be used to modify set membership.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.setEditCtx( 'setEditContext' )
+    ```
+
     ---
     - Args:
         - name: Input item(s).
@@ -97,6 +133,12 @@ def setEditCtx(name: name, image1: str = ..., image2: str = ..., image3: str = .
     """setEditCtx is undoable, queryable, and editable.
     
     This command creates a tool that can be used to modify set membership.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.setEditCtx( 'setEditContext' )
+    ```
 
     ---
     - Args:
@@ -112,6 +154,12 @@ def setEditCtx(name: name, i1: str = ..., i2: str = ..., i3: str = ..., e: bool 
     
     This command creates a tool that can be used to modify set membership.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.setEditCtx( 'setEditContext' )
+    ```
+
     ---
     - Args:
         - name: Input item(s).
@@ -125,6 +173,12 @@ def setEditCtx(name: name, image1: str = ..., i1: str = ..., image2: str = ..., 
     """setEditCtx is undoable, queryable, and editable.
     
     This command creates a tool that can be used to modify set membership.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.setEditCtx( 'setEditContext' )
+    ```
 
     ---
     - Args:

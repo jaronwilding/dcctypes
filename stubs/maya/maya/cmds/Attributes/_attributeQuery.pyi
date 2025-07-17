@@ -13,6 +13,60 @@ def attributeQuery(affectsAppearance: bool = ..., affectsWorldspace: bool = ...,
     do not provide a boolean return type. (eg. "-internal -hidden" is okay but
     "-range -hidden" or "-range -softRange" is not.)
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Determine the hidden status of the "selector" attribute on choice nodes.
+        #
+        cmds.attributeQuery( 'selector', typ='choice', h=True )
+        # Result: 0
+        # Determine the hidden status of the "selector" attribute on this choice node.
+        # (Usually the same but you can do this for dynamic attributes too.)
+        #
+        cmds.createNode( 'choice', n='whoIsIt' )
+        # Result: choice1
+        cmds.attributeQuery( 'selector', n='whoIsIt', h=True )
+        # Result: 0
+        # Determine the range of the selector value on choice nodes.
+        # In this case there is no range.
+        # Note, if there is only a minimum or only a maximum range will not set.
+        #
+        cmds.attributeQuery( 'selector', typ='choice', range=True )
+        # For the next several examples create a poly cube and add extra attributes.
+        cmds.polyCube( cuv=4, ch=1, w=1, h=1, d=1, sx=1, sy=1, sz=1, ax=(0, 1, 0) )
+        cmds.addAttr( '|pCube1', ln='egRange', at='long', min=0, max=5, dv=2 )
+        cmds.setAttr( '|pCube1.egRange', e=True, keyable=False )
+        # Determine if an attribute is keyable
+        #
+        cmds.attributeQuery( 'egRange', node='pCube1', k=True )
+        # Result: 0
+        # Determine the minimum and maximum values of the added attribute egRange
+        #
+        cmds.attributeQuery( 'egRange', node='pCube1', range=True )
+        # Result: [0.0, 5.0]
+        # Determine if there is a minimum for the attribute.
+        # Note, having a minimum or maximum value does not imply the attribute has a range.
+        cmds.addAttr( '|pCube1', ln='egMin', at='long', min=2 )
+        cmds.attributeQuery( 'egMin', node='pCube1', minExists=True )
+        # Result: 1
+        cmds.attributeQuery( 'egMin', node='pCube1', maxExists=True )
+        # Result: 0
+        cmds.attributeQuery( 'egMin', node='pCube1', min=True )
+        # Result: [2.0]
+        # Determine if an attribute is an enum
+        # List the enum strings. This will use ':' as a separator like the attr is written in
+        # an .ma file.
+        cmds.addAttr( '|pCube1', ln='myEnum', at='enum', en='chicken:turkey:duck:', ct='fowl' )
+        cmds.attributeQuery( 'myEnum', node='pCube1', listEnum=True )
+        # Result: [u'chicken:turkey:duck'] #
+        # Secondary way to find an attribute's type directly
+        cmds.attributeQuery( 'myEnum', node='pCube1', attributeType=True )
+        # Result: ['enum'] #
+        # See to which categories and attribute belongs
+        cmds.attributeQuery( 'myEnum', node='pCube1', categories=True )
+        # Result: ['fowl'] #
+    ```
+
     ---
     - Args:
         - affectsAppearance (aa): Return true if the attribute affects the appearance of the node
@@ -78,6 +132,60 @@ def attributeQuery(aa: bool = ..., aws: bool = ..., at: bool = ..., ci: bool = .
     do not provide a boolean return type. (eg. "-internal -hidden" is okay but
     "-range -hidden" or "-range -softRange" is not.)
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Determine the hidden status of the "selector" attribute on choice nodes.
+        #
+        cmds.attributeQuery( 'selector', typ='choice', h=True )
+        # Result: 0
+        # Determine the hidden status of the "selector" attribute on this choice node.
+        # (Usually the same but you can do this for dynamic attributes too.)
+        #
+        cmds.createNode( 'choice', n='whoIsIt' )
+        # Result: choice1
+        cmds.attributeQuery( 'selector', n='whoIsIt', h=True )
+        # Result: 0
+        # Determine the range of the selector value on choice nodes.
+        # In this case there is no range.
+        # Note, if there is only a minimum or only a maximum range will not set.
+        #
+        cmds.attributeQuery( 'selector', typ='choice', range=True )
+        # For the next several examples create a poly cube and add extra attributes.
+        cmds.polyCube( cuv=4, ch=1, w=1, h=1, d=1, sx=1, sy=1, sz=1, ax=(0, 1, 0) )
+        cmds.addAttr( '|pCube1', ln='egRange', at='long', min=0, max=5, dv=2 )
+        cmds.setAttr( '|pCube1.egRange', e=True, keyable=False )
+        # Determine if an attribute is keyable
+        #
+        cmds.attributeQuery( 'egRange', node='pCube1', k=True )
+        # Result: 0
+        # Determine the minimum and maximum values of the added attribute egRange
+        #
+        cmds.attributeQuery( 'egRange', node='pCube1', range=True )
+        # Result: [0.0, 5.0]
+        # Determine if there is a minimum for the attribute.
+        # Note, having a minimum or maximum value does not imply the attribute has a range.
+        cmds.addAttr( '|pCube1', ln='egMin', at='long', min=2 )
+        cmds.attributeQuery( 'egMin', node='pCube1', minExists=True )
+        # Result: 1
+        cmds.attributeQuery( 'egMin', node='pCube1', maxExists=True )
+        # Result: 0
+        cmds.attributeQuery( 'egMin', node='pCube1', min=True )
+        # Result: [2.0]
+        # Determine if an attribute is an enum
+        # List the enum strings. This will use ':' as a separator like the attr is written in
+        # an .ma file.
+        cmds.addAttr( '|pCube1', ln='myEnum', at='enum', en='chicken:turkey:duck:', ct='fowl' )
+        cmds.attributeQuery( 'myEnum', node='pCube1', listEnum=True )
+        # Result: [u'chicken:turkey:duck'] #
+        # Secondary way to find an attribute's type directly
+        cmds.attributeQuery( 'myEnum', node='pCube1', attributeType=True )
+        # Result: ['enum'] #
+        # See to which categories and attribute belongs
+        cmds.attributeQuery( 'myEnum', node='pCube1', categories=True )
+        # Result: ['fowl'] #
+    ```
+
     ---
     - Args:
         - affectsAppearance (aa): Return true if the attribute affects the appearance of the node
@@ -142,6 +250,60 @@ def attributeQuery(affectsAppearance: bool = ..., aa: bool = ..., affectsWorldsp
     all the specified boolean flags. You may not specify any two flags when both
     do not provide a boolean return type. (eg. "-internal -hidden" is okay but
     "-range -hidden" or "-range -softRange" is not.)
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Determine the hidden status of the "selector" attribute on choice nodes.
+        #
+        cmds.attributeQuery( 'selector', typ='choice', h=True )
+        # Result: 0
+        # Determine the hidden status of the "selector" attribute on this choice node.
+        # (Usually the same but you can do this for dynamic attributes too.)
+        #
+        cmds.createNode( 'choice', n='whoIsIt' )
+        # Result: choice1
+        cmds.attributeQuery( 'selector', n='whoIsIt', h=True )
+        # Result: 0
+        # Determine the range of the selector value on choice nodes.
+        # In this case there is no range.
+        # Note, if there is only a minimum or only a maximum range will not set.
+        #
+        cmds.attributeQuery( 'selector', typ='choice', range=True )
+        # For the next several examples create a poly cube and add extra attributes.
+        cmds.polyCube( cuv=4, ch=1, w=1, h=1, d=1, sx=1, sy=1, sz=1, ax=(0, 1, 0) )
+        cmds.addAttr( '|pCube1', ln='egRange', at='long', min=0, max=5, dv=2 )
+        cmds.setAttr( '|pCube1.egRange', e=True, keyable=False )
+        # Determine if an attribute is keyable
+        #
+        cmds.attributeQuery( 'egRange', node='pCube1', k=True )
+        # Result: 0
+        # Determine the minimum and maximum values of the added attribute egRange
+        #
+        cmds.attributeQuery( 'egRange', node='pCube1', range=True )
+        # Result: [0.0, 5.0]
+        # Determine if there is a minimum for the attribute.
+        # Note, having a minimum or maximum value does not imply the attribute has a range.
+        cmds.addAttr( '|pCube1', ln='egMin', at='long', min=2 )
+        cmds.attributeQuery( 'egMin', node='pCube1', minExists=True )
+        # Result: 1
+        cmds.attributeQuery( 'egMin', node='pCube1', maxExists=True )
+        # Result: 0
+        cmds.attributeQuery( 'egMin', node='pCube1', min=True )
+        # Result: [2.0]
+        # Determine if an attribute is an enum
+        # List the enum strings. This will use ':' as a separator like the attr is written in
+        # an .ma file.
+        cmds.addAttr( '|pCube1', ln='myEnum', at='enum', en='chicken:turkey:duck:', ct='fowl' )
+        cmds.attributeQuery( 'myEnum', node='pCube1', listEnum=True )
+        # Result: [u'chicken:turkey:duck'] #
+        # Secondary way to find an attribute's type directly
+        cmds.attributeQuery( 'myEnum', node='pCube1', attributeType=True )
+        # Result: ['enum'] #
+        # See to which categories and attribute belongs
+        cmds.attributeQuery( 'myEnum', node='pCube1', categories=True )
+        # Result: ['fowl'] #
+    ```
 
     ---
     - Args:

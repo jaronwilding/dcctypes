@@ -502,6 +502,58 @@ def setAttr(attribute Any [Any...]: attribute Any [Any...], alteredValue: bool =
     (2, 0, 2), (-2, 1, 2), (2, 1, 2), (-2, 2, 2), (2, 2, 2),
     type="lattice")
 
+    Example:
+    ```python
+        sphere -n node;
+        addAttr -ln short2Attr -at short2;
+        addAttr -ln short2a -p short2Attr -at short;
+        addAttr -ln short2b -p short2Attr -at short;
+        addAttr -ln short3Attr -at short3;
+        addAttr -ln short3a -p short3Attr -at short;
+        addAttr -ln short3b -p short3Attr -at short;
+        addAttr -ln short3c -p short3Attr -at short;
+        addAttr -ln long2Attr -at long2;
+        addAttr -ln long2a -p long2Attr -at long;
+        addAttr -ln long2b -p long2Attr -at long;
+        addAttr -ln long3Attr -at long3;
+        addAttr -ln long3a -p long3Attr -at long;
+        addAttr -ln long3b -p long3Attr -at long;
+        addAttr -ln long3c -p long3Attr -at long;
+        addAttr -ln float2Attr -at float2;
+        addAttr -ln float2a -p float2Attr -at "float";
+        addAttr -ln float2b -p float2Attr -at "float";
+        addAttr -ln float3Attr -at float3;
+        addAttr -ln float3a -p float3Attr -at "float";
+        addAttr -ln float3b -p float3Attr -at "float";
+        addAttr -ln float3c -p float3Attr -at "float";
+        addAttr -ln double2Attr -at double2;
+        addAttr -ln double2a -p double2Attr -at double;
+        addAttr -ln double2b -p double2Attr -at double;
+        addAttr -ln double3Attr -at double3;
+        addAttr -ln double3a -p double3Attr -at double;
+        addAttr -ln double3b -p double3Attr -at double;
+        addAttr -ln double3c -p double3Attr -at double;
+        addAttr -ln int32ArrayAttr -dt Int32Array;
+        addAttr -ln doubleArrayAttr -dt doubleArray;
+        addAttr -ln pointArrayAttr -dt pointArray;
+        addAttr -ln vectorArrayAttr -dt vectorArray;
+        addAttr -ln stringArrayAttr -dt stringArray;
+        addAttr -ln stringAttr -dt "string";
+        addAttr -ln matrixAttr -dt "matrix";
+        addAttr -ln sphereAttr -dt sphere;
+        addAttr -ln coneAttr -dt cone;
+        addAttr -ln meshAttr -dt mesh;
+        addAttr -ln latticeAttr -dt lattice;
+        addAttr -ln spectrumRGBAttr -dt spectrumRGB;
+        addAttr -ln reflectanceRGBAttr -dt reflectanceRGB;
+        addAttr -ln componentListAttr -dt componentList;
+        addAttr -ln attrAliasAttr -dt attributeAlias;
+        addAttr -ln curveAttr -dt nurbsCurve;
+        addAttr -ln surfaceAttr -dt nurbsSurface;
+        addAttr -ln trimFaceAttr -dt nurbsTrimface;
+        addAttr -ln polyFaceAttr -dt polyFaces;
+    ```
+
     ---
     - Args:
         - attribute Any [Any...]: Input item(s).
@@ -1019,6 +1071,58 @@ def setAttr(attribute Any [Any...]: attribute Any [Any...], av: bool = ..., ca: 
     (2, 0, 2), (-2, 1, 2), (2, 1, 2), (-2, 2, 2), (2, 2, 2),
     type="lattice")
 
+    Example:
+    ```python
+        sphere -n node;
+        addAttr -ln short2Attr -at short2;
+        addAttr -ln short2a -p short2Attr -at short;
+        addAttr -ln short2b -p short2Attr -at short;
+        addAttr -ln short3Attr -at short3;
+        addAttr -ln short3a -p short3Attr -at short;
+        addAttr -ln short3b -p short3Attr -at short;
+        addAttr -ln short3c -p short3Attr -at short;
+        addAttr -ln long2Attr -at long2;
+        addAttr -ln long2a -p long2Attr -at long;
+        addAttr -ln long2b -p long2Attr -at long;
+        addAttr -ln long3Attr -at long3;
+        addAttr -ln long3a -p long3Attr -at long;
+        addAttr -ln long3b -p long3Attr -at long;
+        addAttr -ln long3c -p long3Attr -at long;
+        addAttr -ln float2Attr -at float2;
+        addAttr -ln float2a -p float2Attr -at "float";
+        addAttr -ln float2b -p float2Attr -at "float";
+        addAttr -ln float3Attr -at float3;
+        addAttr -ln float3a -p float3Attr -at "float";
+        addAttr -ln float3b -p float3Attr -at "float";
+        addAttr -ln float3c -p float3Attr -at "float";
+        addAttr -ln double2Attr -at double2;
+        addAttr -ln double2a -p double2Attr -at double;
+        addAttr -ln double2b -p double2Attr -at double;
+        addAttr -ln double3Attr -at double3;
+        addAttr -ln double3a -p double3Attr -at double;
+        addAttr -ln double3b -p double3Attr -at double;
+        addAttr -ln double3c -p double3Attr -at double;
+        addAttr -ln int32ArrayAttr -dt Int32Array;
+        addAttr -ln doubleArrayAttr -dt doubleArray;
+        addAttr -ln pointArrayAttr -dt pointArray;
+        addAttr -ln vectorArrayAttr -dt vectorArray;
+        addAttr -ln stringArrayAttr -dt stringArray;
+        addAttr -ln stringAttr -dt "string";
+        addAttr -ln matrixAttr -dt "matrix";
+        addAttr -ln sphereAttr -dt sphere;
+        addAttr -ln coneAttr -dt cone;
+        addAttr -ln meshAttr -dt mesh;
+        addAttr -ln latticeAttr -dt lattice;
+        addAttr -ln spectrumRGBAttr -dt spectrumRGB;
+        addAttr -ln reflectanceRGBAttr -dt reflectanceRGB;
+        addAttr -ln componentListAttr -dt componentList;
+        addAttr -ln attrAliasAttr -dt attributeAlias;
+        addAttr -ln curveAttr -dt nurbsCurve;
+        addAttr -ln surfaceAttr -dt nurbsSurface;
+        addAttr -ln trimFaceAttr -dt nurbsTrimface;
+        addAttr -ln polyFaceAttr -dt polyFaces;
+    ```
+
     ---
     - Args:
         - attribute Any [Any...]: Input item(s).
@@ -1535,6 +1639,58 @@ def setAttr(attribute Any [Any...]: attribute Any [Any...], alteredValue: bool =
     (-2, -2, 2), (2, -2, 2), (-2, -1, 2), (2, -1, 2), (-2, 0, 2),
     (2, 0, 2), (-2, 1, 2), (2, 1, 2), (-2, 2, 2), (2, 2, 2),
     type="lattice")
+
+    Example:
+    ```python
+        sphere -n node;
+        addAttr -ln short2Attr -at short2;
+        addAttr -ln short2a -p short2Attr -at short;
+        addAttr -ln short2b -p short2Attr -at short;
+        addAttr -ln short3Attr -at short3;
+        addAttr -ln short3a -p short3Attr -at short;
+        addAttr -ln short3b -p short3Attr -at short;
+        addAttr -ln short3c -p short3Attr -at short;
+        addAttr -ln long2Attr -at long2;
+        addAttr -ln long2a -p long2Attr -at long;
+        addAttr -ln long2b -p long2Attr -at long;
+        addAttr -ln long3Attr -at long3;
+        addAttr -ln long3a -p long3Attr -at long;
+        addAttr -ln long3b -p long3Attr -at long;
+        addAttr -ln long3c -p long3Attr -at long;
+        addAttr -ln float2Attr -at float2;
+        addAttr -ln float2a -p float2Attr -at "float";
+        addAttr -ln float2b -p float2Attr -at "float";
+        addAttr -ln float3Attr -at float3;
+        addAttr -ln float3a -p float3Attr -at "float";
+        addAttr -ln float3b -p float3Attr -at "float";
+        addAttr -ln float3c -p float3Attr -at "float";
+        addAttr -ln double2Attr -at double2;
+        addAttr -ln double2a -p double2Attr -at double;
+        addAttr -ln double2b -p double2Attr -at double;
+        addAttr -ln double3Attr -at double3;
+        addAttr -ln double3a -p double3Attr -at double;
+        addAttr -ln double3b -p double3Attr -at double;
+        addAttr -ln double3c -p double3Attr -at double;
+        addAttr -ln int32ArrayAttr -dt Int32Array;
+        addAttr -ln doubleArrayAttr -dt doubleArray;
+        addAttr -ln pointArrayAttr -dt pointArray;
+        addAttr -ln vectorArrayAttr -dt vectorArray;
+        addAttr -ln stringArrayAttr -dt stringArray;
+        addAttr -ln stringAttr -dt "string";
+        addAttr -ln matrixAttr -dt "matrix";
+        addAttr -ln sphereAttr -dt sphere;
+        addAttr -ln coneAttr -dt cone;
+        addAttr -ln meshAttr -dt mesh;
+        addAttr -ln latticeAttr -dt lattice;
+        addAttr -ln spectrumRGBAttr -dt spectrumRGB;
+        addAttr -ln reflectanceRGBAttr -dt reflectanceRGB;
+        addAttr -ln componentListAttr -dt componentList;
+        addAttr -ln attrAliasAttr -dt attributeAlias;
+        addAttr -ln curveAttr -dt nurbsCurve;
+        addAttr -ln surfaceAttr -dt nurbsSurface;
+        addAttr -ln trimFaceAttr -dt nurbsTrimface;
+        addAttr -ln polyFaceAttr -dt polyFaces;
+    ```
 
     ---
     - Args:

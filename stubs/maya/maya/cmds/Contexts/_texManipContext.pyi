@@ -9,6 +9,13 @@ def texManipContext(exists: bool = ..., image1: str = ..., image2: str = ..., im
     Command used to register the texSelectCtx tool. Command used to register the
     texManipCtx tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texSelectContext()
+        cmds.texManipContext()
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -22,6 +29,13 @@ def texManipContext(ex: bool = ..., i1: str = ..., i2: str = ..., i3: str = ...)
     
     Command used to register the texSelectCtx tool. Command used to register the
     texManipCtx tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texSelectContext()
+        cmds.texManipContext()
+    ```
 
     ---
     - Args:
@@ -37,6 +51,13 @@ def texManipContext(exists: bool = ..., ex: bool = ..., image1: str = ..., i1: s
     Command used to register the texSelectCtx tool. Command used to register the
     texManipCtx tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texSelectContext()
+        cmds.texManipContext()
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -50,6 +71,13 @@ def texManipContext(image1: str = ..., image2: str = ..., image3: str = ..., que
     
     Command used to register the texSelectCtx tool. Command used to register the
     texManipCtx tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texSelectContext()
+        cmds.texManipContext()
+    ```
 
     ---
     - Args:
@@ -65,6 +93,13 @@ def texManipContext(i1: str = ..., i2: str = ..., i3: str = ..., q: bool = ...) 
     Command used to register the texSelectCtx tool. Command used to register the
     texManipCtx tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texSelectContext()
+        cmds.texManipContext()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -78,6 +113,13 @@ def texManipContext(image1: str = ..., i1: str = ..., image2: str = ..., i2: str
     
     Command used to register the texSelectCtx tool. Command used to register the
     texManipCtx tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texSelectContext()
+        cmds.texManipContext()
+    ```
 
     ---
     - Args:
@@ -93,6 +135,13 @@ def texManipContext(image1: str = ..., image2: str = ..., image3: str = ..., edi
     Command used to register the texSelectCtx tool. Command used to register the
     texManipCtx tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texSelectContext()
+        cmds.texManipContext()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -107,6 +156,13 @@ def texManipContext(i1: str = ..., i2: str = ..., i3: str = ..., e: bool = ...) 
     Command used to register the texSelectCtx tool. Command used to register the
     texManipCtx tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texSelectContext()
+        cmds.texManipContext()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -120,6 +176,13 @@ def texManipContext(image1: str = ..., i1: str = ..., image2: str = ..., i2: str
     
     Command used to register the texSelectCtx tool. Command used to register the
     texManipCtx tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texSelectContext()
+        cmds.texManipContext()
+    ```
 
     ---
     - Args:

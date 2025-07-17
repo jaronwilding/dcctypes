@@ -8,6 +8,12 @@ def tumbleCtx(alternateContext: bool = ..., autoOrthoConstrain: bool = ..., auto
     
     This command can be used to create, edit, or query a tumble context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.tumbleCtx( 'tumbleContext', ts=1.0, lt=False, ac=False, ol=True )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -31,6 +37,12 @@ def tumbleCtx(ac: bool = ..., aoc: bool = ..., asp: bool = ..., ex: bool = ..., 
     """tumbleCtx is undoable, queryable, and editable.
     
     This command can be used to create, edit, or query a tumble context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.tumbleCtx( 'tumbleContext', ts=1.0, lt=False, ac=False, ol=True )
+    ```
 
     ---
     - Args:
@@ -56,6 +68,12 @@ def tumbleCtx(alternateContext: bool = ..., ac: bool = ..., autoOrthoConstrain: 
     
     This command can be used to create, edit, or query a tumble context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.tumbleCtx( 'tumbleContext', ts=1.0, lt=False, ac=False, ol=True )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -80,6 +98,12 @@ def tumbleCtx(alternateContext: bool = ..., autoOrthoConstrain: bool = ..., auto
     
     This command can be used to create, edit, or query a tumble context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.tumbleCtx( 'tumbleContext', ts=1.0, lt=False, ac=False, ol=True )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -101,6 +125,12 @@ def tumbleCtx(ac: bool = ..., aoc: bool = ..., asp: bool = ..., i1: str = ..., i
     """tumbleCtx is undoable, queryable, and editable.
     
     This command can be used to create, edit, or query a tumble context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.tumbleCtx( 'tumbleContext', ts=1.0, lt=False, ac=False, ol=True )
+    ```
 
     ---
     - Args:
@@ -124,6 +154,12 @@ def tumbleCtx(alternateContext: bool = ..., ac: bool = ..., autoOrthoConstrain: 
     
     This command can be used to create, edit, or query a tumble context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.tumbleCtx( 'tumbleContext', ts=1.0, lt=False, ac=False, ol=True )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -141,14 +177,19 @@ def tumbleCtx(alternateContext: bool = ..., ac: bool = ..., autoOrthoConstrain: 
         - query (q): Query mode flag
     """
 @overload #Overload for tumbleCtx in ['edit']
-def tumbleCtx(alternateContext: bool = ..., autoOrthoConstrain: bool = ..., autoSetPivot: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., localTumble: int = ..., objectTumble: bool = ..., orthoLock: bool = ..., orthoStep: angle = ..., toolName: str = ..., tumbleScale: float = ..., edit: bool = ...) -> str:
+def tumbleCtx(autoOrthoConstrain: bool = ..., autoSetPivot: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., localTumble: int = ..., objectTumble: bool = ..., orthoLock: bool = ..., orthoStep: angle = ..., tumbleScale: float = ..., edit: bool = ...) -> str:
     """tumbleCtx is undoable, queryable, and editable.
     
     This command can be used to create, edit, or query a tumble context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.tumbleCtx( 'tumbleContext', ts=1.0, lt=False, ac=False, ol=True )
+    ```
+
     ---
     - Args:
-        - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
         - autoOrthoConstrain (aoc): Automatically constrain horizontal and vertical rotations when the camera is orthographic. The shift key can be used to unconstrain the rotation.
         - autoSetPivot (asp): Automatically set the camera pivot to the selection or tool effect region
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -158,19 +199,23 @@ def tumbleCtx(alternateContext: bool = ..., autoOrthoConstrain: bool = ..., auto
         - objectTumble (ot): Make the camera tumble around the selected object, if true.
         - orthoLock (ol): Orthographic cameras cannot be tumbled while orthoLock is on.
         - orthoStep (os): Specify the angular step in degrees for orthographic rotation. If camera is orthographic and autoOrthoConstrain is toggled on the rotation will be stepped by this amount.
-        - toolName (tn): Name of the specific tool to which this command refers.
         - tumbleScale (ts): Set the rotation speed. A tumble scale of 1.0 will result in in 40 degrees of rotation per 100 pixels of cursor drag.
         - edit (e): Edit mode flag
     """
 @overload #Overload for tumbleCtx in ['edit']
-def tumbleCtx(ac: bool = ..., aoc: bool = ..., asp: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., lt: int = ..., ot: bool = ..., ol: bool = ..., os: angle = ..., tn: str = ..., ts: float = ..., e: bool = ...) -> str:
+def tumbleCtx(aoc: bool = ..., asp: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., lt: int = ..., ot: bool = ..., ol: bool = ..., os: angle = ..., ts: float = ..., e: bool = ...) -> str:
     """tumbleCtx is undoable, queryable, and editable.
     
     This command can be used to create, edit, or query a tumble context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.tumbleCtx( 'tumbleContext', ts=1.0, lt=False, ac=False, ol=True )
+    ```
+
     ---
     - Args:
-        - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
         - autoOrthoConstrain (aoc): Automatically constrain horizontal and vertical rotations when the camera is orthographic. The shift key can be used to unconstrain the rotation.
         - autoSetPivot (asp): Automatically set the camera pivot to the selection or tool effect region
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -180,19 +225,23 @@ def tumbleCtx(ac: bool = ..., aoc: bool = ..., asp: bool = ..., i1: str = ..., i
         - objectTumble (ot): Make the camera tumble around the selected object, if true.
         - orthoLock (ol): Orthographic cameras cannot be tumbled while orthoLock is on.
         - orthoStep (os): Specify the angular step in degrees for orthographic rotation. If camera is orthographic and autoOrthoConstrain is toggled on the rotation will be stepped by this amount.
-        - toolName (tn): Name of the specific tool to which this command refers.
         - tumbleScale (ts): Set the rotation speed. A tumble scale of 1.0 will result in in 40 degrees of rotation per 100 pixels of cursor drag.
         - edit (e): Edit mode flag
     """
 @overload #Overload for tumbleCtx in ['edit']
-def tumbleCtx(alternateContext: bool = ..., ac: bool = ..., autoOrthoConstrain: bool = ..., aoc: bool = ..., autoSetPivot: bool = ..., asp: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., localTumble: int = ..., lt: int = ..., objectTumble: bool = ..., ot: bool = ..., orthoLock: bool = ..., ol: bool = ..., orthoStep: angle = ..., os: angle = ..., toolName: str = ..., tn: str = ..., tumbleScale: float = ..., ts: float = ..., edit: bool = ..., e: bool = ...) -> str:
+def tumbleCtx(autoOrthoConstrain: bool = ..., aoc: bool = ..., autoSetPivot: bool = ..., asp: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., localTumble: int = ..., lt: int = ..., objectTumble: bool = ..., ot: bool = ..., orthoLock: bool = ..., ol: bool = ..., orthoStep: angle = ..., os: angle = ..., tumbleScale: float = ..., ts: float = ..., edit: bool = ..., e: bool = ...) -> str:
     """tumbleCtx is undoable, queryable, and editable.
     
     This command can be used to create, edit, or query a tumble context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.tumbleCtx( 'tumbleContext', ts=1.0, lt=False, ac=False, ol=True )
+    ```
+
     ---
     - Args:
-        - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
         - autoOrthoConstrain (aoc): Automatically constrain horizontal and vertical rotations when the camera is orthographic. The shift key can be used to unconstrain the rotation.
         - autoSetPivot (asp): Automatically set the camera pivot to the selection or tool effect region
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -202,7 +251,6 @@ def tumbleCtx(alternateContext: bool = ..., ac: bool = ..., autoOrthoConstrain: 
         - objectTumble (ot): Make the camera tumble around the selected object, if true.
         - orthoLock (ol): Orthographic cameras cannot be tumbled while orthoLock is on.
         - orthoStep (os): Specify the angular step in degrees for orthographic rotation. If camera is orthographic and autoOrthoConstrain is toggled on the rotation will be stepped by this amount.
-        - toolName (tn): Name of the specific tool to which this command refers.
         - tumbleScale (ts): Set the rotation speed. A tumble scale of 1.0 will result in in 40 degrees of rotation per 100 pixels of cursor drag.
         - edit (e): Edit mode flag
     """

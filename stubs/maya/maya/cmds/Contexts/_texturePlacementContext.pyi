@@ -9,6 +9,12 @@ def texturePlacementContext(exists: bool = ..., history: bool = ..., image1: str
     Create a command for creating new texture placement contexts. By default label
     mapping is on when the context is created.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texturePlacementContext()
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -25,6 +31,12 @@ def texturePlacementContext(ex: bool = ..., ch: bool = ..., i1: str = ..., i2: s
     
     Create a command for creating new texture placement contexts. By default label
     mapping is on when the context is created.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texturePlacementContext()
+    ```
 
     ---
     - Args:
@@ -43,6 +55,12 @@ def texturePlacementContext(exists: bool = ..., ex: bool = ..., history: bool = 
     Create a command for creating new texture placement contexts. By default label
     mapping is on when the context is created.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texturePlacementContext()
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -60,6 +78,12 @@ def texturePlacementContext(image1: str = ..., image2: str = ..., image3: str = 
     Create a command for creating new texture placement contexts. By default label
     mapping is on when the context is created.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texturePlacementContext()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -74,6 +98,12 @@ def texturePlacementContext(i1: str = ..., i2: str = ..., i3: str = ..., lm: boo
     
     Create a command for creating new texture placement contexts. By default label
     mapping is on when the context is created.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texturePlacementContext()
+    ```
 
     ---
     - Args:
@@ -90,6 +120,12 @@ def texturePlacementContext(image1: str = ..., i1: str = ..., image2: str = ...,
     Create a command for creating new texture placement contexts. By default label
     mapping is on when the context is created.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texturePlacementContext()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -104,6 +140,12 @@ def texturePlacementContext(image1: str = ..., image2: str = ..., image3: str = 
     
     Create a command for creating new texture placement contexts. By default label
     mapping is on when the context is created.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texturePlacementContext()
+    ```
 
     ---
     - Args:
@@ -120,6 +162,12 @@ def texturePlacementContext(i1: str = ..., i2: str = ..., i3: str = ..., lm: boo
     Create a command for creating new texture placement contexts. By default label
     mapping is on when the context is created.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texturePlacementContext()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -134,6 +182,12 @@ def texturePlacementContext(image1: str = ..., i1: str = ..., image2: str = ...,
     
     Create a command for creating new texture placement contexts. By default label
     mapping is on when the context is created.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texturePlacementContext()
+    ```
 
     ---
     - Args:

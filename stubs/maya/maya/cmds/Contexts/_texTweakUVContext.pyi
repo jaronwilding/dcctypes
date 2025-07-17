@@ -12,6 +12,15 @@ def texTweakUVContext([object]: [object], exists: bool = ..., image1: str = ...,
     Changing a context's behaviour using the above flags, will change all existing
     texture editor move manip contexts.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new move context:
+        cmds.texTweakUVContext()
+        # To query the position of the manipulator
+        cmds.texTweakUVContext( 'texMoveUVShellContext', q=True, position=True )
+    ```
+
     ---
     - Args:
         - [object]: Input item(s).
@@ -30,6 +39,15 @@ def texTweakUVContext([object]: [object], ex: bool = ..., i1: str = ..., i2: str
     editor move manip contexts. Changing one context independently is not allowed.
     Changing a context's behaviour using the above flags, will change all existing
     texture editor move manip contexts.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new move context:
+        cmds.texTweakUVContext()
+        # To query the position of the manipulator
+        cmds.texTweakUVContext( 'texMoveUVShellContext', q=True, position=True )
+    ```
 
     ---
     - Args:
@@ -50,6 +68,15 @@ def texTweakUVContext([object]: [object], exists: bool = ..., ex: bool = ..., im
     Changing a context's behaviour using the above flags, will change all existing
     texture editor move manip contexts.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new move context:
+        cmds.texTweakUVContext()
+        # To query the position of the manipulator
+        cmds.texTweakUVContext( 'texMoveUVShellContext', q=True, position=True )
+    ```
+
     ---
     - Args:
         - [object]: Input item(s).
@@ -68,6 +95,15 @@ def texTweakUVContext([object]: [object], image1: str = ..., image2: str = ..., 
     editor move manip contexts. Changing one context independently is not allowed.
     Changing a context's behaviour using the above flags, will change all existing
     texture editor move manip contexts.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new move context:
+        cmds.texTweakUVContext()
+        # To query the position of the manipulator
+        cmds.texTweakUVContext( 'texMoveUVShellContext', q=True, position=True )
+    ```
 
     ---
     - Args:
@@ -89,6 +125,15 @@ def texTweakUVContext([object]: [object], i1: str = ..., i2: str = ..., i3: str 
     Changing a context's behaviour using the above flags, will change all existing
     texture editor move manip contexts.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new move context:
+        cmds.texTweakUVContext()
+        # To query the position of the manipulator
+        cmds.texTweakUVContext( 'texMoveUVShellContext', q=True, position=True )
+    ```
+
     ---
     - Args:
         - [object]: Input item(s).
@@ -108,6 +153,15 @@ def texTweakUVContext([object]: [object], image1: str = ..., i1: str = ..., imag
     editor move manip contexts. Changing one context independently is not allowed.
     Changing a context's behaviour using the above flags, will change all existing
     texture editor move manip contexts.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new move context:
+        cmds.texTweakUVContext()
+        # To query the position of the manipulator
+        cmds.texTweakUVContext( 'texMoveUVShellContext', q=True, position=True )
+    ```
 
     ---
     - Args:
@@ -129,6 +183,15 @@ def texTweakUVContext([object]: [object], image1: str = ..., image2: str = ..., 
     Changing a context's behaviour using the above flags, will change all existing
     texture editor move manip contexts.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new move context:
+        cmds.texTweakUVContext()
+        # To query the position of the manipulator
+        cmds.texTweakUVContext( 'texMoveUVShellContext', q=True, position=True )
+    ```
+
     ---
     - Args:
         - [object]: Input item(s).
@@ -148,6 +211,15 @@ def texTweakUVContext([object]: [object], i1: str = ..., i2: str = ..., i3: str 
     Changing a context's behaviour using the above flags, will change all existing
     texture editor move manip contexts.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new move context:
+        cmds.texTweakUVContext()
+        # To query the position of the manipulator
+        cmds.texTweakUVContext( 'texMoveUVShellContext', q=True, position=True )
+    ```
+
     ---
     - Args:
         - [object]: Input item(s).
@@ -166,6 +238,15 @@ def texTweakUVContext([object]: [object], image1: str = ..., i1: str = ..., imag
     editor move manip contexts. Changing one context independently is not allowed.
     Changing a context's behaviour using the above flags, will change all existing
     texture editor move manip contexts.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new move context:
+        cmds.texTweakUVContext()
+        # To query the position of the manipulator
+        cmds.texTweakUVContext( 'texMoveUVShellContext', q=True, position=True )
+    ```
 
     ---
     - Args:

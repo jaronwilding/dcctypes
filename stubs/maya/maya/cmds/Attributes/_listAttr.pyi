@@ -9,6 +9,30 @@ def listAttr([objects]: [objects], array: bool = ..., attributeType: str = ..., 
     This command lists the attributes of a node. If no flags are specified all
     attributes are listed.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sphere()
+        cmds.listAttr( r=True, s=True )
+        # This will list the scalar readable attributes of the
+        # selected nodes.  If more than one node is selected attributes
+        # may be listed several times.
+        cmds.listAttr( s=True, r=True, w=True, c=True, st=['centerX','centerY'] )
+        # This will list all scalar, readable, writable, and connectable
+        # attributes whose names are "centerX" or "centerY".
+        cmds.listAttr( r=True, st='center*', ct='a*' )
+        # This will list all readable attributes whose names match
+        # "center*" (e.g. "centerX" or "centerpede") and who belong to
+        # a category starting with the letter "a".
+        cmds.listAttr( 'nurbsSphere1', s=True, cfo=True )
+        # This will list all scalar attributes of
+        # nurbsSphere1 that have been changed since the
+        # file in which nurbsSphere1 is defined has been
+        # opened.  If nurbsSphere1 comes from a referenced file,
+        # the result will be all the attributes that have changed
+        # since the referenced file was opened.
+    ```
+
     ---
     - Args:
         - [objects]: Input item(s).
@@ -53,6 +77,30 @@ def listAttr([objects]: [objects], a: bool = ..., at: str = ..., ca: bool = ...,
     
     This command lists the attributes of a node. If no flags are specified all
     attributes are listed.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sphere()
+        cmds.listAttr( r=True, s=True )
+        # This will list the scalar readable attributes of the
+        # selected nodes.  If more than one node is selected attributes
+        # may be listed several times.
+        cmds.listAttr( s=True, r=True, w=True, c=True, st=['centerX','centerY'] )
+        # This will list all scalar, readable, writable, and connectable
+        # attributes whose names are "centerX" or "centerY".
+        cmds.listAttr( r=True, st='center*', ct='a*' )
+        # This will list all readable attributes whose names match
+        # "center*" (e.g. "centerX" or "centerpede") and who belong to
+        # a category starting with the letter "a".
+        cmds.listAttr( 'nurbsSphere1', s=True, cfo=True )
+        # This will list all scalar attributes of
+        # nurbsSphere1 that have been changed since the
+        # file in which nurbsSphere1 is defined has been
+        # opened.  If nurbsSphere1 comes from a referenced file,
+        # the result will be all the attributes that have changed
+        # since the referenced file was opened.
+    ```
 
     ---
     - Args:
@@ -99,6 +147,30 @@ def listAttr([objects]: [objects], array: bool = ..., a: bool = ..., attributeTy
     This command lists the attributes of a node. If no flags are specified all
     attributes are listed.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sphere()
+        cmds.listAttr( r=True, s=True )
+        # This will list the scalar readable attributes of the
+        # selected nodes.  If more than one node is selected attributes
+        # may be listed several times.
+        cmds.listAttr( s=True, r=True, w=True, c=True, st=['centerX','centerY'] )
+        # This will list all scalar, readable, writable, and connectable
+        # attributes whose names are "centerX" or "centerY".
+        cmds.listAttr( r=True, st='center*', ct='a*' )
+        # This will list all readable attributes whose names match
+        # "center*" (e.g. "centerX" or "centerpede") and who belong to
+        # a category starting with the letter "a".
+        cmds.listAttr( 'nurbsSphere1', s=True, cfo=True )
+        # This will list all scalar attributes of
+        # nurbsSphere1 that have been changed since the
+        # file in which nurbsSphere1 is defined has been
+        # opened.  If nurbsSphere1 comes from a referenced file,
+        # the result will be all the attributes that have changed
+        # since the referenced file was opened.
+    ```
+
     ---
     - Args:
         - [objects]: Input item(s).
@@ -136,94 +208,4 @@ def listAttr([objects]: [objects], array: bool = ..., a: bool = ..., attributeTy
         - userDefined (ud): list user-defined (dynamic) attributes
         - visible (v): only show visible or non-hidden attributes
         - write (w): list only attributes which are writable
-    """
-@overload #Overload for listAttr in ['query']
-def listAttr([objects]: [objects], attributeType: str = ..., category: str = ..., string: str = ..., query: bool = ...) -> list[str]:
-    """listAttr is undoable, NOT queryable, and NOT editable.
-    
-    This command lists the attributes of a node. If no flags are specified all
-    attributes are listed.
-
-    ---
-    - Args:
-        - [objects]: Input item(s).
-        - attributeType (at): Return attributes of a particular type.
-        - category (ct): only show attributes belonging to the given category. Category string can be a regular expression.
-        - string (st): List only the attributes that match the other criteria AND match the string(s) passed from this flag. String can be a regular expression.
-        - query (q): Query mode flag
-    """
-@overload #Overload for listAttr in ['query']
-def listAttr([objects]: [objects], at: str = ..., ct: str = ..., st: str = ..., q: bool = ...) -> list[str]:
-    """listAttr is undoable, NOT queryable, and NOT editable.
-    
-    This command lists the attributes of a node. If no flags are specified all
-    attributes are listed.
-
-    ---
-    - Args:
-        - [objects]: Input item(s).
-        - attributeType (at): Return attributes of a particular type.
-        - category (ct): only show attributes belonging to the given category. Category string can be a regular expression.
-        - string (st): List only the attributes that match the other criteria AND match the string(s) passed from this flag. String can be a regular expression.
-        - query (q): Query mode flag
-    """
-@overload #Overload for listAttr in ['query']
-def listAttr([objects]: [objects], attributeType: str = ..., at: str = ..., category: str = ..., ct: str = ..., string: str = ..., st: str = ..., query: bool = ..., q: bool = ...) -> list[str]:
-    """listAttr is undoable, NOT queryable, and NOT editable.
-    
-    This command lists the attributes of a node. If no flags are specified all
-    attributes are listed.
-
-    ---
-    - Args:
-        - [objects]: Input item(s).
-        - attributeType (at): Return attributes of a particular type.
-        - category (ct): only show attributes belonging to the given category. Category string can be a regular expression.
-        - string (st): List only the attributes that match the other criteria AND match the string(s) passed from this flag. String can be a regular expression.
-        - query (q): Query mode flag
-    """
-@overload #Overload for listAttr in ['edit']
-def listAttr([objects]: [objects], attributeType: str = ..., category: str = ..., string: str = ..., edit: bool = ...) -> list[str]:
-    """listAttr is undoable, NOT queryable, and NOT editable.
-    
-    This command lists the attributes of a node. If no flags are specified all
-    attributes are listed.
-
-    ---
-    - Args:
-        - [objects]: Input item(s).
-        - attributeType (at): Return attributes of a particular type.
-        - category (ct): only show attributes belonging to the given category. Category string can be a regular expression.
-        - string (st): List only the attributes that match the other criteria AND match the string(s) passed from this flag. String can be a regular expression.
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for listAttr in ['edit']
-def listAttr([objects]: [objects], at: str = ..., ct: str = ..., st: str = ..., e: bool = ...) -> list[str]:
-    """listAttr is undoable, NOT queryable, and NOT editable.
-    
-    This command lists the attributes of a node. If no flags are specified all
-    attributes are listed.
-
-    ---
-    - Args:
-        - [objects]: Input item(s).
-        - attributeType (at): Return attributes of a particular type.
-        - category (ct): only show attributes belonging to the given category. Category string can be a regular expression.
-        - string (st): List only the attributes that match the other criteria AND match the string(s) passed from this flag. String can be a regular expression.
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for listAttr in ['edit']
-def listAttr([objects]: [objects], attributeType: str = ..., at: str = ..., category: str = ..., ct: str = ..., string: str = ..., st: str = ..., edit: bool = ..., e: bool = ...) -> list[str]:
-    """listAttr is undoable, NOT queryable, and NOT editable.
-    
-    This command lists the attributes of a node. If no flags are specified all
-    attributes are listed.
-
-    ---
-    - Args:
-        - [objects]: Input item(s).
-        - attributeType (at): Return attributes of a particular type.
-        - category (ct): only show attributes belonging to the given category. Category string can be a regular expression.
-        - string (st): List only the attributes that match the other criteria AND match the string(s) passed from this flag. String can be a regular expression.
-        - edit (e): Edit mode flag
     """

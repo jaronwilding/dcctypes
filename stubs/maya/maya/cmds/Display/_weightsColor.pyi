@@ -8,6 +8,21 @@ def weightsColor([objects...]: [objects...], colorRamp: str = ..., deformer: str
     
     Controls the coloring of deformer weights.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Turn on weight visualization for the cluster1 deformer on pSphere1
+        cmds.weightsColor('pSphere1', fc=True, dfm='cluster1')
+        # Turn off weight visualization for pSphere1
+        cmds.weightsColor('pSphere1', fc=False)
+        # Turn of the colorRamp
+        cmds.weightsColor(useColorRamp=False)
+        # Use a purple min color and green max color
+        cmds.weightsColor(umc=True, rmc=(1.0,0.0,1.0), rxc=(0.0,1.0,0.0))
+        # Set the outOfRange color for verts outside the deformers subset
+        cmds.weightsColor(orc=(0.0,1.0,1.0))
+    ```
+
     ---
     - Args:
         - [objects...]: Input item(s).
@@ -27,6 +42,21 @@ def weightsColor([objects...]: [objects...], cr: str = ..., dfm: str = ..., fc: 
     
     Controls the coloring of deformer weights.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Turn on weight visualization for the cluster1 deformer on pSphere1
+        cmds.weightsColor('pSphere1', fc=True, dfm='cluster1')
+        # Turn off weight visualization for pSphere1
+        cmds.weightsColor('pSphere1', fc=False)
+        # Turn of the colorRamp
+        cmds.weightsColor(useColorRamp=False)
+        # Use a purple min color and green max color
+        cmds.weightsColor(umc=True, rmc=(1.0,0.0,1.0), rxc=(0.0,1.0,0.0))
+        # Set the outOfRange color for verts outside the deformers subset
+        cmds.weightsColor(orc=(0.0,1.0,1.0))
+    ```
+
     ---
     - Args:
         - [objects...]: Input item(s).
@@ -45,6 +75,21 @@ def weightsColor([objects...]: [objects...], colorRamp: str = ..., cr: str = ...
     """weightsColor is undoable, queryable, and NOT editable.
     
     Controls the coloring of deformer weights.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Turn on weight visualization for the cluster1 deformer on pSphere1
+        cmds.weightsColor('pSphere1', fc=True, dfm='cluster1')
+        # Turn off weight visualization for pSphere1
+        cmds.weightsColor('pSphere1', fc=False)
+        # Turn of the colorRamp
+        cmds.weightsColor(useColorRamp=False)
+        # Use a purple min color and green max color
+        cmds.weightsColor(umc=True, rmc=(1.0,0.0,1.0), rxc=(0.0,1.0,0.0))
+        # Set the outOfRange color for verts outside the deformers subset
+        cmds.weightsColor(orc=(0.0,1.0,1.0))
+    ```
 
     ---
     - Args:

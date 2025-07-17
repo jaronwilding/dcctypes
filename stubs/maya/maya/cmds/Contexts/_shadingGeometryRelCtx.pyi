@@ -16,6 +16,12 @@ def shadingGeometryRelCtx(exists: bool = ..., history: bool = ..., image1: str =
     first. The shading group associated with the geometry will then be selected
     and subsequent selections will result in assignments being made.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.shadingGeometryRelCtx()
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -41,6 +47,12 @@ def shadingGeometryRelCtx(ex: bool = ..., ch: bool = ..., i1: str = ..., i2: str
     Specifying -shadingCentric false means that the geometry is to be selected
     first. The shading group associated with the geometry will then be selected
     and subsequent selections will result in assignments being made.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.shadingGeometryRelCtx()
+    ```
 
     ---
     - Args:
@@ -68,6 +80,12 @@ def shadingGeometryRelCtx(exists: bool = ..., ex: bool = ..., history: bool = ..
     first. The shading group associated with the geometry will then be selected
     and subsequent selections will result in assignments being made.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.shadingGeometryRelCtx()
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -94,6 +112,12 @@ def shadingGeometryRelCtx(image1: str = ..., image2: str = ..., image3: str = ..
     first. The shading group associated with the geometry will then be selected
     and subsequent selections will result in assignments being made.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.shadingGeometryRelCtx()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -117,6 +141,12 @@ def shadingGeometryRelCtx(i1: str = ..., i2: str = ..., i3: str = ..., ofc: str 
     Specifying -shadingCentric false means that the geometry is to be selected
     first. The shading group associated with the geometry will then be selected
     and subsequent selections will result in assignments being made.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.shadingGeometryRelCtx()
+    ```
 
     ---
     - Args:
@@ -142,6 +172,12 @@ def shadingGeometryRelCtx(image1: str = ..., i1: str = ..., image2: str = ..., i
     first. The shading group associated with the geometry will then be selected
     and subsequent selections will result in assignments being made.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.shadingGeometryRelCtx()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -165,6 +201,12 @@ def shadingGeometryRelCtx(image1: str = ..., image2: str = ..., image3: str = ..
     Specifying -shadingCentric false means that the geometry is to be selected
     first. The shading group associated with the geometry will then be selected
     and subsequent selections will result in assignments being made.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.shadingGeometryRelCtx()
+    ```
 
     ---
     - Args:
@@ -190,6 +232,12 @@ def shadingGeometryRelCtx(i1: str = ..., i2: str = ..., i3: str = ..., ofc: str 
     first. The shading group associated with the geometry will then be selected
     and subsequent selections will result in assignments being made.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.shadingGeometryRelCtx()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -213,6 +261,12 @@ def shadingGeometryRelCtx(image1: str = ..., i1: str = ..., image2: str = ..., i
     Specifying -shadingCentric false means that the geometry is to be selected
     first. The shading group associated with the geometry will then be selected
     and subsequent selections will result in assignments being made.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.shadingGeometryRelCtx()
+    ```
 
     ---
     - Args:

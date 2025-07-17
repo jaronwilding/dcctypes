@@ -16,6 +16,15 @@ def performanceOptions(clusterResolution: float = ..., disableStitch: str = ...,
     
     Note that none of these performance options will affect rendering.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Disable the generation of stitch surfaces
+        cmds.performanceOptions( ds=1 )
+        # Put sculpt deformers into pass-through mode during interaction/playback
+        cmds.performanceOptions( ps='interactive' )
+    ```
+
     ---
     - Args:
         - clusterResolution (cr): Sets the global cluster resolution.  This value may range between 0.0 (exact calculation) and 10.0 (rough approximation)
@@ -54,6 +63,15 @@ def performanceOptions(cr: float = ..., ds: str = ..., dtb: str = ..., dt: str =
     
     Note that none of these performance options will affect rendering.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Disable the generation of stitch surfaces
+        cmds.performanceOptions( ds=1 )
+        # Put sculpt deformers into pass-through mode during interaction/playback
+        cmds.performanceOptions( ps='interactive' )
+    ```
+
     ---
     - Args:
         - clusterResolution (cr): Sets the global cluster resolution.  This value may range between 0.0 (exact calculation) and 10.0 (rough approximation)
@@ -91,6 +109,15 @@ def performanceOptions(clusterResolution: float = ..., cr: float = ..., disableS
     effect during UI interaction or playback.
     
     Note that none of these performance options will affect rendering.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Disable the generation of stitch surfaces
+        cmds.performanceOptions( ds=1 )
+        # Put sculpt deformers into pass-through mode during interaction/playback
+        cmds.performanceOptions( ps='interactive' )
+    ```
 
     ---
     - Args:

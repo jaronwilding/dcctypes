@@ -12,6 +12,13 @@ def scale(float float float [objects]: float float float [objects], absolute: bo
     relative scale on each currently selected object object using each object's
     existing scale pivot point.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.scale( 1, 1, 1 )
+        cmds.scale( 3, 3, 3, 'curve1', pivot=(1, 0, 0), absolute=True )
+    ```
+
     ---
     - Args:
         - float float float [objects]: Input item(s).
@@ -59,6 +66,13 @@ def scale(float float float [objects]: float float float [objects], a: bool = ..
     relative scale on each currently selected object object using each object's
     existing scale pivot point.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.scale( 1, 1, 1 )
+        cmds.scale( 3, 3, 3, 'curve1', pivot=(1, 0, 0), absolute=True )
+    ```
+
     ---
     - Args:
         - float float float [objects]: Input item(s).
@@ -105,6 +119,13 @@ def scale(float float float [objects]: float float float [objects], absolute: bo
     The default behaviour, when no objects or flags are passed, is to do a
     relative scale on each currently selected object object using each object's
     existing scale pivot point.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.scale( 1, 1, 1 )
+        cmds.scale( 3, 3, 3, 'curve1', pivot=(1, 0, 0), absolute=True )
+    ```
 
     ---
     - Args:

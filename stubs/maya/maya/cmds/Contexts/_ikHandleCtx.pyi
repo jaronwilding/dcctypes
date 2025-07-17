@@ -10,6 +10,15 @@ def ikHandleCtx(object: object, autoPriorityH: bool = ..., createCurve: bool = .
     tool. The options for the tool will be set to the flags that the user
     specifies.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Edit an existing context to create an ikHandle with snapping on.
+        #
+        if cmds.ikHandleCtx( 'ikHandleCtx', q=True, ex=True ):
+        cmds.ikHandleCtx('ikHandleCtx', e=True, snapHandleH=True)
+    ```
+
     ---
     - Args:
         - object: Input item(s).
@@ -37,6 +46,15 @@ def ikHandleCtx(object: object, apH: bool = ..., ccv: bool = ..., ex: bool = ...
     The ikHandle context command (ikHandleCtx) updates parameters of ikHandle
     tool. The options for the tool will be set to the flags that the user
     specifies.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Edit an existing context to create an ikHandle with snapping on.
+        #
+        if cmds.ikHandleCtx( 'ikHandleCtx', q=True, ex=True ):
+        cmds.ikHandleCtx('ikHandleCtx', e=True, snapHandleH=True)
+    ```
 
     ---
     - Args:
@@ -66,6 +84,15 @@ def ikHandleCtx(object: object, autoPriorityH: bool = ..., apH: bool = ..., crea
     tool. The options for the tool will be set to the flags that the user
     specifies.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Edit an existing context to create an ikHandle with snapping on.
+        #
+        if cmds.ikHandleCtx( 'ikHandleCtx', q=True, ex=True ):
+        cmds.ikHandleCtx('ikHandleCtx', e=True, snapHandleH=True)
+    ```
+
     ---
     - Args:
         - object: Input item(s).
@@ -94,6 +121,15 @@ def ikHandleCtx(object: object, autoPriorityH: bool = ..., createCurve: bool = .
     tool. The options for the tool will be set to the flags that the user
     specifies.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Edit an existing context to create an ikHandle with snapping on.
+        #
+        if cmds.ikHandleCtx( 'ikHandleCtx', q=True, ex=True ):
+        cmds.ikHandleCtx('ikHandleCtx', e=True, snapHandleH=True)
+    ```
+
     ---
     - Args:
         - object: Input item(s).
@@ -119,6 +155,15 @@ def ikHandleCtx(object: object, apH: bool = ..., ccv: bool = ..., fsH: bool = ..
     The ikHandle context command (ikHandleCtx) updates parameters of ikHandle
     tool. The options for the tool will be set to the flags that the user
     specifies.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Edit an existing context to create an ikHandle with snapping on.
+        #
+        if cmds.ikHandleCtx( 'ikHandleCtx', q=True, ex=True ):
+        cmds.ikHandleCtx('ikHandleCtx', e=True, snapHandleH=True)
+    ```
 
     ---
     - Args:
@@ -146,6 +191,15 @@ def ikHandleCtx(object: object, autoPriorityH: bool = ..., apH: bool = ..., crea
     tool. The options for the tool will be set to the flags that the user
     specifies.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Edit an existing context to create an ikHandle with snapping on.
+        #
+        if cmds.ikHandleCtx( 'ikHandleCtx', q=True, ex=True ):
+        cmds.ikHandleCtx('ikHandleCtx', e=True, snapHandleH=True)
+    ```
+
     ---
     - Args:
         - object: Input item(s).
@@ -171,6 +225,15 @@ def ikHandleCtx(object: object, autoPriorityH: bool = ..., createCurve: bool = .
     The ikHandle context command (ikHandleCtx) updates parameters of ikHandle
     tool. The options for the tool will be set to the flags that the user
     specifies.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Edit an existing context to create an ikHandle with snapping on.
+        #
+        if cmds.ikHandleCtx( 'ikHandleCtx', q=True, ex=True ):
+        cmds.ikHandleCtx('ikHandleCtx', e=True, snapHandleH=True)
+    ```
 
     ---
     - Args:
@@ -209,6 +272,15 @@ def ikHandleCtx(object: object, apH: bool = ..., ccv: bool = ..., cra: bool = ..
     tool. The options for the tool will be set to the flags that the user
     specifies.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Edit an existing context to create an ikHandle with snapping on.
+        #
+        if cmds.ikHandleCtx( 'ikHandleCtx', q=True, ex=True ):
+        cmds.ikHandleCtx('ikHandleCtx', e=True, snapHandleH=True)
+    ```
+
     ---
     - Args:
         - object: Input item(s).
@@ -245,6 +317,15 @@ def ikHandleCtx(object: object, autoPriorityH: bool = ..., apH: bool = ..., crea
     The ikHandle context command (ikHandleCtx) updates parameters of ikHandle
     tool. The options for the tool will be set to the flags that the user
     specifies.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Edit an existing context to create an ikHandle with snapping on.
+        #
+        if cmds.ikHandleCtx( 'ikHandleCtx', q=True, ex=True ):
+        cmds.ikHandleCtx('ikHandleCtx', e=True, snapHandleH=True)
+    ```
 
     ---
     - Args:

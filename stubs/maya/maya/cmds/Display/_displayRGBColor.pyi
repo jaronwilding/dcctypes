@@ -11,6 +11,19 @@ def displayRGBColor(string: str, create: bool = ..., hueSaturationValue: bool = 
     the UI and not part of the saved data for a model. This command is not
     undoable.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set the background colour to red
+        cmds.displayRGBColor( 'background', 1, 0, 0 )
+        # List the current RGB color settings
+        cmds.displayRGBColor( list=True )
+        # Query a RGB color by name
+        cmds.displayRGBColor("object", query=True)
+        # Query the HSVA values of a color
+        cmds.displayRGBColor("object", query=True, hsv=True, alpha=True)
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -28,6 +41,19 @@ def displayRGBColor(string: str, c: bool = ..., hsv: bool = ..., l: bool = ..., 
     application that allows the user to set its color. These colors are part of
     the UI and not part of the saved data for a model. This command is not
     undoable.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set the background colour to red
+        cmds.displayRGBColor( 'background', 1, 0, 0 )
+        # List the current RGB color settings
+        cmds.displayRGBColor( list=True )
+        # Query a RGB color by name
+        cmds.displayRGBColor("object", query=True)
+        # Query the HSVA values of a color
+        cmds.displayRGBColor("object", query=True, hsv=True, alpha=True)
+    ```
 
     ---
     - Args:
@@ -47,6 +73,19 @@ def displayRGBColor(string: str, create: bool = ..., c: bool = ..., hueSaturatio
     the UI and not part of the saved data for a model. This command is not
     undoable.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set the background colour to red
+        cmds.displayRGBColor( 'background', 1, 0, 0 )
+        # List the current RGB color settings
+        cmds.displayRGBColor( list=True )
+        # Query a RGB color by name
+        cmds.displayRGBColor("object", query=True)
+        # Query the HSVA values of a color
+        cmds.displayRGBColor("object", query=True, hsv=True, alpha=True)
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -65,6 +104,19 @@ def displayRGBColor(string: str, alpha: bool = ..., hueSaturationValue: bool = .
     the UI and not part of the saved data for a model. This command is not
     undoable.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set the background colour to red
+        cmds.displayRGBColor( 'background', 1, 0, 0 )
+        # List the current RGB color settings
+        cmds.displayRGBColor( list=True )
+        # Query a RGB color by name
+        cmds.displayRGBColor("object", query=True)
+        # Query the HSVA values of a color
+        cmds.displayRGBColor("object", query=True, hsv=True, alpha=True)
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -80,6 +132,19 @@ def displayRGBColor(string: str, a: bool = ..., hsv: bool = ..., q: bool = ...) 
     application that allows the user to set its color. These colors are part of
     the UI and not part of the saved data for a model. This command is not
     undoable.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set the background colour to red
+        cmds.displayRGBColor( 'background', 1, 0, 0 )
+        # List the current RGB color settings
+        cmds.displayRGBColor( list=True )
+        # Query a RGB color by name
+        cmds.displayRGBColor("object", query=True)
+        # Query the HSVA values of a color
+        cmds.displayRGBColor("object", query=True, hsv=True, alpha=True)
+    ```
 
     ---
     - Args:
@@ -97,55 +162,23 @@ def displayRGBColor(string: str, alpha: bool = ..., a: bool = ..., hueSaturation
     the UI and not part of the saved data for a model. This command is not
     undoable.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set the background colour to red
+        cmds.displayRGBColor( 'background', 1, 0, 0 )
+        # List the current RGB color settings
+        cmds.displayRGBColor( list=True )
+        # Query a RGB color by name
+        cmds.displayRGBColor("object", query=True)
+        # Query the HSVA values of a color
+        cmds.displayRGBColor("object", query=True, hsv=True, alpha=True)
+    ```
+
     ---
     - Args:
         - string: Input item(s).
         - alpha (a): Indicates that we want to query the alpha value of the color. Upon query, returns RGBA or HSVA as an array of 4 floats.
         - hueSaturationValue (hsv): Indicates that rgb values are really hsv values. Upon query, returns the HSV values as an array of 3 floats. h s v The HSV values for the color.  (Between 0-1)
         - query (q): Query mode flag
-    """
-@overload #Overload for displayRGBColor in ['edit']
-def displayRGBColor(string: str, hueSaturationValue: bool = ..., edit: bool = ...) -> str:
-    """displayRGBColor is undoable, queryable, and NOT editable.
-    
-    This command changes or queries the display color for anything in the
-    application that allows the user to set its color. These colors are part of
-    the UI and not part of the saved data for a model. This command is not
-    undoable.
-
-    ---
-    - Args:
-        - string: Input item(s).
-        - hueSaturationValue (hsv): Indicates that rgb values are really hsv values. Upon query, returns the HSV values as an array of 3 floats. h s v The HSV values for the color.  (Between 0-1)
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for displayRGBColor in ['edit']
-def displayRGBColor(string: str, hsv: bool = ..., e: bool = ...) -> str:
-    """displayRGBColor is undoable, queryable, and NOT editable.
-    
-    This command changes or queries the display color for anything in the
-    application that allows the user to set its color. These colors are part of
-    the UI and not part of the saved data for a model. This command is not
-    undoable.
-
-    ---
-    - Args:
-        - string: Input item(s).
-        - hueSaturationValue (hsv): Indicates that rgb values are really hsv values. Upon query, returns the HSV values as an array of 3 floats. h s v The HSV values for the color.  (Between 0-1)
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for displayRGBColor in ['edit']
-def displayRGBColor(string: str, hueSaturationValue: bool = ..., hsv: bool = ..., edit: bool = ..., e: bool = ...) -> str:
-    """displayRGBColor is undoable, queryable, and NOT editable.
-    
-    This command changes or queries the display color for anything in the
-    application that allows the user to set its color. These colors are part of
-    the UI and not part of the saved data for a model. This command is not
-    undoable.
-
-    ---
-    - Args:
-        - string: Input item(s).
-        - hueSaturationValue (hsv): Indicates that rgb values are really hsv values. Upon query, returns the HSV values as an array of 3 floats. h s v The HSV values for the color.  (Between 0-1)
-        - edit (e): Edit mode flag
     """

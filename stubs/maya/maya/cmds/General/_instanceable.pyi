@@ -15,6 +15,22 @@ def instanceable(allow: bool = ..., recursive: bool = ..., shape: bool = ...) ->
     already instanced (or have children which are already instanced) cannot be
     marked as non-instancable.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a sphere.
+        # flag the transform and its shape as non-instanceable, then try to instance the sphere.
+        # you get an error because the shape is non-instanceable.
+        cmds.sphere()
+        cmds.instanceable( allow=0, shape=True )
+        cmds.instance()
+        # Error: '|nurbsSphere1' has non-instanceable children thus it cannot be instanced.
+        # Flag the sphere and its shape as instanceable. Then it can be instanced.
+        cmds.instanceable( allow=1, shape=True )
+        cmds.instance()
+        # Result: nurbsSphere2 #
+    ```
+
     ---
     - Args:
         - allow (a): Specifies the new instanceable state for the node. Specify true to allow the node to be instanceable, and false to prevent it from being instanced. The default is true (i.e. nodes can be instanced by default).
@@ -33,6 +49,22 @@ def instanceable(a: bool = ..., r: bool = ..., s: bool = ...) -> boolean[]:
     Sets are automatically expanded to their constituent objects. Nodes which are
     already instanced (or have children which are already instanced) cannot be
     marked as non-instancable.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a sphere.
+        # flag the transform and its shape as non-instanceable, then try to instance the sphere.
+        # you get an error because the shape is non-instanceable.
+        cmds.sphere()
+        cmds.instanceable( allow=0, shape=True )
+        cmds.instance()
+        # Error: '|nurbsSphere1' has non-instanceable children thus it cannot be instanced.
+        # Flag the sphere and its shape as instanceable. Then it can be instanced.
+        cmds.instanceable( allow=1, shape=True )
+        cmds.instance()
+        # Result: nurbsSphere2 #
+    ```
 
     ---
     - Args:
@@ -53,6 +85,22 @@ def instanceable(allow: bool = ..., a: bool = ..., recursive: bool = ..., r: boo
     already instanced (or have children which are already instanced) cannot be
     marked as non-instancable.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a sphere.
+        # flag the transform and its shape as non-instanceable, then try to instance the sphere.
+        # you get an error because the shape is non-instanceable.
+        cmds.sphere()
+        cmds.instanceable( allow=0, shape=True )
+        cmds.instance()
+        # Error: '|nurbsSphere1' has non-instanceable children thus it cannot be instanced.
+        # Flag the sphere and its shape as instanceable. Then it can be instanced.
+        cmds.instanceable( allow=1, shape=True )
+        cmds.instance()
+        # Result: nurbsSphere2 #
+    ```
+
     ---
     - Args:
         - allow (a): Specifies the new instanceable state for the node. Specify true to allow the node to be instanceable, and false to prevent it from being instanced. The default is true (i.e. nodes can be instanced by default).
@@ -72,6 +120,22 @@ def instanceable(allow: bool = ..., query: bool = ...) -> boolean[]:
     already instanced (or have children which are already instanced) cannot be
     marked as non-instancable.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a sphere.
+        # flag the transform and its shape as non-instanceable, then try to instance the sphere.
+        # you get an error because the shape is non-instanceable.
+        cmds.sphere()
+        cmds.instanceable( allow=0, shape=True )
+        cmds.instance()
+        # Error: '|nurbsSphere1' has non-instanceable children thus it cannot be instanced.
+        # Flag the sphere and its shape as instanceable. Then it can be instanced.
+        cmds.instanceable( allow=1, shape=True )
+        cmds.instance()
+        # Result: nurbsSphere2 #
+    ```
+
     ---
     - Args:
         - allow (a): Specifies the new instanceable state for the node. Specify true to allow the node to be instanceable, and false to prevent it from being instanced. The default is true (i.e. nodes can be instanced by default).
@@ -89,6 +153,22 @@ def instanceable(a: bool = ..., q: bool = ...) -> boolean[]:
     Sets are automatically expanded to their constituent objects. Nodes which are
     already instanced (or have children which are already instanced) cannot be
     marked as non-instancable.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a sphere.
+        # flag the transform and its shape as non-instanceable, then try to instance the sphere.
+        # you get an error because the shape is non-instanceable.
+        cmds.sphere()
+        cmds.instanceable( allow=0, shape=True )
+        cmds.instance()
+        # Error: '|nurbsSphere1' has non-instanceable children thus it cannot be instanced.
+        # Flag the sphere and its shape as instanceable. Then it can be instanced.
+        cmds.instanceable( allow=1, shape=True )
+        cmds.instance()
+        # Result: nurbsSphere2 #
+    ```
 
     ---
     - Args:
@@ -108,62 +188,24 @@ def instanceable(allow: bool = ..., a: bool = ..., query: bool = ..., q: bool = 
     already instanced (or have children which are already instanced) cannot be
     marked as non-instancable.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a sphere.
+        # flag the transform and its shape as non-instanceable, then try to instance the sphere.
+        # you get an error because the shape is non-instanceable.
+        cmds.sphere()
+        cmds.instanceable( allow=0, shape=True )
+        cmds.instance()
+        # Error: '|nurbsSphere1' has non-instanceable children thus it cannot be instanced.
+        # Flag the sphere and its shape as instanceable. Then it can be instanced.
+        cmds.instanceable( allow=1, shape=True )
+        cmds.instance()
+        # Result: nurbsSphere2 #
+    ```
+
     ---
     - Args:
         - allow (a): Specifies the new instanceable state for the node. Specify true to allow the node to be instanceable, and false to prevent it from being instanced. The default is true (i.e. nodes can be instanced by default).
         - query (q): Query mode flag
-    """
-@overload #Overload for instanceable in ['edit']
-def instanceable(allow: bool = ..., edit: bool = ...) -> boolean[]:
-    """instanceable is undoable, queryable, and NOT editable.
-    
-    Flags one or more DAG nodes so that they can (or cannot) be instanced. This
-    command sets an internal state on the specified DAG nodes which is checked
-    whenever Maya attempts an instancing operation. If no node names are provided
-    on the command line then the current selection list is used.
-    
-    Sets are automatically expanded to their constituent objects. Nodes which are
-    already instanced (or have children which are already instanced) cannot be
-    marked as non-instancable.
-
-    ---
-    - Args:
-        - allow (a): Specifies the new instanceable state for the node. Specify true to allow the node to be instanceable, and false to prevent it from being instanced. The default is true (i.e. nodes can be instanced by default).
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for instanceable in ['edit']
-def instanceable(a: bool = ..., e: bool = ...) -> boolean[]:
-    """instanceable is undoable, queryable, and NOT editable.
-    
-    Flags one or more DAG nodes so that they can (or cannot) be instanced. This
-    command sets an internal state on the specified DAG nodes which is checked
-    whenever Maya attempts an instancing operation. If no node names are provided
-    on the command line then the current selection list is used.
-    
-    Sets are automatically expanded to their constituent objects. Nodes which are
-    already instanced (or have children which are already instanced) cannot be
-    marked as non-instancable.
-
-    ---
-    - Args:
-        - allow (a): Specifies the new instanceable state for the node. Specify true to allow the node to be instanceable, and false to prevent it from being instanced. The default is true (i.e. nodes can be instanced by default).
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for instanceable in ['edit']
-def instanceable(allow: bool = ..., a: bool = ..., edit: bool = ..., e: bool = ...) -> boolean[]:
-    """instanceable is undoable, queryable, and NOT editable.
-    
-    Flags one or more DAG nodes so that they can (or cannot) be instanced. This
-    command sets an internal state on the specified DAG nodes which is checked
-    whenever Maya attempts an instancing operation. If no node names are provided
-    on the command line then the current selection list is used.
-    
-    Sets are automatically expanded to their constituent objects. Nodes which are
-    already instanced (or have children which are already instanced) cannot be
-    marked as non-instancable.
-
-    ---
-    - Args:
-        - allow (a): Specifies the new instanceable state for the node. Specify true to allow the node to be instanceable, and false to prevent it from being instanced. The default is true (i.e. nodes can be instanced by default).
-        - edit (e): Edit mode flag
     """

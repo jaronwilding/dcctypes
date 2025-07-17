@@ -9,6 +9,12 @@ def sculptMeshCacheChangeCloneSource(blendShape: str = ..., target: str = ...) -
     This command changes the source blend shape and target for the clone target
     tool. Used internally for undo/redo, and should not be called directly.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sculptMeshCacheChangeCloneSource( bs='blendShape1', t='pSphere4' )
+    ```
+
     ---
     - Args:
         - blendShape (bs): Set which blend shape should be used as the source when using the clone tool. When queried, returns the current blend shape name as a string.
@@ -20,6 +26,12 @@ def sculptMeshCacheChangeCloneSource(bs: str = ..., t: str = ...) -> None:
     
     This command changes the source blend shape and target for the clone target
     tool. Used internally for undo/redo, and should not be called directly.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sculptMeshCacheChangeCloneSource( bs='blendShape1', t='pSphere4' )
+    ```
 
     ---
     - Args:
@@ -33,6 +45,12 @@ def sculptMeshCacheChangeCloneSource(blendShape: str = ..., bs: str = ..., targe
     This command changes the source blend shape and target for the clone target
     tool. Used internally for undo/redo, and should not be called directly.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sculptMeshCacheChangeCloneSource( bs='blendShape1', t='pSphere4' )
+    ```
+
     ---
     - Args:
         - blendShape (bs): Set which blend shape should be used as the source when using the clone tool. When queried, returns the current blend shape name as a string.
@@ -44,6 +62,12 @@ def sculptMeshCacheChangeCloneSource(blendShape: str = ..., target: str = ..., q
     
     This command changes the source blend shape and target for the clone target
     tool. Used internally for undo/redo, and should not be called directly.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sculptMeshCacheChangeCloneSource( bs='blendShape1', t='pSphere4' )
+    ```
 
     ---
     - Args:
@@ -58,6 +82,12 @@ def sculptMeshCacheChangeCloneSource(bs: str = ..., t: str = ..., q: bool = ...)
     This command changes the source blend shape and target for the clone target
     tool. Used internally for undo/redo, and should not be called directly.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sculptMeshCacheChangeCloneSource( bs='blendShape1', t='pSphere4' )
+    ```
+
     ---
     - Args:
         - blendShape (bs): Set which blend shape should be used as the source when using the clone tool. When queried, returns the current blend shape name as a string.
@@ -70,6 +100,12 @@ def sculptMeshCacheChangeCloneSource(blendShape: str = ..., bs: str = ..., targe
     
     This command changes the source blend shape and target for the clone target
     tool. Used internally for undo/redo, and should not be called directly.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sculptMeshCacheChangeCloneSource( bs='blendShape1', t='pSphere4' )
+    ```
 
     ---
     - Args:
@@ -84,6 +120,12 @@ def sculptMeshCacheChangeCloneSource(blendShape: str = ..., target: str = ..., e
     This command changes the source blend shape and target for the clone target
     tool. Used internally for undo/redo, and should not be called directly.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sculptMeshCacheChangeCloneSource( bs='blendShape1', t='pSphere4' )
+    ```
+
     ---
     - Args:
         - blendShape (bs): Set which blend shape should be used as the source when using the clone tool. When queried, returns the current blend shape name as a string.
@@ -97,6 +139,12 @@ def sculptMeshCacheChangeCloneSource(bs: str = ..., t: str = ..., e: bool = ...)
     This command changes the source blend shape and target for the clone target
     tool. Used internally for undo/redo, and should not be called directly.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sculptMeshCacheChangeCloneSource( bs='blendShape1', t='pSphere4' )
+    ```
+
     ---
     - Args:
         - blendShape (bs): Set which blend shape should be used as the source when using the clone tool. When queried, returns the current blend shape name as a string.
@@ -109,6 +157,12 @@ def sculptMeshCacheChangeCloneSource(blendShape: str = ..., bs: str = ..., targe
     
     This command changes the source blend shape and target for the clone target
     tool. Used internally for undo/redo, and should not be called directly.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sculptMeshCacheChangeCloneSource( bs='blendShape1', t='pSphere4' )
+    ```
 
     ---
     - Args:

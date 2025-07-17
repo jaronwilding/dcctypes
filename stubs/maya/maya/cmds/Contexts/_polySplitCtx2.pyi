@@ -8,6 +8,16 @@ def polySplitCtx2(adjustEdgeFlow: float = ..., constrainToEdges: bool = ..., edg
     
     Create a new context to split facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly split context, then switch to it
+        cmds.polySplitCtx2('polySplitCtx2')
+        cmds.setToolTo('polySplitCtx2')
+    ```
+
     ---
     - Args:
         - adjustEdgeFlow (aef): The weight value of the edge vertices to be positioned.
@@ -30,6 +40,16 @@ def polySplitCtx2(aef: float = ..., cte: bool = ..., em: int = ..., ex: bool = .
     """polySplitCtx2 is undoable, queryable, and editable.
     
     Create a new context to split facets on polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly split context, then switch to it
+        cmds.polySplitCtx2('polySplitCtx2')
+        cmds.setToolTo('polySplitCtx2')
+    ```
 
     ---
     - Args:
@@ -54,6 +74,16 @@ def polySplitCtx2(adjustEdgeFlow: float = ..., aef: float = ..., constrainToEdge
     
     Create a new context to split facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly split context, then switch to it
+        cmds.polySplitCtx2('polySplitCtx2')
+        cmds.setToolTo('polySplitCtx2')
+    ```
+
     ---
     - Args:
         - adjustEdgeFlow (aef): The weight value of the edge vertices to be positioned.
@@ -76,6 +106,16 @@ def polySplitCtx2(adjustEdgeFlow: float = ..., constrainToEdges: bool = ..., edg
     """polySplitCtx2 is undoable, queryable, and editable.
     
     Create a new context to split facets on polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly split context, then switch to it
+        cmds.polySplitCtx2('polySplitCtx2')
+        cmds.setToolTo('polySplitCtx2')
+    ```
 
     ---
     - Args:
@@ -100,6 +140,16 @@ def polySplitCtx2(aef: float = ..., cte: bool = ..., em: int = ..., i1: str = ..
     
     Create a new context to split facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly split context, then switch to it
+        cmds.polySplitCtx2('polySplitCtx2')
+        cmds.setToolTo('polySplitCtx2')
+    ```
+
     ---
     - Args:
         - adjustEdgeFlow (aef): The weight value of the edge vertices to be positioned.
@@ -122,6 +172,16 @@ def polySplitCtx2(adjustEdgeFlow: float = ..., aef: float = ..., constrainToEdge
     """polySplitCtx2 is undoable, queryable, and editable.
     
     Create a new context to split facets on polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly split context, then switch to it
+        cmds.polySplitCtx2('polySplitCtx2')
+        cmds.setToolTo('polySplitCtx2')
+    ```
 
     ---
     - Args:
@@ -146,6 +206,16 @@ def polySplitCtx2(adjustEdgeFlow: float = ..., constrainToEdges: bool = ..., edg
     
     Create a new context to split facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly split context, then switch to it
+        cmds.polySplitCtx2('polySplitCtx2')
+        cmds.setToolTo('polySplitCtx2')
+    ```
+
     ---
     - Args:
         - adjustEdgeFlow (aef): The weight value of the edge vertices to be positioned.
@@ -169,6 +239,16 @@ def polySplitCtx2(aef: float = ..., cte: bool = ..., em: int = ..., i1: str = ..
     
     Create a new context to split facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly split context, then switch to it
+        cmds.polySplitCtx2('polySplitCtx2')
+        cmds.setToolTo('polySplitCtx2')
+    ```
+
     ---
     - Args:
         - adjustEdgeFlow (aef): The weight value of the edge vertices to be positioned.
@@ -191,6 +271,16 @@ def polySplitCtx2(adjustEdgeFlow: float = ..., aef: float = ..., constrainToEdge
     """polySplitCtx2 is undoable, queryable, and editable.
     
     Create a new context to split facets on polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly split context, then switch to it
+        cmds.polySplitCtx2('polySplitCtx2')
+        cmds.setToolTo('polySplitCtx2')
+    ```
 
     ---
     - Args:

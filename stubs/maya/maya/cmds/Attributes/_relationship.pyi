@@ -13,6 +13,12 @@ def relationship(b: bool = ..., relationshipData: str = ...) -> None:
     connections and/or set the data necessary to represent the realtionship in the
     dependency graph.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.relationship('ignore', 'lightLinker1', 'pCube1', 'pointLight1')
+    ```
+
     ---
     - Args:
         - b: Break the specified relationship instead of creating it
@@ -28,6 +34,12 @@ def relationship(rd: str = ...) -> None:
     owner node, and have a specific type. During file read, maya will make the
     connections and/or set the data necessary to represent the realtionship in the
     dependency graph.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.relationship('ignore', 'lightLinker1', 'pCube1', 'pointLight1')
+    ```
 
     ---
     - Args:
@@ -45,6 +57,12 @@ def relationship(b: bool = ..., relationshipData: str = ..., rd: str = ...) -> N
     connections and/or set the data necessary to represent the realtionship in the
     dependency graph.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.relationship('ignore', 'lightLinker1', 'pCube1', 'pointLight1')
+    ```
+
     ---
     - Args:
         - b: Break the specified relationship instead of creating it
@@ -60,6 +78,12 @@ def relationship(b: bool = ..., relationshipData: str = ..., query: bool = ...) 
     owner node, and have a specific type. During file read, maya will make the
     connections and/or set the data necessary to represent the realtionship in the
     dependency graph.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.relationship('ignore', 'lightLinker1', 'pCube1', 'pointLight1')
+    ```
 
     ---
     - Args:
@@ -78,6 +102,12 @@ def relationship(rd: str = ..., q: bool = ...) -> None:
     connections and/or set the data necessary to represent the realtionship in the
     dependency graph.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.relationship('ignore', 'lightLinker1', 'pCube1', 'pointLight1')
+    ```
+
     ---
     - Args:
         - b: Break the specified relationship instead of creating it
@@ -94,6 +124,12 @@ def relationship(b: bool = ..., relationshipData: str = ..., rd: str = ..., quer
     owner node, and have a specific type. During file read, maya will make the
     connections and/or set the data necessary to represent the realtionship in the
     dependency graph.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.relationship('ignore', 'lightLinker1', 'pCube1', 'pointLight1')
+    ```
 
     ---
     - Args:
@@ -112,6 +148,12 @@ def relationship(b: bool = ..., relationshipData: str = ..., edit: bool = ...) -
     connections and/or set the data necessary to represent the realtionship in the
     dependency graph.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.relationship('ignore', 'lightLinker1', 'pCube1', 'pointLight1')
+    ```
+
     ---
     - Args:
         - b: Break the specified relationship instead of creating it
@@ -129,6 +171,12 @@ def relationship(rd: str = ..., e: bool = ...) -> None:
     connections and/or set the data necessary to represent the realtionship in the
     dependency graph.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.relationship('ignore', 'lightLinker1', 'pCube1', 'pointLight1')
+    ```
+
     ---
     - Args:
         - b: Break the specified relationship instead of creating it
@@ -145,6 +193,12 @@ def relationship(b: bool = ..., relationshipData: str = ..., rd: str = ..., edit
     owner node, and have a specific type. During file read, maya will make the
     connections and/or set the data necessary to represent the realtionship in the
     dependency graph.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.relationship('ignore', 'lightLinker1', 'pCube1', 'pointLight1')
+    ```
 
     ---
     - Args:

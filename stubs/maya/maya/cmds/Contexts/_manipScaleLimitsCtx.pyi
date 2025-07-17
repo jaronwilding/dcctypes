@@ -8,6 +8,12 @@ def manipScaleLimitsCtx(exists: bool = ..., history: bool = ..., image1: str = .
     
     Create a context for the scale limits manipulator.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.manipScaleLimitsCtx()
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -22,6 +28,12 @@ def manipScaleLimitsCtx(ex: bool = ..., ch: bool = ..., i1: str = ..., i2: str =
     """manipScaleLimitsCtx is undoable, queryable, and editable.
     
     Create a context for the scale limits manipulator.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.manipScaleLimitsCtx()
+    ```
 
     ---
     - Args:
@@ -38,6 +50,12 @@ def manipScaleLimitsCtx(exists: bool = ..., ex: bool = ..., history: bool = ...,
     
     Create a context for the scale limits manipulator.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.manipScaleLimitsCtx()
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -53,6 +71,12 @@ def manipScaleLimitsCtx(image1: str = ..., image2: str = ..., image3: str = ...,
     
     Create a context for the scale limits manipulator.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.manipScaleLimitsCtx()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -65,6 +89,12 @@ def manipScaleLimitsCtx(i1: str = ..., i2: str = ..., i3: str = ..., q: bool = .
     """manipScaleLimitsCtx is undoable, queryable, and editable.
     
     Create a context for the scale limits manipulator.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.manipScaleLimitsCtx()
+    ```
 
     ---
     - Args:
@@ -79,6 +109,12 @@ def manipScaleLimitsCtx(image1: str = ..., i1: str = ..., image2: str = ..., i2:
     
     Create a context for the scale limits manipulator.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.manipScaleLimitsCtx()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -91,6 +127,12 @@ def manipScaleLimitsCtx(image1: str = ..., image2: str = ..., image3: str = ...,
     """manipScaleLimitsCtx is undoable, queryable, and editable.
     
     Create a context for the scale limits manipulator.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.manipScaleLimitsCtx()
+    ```
 
     ---
     - Args:
@@ -105,6 +147,12 @@ def manipScaleLimitsCtx(i1: str = ..., i2: str = ..., i3: str = ..., e: bool = .
     
     Create a context for the scale limits manipulator.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.manipScaleLimitsCtx()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -117,6 +165,12 @@ def manipScaleLimitsCtx(image1: str = ..., i1: str = ..., image2: str = ..., i2:
     """manipScaleLimitsCtx is undoable, queryable, and editable.
     
     Create a context for the scale limits manipulator.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.manipScaleLimitsCtx()
+    ```
 
     ---
     - Args:

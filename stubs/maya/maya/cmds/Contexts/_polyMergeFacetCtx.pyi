@@ -15,6 +15,17 @@ def polyMergeFacetCtx(caching: bool = ..., constructionHistory: bool = ..., exis
     
     Create a new context to merge facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        def blockTree(root):
+        nodesToBlock = []
+        for node in {child:1 for child in cmds.listRelatives( root, path=True, allDescendents=True )}.keys():
+        nodesToBlock += cmds.listConnections(node, source=True, destination=True )
+        for node in {source:1 for source in nodesToBlock}.keys():
+        cmds.setAttr( '%s.nodeState' % node, 2 )
+    ```
+
     ---
     - Args:
         - caching (cch): Toggle caching for all attributes so that no recomputation is needed
@@ -55,6 +66,17 @@ def polyMergeFacetCtx(cch: bool = ..., ch: bool = ..., ex: bool = ..., ff: int =
     Facet flags are mandatory.
     
     Create a new context to merge facets on polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        def blockTree(root):
+        nodesToBlock = []
+        for node in {child:1 for child in cmds.listRelatives( root, path=True, allDescendents=True )}.keys():
+        nodesToBlock += cmds.listConnections(node, source=True, destination=True )
+        for node in {source:1 for source in nodesToBlock}.keys():
+        cmds.setAttr( '%s.nodeState' % node, 2 )
+    ```
 
     ---
     - Args:
@@ -97,6 +119,17 @@ def polyMergeFacetCtx(caching: bool = ..., cch: bool = ..., constructionHistory:
     
     Create a new context to merge facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        def blockTree(root):
+        nodesToBlock = []
+        for node in {child:1 for child in cmds.listRelatives( root, path=True, allDescendents=True )}.keys():
+        nodesToBlock += cmds.listConnections(node, source=True, destination=True )
+        for node in {source:1 for source in nodesToBlock}.keys():
+        cmds.setAttr( '%s.nodeState' % node, 2 )
+    ```
+
     ---
     - Args:
         - caching (cch): Toggle caching for all attributes so that no recomputation is needed
@@ -137,6 +170,17 @@ def polyMergeFacetCtx(activeNodes: bool = ..., caching: bool = ..., construction
     Facet flags are mandatory.
     
     Create a new context to merge facets on polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        def blockTree(root):
+        nodesToBlock = []
+        for node in {child:1 for child in cmds.listRelatives( root, path=True, allDescendents=True )}.keys():
+        nodesToBlock += cmds.listConnections(node, source=True, destination=True )
+        for node in {source:1 for source in nodesToBlock}.keys():
+        cmds.setAttr( '%s.nodeState' % node, 2 )
+    ```
 
     ---
     - Args:
@@ -180,6 +224,17 @@ def polyMergeFacetCtx(anq: bool = ..., cch: bool = ..., ch: bool = ..., ff: int 
     
     Create a new context to merge facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        def blockTree(root):
+        nodesToBlock = []
+        for node in {child:1 for child in cmds.listRelatives( root, path=True, allDescendents=True )}.keys():
+        nodesToBlock += cmds.listConnections(node, source=True, destination=True )
+        for node in {source:1 for source in nodesToBlock}.keys():
+        cmds.setAttr( '%s.nodeState' % node, 2 )
+    ```
+
     ---
     - Args:
         - activeNodes (anq): Return the active nodes in the tool
@@ -222,6 +277,17 @@ def polyMergeFacetCtx(activeNodes: bool = ..., anq: bool = ..., caching: bool = 
     
     Create a new context to merge facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        def blockTree(root):
+        nodesToBlock = []
+        for node in {child:1 for child in cmds.listRelatives( root, path=True, allDescendents=True )}.keys():
+        nodesToBlock += cmds.listConnections(node, source=True, destination=True )
+        for node in {source:1 for source in nodesToBlock}.keys():
+        cmds.setAttr( '%s.nodeState' % node, 2 )
+    ```
+
     ---
     - Args:
         - activeNodes (anq): Return the active nodes in the tool
@@ -252,7 +318,7 @@ def polyMergeFacetCtx(activeNodes: bool = ..., anq: bool = ..., caching: bool = 
         - query (q): Query mode flag
     """
 @overload #Overload for polyMergeFacetCtx in ['edit']
-def polyMergeFacetCtx(caching: bool = ..., constructionHistory: bool = ..., firstFacet: int = ..., image1: str = ..., image2: str = ..., image3: str = ..., immediate: bool = ..., mergeMode: int = ..., nodeState: int = ..., previous: bool = ..., reset: bool = ..., secondFacet: int = ..., edit: bool = ...) -> str:
+def polyMergeFacetCtx(caching: bool = ..., firstFacet: int = ..., image1: str = ..., image2: str = ..., image3: str = ..., immediate: bool = ..., mergeMode: int = ..., nodeState: int = ..., previous: bool = ..., reset: bool = ..., secondFacet: int = ..., edit: bool = ...) -> str:
     """polyMergeFacetCtx is undoable, queryable, and editable.
     
     The second face becomes a hole in the first face.
@@ -264,11 +330,20 @@ def polyMergeFacetCtx(caching: bool = ..., constructionHistory: bool = ..., firs
     
     Create a new context to merge facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        def blockTree(root):
+        nodesToBlock = []
+        for node in {child:1 for child in cmds.listRelatives( root, path=True, allDescendents=True )}.keys():
+        nodesToBlock += cmds.listConnections(node, source=True, destination=True )
+        for node in {source:1 for source in nodesToBlock}.keys():
+        cmds.setAttr( '%s.nodeState' % node, 2 )
+    ```
+
     ---
     - Args:
         - caching (cch): Toggle caching for all attributes so that no recomputation is needed
-        - constructionHistory (ch): Turn the construction history on or off (where applicable). If construction history is on then the corresponding node will be inserted into the history chain for the mesh. If construction history is off then the operation will be performed
-            directly on the object.Note:If the object already has construction history then this flag is ignored and the node will always be inserted into the history chain.
         - firstFacet (ff): The number of the first (outer) face to merge.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
@@ -295,7 +370,7 @@ def polyMergeFacetCtx(caching: bool = ..., constructionHistory: bool = ..., firs
         - edit (e): Edit mode flag
     """
 @overload #Overload for polyMergeFacetCtx in ['edit']
-def polyMergeFacetCtx(cch: bool = ..., ch: bool = ..., ff: int = ..., i1: str = ..., i2: str = ..., i3: str = ..., im: bool = ..., mm: int = ..., nds: int = ..., pv: bool = ..., rs: bool = ..., sf: int = ..., e: bool = ...) -> str:
+def polyMergeFacetCtx(cch: bool = ..., ff: int = ..., i1: str = ..., i2: str = ..., i3: str = ..., im: bool = ..., mm: int = ..., nds: int = ..., pv: bool = ..., rs: bool = ..., sf: int = ..., e: bool = ...) -> str:
     """polyMergeFacetCtx is undoable, queryable, and editable.
     
     The second face becomes a hole in the first face.
@@ -307,11 +382,20 @@ def polyMergeFacetCtx(cch: bool = ..., ch: bool = ..., ff: int = ..., i1: str = 
     
     Create a new context to merge facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        def blockTree(root):
+        nodesToBlock = []
+        for node in {child:1 for child in cmds.listRelatives( root, path=True, allDescendents=True )}.keys():
+        nodesToBlock += cmds.listConnections(node, source=True, destination=True )
+        for node in {source:1 for source in nodesToBlock}.keys():
+        cmds.setAttr( '%s.nodeState' % node, 2 )
+    ```
+
     ---
     - Args:
         - caching (cch): Toggle caching for all attributes so that no recomputation is needed
-        - constructionHistory (ch): Turn the construction history on or off (where applicable). If construction history is on then the corresponding node will be inserted into the history chain for the mesh. If construction history is off then the operation will be performed
-            directly on the object.Note:If the object already has construction history then this flag is ignored and the node will always be inserted into the history chain.
         - firstFacet (ff): The number of the first (outer) face to merge.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
@@ -338,7 +422,7 @@ def polyMergeFacetCtx(cch: bool = ..., ch: bool = ..., ff: int = ..., i1: str = 
         - edit (e): Edit mode flag
     """
 @overload #Overload for polyMergeFacetCtx in ['edit']
-def polyMergeFacetCtx(caching: bool = ..., cch: bool = ..., constructionHistory: bool = ..., ch: bool = ..., firstFacet: int = ..., ff: int = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., immediate: bool = ..., im: bool = ..., mergeMode: int = ..., mm: int = ..., nodeState: int = ..., nds: int = ..., previous: bool = ..., pv: bool = ..., reset: bool = ..., rs: bool = ..., secondFacet: int = ..., sf: int = ..., edit: bool = ..., e: bool = ...) -> str:
+def polyMergeFacetCtx(caching: bool = ..., cch: bool = ..., firstFacet: int = ..., ff: int = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., immediate: bool = ..., im: bool = ..., mergeMode: int = ..., mm: int = ..., nodeState: int = ..., nds: int = ..., previous: bool = ..., pv: bool = ..., reset: bool = ..., rs: bool = ..., secondFacet: int = ..., sf: int = ..., edit: bool = ..., e: bool = ...) -> str:
     """polyMergeFacetCtx is undoable, queryable, and editable.
     
     The second face becomes a hole in the first face.
@@ -350,11 +434,20 @@ def polyMergeFacetCtx(caching: bool = ..., cch: bool = ..., constructionHistory:
     
     Create a new context to merge facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        def blockTree(root):
+        nodesToBlock = []
+        for node in {child:1 for child in cmds.listRelatives( root, path=True, allDescendents=True )}.keys():
+        nodesToBlock += cmds.listConnections(node, source=True, destination=True )
+        for node in {source:1 for source in nodesToBlock}.keys():
+        cmds.setAttr( '%s.nodeState' % node, 2 )
+    ```
+
     ---
     - Args:
         - caching (cch): Toggle caching for all attributes so that no recomputation is needed
-        - constructionHistory (ch): Turn the construction history on or off (where applicable). If construction history is on then the corresponding node will be inserted into the history chain for the mesh. If construction history is off then the operation will be performed
-            directly on the object.Note:If the object already has construction history then this flag is ignored and the node will always be inserted into the history chain.
         - firstFacet (ff): The number of the first (outer) face to merge.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.

@@ -16,6 +16,12 @@ def shadingLightRelCtx(exists: bool = ..., history: bool = ..., image1: str = ..
     The shading groups associated with the light will then be selected and
     subsequent selections will result in assignments being made.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.shadingLightRelCtx()
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -41,6 +47,12 @@ def shadingLightRelCtx(ex: bool = ..., ch: bool = ..., i1: str = ..., i2: str = 
     Specifying -shadingCentric false means that the light is to be selected first.
     The shading groups associated with the light will then be selected and
     subsequent selections will result in assignments being made.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.shadingLightRelCtx()
+    ```
 
     ---
     - Args:
@@ -68,6 +80,12 @@ def shadingLightRelCtx(exists: bool = ..., ex: bool = ..., history: bool = ..., 
     The shading groups associated with the light will then be selected and
     subsequent selections will result in assignments being made.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.shadingLightRelCtx()
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -94,6 +112,12 @@ def shadingLightRelCtx(image1: str = ..., image2: str = ..., image3: str = ..., 
     The shading groups associated with the light will then be selected and
     subsequent selections will result in assignments being made.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.shadingLightRelCtx()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -117,6 +141,12 @@ def shadingLightRelCtx(i1: str = ..., i2: str = ..., i3: str = ..., ofc: str = .
     Specifying -shadingCentric false means that the light is to be selected first.
     The shading groups associated with the light will then be selected and
     subsequent selections will result in assignments being made.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.shadingLightRelCtx()
+    ```
 
     ---
     - Args:
@@ -142,6 +172,12 @@ def shadingLightRelCtx(image1: str = ..., i1: str = ..., image2: str = ..., i2: 
     The shading groups associated with the light will then be selected and
     subsequent selections will result in assignments being made.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.shadingLightRelCtx()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -165,6 +201,12 @@ def shadingLightRelCtx(image1: str = ..., image2: str = ..., image3: str = ..., 
     Specifying -shadingCentric false means that the light is to be selected first.
     The shading groups associated with the light will then be selected and
     subsequent selections will result in assignments being made.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.shadingLightRelCtx()
+    ```
 
     ---
     - Args:
@@ -190,6 +232,12 @@ def shadingLightRelCtx(i1: str = ..., i2: str = ..., i3: str = ..., ofc: str = .
     The shading groups associated with the light will then be selected and
     subsequent selections will result in assignments being made.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.shadingLightRelCtx()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -213,6 +261,12 @@ def shadingLightRelCtx(image1: str = ..., i1: str = ..., image2: str = ..., i2: 
     Specifying -shadingCentric false means that the light is to be selected first.
     The shading groups associated with the light will then be selected and
     subsequent selections will result in assignments being made.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.shadingLightRelCtx()
+    ```
 
     ---
     - Args:

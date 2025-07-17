@@ -10,6 +10,19 @@ def colorIndex(int [float float float]: int [float float float], active: bool = 
     (between 0-1) specify the RGB values (or the HSV values if the -hsv flag is
     used) for the color.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set the first entry in the color palette to have RGB values 1 0 0 - red.
+        cmds.colorIndex( 1, 1, 0, 0 )
+        # Set the first entry in the color palette to have HSV values 360 1 1 - red.
+        cmds.colorIndex( 1, 360, 0, 0, hsv=True )
+        # Return the RGB color values of the first entry of the color palette.
+        cmds.colorIndex( 1, q=True )
+        # Return the HSV color values of the first entry of the color palette.
+        cmds.colorIndex( 1, q=True, hsv=True )
+    ```
+
     ---
     - Args:
         - int [float float float]: Input item(s).
@@ -27,6 +40,19 @@ def colorIndex(int [float float float]: int [float float float], atv: bool = ...
     The index specifies a color index in the color palette. The r, g, and b values
     (between 0-1) specify the RGB values (or the HSV values if the -hsv flag is
     used) for the color.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set the first entry in the color palette to have RGB values 1 0 0 - red.
+        cmds.colorIndex( 1, 1, 0, 0 )
+        # Set the first entry in the color palette to have HSV values 360 1 1 - red.
+        cmds.colorIndex( 1, 360, 0, 0, hsv=True )
+        # Return the RGB color values of the first entry of the color palette.
+        cmds.colorIndex( 1, q=True )
+        # Return the HSV color values of the first entry of the color palette.
+        cmds.colorIndex( 1, q=True, hsv=True )
+    ```
 
     ---
     - Args:
@@ -46,6 +72,19 @@ def colorIndex(int [float float float]: int [float float float], active: bool = 
     (between 0-1) specify the RGB values (or the HSV values if the -hsv flag is
     used) for the color.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set the first entry in the color palette to have RGB values 1 0 0 - red.
+        cmds.colorIndex( 1, 1, 0, 0 )
+        # Set the first entry in the color palette to have HSV values 360 1 1 - red.
+        cmds.colorIndex( 1, 360, 0, 0, hsv=True )
+        # Return the RGB color values of the first entry of the color palette.
+        cmds.colorIndex( 1, q=True )
+        # Return the HSV color values of the first entry of the color palette.
+        cmds.colorIndex( 1, q=True, hsv=True )
+    ```
+
     ---
     - Args:
         - int [float float float]: Input item(s).
@@ -64,6 +103,19 @@ def colorIndex(int [float float float]: int [float float float], hueSaturationVa
     (between 0-1) specify the RGB values (or the HSV values if the -hsv flag is
     used) for the color.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set the first entry in the color palette to have RGB values 1 0 0 - red.
+        cmds.colorIndex( 1, 1, 0, 0 )
+        # Set the first entry in the color palette to have HSV values 360 1 1 - red.
+        cmds.colorIndex( 1, 360, 0, 0, hsv=True )
+        # Return the RGB color values of the first entry of the color palette.
+        cmds.colorIndex( 1, q=True )
+        # Return the HSV color values of the first entry of the color palette.
+        cmds.colorIndex( 1, q=True, hsv=True )
+    ```
+
     ---
     - Args:
         - int [float float float]: Input item(s).
@@ -77,6 +129,19 @@ def colorIndex(int [float float float]: int [float float float], hsv: bool = ...
     The index specifies a color index in the color palette. The r, g, and b values
     (between 0-1) specify the RGB values (or the HSV values if the -hsv flag is
     used) for the color.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set the first entry in the color palette to have RGB values 1 0 0 - red.
+        cmds.colorIndex( 1, 1, 0, 0 )
+        # Set the first entry in the color palette to have HSV values 360 1 1 - red.
+        cmds.colorIndex( 1, 360, 0, 0, hsv=True )
+        # Return the RGB color values of the first entry of the color palette.
+        cmds.colorIndex( 1, q=True )
+        # Return the HSV color values of the first entry of the color palette.
+        cmds.colorIndex( 1, q=True, hsv=True )
+    ```
 
     ---
     - Args:
@@ -92,51 +157,22 @@ def colorIndex(int [float float float]: int [float float float], hueSaturationVa
     (between 0-1) specify the RGB values (or the HSV values if the -hsv flag is
     used) for the color.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set the first entry in the color palette to have RGB values 1 0 0 - red.
+        cmds.colorIndex( 1, 1, 0, 0 )
+        # Set the first entry in the color palette to have HSV values 360 1 1 - red.
+        cmds.colorIndex( 1, 360, 0, 0, hsv=True )
+        # Return the RGB color values of the first entry of the color palette.
+        cmds.colorIndex( 1, q=True )
+        # Return the HSV color values of the first entry of the color palette.
+        cmds.colorIndex( 1, q=True, hsv=True )
+    ```
+
     ---
     - Args:
         - int [float float float]: Input item(s).
         - hueSaturationValue (hsv): Indicates that rgb values are really hsv values. Upon query, returns the HSV valuses as an array of 3 floats.
         - query (q): Query mode flag
-    """
-@overload #Overload for colorIndex in ['edit']
-def colorIndex(int [float float float]: int [float float float], hueSaturationValue: bool = ..., edit: bool = ...) -> int:
-    """colorIndex is undoable, queryable, and NOT editable.
-    
-    The index specifies a color index in the color palette. The r, g, and b values
-    (between 0-1) specify the RGB values (or the HSV values if the -hsv flag is
-    used) for the color.
-
-    ---
-    - Args:
-        - int [float float float]: Input item(s).
-        - hueSaturationValue (hsv): Indicates that rgb values are really hsv values. Upon query, returns the HSV valuses as an array of 3 floats.
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for colorIndex in ['edit']
-def colorIndex(int [float float float]: int [float float float], hsv: bool = ..., e: bool = ...) -> int:
-    """colorIndex is undoable, queryable, and NOT editable.
-    
-    The index specifies a color index in the color palette. The r, g, and b values
-    (between 0-1) specify the RGB values (or the HSV values if the -hsv flag is
-    used) for the color.
-
-    ---
-    - Args:
-        - int [float float float]: Input item(s).
-        - hueSaturationValue (hsv): Indicates that rgb values are really hsv values. Upon query, returns the HSV valuses as an array of 3 floats.
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for colorIndex in ['edit']
-def colorIndex(int [float float float]: int [float float float], hueSaturationValue: bool = ..., hsv: bool = ..., edit: bool = ..., e: bool = ...) -> int:
-    """colorIndex is undoable, queryable, and NOT editable.
-    
-    The index specifies a color index in the color palette. The r, g, and b values
-    (between 0-1) specify the RGB values (or the HSV values if the -hsv flag is
-    used) for the color.
-
-    ---
-    - Args:
-        - int [float float float]: Input item(s).
-        - hueSaturationValue (hsv): Indicates that rgb values are really hsv values. Upon query, returns the HSV valuses as an array of 3 floats.
-        - edit (e): Edit mode flag
     """

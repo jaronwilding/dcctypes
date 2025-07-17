@@ -9,6 +9,21 @@ def disconnectAttr(attribute attribute: attribute attribute, nextAvailable: bool
     Disconnects two connected attributes. First argument is the source attribute,
     second is the destination.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Create a sphere and cone and connect their rotate attribute.
+        #
+        sph = cmds.sphere()
+        con = cmds.cone()
+        sphereR = '%s.r' % sph[0]
+        coneR = '%s.r' % con[0]
+        cmds.connectAttr(sphereR, coneR)
+        #    Break the connection between the rotate attributes.
+        #
+        cmds.disconnectAttr(sphereR, coneR)
+    ```
+
     ---
     - Args:
         - attribute attribute: Input item(s).
@@ -21,6 +36,21 @@ def disconnectAttr(attribute attribute: attribute attribute, na: bool = ...) -> 
     Disconnects two connected attributes. First argument is the source attribute,
     second is the destination.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Create a sphere and cone and connect their rotate attribute.
+        #
+        sph = cmds.sphere()
+        con = cmds.cone()
+        sphereR = '%s.r' % sph[0]
+        coneR = '%s.r' % con[0]
+        cmds.connectAttr(sphereR, coneR)
+        #    Break the connection between the rotate attributes.
+        #
+        cmds.disconnectAttr(sphereR, coneR)
+    ```
+
     ---
     - Args:
         - attribute attribute: Input item(s).
@@ -32,6 +62,21 @@ def disconnectAttr(attribute attribute: attribute attribute, nextAvailable: bool
     
     Disconnects two connected attributes. First argument is the source attribute,
     second is the destination.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Create a sphere and cone and connect their rotate attribute.
+        #
+        sph = cmds.sphere()
+        con = cmds.cone()
+        sphereR = '%s.r' % sph[0]
+        coneR = '%s.r' % con[0]
+        cmds.connectAttr(sphereR, coneR)
+        #    Break the connection between the rotate attributes.
+        #
+        cmds.disconnectAttr(sphereR, coneR)
+    ```
 
     ---
     - Args:

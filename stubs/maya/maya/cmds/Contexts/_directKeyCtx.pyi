@@ -9,6 +9,14 @@ def directKeyCtx(contextName: contextName, exists: bool = ..., history: bool = .
     This command creates a context which may be used to directly manipulate
     keyframes within the graph editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a directKeyCtx which works in insert mode
+        #
+        cmds.directKeyCtx( 'specialDirectKeyContext', option='insert' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -30,6 +38,14 @@ def directKeyCtx(contextName: contextName, ex: bool = ..., ch: bool = ..., i1: s
     
     This command creates a context which may be used to directly manipulate
     keyframes within the graph editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a directKeyCtx which works in insert mode
+        #
+        cmds.directKeyCtx( 'specialDirectKeyContext', option='insert' )
+    ```
 
     ---
     - Args:
@@ -53,6 +69,14 @@ def directKeyCtx(contextName: contextName, exists: bool = ..., ex: bool = ..., h
     This command creates a context which may be used to directly manipulate
     keyframes within the graph editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a directKeyCtx which works in insert mode
+        #
+        cmds.directKeyCtx( 'specialDirectKeyContext', option='insert' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -75,6 +99,14 @@ def directKeyCtx(contextName: contextName, image1: str = ..., image2: str = ...,
     This command creates a context which may be used to directly manipulate
     keyframes within the graph editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a directKeyCtx which works in insert mode
+        #
+        cmds.directKeyCtx( 'specialDirectKeyContext', option='insert' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -94,6 +126,14 @@ def directKeyCtx(contextName: contextName, i1: str = ..., i2: str = ..., i3: str
     
     This command creates a context which may be used to directly manipulate
     keyframes within the graph editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a directKeyCtx which works in insert mode
+        #
+        cmds.directKeyCtx( 'specialDirectKeyContext', option='insert' )
+    ```
 
     ---
     - Args:
@@ -115,6 +155,14 @@ def directKeyCtx(contextName: contextName, image1: str = ..., i1: str = ..., ima
     This command creates a context which may be used to directly manipulate
     keyframes within the graph editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a directKeyCtx which works in insert mode
+        #
+        cmds.directKeyCtx( 'specialDirectKeyContext', option='insert' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -134,6 +182,14 @@ def directKeyCtx(contextName: contextName, image1: str = ..., image2: str = ...,
     
     This command creates a context which may be used to directly manipulate
     keyframes within the graph editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a directKeyCtx which works in insert mode
+        #
+        cmds.directKeyCtx( 'specialDirectKeyContext', option='insert' )
+    ```
 
     ---
     - Args:
@@ -155,6 +211,14 @@ def directKeyCtx(contextName: contextName, i1: str = ..., i2: str = ..., i3: str
     This command creates a context which may be used to directly manipulate
     keyframes within the graph editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a directKeyCtx which works in insert mode
+        #
+        cmds.directKeyCtx( 'specialDirectKeyContext', option='insert' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -174,6 +238,14 @@ def directKeyCtx(contextName: contextName, image1: str = ..., i1: str = ..., ima
     
     This command creates a context which may be used to directly manipulate
     keyframes within the graph editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a directKeyCtx which works in insert mode
+        #
+        cmds.directKeyCtx( 'specialDirectKeyContext', option='insert' )
+    ```
 
     ---
     - Args:

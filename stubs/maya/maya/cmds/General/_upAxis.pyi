@@ -20,6 +20,19 @@ def upAxis(rotateView: bool = ...) -> None:
     
     The screen update is applied to all cameras of all views.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # 1. to make the Y-axis of the world to be the up axis:
+        cmds.upAxis( ax='y' )
+        # 2. to make the Z-axis of the world to be the up axis,
+        # and rotate the view:
+        cmds.upAxis( ax='z', rv=True )
+        # 3. to query which axis is the current up axis
+        # (returns a string: a "y" or a "z"):
+        cmds.upAxis( q=True, axis=True )
+    ```
+
     ---
     - Args:
         - rotateView (rv): This flag specifies to rotate the view as well.
@@ -41,6 +54,19 @@ def upAxis(rv: bool = ...) -> None:
     before the the up direction is changed.
     
     The screen update is applied to all cameras of all views.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # 1. to make the Y-axis of the world to be the up axis:
+        cmds.upAxis( ax='y' )
+        # 2. to make the Z-axis of the world to be the up axis,
+        # and rotate the view:
+        cmds.upAxis( ax='z', rv=True )
+        # 3. to query which axis is the current up axis
+        # (returns a string: a "y" or a "z"):
+        cmds.upAxis( q=True, axis=True )
+    ```
 
     ---
     - Args:
@@ -64,6 +90,19 @@ def upAxis(rotateView: bool = ..., rv: bool = ...) -> None:
     
     The screen update is applied to all cameras of all views.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # 1. to make the Y-axis of the world to be the up axis:
+        cmds.upAxis( ax='y' )
+        # 2. to make the Z-axis of the world to be the up axis,
+        # and rotate the view:
+        cmds.upAxis( ax='z', rv=True )
+        # 3. to query which axis is the current up axis
+        # (returns a string: a "y" or a "z"):
+        cmds.upAxis( q=True, axis=True )
+    ```
+
     ---
     - Args:
         - rotateView (rv): This flag specifies to rotate the view as well.
@@ -85,6 +124,19 @@ def upAxis(axis: str = ..., query: bool = ...) -> None:
     before the the up direction is changed.
     
     The screen update is applied to all cameras of all views.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # 1. to make the Y-axis of the world to be the up axis:
+        cmds.upAxis( ax='y' )
+        # 2. to make the Z-axis of the world to be the up axis,
+        # and rotate the view:
+        cmds.upAxis( ax='z', rv=True )
+        # 3. to query which axis is the current up axis
+        # (returns a string: a "y" or a "z"):
+        cmds.upAxis( q=True, axis=True )
+    ```
 
     ---
     - Args:
@@ -109,6 +161,19 @@ def upAxis(ax: str = ..., q: bool = ...) -> None:
     
     The screen update is applied to all cameras of all views.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # 1. to make the Y-axis of the world to be the up axis:
+        cmds.upAxis( ax='y' )
+        # 2. to make the Z-axis of the world to be the up axis,
+        # and rotate the view:
+        cmds.upAxis( ax='z', rv=True )
+        # 3. to query which axis is the current up axis
+        # (returns a string: a "y" or a "z"):
+        cmds.upAxis( q=True, axis=True )
+    ```
+
     ---
     - Args:
         - axis (ax): This flag specifies the axis as the world up direction. The valid axis are either "y" or "z".When queried, it returns astring.
@@ -131,6 +196,19 @@ def upAxis(axis: str = ..., ax: str = ..., query: bool = ..., q: bool = ...) -> 
     before the the up direction is changed.
     
     The screen update is applied to all cameras of all views.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # 1. to make the Y-axis of the world to be the up axis:
+        cmds.upAxis( ax='y' )
+        # 2. to make the Z-axis of the world to be the up axis,
+        # and rotate the view:
+        cmds.upAxis( ax='z', rv=True )
+        # 3. to query which axis is the current up axis
+        # (returns a string: a "y" or a "z"):
+        cmds.upAxis( q=True, axis=True )
+    ```
 
     ---
     - Args:

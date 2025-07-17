@@ -8,6 +8,20 @@ def snapTogetherCtx([contextName]: [contextName], clearSelection: bool = ..., ex
     
     The snapTogetherCtx command creates a tool for snapping surfaces together.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create two nurbs spheres, then move them apart
+        cmds.sphere(r=3, n='nurbsSphere1')
+        cmds.move(5, 0, 0)
+        cmds.sphere(r=3, n='nurbsSphere2')
+        cmds.move(-5, 0, 0)
+        # Create a new snap together tool context, set it to move objects only, then switch to it
+        # You can use this tool to snap two spheres together
+        cmds.snapTogetherCtx('snapTogetherCtx1', so=False)
+        cmds.setToolTo('snapTogetherCtx1')
+    ```
+
     ---
     - Args:
         - [contextName]: Input item(s).
@@ -26,6 +40,20 @@ def snapTogetherCtx([contextName]: [contextName], cs: bool = ..., ex: bool = ...
     """snapTogetherCtx is undoable, queryable, and editable.
     
     The snapTogetherCtx command creates a tool for snapping surfaces together.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create two nurbs spheres, then move them apart
+        cmds.sphere(r=3, n='nurbsSphere1')
+        cmds.move(5, 0, 0)
+        cmds.sphere(r=3, n='nurbsSphere2')
+        cmds.move(-5, 0, 0)
+        # Create a new snap together tool context, set it to move objects only, then switch to it
+        # You can use this tool to snap two spheres together
+        cmds.snapTogetherCtx('snapTogetherCtx1', so=False)
+        cmds.setToolTo('snapTogetherCtx1')
+    ```
 
     ---
     - Args:
@@ -46,6 +74,20 @@ def snapTogetherCtx([contextName]: [contextName], clearSelection: bool = ..., cs
     
     The snapTogetherCtx command creates a tool for snapping surfaces together.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create two nurbs spheres, then move them apart
+        cmds.sphere(r=3, n='nurbsSphere1')
+        cmds.move(5, 0, 0)
+        cmds.sphere(r=3, n='nurbsSphere2')
+        cmds.move(-5, 0, 0)
+        # Create a new snap together tool context, set it to move objects only, then switch to it
+        # You can use this tool to snap two spheres together
+        cmds.snapTogetherCtx('snapTogetherCtx1', so=False)
+        cmds.setToolTo('snapTogetherCtx1')
+    ```
+
     ---
     - Args:
         - [contextName]: Input item(s).
@@ -65,6 +107,20 @@ def snapTogetherCtx([contextName]: [contextName], clearSelection: bool = ..., im
     
     The snapTogetherCtx command creates a tool for snapping surfaces together.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create two nurbs spheres, then move them apart
+        cmds.sphere(r=3, n='nurbsSphere1')
+        cmds.move(5, 0, 0)
+        cmds.sphere(r=3, n='nurbsSphere2')
+        cmds.move(-5, 0, 0)
+        # Create a new snap together tool context, set it to move objects only, then switch to it
+        # You can use this tool to snap two spheres together
+        cmds.snapTogetherCtx('snapTogetherCtx1', so=False)
+        cmds.setToolTo('snapTogetherCtx1')
+    ```
+
     ---
     - Args:
         - [contextName]: Input item(s).
@@ -81,6 +137,20 @@ def snapTogetherCtx([contextName]: [contextName], cs: bool = ..., i1: str = ...,
     """snapTogetherCtx is undoable, queryable, and editable.
     
     The snapTogetherCtx command creates a tool for snapping surfaces together.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create two nurbs spheres, then move them apart
+        cmds.sphere(r=3, n='nurbsSphere1')
+        cmds.move(5, 0, 0)
+        cmds.sphere(r=3, n='nurbsSphere2')
+        cmds.move(-5, 0, 0)
+        # Create a new snap together tool context, set it to move objects only, then switch to it
+        # You can use this tool to snap two spheres together
+        cmds.snapTogetherCtx('snapTogetherCtx1', so=False)
+        cmds.setToolTo('snapTogetherCtx1')
+    ```
 
     ---
     - Args:
@@ -99,6 +169,20 @@ def snapTogetherCtx([contextName]: [contextName], clearSelection: bool = ..., cs
     
     The snapTogetherCtx command creates a tool for snapping surfaces together.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create two nurbs spheres, then move them apart
+        cmds.sphere(r=3, n='nurbsSphere1')
+        cmds.move(5, 0, 0)
+        cmds.sphere(r=3, n='nurbsSphere2')
+        cmds.move(-5, 0, 0)
+        # Create a new snap together tool context, set it to move objects only, then switch to it
+        # You can use this tool to snap two spheres together
+        cmds.snapTogetherCtx('snapTogetherCtx1', so=False)
+        cmds.setToolTo('snapTogetherCtx1')
+    ```
+
     ---
     - Args:
         - [contextName]: Input item(s).
@@ -115,6 +199,20 @@ def snapTogetherCtx([contextName]: [contextName], clearSelection: bool = ..., im
     """snapTogetherCtx is undoable, queryable, and editable.
     
     The snapTogetherCtx command creates a tool for snapping surfaces together.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create two nurbs spheres, then move them apart
+        cmds.sphere(r=3, n='nurbsSphere1')
+        cmds.move(5, 0, 0)
+        cmds.sphere(r=3, n='nurbsSphere2')
+        cmds.move(-5, 0, 0)
+        # Create a new snap together tool context, set it to move objects only, then switch to it
+        # You can use this tool to snap two spheres together
+        cmds.snapTogetherCtx('snapTogetherCtx1', so=False)
+        cmds.setToolTo('snapTogetherCtx1')
+    ```
 
     ---
     - Args:
@@ -133,6 +231,20 @@ def snapTogetherCtx([contextName]: [contextName], cs: bool = ..., i1: str = ...,
     
     The snapTogetherCtx command creates a tool for snapping surfaces together.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create two nurbs spheres, then move them apart
+        cmds.sphere(r=3, n='nurbsSphere1')
+        cmds.move(5, 0, 0)
+        cmds.sphere(r=3, n='nurbsSphere2')
+        cmds.move(-5, 0, 0)
+        # Create a new snap together tool context, set it to move objects only, then switch to it
+        # You can use this tool to snap two spheres together
+        cmds.snapTogetherCtx('snapTogetherCtx1', so=False)
+        cmds.setToolTo('snapTogetherCtx1')
+    ```
+
     ---
     - Args:
         - [contextName]: Input item(s).
@@ -149,6 +261,20 @@ def snapTogetherCtx([contextName]: [contextName], clearSelection: bool = ..., cs
     """snapTogetherCtx is undoable, queryable, and editable.
     
     The snapTogetherCtx command creates a tool for snapping surfaces together.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create two nurbs spheres, then move them apart
+        cmds.sphere(r=3, n='nurbsSphere1')
+        cmds.move(5, 0, 0)
+        cmds.sphere(r=3, n='nurbsSphere2')
+        cmds.move(-5, 0, 0)
+        # Create a new snap together tool context, set it to move objects only, then switch to it
+        # You can use this tool to snap two spheres together
+        cmds.snapTogetherCtx('snapTogetherCtx1', so=False)
+        cmds.setToolTo('snapTogetherCtx1')
+    ```
 
     ---
     - Args:

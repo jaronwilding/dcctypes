@@ -8,6 +8,14 @@ def keyframeRegionTrackCtx(exists: bool = ..., history: bool = ..., image1: str 
     
     This command can be used to create a track context for the dope sheet editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a track view context for the dope sheet editor
+        #
+        cmds.keyframeRegionTrackCtx( 'keyframeRegionTrackContext' )
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -22,6 +30,14 @@ def keyframeRegionTrackCtx(ex: bool = ..., ch: bool = ..., i1: str = ..., i2: st
     """keyframeRegionTrackCtx is undoable, queryable, and editable.
     
     This command can be used to create a track context for the dope sheet editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a track view context for the dope sheet editor
+        #
+        cmds.keyframeRegionTrackCtx( 'keyframeRegionTrackContext' )
+    ```
 
     ---
     - Args:
@@ -38,6 +54,14 @@ def keyframeRegionTrackCtx(exists: bool = ..., ex: bool = ..., history: bool = .
     
     This command can be used to create a track context for the dope sheet editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a track view context for the dope sheet editor
+        #
+        cmds.keyframeRegionTrackCtx( 'keyframeRegionTrackContext' )
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -53,6 +77,14 @@ def keyframeRegionTrackCtx(image1: str = ..., image2: str = ..., image3: str = .
     
     This command can be used to create a track context for the dope sheet editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a track view context for the dope sheet editor
+        #
+        cmds.keyframeRegionTrackCtx( 'keyframeRegionTrackContext' )
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -65,6 +97,14 @@ def keyframeRegionTrackCtx(i1: str = ..., i2: str = ..., i3: str = ..., q: bool 
     """keyframeRegionTrackCtx is undoable, queryable, and editable.
     
     This command can be used to create a track context for the dope sheet editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a track view context for the dope sheet editor
+        #
+        cmds.keyframeRegionTrackCtx( 'keyframeRegionTrackContext' )
+    ```
 
     ---
     - Args:
@@ -79,6 +119,14 @@ def keyframeRegionTrackCtx(image1: str = ..., i1: str = ..., image2: str = ..., 
     
     This command can be used to create a track context for the dope sheet editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a track view context for the dope sheet editor
+        #
+        cmds.keyframeRegionTrackCtx( 'keyframeRegionTrackContext' )
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -91,6 +139,14 @@ def keyframeRegionTrackCtx(image1: str = ..., image2: str = ..., image3: str = .
     """keyframeRegionTrackCtx is undoable, queryable, and editable.
     
     This command can be used to create a track context for the dope sheet editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a track view context for the dope sheet editor
+        #
+        cmds.keyframeRegionTrackCtx( 'keyframeRegionTrackContext' )
+    ```
 
     ---
     - Args:
@@ -105,6 +161,14 @@ def keyframeRegionTrackCtx(i1: str = ..., i2: str = ..., i3: str = ..., e: bool 
     
     This command can be used to create a track context for the dope sheet editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a track view context for the dope sheet editor
+        #
+        cmds.keyframeRegionTrackCtx( 'keyframeRegionTrackContext' )
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -117,6 +181,14 @@ def keyframeRegionTrackCtx(image1: str = ..., i1: str = ..., image2: str = ..., 
     """keyframeRegionTrackCtx is undoable, queryable, and editable.
     
     This command can be used to create a track context for the dope sheet editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a track view context for the dope sheet editor
+        #
+        cmds.keyframeRegionTrackCtx( 'keyframeRegionTrackContext' )
+    ```
 
     ---
     - Args:

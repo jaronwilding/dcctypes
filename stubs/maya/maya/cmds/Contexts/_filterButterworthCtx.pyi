@@ -3,76 +3,100 @@
 from typing import Any, overload
 
 @overload #Overload for filterButterworthCtx in ['create']
-def filterButterworthCtx(contextName: contextName, cutoffFrequency: float = ..., endTime: time = ..., exists: bool = ..., history: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., keepKeysOnFrame: bool = ..., name: str = ..., samplingRate: float = ..., selectedKeys: bool = ..., startTime: time = ...) -> str:
+def filterButterworthCtx(contextName: contextName, exists: bool = ..., history: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., name: str = ...) -> str:
     """filterButterworthCtx is undoable, queryable, and editable.
     
     Creates/edits a Butterworth filter context. This context can be used to
     interactively preview/edit the Butterworth filter on a set of animation
     curves.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        # Create a context
+        ctx = cmds.filterButterworthCtx()
+        # Activate the tool context
+        cmds.setToolTo( ctx )
+        # Adjust the Butterworth cutoff frequency to selected keys.
+        cmds.filterButterworthCtx( ctx, e=True, sk=True, cof=3.0 )
+        # Apply the current settings to the selected curves.
+        cmds.filterButterworthCtx( ctx, e=True, apply=True )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
-        - cutoffFrequency (cof): Specifies the cutoff frequency setting of the Butterworth filter. Default is 7.0.
-        - endTime (e): Specifies the end time portion of the time range for this filter. This time range is used when selectedKeys is false.
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
         - history (ch): If this is a tool command, turn the construction history on for the tool in question.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
-        - keepKeysOnFrame (kof): When true, the Butterworth filter will reposition output keys to whole frames for the specified sampling rate.
         - name (n): If this is a tool command, name the tool appropriately.
-        - samplingRate (sr): Specifies the sampling rate setting of the Butterworth filter. Default is 30.0.
-        - selectedKeys (sk): If true, sets the filter to apply to the selected keys. Otherwise, the filter applies to the specified time range. Default is on.
-        - startTime (s): Specifies the start time portion of the time range for this filter. This time range is used when selectedKeys is false.
     """
 @overload #Overload for filterButterworthCtx in ['create']
-def filterButterworthCtx(contextName: contextName, cof: float = ..., e: time = ..., ex: bool = ..., ch: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., kof: bool = ..., n: str = ..., sr: float = ..., sk: bool = ..., s: time = ...) -> str:
+def filterButterworthCtx(contextName: contextName, ex: bool = ..., ch: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., n: str = ...) -> str:
     """filterButterworthCtx is undoable, queryable, and editable.
     
     Creates/edits a Butterworth filter context. This context can be used to
     interactively preview/edit the Butterworth filter on a set of animation
     curves.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        # Create a context
+        ctx = cmds.filterButterworthCtx()
+        # Activate the tool context
+        cmds.setToolTo( ctx )
+        # Adjust the Butterworth cutoff frequency to selected keys.
+        cmds.filterButterworthCtx( ctx, e=True, sk=True, cof=3.0 )
+        # Apply the current settings to the selected curves.
+        cmds.filterButterworthCtx( ctx, e=True, apply=True )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
-        - cutoffFrequency (cof): Specifies the cutoff frequency setting of the Butterworth filter. Default is 7.0.
-        - endTime (e): Specifies the end time portion of the time range for this filter. This time range is used when selectedKeys is false.
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
         - history (ch): If this is a tool command, turn the construction history on for the tool in question.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
-        - keepKeysOnFrame (kof): When true, the Butterworth filter will reposition output keys to whole frames for the specified sampling rate.
         - name (n): If this is a tool command, name the tool appropriately.
-        - samplingRate (sr): Specifies the sampling rate setting of the Butterworth filter. Default is 30.0.
-        - selectedKeys (sk): If true, sets the filter to apply to the selected keys. Otherwise, the filter applies to the specified time range. Default is on.
-        - startTime (s): Specifies the start time portion of the time range for this filter. This time range is used when selectedKeys is false.
     """
 @overload #Overload for filterButterworthCtx in ['create']
-def filterButterworthCtx(contextName: contextName, cutoffFrequency: float = ..., cof: float = ..., endTime: time = ..., e: time = ..., exists: bool = ..., ex: bool = ..., history: bool = ..., ch: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., keepKeysOnFrame: bool = ..., kof: bool = ..., name: str = ..., n: str = ..., samplingRate: float = ..., sr: float = ..., selectedKeys: bool = ..., sk: bool = ..., startTime: time = ..., s: time = ...) -> str:
+def filterButterworthCtx(contextName: contextName, exists: bool = ..., ex: bool = ..., history: bool = ..., ch: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., name: str = ..., n: str = ...) -> str:
     """filterButterworthCtx is undoable, queryable, and editable.
     
     Creates/edits a Butterworth filter context. This context can be used to
     interactively preview/edit the Butterworth filter on a set of animation
     curves.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        # Create a context
+        ctx = cmds.filterButterworthCtx()
+        # Activate the tool context
+        cmds.setToolTo( ctx )
+        # Adjust the Butterworth cutoff frequency to selected keys.
+        cmds.filterButterworthCtx( ctx, e=True, sk=True, cof=3.0 )
+        # Apply the current settings to the selected curves.
+        cmds.filterButterworthCtx( ctx, e=True, apply=True )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
-        - cutoffFrequency (cof): Specifies the cutoff frequency setting of the Butterworth filter. Default is 7.0.
-        - endTime (e): Specifies the end time portion of the time range for this filter. This time range is used when selectedKeys is false.
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
         - history (ch): If this is a tool command, turn the construction history on for the tool in question.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
-        - keepKeysOnFrame (kof): When true, the Butterworth filter will reposition output keys to whole frames for the specified sampling rate.
         - name (n): If this is a tool command, name the tool appropriately.
-        - samplingRate (sr): Specifies the sampling rate setting of the Butterworth filter. Default is 30.0.
-        - selectedKeys (sk): If true, sets the filter to apply to the selected keys. Otherwise, the filter applies to the specified time range. Default is on.
-        - startTime (s): Specifies the start time portion of the time range for this filter. This time range is used when selectedKeys is false.
     """
 @overload #Overload for filterButterworthCtx in ['query']
 def filterButterworthCtx(contextName: contextName, cutoffFrequency: float = ..., endTime: time = ..., image1: str = ..., image2: str = ..., image3: str = ..., keepKeysOnFrame: bool = ..., samplingRate: float = ..., selectedKeys: bool = ..., startTime: time = ..., query: bool = ...) -> str:
@@ -81,6 +105,20 @@ def filterButterworthCtx(contextName: contextName, cutoffFrequency: float = ...,
     Creates/edits a Butterworth filter context. This context can be used to
     interactively preview/edit the Butterworth filter on a set of animation
     curves.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        # Create a context
+        ctx = cmds.filterButterworthCtx()
+        # Activate the tool context
+        cmds.setToolTo( ctx )
+        # Adjust the Butterworth cutoff frequency to selected keys.
+        cmds.filterButterworthCtx( ctx, e=True, sk=True, cof=3.0 )
+        # Apply the current settings to the selected curves.
+        cmds.filterButterworthCtx( ctx, e=True, apply=True )
+    ```
 
     ---
     - Args:
@@ -104,6 +142,20 @@ def filterButterworthCtx(contextName: contextName, cof: float = ..., e: time = .
     interactively preview/edit the Butterworth filter on a set of animation
     curves.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        # Create a context
+        ctx = cmds.filterButterworthCtx()
+        # Activate the tool context
+        cmds.setToolTo( ctx )
+        # Adjust the Butterworth cutoff frequency to selected keys.
+        cmds.filterButterworthCtx( ctx, e=True, sk=True, cof=3.0 )
+        # Apply the current settings to the selected curves.
+        cmds.filterButterworthCtx( ctx, e=True, apply=True )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -126,6 +178,20 @@ def filterButterworthCtx(contextName: contextName, cutoffFrequency: float = ...,
     interactively preview/edit the Butterworth filter on a set of animation
     curves.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        # Create a context
+        ctx = cmds.filterButterworthCtx()
+        # Activate the tool context
+        cmds.setToolTo( ctx )
+        # Adjust the Butterworth cutoff frequency to selected keys.
+        cmds.filterButterworthCtx( ctx, e=True, sk=True, cof=3.0 )
+        # Apply the current settings to the selected curves.
+        cmds.filterButterworthCtx( ctx, e=True, apply=True )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -147,6 +213,20 @@ def filterButterworthCtx(contextName: contextName, apply: bool = ..., cutoffFreq
     Creates/edits a Butterworth filter context. This context can be used to
     interactively preview/edit the Butterworth filter on a set of animation
     curves.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        # Create a context
+        ctx = cmds.filterButterworthCtx()
+        # Activate the tool context
+        cmds.setToolTo( ctx )
+        # Adjust the Butterworth cutoff frequency to selected keys.
+        cmds.filterButterworthCtx( ctx, e=True, sk=True, cof=3.0 )
+        # Apply the current settings to the selected curves.
+        cmds.filterButterworthCtx( ctx, e=True, apply=True )
+    ```
 
     ---
     - Args:
@@ -171,6 +251,20 @@ def filterButterworthCtx(contextName: contextName, a: bool = ..., cof: float = .
     interactively preview/edit the Butterworth filter on a set of animation
     curves.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        # Create a context
+        ctx = cmds.filterButterworthCtx()
+        # Activate the tool context
+        cmds.setToolTo( ctx )
+        # Adjust the Butterworth cutoff frequency to selected keys.
+        cmds.filterButterworthCtx( ctx, e=True, sk=True, cof=3.0 )
+        # Apply the current settings to the selected curves.
+        cmds.filterButterworthCtx( ctx, e=True, apply=True )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -193,6 +287,20 @@ def filterButterworthCtx(contextName: contextName, apply: bool = ..., a: bool = 
     Creates/edits a Butterworth filter context. This context can be used to
     interactively preview/edit the Butterworth filter on a set of animation
     curves.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        # Create a context
+        ctx = cmds.filterButterworthCtx()
+        # Activate the tool context
+        cmds.setToolTo( ctx )
+        # Adjust the Butterworth cutoff frequency to selected keys.
+        cmds.filterButterworthCtx( ctx, e=True, sk=True, cof=3.0 )
+        # Apply the current settings to the selected curves.
+        cmds.filterButterworthCtx( ctx, e=True, apply=True )
+    ```
 
     ---
     - Args:

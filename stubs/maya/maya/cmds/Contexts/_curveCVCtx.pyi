@@ -9,6 +9,18 @@ def curveCVCtx(bezier: bool = ..., degree: int = ..., exists: bool = ..., histor
     The curveCVCtx command creates a new context for creating curves by placing
     control vertices (CVs).
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 5:
+        cmds.curveCVCtx( "curveCVContext", degree=5 )
+        cmds.setToolTo("curveCVContext")
+        # To query the degree of an existing context:
+        cmds.curveCVCtx( "curveCVContext", q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveCVCtx( "curveCVContext", , e=True, degree=7 )
+    ```
+
     ---
     - Args:
         - degree (d): Curve degree
@@ -31,6 +43,18 @@ def curveCVCtx(bez: bool = ..., d: int = ..., ex: bool = ..., ch: bool = ..., i1
     
     The curveCVCtx command creates a new context for creating curves by placing
     control vertices (CVs).
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 5:
+        cmds.curveCVCtx( "curveCVContext", degree=5 )
+        cmds.setToolTo("curveCVContext")
+        # To query the degree of an existing context:
+        cmds.curveCVCtx( "curveCVContext", q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveCVCtx( "curveCVContext", , e=True, degree=7 )
+    ```
 
     ---
     - Args:
@@ -55,6 +79,18 @@ def curveCVCtx(bezier: bool = ..., bez: bool = ..., degree: int = ..., d: int = 
     The curveCVCtx command creates a new context for creating curves by placing
     control vertices (CVs).
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 5:
+        cmds.curveCVCtx( "curveCVContext", degree=5 )
+        cmds.setToolTo("curveCVContext")
+        # To query the degree of an existing context:
+        cmds.curveCVCtx( "curveCVContext", q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveCVCtx( "curveCVContext", , e=True, degree=7 )
+    ```
+
     ---
     - Args:
         - degree (d): Curve degree
@@ -78,6 +114,18 @@ def curveCVCtx(bezier: bool = ..., degree: int = ..., image1: str = ..., image2:
     The curveCVCtx command creates a new context for creating curves by placing
     control vertices (CVs).
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 5:
+        cmds.curveCVCtx( "curveCVContext", degree=5 )
+        cmds.setToolTo("curveCVContext")
+        # To query the degree of an existing context:
+        cmds.curveCVCtx( "curveCVContext", q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveCVCtx( "curveCVContext", , e=True, degree=7 )
+    ```
+
     ---
     - Args:
         - degree (d): Curve degree
@@ -98,6 +146,18 @@ def curveCVCtx(bez: bool = ..., d: int = ..., i1: str = ..., i2: str = ..., i3: 
     
     The curveCVCtx command creates a new context for creating curves by placing
     control vertices (CVs).
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 5:
+        cmds.curveCVCtx( "curveCVContext", degree=5 )
+        cmds.setToolTo("curveCVContext")
+        # To query the degree of an existing context:
+        cmds.curveCVCtx( "curveCVContext", q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveCVCtx( "curveCVContext", , e=True, degree=7 )
+    ```
 
     ---
     - Args:
@@ -120,6 +180,18 @@ def curveCVCtx(bezier: bool = ..., bez: bool = ..., degree: int = ..., d: int = 
     The curveCVCtx command creates a new context for creating curves by placing
     control vertices (CVs).
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 5:
+        cmds.curveCVCtx( "curveCVContext", degree=5 )
+        cmds.setToolTo("curveCVContext")
+        # To query the degree of an existing context:
+        cmds.curveCVCtx( "curveCVContext", q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveCVCtx( "curveCVContext", , e=True, degree=7 )
+    ```
+
     ---
     - Args:
         - degree (d): Curve degree
@@ -140,6 +212,18 @@ def curveCVCtx(bezier: bool = ..., degree: int = ..., image1: str = ..., image2:
     
     The curveCVCtx command creates a new context for creating curves by placing
     control vertices (CVs).
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 5:
+        cmds.curveCVCtx( "curveCVContext", degree=5 )
+        cmds.setToolTo("curveCVContext")
+        # To query the degree of an existing context:
+        cmds.curveCVCtx( "curveCVContext", q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveCVCtx( "curveCVContext", , e=True, degree=7 )
+    ```
 
     ---
     - Args:
@@ -162,6 +246,18 @@ def curveCVCtx(bez: bool = ..., d: int = ..., i1: str = ..., i2: str = ..., i3: 
     The curveCVCtx command creates a new context for creating curves by placing
     control vertices (CVs).
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 5:
+        cmds.curveCVCtx( "curveCVContext", degree=5 )
+        cmds.setToolTo("curveCVContext")
+        # To query the degree of an existing context:
+        cmds.curveCVCtx( "curveCVContext", q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveCVCtx( "curveCVContext", , e=True, degree=7 )
+    ```
+
     ---
     - Args:
         - degree (d): Curve degree
@@ -182,6 +278,18 @@ def curveCVCtx(bezier: bool = ..., bez: bool = ..., degree: int = ..., d: int = 
     
     The curveCVCtx command creates a new context for creating curves by placing
     control vertices (CVs).
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 5:
+        cmds.curveCVCtx( "curveCVContext", degree=5 )
+        cmds.setToolTo("curveCVContext")
+        # To query the degree of an existing context:
+        cmds.curveCVCtx( "curveCVContext", q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveCVCtx( "curveCVContext", , e=True, degree=7 )
+    ```
 
     ---
     - Args:

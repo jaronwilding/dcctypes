@@ -9,6 +9,14 @@ def regionSelectKeyCtx(contextName: contextName, exists: bool = ..., history: bo
     This command creates a context which may be used to scale keyframes within the
     graph editor using the region select tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context for the graph editor
+        #
+        cmds.regionSelectKeyCtx( 'regionSelectKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -25,6 +33,14 @@ def regionSelectKeyCtx(contextName: contextName, ex: bool = ..., ch: bool = ...,
     
     This command creates a context which may be used to scale keyframes within the
     graph editor using the region select tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context for the graph editor
+        #
+        cmds.regionSelectKeyCtx( 'regionSelectKeyContext' )
+    ```
 
     ---
     - Args:
@@ -43,6 +59,14 @@ def regionSelectKeyCtx(contextName: contextName, exists: bool = ..., ex: bool = 
     This command creates a context which may be used to scale keyframes within the
     graph editor using the region select tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context for the graph editor
+        #
+        cmds.regionSelectKeyCtx( 'regionSelectKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -59,6 +83,14 @@ def regionSelectKeyCtx(contextName: contextName, bottomManip: float = ..., image
     
     This command creates a context which may be used to scale keyframes within the
     graph editor using the region select tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context for the graph editor
+        #
+        cmds.regionSelectKeyCtx( 'regionSelectKeyContext' )
+    ```
 
     ---
     - Args:
@@ -79,6 +111,14 @@ def regionSelectKeyCtx(contextName: contextName, bot: float = ..., i1: str = ...
     This command creates a context which may be used to scale keyframes within the
     graph editor using the region select tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context for the graph editor
+        #
+        cmds.regionSelectKeyCtx( 'regionSelectKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -97,6 +137,14 @@ def regionSelectKeyCtx(contextName: contextName, bottomManip: float = ..., bot: 
     
     This command creates a context which may be used to scale keyframes within the
     graph editor using the region select tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context for the graph editor
+        #
+        cmds.regionSelectKeyCtx( 'regionSelectKeyContext' )
+    ```
 
     ---
     - Args:
@@ -117,6 +165,14 @@ def regionSelectKeyCtx(contextName: contextName, image1: str = ..., image2: str 
     This command creates a context which may be used to scale keyframes within the
     graph editor using the region select tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context for the graph editor
+        #
+        cmds.regionSelectKeyCtx( 'regionSelectKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -132,6 +188,14 @@ def regionSelectKeyCtx(contextName: contextName, i1: str = ..., i2: str = ..., i
     This command creates a context which may be used to scale keyframes within the
     graph editor using the region select tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context for the graph editor
+        #
+        cmds.regionSelectKeyCtx( 'regionSelectKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -146,6 +210,14 @@ def regionSelectKeyCtx(contextName: contextName, image1: str = ..., i1: str = ..
     
     This command creates a context which may be used to scale keyframes within the
     graph editor using the region select tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context for the graph editor
+        #
+        cmds.regionSelectKeyCtx( 'regionSelectKeyContext' )
+    ```
 
     ---
     - Args:

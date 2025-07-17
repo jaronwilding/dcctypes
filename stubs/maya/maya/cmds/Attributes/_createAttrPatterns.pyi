@@ -10,6 +10,14 @@ def createAttrPatterns(patternDefinition: str = ..., patternFile: str = ..., pat
     and a string or data file containing the description of the attribute tree in
     the pattern's format.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.createAttrPatterns( patternType="xmlPattern", patternFile="patterns/patternFile.xml" )
+        // Result: [myXMLPattern] //
+    ```
+
     ---
     - Args:
         - patternDefinition (pd): Hardcoded string containing the pattern definition, for simpler formats that don't really need a separate file for definition.
@@ -24,6 +32,14 @@ def createAttrPatterns(pd: str = ..., pf: str = ..., pt: str = ...) -> str:
     and a string or data file containing the description of the attribute tree in
     the pattern's format.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.createAttrPatterns( patternType="xmlPattern", patternFile="patterns/patternFile.xml" )
+        // Result: [myXMLPattern] //
+    ```
+
     ---
     - Args:
         - patternDefinition (pd): Hardcoded string containing the pattern definition, for simpler formats that don't really need a separate file for definition.
@@ -37,6 +53,14 @@ def createAttrPatterns(patternDefinition: str = ..., pd: str = ..., patternFile:
     Create a new instance of an attribute pattern given a pattern type (e.g. XML)
     and a string or data file containing the description of the attribute tree in
     the pattern's format.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.createAttrPatterns( patternType="xmlPattern", patternFile="patterns/patternFile.xml" )
+        // Result: [myXMLPattern] //
+    ```
 
     ---
     - Args:

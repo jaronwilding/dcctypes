@@ -12,6 +12,34 @@ def deleteExtension(attribute: str = ..., forceDelete: bool = ..., nodeType: str
     cannot be deleted, you must delete the complete compound attribute. This
     command has no undo, edit, or query capabilities.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.addExtension( nodeType='planet', longName='martians', shortName='mr', attributeType='double' )
+        cmds.createNode( 'planet', name='jupiter' )
+        cmds.createNode( 'planet', name='mars' )
+        cmds.setAttr( 'mars.mr', 35 )
+        # Delete an extension attribute named mr/martians.
+        # Only returns 1 since the planet node 'jupiter'
+        # does not have a non-default value on the extension.
+        cmds.deleteExtension( nodeType='planet', forceDelete=True, attribute='martians' )
+        # Return: 1 //
+        # The attribute is gone since it was forced out
+        cmds.attributeQuery( type='planet', attribute='mr', query=True, exists=True )
+        # Return: 0 //
+        # Re-add and delete the extension again, forcing the
+        # attribute to remain if non-default values exist.
+        cmds.addExtension( nodeType='planet', longName='martians', shortName='mr', attributeType='double' )
+        cmds.setAttr( 'mars.mr', 35 )
+        cmds.deleteExtension( nodeType='planet', forceDelete=False, attribute='mr' )
+        # Return: 0 //
+        # The attribute still exists since it had some non-default values
+        cmds.attributeQuery( type='planet', attribute='mr', query=True, exists=True )
+        # Return: 1 //
+        cmds.attributeQuery( name='jupiter', attribute='mr', query=True, exists=True )
+        # Return: 1 //
+    ```
+
     ---
     - Args:
         - attribute (at): Specify either the long or short name of the attribute.
@@ -29,6 +57,34 @@ def deleteExtension(at: str = ..., fd: bool = ..., nt: str = ...) -> int:
     cannot be deleted, you must delete the complete compound attribute. This
     command has no undo, edit, or query capabilities.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.addExtension( nodeType='planet', longName='martians', shortName='mr', attributeType='double' )
+        cmds.createNode( 'planet', name='jupiter' )
+        cmds.createNode( 'planet', name='mars' )
+        cmds.setAttr( 'mars.mr', 35 )
+        # Delete an extension attribute named mr/martians.
+        # Only returns 1 since the planet node 'jupiter'
+        # does not have a non-default value on the extension.
+        cmds.deleteExtension( nodeType='planet', forceDelete=True, attribute='martians' )
+        # Return: 1 //
+        # The attribute is gone since it was forced out
+        cmds.attributeQuery( type='planet', attribute='mr', query=True, exists=True )
+        # Return: 0 //
+        # Re-add and delete the extension again, forcing the
+        # attribute to remain if non-default values exist.
+        cmds.addExtension( nodeType='planet', longName='martians', shortName='mr', attributeType='double' )
+        cmds.setAttr( 'mars.mr', 35 )
+        cmds.deleteExtension( nodeType='planet', forceDelete=False, attribute='mr' )
+        # Return: 0 //
+        # The attribute still exists since it had some non-default values
+        cmds.attributeQuery( type='planet', attribute='mr', query=True, exists=True )
+        # Return: 1 //
+        cmds.attributeQuery( name='jupiter', attribute='mr', query=True, exists=True )
+        # Return: 1 //
+    ```
+
     ---
     - Args:
         - attribute (at): Specify either the long or short name of the attribute.
@@ -45,6 +101,34 @@ def deleteExtension(attribute: str = ..., at: str = ..., forceDelete: bool = ...
     extension attribute can be deleted at a time. Children of a compound attribute
     cannot be deleted, you must delete the complete compound attribute. This
     command has no undo, edit, or query capabilities.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.addExtension( nodeType='planet', longName='martians', shortName='mr', attributeType='double' )
+        cmds.createNode( 'planet', name='jupiter' )
+        cmds.createNode( 'planet', name='mars' )
+        cmds.setAttr( 'mars.mr', 35 )
+        # Delete an extension attribute named mr/martians.
+        # Only returns 1 since the planet node 'jupiter'
+        # does not have a non-default value on the extension.
+        cmds.deleteExtension( nodeType='planet', forceDelete=True, attribute='martians' )
+        # Return: 1 //
+        # The attribute is gone since it was forced out
+        cmds.attributeQuery( type='planet', attribute='mr', query=True, exists=True )
+        # Return: 0 //
+        # Re-add and delete the extension again, forcing the
+        # attribute to remain if non-default values exist.
+        cmds.addExtension( nodeType='planet', longName='martians', shortName='mr', attributeType='double' )
+        cmds.setAttr( 'mars.mr', 35 )
+        cmds.deleteExtension( nodeType='planet', forceDelete=False, attribute='mr' )
+        # Return: 0 //
+        # The attribute still exists since it had some non-default values
+        cmds.attributeQuery( type='planet', attribute='mr', query=True, exists=True )
+        # Return: 1 //
+        cmds.attributeQuery( name='jupiter', attribute='mr', query=True, exists=True )
+        # Return: 1 //
+    ```
 
     ---
     - Args:

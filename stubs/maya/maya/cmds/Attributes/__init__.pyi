@@ -38,7 +38,6 @@ from ._relationship import relationship
 from ._removeMultiInstance import removeMultiInstance
 from ._renameAttr import renameAttr
 from ._setAttr import setAttr
-
 __all__ = [
     "addAttr",
     "addExtension",

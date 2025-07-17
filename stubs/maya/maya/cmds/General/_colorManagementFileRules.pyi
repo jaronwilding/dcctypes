@@ -17,6 +17,28 @@ def colorManagementFileRules(addRule: str = ..., colorSpace: str = ..., down: st
     file path pattern, extension, and color space changed. The rule list can be
     saved to user preferences, and loaded from user preferences.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.colorManagementFileRules(add='ruleName', pattern='filePattern', extension='extension', colorSpace='colorSpace')
+        cmds.colorManagementFileRules(remove='ruleName')
+        cmds.colorManagementFileRules(up='ruleName')
+        cmds.colorManagementFileRules(down='ruleName')
+        cmds.colorManagementFileRules('ruleName', edit=True, pattern='filePattern')
+        cmds.colorManagementFileRules('ruleName', edit=True, extension='extension')
+        cmds.colorManagementFileRules('ruleName', edit=True, colorSpace='colorSpace')
+        cmds.colorManagementFileRules('ruleName', query=True, pattern=True)
+        cmds.colorManagementFileRules('ruleName', query=True, extension=True)
+        cmds.colorManagementFileRules('ruleName', query=True, colorSpace=True)
+        cmds.colorManagementFileRules(save=True)
+        cmds.colorManagementFileRules(load=True)
+        # Return array of rule name strings.
+        cmds.colorManagementFileRules(listRules=True)
+        # Return input space corresponding to file path.
+        cmds.colorManagementFileRules(evaluate=filePath)
+    ```
+
     ---
     - Args:
         - addRule (add): Add a rule with the argument name to the list of rules, as the highest-priority rule.  If this flag is used, the pattern, extension, and colorSpace flags must be used as well, to specify the file rule pattern, extension, and color space,
@@ -48,6 +70,28 @@ def colorManagementFileRules(add: str = ..., cs: str = ..., dwn: str = ..., ev: 
     added, removed, and changed in priority in the list. Each rule can have its
     file path pattern, extension, and color space changed. The rule list can be
     saved to user preferences, and loaded from user preferences.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.colorManagementFileRules(add='ruleName', pattern='filePattern', extension='extension', colorSpace='colorSpace')
+        cmds.colorManagementFileRules(remove='ruleName')
+        cmds.colorManagementFileRules(up='ruleName')
+        cmds.colorManagementFileRules(down='ruleName')
+        cmds.colorManagementFileRules('ruleName', edit=True, pattern='filePattern')
+        cmds.colorManagementFileRules('ruleName', edit=True, extension='extension')
+        cmds.colorManagementFileRules('ruleName', edit=True, colorSpace='colorSpace')
+        cmds.colorManagementFileRules('ruleName', query=True, pattern=True)
+        cmds.colorManagementFileRules('ruleName', query=True, extension=True)
+        cmds.colorManagementFileRules('ruleName', query=True, colorSpace=True)
+        cmds.colorManagementFileRules(save=True)
+        cmds.colorManagementFileRules(load=True)
+        # Return array of rule name strings.
+        cmds.colorManagementFileRules(listRules=True)
+        # Return input space corresponding to file path.
+        cmds.colorManagementFileRules(evaluate=filePath)
+    ```
 
     ---
     - Args:
@@ -81,6 +125,28 @@ def colorManagementFileRules(addRule: str = ..., add: str = ..., colorSpace: str
     file path pattern, extension, and color space changed. The rule list can be
     saved to user preferences, and loaded from user preferences.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.colorManagementFileRules(add='ruleName', pattern='filePattern', extension='extension', colorSpace='colorSpace')
+        cmds.colorManagementFileRules(remove='ruleName')
+        cmds.colorManagementFileRules(up='ruleName')
+        cmds.colorManagementFileRules(down='ruleName')
+        cmds.colorManagementFileRules('ruleName', edit=True, pattern='filePattern')
+        cmds.colorManagementFileRules('ruleName', edit=True, extension='extension')
+        cmds.colorManagementFileRules('ruleName', edit=True, colorSpace='colorSpace')
+        cmds.colorManagementFileRules('ruleName', query=True, pattern=True)
+        cmds.colorManagementFileRules('ruleName', query=True, extension=True)
+        cmds.colorManagementFileRules('ruleName', query=True, colorSpace=True)
+        cmds.colorManagementFileRules(save=True)
+        cmds.colorManagementFileRules(load=True)
+        # Return array of rule name strings.
+        cmds.colorManagementFileRules(listRules=True)
+        # Return input space corresponding to file path.
+        cmds.colorManagementFileRules(evaluate=filePath)
+    ```
+
     ---
     - Args:
         - addRule (add): Add a rule with the argument name to the list of rules, as the highest-priority rule.  If this flag is used, the pattern, extension, and colorSpace flags must be used as well, to specify the file rule pattern, extension, and color space,
@@ -113,6 +179,28 @@ def colorManagementFileRules(colorSpace: str = ..., colorSpaceDescription: str =
     file path pattern, extension, and color space changed. The rule list can be
     saved to user preferences, and loaded from user preferences.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.colorManagementFileRules(add='ruleName', pattern='filePattern', extension='extension', colorSpace='colorSpace')
+        cmds.colorManagementFileRules(remove='ruleName')
+        cmds.colorManagementFileRules(up='ruleName')
+        cmds.colorManagementFileRules(down='ruleName')
+        cmds.colorManagementFileRules('ruleName', edit=True, pattern='filePattern')
+        cmds.colorManagementFileRules('ruleName', edit=True, extension='extension')
+        cmds.colorManagementFileRules('ruleName', edit=True, colorSpace='colorSpace')
+        cmds.colorManagementFileRules('ruleName', query=True, pattern=True)
+        cmds.colorManagementFileRules('ruleName', query=True, extension=True)
+        cmds.colorManagementFileRules('ruleName', query=True, colorSpace=True)
+        cmds.colorManagementFileRules(save=True)
+        cmds.colorManagementFileRules(load=True)
+        # Return array of rule name strings.
+        cmds.colorManagementFileRules(listRules=True)
+        # Return input space corresponding to file path.
+        cmds.colorManagementFileRules(evaluate=filePath)
+    ```
+
     ---
     - Args:
         - colorSpace (cs): The input color space for the rule.  If the rule matches a file path, this is the color space that is returned.  This color space must match an existing color space in the input color space list.
@@ -139,6 +227,28 @@ def colorManagementFileRules(cs: str = ..., csd: str = ..., csf: str = ..., csn:
     added, removed, and changed in priority in the list. Each rule can have its
     file path pattern, extension, and color space changed. The rule list can be
     saved to user preferences, and loaded from user preferences.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.colorManagementFileRules(add='ruleName', pattern='filePattern', extension='extension', colorSpace='colorSpace')
+        cmds.colorManagementFileRules(remove='ruleName')
+        cmds.colorManagementFileRules(up='ruleName')
+        cmds.colorManagementFileRules(down='ruleName')
+        cmds.colorManagementFileRules('ruleName', edit=True, pattern='filePattern')
+        cmds.colorManagementFileRules('ruleName', edit=True, extension='extension')
+        cmds.colorManagementFileRules('ruleName', edit=True, colorSpace='colorSpace')
+        cmds.colorManagementFileRules('ruleName', query=True, pattern=True)
+        cmds.colorManagementFileRules('ruleName', query=True, extension=True)
+        cmds.colorManagementFileRules('ruleName', query=True, colorSpace=True)
+        cmds.colorManagementFileRules(save=True)
+        cmds.colorManagementFileRules(load=True)
+        # Return array of rule name strings.
+        cmds.colorManagementFileRules(listRules=True)
+        # Return input space corresponding to file path.
+        cmds.colorManagementFileRules(evaluate=filePath)
+    ```
 
     ---
     - Args:
@@ -167,6 +277,28 @@ def colorManagementFileRules(colorSpace: str = ..., cs: str = ..., colorSpaceDes
     file path pattern, extension, and color space changed. The rule list can be
     saved to user preferences, and loaded from user preferences.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.colorManagementFileRules(add='ruleName', pattern='filePattern', extension='extension', colorSpace='colorSpace')
+        cmds.colorManagementFileRules(remove='ruleName')
+        cmds.colorManagementFileRules(up='ruleName')
+        cmds.colorManagementFileRules(down='ruleName')
+        cmds.colorManagementFileRules('ruleName', edit=True, pattern='filePattern')
+        cmds.colorManagementFileRules('ruleName', edit=True, extension='extension')
+        cmds.colorManagementFileRules('ruleName', edit=True, colorSpace='colorSpace')
+        cmds.colorManagementFileRules('ruleName', query=True, pattern=True)
+        cmds.colorManagementFileRules('ruleName', query=True, extension=True)
+        cmds.colorManagementFileRules('ruleName', query=True, colorSpace=True)
+        cmds.colorManagementFileRules(save=True)
+        cmds.colorManagementFileRules(load=True)
+        # Return array of rule name strings.
+        cmds.colorManagementFileRules(listRules=True)
+        # Return input space corresponding to file path.
+        cmds.colorManagementFileRules(evaluate=filePath)
+    ```
+
     ---
     - Args:
         - colorSpace (cs): The input color space for the rule.  If the rule matches a file path, this is the color space that is returned.  This color space must match an existing color space in the input color space list.
@@ -194,6 +326,28 @@ def colorManagementFileRules(colorSpace: str = ..., extension: str = ..., patter
     file path pattern, extension, and color space changed. The rule list can be
     saved to user preferences, and loaded from user preferences.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.colorManagementFileRules(add='ruleName', pattern='filePattern', extension='extension', colorSpace='colorSpace')
+        cmds.colorManagementFileRules(remove='ruleName')
+        cmds.colorManagementFileRules(up='ruleName')
+        cmds.colorManagementFileRules(down='ruleName')
+        cmds.colorManagementFileRules('ruleName', edit=True, pattern='filePattern')
+        cmds.colorManagementFileRules('ruleName', edit=True, extension='extension')
+        cmds.colorManagementFileRules('ruleName', edit=True, colorSpace='colorSpace')
+        cmds.colorManagementFileRules('ruleName', query=True, pattern=True)
+        cmds.colorManagementFileRules('ruleName', query=True, extension=True)
+        cmds.colorManagementFileRules('ruleName', query=True, colorSpace=True)
+        cmds.colorManagementFileRules(save=True)
+        cmds.colorManagementFileRules(load=True)
+        # Return array of rule name strings.
+        cmds.colorManagementFileRules(listRules=True)
+        # Return input space corresponding to file path.
+        cmds.colorManagementFileRules(evaluate=filePath)
+    ```
+
     ---
     - Args:
         - colorSpace (cs): The input color space for the rule.  If the rule matches a file path, this is the color space that is returned.  This color space must match an existing color space in the input color space list.
@@ -217,6 +371,28 @@ def colorManagementFileRules(cs: str = ..., ext: str = ..., pat: str = ..., e: b
     file path pattern, extension, and color space changed. The rule list can be
     saved to user preferences, and loaded from user preferences.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.colorManagementFileRules(add='ruleName', pattern='filePattern', extension='extension', colorSpace='colorSpace')
+        cmds.colorManagementFileRules(remove='ruleName')
+        cmds.colorManagementFileRules(up='ruleName')
+        cmds.colorManagementFileRules(down='ruleName')
+        cmds.colorManagementFileRules('ruleName', edit=True, pattern='filePattern')
+        cmds.colorManagementFileRules('ruleName', edit=True, extension='extension')
+        cmds.colorManagementFileRules('ruleName', edit=True, colorSpace='colorSpace')
+        cmds.colorManagementFileRules('ruleName', query=True, pattern=True)
+        cmds.colorManagementFileRules('ruleName', query=True, extension=True)
+        cmds.colorManagementFileRules('ruleName', query=True, colorSpace=True)
+        cmds.colorManagementFileRules(save=True)
+        cmds.colorManagementFileRules(load=True)
+        # Return array of rule name strings.
+        cmds.colorManagementFileRules(listRules=True)
+        # Return input space corresponding to file path.
+        cmds.colorManagementFileRules(evaluate=filePath)
+    ```
+
     ---
     - Args:
         - colorSpace (cs): The input color space for the rule.  If the rule matches a file path, this is the color space that is returned.  This color space must match an existing color space in the input color space list.
@@ -239,6 +415,28 @@ def colorManagementFileRules(colorSpace: str = ..., cs: str = ..., extension: st
     added, removed, and changed in priority in the list. Each rule can have its
     file path pattern, extension, and color space changed. The rule list can be
     saved to user preferences, and loaded from user preferences.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.colorManagementFileRules(add='ruleName', pattern='filePattern', extension='extension', colorSpace='colorSpace')
+        cmds.colorManagementFileRules(remove='ruleName')
+        cmds.colorManagementFileRules(up='ruleName')
+        cmds.colorManagementFileRules(down='ruleName')
+        cmds.colorManagementFileRules('ruleName', edit=True, pattern='filePattern')
+        cmds.colorManagementFileRules('ruleName', edit=True, extension='extension')
+        cmds.colorManagementFileRules('ruleName', edit=True, colorSpace='colorSpace')
+        cmds.colorManagementFileRules('ruleName', query=True, pattern=True)
+        cmds.colorManagementFileRules('ruleName', query=True, extension=True)
+        cmds.colorManagementFileRules('ruleName', query=True, colorSpace=True)
+        cmds.colorManagementFileRules(save=True)
+        cmds.colorManagementFileRules(load=True)
+        # Return array of rule name strings.
+        cmds.colorManagementFileRules(listRules=True)
+        # Return input space corresponding to file path.
+        cmds.colorManagementFileRules(evaluate=filePath)
+    ```
 
     ---
     - Args:

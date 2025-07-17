@@ -14,6 +14,20 @@ def isConnected(string string: string string, ignoreUnitConversion: bool = ...) 
     The first string specifies the source plug to check for connection.
     The second one specifies the destination plug to check for connection.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sphere( n='jupiter' )
+        cmds.sphere( n='io' )
+        cmds.connectAttr( 'jupiter.ty', 'io.ty' )
+        # Are the two "tx" attributes on transform1 and transform2 connected?
+        cmds.isConnected( 'jupiter.tx', 'io.tx' )
+        # Result: 0 #
+        # Are the two "ty" attributes on transform1 and transform2 connected?
+        cmds.isConnected( 'jupiter.ty', 'io.ty' )
+        # Result: 1 #
+    ```
+
     ---
     - Args:
         - string string: Input item(s).
@@ -31,6 +45,20 @@ def isConnected(string string: string string, iuc: bool = ...) -> bool:
     The first string specifies the source plug to check for connection.
     The second one specifies the destination plug to check for connection.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sphere( n='jupiter' )
+        cmds.sphere( n='io' )
+        cmds.connectAttr( 'jupiter.ty', 'io.ty' )
+        # Are the two "tx" attributes on transform1 and transform2 connected?
+        cmds.isConnected( 'jupiter.tx', 'io.tx' )
+        # Result: 0 #
+        # Are the two "ty" attributes on transform1 and transform2 connected?
+        cmds.isConnected( 'jupiter.ty', 'io.ty' )
+        # Result: 1 #
+    ```
+
     ---
     - Args:
         - string string: Input item(s).
@@ -47,6 +75,20 @@ def isConnected(string string: string string, ignoreUnitConversion: bool = ..., 
     
     The first string specifies the source plug to check for connection.
     The second one specifies the destination plug to check for connection.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sphere( n='jupiter' )
+        cmds.sphere( n='io' )
+        cmds.connectAttr( 'jupiter.ty', 'io.ty' )
+        # Are the two "tx" attributes on transform1 and transform2 connected?
+        cmds.isConnected( 'jupiter.tx', 'io.tx' )
+        # Result: 0 #
+        # Are the two "ty" attributes on transform1 and transform2 connected?
+        cmds.isConnected( 'jupiter.ty', 'io.ty' )
+        # Result: 1 #
+    ```
 
     ---
     - Args:

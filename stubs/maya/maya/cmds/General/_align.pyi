@@ -8,6 +8,15 @@ def align(alignToLead: bool = ..., coordinateSystem: name = ..., xAxis: str = ..
     
     Align or spread objects along X Y and Z axis.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # align the selected objects to their average mid-point in x
+        cmds.align(x='mid')
+        # align the selected objects to the mid-point in x of the first select object
+        cmds.align(x='mid', alignToLead=True)
+    ```
+
     ---
     - Args:
         - alignToLead (atl): When set, the min, center or max values are computed from the lead object. Otherwise, the values are averaged for all objects.Default is false
@@ -22,6 +31,15 @@ def align(atl: bool = ..., cs: name = ..., x: str = ..., y: str = ..., z: str = 
     
     Align or spread objects along X Y and Z axis.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # align the selected objects to their average mid-point in x
+        cmds.align(x='mid')
+        # align the selected objects to the mid-point in x of the first select object
+        cmds.align(x='mid', alignToLead=True)
+    ```
+
     ---
     - Args:
         - alignToLead (atl): When set, the min, center or max values are computed from the lead object. Otherwise, the values are averaged for all objects.Default is false
@@ -35,6 +53,15 @@ def align(alignToLead: bool = ..., atl: bool = ..., coordinateSystem: name = ...
     """align is undoable, NOT queryable, and NOT editable.
     
     Align or spread objects along X Y and Z axis.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # align the selected objects to their average mid-point in x
+        cmds.align(x='mid')
+        # align the selected objects to the mid-point in x of the first select object
+        cmds.align(x='mid', alignToLead=True)
+    ```
 
     ---
     - Args:

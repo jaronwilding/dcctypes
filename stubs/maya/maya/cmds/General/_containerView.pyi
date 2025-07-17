@@ -14,6 +14,27 @@ def containerView(itemInfo: str = ..., itemList: bool = ..., viewDescription: bo
     settings in force on the container node at the time of the query (i.e. the
     container's view mode, template name, view name attributes).
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Obtain a list of all available views for container1
+        #
+        cmds.containerView ( 'container1', query=True, viewList=True);
+        # Result: [u'Animation', u'Rendering'] #
+        #
+        # Get a list of view items in the current view for container1
+        # In this example the list returned will include only the name for
+        # each item in the view.
+        cmds.containerView ( 'container1', itemList=True, itemInfo="itemName", query=True)
+        # Result: [u'RenderSetup', u'color', u'intensity', u'Transform', u'rotateY'] #
+        #
+        # Get a list of view items.
+        # In this query the list returned will include the group boolean and label
+        # for each item in the view.
+        cmds.containerView ( 'container1', itemList=True, itemInfo="itemIsGroup:itemLabel", query=True)
+        # Result: [u'1', u'RenderSetup', u'0', u'Color', u'0', u'Intensity', u'1', u'Transform', u'0', u'Rotate Y'] #
+    ```
+
     ---
     - Args:
         - itemInfo (ii): Used in query mode in conjunction with the itemList flag. The command will return a list of information for each item in the view, the information fields returned for each item are determined by this argument value. The information fields
@@ -44,6 +65,27 @@ def containerView(ii: str = ..., il: bool = ..., vd: bool = ..., vb: bool = ...,
     settings in force on the container node at the time of the query (i.e. the
     container's view mode, template name, view name attributes).
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Obtain a list of all available views for container1
+        #
+        cmds.containerView ( 'container1', query=True, viewList=True);
+        # Result: [u'Animation', u'Rendering'] #
+        #
+        # Get a list of view items in the current view for container1
+        # In this example the list returned will include only the name for
+        # each item in the view.
+        cmds.containerView ( 'container1', itemList=True, itemInfo="itemName", query=True)
+        # Result: [u'RenderSetup', u'color', u'intensity', u'Transform', u'rotateY'] #
+        #
+        # Get a list of view items.
+        # In this query the list returned will include the group boolean and label
+        # for each item in the view.
+        cmds.containerView ( 'container1', itemList=True, itemInfo="itemIsGroup:itemLabel", query=True)
+        # Result: [u'1', u'RenderSetup', u'0', u'Color', u'0', u'Intensity', u'1', u'Transform', u'0', u'Rotate Y'] #
+    ```
+
     ---
     - Args:
         - itemInfo (ii): Used in query mode in conjunction with the itemList flag. The command will return a list of information for each item in the view, the information fields returned for each item are determined by this argument value. The information fields
@@ -73,6 +115,27 @@ def containerView(itemInfo: str = ..., ii: str = ..., itemList: bool = ..., il: 
     information returned from this command will be based on the view-related
     settings in force on the container node at the time of the query (i.e. the
     container's view mode, template name, view name attributes).
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Obtain a list of all available views for container1
+        #
+        cmds.containerView ( 'container1', query=True, viewList=True);
+        # Result: [u'Animation', u'Rendering'] #
+        #
+        # Get a list of view items in the current view for container1
+        # In this example the list returned will include only the name for
+        # each item in the view.
+        cmds.containerView ( 'container1', itemList=True, itemInfo="itemName", query=True)
+        # Result: [u'RenderSetup', u'color', u'intensity', u'Transform', u'rotateY'] #
+        #
+        # Get a list of view items.
+        # In this query the list returned will include the group boolean and label
+        # for each item in the view.
+        cmds.containerView ( 'container1', itemList=True, itemInfo="itemIsGroup:itemLabel", query=True)
+        # Result: [u'1', u'RenderSetup', u'0', u'Color', u'0', u'Intensity', u'1', u'Transform', u'0', u'Rotate Y'] #
+    ```
 
     ---
     - Args:

@@ -8,6 +8,14 @@ def selectContext(string: str, exists: bool = ..., history: bool = ..., image1: 
     
     Creates a context to perform selection.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new select context, then switch to it
+        cmds.selectContext('selectContext1')
+        cmds.setToolTo('selectContext1')
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -23,6 +31,14 @@ def selectContext(string: str, ex: bool = ..., ch: bool = ..., i1: str = ..., i2
     """selectContext is undoable, queryable, and editable.
     
     Creates a context to perform selection.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new select context, then switch to it
+        cmds.selectContext('selectContext1')
+        cmds.setToolTo('selectContext1')
+    ```
 
     ---
     - Args:
@@ -40,6 +56,14 @@ def selectContext(string: str, exists: bool = ..., ex: bool = ..., history: bool
     
     Creates a context to perform selection.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new select context, then switch to it
+        cmds.selectContext('selectContext1')
+        cmds.setToolTo('selectContext1')
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -56,6 +80,14 @@ def selectContext(string: str, image1: str = ..., image2: str = ..., image3: str
     
     Creates a context to perform selection.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new select context, then switch to it
+        cmds.selectContext('selectContext1')
+        cmds.setToolTo('selectContext1')
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -69,6 +101,14 @@ def selectContext(string: str, i1: str = ..., i2: str = ..., i3: str = ..., q: b
     """selectContext is undoable, queryable, and editable.
     
     Creates a context to perform selection.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new select context, then switch to it
+        cmds.selectContext('selectContext1')
+        cmds.setToolTo('selectContext1')
+    ```
 
     ---
     - Args:
@@ -84,6 +124,14 @@ def selectContext(string: str, image1: str = ..., i1: str = ..., image2: str = .
     
     Creates a context to perform selection.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new select context, then switch to it
+        cmds.selectContext('selectContext1')
+        cmds.setToolTo('selectContext1')
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -97,6 +145,14 @@ def selectContext(string: str, image1: str = ..., image2: str = ..., image3: str
     """selectContext is undoable, queryable, and editable.
     
     Creates a context to perform selection.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new select context, then switch to it
+        cmds.selectContext('selectContext1')
+        cmds.setToolTo('selectContext1')
+    ```
 
     ---
     - Args:
@@ -112,6 +168,14 @@ def selectContext(string: str, i1: str = ..., i2: str = ..., i3: str = ..., e: b
     
     Creates a context to perform selection.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new select context, then switch to it
+        cmds.selectContext('selectContext1')
+        cmds.setToolTo('selectContext1')
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -125,6 +189,14 @@ def selectContext(string: str, image1: str = ..., i1: str = ..., image2: str = .
     """selectContext is undoable, queryable, and editable.
     
     Creates a context to perform selection.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new select context, then switch to it
+        cmds.selectContext('selectContext1')
+        cmds.setToolTo('selectContext1')
+    ```
 
     ---
     - Args:

@@ -29,6 +29,29 @@ def instance([objects]: [objects], leaf: bool = ..., name: str = ..., smartTrans
     
     See also: duplicate
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a hierarchy
+        cmds.sphere( n='sphere1' )
+        cmds.move( 3, 0, 0 )
+        cmds.sphere( n='sphere2' )
+        cmds.move( -3, 0, 0 )
+        cmds.group( 'sphere1', 'sphere2', n='group1' )
+        cmds.group( 'group1', n='group2' )
+        # Create an instance of one of the spheres
+        cmds.instance( 'sphere1' )
+        # Duplicate the hierarchy except for the shapes which are
+        # instanced.instances of all leaf level shapes
+        cmds.instance( 'group1', leaf=True )
+        # Create a row of 4 instanced circles which are equally spaced
+        cmds.circle( n='circle1' )
+        cmds.instance()
+        cmds.move( 3, 0, 0 )
+        cmds.instance( smartTransform=True )
+        cmds.instance( smartTransform=True )
+    ```
+
     ---
     - Args:
         - [objects]: Input item(s).
@@ -63,6 +86,29 @@ def instance([objects]: [objects], lf: bool = ..., n: str = ..., st: bool = ...)
     
     See also: duplicate
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a hierarchy
+        cmds.sphere( n='sphere1' )
+        cmds.move( 3, 0, 0 )
+        cmds.sphere( n='sphere2' )
+        cmds.move( -3, 0, 0 )
+        cmds.group( 'sphere1', 'sphere2', n='group1' )
+        cmds.group( 'group1', n='group2' )
+        # Create an instance of one of the spheres
+        cmds.instance( 'sphere1' )
+        # Duplicate the hierarchy except for the shapes which are
+        # instanced.instances of all leaf level shapes
+        cmds.instance( 'group1', leaf=True )
+        # Create a row of 4 instanced circles which are equally spaced
+        cmds.circle( n='circle1' )
+        cmds.instance()
+        cmds.move( 3, 0, 0 )
+        cmds.instance( smartTransform=True )
+        cmds.instance( smartTransform=True )
+    ```
+
     ---
     - Args:
         - [objects]: Input item(s).
@@ -96,6 +142,29 @@ def instance([objects]: [objects], leaf: bool = ..., lf: bool = ..., name: str =
     It returns a list of the new objects created by the instance operation.
     
     See also: duplicate
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a hierarchy
+        cmds.sphere( n='sphere1' )
+        cmds.move( 3, 0, 0 )
+        cmds.sphere( n='sphere2' )
+        cmds.move( -3, 0, 0 )
+        cmds.group( 'sphere1', 'sphere2', n='group1' )
+        cmds.group( 'group1', n='group2' )
+        # Create an instance of one of the spheres
+        cmds.instance( 'sphere1' )
+        # Duplicate the hierarchy except for the shapes which are
+        # instanced.instances of all leaf level shapes
+        cmds.instance( 'group1', leaf=True )
+        # Create a row of 4 instanced circles which are equally spaced
+        cmds.circle( n='circle1' )
+        cmds.instance()
+        cmds.move( 3, 0, 0 )
+        cmds.instance( smartTransform=True )
+        cmds.instance( smartTransform=True )
+    ```
 
     ---
     - Args:

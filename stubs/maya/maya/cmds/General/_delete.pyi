@@ -14,6 +14,29 @@ def delete(objects: objects, all: bool = ..., attribute: str = ..., channels: bo
     deleting two CVs in the same "row" on a NURBS surface will delete the whole
     row.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To delete selected objects use:
+        cmds.delete()
+        # To delete a few specific objects like surfaceShape1, surface1 and
+        # paramCurve1 use:
+        cmds.delete( 'surfaceShape1', 'surface1', 'paramCurve1' )
+        # To delete all channels in the scene:
+        cmds.delete( all=True, c=True )
+        # To delete static channels connected to selected nodes:
+        cmds.delete( sc=True )
+        # To delete motion path nodes connected to selected nodes:
+        cmds.delete( mp=True )
+        # To delete all expressions in the scene:
+        cmds.delete( all=True, e=True )
+        # To delete selected constraints and constraints attached to selected nodes:
+        cmds.delete( cn=True )
+        # Notes:
+        # The at, h, s and cp flags only apply when either c/channels
+        # or sc/staticChannels or e/expressions options are specified.
+    ```
+
     ---
     - Args:
         - objects: Input item(s).
@@ -45,6 +68,29 @@ def delete(objects: objects, at: str = ..., c: bool = ..., cn: bool = ..., ch: b
     At times, more than just specified items will be deleted. For example,
     deleting two CVs in the same "row" on a NURBS surface will delete the whole
     row.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To delete selected objects use:
+        cmds.delete()
+        # To delete a few specific objects like surfaceShape1, surface1 and
+        # paramCurve1 use:
+        cmds.delete( 'surfaceShape1', 'surface1', 'paramCurve1' )
+        # To delete all channels in the scene:
+        cmds.delete( all=True, c=True )
+        # To delete static channels connected to selected nodes:
+        cmds.delete( sc=True )
+        # To delete motion path nodes connected to selected nodes:
+        cmds.delete( mp=True )
+        # To delete all expressions in the scene:
+        cmds.delete( all=True, e=True )
+        # To delete selected constraints and constraints attached to selected nodes:
+        cmds.delete( cn=True )
+        # Notes:
+        # The at, h, s and cp flags only apply when either c/channels
+        # or sc/staticChannels or e/expressions options are specified.
+    ```
 
     ---
     - Args:
@@ -78,6 +124,29 @@ def delete(objects: objects, all: bool = ..., attribute: str = ..., at: str = ..
     deleting two CVs in the same "row" on a NURBS surface will delete the whole
     row.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To delete selected objects use:
+        cmds.delete()
+        # To delete a few specific objects like surfaceShape1, surface1 and
+        # paramCurve1 use:
+        cmds.delete( 'surfaceShape1', 'surface1', 'paramCurve1' )
+        # To delete all channels in the scene:
+        cmds.delete( all=True, c=True )
+        # To delete static channels connected to selected nodes:
+        cmds.delete( sc=True )
+        # To delete motion path nodes connected to selected nodes:
+        cmds.delete( mp=True )
+        # To delete all expressions in the scene:
+        cmds.delete( all=True, e=True )
+        # To delete selected constraints and constraints attached to selected nodes:
+        cmds.delete( cn=True )
+        # Notes:
+        # The at, h, s and cp flags only apply when either c/channels
+        # or sc/staticChannels or e/expressions options are specified.
+    ```
+
     ---
     - Args:
         - objects: Input item(s).
@@ -97,112 +166,4 @@ def delete(objects: objects, all: bool = ..., attribute: str = ..., at: str = ..
             deleted. Default: true.
         - unitlessAnimationCurves (uac): Modifies the -c/channels and -sc/staticChannels flags. When true, only channels connected to unitless-input animation curves (for instance, those created by 'setDrivenKeyframe' will be deleted.  When false, no unitless-input animation
             curves will be deleted.  Default: true.
-    """
-@overload #Overload for delete in ['query']
-def delete(objects: objects, attribute: str = ..., query: bool = ...) -> None:
-    """delete is undoable, NOT queryable, and NOT editable.
-    
-    This command is used to delete selected objects, or all objects, or objects
-    specified along with the command. Flags are available to filter the type of
-    objects that the command acts on.
-    
-    At times, more than just specified items will be deleted. For example,
-    deleting two CVs in the same "row" on a NURBS surface will delete the whole
-    row.
-
-    ---
-    - Args:
-        - objects: Input item(s).
-        - attribute (at): List of attributes to selectIn query mode, this flag needs a value.
-        - query (q): Query mode flag
-    """
-@overload #Overload for delete in ['query']
-def delete(objects: objects, at: str = ..., q: bool = ...) -> None:
-    """delete is undoable, NOT queryable, and NOT editable.
-    
-    This command is used to delete selected objects, or all objects, or objects
-    specified along with the command. Flags are available to filter the type of
-    objects that the command acts on.
-    
-    At times, more than just specified items will be deleted. For example,
-    deleting two CVs in the same "row" on a NURBS surface will delete the whole
-    row.
-
-    ---
-    - Args:
-        - objects: Input item(s).
-        - attribute (at): List of attributes to selectIn query mode, this flag needs a value.
-        - query (q): Query mode flag
-    """
-@overload #Overload for delete in ['query']
-def delete(objects: objects, attribute: str = ..., at: str = ..., query: bool = ..., q: bool = ...) -> None:
-    """delete is undoable, NOT queryable, and NOT editable.
-    
-    This command is used to delete selected objects, or all objects, or objects
-    specified along with the command. Flags are available to filter the type of
-    objects that the command acts on.
-    
-    At times, more than just specified items will be deleted. For example,
-    deleting two CVs in the same "row" on a NURBS surface will delete the whole
-    row.
-
-    ---
-    - Args:
-        - objects: Input item(s).
-        - attribute (at): List of attributes to selectIn query mode, this flag needs a value.
-        - query (q): Query mode flag
-    """
-@overload #Overload for delete in ['edit']
-def delete(objects: objects, attribute: str = ..., edit: bool = ...) -> None:
-    """delete is undoable, NOT queryable, and NOT editable.
-    
-    This command is used to delete selected objects, or all objects, or objects
-    specified along with the command. Flags are available to filter the type of
-    objects that the command acts on.
-    
-    At times, more than just specified items will be deleted. For example,
-    deleting two CVs in the same "row" on a NURBS surface will delete the whole
-    row.
-
-    ---
-    - Args:
-        - objects: Input item(s).
-        - attribute (at): List of attributes to selectIn query mode, this flag needs a value.
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for delete in ['edit']
-def delete(objects: objects, at: str = ..., e: bool = ...) -> None:
-    """delete is undoable, NOT queryable, and NOT editable.
-    
-    This command is used to delete selected objects, or all objects, or objects
-    specified along with the command. Flags are available to filter the type of
-    objects that the command acts on.
-    
-    At times, more than just specified items will be deleted. For example,
-    deleting two CVs in the same "row" on a NURBS surface will delete the whole
-    row.
-
-    ---
-    - Args:
-        - objects: Input item(s).
-        - attribute (at): List of attributes to selectIn query mode, this flag needs a value.
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for delete in ['edit']
-def delete(objects: objects, attribute: str = ..., at: str = ..., edit: bool = ..., e: bool = ...) -> None:
-    """delete is undoable, NOT queryable, and NOT editable.
-    
-    This command is used to delete selected objects, or all objects, or objects
-    specified along with the command. Flags are available to filter the type of
-    objects that the command acts on.
-    
-    At times, more than just specified items will be deleted. For example,
-    deleting two CVs in the same "row" on a NURBS surface will delete the whole
-    row.
-
-    ---
-    - Args:
-        - objects: Input item(s).
-        - attribute (at): List of attributes to selectIn query mode, this flag needs a value.
-        - edit (e): Edit mode flag
     """

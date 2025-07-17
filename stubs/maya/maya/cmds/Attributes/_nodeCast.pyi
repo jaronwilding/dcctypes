@@ -17,6 +17,22 @@ def nodeCast(stringstring: stringstring, copyDynamicAttrs: bool = ..., disableAP
     IMPORTANT: the command will currently ignore instance connections and instance
     objects. It will also ignore reference nodes.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        tr1 = cmds.createNode( 'transform' )
+        tr2 = cmds.createNode( 'transform' )
+        cmds.connectAttr( tr1 + ".t", tr2 + ".t" )
+        cmds.connectAttr( tr2 + ".r", tr1 + ".r" )
+        theT = tr1
+        cmds.select( theT, replace=1 )
+        cmds.addAttr( ln="unmatched", at="long" )
+        middle_man = cmds.createNode( 'transform' )
+        cmds.connectAttr( theT + ".unmatched", middle_man + ".tx" )
+        swapNode = cmds.createNode( 'transform' )
+        cmds.nodeCast( theT, swapNode, disconnectUnmatchedAttrs=true )
+    ```
+
     ---
     - Args:
         - stringstring: Input item(s).
@@ -45,6 +61,22 @@ def nodeCast(stringstring: stringstring, cda: bool = ..., dsa: bool = ..., dsj: 
     IMPORTANT: the command will currently ignore instance connections and instance
     objects. It will also ignore reference nodes.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        tr1 = cmds.createNode( 'transform' )
+        tr2 = cmds.createNode( 'transform' )
+        cmds.connectAttr( tr1 + ".t", tr2 + ".t" )
+        cmds.connectAttr( tr2 + ".r", tr1 + ".r" )
+        theT = tr1
+        cmds.select( theT, replace=1 )
+        cmds.addAttr( ln="unmatched", at="long" )
+        middle_man = cmds.createNode( 'transform' )
+        cmds.connectAttr( theT + ".unmatched", middle_man + ".tx" )
+        swapNode = cmds.createNode( 'transform' )
+        cmds.nodeCast( theT, swapNode, disconnectUnmatchedAttrs=true )
+    ```
+
     ---
     - Args:
         - stringstring: Input item(s).
@@ -72,6 +104,22 @@ def nodeCast(stringstring: stringstring, copyDynamicAttrs: bool = ..., cda: bool
     nodes will remain in their initial state prior to execution of the command.
     IMPORTANT: the command will currently ignore instance connections and instance
     objects. It will also ignore reference nodes.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        tr1 = cmds.createNode( 'transform' )
+        tr2 = cmds.createNode( 'transform' )
+        cmds.connectAttr( tr1 + ".t", tr2 + ".t" )
+        cmds.connectAttr( tr2 + ".r", tr1 + ".r" )
+        theT = tr1
+        cmds.select( theT, replace=1 )
+        cmds.addAttr( ln="unmatched", at="long" )
+        middle_man = cmds.createNode( 'transform' )
+        cmds.connectAttr( theT + ".unmatched", middle_man + ".tx" )
+        swapNode = cmds.createNode( 'transform' )
+        cmds.nodeCast( theT, swapNode, disconnectUnmatchedAttrs=true )
+    ```
 
     ---
     - Args:

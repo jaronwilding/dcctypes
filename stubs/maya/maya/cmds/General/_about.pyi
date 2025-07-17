@@ -10,6 +10,13 @@ def about(apiVersion: bool = ..., application: bool = ..., arm64: bool = ..., ba
     executed without flags. If one of the above flags is specified then the
     specified version information is returned.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.about( )
+        version = cmds.about(v=True)
+    ```
+
     ---
     - Args:
         - apiVersion (api): Returns the api version.
@@ -81,6 +88,13 @@ def about(api: bool = ..., a: bool = ..., a64: bool = ..., b: bool = ..., bd: bo
     executed without flags. If one of the above flags is specified then the
     specified version information is returned.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.about( )
+        version = cmds.about(v=True)
+    ```
+
     ---
     - Args:
         - apiVersion (api): Returns the api version.
@@ -151,6 +165,13 @@ def about(apiVersion: bool = ..., api: bool = ..., application: bool = ..., a: b
     This command displays version information about the application if it is
     executed without flags. If one of the above flags is specified then the
     specified version information is returned.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.about( )
+        version = cmds.about(v=True)
+    ```
 
     ---
     - Args:

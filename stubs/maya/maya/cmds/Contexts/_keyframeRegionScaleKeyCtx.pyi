@@ -3,11 +3,20 @@
 from typing import Any, overload
 
 @overload #Overload for keyframeRegionScaleKeyCtx in ['create']
-def keyframeRegionScaleKeyCtx(contextName: contextName, exists: bool = ..., history: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., name: str = ..., scaleSpecifiedKeys: bool = ...) -> str:
+def keyframeRegionScaleKeyCtx(contextName: contextName, exists: bool = ..., history: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., name: str = ...) -> str:
     """keyframeRegionScaleKeyCtx is undoable, queryable, and editable.
     
     This command creates a context which may be used to scale keyframes within the
     keyframe region of the dope sheet editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context
+        # for the dope sheet editor
+        #
+        cmds.keyframeRegionScaleKeyCtx( 'keyframeRegionScaleKeyContext', type='rect' )
+    ```
 
     ---
     - Args:
@@ -18,14 +27,22 @@ def keyframeRegionScaleKeyCtx(contextName: contextName, exists: bool = ..., hist
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
         - name (n): If this is a tool command, name the tool appropriately.
-        - scaleSpecifiedKeys (ssk): Determines if only the specified keys should be scaled. If false, the non-selected keys will be adjusted during the scale. The default is true.
     """
 @overload #Overload for keyframeRegionScaleKeyCtx in ['create']
-def keyframeRegionScaleKeyCtx(contextName: contextName, ex: bool = ..., ch: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., n: str = ..., ssk: bool = ...) -> str:
+def keyframeRegionScaleKeyCtx(contextName: contextName, ex: bool = ..., ch: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., n: str = ...) -> str:
     """keyframeRegionScaleKeyCtx is undoable, queryable, and editable.
     
     This command creates a context which may be used to scale keyframes within the
     keyframe region of the dope sheet editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context
+        # for the dope sheet editor
+        #
+        cmds.keyframeRegionScaleKeyCtx( 'keyframeRegionScaleKeyContext', type='rect' )
+    ```
 
     ---
     - Args:
@@ -36,14 +53,22 @@ def keyframeRegionScaleKeyCtx(contextName: contextName, ex: bool = ..., ch: bool
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
         - name (n): If this is a tool command, name the tool appropriately.
-        - scaleSpecifiedKeys (ssk): Determines if only the specified keys should be scaled. If false, the non-selected keys will be adjusted during the scale. The default is true.
     """
 @overload #Overload for keyframeRegionScaleKeyCtx in ['create']
-def keyframeRegionScaleKeyCtx(contextName: contextName, exists: bool = ..., ex: bool = ..., history: bool = ..., ch: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., name: str = ..., n: str = ..., scaleSpecifiedKeys: bool = ..., ssk: bool = ...) -> str:
+def keyframeRegionScaleKeyCtx(contextName: contextName, exists: bool = ..., ex: bool = ..., history: bool = ..., ch: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., name: str = ..., n: str = ...) -> str:
     """keyframeRegionScaleKeyCtx is undoable, queryable, and editable.
     
     This command creates a context which may be used to scale keyframes within the
     keyframe region of the dope sheet editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context
+        # for the dope sheet editor
+        #
+        cmds.keyframeRegionScaleKeyCtx( 'keyframeRegionScaleKeyContext', type='rect' )
+    ```
 
     ---
     - Args:
@@ -54,7 +79,6 @@ def keyframeRegionScaleKeyCtx(contextName: contextName, exists: bool = ..., ex: 
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
         - name (n): If this is a tool command, name the tool appropriately.
-        - scaleSpecifiedKeys (ssk): Determines if only the specified keys should be scaled. If false, the non-selected keys will be adjusted during the scale. The default is true.
     """
 @overload #Overload for keyframeRegionScaleKeyCtx in ['query']
 def keyframeRegionScaleKeyCtx(contextName: contextName, image1: str = ..., image2: str = ..., image3: str = ..., scaleSpecifiedKeys: bool = ..., query: bool = ...) -> str:
@@ -62,6 +86,15 @@ def keyframeRegionScaleKeyCtx(contextName: contextName, image1: str = ..., image
     
     This command creates a context which may be used to scale keyframes within the
     keyframe region of the dope sheet editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context
+        # for the dope sheet editor
+        #
+        cmds.keyframeRegionScaleKeyCtx( 'keyframeRegionScaleKeyContext', type='rect' )
+    ```
 
     ---
     - Args:
@@ -79,6 +112,15 @@ def keyframeRegionScaleKeyCtx(contextName: contextName, i1: str = ..., i2: str =
     This command creates a context which may be used to scale keyframes within the
     keyframe region of the dope sheet editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context
+        # for the dope sheet editor
+        #
+        cmds.keyframeRegionScaleKeyCtx( 'keyframeRegionScaleKeyContext', type='rect' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -95,6 +137,15 @@ def keyframeRegionScaleKeyCtx(contextName: contextName, image1: str = ..., i1: s
     This command creates a context which may be used to scale keyframes within the
     keyframe region of the dope sheet editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context
+        # for the dope sheet editor
+        #
+        cmds.keyframeRegionScaleKeyCtx( 'keyframeRegionScaleKeyContext', type='rect' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -110,6 +161,15 @@ def keyframeRegionScaleKeyCtx(contextName: contextName, image1: str = ..., image
     
     This command creates a context which may be used to scale keyframes within the
     keyframe region of the dope sheet editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context
+        # for the dope sheet editor
+        #
+        cmds.keyframeRegionScaleKeyCtx( 'keyframeRegionScaleKeyContext', type='rect' )
+    ```
 
     ---
     - Args:
@@ -128,6 +188,15 @@ def keyframeRegionScaleKeyCtx(contextName: contextName, i1: str = ..., i2: str =
     This command creates a context which may be used to scale keyframes within the
     keyframe region of the dope sheet editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context
+        # for the dope sheet editor
+        #
+        cmds.keyframeRegionScaleKeyCtx( 'keyframeRegionScaleKeyContext', type='rect' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -144,6 +213,15 @@ def keyframeRegionScaleKeyCtx(contextName: contextName, image1: str = ..., i1: s
     
     This command creates a context which may be used to scale keyframes within the
     keyframe region of the dope sheet editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a manipulator style scale key context
+        # for the dope sheet editor
+        #
+        cmds.keyframeRegionScaleKeyCtx( 'keyframeRegionScaleKeyContext', type='rect' )
+    ```
 
     ---
     - Args:

@@ -11,6 +11,21 @@ def color([objects]: [objects], rgbColor: [float, float, float] = ..., userDefin
     defined colors. The -rgb/rgbColor flags can be specified if the user requires
     floating point RGB colors.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a sphere and deselect it
+        cmds.sphere( n='sphere1' )
+        cmds.select( d=True )
+        # Set the inactive wireframe color of the sphere to the
+        # first user defined color
+        cmds.color( 'sphere1', ud=1 )
+        # rgb defined color (red)
+        cmds.color( 'sphere1', rgb=(1, 0, 0) )
+        # set the wireframe color of the sphere back to its default color
+        cmds.color( 'sphere1' )
+    ```
+
     ---
     - Args:
         - [objects]: Input item(s).
@@ -26,6 +41,21 @@ def color([objects]: [objects], rgb: [float, float, float] = ..., ud: int = ...)
     defined colors. The -rgb/rgbColor flags can be specified if the user requires
     floating point RGB colors.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a sphere and deselect it
+        cmds.sphere( n='sphere1' )
+        cmds.select( d=True )
+        # Set the inactive wireframe color of the sphere to the
+        # first user defined color
+        cmds.color( 'sphere1', ud=1 )
+        # rgb defined color (red)
+        cmds.color( 'sphere1', rgb=(1, 0, 0) )
+        # set the wireframe color of the sphere back to its default color
+        cmds.color( 'sphere1' )
+    ```
+
     ---
     - Args:
         - [objects]: Input item(s).
@@ -40,6 +70,21 @@ def color([objects]: [objects], rgbColor: [float, float, float] = ..., rgb: [flo
     their class color or if the -ud/userDefined flag is specified, one of the user
     defined colors. The -rgb/rgbColor flags can be specified if the user requires
     floating point RGB colors.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a sphere and deselect it
+        cmds.sphere( n='sphere1' )
+        cmds.select( d=True )
+        # Set the inactive wireframe color of the sphere to the
+        # first user defined color
+        cmds.color( 'sphere1', ud=1 )
+        # rgb defined color (red)
+        cmds.color( 'sphere1', rgb=(1, 0, 0) )
+        # set the wireframe color of the sphere back to its default color
+        cmds.color( 'sphere1' )
+    ```
 
     ---
     - Args:

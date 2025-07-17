@@ -3,10 +3,16 @@
 from typing import Any, overload
 
 @overload #Overload for softModCtx in ['create']
-def softModCtx(string: str, exists: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., reset: bool = ...) -> str:
+def softModCtx(string: str, exists: bool = ..., image1: str = ..., image2: str = ..., image3: str = ...) -> str:
     """softModCtx is undoable, queryable, and editable.
     
     Controls the softMod context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.softModCtx()
+    ```
 
     ---
     - Args:
@@ -15,13 +21,18 @@ def softModCtx(string: str, exists: bool = ..., image1: str = ..., image2: str =
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
-        - reset (rst): Reset the tool options to their default values.
     """
 @overload #Overload for softModCtx in ['create']
-def softModCtx(string: str, ex: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., rst: bool = ...) -> str:
+def softModCtx(string: str, ex: bool = ..., i1: str = ..., i2: str = ..., i3: str = ...) -> str:
     """softModCtx is undoable, queryable, and editable.
     
     Controls the softMod context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.softModCtx()
+    ```
 
     ---
     - Args:
@@ -30,13 +41,18 @@ def softModCtx(string: str, ex: bool = ..., i1: str = ..., i2: str = ..., i3: st
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
-        - reset (rst): Reset the tool options to their default values.
     """
 @overload #Overload for softModCtx in ['create']
-def softModCtx(string: str, exists: bool = ..., ex: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., reset: bool = ..., rst: bool = ...) -> str:
+def softModCtx(string: str, exists: bool = ..., ex: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ...) -> str:
     """softModCtx is undoable, queryable, and editable.
     
     Controls the softMod context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.softModCtx()
+    ```
 
     ---
     - Args:
@@ -45,13 +61,18 @@ def softModCtx(string: str, exists: bool = ..., ex: bool = ..., image1: str = ..
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
-        - reset (rst): Reset the tool options to their default values.
     """
 @overload #Overload for softModCtx in ['query']
 def softModCtx(string: str, image1: str = ..., image2: str = ..., image3: str = ..., reset: bool = ..., query: bool = ...) -> str:
     """softModCtx is undoable, queryable, and editable.
     
     Controls the softMod context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.softModCtx()
+    ```
 
     ---
     - Args:
@@ -68,6 +89,12 @@ def softModCtx(string: str, i1: str = ..., i2: str = ..., i3: str = ..., rst: bo
     
     Controls the softMod context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.softModCtx()
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -83,6 +110,12 @@ def softModCtx(string: str, image1: str = ..., i1: str = ..., image2: str = ...,
     
     Controls the softMod context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.softModCtx()
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -97,6 +130,12 @@ def softModCtx(string: str, dragSlider: str = ..., falseColor: bool = ..., image
     """softModCtx is undoable, queryable, and editable.
     
     Controls the softMod context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.softModCtx()
+    ```
 
     ---
     - Args:
@@ -115,6 +154,12 @@ def softModCtx(string: str, ds: str = ..., fc: bool = ..., i1: str = ..., i2: st
     
     Controls the softMod context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.softModCtx()
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -131,6 +176,12 @@ def softModCtx(string: str, dragSlider: str = ..., ds: str = ..., falseColor: bo
     """softModCtx is undoable, queryable, and editable.
     
     Controls the softMod context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.softModCtx()
+    ```
 
     ---
     - Args:

@@ -11,6 +11,28 @@ def commandLogging(historySize: int = ..., logCommands: bool = ..., logFile: str
     Note that if commands are logged in memory, they will be available to the
     crash reporter and appear in crash logs.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set the number of commands logged in memory to 20
+        #
+        cmds.commandLogging( historySize=20 )
+        # Query the number of commands being logged in memory
+        #
+        cmds.commandLogging( q=True, historySize=True )
+        # Result: 20
+        # Query the log file location
+        #
+        cmds.commandLogging( q=True, logFile=True )
+        # Result: C:/Users/foobar/Documents/maya/mayaCommandLog.txt
+        # Change the log file location
+        #
+        cmds.commandLogging( logFile='C:/temp/log.txt' )
+        # Reset the log file to default
+        #
+        cmds.commandLogging( resetLogFile=True )
+    ```
+
     ---
     - Args:
         - historySize (hs): Sets the number of entries in the in-memory command history.
@@ -27,6 +49,28 @@ def commandLogging(hs: int = ..., lc: bool = ..., lf: str = ..., rc: bool = ...,
     
     Note that if commands are logged in memory, they will be available to the
     crash reporter and appear in crash logs.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set the number of commands logged in memory to 20
+        #
+        cmds.commandLogging( historySize=20 )
+        # Query the number of commands being logged in memory
+        #
+        cmds.commandLogging( q=True, historySize=True )
+        # Result: 20
+        # Query the log file location
+        #
+        cmds.commandLogging( q=True, logFile=True )
+        # Result: C:/Users/foobar/Documents/maya/mayaCommandLog.txt
+        # Change the log file location
+        #
+        cmds.commandLogging( logFile='C:/temp/log.txt' )
+        # Reset the log file to default
+        #
+        cmds.commandLogging( resetLogFile=True )
+    ```
 
     ---
     - Args:
@@ -45,6 +89,28 @@ def commandLogging(historySize: int = ..., hs: int = ..., logCommands: bool = ..
     Note that if commands are logged in memory, they will be available to the
     crash reporter and appear in crash logs.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set the number of commands logged in memory to 20
+        #
+        cmds.commandLogging( historySize=20 )
+        # Query the number of commands being logged in memory
+        #
+        cmds.commandLogging( q=True, historySize=True )
+        # Result: 20
+        # Query the log file location
+        #
+        cmds.commandLogging( q=True, logFile=True )
+        # Result: C:/Users/foobar/Documents/maya/mayaCommandLog.txt
+        # Change the log file location
+        #
+        cmds.commandLogging( logFile='C:/temp/log.txt' )
+        # Reset the log file to default
+        #
+        cmds.commandLogging( resetLogFile=True )
+    ```
+
     ---
     - Args:
         - historySize (hs): Sets the number of entries in the in-memory command history.
@@ -61,6 +127,28 @@ def commandLogging(historySize: int = ..., logCommands: bool = ..., logFile: str
     
     Note that if commands are logged in memory, they will be available to the
     crash reporter and appear in crash logs.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set the number of commands logged in memory to 20
+        #
+        cmds.commandLogging( historySize=20 )
+        # Query the number of commands being logged in memory
+        #
+        cmds.commandLogging( q=True, historySize=True )
+        # Result: 20
+        # Query the log file location
+        #
+        cmds.commandLogging( q=True, logFile=True )
+        # Result: C:/Users/foobar/Documents/maya/mayaCommandLog.txt
+        # Change the log file location
+        #
+        cmds.commandLogging( logFile='C:/temp/log.txt' )
+        # Reset the log file to default
+        #
+        cmds.commandLogging( resetLogFile=True )
+    ```
 
     ---
     - Args:
@@ -80,6 +168,28 @@ def commandLogging(hs: int = ..., lc: bool = ..., lf: str = ..., rc: bool = ...,
     Note that if commands are logged in memory, they will be available to the
     crash reporter and appear in crash logs.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set the number of commands logged in memory to 20
+        #
+        cmds.commandLogging( historySize=20 )
+        # Query the number of commands being logged in memory
+        #
+        cmds.commandLogging( q=True, historySize=True )
+        # Result: 20
+        # Query the log file location
+        #
+        cmds.commandLogging( q=True, logFile=True )
+        # Result: C:/Users/foobar/Documents/maya/mayaCommandLog.txt
+        # Change the log file location
+        #
+        cmds.commandLogging( logFile='C:/temp/log.txt' )
+        # Reset the log file to default
+        #
+        cmds.commandLogging( resetLogFile=True )
+    ```
+
     ---
     - Args:
         - historySize (hs): Sets the number of entries in the in-memory command history.
@@ -98,6 +208,28 @@ def commandLogging(historySize: int = ..., hs: int = ..., logCommands: bool = ..
     Note that if commands are logged in memory, they will be available to the
     crash reporter and appear in crash logs.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Set the number of commands logged in memory to 20
+        #
+        cmds.commandLogging( historySize=20 )
+        # Query the number of commands being logged in memory
+        #
+        cmds.commandLogging( q=True, historySize=True )
+        # Result: 20
+        # Query the log file location
+        #
+        cmds.commandLogging( q=True, logFile=True )
+        # Result: C:/Users/foobar/Documents/maya/mayaCommandLog.txt
+        # Change the log file location
+        #
+        cmds.commandLogging( logFile='C:/temp/log.txt' )
+        # Reset the log file to default
+        #
+        cmds.commandLogging( resetLogFile=True )
+    ```
+
     ---
     - Args:
         - historySize (hs): Sets the number of entries in the in-memory command history.
@@ -106,58 +238,4 @@ def commandLogging(historySize: int = ..., hs: int = ..., logCommands: bool = ..
         - recordCommands (rc): Enables or disables the in-memory logging of commands.
         - resetLogFile (rl): Reset the log filename to the default ('mayaCommandLog.txt' in the application folder, alongside 'Maya.env' and the default projects folder).
         - query (q): Query mode flag
-    """
-@overload #Overload for commandLogging in ['edit']
-def commandLogging(historySize: int = ..., logCommands: bool = ..., logFile: str = ..., recordCommands: bool = ..., resetLogFile: bool = ..., edit: bool = ...) -> None:
-    """commandLogging is undoable, queryable, and NOT editable.
-    
-    This command controls logging of Maya commands, in memory and on disk.
-    
-    Note that if commands are logged in memory, they will be available to the
-    crash reporter and appear in crash logs.
-
-    ---
-    - Args:
-        - historySize (hs): Sets the number of entries in the in-memory command history.
-        - logCommands (lc): Enables or disables the on-disk logging of commands.
-        - logFile (lf): Sets the filename to use for the on-disk log. If logging is active, the current file will be closed before the new one is opened.
-        - recordCommands (rc): Enables or disables the in-memory logging of commands.
-        - resetLogFile (rl): Reset the log filename to the default ('mayaCommandLog.txt' in the application folder, alongside 'Maya.env' and the default projects folder).
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for commandLogging in ['edit']
-def commandLogging(hs: int = ..., lc: bool = ..., lf: str = ..., rc: bool = ..., rl: bool = ..., e: bool = ...) -> None:
-    """commandLogging is undoable, queryable, and NOT editable.
-    
-    This command controls logging of Maya commands, in memory and on disk.
-    
-    Note that if commands are logged in memory, they will be available to the
-    crash reporter and appear in crash logs.
-
-    ---
-    - Args:
-        - historySize (hs): Sets the number of entries in the in-memory command history.
-        - logCommands (lc): Enables or disables the on-disk logging of commands.
-        - logFile (lf): Sets the filename to use for the on-disk log. If logging is active, the current file will be closed before the new one is opened.
-        - recordCommands (rc): Enables or disables the in-memory logging of commands.
-        - resetLogFile (rl): Reset the log filename to the default ('mayaCommandLog.txt' in the application folder, alongside 'Maya.env' and the default projects folder).
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for commandLogging in ['edit']
-def commandLogging(historySize: int = ..., hs: int = ..., logCommands: bool = ..., lc: bool = ..., logFile: str = ..., lf: str = ..., recordCommands: bool = ..., rc: bool = ..., resetLogFile: bool = ..., rl: bool = ..., edit: bool = ..., e: bool = ...) -> None:
-    """commandLogging is undoable, queryable, and NOT editable.
-    
-    This command controls logging of Maya commands, in memory and on disk.
-    
-    Note that if commands are logged in memory, they will be available to the
-    crash reporter and appear in crash logs.
-
-    ---
-    - Args:
-        - historySize (hs): Sets the number of entries in the in-memory command history.
-        - logCommands (lc): Enables or disables the on-disk logging of commands.
-        - logFile (lf): Sets the filename to use for the on-disk log. If logging is active, the current file will be closed before the new one is opened.
-        - recordCommands (rc): Enables or disables the in-memory logging of commands.
-        - resetLogFile (rl): Reset the log filename to the default ('mayaCommandLog.txt' in the application folder, alongside 'Maya.env' and the default projects folder).
-        - edit (e): Edit mode flag
     """

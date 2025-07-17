@@ -29,6 +29,52 @@ def makeIdentity([dagObject]: [dagObject], apply: bool = ..., jointOrient: bool 
     transformations are reset to identity, without any changes to preserve
     position.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Example 1:  Create a hierarchical object, for example a
+        # car. Scale the tires, translate the doors into place, rotate the
+        # steering wheel, then select the group node above the car, and type:
+        cmds.makeIdentity( apply=True )
+        # The car should not move.
+        cmds.move( 3, 0, 0 )
+        # The car should move exactly 3 units to (3, 0, 0), since
+        # the previous makeIdentity command set its translation to (0, 0, 0).
+        cmds.makeIdentity()
+        # The car should return to the same position as before the move.
+        # Example 2:  Create a curve and translate, rotate and scale it.
+        # Then group it and translate, rotate and scale the group.
+        cmds.makeIdentity( 'group1', apply=True, translate=True )
+        # The curve will not move, but both the curve transform's and group
+        # transform's translation will be set to 0, 0, 0. The rotation and
+        # scale will remain the same.
+        cmds.makeIdentity( 'group1', apply=True, rotate=True )
+        # The curve will not move, but both the curve transform's and group
+        # transform's rotation will be set to 0, 0, 0. The translation and
+        # scale will remain the same.
+        cmds.makeIdentity( 'group1', apply=True, scale=True )
+        # The curve will not move, but both the curve transform's and group
+        # transform's scale will be set to 1, 1, 1. The translation and rotation
+        # will remain the same.
+        cmds.makeIdentity( 'group1', apply=True, translate=True, rotate=True )
+        # The curve will not move, but both the curve transform's and group
+        # transform's translation and rotation will be set to 0, 0, 0.
+        # The scale will remain the same.
+        cmds.makeIdentity( 'group1', apply=False, translate=True )
+        # The curve transform and group transform will have their translation
+        # set to 0, 0, 0. The curve will probably move, since the apply
+        # flag is false.
+        cmds.makeIdentity( apply=True, translate=True, rotate=True, scale=True )
+        # This is the same as "makeIdentity -apply true".
+        # Example 3:  Create a polyCube and translate, rotate and scale it.
+        # And then freeze the normals.
+        cmds.polyCube()
+        cmds.rotate( 30, 45, 0 )
+        cmds.move( 2, 0, 2, r=True )
+        cmds.scale( 2, 1, 2, r=True )
+        cmds.makeIdentity( apply=True, t=1, r=1, s=1, n=2 )
+    ```
+
     ---
     - Args:
         - [dagObject]: Input item(s).
@@ -69,6 +115,52 @@ def makeIdentity([dagObject]: [dagObject], a: bool = ..., jo: bool = ..., n: int
     transformations are reset to identity, without any changes to preserve
     position.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Example 1:  Create a hierarchical object, for example a
+        # car. Scale the tires, translate the doors into place, rotate the
+        # steering wheel, then select the group node above the car, and type:
+        cmds.makeIdentity( apply=True )
+        # The car should not move.
+        cmds.move( 3, 0, 0 )
+        # The car should move exactly 3 units to (3, 0, 0), since
+        # the previous makeIdentity command set its translation to (0, 0, 0).
+        cmds.makeIdentity()
+        # The car should return to the same position as before the move.
+        # Example 2:  Create a curve and translate, rotate and scale it.
+        # Then group it and translate, rotate and scale the group.
+        cmds.makeIdentity( 'group1', apply=True, translate=True )
+        # The curve will not move, but both the curve transform's and group
+        # transform's translation will be set to 0, 0, 0. The rotation and
+        # scale will remain the same.
+        cmds.makeIdentity( 'group1', apply=True, rotate=True )
+        # The curve will not move, but both the curve transform's and group
+        # transform's rotation will be set to 0, 0, 0. The translation and
+        # scale will remain the same.
+        cmds.makeIdentity( 'group1', apply=True, scale=True )
+        # The curve will not move, but both the curve transform's and group
+        # transform's scale will be set to 1, 1, 1. The translation and rotation
+        # will remain the same.
+        cmds.makeIdentity( 'group1', apply=True, translate=True, rotate=True )
+        # The curve will not move, but both the curve transform's and group
+        # transform's translation and rotation will be set to 0, 0, 0.
+        # The scale will remain the same.
+        cmds.makeIdentity( 'group1', apply=False, translate=True )
+        # The curve transform and group transform will have their translation
+        # set to 0, 0, 0. The curve will probably move, since the apply
+        # flag is false.
+        cmds.makeIdentity( apply=True, translate=True, rotate=True, scale=True )
+        # This is the same as "makeIdentity -apply true".
+        # Example 3:  Create a polyCube and translate, rotate and scale it.
+        # And then freeze the normals.
+        cmds.polyCube()
+        cmds.rotate( 30, 45, 0 )
+        cmds.move( 2, 0, 2, r=True )
+        cmds.scale( 2, 1, 2, r=True )
+        cmds.makeIdentity( apply=True, t=1, r=1, s=1, n=2 )
+    ```
+
     ---
     - Args:
         - [dagObject]: Input item(s).
@@ -108,6 +200,52 @@ def makeIdentity([dagObject]: [dagObject], apply: bool = ..., a: bool = ..., joi
     they also will not move in world space. If this flag is false, then the
     transformations are reset to identity, without any changes to preserve
     position.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Example 1:  Create a hierarchical object, for example a
+        # car. Scale the tires, translate the doors into place, rotate the
+        # steering wheel, then select the group node above the car, and type:
+        cmds.makeIdentity( apply=True )
+        # The car should not move.
+        cmds.move( 3, 0, 0 )
+        # The car should move exactly 3 units to (3, 0, 0), since
+        # the previous makeIdentity command set its translation to (0, 0, 0).
+        cmds.makeIdentity()
+        # The car should return to the same position as before the move.
+        # Example 2:  Create a curve and translate, rotate and scale it.
+        # Then group it and translate, rotate and scale the group.
+        cmds.makeIdentity( 'group1', apply=True, translate=True )
+        # The curve will not move, but both the curve transform's and group
+        # transform's translation will be set to 0, 0, 0. The rotation and
+        # scale will remain the same.
+        cmds.makeIdentity( 'group1', apply=True, rotate=True )
+        # The curve will not move, but both the curve transform's and group
+        # transform's rotation will be set to 0, 0, 0. The translation and
+        # scale will remain the same.
+        cmds.makeIdentity( 'group1', apply=True, scale=True )
+        # The curve will not move, but both the curve transform's and group
+        # transform's scale will be set to 1, 1, 1. The translation and rotation
+        # will remain the same.
+        cmds.makeIdentity( 'group1', apply=True, translate=True, rotate=True )
+        # The curve will not move, but both the curve transform's and group
+        # transform's translation and rotation will be set to 0, 0, 0.
+        # The scale will remain the same.
+        cmds.makeIdentity( 'group1', apply=False, translate=True )
+        # The curve transform and group transform will have their translation
+        # set to 0, 0, 0. The curve will probably move, since the apply
+        # flag is false.
+        cmds.makeIdentity( apply=True, translate=True, rotate=True, scale=True )
+        # This is the same as "makeIdentity -apply true".
+        # Example 3:  Create a polyCube and translate, rotate and scale it.
+        # And then freeze the normals.
+        cmds.polyCube()
+        cmds.rotate( 30, 45, 0 )
+        cmds.move( 2, 0, 2, r=True )
+        cmds.scale( 2, 1, 2, r=True )
+        cmds.makeIdentity( apply=True, t=1, r=1, s=1, n=2 )
+    ```
 
     ---
     - Args:

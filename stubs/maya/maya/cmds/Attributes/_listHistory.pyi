@@ -16,6 +16,39 @@ def listHistory(objects: objects, allConnections: bool = ..., allFuture: bool = 
     "listConnections" command first to find where the history begins then use this
     command on the resulting node.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.curve( d=3, p=[(-3, 0, 0),(-1, 0, 6),(6, 0, 8),(8, 0, 2)], k=[0,0,0,1,1,1], n="snake" )
+        cmds.instance( n="rattler" )
+        cmds.revolve( 'rattler', ch=True, n="charmer" )
+        cmds.revolve( 'snake', ch=True, n="medusa" )
+        cmds.listHistory()
+        # Result:[u'medusaShape', u'revolve2', u'snake|curveShape1'] #
+        cmds.listHistory( 'charmer' )
+        # Result:[u'charmerShape', u'revolve1', u'rattler|curveShape1'] #
+        cmds.listHistory( 'medusa', lv=1 )
+        # Result:[u'medusaShape', u'revolve2'] #
+        cmds.listHistory( 'medusa', future=True )
+        # Result:[u'medusaShape', u'initialShadingGroup'] #
+        # If you just list the curve's future you get both directions
+        cmds.listHistory( 'curveShape1', future=True )
+        # Result:[u'snake|curveShape1', u'revolve2', u'medusaShape', u'revolve1', u'charmerShape'] #
+        # To follow only one history you'll need to follow the path you
+        # want first, then add the node you started at if so desired since
+        # it will not be included (here snake|curveShape1 won't list).
+        # List the future of the first curve
+        hist = cmds.listConnections('curveShape1.ws[0]',c=1)
+        cmds.listHistory( hist[1], future=True )
+        # Result:[u'revolve2', u'medusaShape'] #
+        # List the future of the second curve
+        hist = cmds.listConnections('curveShape1.ws[1]',c=1)
+        cmds.listHistory( hist[1], future=True )
+        # Result:[u'revolve1', u'charmerShape'] #
+        cmds.listHistory( leaf=0 )
+        # Result:[u'medusa'] #
+    ```
+
     ---
     - Args:
         - objects: Input item(s).
@@ -47,6 +80,39 @@ def listHistory(objects: objects, ac: bool = ..., af: bool = ..., ag: bool = ...
     For information on history connections through specific plugs use the
     "listConnections" command first to find where the history begins then use this
     command on the resulting node.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.curve( d=3, p=[(-3, 0, 0),(-1, 0, 6),(6, 0, 8),(8, 0, 2)], k=[0,0,0,1,1,1], n="snake" )
+        cmds.instance( n="rattler" )
+        cmds.revolve( 'rattler', ch=True, n="charmer" )
+        cmds.revolve( 'snake', ch=True, n="medusa" )
+        cmds.listHistory()
+        # Result:[u'medusaShape', u'revolve2', u'snake|curveShape1'] #
+        cmds.listHistory( 'charmer' )
+        # Result:[u'charmerShape', u'revolve1', u'rattler|curveShape1'] #
+        cmds.listHistory( 'medusa', lv=1 )
+        # Result:[u'medusaShape', u'revolve2'] #
+        cmds.listHistory( 'medusa', future=True )
+        # Result:[u'medusaShape', u'initialShadingGroup'] #
+        # If you just list the curve's future you get both directions
+        cmds.listHistory( 'curveShape1', future=True )
+        # Result:[u'snake|curveShape1', u'revolve2', u'medusaShape', u'revolve1', u'charmerShape'] #
+        # To follow only one history you'll need to follow the path you
+        # want first, then add the node you started at if so desired since
+        # it will not be included (here snake|curveShape1 won't list).
+        # List the future of the first curve
+        hist = cmds.listConnections('curveShape1.ws[0]',c=1)
+        cmds.listHistory( hist[1], future=True )
+        # Result:[u'revolve2', u'medusaShape'] #
+        # List the future of the second curve
+        hist = cmds.listConnections('curveShape1.ws[1]',c=1)
+        cmds.listHistory( hist[1], future=True )
+        # Result:[u'revolve1', u'charmerShape'] #
+        cmds.listHistory( leaf=0 )
+        # Result:[u'medusa'] #
+    ```
 
     ---
     - Args:
@@ -80,6 +146,39 @@ def listHistory(objects: objects, allConnections: bool = ..., ac: bool = ..., al
     "listConnections" command first to find where the history begins then use this
     command on the resulting node.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.curve( d=3, p=[(-3, 0, 0),(-1, 0, 6),(6, 0, 8),(8, 0, 2)], k=[0,0,0,1,1,1], n="snake" )
+        cmds.instance( n="rattler" )
+        cmds.revolve( 'rattler', ch=True, n="charmer" )
+        cmds.revolve( 'snake', ch=True, n="medusa" )
+        cmds.listHistory()
+        # Result:[u'medusaShape', u'revolve2', u'snake|curveShape1'] #
+        cmds.listHistory( 'charmer' )
+        # Result:[u'charmerShape', u'revolve1', u'rattler|curveShape1'] #
+        cmds.listHistory( 'medusa', lv=1 )
+        # Result:[u'medusaShape', u'revolve2'] #
+        cmds.listHistory( 'medusa', future=True )
+        # Result:[u'medusaShape', u'initialShadingGroup'] #
+        # If you just list the curve's future you get both directions
+        cmds.listHistory( 'curveShape1', future=True )
+        # Result:[u'snake|curveShape1', u'revolve2', u'medusaShape', u'revolve1', u'charmerShape'] #
+        # To follow only one history you'll need to follow the path you
+        # want first, then add the node you started at if so desired since
+        # it will not be included (here snake|curveShape1 won't list).
+        # List the future of the first curve
+        hist = cmds.listConnections('curveShape1.ws[0]',c=1)
+        cmds.listHistory( hist[1], future=True )
+        # Result:[u'revolve2', u'medusaShape'] #
+        # List the future of the second curve
+        hist = cmds.listConnections('curveShape1.ws[1]',c=1)
+        cmds.listHistory( hist[1], future=True )
+        # Result:[u'revolve1', u'charmerShape'] #
+        cmds.listHistory( leaf=0 )
+        # Result:[u'medusa'] #
+    ```
+
     ---
     - Args:
         - objects: Input item(s).
@@ -112,6 +211,39 @@ def listHistory(objects: objects, futureLocalAttr: bool = ..., futureWorldAttr: 
     "listConnections" command first to find where the history begins then use this
     command on the resulting node.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.curve( d=3, p=[(-3, 0, 0),(-1, 0, 6),(6, 0, 8),(8, 0, 2)], k=[0,0,0,1,1,1], n="snake" )
+        cmds.instance( n="rattler" )
+        cmds.revolve( 'rattler', ch=True, n="charmer" )
+        cmds.revolve( 'snake', ch=True, n="medusa" )
+        cmds.listHistory()
+        # Result:[u'medusaShape', u'revolve2', u'snake|curveShape1'] #
+        cmds.listHistory( 'charmer' )
+        # Result:[u'charmerShape', u'revolve1', u'rattler|curveShape1'] #
+        cmds.listHistory( 'medusa', lv=1 )
+        # Result:[u'medusaShape', u'revolve2'] #
+        cmds.listHistory( 'medusa', future=True )
+        # Result:[u'medusaShape', u'initialShadingGroup'] #
+        # If you just list the curve's future you get both directions
+        cmds.listHistory( 'curveShape1', future=True )
+        # Result:[u'snake|curveShape1', u'revolve2', u'medusaShape', u'revolve1', u'charmerShape'] #
+        # To follow only one history you'll need to follow the path you
+        # want first, then add the node you started at if so desired since
+        # it will not be included (here snake|curveShape1 won't list).
+        # List the future of the first curve
+        hist = cmds.listConnections('curveShape1.ws[0]',c=1)
+        cmds.listHistory( hist[1], future=True )
+        # Result:[u'revolve2', u'medusaShape'] #
+        # List the future of the second curve
+        hist = cmds.listConnections('curveShape1.ws[1]',c=1)
+        cmds.listHistory( hist[1], future=True )
+        # Result:[u'revolve1', u'charmerShape'] #
+        cmds.listHistory( leaf=0 )
+        # Result:[u'medusa'] #
+    ```
+
     ---
     - Args:
         - objects: Input item(s).
@@ -134,6 +266,39 @@ def listHistory(objects: objects, fl: bool = ..., fw: bool = ..., ha: bool = ...
     "listConnections" command first to find where the history begins then use this
     command on the resulting node.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.curve( d=3, p=[(-3, 0, 0),(-1, 0, 6),(6, 0, 8),(8, 0, 2)], k=[0,0,0,1,1,1], n="snake" )
+        cmds.instance( n="rattler" )
+        cmds.revolve( 'rattler', ch=True, n="charmer" )
+        cmds.revolve( 'snake', ch=True, n="medusa" )
+        cmds.listHistory()
+        # Result:[u'medusaShape', u'revolve2', u'snake|curveShape1'] #
+        cmds.listHistory( 'charmer' )
+        # Result:[u'charmerShape', u'revolve1', u'rattler|curveShape1'] #
+        cmds.listHistory( 'medusa', lv=1 )
+        # Result:[u'medusaShape', u'revolve2'] #
+        cmds.listHistory( 'medusa', future=True )
+        # Result:[u'medusaShape', u'initialShadingGroup'] #
+        # If you just list the curve's future you get both directions
+        cmds.listHistory( 'curveShape1', future=True )
+        # Result:[u'snake|curveShape1', u'revolve2', u'medusaShape', u'revolve1', u'charmerShape'] #
+        # To follow only one history you'll need to follow the path you
+        # want first, then add the node you started at if so desired since
+        # it will not be included (here snake|curveShape1 won't list).
+        # List the future of the first curve
+        hist = cmds.listConnections('curveShape1.ws[0]',c=1)
+        cmds.listHistory( hist[1], future=True )
+        # Result:[u'revolve2', u'medusaShape'] #
+        # List the future of the second curve
+        hist = cmds.listConnections('curveShape1.ws[1]',c=1)
+        cmds.listHistory( hist[1], future=True )
+        # Result:[u'revolve1', u'charmerShape'] #
+        cmds.listHistory( leaf=0 )
+        # Result:[u'medusa'] #
+    ```
+
     ---
     - Args:
         - objects: Input item(s).
@@ -155,6 +320,39 @@ def listHistory(objects: objects, futureLocalAttr: bool = ..., fl: bool = ..., f
     For information on history connections through specific plugs use the
     "listConnections" command first to find where the history begins then use this
     command on the resulting node.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.curve( d=3, p=[(-3, 0, 0),(-1, 0, 6),(6, 0, 8),(8, 0, 2)], k=[0,0,0,1,1,1], n="snake" )
+        cmds.instance( n="rattler" )
+        cmds.revolve( 'rattler', ch=True, n="charmer" )
+        cmds.revolve( 'snake', ch=True, n="medusa" )
+        cmds.listHistory()
+        # Result:[u'medusaShape', u'revolve2', u'snake|curveShape1'] #
+        cmds.listHistory( 'charmer' )
+        # Result:[u'charmerShape', u'revolve1', u'rattler|curveShape1'] #
+        cmds.listHistory( 'medusa', lv=1 )
+        # Result:[u'medusaShape', u'revolve2'] #
+        cmds.listHistory( 'medusa', future=True )
+        # Result:[u'medusaShape', u'initialShadingGroup'] #
+        # If you just list the curve's future you get both directions
+        cmds.listHistory( 'curveShape1', future=True )
+        # Result:[u'snake|curveShape1', u'revolve2', u'medusaShape', u'revolve1', u'charmerShape'] #
+        # To follow only one history you'll need to follow the path you
+        # want first, then add the node you started at if so desired since
+        # it will not be included (here snake|curveShape1 won't list).
+        # List the future of the first curve
+        hist = cmds.listConnections('curveShape1.ws[0]',c=1)
+        cmds.listHistory( hist[1], future=True )
+        # Result:[u'revolve2', u'medusaShape'] #
+        # List the future of the second curve
+        hist = cmds.listConnections('curveShape1.ws[1]',c=1)
+        cmds.listHistory( hist[1], future=True )
+        # Result:[u'revolve1', u'charmerShape'] #
+        cmds.listHistory( leaf=0 )
+        # Result:[u'medusa'] #
+    ```
 
     ---
     - Args:

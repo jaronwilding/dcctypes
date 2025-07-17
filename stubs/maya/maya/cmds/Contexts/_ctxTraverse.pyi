@@ -12,6 +12,21 @@ def ctxTraverse(down: bool = ..., left: bool = ..., right: bool = ..., up: bool 
     Some contexts will ignore this command. Individual contexts determine what
     up/down left/right mean.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a particle context, then switch to it
+        cmds.dynParticleCtx('dynParticleCtx1')
+        cmds.setToolTo('dynParticleCtx1')
+        # Now you can create particles by mouse clicking
+        # After creating several particles, we switch to edit mode
+        cmds.ctxEditMode()
+        # Traverse in the created particles
+        cmds.ctxTraverse(left=True)
+        cmds.ctxTraverse(left=True)
+        cmds.ctxTraverse(right=True)
+    ```
+
     ---
     - Args:
         - down (d): Move "down" as defined by the current context.
@@ -29,6 +44,21 @@ def ctxTraverse(d: bool = ..., l: bool = ..., r: bool = ...) -> None:
     Some contexts will ignore this command. Individual contexts determine what
     up/down left/right mean.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a particle context, then switch to it
+        cmds.dynParticleCtx('dynParticleCtx1')
+        cmds.setToolTo('dynParticleCtx1')
+        # Now you can create particles by mouse clicking
+        # After creating several particles, we switch to edit mode
+        cmds.ctxEditMode()
+        # Traverse in the created particles
+        cmds.ctxTraverse(left=True)
+        cmds.ctxTraverse(left=True)
+        cmds.ctxTraverse(right=True)
+    ```
+
     ---
     - Args:
         - down (d): Move "down" as defined by the current context.
@@ -45,6 +75,21 @@ def ctxTraverse(down: bool = ..., d: bool = ..., left: bool = ..., l: bool = ...
     
     Some contexts will ignore this command. Individual contexts determine what
     up/down left/right mean.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a particle context, then switch to it
+        cmds.dynParticleCtx('dynParticleCtx1')
+        cmds.setToolTo('dynParticleCtx1')
+        # Now you can create particles by mouse clicking
+        # After creating several particles, we switch to edit mode
+        cmds.ctxEditMode()
+        # Traverse in the created particles
+        cmds.ctxTraverse(left=True)
+        cmds.ctxTraverse(left=True)
+        cmds.ctxTraverse(right=True)
+    ```
 
     ---
     - Args:

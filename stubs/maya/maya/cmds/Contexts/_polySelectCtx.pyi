@@ -8,6 +8,16 @@ def polySelectCtx(exists: bool = ..., image1: str = ..., image2: str = ..., imag
     
     Create a new context to select polygon components
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=10, sy=10, n='pPlane1')
+        # Create a new poly select context, then switch to it
+        cmds.polySelectCtx('polySelectCtx1')
+        cmds.setToolTo('polySelectCtx1')
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -21,6 +31,16 @@ def polySelectCtx(ex: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., m
     """polySelectCtx is undoable, queryable, and editable.
     
     Create a new context to select polygon components
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=10, sy=10, n='pPlane1')
+        # Create a new poly select context, then switch to it
+        cmds.polySelectCtx('polySelectCtx1')
+        cmds.setToolTo('polySelectCtx1')
+    ```
 
     ---
     - Args:
@@ -36,6 +56,16 @@ def polySelectCtx(exists: bool = ..., ex: bool = ..., image1: str = ..., i1: str
     
     Create a new context to select polygon components
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=10, sy=10, n='pPlane1')
+        # Create a new poly select context, then switch to it
+        cmds.polySelectCtx('polySelectCtx1')
+        cmds.setToolTo('polySelectCtx1')
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -49,6 +79,16 @@ def polySelectCtx(image1: str = ..., image2: str = ..., image3: str = ..., mode:
     """polySelectCtx is undoable, queryable, and editable.
     
     Create a new context to select polygon components
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=10, sy=10, n='pPlane1')
+        # Create a new poly select context, then switch to it
+        cmds.polySelectCtx('polySelectCtx1')
+        cmds.setToolTo('polySelectCtx1')
+    ```
 
     ---
     - Args:
@@ -64,6 +104,16 @@ def polySelectCtx(i1: str = ..., i2: str = ..., i3: str = ..., m: int = ..., q: 
     
     Create a new context to select polygon components
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=10, sy=10, n='pPlane1')
+        # Create a new poly select context, then switch to it
+        cmds.polySelectCtx('polySelectCtx1')
+        cmds.setToolTo('polySelectCtx1')
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -77,6 +127,16 @@ def polySelectCtx(image1: str = ..., i1: str = ..., image2: str = ..., i2: str =
     """polySelectCtx is undoable, queryable, and editable.
     
     Create a new context to select polygon components
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=10, sy=10, n='pPlane1')
+        # Create a new poly select context, then switch to it
+        cmds.polySelectCtx('polySelectCtx1')
+        cmds.setToolTo('polySelectCtx1')
+    ```
 
     ---
     - Args:
@@ -92,6 +152,16 @@ def polySelectCtx(image1: str = ..., image2: str = ..., image3: str = ..., mode:
     
     Create a new context to select polygon components
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=10, sy=10, n='pPlane1')
+        # Create a new poly select context, then switch to it
+        cmds.polySelectCtx('polySelectCtx1')
+        cmds.setToolTo('polySelectCtx1')
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -106,6 +176,16 @@ def polySelectCtx(i1: str = ..., i2: str = ..., i3: str = ..., m: int = ..., e: 
     
     Create a new context to select polygon components
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=10, sy=10, n='pPlane1')
+        # Create a new poly select context, then switch to it
+        cmds.polySelectCtx('polySelectCtx1')
+        cmds.setToolTo('polySelectCtx1')
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -119,6 +199,16 @@ def polySelectCtx(image1: str = ..., i1: str = ..., image2: str = ..., i2: str =
     """polySelectCtx is undoable, queryable, and editable.
     
     Create a new context to select polygon components
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=10, sy=10, n='pPlane1')
+        # Create a new poly select context, then switch to it
+        cmds.polySelectCtx('polySelectCtx1')
+        cmds.setToolTo('polySelectCtx1')
+    ```
 
     ---
     - Args:

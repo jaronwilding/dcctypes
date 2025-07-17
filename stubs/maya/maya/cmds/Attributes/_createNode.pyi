@@ -8,6 +8,21 @@ def createNode(string: str, name: str = ..., parent: str = ..., shared: bool = .
     
     This command creates a new node in the dependency graph of the specified type.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.createNode( 'transform', n='transform1' )
+        cmds.createNode( 'nurbsSurface', n='surface1', p='transform1' )
+        cmds.createNode( 'camera', shared=True, n='top' )
+        # This transform will be selected when created
+        cmds.createNode( 'transform', n='selectedTransform' )
+        # This will create a new transform node, but 'selectedTransform'
+        # will still be selected.
+        cmds.createNode( 'transform', ss=True )
+        # Create node under new namespace
+        cmds.createNode( 'transform', n='newNS:transform1' )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -22,6 +37,21 @@ def createNode(string: str, n: str = ..., p: str = ..., s: bool = ..., ss: bool 
     
     This command creates a new node in the dependency graph of the specified type.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.createNode( 'transform', n='transform1' )
+        cmds.createNode( 'nurbsSurface', n='surface1', p='transform1' )
+        cmds.createNode( 'camera', shared=True, n='top' )
+        # This transform will be selected when created
+        cmds.createNode( 'transform', n='selectedTransform' )
+        # This will create a new transform node, but 'selectedTransform'
+        # will still be selected.
+        cmds.createNode( 'transform', ss=True )
+        # Create node under new namespace
+        cmds.createNode( 'transform', n='newNS:transform1' )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -35,6 +65,21 @@ def createNode(string: str, name: str = ..., n: str = ..., parent: str = ..., p:
     """createNode is undoable, NOT queryable, and NOT editable.
     
     This command creates a new node in the dependency graph of the specified type.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.createNode( 'transform', n='transform1' )
+        cmds.createNode( 'nurbsSurface', n='surface1', p='transform1' )
+        cmds.createNode( 'camera', shared=True, n='top' )
+        # This transform will be selected when created
+        cmds.createNode( 'transform', n='selectedTransform' )
+        # This will create a new transform node, but 'selectedTransform'
+        # will still be selected.
+        cmds.createNode( 'transform', ss=True )
+        # Create node under new namespace
+        cmds.createNode( 'transform', n='newNS:transform1' )
+    ```
 
     ---
     - Args:

@@ -12,6 +12,13 @@ def colorManagementConvert(toDisplaySpace: [float, float, float] = ...) -> None:
     yourself. The current view transform set in the Color Management user
     preferences will be used.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        color = cmds.colorManagementConvert(toDisplaySpace=[0.5, 0.5, 0.5])
+    ```
+
     ---
     - Args:
         - toDisplaySpace (tds): Converts the given RGB value to display space.
@@ -26,6 +33,13 @@ def colorManagementConvert(tds: [float, float, float] = ...) -> None:
     yourself. The current view transform set in the Color Management user
     preferences will be used.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        color = cmds.colorManagementConvert(toDisplaySpace=[0.5, 0.5, 0.5])
+    ```
+
     ---
     - Args:
         - toDisplaySpace (tds): Converts the given RGB value to display space.
@@ -39,6 +53,13 @@ def colorManagementConvert(toDisplaySpace: [float, float, float] = ..., tds: [fl
     with colors painted to screen, where you need to handle color management
     yourself. The current view transform set in the Color Management user
     preferences will be used.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        color = cmds.colorManagementConvert(toDisplaySpace=[0.5, 0.5, 0.5])
+    ```
 
     ---
     - Args:

@@ -8,6 +8,21 @@ def alignCtx([contextName]: [contextName], align: bool = ..., anchorFirstObject:
     
     The alignCtx command creates a tool for aligning and distributing objects.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly sphere and a poly cube, then move them apart
+        cmds.polySphere(r=3, n='pSphere1')
+        cmds.move(5, 0, 0)
+        cmds.polyCube(w=3, h=3, d=3, n='pCube1')
+        cmds.move(-5, 3, 0)
+        cmds.select('pSphere1', 'pCube1', r=True)
+        # Create a new align context which is used to align objects, then switch to it
+        # Now you can use this tool to align objects
+        cmds.alignCtx('alignCtx1',a=True)
+        cmds.setToolTo('alignCtx1')
+    ```
+
     ---
     - Args:
         - [contextName]: Input item(s).
@@ -27,6 +42,21 @@ def alignCtx([contextName]: [contextName], a: bool = ..., afo: bool = ..., d: bo
     """alignCtx is undoable, queryable, and editable.
     
     The alignCtx command creates a tool for aligning and distributing objects.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly sphere and a poly cube, then move them apart
+        cmds.polySphere(r=3, n='pSphere1')
+        cmds.move(5, 0, 0)
+        cmds.polyCube(w=3, h=3, d=3, n='pCube1')
+        cmds.move(-5, 3, 0)
+        cmds.select('pSphere1', 'pCube1', r=True)
+        # Create a new align context which is used to align objects, then switch to it
+        # Now you can use this tool to align objects
+        cmds.alignCtx('alignCtx1',a=True)
+        cmds.setToolTo('alignCtx1')
+    ```
 
     ---
     - Args:
@@ -48,6 +78,21 @@ def alignCtx([contextName]: [contextName], align: bool = ..., a: bool = ..., anc
     
     The alignCtx command creates a tool for aligning and distributing objects.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly sphere and a poly cube, then move them apart
+        cmds.polySphere(r=3, n='pSphere1')
+        cmds.move(5, 0, 0)
+        cmds.polyCube(w=3, h=3, d=3, n='pCube1')
+        cmds.move(-5, 3, 0)
+        cmds.select('pSphere1', 'pCube1', r=True)
+        # Create a new align context which is used to align objects, then switch to it
+        # Now you can use this tool to align objects
+        cmds.alignCtx('alignCtx1',a=True)
+        cmds.setToolTo('alignCtx1')
+    ```
+
     ---
     - Args:
         - [contextName]: Input item(s).
@@ -68,6 +113,21 @@ def alignCtx([contextName]: [contextName], align: bool = ..., anchorFirstObject:
     
     The alignCtx command creates a tool for aligning and distributing objects.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly sphere and a poly cube, then move them apart
+        cmds.polySphere(r=3, n='pSphere1')
+        cmds.move(5, 0, 0)
+        cmds.polyCube(w=3, h=3, d=3, n='pCube1')
+        cmds.move(-5, 3, 0)
+        cmds.select('pSphere1', 'pCube1', r=True)
+        # Create a new align context which is used to align objects, then switch to it
+        # Now you can use this tool to align objects
+        cmds.alignCtx('alignCtx1',a=True)
+        cmds.setToolTo('alignCtx1')
+    ```
+
     ---
     - Args:
         - [contextName]: Input item(s).
@@ -85,6 +145,21 @@ def alignCtx([contextName]: [contextName], a: bool = ..., afo: bool = ..., d: bo
     """alignCtx is undoable, queryable, and editable.
     
     The alignCtx command creates a tool for aligning and distributing objects.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly sphere and a poly cube, then move them apart
+        cmds.polySphere(r=3, n='pSphere1')
+        cmds.move(5, 0, 0)
+        cmds.polyCube(w=3, h=3, d=3, n='pCube1')
+        cmds.move(-5, 3, 0)
+        cmds.select('pSphere1', 'pCube1', r=True)
+        # Create a new align context which is used to align objects, then switch to it
+        # Now you can use this tool to align objects
+        cmds.alignCtx('alignCtx1',a=True)
+        cmds.setToolTo('alignCtx1')
+    ```
 
     ---
     - Args:
@@ -104,6 +179,21 @@ def alignCtx([contextName]: [contextName], align: bool = ..., a: bool = ..., anc
     
     The alignCtx command creates a tool for aligning and distributing objects.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly sphere and a poly cube, then move them apart
+        cmds.polySphere(r=3, n='pSphere1')
+        cmds.move(5, 0, 0)
+        cmds.polyCube(w=3, h=3, d=3, n='pCube1')
+        cmds.move(-5, 3, 0)
+        cmds.select('pSphere1', 'pCube1', r=True)
+        # Create a new align context which is used to align objects, then switch to it
+        # Now you can use this tool to align objects
+        cmds.alignCtx('alignCtx1',a=True)
+        cmds.setToolTo('alignCtx1')
+    ```
+
     ---
     - Args:
         - [contextName]: Input item(s).
@@ -121,6 +211,21 @@ def alignCtx([contextName]: [contextName], align: bool = ..., anchorFirstObject:
     """alignCtx is undoable, queryable, and editable.
     
     The alignCtx command creates a tool for aligning and distributing objects.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly sphere and a poly cube, then move them apart
+        cmds.polySphere(r=3, n='pSphere1')
+        cmds.move(5, 0, 0)
+        cmds.polyCube(w=3, h=3, d=3, n='pCube1')
+        cmds.move(-5, 3, 0)
+        cmds.select('pSphere1', 'pCube1', r=True)
+        # Create a new align context which is used to align objects, then switch to it
+        # Now you can use this tool to align objects
+        cmds.alignCtx('alignCtx1',a=True)
+        cmds.setToolTo('alignCtx1')
+    ```
 
     ---
     - Args:
@@ -140,6 +245,21 @@ def alignCtx([contextName]: [contextName], a: bool = ..., afo: bool = ..., d: bo
     
     The alignCtx command creates a tool for aligning and distributing objects.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly sphere and a poly cube, then move them apart
+        cmds.polySphere(r=3, n='pSphere1')
+        cmds.move(5, 0, 0)
+        cmds.polyCube(w=3, h=3, d=3, n='pCube1')
+        cmds.move(-5, 3, 0)
+        cmds.select('pSphere1', 'pCube1', r=True)
+        # Create a new align context which is used to align objects, then switch to it
+        # Now you can use this tool to align objects
+        cmds.alignCtx('alignCtx1',a=True)
+        cmds.setToolTo('alignCtx1')
+    ```
+
     ---
     - Args:
         - [contextName]: Input item(s).
@@ -157,6 +277,21 @@ def alignCtx([contextName]: [contextName], align: bool = ..., a: bool = ..., anc
     """alignCtx is undoable, queryable, and editable.
     
     The alignCtx command creates a tool for aligning and distributing objects.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly sphere and a poly cube, then move them apart
+        cmds.polySphere(r=3, n='pSphere1')
+        cmds.move(5, 0, 0)
+        cmds.polyCube(w=3, h=3, d=3, n='pCube1')
+        cmds.move(-5, 3, 0)
+        cmds.select('pSphere1', 'pCube1', r=True)
+        # Create a new align context which is used to align objects, then switch to it
+        # Now you can use this tool to align objects
+        cmds.alignCtx('alignCtx1',a=True)
+        cmds.setToolTo('alignCtx1')
+    ```
 
     ---
     - Args:

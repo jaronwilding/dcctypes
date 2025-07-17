@@ -8,6 +8,12 @@ def arcLenDimContext(exists: bool = ..., history: bool = ..., image1: str = ...,
     
     Command used to register the arcLenDimCtx tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.arcLenDimContext()
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -22,6 +28,12 @@ def arcLenDimContext(ex: bool = ..., ch: bool = ..., i1: str = ..., i2: str = ..
     """arcLenDimContext is undoable, queryable, and editable.
     
     Command used to register the arcLenDimCtx tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.arcLenDimContext()
+    ```
 
     ---
     - Args:
@@ -38,6 +50,12 @@ def arcLenDimContext(exists: bool = ..., ex: bool = ..., history: bool = ..., ch
     
     Command used to register the arcLenDimCtx tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.arcLenDimContext()
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -53,6 +71,12 @@ def arcLenDimContext(image1: str = ..., image2: str = ..., image3: str = ..., qu
     
     Command used to register the arcLenDimCtx tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.arcLenDimContext()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -65,6 +89,12 @@ def arcLenDimContext(i1: str = ..., i2: str = ..., i3: str = ..., q: bool = ...)
     """arcLenDimContext is undoable, queryable, and editable.
     
     Command used to register the arcLenDimCtx tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.arcLenDimContext()
+    ```
 
     ---
     - Args:
@@ -79,6 +109,12 @@ def arcLenDimContext(image1: str = ..., i1: str = ..., image2: str = ..., i2: st
     
     Command used to register the arcLenDimCtx tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.arcLenDimContext()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -91,6 +127,12 @@ def arcLenDimContext(image1: str = ..., image2: str = ..., image3: str = ..., ed
     """arcLenDimContext is undoable, queryable, and editable.
     
     Command used to register the arcLenDimCtx tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.arcLenDimContext()
+    ```
 
     ---
     - Args:
@@ -105,6 +147,12 @@ def arcLenDimContext(i1: str = ..., i2: str = ..., i3: str = ..., e: bool = ...)
     
     Command used to register the arcLenDimCtx tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.arcLenDimContext()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -117,6 +165,12 @@ def arcLenDimContext(image1: str = ..., i1: str = ..., image2: str = ..., i2: st
     """arcLenDimContext is undoable, queryable, and editable.
     
     Command used to register the arcLenDimCtx tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.arcLenDimContext()
+    ```
 
     ---
     - Args:

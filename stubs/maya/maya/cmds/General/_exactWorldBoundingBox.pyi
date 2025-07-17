@@ -10,6 +10,14 @@ def exactWorldBoundingBox([dagObject...]: [dagObject...], calculateExactly: bool
     (or selected objects if none are specified) This bounding box is always in
     world space.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        bbox = cmds.exactWorldBoundingBox( 'sphere1', 'cube1', 'cone2')
+        print 'Bounding box ranges from: %f' % bbox[0], ', %f' % bbox[1], ', %f' % bbox[2],
+        print ' to %f' % bbox[3], ', %f' % bbox[4], ', %f' % bbox[5]
+    ```
+
     ---
     - Args:
         - [dagObject...]: Input item(s).
@@ -24,6 +32,14 @@ def exactWorldBoundingBox([dagObject...]: [dagObject...], ce: bool = ..., ii: bo
     (or selected objects if none are specified) This bounding box is always in
     world space.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        bbox = cmds.exactWorldBoundingBox( 'sphere1', 'cube1', 'cone2')
+        print 'Bounding box ranges from: %f' % bbox[0], ', %f' % bbox[1], ', %f' % bbox[2],
+        print ' to %f' % bbox[3], ', %f' % bbox[4], ', %f' % bbox[5]
+    ```
+
     ---
     - Args:
         - [dagObject...]: Input item(s).
@@ -37,6 +53,14 @@ def exactWorldBoundingBox([dagObject...]: [dagObject...], calculateExactly: bool
     This command figures out an exact-fit bounding box for the specified objects
     (or selected objects if none are specified) This bounding box is always in
     world space.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        bbox = cmds.exactWorldBoundingBox( 'sphere1', 'cube1', 'cone2')
+        print 'Bounding box ranges from: %f' % bbox[0], ', %f' % bbox[1], ', %f' % bbox[2],
+        print ' to %f' % bbox[3], ', %f' % bbox[4], ', %f' % bbox[5]
+    ```
 
     ---
     - Args:

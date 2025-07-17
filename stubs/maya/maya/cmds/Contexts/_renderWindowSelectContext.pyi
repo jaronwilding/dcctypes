@@ -8,6 +8,11 @@ def renderWindowSelectContext(exists: bool = ..., image1: str = ..., image2: str
     
     Set the selection context for the render view panel.
 
+    Example:
+    ```python
+        No example found.
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -20,6 +25,11 @@ def renderWindowSelectContext(ex: bool = ..., i1: str = ..., i2: str = ..., i3: 
     """renderWindowSelectContext is undoable, queryable, and editable.
     
     Set the selection context for the render view panel.
+
+    Example:
+    ```python
+        No example found.
+    ```
 
     ---
     - Args:
@@ -34,6 +44,11 @@ def renderWindowSelectContext(exists: bool = ..., ex: bool = ..., image1: str = 
     
     Set the selection context for the render view panel.
 
+    Example:
+    ```python
+        No example found.
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -46,6 +61,11 @@ def renderWindowSelectContext(image1: str = ..., image2: str = ..., image3: str 
     """renderWindowSelectContext is undoable, queryable, and editable.
     
     Set the selection context for the render view panel.
+
+    Example:
+    ```python
+        No example found.
+    ```
 
     ---
     - Args:
@@ -60,6 +80,11 @@ def renderWindowSelectContext(i1: str = ..., i2: str = ..., i3: str = ..., q: bo
     
     Set the selection context for the render view panel.
 
+    Example:
+    ```python
+        No example found.
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -72,6 +97,11 @@ def renderWindowSelectContext(image1: str = ..., i1: str = ..., image2: str = ..
     """renderWindowSelectContext is undoable, queryable, and editable.
     
     Set the selection context for the render view panel.
+
+    Example:
+    ```python
+        No example found.
+    ```
 
     ---
     - Args:
@@ -86,6 +116,11 @@ def renderWindowSelectContext(image1: str = ..., image2: str = ..., image3: str 
     
     Set the selection context for the render view panel.
 
+    Example:
+    ```python
+        No example found.
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -99,6 +134,11 @@ def renderWindowSelectContext(i1: str = ..., i2: str = ..., i3: str = ..., e: bo
     
     Set the selection context for the render view panel.
 
+    Example:
+    ```python
+        No example found.
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -111,6 +151,11 @@ def renderWindowSelectContext(image1: str = ..., i1: str = ..., image2: str = ..
     """renderWindowSelectContext is undoable, queryable, and editable.
     
     Set the selection context for the render view panel.
+
+    Example:
+    ```python
+        No example found.
+    ```
 
     ---
     - Args:

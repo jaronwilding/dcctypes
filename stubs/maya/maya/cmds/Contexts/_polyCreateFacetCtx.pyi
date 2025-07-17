@@ -8,6 +8,14 @@ def polyCreateFacetCtx(append: bool = ..., exists: bool = ..., image1: str = ...
     
     Create a new context to create polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new poly facet create context, set it to add four vertices per new edge, then switch to it
+        cmds.polyCreateFacetCtx('polyCreateFacetCtx1', s=4)
+        cmds.setToolTo('polyCreateFacetCtx1')
+    ```
+
     ---
     - Args:
         - append (ap): Allows to switch to polyAppendFacetCtx tool
@@ -25,6 +33,14 @@ def polyCreateFacetCtx(ap: bool = ..., ex: bool = ..., i1: str = ..., i2: str = 
     """polyCreateFacetCtx is undoable, queryable, and editable.
     
     Create a new context to create polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new poly facet create context, set it to add four vertices per new edge, then switch to it
+        cmds.polyCreateFacetCtx('polyCreateFacetCtx1', s=4)
+        cmds.setToolTo('polyCreateFacetCtx1')
+    ```
 
     ---
     - Args:
@@ -44,6 +60,14 @@ def polyCreateFacetCtx(append: bool = ..., ap: bool = ..., exists: bool = ..., e
     
     Create a new context to create polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new poly facet create context, set it to add four vertices per new edge, then switch to it
+        cmds.polyCreateFacetCtx('polyCreateFacetCtx1', s=4)
+        cmds.setToolTo('polyCreateFacetCtx1')
+    ```
+
     ---
     - Args:
         - append (ap): Allows to switch to polyAppendFacetCtx tool
@@ -61,6 +85,14 @@ def polyCreateFacetCtx(append: bool = ..., image1: str = ..., image2: str = ...,
     """polyCreateFacetCtx is undoable, queryable, and editable.
     
     Create a new context to create polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new poly facet create context, set it to add four vertices per new edge, then switch to it
+        cmds.polyCreateFacetCtx('polyCreateFacetCtx1', s=4)
+        cmds.setToolTo('polyCreateFacetCtx1')
+    ```
 
     ---
     - Args:
@@ -80,6 +112,14 @@ def polyCreateFacetCtx(ap: bool = ..., i1: str = ..., i2: str = ..., i3: str = .
     
     Create a new context to create polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new poly facet create context, set it to add four vertices per new edge, then switch to it
+        cmds.polyCreateFacetCtx('polyCreateFacetCtx1', s=4)
+        cmds.setToolTo('polyCreateFacetCtx1')
+    ```
+
     ---
     - Args:
         - append (ap): Allows to switch to polyAppendFacetCtx tool
@@ -97,6 +137,14 @@ def polyCreateFacetCtx(append: bool = ..., ap: bool = ..., image1: str = ..., i1
     """polyCreateFacetCtx is undoable, queryable, and editable.
     
     Create a new context to create polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new poly facet create context, set it to add four vertices per new edge, then switch to it
+        cmds.polyCreateFacetCtx('polyCreateFacetCtx1', s=4)
+        cmds.setToolTo('polyCreateFacetCtx1')
+    ```
 
     ---
     - Args:
@@ -116,6 +164,14 @@ def polyCreateFacetCtx(append: bool = ..., image1: str = ..., image2: str = ...,
     
     Create a new context to create polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new poly facet create context, set it to add four vertices per new edge, then switch to it
+        cmds.polyCreateFacetCtx('polyCreateFacetCtx1', s=4)
+        cmds.setToolTo('polyCreateFacetCtx1')
+    ```
+
     ---
     - Args:
         - append (ap): Allows to switch to polyAppendFacetCtx tool
@@ -134,6 +190,14 @@ def polyCreateFacetCtx(ap: bool = ..., i1: str = ..., i2: str = ..., i3: str = .
     
     Create a new context to create polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new poly facet create context, set it to add four vertices per new edge, then switch to it
+        cmds.polyCreateFacetCtx('polyCreateFacetCtx1', s=4)
+        cmds.setToolTo('polyCreateFacetCtx1')
+    ```
+
     ---
     - Args:
         - append (ap): Allows to switch to polyAppendFacetCtx tool
@@ -151,6 +215,14 @@ def polyCreateFacetCtx(append: bool = ..., ap: bool = ..., image1: str = ..., i1
     """polyCreateFacetCtx is undoable, queryable, and editable.
     
     Create a new context to create polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new poly facet create context, set it to add four vertices per new edge, then switch to it
+        cmds.polyCreateFacetCtx('polyCreateFacetCtx1', s=4)
+        cmds.setToolTo('polyCreateFacetCtx1')
+    ```
 
     ---
     - Args:

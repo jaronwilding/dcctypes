@@ -9,6 +9,19 @@ def objectType(object: object, isAType: str = ..., isType: str = ..., tagFromTyp
     This command returns the type of elements. Warning: This command is incomplete
     and may not be supported by all object types.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create an object to query type of
+        cmds.sphere( n='sphere1' )
+        # To query the type of an object:
+        cmds.objectType( 'sphere1Shape' )
+        # Result: nurbsSurface #
+        # To confirm that sphere1Shape really is a nurbs surface:
+        cmds.objectType( 'sphere1Shape', isType='nurbsSurface' )
+        # Result: 1 #
+    ```
+
     ---
     - Args:
         - object: Input item(s).
@@ -25,6 +38,19 @@ def objectType(object: object, isa: str = ..., i: str = ..., tgt: str = ..., tpt
     This command returns the type of elements. Warning: This command is incomplete
     and may not be supported by all object types.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create an object to query type of
+        cmds.sphere( n='sphere1' )
+        # To query the type of an object:
+        cmds.objectType( 'sphere1Shape' )
+        # Result: nurbsSurface #
+        # To confirm that sphere1Shape really is a nurbs surface:
+        cmds.objectType( 'sphere1Shape', isType='nurbsSurface' )
+        # Result: 1 #
+    ```
+
     ---
     - Args:
         - object: Input item(s).
@@ -40,6 +66,19 @@ def objectType(object: object, isAType: str = ..., isa: str = ..., isType: str =
     
     This command returns the type of elements. Warning: This command is incomplete
     and may not be supported by all object types.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create an object to query type of
+        cmds.sphere( n='sphere1' )
+        # To query the type of an object:
+        cmds.objectType( 'sphere1Shape' )
+        # Result: nurbsSurface #
+        # To confirm that sphere1Shape really is a nurbs surface:
+        cmds.objectType( 'sphere1Shape', isType='nurbsSurface' )
+        # Result: 1 #
+    ```
 
     ---
     - Args:

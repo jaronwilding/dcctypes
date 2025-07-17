@@ -8,6 +8,12 @@ def trackCtx(alternateContext: bool = ..., exists: bool = ..., history: bool = .
     
     This command can be used to create a track context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.trackCtx( 'trackContext', ac=False, tg=False, ts=1.0 )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -26,6 +32,12 @@ def trackCtx(ac: bool = ..., ex: bool = ..., ch: bool = ..., i1: str = ..., i2: 
     """trackCtx is undoable, queryable, and editable.
     
     This command can be used to create a track context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.trackCtx( 'trackContext', ac=False, tg=False, ts=1.0 )
+    ```
 
     ---
     - Args:
@@ -46,6 +58,12 @@ def trackCtx(alternateContext: bool = ..., ac: bool = ..., exists: bool = ..., e
     
     This command can be used to create a track context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.trackCtx( 'trackContext', ac=False, tg=False, ts=1.0 )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -65,6 +83,12 @@ def trackCtx(alternateContext: bool = ..., image1: str = ..., image2: str = ...,
     
     This command can be used to create a track context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.trackCtx( 'trackContext', ac=False, tg=False, ts=1.0 )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -81,6 +105,12 @@ def trackCtx(ac: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., tn: st
     """trackCtx is undoable, queryable, and editable.
     
     This command can be used to create a track context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.trackCtx( 'trackContext', ac=False, tg=False, ts=1.0 )
+    ```
 
     ---
     - Args:
@@ -99,6 +129,12 @@ def trackCtx(alternateContext: bool = ..., ac: bool = ..., image1: str = ..., i1
     
     This command can be used to create a track context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.trackCtx( 'trackContext', ac=False, tg=False, ts=1.0 )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -111,52 +147,64 @@ def trackCtx(alternateContext: bool = ..., ac: bool = ..., image1: str = ..., i1
         - query (q): Query mode flag
     """
 @overload #Overload for trackCtx in ['edit']
-def trackCtx(alternateContext: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., toolName: str = ..., trackGeometry: bool = ..., trackScale: float = ..., edit: bool = ...) -> str:
+def trackCtx(image1: str = ..., image2: str = ..., image3: str = ..., trackGeometry: bool = ..., trackScale: float = ..., edit: bool = ...) -> str:
     """trackCtx is undoable, queryable, and editable.
     
     This command can be used to create a track context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.trackCtx( 'trackContext', ac=False, tg=False, ts=1.0 )
+    ```
+
     ---
     - Args:
-        - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
-        - toolName (tn): Name of the specific tool to which this command refers.
         - trackGeometry (tg): Toggle whether the drag should try to track geometry. The context will compute a track plane by intersecting the initial press with geometry or the live object.
         - trackScale (ts): Specify the distance to the track plane from the camera. The smaller the scale the slower the drag.
         - edit (e): Edit mode flag
     """
 @overload #Overload for trackCtx in ['edit']
-def trackCtx(ac: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., tn: str = ..., tg: bool = ..., ts: float = ..., e: bool = ...) -> str:
+def trackCtx(i1: str = ..., i2: str = ..., i3: str = ..., tg: bool = ..., ts: float = ..., e: bool = ...) -> str:
     """trackCtx is undoable, queryable, and editable.
     
     This command can be used to create a track context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.trackCtx( 'trackContext', ac=False, tg=False, ts=1.0 )
+    ```
+
     ---
     - Args:
-        - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
-        - toolName (tn): Name of the specific tool to which this command refers.
         - trackGeometry (tg): Toggle whether the drag should try to track geometry. The context will compute a track plane by intersecting the initial press with geometry or the live object.
         - trackScale (ts): Specify the distance to the track plane from the camera. The smaller the scale the slower the drag.
         - edit (e): Edit mode flag
     """
 @overload #Overload for trackCtx in ['edit']
-def trackCtx(alternateContext: bool = ..., ac: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., toolName: str = ..., tn: str = ..., trackGeometry: bool = ..., tg: bool = ..., trackScale: float = ..., ts: float = ..., edit: bool = ..., e: bool = ...) -> str:
+def trackCtx(image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., trackGeometry: bool = ..., tg: bool = ..., trackScale: float = ..., ts: float = ..., edit: bool = ..., e: bool = ...) -> str:
     """trackCtx is undoable, queryable, and editable.
     
     This command can be used to create a track context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.trackCtx( 'trackContext', ac=False, tg=False, ts=1.0 )
+    ```
+
     ---
     - Args:
-        - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
-        - toolName (tn): Name of the specific tool to which this command refers.
         - trackGeometry (tg): Toggle whether the drag should try to track geometry. The context will compute a track plane by intersecting the initial press with geometry or the live object.
         - trackScale (ts): Specify the distance to the track plane from the camera. The smaller the scale the slower the drag.
         - edit (e): Edit mode flag

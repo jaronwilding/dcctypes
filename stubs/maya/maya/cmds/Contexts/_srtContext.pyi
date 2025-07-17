@@ -9,6 +9,13 @@ def srtContext(exists: bool = ..., history: bool = ..., image1: str = ..., image
     This command can be used to create a combined transform
     (translate/scale/rotate) context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To see if an srtContext named "Transform" exists:
+        cmds.srtContext( 'Transform', q=True, exists=True )
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -24,6 +31,13 @@ def srtContext(ex: bool = ..., ch: bool = ..., i1: str = ..., i2: str = ..., i3:
     
     This command can be used to create a combined transform
     (translate/scale/rotate) context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To see if an srtContext named "Transform" exists:
+        cmds.srtContext( 'Transform', q=True, exists=True )
+    ```
 
     ---
     - Args:
@@ -41,6 +55,13 @@ def srtContext(exists: bool = ..., ex: bool = ..., history: bool = ..., ch: bool
     This command can be used to create a combined transform
     (translate/scale/rotate) context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To see if an srtContext named "Transform" exists:
+        cmds.srtContext( 'Transform', q=True, exists=True )
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -57,6 +78,13 @@ def srtContext(image1: str = ..., image2: str = ..., image3: str = ..., query: b
     This command can be used to create a combined transform
     (translate/scale/rotate) context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To see if an srtContext named "Transform" exists:
+        cmds.srtContext( 'Transform', q=True, exists=True )
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -70,6 +98,13 @@ def srtContext(i1: str = ..., i2: str = ..., i3: str = ..., q: bool = ...) -> st
     
     This command can be used to create a combined transform
     (translate/scale/rotate) context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To see if an srtContext named "Transform" exists:
+        cmds.srtContext( 'Transform', q=True, exists=True )
+    ```
 
     ---
     - Args:
@@ -85,6 +120,13 @@ def srtContext(image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..
     This command can be used to create a combined transform
     (translate/scale/rotate) context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To see if an srtContext named "Transform" exists:
+        cmds.srtContext( 'Transform', q=True, exists=True )
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -98,6 +140,13 @@ def srtContext(image1: str = ..., image2: str = ..., image3: str = ..., edit: bo
     
     This command can be used to create a combined transform
     (translate/scale/rotate) context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To see if an srtContext named "Transform" exists:
+        cmds.srtContext( 'Transform', q=True, exists=True )
+    ```
 
     ---
     - Args:
@@ -113,6 +162,13 @@ def srtContext(i1: str = ..., i2: str = ..., i3: str = ..., e: bool = ...) -> st
     This command can be used to create a combined transform
     (translate/scale/rotate) context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To see if an srtContext named "Transform" exists:
+        cmds.srtContext( 'Transform', q=True, exists=True )
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -126,6 +182,13 @@ def srtContext(image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..
     
     This command can be used to create a combined transform
     (translate/scale/rotate) context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To see if an srtContext named "Transform" exists:
+        cmds.srtContext( 'Transform', q=True, exists=True )
+    ```
 
     ---
     - Args:

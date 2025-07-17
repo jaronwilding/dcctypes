@@ -10,6 +10,13 @@ def hide([objects]: [objects], allObjects: bool = ..., clearLastHidden: bool = .
     objects specified, or the active objects if none are specified, will be made
     invisible.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.hide( all=True )
+        cmds.hide( cmds.ls( type='nurbsSurface' ) )
+    ```
+
     ---
     - Args:
         - [objects]: Input item(s).
@@ -28,6 +35,13 @@ def hide([objects]: [objects], all: bool = ..., clh: bool = ..., cs: bool = ...,
     objects specified, or the active objects if none are specified, will be made
     invisible.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.hide( all=True )
+        cmds.hide( cmds.ls( type='nurbsSurface' ) )
+    ```
+
     ---
     - Args:
         - [objects]: Input item(s).
@@ -45,6 +59,13 @@ def hide([objects]: [objects], allObjects: bool = ..., all: bool = ..., clearLas
     The hide command is used to make objects invisible. If no flags are used, the
     objects specified, or the active objects if none are specified, will be made
     invisible.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.hide( all=True )
+        cmds.hide( cmds.ls( type='nurbsSurface' ) )
+    ```
 
     ---
     - Args:

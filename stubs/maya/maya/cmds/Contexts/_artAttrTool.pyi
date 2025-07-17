@@ -20,6 +20,20 @@ def artAttrTool(add: str = ..., exists: str = ..., remove: str = ...) -> None:
     define a custom tool via artAttrTool -add "toolName". For an example of a
     custom attribute painting tool, see the devkit example customtoolPaint.mel.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Add a tool named "customtoolPaint" to the list of
+        # attribute painting tools, then creates a new context called
+        # "customtoolPaintContext" which utilises the "customtoolPaint" tool.
+        #
+        cmds.artAttrTool( add='customtoolPaint' )
+        cmds.artAttrCtx( 'customtoolPaintContext', whichTool='customtoolPaint' )
+        # List all tools currently defined.
+        #
+        cmds.artAttrTool( query=True )
+    ```
+
     ---
     - Args:
         - add ()): Adds the named tool to the internal list of tools.
@@ -43,6 +57,20 @@ def artAttrTool(): str = ..., ex: str = ..., rm: str = ...) -> None:
     Properties and Values sheets asscociated with your tool, you will need to
     define a custom tool via artAttrTool -add "toolName". For an example of a
     custom attribute painting tool, see the devkit example customtoolPaint.mel.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Add a tool named "customtoolPaint" to the list of
+        # attribute painting tools, then creates a new context called
+        # "customtoolPaintContext" which utilises the "customtoolPaint" tool.
+        #
+        cmds.artAttrTool( add='customtoolPaint' )
+        cmds.artAttrCtx( 'customtoolPaintContext', whichTool='customtoolPaint' )
+        # List all tools currently defined.
+        #
+        cmds.artAttrTool( query=True )
+    ```
 
     ---
     - Args:
@@ -68,6 +96,20 @@ def artAttrTool(add: str = ..., ): str = ..., exists: str = ..., ex: str = ..., 
     define a custom tool via artAttrTool -add "toolName". For an example of a
     custom attribute painting tool, see the devkit example customtoolPaint.mel.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Add a tool named "customtoolPaint" to the list of
+        # attribute painting tools, then creates a new context called
+        # "customtoolPaintContext" which utilises the "customtoolPaint" tool.
+        #
+        cmds.artAttrTool( add='customtoolPaint' )
+        cmds.artAttrCtx( 'customtoolPaintContext', whichTool='customtoolPaint' )
+        # List all tools currently defined.
+        #
+        cmds.artAttrTool( query=True )
+    ```
+
     ---
     - Args:
         - add ()): Adds the named tool to the internal list of tools.
@@ -92,6 +134,20 @@ def artAttrTool(exists: str = ..., query: bool = ...) -> None:
     define a custom tool via artAttrTool -add "toolName". For an example of a
     custom attribute painting tool, see the devkit example customtoolPaint.mel.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Add a tool named "customtoolPaint" to the list of
+        # attribute painting tools, then creates a new context called
+        # "customtoolPaintContext" which utilises the "customtoolPaint" tool.
+        #
+        cmds.artAttrTool( add='customtoolPaint' )
+        cmds.artAttrCtx( 'customtoolPaintContext', whichTool='customtoolPaint' )
+        # List all tools currently defined.
+        #
+        cmds.artAttrTool( query=True )
+    ```
+
     ---
     - Args:
         - exists (ex): Checks if the named tool exists, returning true if found, and false otherwise.
@@ -114,6 +170,20 @@ def artAttrTool(ex: str = ..., q: bool = ...) -> None:
     Properties and Values sheets asscociated with your tool, you will need to
     define a custom tool via artAttrTool -add "toolName". For an example of a
     custom attribute painting tool, see the devkit example customtoolPaint.mel.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Add a tool named "customtoolPaint" to the list of
+        # attribute painting tools, then creates a new context called
+        # "customtoolPaintContext" which utilises the "customtoolPaint" tool.
+        #
+        cmds.artAttrTool( add='customtoolPaint' )
+        cmds.artAttrCtx( 'customtoolPaintContext', whichTool='customtoolPaint' )
+        # List all tools currently defined.
+        #
+        cmds.artAttrTool( query=True )
+    ```
 
     ---
     - Args:
@@ -138,77 +208,22 @@ def artAttrTool(exists: str = ..., ex: str = ..., query: bool = ..., q: bool = .
     define a custom tool via artAttrTool -add "toolName". For an example of a
     custom attribute painting tool, see the devkit example customtoolPaint.mel.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Add a tool named "customtoolPaint" to the list of
+        # attribute painting tools, then creates a new context called
+        # "customtoolPaintContext" which utilises the "customtoolPaint" tool.
+        #
+        cmds.artAttrTool( add='customtoolPaint' )
+        cmds.artAttrCtx( 'customtoolPaintContext', whichTool='customtoolPaint' )
+        # List all tools currently defined.
+        #
+        cmds.artAttrTool( query=True )
+    ```
+
     ---
     - Args:
         - exists (ex): Checks if the named tool exists, returning true if found, and false otherwise.
         - query (q): Query mode flag
-    """
-@overload #Overload for artAttrTool in ['edit']
-def artAttrTool(exists: str = ..., edit: bool = ...) -> None:
-    """artAttrTool is NOT undoable, queryable, and NOT editable.
-    
-    The artAttrTool command manages the list of tool types which are used for
-    attribute painting. This command supports querying the list contents as well
-    as adding new tools to the list. Note that there is a set of built-in tools.
-    The list of built-ins can be queried by starting Maya and doing an
-    "artAttrTool -q".
-    
-    The tools which are managed by this command are all intended for attribute
-    painting via Artisan: when you create a new context via artAttrCtx you specify
-    the tool name via artAttrCtx's -whichTool flag. Typically the user may wish to
-    simply use one of the built-in tools. However, if you need to have custom
-    Properties and Values sheets asscociated with your tool, you will need to
-    define a custom tool via artAttrTool -add "toolName". For an example of a
-    custom attribute painting tool, see the devkit example customtoolPaint.mel.
-
-    ---
-    - Args:
-        - exists (ex): Checks if the named tool exists, returning true if found, and false otherwise.
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for artAttrTool in ['edit']
-def artAttrTool(ex: str = ..., e: bool = ...) -> None:
-    """artAttrTool is NOT undoable, queryable, and NOT editable.
-    
-    The artAttrTool command manages the list of tool types which are used for
-    attribute painting. This command supports querying the list contents as well
-    as adding new tools to the list. Note that there is a set of built-in tools.
-    The list of built-ins can be queried by starting Maya and doing an
-    "artAttrTool -q".
-    
-    The tools which are managed by this command are all intended for attribute
-    painting via Artisan: when you create a new context via artAttrCtx you specify
-    the tool name via artAttrCtx's -whichTool flag. Typically the user may wish to
-    simply use one of the built-in tools. However, if you need to have custom
-    Properties and Values sheets asscociated with your tool, you will need to
-    define a custom tool via artAttrTool -add "toolName". For an example of a
-    custom attribute painting tool, see the devkit example customtoolPaint.mel.
-
-    ---
-    - Args:
-        - exists (ex): Checks if the named tool exists, returning true if found, and false otherwise.
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for artAttrTool in ['edit']
-def artAttrTool(exists: str = ..., ex: str = ..., edit: bool = ..., e: bool = ...) -> None:
-    """artAttrTool is NOT undoable, queryable, and NOT editable.
-    
-    The artAttrTool command manages the list of tool types which are used for
-    attribute painting. This command supports querying the list contents as well
-    as adding new tools to the list. Note that there is a set of built-in tools.
-    The list of built-ins can be queried by starting Maya and doing an
-    "artAttrTool -q".
-    
-    The tools which are managed by this command are all intended for attribute
-    painting via Artisan: when you create a new context via artAttrCtx you specify
-    the tool name via artAttrCtx's -whichTool flag. Typically the user may wish to
-    simply use one of the built-in tools. However, if you need to have custom
-    Properties and Values sheets asscociated with your tool, you will need to
-    define a custom tool via artAttrTool -add "toolName". For an example of a
-    custom attribute painting tool, see the devkit example customtoolPaint.mel.
-
-    ---
-    - Args:
-        - exists (ex): Checks if the named tool exists, returning true if found, and false otherwise.
-        - edit (e): Edit mode flag
     """

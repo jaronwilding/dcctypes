@@ -8,6 +8,12 @@ def rollCtx([context]: [context], alternateContext: bool = ..., exists: bool = .
     
     Create, edit, or query a roll context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.rollCtx( 'rollContext', rs=30.0 )
+    ```
+
     ---
     - Args:
         - [context]: Input item(s).
@@ -26,6 +32,12 @@ def rollCtx([context]: [context], ac: bool = ..., ex: bool = ..., ch: bool = ...
     """rollCtx is undoable, queryable, and editable.
     
     Create, edit, or query a roll context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.rollCtx( 'rollContext', rs=30.0 )
+    ```
 
     ---
     - Args:
@@ -46,6 +58,12 @@ def rollCtx([context]: [context], alternateContext: bool = ..., ac: bool = ..., 
     
     Create, edit, or query a roll context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.rollCtx( 'rollContext', rs=30.0 )
+    ```
+
     ---
     - Args:
         - [context]: Input item(s).
@@ -65,6 +83,12 @@ def rollCtx([context]: [context], alternateContext: bool = ..., image1: str = ..
     
     Create, edit, or query a roll context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.rollCtx( 'rollContext', rs=30.0 )
+    ```
+
     ---
     - Args:
         - [context]: Input item(s).
@@ -81,6 +105,12 @@ def rollCtx([context]: [context], ac: bool = ..., i1: str = ..., i2: str = ..., 
     """rollCtx is undoable, queryable, and editable.
     
     Create, edit, or query a roll context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.rollCtx( 'rollContext', rs=30.0 )
+    ```
 
     ---
     - Args:
@@ -99,6 +129,12 @@ def rollCtx([context]: [context], alternateContext: bool = ..., ac: bool = ..., 
     
     Create, edit, or query a roll context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.rollCtx( 'rollContext', rs=30.0 )
+    ```
+
     ---
     - Args:
         - [context]: Input item(s).
@@ -111,53 +147,65 @@ def rollCtx([context]: [context], alternateContext: bool = ..., ac: bool = ..., 
         - query (q): Query mode flag
     """
 @overload #Overload for rollCtx in ['edit']
-def rollCtx([context]: [context], alternateContext: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., rollScale: float = ..., toolName: str = ..., edit: bool = ...) -> str:
+def rollCtx([context]: [context], image1: str = ..., image2: str = ..., image3: str = ..., rollScale: float = ..., edit: bool = ...) -> str:
     """rollCtx is undoable, queryable, and editable.
     
     Create, edit, or query a roll context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.rollCtx( 'rollContext', rs=30.0 )
+    ```
+
     ---
     - Args:
         - [context]: Input item(s).
-        - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
         - rollScale (rs): In degrees of rotation per 100 pixels of cursor drag.
-        - toolName (tn): Name of the specific tool to which this command refers.
         - edit (e): Edit mode flag
     """
 @overload #Overload for rollCtx in ['edit']
-def rollCtx([context]: [context], ac: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., rs: float = ..., tn: str = ..., e: bool = ...) -> str:
+def rollCtx([context]: [context], i1: str = ..., i2: str = ..., i3: str = ..., rs: float = ..., e: bool = ...) -> str:
     """rollCtx is undoable, queryable, and editable.
     
     Create, edit, or query a roll context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.rollCtx( 'rollContext', rs=30.0 )
+    ```
+
     ---
     - Args:
         - [context]: Input item(s).
-        - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
         - rollScale (rs): In degrees of rotation per 100 pixels of cursor drag.
-        - toolName (tn): Name of the specific tool to which this command refers.
         - edit (e): Edit mode flag
     """
 @overload #Overload for rollCtx in ['edit']
-def rollCtx([context]: [context], alternateContext: bool = ..., ac: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., rollScale: float = ..., rs: float = ..., toolName: str = ..., tn: str = ..., edit: bool = ..., e: bool = ...) -> str:
+def rollCtx([context]: [context], image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., rollScale: float = ..., rs: float = ..., edit: bool = ..., e: bool = ...) -> str:
     """rollCtx is undoable, queryable, and editable.
     
     Create, edit, or query a roll context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.rollCtx( 'rollContext', rs=30.0 )
+    ```
+
     ---
     - Args:
         - [context]: Input item(s).
-        - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
         - rollScale (rs): In degrees of rotation per 100 pixels of cursor drag.
-        - toolName (tn): Name of the specific tool to which this command refers.
         - edit (e): Edit mode flag
     """

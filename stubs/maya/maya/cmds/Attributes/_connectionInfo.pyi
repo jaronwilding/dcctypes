@@ -10,6 +10,29 @@ def connectionInfo(string: str, destinationFromSource: bool = ..., getExactDesti
     and destinations. Unlike the isConnected command, this command needs only one
     end of the connection.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Create a sphere and a cone and make the Z translation of the cone
+        #    be dependent on the X translation of the sphere.
+        #
+        cone = cmds.cone()
+        sphere = cmds.sphere()
+        sphereTx = '%s.tx' % sphere[0]
+        coneTz = '%s.tz' % cone[0]
+        cmds.connectAttr(sphereTx, coneTz)
+        #    Verify the connection and print out the source plug.
+        #
+        if cmds.connectionInfo( coneTz, isDestination=True):
+        print( 'Source: %s' % cmds.connectionInfo(coneTz,sourceFromDestination=True) )
+        #    Verify the connection and print out the destination plug.
+        #
+        if cmds.connectionInfo( sphereTx, isSource=True):
+        destinations = cmds.connectionInfo(sphereTx, destinationFromSource=True)
+        for destination in destinations:
+        print destination
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -33,6 +56,29 @@ def connectionInfo(string: str, dfs: bool = ..., ged: bool = ..., ges: bool = ..
     and destinations. Unlike the isConnected command, this command needs only one
     end of the connection.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Create a sphere and a cone and make the Z translation of the cone
+        #    be dependent on the X translation of the sphere.
+        #
+        cone = cmds.cone()
+        sphere = cmds.sphere()
+        sphereTx = '%s.tx' % sphere[0]
+        coneTz = '%s.tz' % cone[0]
+        cmds.connectAttr(sphereTx, coneTz)
+        #    Verify the connection and print out the source plug.
+        #
+        if cmds.connectionInfo( coneTz, isDestination=True):
+        print( 'Source: %s' % cmds.connectionInfo(coneTz,sourceFromDestination=True) )
+        #    Verify the connection and print out the destination plug.
+        #
+        if cmds.connectionInfo( sphereTx, isSource=True):
+        destinations = cmds.connectionInfo(sphereTx, destinationFromSource=True)
+        for destination in destinations:
+        print destination
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -55,6 +101,29 @@ def connectionInfo(string: str, destinationFromSource: bool = ..., dfs: bool = .
     The connectionInfo command is used to get information about connection sources
     and destinations. Unlike the isConnected command, this command needs only one
     end of the connection.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Create a sphere and a cone and make the Z translation of the cone
+        #    be dependent on the X translation of the sphere.
+        #
+        cone = cmds.cone()
+        sphere = cmds.sphere()
+        sphereTx = '%s.tx' % sphere[0]
+        coneTz = '%s.tz' % cone[0]
+        cmds.connectAttr(sphereTx, coneTz)
+        #    Verify the connection and print out the source plug.
+        #
+        if cmds.connectionInfo( coneTz, isDestination=True):
+        print( 'Source: %s' % cmds.connectionInfo(coneTz,sourceFromDestination=True) )
+        #    Verify the connection and print out the destination plug.
+        #
+        if cmds.connectionInfo( sphereTx, isSource=True):
+        destinations = cmds.connectionInfo(sphereTx, destinationFromSource=True)
+        for destination in destinations:
+        print destination
+    ```
 
     ---
     - Args:

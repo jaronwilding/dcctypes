@@ -9,6 +9,18 @@ def curveSketchCtx([object]: [object], degree: int = ..., exists: bool = ..., hi
     The curveSketchCtx command creates a new curve sketch context, also known as
     the "pencil context".
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new sketch context, which creates degree 3 curves:
+        cmds.curveSketchCtx( "pencilContext", degree=3 )
+        cmds.setToolTo("pencilContext")
+        # To query the degree of an existing context:
+        cmds.curveSketchCtx( "pencilContext",q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveSketchCtx( "pencilContext", e=True, degree=1 )
+    ```
+
     ---
     - Args:
         - [object]: Input item(s).
@@ -26,6 +38,18 @@ def curveSketchCtx([object]: [object], d: int = ..., ex: bool = ..., ch: bool = 
     
     The curveSketchCtx command creates a new curve sketch context, also known as
     the "pencil context".
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new sketch context, which creates degree 3 curves:
+        cmds.curveSketchCtx( "pencilContext", degree=3 )
+        cmds.setToolTo("pencilContext")
+        # To query the degree of an existing context:
+        cmds.curveSketchCtx( "pencilContext",q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveSketchCtx( "pencilContext", e=True, degree=1 )
+    ```
 
     ---
     - Args:
@@ -45,6 +69,18 @@ def curveSketchCtx([object]: [object], degree: int = ..., d: int = ..., exists: 
     The curveSketchCtx command creates a new curve sketch context, also known as
     the "pencil context".
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new sketch context, which creates degree 3 curves:
+        cmds.curveSketchCtx( "pencilContext", degree=3 )
+        cmds.setToolTo("pencilContext")
+        # To query the degree of an existing context:
+        cmds.curveSketchCtx( "pencilContext",q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveSketchCtx( "pencilContext", e=True, degree=1 )
+    ```
+
     ---
     - Args:
         - [object]: Input item(s).
@@ -63,6 +99,18 @@ def curveSketchCtx([object]: [object], degree: int = ..., image1: str = ..., ima
     The curveSketchCtx command creates a new curve sketch context, also known as
     the "pencil context".
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new sketch context, which creates degree 3 curves:
+        cmds.curveSketchCtx( "pencilContext", degree=3 )
+        cmds.setToolTo("pencilContext")
+        # To query the degree of an existing context:
+        cmds.curveSketchCtx( "pencilContext",q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveSketchCtx( "pencilContext", e=True, degree=1 )
+    ```
+
     ---
     - Args:
         - [object]: Input item(s).
@@ -78,6 +126,18 @@ def curveSketchCtx([object]: [object], d: int = ..., i1: str = ..., i2: str = ..
     
     The curveSketchCtx command creates a new curve sketch context, also known as
     the "pencil context".
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new sketch context, which creates degree 3 curves:
+        cmds.curveSketchCtx( "pencilContext", degree=3 )
+        cmds.setToolTo("pencilContext")
+        # To query the degree of an existing context:
+        cmds.curveSketchCtx( "pencilContext",q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveSketchCtx( "pencilContext", e=True, degree=1 )
+    ```
 
     ---
     - Args:
@@ -95,6 +155,18 @@ def curveSketchCtx([object]: [object], degree: int = ..., d: int = ..., image1: 
     The curveSketchCtx command creates a new curve sketch context, also known as
     the "pencil context".
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new sketch context, which creates degree 3 curves:
+        cmds.curveSketchCtx( "pencilContext", degree=3 )
+        cmds.setToolTo("pencilContext")
+        # To query the degree of an existing context:
+        cmds.curveSketchCtx( "pencilContext",q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveSketchCtx( "pencilContext", e=True, degree=1 )
+    ```
+
     ---
     - Args:
         - [object]: Input item(s).
@@ -110,6 +182,18 @@ def curveSketchCtx([object]: [object], degree: int = ..., image1: str = ..., ima
     
     The curveSketchCtx command creates a new curve sketch context, also known as
     the "pencil context".
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new sketch context, which creates degree 3 curves:
+        cmds.curveSketchCtx( "pencilContext", degree=3 )
+        cmds.setToolTo("pencilContext")
+        # To query the degree of an existing context:
+        cmds.curveSketchCtx( "pencilContext",q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveSketchCtx( "pencilContext", e=True, degree=1 )
+    ```
 
     ---
     - Args:
@@ -127,6 +211,18 @@ def curveSketchCtx([object]: [object], d: int = ..., i1: str = ..., i2: str = ..
     The curveSketchCtx command creates a new curve sketch context, also known as
     the "pencil context".
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new sketch context, which creates degree 3 curves:
+        cmds.curveSketchCtx( "pencilContext", degree=3 )
+        cmds.setToolTo("pencilContext")
+        # To query the degree of an existing context:
+        cmds.curveSketchCtx( "pencilContext",q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveSketchCtx( "pencilContext", e=True, degree=1 )
+    ```
+
     ---
     - Args:
         - [object]: Input item(s).
@@ -142,6 +238,18 @@ def curveSketchCtx([object]: [object], degree: int = ..., d: int = ..., image1: 
     
     The curveSketchCtx command creates a new curve sketch context, also known as
     the "pencil context".
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new sketch context, which creates degree 3 curves:
+        cmds.curveSketchCtx( "pencilContext", degree=3 )
+        cmds.setToolTo("pencilContext")
+        # To query the degree of an existing context:
+        cmds.curveSketchCtx( "pencilContext",q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.curveSketchCtx( "pencilContext", e=True, degree=1 )
+    ```
 
     ---
     - Args:

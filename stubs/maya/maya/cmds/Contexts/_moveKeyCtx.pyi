@@ -3,11 +3,23 @@
 from typing import Any, overload
 
 @overload #Overload for moveKeyCtx in ['create']
-def moveKeyCtx(contextName: contextName, exists: bool = ..., history: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., moveFunction: str = ..., name: str = ..., option: str = ...) -> str:
+def moveKeyCtx(contextName: contextName, exists: bool = ..., history: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., name: str = ..., option: str = ...) -> str:
     """moveKeyCtx is undoable, queryable, and editable.
     
     This command creates a context which may be used to move keyframes within the
     graph editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a move key context which works in insert mode
+        # for the graph editor
+        #
+        newCtx = cmds.moveKeyCtx(option='insert')
+        # Edit the context to over mode
+        #
+        cmds.moveKeyCtx( newCtx, e=True, option='over' )
+    ```
 
     ---
     - Args:
@@ -17,8 +29,6 @@ def moveKeyCtx(contextName: contextName, exists: bool = ..., history: bool = ...
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
-        - moveFunction (mf): linear | power | constant. Specifies how the keys are dragged. The default move type is constant where all keys move the same amount as controlled by user movement. Power provides a fall-off function where the center of the drag moves the
-            most and the keys around the drag move less.
         - name (n): If this is a tool command, name the tool appropriately.
         - option (o): Valid values are "move," "insert," "over," "segmentOver," and "ripple." When you "move" a key, the key will not cross over (in time) any keys before or after it. When you "insert" a key, all keys before or after (depending upon the
             -timeChange value) will be moved an equivalent amount. When you "over" a key, the key is allowed to move to any time (as long as a key is not there already). When you "segmentOver" a set of keys (this option only has a noticeable effect
@@ -26,11 +36,23 @@ def moveKeyCtx(contextName: contextName, exists: bool = ..., history: bool = ...
             you move a set of keys with "ripple" all keys after the selected ones will be moved by the same amount.
     """
 @overload #Overload for moveKeyCtx in ['create']
-def moveKeyCtx(contextName: contextName, ex: bool = ..., ch: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., mf: str = ..., n: str = ..., o: str = ...) -> str:
+def moveKeyCtx(contextName: contextName, ex: bool = ..., ch: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., n: str = ..., o: str = ...) -> str:
     """moveKeyCtx is undoable, queryable, and editable.
     
     This command creates a context which may be used to move keyframes within the
     graph editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a move key context which works in insert mode
+        # for the graph editor
+        #
+        newCtx = cmds.moveKeyCtx(option='insert')
+        # Edit the context to over mode
+        #
+        cmds.moveKeyCtx( newCtx, e=True, option='over' )
+    ```
 
     ---
     - Args:
@@ -40,8 +62,6 @@ def moveKeyCtx(contextName: contextName, ex: bool = ..., ch: bool = ..., i1: str
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
-        - moveFunction (mf): linear | power | constant. Specifies how the keys are dragged. The default move type is constant where all keys move the same amount as controlled by user movement. Power provides a fall-off function where the center of the drag moves the
-            most and the keys around the drag move less.
         - name (n): If this is a tool command, name the tool appropriately.
         - option (o): Valid values are "move," "insert," "over," "segmentOver," and "ripple." When you "move" a key, the key will not cross over (in time) any keys before or after it. When you "insert" a key, all keys before or after (depending upon the
             -timeChange value) will be moved an equivalent amount. When you "over" a key, the key is allowed to move to any time (as long as a key is not there already). When you "segmentOver" a set of keys (this option only has a noticeable effect
@@ -49,11 +69,23 @@ def moveKeyCtx(contextName: contextName, ex: bool = ..., ch: bool = ..., i1: str
             you move a set of keys with "ripple" all keys after the selected ones will be moved by the same amount.
     """
 @overload #Overload for moveKeyCtx in ['create']
-def moveKeyCtx(contextName: contextName, exists: bool = ..., ex: bool = ..., history: bool = ..., ch: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., moveFunction: str = ..., mf: str = ..., name: str = ..., n: str = ..., option: str = ..., o: str = ...) -> str:
+def moveKeyCtx(contextName: contextName, exists: bool = ..., ex: bool = ..., history: bool = ..., ch: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., name: str = ..., n: str = ..., option: str = ..., o: str = ...) -> str:
     """moveKeyCtx is undoable, queryable, and editable.
     
     This command creates a context which may be used to move keyframes within the
     graph editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a move key context which works in insert mode
+        # for the graph editor
+        #
+        newCtx = cmds.moveKeyCtx(option='insert')
+        # Edit the context to over mode
+        #
+        cmds.moveKeyCtx( newCtx, e=True, option='over' )
+    ```
 
     ---
     - Args:
@@ -63,8 +95,6 @@ def moveKeyCtx(contextName: contextName, exists: bool = ..., ex: bool = ..., his
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
-        - moveFunction (mf): linear | power | constant. Specifies how the keys are dragged. The default move type is constant where all keys move the same amount as controlled by user movement. Power provides a fall-off function where the center of the drag moves the
-            most and the keys around the drag move less.
         - name (n): If this is a tool command, name the tool appropriately.
         - option (o): Valid values are "move," "insert," "over," "segmentOver," and "ripple." When you "move" a key, the key will not cross over (in time) any keys before or after it. When you "insert" a key, all keys before or after (depending upon the
             -timeChange value) will be moved an equivalent amount. When you "over" a key, the key is allowed to move to any time (as long as a key is not there already). When you "segmentOver" a set of keys (this option only has a noticeable effect
@@ -77,6 +107,18 @@ def moveKeyCtx(contextName: contextName, image1: str = ..., image2: str = ..., i
     
     This command creates a context which may be used to move keyframes within the
     graph editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a move key context which works in insert mode
+        # for the graph editor
+        #
+        newCtx = cmds.moveKeyCtx(option='insert')
+        # Edit the context to over mode
+        #
+        cmds.moveKeyCtx( newCtx, e=True, option='over' )
+    ```
 
     ---
     - Args:
@@ -99,6 +141,18 @@ def moveKeyCtx(contextName: contextName, i1: str = ..., i2: str = ..., i3: str =
     This command creates a context which may be used to move keyframes within the
     graph editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a move key context which works in insert mode
+        # for the graph editor
+        #
+        newCtx = cmds.moveKeyCtx(option='insert')
+        # Edit the context to over mode
+        #
+        cmds.moveKeyCtx( newCtx, e=True, option='over' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -119,6 +173,18 @@ def moveKeyCtx(contextName: contextName, image1: str = ..., i1: str = ..., image
     
     This command creates a context which may be used to move keyframes within the
     graph editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a move key context which works in insert mode
+        # for the graph editor
+        #
+        newCtx = cmds.moveKeyCtx(option='insert')
+        # Edit the context to over mode
+        #
+        cmds.moveKeyCtx( newCtx, e=True, option='over' )
+    ```
 
     ---
     - Args:
@@ -141,6 +207,18 @@ def moveKeyCtx(contextName: contextName, image1: str = ..., image2: str = ..., i
     This command creates a context which may be used to move keyframes within the
     graph editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a move key context which works in insert mode
+        # for the graph editor
+        #
+        newCtx = cmds.moveKeyCtx(option='insert')
+        # Edit the context to over mode
+        #
+        cmds.moveKeyCtx( newCtx, e=True, option='over' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -162,6 +240,18 @@ def moveKeyCtx(contextName: contextName, i1: str = ..., i2: str = ..., i3: str =
     This command creates a context which may be used to move keyframes within the
     graph editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a move key context which works in insert mode
+        # for the graph editor
+        #
+        newCtx = cmds.moveKeyCtx(option='insert')
+        # Edit the context to over mode
+        #
+        cmds.moveKeyCtx( newCtx, e=True, option='over' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -182,6 +272,18 @@ def moveKeyCtx(contextName: contextName, image1: str = ..., i1: str = ..., image
     
     This command creates a context which may be used to move keyframes within the
     graph editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a move key context which works in insert mode
+        # for the graph editor
+        #
+        newCtx = cmds.moveKeyCtx(option='insert')
+        # Edit the context to over mode
+        #
+        cmds.moveKeyCtx( newCtx, e=True, option='over' )
+    ```
 
     ---
     - Args:

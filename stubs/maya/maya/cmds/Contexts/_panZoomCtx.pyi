@@ -8,6 +8,12 @@ def panZoomCtx(alternateContext: bool = ..., buttonDown: bool = ..., buttonUp: b
     
     This command can be used to create camera 2D pan/zoom context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.panZoomCtx( 'panZoomContext', zs=1.0 )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -29,6 +35,12 @@ def panZoomCtx(ac: bool = ..., btd: bool = ..., btu: bool = ..., ex: bool = ...,
     """panZoomCtx is undoable, queryable, and editable.
     
     This command can be used to create camera 2D pan/zoom context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.panZoomCtx( 'panZoomContext', zs=1.0 )
+    ```
 
     ---
     - Args:
@@ -52,6 +64,12 @@ def panZoomCtx(alternateContext: bool = ..., ac: bool = ..., buttonDown: bool = 
     
     This command can be used to create camera 2D pan/zoom context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.panZoomCtx( 'panZoomContext', zs=1.0 )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -74,6 +92,12 @@ def panZoomCtx(alternateContext: bool = ..., image1: str = ..., image2: str = ..
     
     This command can be used to create camera 2D pan/zoom context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.panZoomCtx( 'panZoomContext', zs=1.0 )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -89,6 +113,12 @@ def panZoomCtx(ac: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., tn: 
     """panZoomCtx is undoable, queryable, and editable.
     
     This command can be used to create camera 2D pan/zoom context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.panZoomCtx( 'panZoomContext', zs=1.0 )
+    ```
 
     ---
     - Args:
@@ -106,6 +136,12 @@ def panZoomCtx(alternateContext: bool = ..., ac: bool = ..., image1: str = ..., 
     
     This command can be used to create camera 2D pan/zoom context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.panZoomCtx( 'panZoomContext', zs=1.0 )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -117,50 +153,62 @@ def panZoomCtx(alternateContext: bool = ..., ac: bool = ..., image1: str = ..., 
         - query (q): Query mode flag
     """
 @overload #Overload for panZoomCtx in ['edit']
-def panZoomCtx(alternateContext: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., toolName: str = ..., zoomScale: float = ..., edit: bool = ...) -> str:
+def panZoomCtx(image1: str = ..., image2: str = ..., image3: str = ..., zoomScale: float = ..., edit: bool = ...) -> str:
     """panZoomCtx is undoable, queryable, and editable.
     
     This command can be used to create camera 2D pan/zoom context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.panZoomCtx( 'panZoomContext', zs=1.0 )
+    ```
+
     ---
     - Args:
-        - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
-        - toolName (tn): Name of the specific tool to which this command refers.
         - zoomScale (zs): Scale the zoom. The smaller the scale the slower the drag.
         - edit (e): Edit mode flag
     """
 @overload #Overload for panZoomCtx in ['edit']
-def panZoomCtx(ac: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., tn: str = ..., zs: float = ..., e: bool = ...) -> str:
+def panZoomCtx(i1: str = ..., i2: str = ..., i3: str = ..., zs: float = ..., e: bool = ...) -> str:
     """panZoomCtx is undoable, queryable, and editable.
     
     This command can be used to create camera 2D pan/zoom context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.panZoomCtx( 'panZoomContext', zs=1.0 )
+    ```
+
     ---
     - Args:
-        - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
-        - toolName (tn): Name of the specific tool to which this command refers.
         - zoomScale (zs): Scale the zoom. The smaller the scale the slower the drag.
         - edit (e): Edit mode flag
     """
 @overload #Overload for panZoomCtx in ['edit']
-def panZoomCtx(alternateContext: bool = ..., ac: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., toolName: str = ..., tn: str = ..., zoomScale: float = ..., zs: float = ..., edit: bool = ..., e: bool = ...) -> str:
+def panZoomCtx(image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., zoomScale: float = ..., zs: float = ..., edit: bool = ..., e: bool = ...) -> str:
     """panZoomCtx is undoable, queryable, and editable.
     
     This command can be used to create camera 2D pan/zoom context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.panZoomCtx( 'panZoomContext', zs=1.0 )
+    ```
+
     ---
     - Args:
-        - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
-        - toolName (tn): Name of the specific tool to which this command refers.
         - zoomScale (zs): Scale the zoom. The smaller the scale the slower the drag.
         - edit (e): Edit mode flag
     """

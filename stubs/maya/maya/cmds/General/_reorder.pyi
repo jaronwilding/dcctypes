@@ -18,6 +18,26 @@ def reorder([objects...]: [objects...], back: bool = ..., front: bool = ..., rel
     If a shape is specified and it is the only child then its parent will be
     reordered.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a hierarchy
+        cmds.sphere( n='sphere1' )
+        cmds.sphere( n='sphere2' )
+        cmds.sphere( n='sphere3' )
+        cmds.sphere( n='sphere4' )
+        cmds.group( 'sphere1', 'sphere2', 'sphere3', 'sphere4', n='group1' )
+        # The hierarchy group1 contains sphere1, sphere2, sphere3 and sphere4.
+        # The command below moves sphere2 before sphere1.
+        cmds.reorder( 'sphere2', r=-1 )
+        # make sphere1 the first sibling
+        cmds.reorder( 'sphere1', front=True )
+        # move sphere3 forward 2 siblings. Moving it forward one
+        # sibling would put it at the end. Moving it forward again
+        # puts it at the beginning.
+        cmds.reorder( 'sphere3', r=2 )
+    ```
+
     ---
     - Args:
         - [objects...]: Input item(s).
@@ -41,6 +61,26 @@ def reorder([objects...]: [objects...], b: bool = ..., f: bool = ..., r: int = .
     If a shape is specified and it is the only child then its parent will be
     reordered.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a hierarchy
+        cmds.sphere( n='sphere1' )
+        cmds.sphere( n='sphere2' )
+        cmds.sphere( n='sphere3' )
+        cmds.sphere( n='sphere4' )
+        cmds.group( 'sphere1', 'sphere2', 'sphere3', 'sphere4', n='group1' )
+        # The hierarchy group1 contains sphere1, sphere2, sphere3 and sphere4.
+        # The command below moves sphere2 before sphere1.
+        cmds.reorder( 'sphere2', r=-1 )
+        # make sphere1 the first sibling
+        cmds.reorder( 'sphere1', front=True )
+        # move sphere3 forward 2 siblings. Moving it forward one
+        # sibling would put it at the end. Moving it forward again
+        # puts it at the beginning.
+        cmds.reorder( 'sphere3', r=2 )
+    ```
+
     ---
     - Args:
         - [objects...]: Input item(s).
@@ -63,6 +103,26 @@ def reorder([objects...]: [objects...], back: bool = ..., b: bool = ..., front: 
     
     If a shape is specified and it is the only child then its parent will be
     reordered.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a hierarchy
+        cmds.sphere( n='sphere1' )
+        cmds.sphere( n='sphere2' )
+        cmds.sphere( n='sphere3' )
+        cmds.sphere( n='sphere4' )
+        cmds.group( 'sphere1', 'sphere2', 'sphere3', 'sphere4', n='group1' )
+        # The hierarchy group1 contains sphere1, sphere2, sphere3 and sphere4.
+        # The command below moves sphere2 before sphere1.
+        cmds.reorder( 'sphere2', r=-1 )
+        # make sphere1 the first sibling
+        cmds.reorder( 'sphere1', front=True )
+        # move sphere3 forward 2 siblings. Moving it forward one
+        # sibling would put it at the end. Moving it forward again
+        # puts it at the beginning.
+        cmds.reorder( 'sphere3', r=2 )
+    ```
 
     ---
     - Args:

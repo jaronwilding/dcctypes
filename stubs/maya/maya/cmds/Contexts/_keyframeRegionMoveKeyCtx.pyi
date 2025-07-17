@@ -9,6 +9,15 @@ def keyframeRegionMoveKeyCtx(contextName: contextName, exists: bool = ..., histo
     This command creates a context which may be used to move keyframes within the
     keyframe region of the dope sheet editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a move key context which works in insert mode
+        # for the dope sheet editor
+        #
+        cmds.keyframeRegionMoveKeyCtx( 'keyframeRegionMoveKeyContext', option='insert' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -29,6 +38,15 @@ def keyframeRegionMoveKeyCtx(contextName: contextName, ex: bool = ..., ch: bool 
     
     This command creates a context which may be used to move keyframes within the
     keyframe region of the dope sheet editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a move key context which works in insert mode
+        # for the dope sheet editor
+        #
+        cmds.keyframeRegionMoveKeyCtx( 'keyframeRegionMoveKeyContext', option='insert' )
+    ```
 
     ---
     - Args:
@@ -51,6 +69,15 @@ def keyframeRegionMoveKeyCtx(contextName: contextName, exists: bool = ..., ex: b
     This command creates a context which may be used to move keyframes within the
     keyframe region of the dope sheet editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a move key context which works in insert mode
+        # for the dope sheet editor
+        #
+        cmds.keyframeRegionMoveKeyCtx( 'keyframeRegionMoveKeyContext', option='insert' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -72,6 +99,15 @@ def keyframeRegionMoveKeyCtx(contextName: contextName, image1: str = ..., image2
     This command creates a context which may be used to move keyframes within the
     keyframe region of the dope sheet editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a move key context which works in insert mode
+        # for the dope sheet editor
+        #
+        cmds.keyframeRegionMoveKeyCtx( 'keyframeRegionMoveKeyContext', option='insert' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -90,6 +126,15 @@ def keyframeRegionMoveKeyCtx(contextName: contextName, i1: str = ..., i2: str = 
     
     This command creates a context which may be used to move keyframes within the
     keyframe region of the dope sheet editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a move key context which works in insert mode
+        # for the dope sheet editor
+        #
+        cmds.keyframeRegionMoveKeyCtx( 'keyframeRegionMoveKeyContext', option='insert' )
+    ```
 
     ---
     - Args:
@@ -110,6 +155,15 @@ def keyframeRegionMoveKeyCtx(contextName: contextName, image1: str = ..., i1: st
     This command creates a context which may be used to move keyframes within the
     keyframe region of the dope sheet editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a move key context which works in insert mode
+        # for the dope sheet editor
+        #
+        cmds.keyframeRegionMoveKeyCtx( 'keyframeRegionMoveKeyContext', option='insert' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -128,6 +182,15 @@ def keyframeRegionMoveKeyCtx(contextName: contextName, image1: str = ..., image2
     
     This command creates a context which may be used to move keyframes within the
     keyframe region of the dope sheet editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a move key context which works in insert mode
+        # for the dope sheet editor
+        #
+        cmds.keyframeRegionMoveKeyCtx( 'keyframeRegionMoveKeyContext', option='insert' )
+    ```
 
     ---
     - Args:
@@ -148,6 +211,15 @@ def keyframeRegionMoveKeyCtx(contextName: contextName, i1: str = ..., i2: str = 
     This command creates a context which may be used to move keyframes within the
     keyframe region of the dope sheet editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a move key context which works in insert mode
+        # for the dope sheet editor
+        #
+        cmds.keyframeRegionMoveKeyCtx( 'keyframeRegionMoveKeyContext', option='insert' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -166,6 +238,15 @@ def keyframeRegionMoveKeyCtx(contextName: contextName, image1: str = ..., i1: st
     
     This command creates a context which may be used to move keyframes within the
     keyframe region of the dope sheet editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a move key context which works in insert mode
+        # for the dope sheet editor
+        #
+        cmds.keyframeRegionMoveKeyCtx( 'keyframeRegionMoveKeyContext', option='insert' )
+    ```
 
     ---
     - Args:

@@ -12,6 +12,26 @@ def containerPublish(bindNode: [string, string] = ..., bindTemplateStandins: boo
     but this command can be used to publish just the inputs, outputs, or to
     collapse the shared inputs into a single attribute before publishing.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a proxy for container1
+        #
+        cmds.containerPublish(container1,inConnections=True,mergeShared=True)
+        # add a published name 'mainShader' of type 'objectSet'
+        #
+        cmds.containerPublish(container1,publishNode=['mainShadingSet','objectSet']
+        # bind a shading group to the published name
+        #
+        containerPublish -bindNode "mainShadingSet" blinn1SG container1;
+        # query what is bound
+        #
+        container -q -bindNode container1;
+        # unbind the shading group
+        #
+        containerPublish -unbindNode "mainShadingSet" container1;
+    ```
+
     ---
     - Args:
         - bindNode (bn): Bind the specified node to the published node name.
@@ -32,6 +52,26 @@ def containerPublish(bn: [string, string] = ..., bts: bool = ..., ic: bool = ...
     "publishConnections" flag on the container will publish all the connections,
     but this command can be used to publish just the inputs, outputs, or to
     collapse the shared inputs into a single attribute before publishing.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a proxy for container1
+        #
+        cmds.containerPublish(container1,inConnections=True,mergeShared=True)
+        # add a published name 'mainShader' of type 'objectSet'
+        #
+        cmds.containerPublish(container1,publishNode=['mainShadingSet','objectSet']
+        # bind a shading group to the published name
+        #
+        containerPublish -bindNode "mainShadingSet" blinn1SG container1;
+        # query what is bound
+        #
+        container -q -bindNode container1;
+        # unbind the shading group
+        #
+        containerPublish -unbindNode "mainShadingSet" container1;
+    ```
 
     ---
     - Args:
@@ -54,6 +94,26 @@ def containerPublish(bindNode: [string, string] = ..., bn: [string, string] = ..
     but this command can be used to publish just the inputs, outputs, or to
     collapse the shared inputs into a single attribute before publishing.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a proxy for container1
+        #
+        cmds.containerPublish(container1,inConnections=True,mergeShared=True)
+        # add a published name 'mainShader' of type 'objectSet'
+        #
+        cmds.containerPublish(container1,publishNode=['mainShadingSet','objectSet']
+        # bind a shading group to the published name
+        #
+        containerPublish -bindNode "mainShadingSet" blinn1SG container1;
+        # query what is bound
+        #
+        container -q -bindNode container1;
+        # unbind the shading group
+        #
+        containerPublish -unbindNode "mainShadingSet" container1;
+    ```
+
     ---
     - Args:
         - bindNode (bn): Bind the specified node to the published node name.
@@ -75,6 +135,26 @@ def containerPublish(bindNode: [string, string] = ..., bindTemplateStandins: boo
     but this command can be used to publish just the inputs, outputs, or to
     collapse the shared inputs into a single attribute before publishing.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a proxy for container1
+        #
+        cmds.containerPublish(container1,inConnections=True,mergeShared=True)
+        # add a published name 'mainShader' of type 'objectSet'
+        #
+        cmds.containerPublish(container1,publishNode=['mainShadingSet','objectSet']
+        # bind a shading group to the published name
+        #
+        containerPublish -bindNode "mainShadingSet" blinn1SG container1;
+        # query what is bound
+        #
+        container -q -bindNode container1;
+        # unbind the shading group
+        #
+        containerPublish -unbindNode "mainShadingSet" container1;
+    ```
+
     ---
     - Args:
         - bindNode (bn): Bind the specified node to the published node name.
@@ -93,6 +173,26 @@ def containerPublish(bn: [string, string] = ..., bts: bool = ..., pn: [string, s
     "publishConnections" flag on the container will publish all the connections,
     but this command can be used to publish just the inputs, outputs, or to
     collapse the shared inputs into a single attribute before publishing.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a proxy for container1
+        #
+        cmds.containerPublish(container1,inConnections=True,mergeShared=True)
+        # add a published name 'mainShader' of type 'objectSet'
+        #
+        cmds.containerPublish(container1,publishNode=['mainShadingSet','objectSet']
+        # bind a shading group to the published name
+        #
+        containerPublish -bindNode "mainShadingSet" blinn1SG container1;
+        # query what is bound
+        #
+        container -q -bindNode container1;
+        # unbind the shading group
+        #
+        containerPublish -unbindNode "mainShadingSet" container1;
+    ```
 
     ---
     - Args:
@@ -113,6 +213,26 @@ def containerPublish(bindNode: [string, string] = ..., bn: [string, string] = ..
     but this command can be used to publish just the inputs, outputs, or to
     collapse the shared inputs into a single attribute before publishing.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a proxy for container1
+        #
+        cmds.containerPublish(container1,inConnections=True,mergeShared=True)
+        # add a published name 'mainShader' of type 'objectSet'
+        #
+        cmds.containerPublish(container1,publishNode=['mainShadingSet','objectSet']
+        # bind a shading group to the published name
+        #
+        containerPublish -bindNode "mainShadingSet" blinn1SG container1;
+        # query what is bound
+        #
+        container -q -bindNode container1;
+        # unbind the shading group
+        #
+        containerPublish -unbindNode "mainShadingSet" container1;
+    ```
+
     ---
     - Args:
         - bindNode (bn): Bind the specified node to the published node name.
@@ -131,6 +251,26 @@ def containerPublish(bindNode: [string, string] = ..., bindTemplateStandins: boo
     "publishConnections" flag on the container will publish all the connections,
     but this command can be used to publish just the inputs, outputs, or to
     collapse the shared inputs into a single attribute before publishing.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a proxy for container1
+        #
+        cmds.containerPublish(container1,inConnections=True,mergeShared=True)
+        # add a published name 'mainShader' of type 'objectSet'
+        #
+        cmds.containerPublish(container1,publishNode=['mainShadingSet','objectSet']
+        # bind a shading group to the published name
+        #
+        containerPublish -bindNode "mainShadingSet" blinn1SG container1;
+        # query what is bound
+        #
+        container -q -bindNode container1;
+        # unbind the shading group
+        #
+        containerPublish -unbindNode "mainShadingSet" container1;
+    ```
 
     ---
     - Args:
@@ -151,6 +291,26 @@ def containerPublish(bn: [string, string] = ..., bts: bool = ..., pn: [string, s
     but this command can be used to publish just the inputs, outputs, or to
     collapse the shared inputs into a single attribute before publishing.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a proxy for container1
+        #
+        cmds.containerPublish(container1,inConnections=True,mergeShared=True)
+        # add a published name 'mainShader' of type 'objectSet'
+        #
+        cmds.containerPublish(container1,publishNode=['mainShadingSet','objectSet']
+        # bind a shading group to the published name
+        #
+        containerPublish -bindNode "mainShadingSet" blinn1SG container1;
+        # query what is bound
+        #
+        container -q -bindNode container1;
+        # unbind the shading group
+        #
+        containerPublish -unbindNode "mainShadingSet" container1;
+    ```
+
     ---
     - Args:
         - bindNode (bn): Bind the specified node to the published node name.
@@ -169,6 +329,26 @@ def containerPublish(bindNode: [string, string] = ..., bn: [string, string] = ..
     "publishConnections" flag on the container will publish all the connections,
     but this command can be used to publish just the inputs, outputs, or to
     collapse the shared inputs into a single attribute before publishing.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a proxy for container1
+        #
+        cmds.containerPublish(container1,inConnections=True,mergeShared=True)
+        # add a published name 'mainShader' of type 'objectSet'
+        #
+        cmds.containerPublish(container1,publishNode=['mainShadingSet','objectSet']
+        # bind a shading group to the published name
+        #
+        containerPublish -bindNode "mainShadingSet" blinn1SG container1;
+        # query what is bound
+        #
+        container -q -bindNode container1;
+        # unbind the shading group
+        #
+        containerPublish -unbindNode "mainShadingSet" container1;
+    ```
 
     ---
     - Args:

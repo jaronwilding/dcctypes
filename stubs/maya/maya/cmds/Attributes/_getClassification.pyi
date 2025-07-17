@@ -46,6 +46,17 @@ def getClassification(string: str, satisfies: str = ...) -> list[str]:
     Shader| "drawdb/shader"
     Surface Shader| "drawdb/shader/surface"
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Get the classification string for the "lambert" node type
+        #
+        classifications = cmds.getClassification('lambert')
+        for c in classifications[:]:
+        print '\tClassified as ' + c + '\n'
+        isShader = cmds.getClassification("lambert",satisfies="shader")
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -97,6 +108,17 @@ def getClassification(string: str, sat: str = ...) -> list[str]:
     Shader| "drawdb/shader"
     Surface Shader| "drawdb/shader/surface"
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Get the classification string for the "lambert" node type
+        #
+        classifications = cmds.getClassification('lambert')
+        for c in classifications[:]:
+        print '\tClassified as ' + c + '\n'
+        isShader = cmds.getClassification("lambert",satisfies="shader")
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -147,6 +169,17 @@ def getClassification(string: str, satisfies: str = ..., sat: str = ...) -> list
     Sub-Scene Object| "drawdb/subscene"
     Shader| "drawdb/shader"
     Surface Shader| "drawdb/shader/surface"
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Get the classification string for the "lambert" node type
+        #
+        classifications = cmds.getClassification('lambert')
+        for c in classifications[:]:
+        print '\tClassified as ' + c + '\n'
+        isShader = cmds.getClassification("lambert",satisfies="shader")
+    ```
 
     ---
     - Args:

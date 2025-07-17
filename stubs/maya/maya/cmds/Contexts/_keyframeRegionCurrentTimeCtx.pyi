@@ -9,6 +9,12 @@ def keyframeRegionCurrentTimeCtx(contextName: contextName, exists: bool = ..., h
     This command creates a context which may be used to change current time within
     the keyframe region of the dope sheet editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.keyframeRegionCurrentTimeCtx()
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -25,6 +31,12 @@ def keyframeRegionCurrentTimeCtx(contextName: contextName, ex: bool = ..., ch: b
     
     This command creates a context which may be used to change current time within
     the keyframe region of the dope sheet editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.keyframeRegionCurrentTimeCtx()
+    ```
 
     ---
     - Args:
@@ -43,6 +55,12 @@ def keyframeRegionCurrentTimeCtx(contextName: contextName, exists: bool = ..., e
     This command creates a context which may be used to change current time within
     the keyframe region of the dope sheet editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.keyframeRegionCurrentTimeCtx()
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -60,6 +78,12 @@ def keyframeRegionCurrentTimeCtx(contextName: contextName, image1: str = ..., im
     This command creates a context which may be used to change current time within
     the keyframe region of the dope sheet editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.keyframeRegionCurrentTimeCtx()
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -74,6 +98,12 @@ def keyframeRegionCurrentTimeCtx(contextName: contextName, i1: str = ..., i2: st
     
     This command creates a context which may be used to change current time within
     the keyframe region of the dope sheet editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.keyframeRegionCurrentTimeCtx()
+    ```
 
     ---
     - Args:
@@ -90,6 +120,12 @@ def keyframeRegionCurrentTimeCtx(contextName: contextName, image1: str = ..., i1
     This command creates a context which may be used to change current time within
     the keyframe region of the dope sheet editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.keyframeRegionCurrentTimeCtx()
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -104,6 +140,12 @@ def keyframeRegionCurrentTimeCtx(contextName: contextName, image1: str = ..., im
     
     This command creates a context which may be used to change current time within
     the keyframe region of the dope sheet editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.keyframeRegionCurrentTimeCtx()
+    ```
 
     ---
     - Args:
@@ -120,6 +162,12 @@ def keyframeRegionCurrentTimeCtx(contextName: contextName, i1: str = ..., i2: st
     This command creates a context which may be used to change current time within
     the keyframe region of the dope sheet editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.keyframeRegionCurrentTimeCtx()
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -134,6 +182,12 @@ def keyframeRegionCurrentTimeCtx(contextName: contextName, image1: str = ..., i1
     
     This command creates a context which may be used to change current time within
     the keyframe region of the dope sheet editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.keyframeRegionCurrentTimeCtx()
+    ```
 
     ---
     - Args:

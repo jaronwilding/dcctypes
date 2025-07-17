@@ -3,11 +3,21 @@
 from typing import Any, overload
 
 @overload #Overload for artSetPaintCtx in ['create']
-def artSetPaintCtx(accopacity: bool = ..., afterStrokeCmd: str = ..., beforeStrokeCmd: str = ..., brushalignment: bool = ..., brushfeedback: bool = ..., clear: bool = ..., dragSlider: str = ..., dynclonemode: bool = ..., exists: bool = ..., expandfilename: bool = ..., exportaspectratio: float = ..., exportfilemode: str = ..., exportfilesizex: int = ..., exportfilesizey: int = ..., exportfiletype: str = ..., history: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., importfilemode: str = ..., importreassign: bool = ..., lastRecorderCmd: str = ..., lastStampName: str = ..., lowerradius: float = ..., makeStroke: int = ..., mappressure: str = ..., name: str = ..., objectsetnames: str = ..., opacity: float = ..., outline: bool = ..., outwhilepaint: bool = ..., paintmode: str = ..., paintoperationtype: str = ..., pickColor: bool = ..., pickValue: bool = ..., playbackCursor: [float, float] = ..., playbackPressure: float = ..., preserveclonesource: bool = ..., profileShapeFile: str = ..., projective: bool = ..., radius: float = ..., record: bool = ..., reflection: bool = ..., reflectionaboutorigin: bool = ..., reflectionaxis: str = ..., screenRadius: float = ..., selectclonesource: bool = ..., setcolorfeedback: bool = ..., setdisplaycvs: bool = ..., setopertype: str = ..., settomodify: str = ..., showactive: bool = ..., stampDepth: float = ..., stampProfile: str = ..., stampSpacing: float = ..., strokesmooth: str = ..., surfaceConformedBrushVertices: bool = ..., tangentOutline: bool = ..., usepressure: bool = ..., worldRadius: float = ...) -> None:
+def artSetPaintCtx(accopacity: bool = ..., afterStrokeCmd: str = ..., beforeStrokeCmd: str = ..., brushalignment: bool = ..., brushfeedback: bool = ..., clear: bool = ..., dragSlider: str = ..., dynclonemode: bool = ..., exists: bool = ..., expandfilename: bool = ..., exportaspectratio: float = ..., exportfilemode: str = ..., exportfilesizex: int = ..., exportfilesizey: int = ..., exportfiletype: str = ..., history: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., importfilemode: str = ..., importreassign: bool = ..., lastRecorderCmd: str = ..., lastStampName: str = ..., lowerradius: float = ..., makeStroke: int = ..., mappressure: str = ..., name: str = ..., objectsetnames: str = ..., opacity: float = ..., outline: bool = ..., outwhilepaint: bool = ..., paintmode: str = ..., paintoperationtype: str = ..., pickColor: bool = ..., pickValue: bool = ..., playbackCursor: [float, float] = ..., playbackPressure: float = ..., preserveclonesource: bool = ..., projective: bool = ..., radius: float = ..., record: bool = ..., reflection: bool = ..., reflectionaboutorigin: bool = ..., reflectionaxis: str = ..., screenRadius: float = ..., selectclonesource: bool = ..., setcolorfeedback: bool = ..., setdisplaycvs: bool = ..., setopertype: str = ..., settomodify: str = ..., showactive: bool = ..., stampDepth: float = ..., stampProfile: str = ..., stampSpacing: float = ..., strokesmooth: str = ..., surfaceConformedBrushVertices: bool = ..., tangentOutline: bool = ..., usepressure: bool = ..., worldRadius: float = ...) -> None:
     """artSetPaintCtx is undoable, queryable, and editable.
     
     This tool allows the user to modify the set membership (add, transfer, remove
     cvs) on nurbs surfaces using Maya Artisan's interface.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new set membership paint context, then switch to it
+        cmds.artSetPaintCtx('artSetPaintCtx1')
+        cmds.setToolTo('artSetPaintCtx1')
+        # Set brush's radius to 2.0, lower radius to 0.5
+        cmds.artSetPaintCtx('artSetPaintCtx1', edit=True, r=2.0, lr=0.5)
+    ```
 
     ---
     - Args:
@@ -51,7 +61,6 @@ def artSetPaintCtx(accopacity: bool = ..., afterStrokeCmd: str = ..., beforeStro
         - playbackCursor (plc): Values for the playback cursor.
         - playbackPressure (plp): Valus for the playback pressure.
         - preserveclonesource (pcs): Whether or not to preserve a clone source.
-        - profileShapeFile (psf): Passes a name of the image file for the stamp shape profile.
         - projective (prm): Specifies the projective paint mode. C: Default is 'false'. Q: When queried, it returns a boolean.
         - radius (r): Sets the size of the brush. C: Default is 1.0 cm. Q: When queried, it returns a float.
         - record (rec): Toggle on for recording.
@@ -75,11 +84,21 @@ def artSetPaintCtx(accopacity: bool = ..., afterStrokeCmd: str = ..., beforeStro
         - worldRadius (wlR): Radius in worldspace
     """
 @overload #Overload for artSetPaintCtx in ['create']
-def artSetPaintCtx(aco: bool = ..., asc: str = ..., bsc: str = ..., bra: bool = ..., brf: bool = ..., clr: bool = ..., dsl: str = ..., dcm: bool = ..., ex: bool = ..., eef: bool = ..., ear: float = ..., efm: str = ..., fsx: int = ..., fsy: int = ..., eft: str = ..., ch: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., ifm: str = ..., irm: bool = ..., lrc: str = ..., lsn: str = ..., lr: float = ..., mst: int = ..., mp: str = ..., n: str = ..., osn: str = ..., op: float = ..., o: bool = ..., owp: bool = ..., pm: str = ..., pot: str = ..., pcm: bool = ..., pv: bool = ..., plc: [float, float] = ..., plp: float = ..., pcs: bool = ..., psf: str = ..., prm: bool = ..., r: float = ..., rec: bool = ..., rn: bool = ..., rno: bool = ..., ra: str = ..., scR: float = ..., scs: bool = ..., scf: bool = ..., dcv: bool = ..., sot: str = ..., stm: str = ..., sa: bool = ..., stD: float = ..., stP: str = ..., stS: float = ..., ssm: str = ..., scv: bool = ..., to: bool = ..., up: bool = ..., wlR: float = ...) -> None:
+def artSetPaintCtx(aco: bool = ..., asc: str = ..., bsc: str = ..., bra: bool = ..., brf: bool = ..., clr: bool = ..., dsl: str = ..., dcm: bool = ..., ex: bool = ..., eef: bool = ..., ear: float = ..., efm: str = ..., fsx: int = ..., fsy: int = ..., eft: str = ..., ch: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., ifm: str = ..., irm: bool = ..., lrc: str = ..., lsn: str = ..., lr: float = ..., mst: int = ..., mp: str = ..., n: str = ..., osn: str = ..., op: float = ..., o: bool = ..., owp: bool = ..., pm: str = ..., pot: str = ..., pcm: bool = ..., pv: bool = ..., plc: [float, float] = ..., plp: float = ..., pcs: bool = ..., prm: bool = ..., r: float = ..., rec: bool = ..., rn: bool = ..., rno: bool = ..., ra: str = ..., scR: float = ..., scs: bool = ..., scf: bool = ..., dcv: bool = ..., sot: str = ..., stm: str = ..., sa: bool = ..., stD: float = ..., stP: str = ..., stS: float = ..., ssm: str = ..., scv: bool = ..., to: bool = ..., up: bool = ..., wlR: float = ...) -> None:
     """artSetPaintCtx is undoable, queryable, and editable.
     
     This tool allows the user to modify the set membership (add, transfer, remove
     cvs) on nurbs surfaces using Maya Artisan's interface.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new set membership paint context, then switch to it
+        cmds.artSetPaintCtx('artSetPaintCtx1')
+        cmds.setToolTo('artSetPaintCtx1')
+        # Set brush's radius to 2.0, lower radius to 0.5
+        cmds.artSetPaintCtx('artSetPaintCtx1', edit=True, r=2.0, lr=0.5)
+    ```
 
     ---
     - Args:
@@ -123,7 +142,6 @@ def artSetPaintCtx(aco: bool = ..., asc: str = ..., bsc: str = ..., bra: bool = 
         - playbackCursor (plc): Values for the playback cursor.
         - playbackPressure (plp): Valus for the playback pressure.
         - preserveclonesource (pcs): Whether or not to preserve a clone source.
-        - profileShapeFile (psf): Passes a name of the image file for the stamp shape profile.
         - projective (prm): Specifies the projective paint mode. C: Default is 'false'. Q: When queried, it returns a boolean.
         - radius (r): Sets the size of the brush. C: Default is 1.0 cm. Q: When queried, it returns a float.
         - record (rec): Toggle on for recording.
@@ -147,11 +165,21 @@ def artSetPaintCtx(aco: bool = ..., asc: str = ..., bsc: str = ..., bra: bool = 
         - worldRadius (wlR): Radius in worldspace
     """
 @overload #Overload for artSetPaintCtx in ['create']
-def artSetPaintCtx(accopacity: bool = ..., aco: bool = ..., afterStrokeCmd: str = ..., asc: str = ..., beforeStrokeCmd: str = ..., bsc: str = ..., brushalignment: bool = ..., bra: bool = ..., brushfeedback: bool = ..., brf: bool = ..., clear: bool = ..., clr: bool = ..., dragSlider: str = ..., dsl: str = ..., dynclonemode: bool = ..., dcm: bool = ..., exists: bool = ..., ex: bool = ..., expandfilename: bool = ..., eef: bool = ..., exportaspectratio: float = ..., ear: float = ..., exportfilemode: str = ..., efm: str = ..., exportfilesizex: int = ..., fsx: int = ..., exportfilesizey: int = ..., fsy: int = ..., exportfiletype: str = ..., eft: str = ..., history: bool = ..., ch: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., importfilemode: str = ..., ifm: str = ..., importreassign: bool = ..., irm: bool = ..., lastRecorderCmd: str = ..., lrc: str = ..., lastStampName: str = ..., lsn: str = ..., lowerradius: float = ..., lr: float = ..., makeStroke: int = ..., mst: int = ..., mappressure: str = ..., mp: str = ..., name: str = ..., n: str = ..., objectsetnames: str = ..., osn: str = ..., opacity: float = ..., op: float = ..., outline: bool = ..., o: bool = ..., outwhilepaint: bool = ..., owp: bool = ..., paintmode: str = ..., pm: str = ..., paintoperationtype: str = ..., pot: str = ..., pickColor: bool = ..., pcm: bool = ..., pickValue: bool = ..., pv: bool = ..., playbackCursor: [float, float] = ..., plc: [float, float] = ..., playbackPressure: float = ..., plp: float = ..., preserveclonesource: bool = ..., pcs: bool = ..., profileShapeFile: str = ..., psf: str = ..., projective: bool = ..., prm: bool = ..., radius: float = ..., r: float = ..., record: bool = ..., rec: bool = ..., reflection: bool = ..., rn: bool = ..., reflectionaboutorigin: bool = ..., rno: bool = ..., reflectionaxis: str = ..., ra: str = ..., screenRadius: float = ..., scR: float = ..., selectclonesource: bool = ..., scs: bool = ..., setcolorfeedback: bool = ..., scf: bool = ..., setdisplaycvs: bool = ..., dcv: bool = ..., setopertype: str = ..., sot: str = ..., settomodify: str = ..., stm: str = ..., showactive: bool = ..., sa: bool = ..., stampDepth: float = ..., stD: float = ..., stampProfile: str = ..., stP: str = ..., stampSpacing: float = ..., stS: float = ..., strokesmooth: str = ..., ssm: str = ..., surfaceConformedBrushVertices: bool = ..., scv: bool = ..., tangentOutline: bool = ..., to: bool = ..., usepressure: bool = ..., up: bool = ..., worldRadius: float = ..., wlR: float = ...) -> None:
+def artSetPaintCtx(accopacity: bool = ..., aco: bool = ..., afterStrokeCmd: str = ..., asc: str = ..., beforeStrokeCmd: str = ..., bsc: str = ..., brushalignment: bool = ..., bra: bool = ..., brushfeedback: bool = ..., brf: bool = ..., clear: bool = ..., clr: bool = ..., dragSlider: str = ..., dsl: str = ..., dynclonemode: bool = ..., dcm: bool = ..., exists: bool = ..., ex: bool = ..., expandfilename: bool = ..., eef: bool = ..., exportaspectratio: float = ..., ear: float = ..., exportfilemode: str = ..., efm: str = ..., exportfilesizex: int = ..., fsx: int = ..., exportfilesizey: int = ..., fsy: int = ..., exportfiletype: str = ..., eft: str = ..., history: bool = ..., ch: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., importfilemode: str = ..., ifm: str = ..., importreassign: bool = ..., irm: bool = ..., lastRecorderCmd: str = ..., lrc: str = ..., lastStampName: str = ..., lsn: str = ..., lowerradius: float = ..., lr: float = ..., makeStroke: int = ..., mst: int = ..., mappressure: str = ..., mp: str = ..., name: str = ..., n: str = ..., objectsetnames: str = ..., osn: str = ..., opacity: float = ..., op: float = ..., outline: bool = ..., o: bool = ..., outwhilepaint: bool = ..., owp: bool = ..., paintmode: str = ..., pm: str = ..., paintoperationtype: str = ..., pot: str = ..., pickColor: bool = ..., pcm: bool = ..., pickValue: bool = ..., pv: bool = ..., playbackCursor: [float, float] = ..., plc: [float, float] = ..., playbackPressure: float = ..., plp: float = ..., preserveclonesource: bool = ..., pcs: bool = ..., projective: bool = ..., prm: bool = ..., radius: float = ..., r: float = ..., record: bool = ..., rec: bool = ..., reflection: bool = ..., rn: bool = ..., reflectionaboutorigin: bool = ..., rno: bool = ..., reflectionaxis: str = ..., ra: str = ..., screenRadius: float = ..., scR: float = ..., selectclonesource: bool = ..., scs: bool = ..., setcolorfeedback: bool = ..., scf: bool = ..., setdisplaycvs: bool = ..., dcv: bool = ..., setopertype: str = ..., sot: str = ..., settomodify: str = ..., stm: str = ..., showactive: bool = ..., sa: bool = ..., stampDepth: float = ..., stD: float = ..., stampProfile: str = ..., stP: str = ..., stampSpacing: float = ..., stS: float = ..., strokesmooth: str = ..., ssm: str = ..., surfaceConformedBrushVertices: bool = ..., scv: bool = ..., tangentOutline: bool = ..., to: bool = ..., usepressure: bool = ..., up: bool = ..., worldRadius: float = ..., wlR: float = ...) -> None:
     """artSetPaintCtx is undoable, queryable, and editable.
     
     This tool allows the user to modify the set membership (add, transfer, remove
     cvs) on nurbs surfaces using Maya Artisan's interface.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new set membership paint context, then switch to it
+        cmds.artSetPaintCtx('artSetPaintCtx1')
+        cmds.setToolTo('artSetPaintCtx1')
+        # Set brush's radius to 2.0, lower radius to 0.5
+        cmds.artSetPaintCtx('artSetPaintCtx1', edit=True, r=2.0, lr=0.5)
+    ```
 
     ---
     - Args:
@@ -195,7 +223,6 @@ def artSetPaintCtx(accopacity: bool = ..., aco: bool = ..., afterStrokeCmd: str 
         - playbackCursor (plc): Values for the playback cursor.
         - playbackPressure (plp): Valus for the playback pressure.
         - preserveclonesource (pcs): Whether or not to preserve a clone source.
-        - profileShapeFile (psf): Passes a name of the image file for the stamp shape profile.
         - projective (prm): Specifies the projective paint mode. C: Default is 'false'. Q: When queried, it returns a boolean.
         - radius (r): Sets the size of the brush. C: Default is 1.0 cm. Q: When queried, it returns a float.
         - record (rec): Toggle on for recording.
@@ -219,11 +246,21 @@ def artSetPaintCtx(accopacity: bool = ..., aco: bool = ..., afterStrokeCmd: str 
         - worldRadius (wlR): Radius in worldspace
     """
 @overload #Overload for artSetPaintCtx in ['query']
-def artSetPaintCtx(accopacity: bool = ..., afterStrokeCmd: str = ..., beforeStrokeCmd: str = ..., brushalignment: bool = ..., brushfeedback: bool = ..., clear: bool = ..., dragSlider: str = ..., dynclonemode: bool = ..., expandfilename: bool = ..., exportaspectratio: float = ..., exportfilemode: str = ..., exportfilesizex: int = ..., exportfilesizey: int = ..., exportfiletype: str = ..., image1: str = ..., image2: str = ..., image3: str = ..., importfilemode: str = ..., importreassign: bool = ..., lastRecorderCmd: str = ..., lastStampName: str = ..., lowerradius: float = ..., makeStroke: int = ..., mappressure: str = ..., objectsetnames: str = ..., opacity: float = ..., outline: bool = ..., outwhilepaint: bool = ..., paintmode: str = ..., paintoperationtype: str = ..., pickColor: bool = ..., pickValue: bool = ..., playbackCursor: [float, float] = ..., playbackPressure: float = ..., preserveclonesource: bool = ..., profileShapeFile: str = ..., projective: bool = ..., radius: float = ..., record: bool = ..., reflection: bool = ..., reflectionaboutorigin: bool = ..., reflectionaxis: str = ..., screenRadius: float = ..., selectclonesource: bool = ..., setcolorfeedback: bool = ..., setdisplaycvs: bool = ..., setopertype: str = ..., settomodify: str = ..., showactive: bool = ..., stampDepth: float = ..., stampProfile: str = ..., stampSpacing: float = ..., strokesmooth: str = ..., surfaceConformedBrushVertices: bool = ..., tablet: bool = ..., tangentOutline: bool = ..., usepressure: bool = ..., worldRadius: float = ..., query: bool = ...) -> None:
+def artSetPaintCtx(accopacity: bool = ..., afterStrokeCmd: str = ..., beforeStrokeCmd: str = ..., brushalignment: bool = ..., brushfeedback: bool = ..., dynclonemode: bool = ..., exportaspectratio: float = ..., exportfilemode: str = ..., exportfilesizex: int = ..., exportfilesizey: int = ..., exportfiletype: str = ..., image1: str = ..., image2: str = ..., image3: str = ..., importfilemode: str = ..., importreassign: bool = ..., lastRecorderCmd: str = ..., lastStampName: str = ..., lowerradius: float = ..., makeStroke: int = ..., mappressure: str = ..., objectsetnames: str = ..., opacity: float = ..., outline: bool = ..., outwhilepaint: bool = ..., paintmode: str = ..., paintoperationtype: str = ..., pickColor: bool = ..., pickValue: bool = ..., playbackCursor: [float, float] = ..., playbackPressure: float = ..., preserveclonesource: bool = ..., profileShapeFile: str = ..., projective: bool = ..., radius: float = ..., record: bool = ..., reflection: bool = ..., reflectionaboutorigin: bool = ..., reflectionaxis: str = ..., screenRadius: float = ..., selectclonesource: bool = ..., setcolorfeedback: bool = ..., setdisplaycvs: bool = ..., setopertype: str = ..., settomodify: str = ..., showactive: bool = ..., stampDepth: float = ..., stampProfile: str = ..., stampSpacing: float = ..., strokesmooth: str = ..., surfaceConformedBrushVertices: bool = ..., tablet: bool = ..., tangentOutline: bool = ..., usepressure: bool = ..., worldRadius: float = ..., query: bool = ...) -> None:
     """artSetPaintCtx is undoable, queryable, and editable.
     
     This tool allows the user to modify the set membership (add, transfer, remove
     cvs) on nurbs surfaces using Maya Artisan's interface.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new set membership paint context, then switch to it
+        cmds.artSetPaintCtx('artSetPaintCtx1')
+        cmds.setToolTo('artSetPaintCtx1')
+        # Set brush's radius to 2.0, lower radius to 0.5
+        cmds.artSetPaintCtx('artSetPaintCtx1', edit=True, r=2.0, lr=0.5)
+    ```
 
     ---
     - Args:
@@ -232,11 +269,7 @@ def artSetPaintCtx(accopacity: bool = ..., afterStrokeCmd: str = ..., beforeStro
         - beforeStrokeCmd (bsc): The passed string is executed as a MEL command immediately before the start of a stroke. C: Default is no command. Q: When queried, it returns the current command
         - brushalignment (bra): Specifies the path brush alignemnt. If true, the brush will align to stroke path, otherwise it will align to up vector. C: Default is true. Q: When queried, it returns a boolean.
         - brushfeedback (brf): Specifies if the brush additional feedback should be drawn. C: Default is TRUE. Q: When queried, it returns a boolean.
-        - clear (clr): Floods all cvs/vertices to the current value.
-        - dragSlider (dsl): Sets the current brush drag state for resizing or offsetting the brush (like the 'b' and 'm' default hotkeys). The string argument is one of: "radius", "lowradius", "opacity", "value", "depth", "displacement", "uvvector" or "none". C:
-            Default is "none".
         - dynclonemode (dcm): Enable or disable dynamic clone mode.
-        - expandfilename (eef): If true, it will expand the name of the export file and concatenate it with the surface name. Otherwise it will take the name as it is. C: Default is true.
         - exportaspectratio (ear): Value of aspect ratio for export
         - exportfilemode (efm): Specifies the export channel.The valid entries here are: "alpha", "luminance", "rgb", "rgba". C: Default is "luminance/rgb". Q: When queried, it returns a string.
         - exportfilesizex (fsx): Specifies the width of the attribute map to export. C: Default width is 256. Q: When queried, it returns an integer.
@@ -290,11 +323,21 @@ def artSetPaintCtx(accopacity: bool = ..., afterStrokeCmd: str = ..., beforeStro
         - query (q): Query mode flag
     """
 @overload #Overload for artSetPaintCtx in ['query']
-def artSetPaintCtx(aco: bool = ..., asc: str = ..., bsc: str = ..., bra: bool = ..., brf: bool = ..., clr: bool = ..., dsl: str = ..., dcm: bool = ..., eef: bool = ..., ear: float = ..., efm: str = ..., fsx: int = ..., fsy: int = ..., eft: str = ..., i1: str = ..., i2: str = ..., i3: str = ..., ifm: str = ..., irm: bool = ..., lrc: str = ..., lsn: str = ..., lr: float = ..., mst: int = ..., mp: str = ..., osn: str = ..., op: float = ..., o: bool = ..., owp: bool = ..., pm: str = ..., pot: str = ..., pcm: bool = ..., pv: bool = ..., plc: [float, float] = ..., plp: float = ..., pcs: bool = ..., psf: str = ..., prm: bool = ..., r: float = ..., rec: bool = ..., rn: bool = ..., rno: bool = ..., ra: str = ..., scR: float = ..., scs: bool = ..., scf: bool = ..., dcv: bool = ..., sot: str = ..., stm: str = ..., sa: bool = ..., stD: float = ..., stP: str = ..., stS: float = ..., ssm: str = ..., scv: bool = ..., tab: bool = ..., to: bool = ..., up: bool = ..., wlR: float = ..., q: bool = ...) -> None:
+def artSetPaintCtx(aco: bool = ..., asc: str = ..., bsc: str = ..., bra: bool = ..., brf: bool = ..., dcm: bool = ..., ear: float = ..., efm: str = ..., fsx: int = ..., fsy: int = ..., eft: str = ..., i1: str = ..., i2: str = ..., i3: str = ..., ifm: str = ..., irm: bool = ..., lrc: str = ..., lsn: str = ..., lr: float = ..., mst: int = ..., mp: str = ..., osn: str = ..., op: float = ..., o: bool = ..., owp: bool = ..., pm: str = ..., pot: str = ..., pcm: bool = ..., pv: bool = ..., plc: [float, float] = ..., plp: float = ..., pcs: bool = ..., psf: str = ..., prm: bool = ..., r: float = ..., rec: bool = ..., rn: bool = ..., rno: bool = ..., ra: str = ..., scR: float = ..., scs: bool = ..., scf: bool = ..., dcv: bool = ..., sot: str = ..., stm: str = ..., sa: bool = ..., stD: float = ..., stP: str = ..., stS: float = ..., ssm: str = ..., scv: bool = ..., tab: bool = ..., to: bool = ..., up: bool = ..., wlR: float = ..., q: bool = ...) -> None:
     """artSetPaintCtx is undoable, queryable, and editable.
     
     This tool allows the user to modify the set membership (add, transfer, remove
     cvs) on nurbs surfaces using Maya Artisan's interface.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new set membership paint context, then switch to it
+        cmds.artSetPaintCtx('artSetPaintCtx1')
+        cmds.setToolTo('artSetPaintCtx1')
+        # Set brush's radius to 2.0, lower radius to 0.5
+        cmds.artSetPaintCtx('artSetPaintCtx1', edit=True, r=2.0, lr=0.5)
+    ```
 
     ---
     - Args:
@@ -303,11 +346,7 @@ def artSetPaintCtx(aco: bool = ..., asc: str = ..., bsc: str = ..., bra: bool = 
         - beforeStrokeCmd (bsc): The passed string is executed as a MEL command immediately before the start of a stroke. C: Default is no command. Q: When queried, it returns the current command
         - brushalignment (bra): Specifies the path brush alignemnt. If true, the brush will align to stroke path, otherwise it will align to up vector. C: Default is true. Q: When queried, it returns a boolean.
         - brushfeedback (brf): Specifies if the brush additional feedback should be drawn. C: Default is TRUE. Q: When queried, it returns a boolean.
-        - clear (clr): Floods all cvs/vertices to the current value.
-        - dragSlider (dsl): Sets the current brush drag state for resizing or offsetting the brush (like the 'b' and 'm' default hotkeys). The string argument is one of: "radius", "lowradius", "opacity", "value", "depth", "displacement", "uvvector" or "none". C:
-            Default is "none".
         - dynclonemode (dcm): Enable or disable dynamic clone mode.
-        - expandfilename (eef): If true, it will expand the name of the export file and concatenate it with the surface name. Otherwise it will take the name as it is. C: Default is true.
         - exportaspectratio (ear): Value of aspect ratio for export
         - exportfilemode (efm): Specifies the export channel.The valid entries here are: "alpha", "luminance", "rgb", "rgba". C: Default is "luminance/rgb". Q: When queried, it returns a string.
         - exportfilesizex (fsx): Specifies the width of the attribute map to export. C: Default width is 256. Q: When queried, it returns an integer.
@@ -361,11 +400,21 @@ def artSetPaintCtx(aco: bool = ..., asc: str = ..., bsc: str = ..., bra: bool = 
         - query (q): Query mode flag
     """
 @overload #Overload for artSetPaintCtx in ['query']
-def artSetPaintCtx(accopacity: bool = ..., aco: bool = ..., afterStrokeCmd: str = ..., asc: str = ..., beforeStrokeCmd: str = ..., bsc: str = ..., brushalignment: bool = ..., bra: bool = ..., brushfeedback: bool = ..., brf: bool = ..., clear: bool = ..., clr: bool = ..., dragSlider: str = ..., dsl: str = ..., dynclonemode: bool = ..., dcm: bool = ..., expandfilename: bool = ..., eef: bool = ..., exportaspectratio: float = ..., ear: float = ..., exportfilemode: str = ..., efm: str = ..., exportfilesizex: int = ..., fsx: int = ..., exportfilesizey: int = ..., fsy: int = ..., exportfiletype: str = ..., eft: str = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., importfilemode: str = ..., ifm: str = ..., importreassign: bool = ..., irm: bool = ..., lastRecorderCmd: str = ..., lrc: str = ..., lastStampName: str = ..., lsn: str = ..., lowerradius: float = ..., lr: float = ..., makeStroke: int = ..., mst: int = ..., mappressure: str = ..., mp: str = ..., objectsetnames: str = ..., osn: str = ..., opacity: float = ..., op: float = ..., outline: bool = ..., o: bool = ..., outwhilepaint: bool = ..., owp: bool = ..., paintmode: str = ..., pm: str = ..., paintoperationtype: str = ..., pot: str = ..., pickColor: bool = ..., pcm: bool = ..., pickValue: bool = ..., pv: bool = ..., playbackCursor: [float, float] = ..., plc: [float, float] = ..., playbackPressure: float = ..., plp: float = ..., preserveclonesource: bool = ..., pcs: bool = ..., profileShapeFile: str = ..., psf: str = ..., projective: bool = ..., prm: bool = ..., radius: float = ..., r: float = ..., record: bool = ..., rec: bool = ..., reflection: bool = ..., rn: bool = ..., reflectionaboutorigin: bool = ..., rno: bool = ..., reflectionaxis: str = ..., ra: str = ..., screenRadius: float = ..., scR: float = ..., selectclonesource: bool = ..., scs: bool = ..., setcolorfeedback: bool = ..., scf: bool = ..., setdisplaycvs: bool = ..., dcv: bool = ..., setopertype: str = ..., sot: str = ..., settomodify: str = ..., stm: str = ..., showactive: bool = ..., sa: bool = ..., stampDepth: float = ..., stD: float = ..., stampProfile: str = ..., stP: str = ..., stampSpacing: float = ..., stS: float = ..., strokesmooth: str = ..., ssm: str = ..., surfaceConformedBrushVertices: bool = ..., scv: bool = ..., tablet: bool = ..., tab: bool = ..., tangentOutline: bool = ..., to: bool = ..., usepressure: bool = ..., up: bool = ..., worldRadius: float = ..., wlR: float = ..., query: bool = ..., q: bool = ...) -> None:
+def artSetPaintCtx(accopacity: bool = ..., aco: bool = ..., afterStrokeCmd: str = ..., asc: str = ..., beforeStrokeCmd: str = ..., bsc: str = ..., brushalignment: bool = ..., bra: bool = ..., brushfeedback: bool = ..., brf: bool = ..., dynclonemode: bool = ..., dcm: bool = ..., exportaspectratio: float = ..., ear: float = ..., exportfilemode: str = ..., efm: str = ..., exportfilesizex: int = ..., fsx: int = ..., exportfilesizey: int = ..., fsy: int = ..., exportfiletype: str = ..., eft: str = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., importfilemode: str = ..., ifm: str = ..., importreassign: bool = ..., irm: bool = ..., lastRecorderCmd: str = ..., lrc: str = ..., lastStampName: str = ..., lsn: str = ..., lowerradius: float = ..., lr: float = ..., makeStroke: int = ..., mst: int = ..., mappressure: str = ..., mp: str = ..., objectsetnames: str = ..., osn: str = ..., opacity: float = ..., op: float = ..., outline: bool = ..., o: bool = ..., outwhilepaint: bool = ..., owp: bool = ..., paintmode: str = ..., pm: str = ..., paintoperationtype: str = ..., pot: str = ..., pickColor: bool = ..., pcm: bool = ..., pickValue: bool = ..., pv: bool = ..., playbackCursor: [float, float] = ..., plc: [float, float] = ..., playbackPressure: float = ..., plp: float = ..., preserveclonesource: bool = ..., pcs: bool = ..., profileShapeFile: str = ..., psf: str = ..., projective: bool = ..., prm: bool = ..., radius: float = ..., r: float = ..., record: bool = ..., rec: bool = ..., reflection: bool = ..., rn: bool = ..., reflectionaboutorigin: bool = ..., rno: bool = ..., reflectionaxis: str = ..., ra: str = ..., screenRadius: float = ..., scR: float = ..., selectclonesource: bool = ..., scs: bool = ..., setcolorfeedback: bool = ..., scf: bool = ..., setdisplaycvs: bool = ..., dcv: bool = ..., setopertype: str = ..., sot: str = ..., settomodify: str = ..., stm: str = ..., showactive: bool = ..., sa: bool = ..., stampDepth: float = ..., stD: float = ..., stampProfile: str = ..., stP: str = ..., stampSpacing: float = ..., stS: float = ..., strokesmooth: str = ..., ssm: str = ..., surfaceConformedBrushVertices: bool = ..., scv: bool = ..., tablet: bool = ..., tab: bool = ..., tangentOutline: bool = ..., to: bool = ..., usepressure: bool = ..., up: bool = ..., worldRadius: float = ..., wlR: float = ..., query: bool = ..., q: bool = ...) -> None:
     """artSetPaintCtx is undoable, queryable, and editable.
     
     This tool allows the user to modify the set membership (add, transfer, remove
     cvs) on nurbs surfaces using Maya Artisan's interface.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new set membership paint context, then switch to it
+        cmds.artSetPaintCtx('artSetPaintCtx1')
+        cmds.setToolTo('artSetPaintCtx1')
+        # Set brush's radius to 2.0, lower radius to 0.5
+        cmds.artSetPaintCtx('artSetPaintCtx1', edit=True, r=2.0, lr=0.5)
+    ```
 
     ---
     - Args:
@@ -374,11 +423,7 @@ def artSetPaintCtx(accopacity: bool = ..., aco: bool = ..., afterStrokeCmd: str 
         - beforeStrokeCmd (bsc): The passed string is executed as a MEL command immediately before the start of a stroke. C: Default is no command. Q: When queried, it returns the current command
         - brushalignment (bra): Specifies the path brush alignemnt. If true, the brush will align to stroke path, otherwise it will align to up vector. C: Default is true. Q: When queried, it returns a boolean.
         - brushfeedback (brf): Specifies if the brush additional feedback should be drawn. C: Default is TRUE. Q: When queried, it returns a boolean.
-        - clear (clr): Floods all cvs/vertices to the current value.
-        - dragSlider (dsl): Sets the current brush drag state for resizing or offsetting the brush (like the 'b' and 'm' default hotkeys). The string argument is one of: "radius", "lowradius", "opacity", "value", "depth", "displacement", "uvvector" or "none". C:
-            Default is "none".
         - dynclonemode (dcm): Enable or disable dynamic clone mode.
-        - expandfilename (eef): If true, it will expand the name of the export file and concatenate it with the surface name. Otherwise it will take the name as it is. C: Default is true.
         - exportaspectratio (ear): Value of aspect ratio for export
         - exportfilemode (efm): Specifies the export channel.The valid entries here are: "alpha", "luminance", "rgb", "rgba". C: Default is "luminance/rgb". Q: When queried, it returns a string.
         - exportfilesizex (fsx): Specifies the width of the attribute map to export. C: Default width is 256. Q: When queried, it returns an integer.
@@ -437,6 +482,16 @@ def artSetPaintCtx(accopacity: bool = ..., afterStrokeCmd: str = ..., beforeStro
     
     This tool allows the user to modify the set membership (add, transfer, remove
     cvs) on nurbs surfaces using Maya Artisan's interface.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new set membership paint context, then switch to it
+        cmds.artSetPaintCtx('artSetPaintCtx1')
+        cmds.setToolTo('artSetPaintCtx1')
+        # Set brush's radius to 2.0, lower radius to 0.5
+        cmds.artSetPaintCtx('artSetPaintCtx1', edit=True, r=2.0, lr=0.5)
+    ```
 
     ---
     - Args:
@@ -510,6 +565,16 @@ def artSetPaintCtx(aco: bool = ..., asc: str = ..., bsc: str = ..., bra: bool = 
     This tool allows the user to modify the set membership (add, transfer, remove
     cvs) on nurbs surfaces using Maya Artisan's interface.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new set membership paint context, then switch to it
+        cmds.artSetPaintCtx('artSetPaintCtx1')
+        cmds.setToolTo('artSetPaintCtx1')
+        # Set brush's radius to 2.0, lower radius to 0.5
+        cmds.artSetPaintCtx('artSetPaintCtx1', edit=True, r=2.0, lr=0.5)
+    ```
+
     ---
     - Args:
         - accopacity (aco): Sets opacity accumulation on/off. C: Default is false (Except for sculpt tool for which it is true by default). Q: When queried, it returns a boolean.
@@ -581,6 +646,16 @@ def artSetPaintCtx(accopacity: bool = ..., aco: bool = ..., afterStrokeCmd: str 
     
     This tool allows the user to modify the set membership (add, transfer, remove
     cvs) on nurbs surfaces using Maya Artisan's interface.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new set membership paint context, then switch to it
+        cmds.artSetPaintCtx('artSetPaintCtx1')
+        cmds.setToolTo('artSetPaintCtx1')
+        # Set brush's radius to 2.0, lower radius to 0.5
+        cmds.artSetPaintCtx('artSetPaintCtx1', edit=True, r=2.0, lr=0.5)
+    ```
 
     ---
     - Args:

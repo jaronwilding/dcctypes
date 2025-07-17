@@ -9,6 +9,14 @@ def distanceDimension(endPoint: [linear, linear, linear] = ..., startPoint: [lin
     This command is used to create a distance dimension to display the distance
     between two specified points.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To measure ths distance between [0,2,2] and [1,5,6]:
+        cmds.distanceDimension( sp=(0, 2, 2), ep=(1, 5, 6) )
+        #  Result: distanceDimensionShape1  #
+    ```
+
     ---
     - Args:
         - endPoint (ep): Specifies the point to measure distance to, from the startPoint.
@@ -21,6 +29,14 @@ def distanceDimension(ep: [linear, linear, linear] = ..., sp: [linear, linear, l
     This command is used to create a distance dimension to display the distance
     between two specified points.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To measure ths distance between [0,2,2] and [1,5,6]:
+        cmds.distanceDimension( sp=(0, 2, 2), ep=(1, 5, 6) )
+        #  Result: distanceDimensionShape1  #
+    ```
+
     ---
     - Args:
         - endPoint (ep): Specifies the point to measure distance to, from the startPoint.
@@ -32,6 +48,14 @@ def distanceDimension(endPoint: [linear, linear, linear] = ..., ep: [linear, lin
     
     This command is used to create a distance dimension to display the distance
     between two specified points.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To measure ths distance between [0,2,2] and [1,5,6]:
+        cmds.distanceDimension( sp=(0, 2, 2), ep=(1, 5, 6) )
+        #  Result: distanceDimensionShape1  #
+    ```
 
     ---
     - Args:

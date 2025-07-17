@@ -12,6 +12,36 @@ def createDisplayLayer(empty: bool = ..., makeCurrent: bool = ..., name: str = .
     will be added to the new display layer but if the '-nr' flag is specified then
     only the objects themselves will be added.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Create a sphere.
+        #
+        objectArray = cmds.sphere()
+        #    Select the sphere.
+        #
+        cmds.select( objectArray[0] )
+        #    Create a layer. The selected object will be placed
+        #    in this layer. Note in this case both the nurbsSphere
+        #    and nurbsSphere shape are placed in the layer.
+        #
+        cmds.createDisplayLayer()
+        #    Create a cone.
+        #
+        objectArray = cmds.cone()
+        #    Select the cone.
+        #
+        cmds.select( objectArray[0] )
+        #    Create a layer but only put the nurbsCone in the layer.
+        #    The nurbsConeShape will remain in the default layer
+        #    as a result of specifying the -nr/noRecurse flag.
+        #
+        #    Note also that you can specify the name of the layer
+        #    with the -n/name flag.
+        #
+        cmds.createDisplayLayer( noRecurse=True, name='ExampleLayer' )
+    ```
+
     ---
     - Args:
         - empty (e): If set then create an empty display layer.  ie. Do not add the selected items to the new display layer.
@@ -30,6 +60,36 @@ def createDisplayLayer(e: bool = ..., mc: bool = ..., n: str = ..., nr: bool = .
     will be added to the new display layer but if the '-nr' flag is specified then
     only the objects themselves will be added.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Create a sphere.
+        #
+        objectArray = cmds.sphere()
+        #    Select the sphere.
+        #
+        cmds.select( objectArray[0] )
+        #    Create a layer. The selected object will be placed
+        #    in this layer. Note in this case both the nurbsSphere
+        #    and nurbsSphere shape are placed in the layer.
+        #
+        cmds.createDisplayLayer()
+        #    Create a cone.
+        #
+        objectArray = cmds.cone()
+        #    Select the cone.
+        #
+        cmds.select( objectArray[0] )
+        #    Create a layer but only put the nurbsCone in the layer.
+        #    The nurbsConeShape will remain in the default layer
+        #    as a result of specifying the -nr/noRecurse flag.
+        #
+        #    Note also that you can specify the name of the layer
+        #    with the -n/name flag.
+        #
+        cmds.createDisplayLayer( noRecurse=True, name='ExampleLayer' )
+    ```
+
     ---
     - Args:
         - empty (e): If set then create an empty display layer.  ie. Do not add the selected items to the new display layer.
@@ -47,6 +107,36 @@ def createDisplayLayer(empty: bool = ..., e: bool = ..., makeCurrent: bool = ...
     display layer global parameters. Normally all objects and their descendants
     will be added to the new display layer but if the '-nr' flag is specified then
     only the objects themselves will be added.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Create a sphere.
+        #
+        objectArray = cmds.sphere()
+        #    Select the sphere.
+        #
+        cmds.select( objectArray[0] )
+        #    Create a layer. The selected object will be placed
+        #    in this layer. Note in this case both the nurbsSphere
+        #    and nurbsSphere shape are placed in the layer.
+        #
+        cmds.createDisplayLayer()
+        #    Create a cone.
+        #
+        objectArray = cmds.cone()
+        #    Select the cone.
+        #
+        cmds.select( objectArray[0] )
+        #    Create a layer but only put the nurbsCone in the layer.
+        #    The nurbsConeShape will remain in the default layer
+        #    as a result of specifying the -nr/noRecurse flag.
+        #
+        #    Note also that you can specify the name of the layer
+        #    with the -n/name flag.
+        #
+        cmds.createDisplayLayer( noRecurse=True, name='ExampleLayer' )
+    ```
 
     ---
     - Args:

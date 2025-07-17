@@ -8,6 +8,15 @@ def baseTemplate([string]: [string], fileName: str = ..., force: bool = ..., sil
     
     This is the class for the commands that edit and/or query templates.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Determine if template exists
+        #
+        cmds.baseTemplate ('foo.xml', exists=True)
+        #
+    ```
+
     ---
     - Args:
         - [string]: Input item(s).
@@ -24,6 +33,15 @@ def baseTemplate([string]: [string], fn: str = ..., f: bool = ..., si: bool = ..
     """baseTemplate is NOT undoable, queryable, and editable.
     
     This is the class for the commands that edit and/or query templates.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Determine if template exists
+        #
+        cmds.baseTemplate ('foo.xml', exists=True)
+        #
+    ```
 
     ---
     - Args:
@@ -42,6 +60,15 @@ def baseTemplate([string]: [string], fileName: str = ..., fn: str = ..., force: 
     
     This is the class for the commands that edit and/or query templates.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Determine if template exists
+        #
+        cmds.baseTemplate ('foo.xml', exists=True)
+        #
+    ```
+
     ---
     - Args:
         - [string]: Input item(s).
@@ -58,6 +85,15 @@ def baseTemplate([string]: [string], exists: bool = ..., fileName: str = ..., ma
     """baseTemplate is NOT undoable, queryable, and editable.
     
     This is the class for the commands that edit and/or query templates.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Determine if template exists
+        #
+        cmds.baseTemplate ('foo.xml', exists=True)
+        #
+    ```
 
     ---
     - Args:
@@ -76,6 +112,15 @@ def baseTemplate([string]: [string], ex: bool = ..., fn: str = ..., mf: str = ..
     
     This is the class for the commands that edit and/or query templates.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Determine if template exists
+        #
+        cmds.baseTemplate ('foo.xml', exists=True)
+        #
+    ```
+
     ---
     - Args:
         - [string]: Input item(s).
@@ -93,6 +138,15 @@ def baseTemplate([string]: [string], exists: bool = ..., ex: bool = ..., fileNam
     
     This is the class for the commands that edit and/or query templates.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Determine if template exists
+        #
+        cmds.baseTemplate ('foo.xml', exists=True)
+        #
+    ```
+
     ---
     - Args:
         - [string]: Input item(s).
@@ -105,47 +159,65 @@ def baseTemplate([string]: [string], exists: bool = ..., ex: bool = ..., fileNam
         - query (q): Query mode flag
     """
 @overload #Overload for baseTemplate in ['edit']
-def baseTemplate([string]: [string], fileName: str = ..., silent: bool = ..., viewList: str = ..., edit: bool = ...) -> None:
+def baseTemplate([string]: [string], silent: bool = ..., edit: bool = ...) -> None:
     """baseTemplate is NOT undoable, queryable, and editable.
     
     This is the class for the commands that edit and/or query templates.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Determine if template exists
+        #
+        cmds.baseTemplate ('foo.xml', exists=True)
+        #
+    ```
+
     ---
     - Args:
         - [string]: Input item(s).
-        - fileName (fn): Specifies the filename associated with the template.  This argument can be used in conjunction with load, save or query modes. If no filename is associated with a template, a default file name based on the template name will be used.  It is
-            recommended but not required that the filename and template name correspond.
         - silent (si): Silent mode will suppress any error or warning messages that would normally be reported from the command execution.  The return values are unaffected.
-        - viewList (vl): Used in query mode, returns a list of all views defined on the template.
         - edit (e): Edit mode flag
     """
 @overload #Overload for baseTemplate in ['edit']
-def baseTemplate([string]: [string], fn: str = ..., si: bool = ..., vl: str = ..., e: bool = ...) -> None:
+def baseTemplate([string]: [string], si: bool = ..., e: bool = ...) -> None:
     """baseTemplate is NOT undoable, queryable, and editable.
     
     This is the class for the commands that edit and/or query templates.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Determine if template exists
+        #
+        cmds.baseTemplate ('foo.xml', exists=True)
+        #
+    ```
+
     ---
     - Args:
         - [string]: Input item(s).
-        - fileName (fn): Specifies the filename associated with the template.  This argument can be used in conjunction with load, save or query modes. If no filename is associated with a template, a default file name based on the template name will be used.  It is
-            recommended but not required that the filename and template name correspond.
         - silent (si): Silent mode will suppress any error or warning messages that would normally be reported from the command execution.  The return values are unaffected.
-        - viewList (vl): Used in query mode, returns a list of all views defined on the template.
         - edit (e): Edit mode flag
     """
 @overload #Overload for baseTemplate in ['edit']
-def baseTemplate([string]: [string], fileName: str = ..., fn: str = ..., silent: bool = ..., si: bool = ..., viewList: str = ..., vl: str = ..., edit: bool = ..., e: bool = ...) -> None:
+def baseTemplate([string]: [string], silent: bool = ..., si: bool = ..., edit: bool = ..., e: bool = ...) -> None:
     """baseTemplate is NOT undoable, queryable, and editable.
     
     This is the class for the commands that edit and/or query templates.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Determine if template exists
+        #
+        cmds.baseTemplate ('foo.xml', exists=True)
+        #
+    ```
+
     ---
     - Args:
         - [string]: Input item(s).
-        - fileName (fn): Specifies the filename associated with the template.  This argument can be used in conjunction with load, save or query modes. If no filename is associated with a template, a default file name based on the template name will be used.  It is
-            recommended but not required that the filename and template name correspond.
         - silent (si): Silent mode will suppress any error or warning messages that would normally be reported from the command execution.  The return values are unaffected.
-        - viewList (vl): Used in query mode, returns a list of all views defined on the template.
         - edit (e): Edit mode flag
     """

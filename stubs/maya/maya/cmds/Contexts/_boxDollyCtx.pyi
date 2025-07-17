@@ -8,6 +8,12 @@ def boxDollyCtx(alternateContext: bool = ..., exists: bool = ..., history: bool 
     
     This command can be used to create, edit, or query a dolly context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.boxDollyCtx( 'boxDollyContext', ac=False )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -24,6 +30,12 @@ def boxDollyCtx(ac: bool = ..., ex: bool = ..., ch: bool = ..., i1: str = ..., i
     """boxDollyCtx is undoable, queryable, and editable.
     
     This command can be used to create, edit, or query a dolly context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.boxDollyCtx( 'boxDollyContext', ac=False )
+    ```
 
     ---
     - Args:
@@ -42,6 +54,12 @@ def boxDollyCtx(alternateContext: bool = ..., ac: bool = ..., exists: bool = ...
     
     This command can be used to create, edit, or query a dolly context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.boxDollyCtx( 'boxDollyContext', ac=False )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -59,6 +77,12 @@ def boxDollyCtx(alternateContext: bool = ..., image1: str = ..., image2: str = .
     
     This command can be used to create, edit, or query a dolly context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.boxDollyCtx( 'boxDollyContext', ac=False )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -73,6 +97,12 @@ def boxDollyCtx(ac: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., tn:
     """boxDollyCtx is undoable, queryable, and editable.
     
     This command can be used to create, edit, or query a dolly context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.boxDollyCtx( 'boxDollyContext', ac=False )
+    ```
 
     ---
     - Args:
@@ -89,6 +119,12 @@ def boxDollyCtx(alternateContext: bool = ..., ac: bool = ..., image1: str = ...,
     
     This command can be used to create, edit, or query a dolly context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.boxDollyCtx( 'boxDollyContext', ac=False )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -99,47 +135,59 @@ def boxDollyCtx(alternateContext: bool = ..., ac: bool = ..., image1: str = ...,
         - query (q): Query mode flag
     """
 @overload #Overload for boxDollyCtx in ['edit']
-def boxDollyCtx(alternateContext: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., toolName: str = ..., edit: bool = ...) -> str:
+def boxDollyCtx(image1: str = ..., image2: str = ..., image3: str = ..., edit: bool = ...) -> str:
     """boxDollyCtx is undoable, queryable, and editable.
     
     This command can be used to create, edit, or query a dolly context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.boxDollyCtx( 'boxDollyContext', ac=False )
+    ```
+
     ---
     - Args:
-        - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
-        - toolName (tn): Name of the specific tool to which this command refers.
         - edit (e): Edit mode flag
     """
 @overload #Overload for boxDollyCtx in ['edit']
-def boxDollyCtx(ac: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., tn: str = ..., e: bool = ...) -> str:
+def boxDollyCtx(i1: str = ..., i2: str = ..., i3: str = ..., e: bool = ...) -> str:
     """boxDollyCtx is undoable, queryable, and editable.
     
     This command can be used to create, edit, or query a dolly context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.boxDollyCtx( 'boxDollyContext', ac=False )
+    ```
+
     ---
     - Args:
-        - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
-        - toolName (tn): Name of the specific tool to which this command refers.
         - edit (e): Edit mode flag
     """
 @overload #Overload for boxDollyCtx in ['edit']
-def boxDollyCtx(alternateContext: bool = ..., ac: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., toolName: str = ..., tn: str = ..., edit: bool = ..., e: bool = ...) -> str:
+def boxDollyCtx(image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., edit: bool = ..., e: bool = ...) -> str:
     """boxDollyCtx is undoable, queryable, and editable.
     
     This command can be used to create, edit, or query a dolly context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.boxDollyCtx( 'boxDollyContext', ac=False )
+    ```
+
     ---
     - Args:
-        - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
-        - toolName (tn): Name of the specific tool to which this command refers.
         - edit (e): Edit mode flag
     """

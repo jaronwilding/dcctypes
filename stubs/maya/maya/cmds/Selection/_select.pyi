@@ -34,6 +34,43 @@ def select([objects...]: [objects...], add: bool = ..., addFirst: bool = ..., al
     objects are selected. The non deletable object can still be selected by
     explicitly specifying their name as in "select time1;".
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create some objects and add them to a set
+        cmds.sphere( n='sphere1' )
+        cmds.sphere( n='sphere2' )
+        cmds.sets( 'sphere1', 'sphere2', n='set1' )
+        # select all dag objects and all dependency nodes
+        cmds.select( all=True )
+        # clear the active list
+        cmds.select( clear=True )
+        # select sphere2 only if it is visible
+        cmds.select( 'sphere2', visible=True )
+        # select a couple of objects regardless of visibilty
+        cmds.select( 'sphere1', r=True )
+        cmds.select( 'sphere2', add=True )
+        # remove one of the spheres from the active list (using toggle)
+        cmds.select( 'sphere1', tgl=True )
+        # remove the other sphere from the active list
+        cmds.select( 'sphere2', d=True )
+        # the following selects all the members of set1
+        cmds.select( 'set1' )
+        # this selects set1 itself
+        cmds.select( 'set1', ne=True )
+        # Some examples selecting with namespaces:
+        # create a namespace and an object in the namespace
+        cmds.namespace( add='foo' )
+        cmds.namespace( set='foo' )
+        cmds.sphere( n='bar' )
+        # 'select bar' will not select "bar" unless bar is in the
+        # root namespace. You need to qualify the name with the
+        # namespace (shown below).
+        cmds.select( 'foo:bar' )
+        # select all the objects in a namespace
+        cmds.select( 'foo:*' )
+    ```
+
     ---
     - Args:
         - [objects...]: Input item(s).
@@ -87,6 +124,43 @@ def select([objects...]: [objects...], af: bool = ..., ado: bool = ..., adn: boo
     objects are selected. The non deletable object can still be selected by
     explicitly specifying their name as in "select time1;".
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create some objects and add them to a set
+        cmds.sphere( n='sphere1' )
+        cmds.sphere( n='sphere2' )
+        cmds.sets( 'sphere1', 'sphere2', n='set1' )
+        # select all dag objects and all dependency nodes
+        cmds.select( all=True )
+        # clear the active list
+        cmds.select( clear=True )
+        # select sphere2 only if it is visible
+        cmds.select( 'sphere2', visible=True )
+        # select a couple of objects regardless of visibilty
+        cmds.select( 'sphere1', r=True )
+        cmds.select( 'sphere2', add=True )
+        # remove one of the spheres from the active list (using toggle)
+        cmds.select( 'sphere1', tgl=True )
+        # remove the other sphere from the active list
+        cmds.select( 'sphere2', d=True )
+        # the following selects all the members of set1
+        cmds.select( 'set1' )
+        # this selects set1 itself
+        cmds.select( 'set1', ne=True )
+        # Some examples selecting with namespaces:
+        # create a namespace and an object in the namespace
+        cmds.namespace( add='foo' )
+        cmds.namespace( set='foo' )
+        cmds.sphere( n='bar' )
+        # 'select bar' will not select "bar" unless bar is in the
+        # root namespace. You need to qualify the name with the
+        # namespace (shown below).
+        cmds.select( 'foo:bar' )
+        # select all the objects in a namespace
+        cmds.select( 'foo:*' )
+    ```
+
     ---
     - Args:
         - [objects...]: Input item(s).
@@ -139,6 +213,43 @@ def select([objects...]: [objects...], add: bool = ..., addFirst: bool = ..., af
     "adn/allDependencyNodes" or "-ado/allDagObjects" flags, only the deletable
     objects are selected. The non deletable object can still be selected by
     explicitly specifying their name as in "select time1;".
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create some objects and add them to a set
+        cmds.sphere( n='sphere1' )
+        cmds.sphere( n='sphere2' )
+        cmds.sets( 'sphere1', 'sphere2', n='set1' )
+        # select all dag objects and all dependency nodes
+        cmds.select( all=True )
+        # clear the active list
+        cmds.select( clear=True )
+        # select sphere2 only if it is visible
+        cmds.select( 'sphere2', visible=True )
+        # select a couple of objects regardless of visibilty
+        cmds.select( 'sphere1', r=True )
+        cmds.select( 'sphere2', add=True )
+        # remove one of the spheres from the active list (using toggle)
+        cmds.select( 'sphere1', tgl=True )
+        # remove the other sphere from the active list
+        cmds.select( 'sphere2', d=True )
+        # the following selects all the members of set1
+        cmds.select( 'set1' )
+        # this selects set1 itself
+        cmds.select( 'set1', ne=True )
+        # Some examples selecting with namespaces:
+        # create a namespace and an object in the namespace
+        cmds.namespace( add='foo' )
+        cmds.namespace( set='foo' )
+        cmds.sphere( n='bar' )
+        # 'select bar' will not select "bar" unless bar is in the
+        # root namespace. You need to qualify the name with the
+        # namespace (shown below).
+        cmds.select( 'foo:bar' )
+        # select all the objects in a namespace
+        cmds.select( 'foo:*' )
+    ```
 
     ---
     - Args:

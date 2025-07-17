@@ -8,6 +8,12 @@ def wrinkleContext(string: str, branchCount: int = ..., branchDepth: int = ..., 
     
     This command creates a context that creates wrinkles.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.wrinkleContext( 'wrinkleCtx' )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -30,6 +36,12 @@ def wrinkleContext(string: str, brc: int = ..., bd: int = ..., ex: bool = ..., c
     """wrinkleContext is undoable, queryable, and editable.
     
     This command creates a context that creates wrinkles.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.wrinkleContext( 'wrinkleCtx' )
+    ```
 
     ---
     - Args:
@@ -54,6 +66,12 @@ def wrinkleContext(string: str, branchCount: int = ..., brc: int = ..., branchDe
     
     This command creates a context that creates wrinkles.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.wrinkleContext( 'wrinkleCtx' )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -77,6 +95,12 @@ def wrinkleContext(string: str, branchCount: int = ..., branchDepth: int = ..., 
     
     This command creates a context that creates wrinkles.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.wrinkleContext( 'wrinkleCtx' )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -97,6 +121,12 @@ def wrinkleContext(string: str, brc: int = ..., bd: int = ..., i1: str = ..., i2
     """wrinkleContext is undoable, queryable, and editable.
     
     This command creates a context that creates wrinkles.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.wrinkleContext( 'wrinkleCtx' )
+    ```
 
     ---
     - Args:
@@ -119,6 +149,12 @@ def wrinkleContext(string: str, branchCount: int = ..., brc: int = ..., branchDe
     
     This command creates a context that creates wrinkles.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.wrinkleContext( 'wrinkleCtx' )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -139,6 +175,12 @@ def wrinkleContext(string: str, branchCount: int = ..., branchDepth: int = ..., 
     """wrinkleContext is undoable, queryable, and editable.
     
     This command creates a context that creates wrinkles.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.wrinkleContext( 'wrinkleCtx' )
+    ```
 
     ---
     - Args:
@@ -161,6 +203,12 @@ def wrinkleContext(string: str, brc: int = ..., bd: int = ..., i1: str = ..., i2
     
     This command creates a context that creates wrinkles.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.wrinkleContext( 'wrinkleCtx' )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -181,6 +229,12 @@ def wrinkleContext(string: str, branchCount: int = ..., brc: int = ..., branchDe
     """wrinkleContext is undoable, queryable, and editable.
     
     This command creates a context that creates wrinkles.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.wrinkleContext( 'wrinkleCtx' )
+    ```
 
     ---
     - Args:

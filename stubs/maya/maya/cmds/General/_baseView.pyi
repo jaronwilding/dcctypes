@@ -14,6 +14,16 @@ def baseView(string: str, itemInfo: str = ..., itemList: bool = ..., viewDescrip
     settings in force on the container node at the time of the query (i.e. the
     container's view mode, template name, view name attributes), when applicable.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Obtain a list of all available views for template1
+        #
+        cmds.baseView ( 'AEblinn', query=True, viewList=True);
+        # Result: [u'Animation', u'Rendering'] #
+        #
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -45,6 +55,16 @@ def baseView(string: str, ii: str = ..., il: bool = ..., vd: bool = ..., vb: boo
     settings in force on the container node at the time of the query (i.e. the
     container's view mode, template name, view name attributes), when applicable.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Obtain a list of all available views for template1
+        #
+        cmds.baseView ( 'AEblinn', query=True, viewList=True);
+        # Result: [u'Animation', u'Rendering'] #
+        #
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -75,6 +95,16 @@ def baseView(string: str, itemInfo: str = ..., ii: str = ..., itemList: bool = .
     information returned from this command will be based on the view-related
     settings in force on the container node at the time of the query (i.e. the
     container's view mode, template name, view name attributes), when applicable.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Obtain a list of all available views for template1
+        #
+        cmds.baseView ( 'AEblinn', query=True, viewList=True);
+        # Result: [u'Animation', u'Rendering'] #
+        #
+    ```
 
     ---
     - Args:

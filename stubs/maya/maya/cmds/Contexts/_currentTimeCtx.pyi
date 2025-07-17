@@ -9,6 +9,12 @@ def currentTimeCtx(contextName: contextName, exists: bool = ..., history: bool =
     This command creates a context which may be used to change current time within
     the graph editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.currentTimeCtx()
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -25,6 +31,12 @@ def currentTimeCtx(contextName: contextName, ex: bool = ..., ch: bool = ..., i1:
     
     This command creates a context which may be used to change current time within
     the graph editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.currentTimeCtx()
+    ```
 
     ---
     - Args:
@@ -43,6 +55,12 @@ def currentTimeCtx(contextName: contextName, exists: bool = ..., ex: bool = ...,
     This command creates a context which may be used to change current time within
     the graph editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.currentTimeCtx()
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -60,6 +78,12 @@ def currentTimeCtx(contextName: contextName, image1: str = ..., image2: str = ..
     This command creates a context which may be used to change current time within
     the graph editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.currentTimeCtx()
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -74,6 +98,12 @@ def currentTimeCtx(contextName: contextName, i1: str = ..., i2: str = ..., i3: s
     
     This command creates a context which may be used to change current time within
     the graph editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.currentTimeCtx()
+    ```
 
     ---
     - Args:
@@ -90,6 +120,12 @@ def currentTimeCtx(contextName: contextName, image1: str = ..., i1: str = ..., i
     This command creates a context which may be used to change current time within
     the graph editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.currentTimeCtx()
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -104,6 +140,12 @@ def currentTimeCtx(contextName: contextName, image1: str = ..., image2: str = ..
     
     This command creates a context which may be used to change current time within
     the graph editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.currentTimeCtx()
+    ```
 
     ---
     - Args:
@@ -120,6 +162,12 @@ def currentTimeCtx(contextName: contextName, i1: str = ..., i2: str = ..., i3: s
     This command creates a context which may be used to change current time within
     the graph editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.currentTimeCtx()
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -134,6 +182,12 @@ def currentTimeCtx(contextName: contextName, image1: str = ..., i1: str = ..., i
     
     This command creates a context which may be used to change current time within
     the graph editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.currentTimeCtx()
+    ```
 
     ---
     - Args:

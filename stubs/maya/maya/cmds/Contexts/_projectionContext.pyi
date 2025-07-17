@@ -8,6 +8,11 @@ def projectionContext(exists: bool = ..., history: bool = ..., image1: str = ...
     
     Set the context for projection manips
 
+    Example:
+    ```python
+        No example found.
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -22,6 +27,11 @@ def projectionContext(ex: bool = ..., ch: bool = ..., i1: str = ..., i2: str = .
     """projectionContext is undoable, queryable, and editable.
     
     Set the context for projection manips
+
+    Example:
+    ```python
+        No example found.
+    ```
 
     ---
     - Args:
@@ -38,6 +48,11 @@ def projectionContext(exists: bool = ..., ex: bool = ..., history: bool = ..., c
     
     Set the context for projection manips
 
+    Example:
+    ```python
+        No example found.
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -53,6 +68,11 @@ def projectionContext(image1: str = ..., image2: str = ..., image3: str = ..., q
     
     Set the context for projection manips
 
+    Example:
+    ```python
+        No example found.
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -65,6 +85,11 @@ def projectionContext(i1: str = ..., i2: str = ..., i3: str = ..., q: bool = ...
     """projectionContext is undoable, queryable, and editable.
     
     Set the context for projection manips
+
+    Example:
+    ```python
+        No example found.
+    ```
 
     ---
     - Args:
@@ -79,6 +104,11 @@ def projectionContext(image1: str = ..., i1: str = ..., image2: str = ..., i2: s
     
     Set the context for projection manips
 
+    Example:
+    ```python
+        No example found.
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -91,6 +121,11 @@ def projectionContext(image1: str = ..., image2: str = ..., image3: str = ..., e
     """projectionContext is undoable, queryable, and editable.
     
     Set the context for projection manips
+
+    Example:
+    ```python
+        No example found.
+    ```
 
     ---
     - Args:
@@ -105,6 +140,11 @@ def projectionContext(i1: str = ..., i2: str = ..., i3: str = ..., e: bool = ...
     
     Set the context for projection manips
 
+    Example:
+    ```python
+        No example found.
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -117,6 +157,11 @@ def projectionContext(image1: str = ..., i1: str = ..., image2: str = ..., i2: s
     """projectionContext is undoable, queryable, and editable.
     
     Set the context for projection manips
+
+    Example:
+    ```python
+        No example found.
+    ```
 
     ---
     - Args:

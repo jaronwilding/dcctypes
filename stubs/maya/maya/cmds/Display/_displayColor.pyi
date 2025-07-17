@@ -12,6 +12,16 @@ def displayColor(string: str, active: bool = ..., create: bool = ..., dormant: b
     part of the UI and not part of the saved data for a model. This command is not
     undoable.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.displayColor( 'grid', 15, dormant=True )
+        cmds.displayColor( 'grid', q=True, dormant=True )
+        cmds.displayColor( list=True )
+        cmds.displayColor( resetToFactory=True )
+        cmds.displayColor( queryIndex=15 )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -33,6 +43,16 @@ def displayColor(string: str, a: bool = ..., c: bool = ..., d: bool = ..., l: bo
     part of the UI and not part of the saved data for a model. This command is not
     undoable.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.displayColor( 'grid', 15, dormant=True )
+        cmds.displayColor( 'grid', q=True, dormant=True )
+        cmds.displayColor( list=True )
+        cmds.displayColor( resetToFactory=True )
+        cmds.displayColor( queryIndex=15 )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -53,6 +73,16 @@ def displayColor(string: str, active: bool = ..., a: bool = ..., create: bool = 
     color index into either the dormant or active color palette. These colors are
     part of the UI and not part of the saved data for a model. This command is not
     undoable.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.displayColor( 'grid', 15, dormant=True )
+        cmds.displayColor( 'grid', q=True, dormant=True )
+        cmds.displayColor( list=True )
+        cmds.displayColor( resetToFactory=True )
+        cmds.displayColor( queryIndex=15 )
+    ```
 
     ---
     - Args:

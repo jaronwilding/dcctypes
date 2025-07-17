@@ -16,6 +16,42 @@ def listAttrPatterns(patternType: bool = ..., verbose: bool = ...) -> list[str]:
     and convert it into an attribute pattern that can be applied to any node or
     node type in Maya.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.listAttrPatterns()
+        // Return: ["approvalAttrs", "sceneAndShotAttrs"] //
+        cmds.listAttrPatterns( patternType=True )
+        // Return: "xmlPatternFactory" //
+        cmds.listAttrPatterns( patternType=True, verbose=True )
+        // Return: ["xmlPatternFactory", "xmlPatternFactory/approvalAttrs", "xmlPatternFactory/sceneAndShotAttrs"] //
+        cmds.listAttrPatterns( verbose=True )
+        Pattern approvalAttrs
+        PatternFactory xmlPatternFactory:
+        File: "attrPatterns/approvalAttrs.xml"
+        Attribute Count: 8
+        Attribute Tree:
+        fxApproval (compound)
+        fxApprover (string)
+        fxApprovalDate (int)
+        fxApprovalState (enum)
+        layoutApproval (compound)
+        layoutApprover (string)
+        layoutApprovalDate (int)
+        layoutApprovalState (enum)
+        Pattern sceneAndShotAttrs
+        PatternFactory xmlPatternFactory:
+        File: "attrPatterns/sceneAndShotAttrs.xml"
+        Attribute Count: 4
+        Attribute Tree:
+        sceneId (int)
+        sceneOwner (string)
+        shotId (int)
+        shotOwner (string)
+        // Return: ["approvalAttrs", "sceneAndShotAttrs"] //
+    ```
+
     ---
     - Args:
         - patternType (pt): If turned on then show the list of pattern types rather than actual instantiated patterns.
@@ -35,6 +71,42 @@ def listAttrPatterns(pt: bool = ..., v: bool = ...) -> list[str]:
     and convert it into an attribute pattern that can be applied to any node or
     node type in Maya.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.listAttrPatterns()
+        // Return: ["approvalAttrs", "sceneAndShotAttrs"] //
+        cmds.listAttrPatterns( patternType=True )
+        // Return: "xmlPatternFactory" //
+        cmds.listAttrPatterns( patternType=True, verbose=True )
+        // Return: ["xmlPatternFactory", "xmlPatternFactory/approvalAttrs", "xmlPatternFactory/sceneAndShotAttrs"] //
+        cmds.listAttrPatterns( verbose=True )
+        Pattern approvalAttrs
+        PatternFactory xmlPatternFactory:
+        File: "attrPatterns/approvalAttrs.xml"
+        Attribute Count: 8
+        Attribute Tree:
+        fxApproval (compound)
+        fxApprover (string)
+        fxApprovalDate (int)
+        fxApprovalState (enum)
+        layoutApproval (compound)
+        layoutApprover (string)
+        layoutApprovalDate (int)
+        layoutApprovalState (enum)
+        Pattern sceneAndShotAttrs
+        PatternFactory xmlPatternFactory:
+        File: "attrPatterns/sceneAndShotAttrs.xml"
+        Attribute Count: 4
+        Attribute Tree:
+        sceneId (int)
+        sceneOwner (string)
+        shotId (int)
+        shotOwner (string)
+        // Return: ["approvalAttrs", "sceneAndShotAttrs"] //
+    ```
+
     ---
     - Args:
         - patternType (pt): If turned on then show the list of pattern types rather than actual instantiated patterns.
@@ -53,6 +125,42 @@ def listAttrPatterns(patternType: bool = ..., pt: bool = ..., verbose: bool = ..
     to take some textual description of an attribute tree, e.g. XML or plaintext,
     and convert it into an attribute pattern that can be applied to any node or
     node type in Maya.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.listAttrPatterns()
+        // Return: ["approvalAttrs", "sceneAndShotAttrs"] //
+        cmds.listAttrPatterns( patternType=True )
+        // Return: "xmlPatternFactory" //
+        cmds.listAttrPatterns( patternType=True, verbose=True )
+        // Return: ["xmlPatternFactory", "xmlPatternFactory/approvalAttrs", "xmlPatternFactory/sceneAndShotAttrs"] //
+        cmds.listAttrPatterns( verbose=True )
+        Pattern approvalAttrs
+        PatternFactory xmlPatternFactory:
+        File: "attrPatterns/approvalAttrs.xml"
+        Attribute Count: 8
+        Attribute Tree:
+        fxApproval (compound)
+        fxApprover (string)
+        fxApprovalDate (int)
+        fxApprovalState (enum)
+        layoutApproval (compound)
+        layoutApprover (string)
+        layoutApprovalDate (int)
+        layoutApprovalState (enum)
+        Pattern sceneAndShotAttrs
+        PatternFactory xmlPatternFactory:
+        File: "attrPatterns/sceneAndShotAttrs.xml"
+        Attribute Count: 4
+        Attribute Tree:
+        sceneId (int)
+        sceneOwner (string)
+        shotId (int)
+        shotOwner (string)
+        // Return: ["approvalAttrs", "sceneAndShotAttrs"] //
+    ```
 
     ---
     - Args:

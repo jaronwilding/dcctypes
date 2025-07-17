@@ -16,6 +16,25 @@ def pickWalk([objects]: [objects], direction: str = ..., recurse: bool = ..., ty
     If the -type flag is instances, then the left and right direction will walk to
     the previous or next instance of the same selected dag node.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Given the transforms A and B which are parented to a transform C,
+        # and C is instanced with parents D and E.
+        cmds.pickWalk( 'A', direction='right' )
+        cmds.select('|E|C')
+        cmds.pickWalk( type='instances', direction='left')
+        # The pickWalk command also works on CVs and edit points
+        cmds.select('nurbsPlaneShape1.cv[2][1]')
+        cmds.pickWalk(direction='right' )
+        # Result: nurbsPlaneShape1.cv[3][1] #
+        cmds.pickWalk( direction='up' )
+        # Result: nurbsPlaneShape1.cv[3][2] #
+        cmds.select( 'curveShape2.ep[1]' )
+        cmds.pickWalk( direction='left' )
+        # Result: curveShape2.ep[0] #
+    ```
+
     ---
     - Args:
         - [objects]: Input item(s).
@@ -42,6 +61,25 @@ def pickWalk([objects]: [objects], d: str = ..., r: bool = ..., typ: str = ...) 
     If the -type flag is instances, then the left and right direction will walk to
     the previous or next instance of the same selected dag node.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Given the transforms A and B which are parented to a transform C,
+        # and C is instanced with parents D and E.
+        cmds.pickWalk( 'A', direction='right' )
+        cmds.select('|E|C')
+        cmds.pickWalk( type='instances', direction='left')
+        # The pickWalk command also works on CVs and edit points
+        cmds.select('nurbsPlaneShape1.cv[2][1]')
+        cmds.pickWalk(direction='right' )
+        # Result: nurbsPlaneShape1.cv[3][1] #
+        cmds.pickWalk( direction='up' )
+        # Result: nurbsPlaneShape1.cv[3][2] #
+        cmds.select( 'curveShape2.ep[1]' )
+        cmds.pickWalk( direction='left' )
+        # Result: curveShape2.ep[0] #
+    ```
+
     ---
     - Args:
         - [objects]: Input item(s).
@@ -67,6 +105,25 @@ def pickWalk([objects]: [objects], direction: str = ..., d: str = ..., recurse: 
     
     If the -type flag is instances, then the left and right direction will walk to
     the previous or next instance of the same selected dag node.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Given the transforms A and B which are parented to a transform C,
+        # and C is instanced with parents D and E.
+        cmds.pickWalk( 'A', direction='right' )
+        cmds.select('|E|C')
+        cmds.pickWalk( type='instances', direction='left')
+        # The pickWalk command also works on CVs and edit points
+        cmds.select('nurbsPlaneShape1.cv[2][1]')
+        cmds.pickWalk(direction='right' )
+        # Result: nurbsPlaneShape1.cv[3][1] #
+        cmds.pickWalk( direction='up' )
+        # Result: nurbsPlaneShape1.cv[3][2] #
+        cmds.select( 'curveShape2.ep[1]' )
+        cmds.pickWalk( direction='left' )
+        # Result: curveShape2.ep[0] #
+    ```
 
     ---
     - Args:

@@ -10,6 +10,21 @@ def listConnections(connections: bool = ..., destination: bool = ..., exactType:
     are connected to the given object(s). If no objects are specified then the
     command lists the connections on selected nodes.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sphere( ch=True, n='BALL' )
+        cmds.setKeyframe()
+        # List all connections to BALL
+        list = cmds.listConnections('BALL')
+        # List only incoming connections from BALL.tx
+        cmds.listConnections( 'BALL.tx', d=False, s=True )
+        # List connections from BALL to nodes of type 'transform'
+        cmds.listConnections( t='transform' )
+        # List connections on BALL, ignoring unit conversion nodes
+        cmds.listConnections( 'BALL', scn=True )
+    ```
+
     ---
     - Args:
         - connections (c): If true, return both attributes involved in the connection. The one on the specified object is given first.  Default false.
@@ -30,6 +45,21 @@ def listConnections(c: bool = ..., d: bool = ..., et: bool = ..., fnn: bool = ..
     are connected to the given object(s). If no objects are specified then the
     command lists the connections on selected nodes.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sphere( ch=True, n='BALL' )
+        cmds.setKeyframe()
+        # List all connections to BALL
+        list = cmds.listConnections('BALL')
+        # List only incoming connections from BALL.tx
+        cmds.listConnections( 'BALL.tx', d=False, s=True )
+        # List connections from BALL to nodes of type 'transform'
+        cmds.listConnections( t='transform' )
+        # List connections on BALL, ignoring unit conversion nodes
+        cmds.listConnections( 'BALL', scn=True )
+    ```
+
     ---
     - Args:
         - connections (c): If true, return both attributes involved in the connection. The one on the specified object is given first.  Default false.
@@ -49,6 +79,21 @@ def listConnections(connections: bool = ..., c: bool = ..., destination: bool = 
     This command returns a list of all attributes/objects of a specified type that
     are connected to the given object(s). If no objects are specified then the
     command lists the connections on selected nodes.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.sphere( ch=True, n='BALL' )
+        cmds.setKeyframe()
+        # List all connections to BALL
+        list = cmds.listConnections('BALL')
+        # List only incoming connections from BALL.tx
+        cmds.listConnections( 'BALL.tx', d=False, s=True )
+        # List connections from BALL to nodes of type 'transform'
+        cmds.listConnections( t='transform' )
+        # List connections on BALL, ignoring unit conversion nodes
+        cmds.listConnections( 'BALL', scn=True )
+    ```
 
     ---
     - Args:

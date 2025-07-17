@@ -8,6 +8,12 @@ def wireContext(string: str, crossingEffect: linear = ..., deformationOrder: str
     
     This command creates a tool that can be used to create a wire deformer.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.wireContext( 'wireCtx' )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -32,6 +38,12 @@ def wireContext(string: str, ce: linear = ..., do: str = ..., dds: linear = ...,
     """wireContext is undoable, queryable, and editable.
     
     This command creates a tool that can be used to create a wire deformer.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.wireContext( 'wireCtx' )
+    ```
 
     ---
     - Args:
@@ -58,6 +70,12 @@ def wireContext(string: str, crossingEffect: linear = ..., ce: linear = ..., def
     
     This command creates a tool that can be used to create a wire deformer.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.wireContext( 'wireCtx' )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -78,10 +96,16 @@ def wireContext(string: str, crossingEffect: linear = ..., ce: linear = ..., def
         - name (n): If this is a tool command, name the tool appropriately.
     """
 @overload #Overload for wireContext in ['query']
-def wireContext(string: str, crossingEffect: linear = ..., deformationOrder: str = ..., dropoffDistance: linear = ..., envelope: linear = ..., exclusive: bool = ..., exclusivePartition: str = ..., groupWithBase: bool = ..., holder: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., localInfluence: linear = ..., query: bool = ...) -> str:
+def wireContext(string: str, crossingEffect: linear = ..., deformationOrder: str = ..., dropoffDistance: linear = ..., envelope: linear = ..., exclusive: bool = ..., exclusivePartition: str = ..., groupWithBase: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., localInfluence: linear = ..., query: bool = ...) -> str:
     """wireContext is undoable, queryable, and editable.
     
     This command creates a tool that can be used to create a wire deformer.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.wireContext( 'wireCtx' )
+    ```
 
     ---
     - Args:
@@ -93,7 +117,6 @@ def wireContext(string: str, crossingEffect: linear = ..., deformationOrder: str
         - exclusive (exc): Set exclusive mode on or off.
         - exclusivePartition (ep): Set the name of an exclusive partition.
         - groupWithBase (gw): Groups the wire with the base wire so that they can easily be moved together to create a ripple effect. Default is false.
-        - holder (ho): Controls whether the user can specify holders for the wires from the wire context. A holder is a curve that you can use to limit the wire's deformation region. Default is false.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
@@ -101,10 +124,16 @@ def wireContext(string: str, crossingEffect: linear = ..., deformationOrder: str
         - query (q): Query mode flag
     """
 @overload #Overload for wireContext in ['query']
-def wireContext(string: str, ce: linear = ..., do: str = ..., dds: linear = ..., en: linear = ..., exc: bool = ..., ep: str = ..., gw: bool = ..., ho: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., li: linear = ..., q: bool = ...) -> str:
+def wireContext(string: str, ce: linear = ..., do: str = ..., dds: linear = ..., en: linear = ..., exc: bool = ..., ep: str = ..., gw: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., li: linear = ..., q: bool = ...) -> str:
     """wireContext is undoable, queryable, and editable.
     
     This command creates a tool that can be used to create a wire deformer.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.wireContext( 'wireCtx' )
+    ```
 
     ---
     - Args:
@@ -116,7 +145,6 @@ def wireContext(string: str, ce: linear = ..., do: str = ..., dds: linear = ...,
         - exclusive (exc): Set exclusive mode on or off.
         - exclusivePartition (ep): Set the name of an exclusive partition.
         - groupWithBase (gw): Groups the wire with the base wire so that they can easily be moved together to create a ripple effect. Default is false.
-        - holder (ho): Controls whether the user can specify holders for the wires from the wire context. A holder is a curve that you can use to limit the wire's deformation region. Default is false.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
@@ -124,10 +152,16 @@ def wireContext(string: str, ce: linear = ..., do: str = ..., dds: linear = ...,
         - query (q): Query mode flag
     """
 @overload #Overload for wireContext in ['query']
-def wireContext(string: str, crossingEffect: linear = ..., ce: linear = ..., deformationOrder: str = ..., do: str = ..., dropoffDistance: linear = ..., dds: linear = ..., envelope: linear = ..., en: linear = ..., exclusive: bool = ..., exc: bool = ..., exclusivePartition: str = ..., ep: str = ..., groupWithBase: bool = ..., gw: bool = ..., holder: bool = ..., ho: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., localInfluence: linear = ..., li: linear = ..., query: bool = ..., q: bool = ...) -> str:
+def wireContext(string: str, crossingEffect: linear = ..., ce: linear = ..., deformationOrder: str = ..., do: str = ..., dropoffDistance: linear = ..., dds: linear = ..., envelope: linear = ..., en: linear = ..., exclusive: bool = ..., exc: bool = ..., exclusivePartition: str = ..., ep: str = ..., groupWithBase: bool = ..., gw: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., localInfluence: linear = ..., li: linear = ..., query: bool = ..., q: bool = ...) -> str:
     """wireContext is undoable, queryable, and editable.
     
     This command creates a tool that can be used to create a wire deformer.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.wireContext( 'wireCtx' )
+    ```
 
     ---
     - Args:
@@ -139,7 +173,6 @@ def wireContext(string: str, crossingEffect: linear = ..., ce: linear = ..., def
         - exclusive (exc): Set exclusive mode on or off.
         - exclusivePartition (ep): Set the name of an exclusive partition.
         - groupWithBase (gw): Groups the wire with the base wire so that they can easily be moved together to create a ripple effect. Default is false.
-        - holder (ho): Controls whether the user can specify holders for the wires from the wire context. A holder is a curve that you can use to limit the wire's deformation region. Default is false.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
@@ -151,6 +184,12 @@ def wireContext(string: str, crossingEffect: linear = ..., deformationOrder: str
     """wireContext is undoable, queryable, and editable.
     
     This command creates a tool that can be used to create a wire deformer.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.wireContext( 'wireCtx' )
+    ```
 
     ---
     - Args:
@@ -175,6 +214,12 @@ def wireContext(string: str, ce: linear = ..., do: str = ..., dds: linear = ...,
     
     This command creates a tool that can be used to create a wire deformer.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.wireContext( 'wireCtx' )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -197,6 +242,12 @@ def wireContext(string: str, crossingEffect: linear = ..., ce: linear = ..., def
     """wireContext is undoable, queryable, and editable.
     
     This command creates a tool that can be used to create a wire deformer.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.wireContext( 'wireCtx' )
+    ```
 
     ---
     - Args:

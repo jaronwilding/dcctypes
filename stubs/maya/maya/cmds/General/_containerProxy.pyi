@@ -20,6 +20,14 @@ def containerProxy(fromTemplate: str = ..., type: str = ...) -> None:
     doExportContainerProxy.mel script which is invoked by the "Export Container
     Proxy" menu item.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a proxy for container1
+        #
+        cmds.containerProxy('container1')
+    ```
+
     ---
     - Args:
         - fromTemplate (ft): Specifies the name of a template file which will be used to create the new container proxy. Stand-in attributes will be created and published for all the numeric attributes on the proxy.
@@ -44,6 +52,14 @@ def containerProxy(ft: str = ..., typ: str = ...) -> None:
     doExportContainerProxy.mel script which is invoked by the "Export Container
     Proxy" menu item.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a proxy for container1
+        #
+        cmds.containerProxy('container1')
+    ```
+
     ---
     - Args:
         - fromTemplate (ft): Specifies the name of a template file which will be used to create the new container proxy. Stand-in attributes will be created and published for all the numeric attributes on the proxy.
@@ -67,6 +83,14 @@ def containerProxy(fromTemplate: str = ..., ft: str = ..., type: str = ..., typ:
     For automated creation, export and setup of the proxy see the
     doExportContainerProxy.mel script which is invoked by the "Export Container
     Proxy" menu item.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a proxy for container1
+        #
+        cmds.containerProxy('container1')
+    ```
 
     ---
     - Args:

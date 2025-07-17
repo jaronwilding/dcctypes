@@ -8,6 +8,19 @@ def timeCode(mayaStartFrame: float = ..., productionStartFrame: float = ..., pro
     
     Use this command to query and set the time code information in the file
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # set the production start time to 1 hour, 33 min, 52 seconds, and 23 frames
+        cmds.timeCode(productionStartHour=1,productionStartMinute=33,productionStartSecond=52,productionStartFrame=23)
+        # query the production start time
+        #
+        cmds.timeCode(query=1,productionStartHour=True)
+        // result: 1
+        cmds.timeCode(query=1,productionStartMinute=True)
+        // result: 33
+    ```
+
     ---
     - Args:
         - mayaStartFrame (msf): Sets the Maya start time of the time code, in frames. In query mode, returns the Maya start frame of the time code.
@@ -21,6 +34,19 @@ def timeCode(msf: float = ..., psf: float = ..., psh: float = ..., psm: float = 
     """timeCode is undoable, queryable, and editable.
     
     Use this command to query and set the time code information in the file
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # set the production start time to 1 hour, 33 min, 52 seconds, and 23 frames
+        cmds.timeCode(productionStartHour=1,productionStartMinute=33,productionStartSecond=52,productionStartFrame=23)
+        # query the production start time
+        #
+        cmds.timeCode(query=1,productionStartHour=True)
+        // result: 1
+        cmds.timeCode(query=1,productionStartMinute=True)
+        // result: 33
+    ```
 
     ---
     - Args:
@@ -36,6 +62,19 @@ def timeCode(mayaStartFrame: float = ..., msf: float = ..., productionStartFrame
     
     Use this command to query and set the time code information in the file
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # set the production start time to 1 hour, 33 min, 52 seconds, and 23 frames
+        cmds.timeCode(productionStartHour=1,productionStartMinute=33,productionStartSecond=52,productionStartFrame=23)
+        # query the production start time
+        #
+        cmds.timeCode(query=1,productionStartHour=True)
+        // result: 1
+        cmds.timeCode(query=1,productionStartMinute=True)
+        // result: 33
+    ```
+
     ---
     - Args:
         - mayaStartFrame (msf): Sets the Maya start time of the time code, in frames. In query mode, returns the Maya start frame of the time code.
@@ -49,6 +88,19 @@ def timeCode(mayaStartFrame: float = ..., productionStartFrame: float = ..., pro
     """timeCode is undoable, queryable, and editable.
     
     Use this command to query and set the time code information in the file
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # set the production start time to 1 hour, 33 min, 52 seconds, and 23 frames
+        cmds.timeCode(productionStartHour=1,productionStartMinute=33,productionStartSecond=52,productionStartFrame=23)
+        # query the production start time
+        #
+        cmds.timeCode(query=1,productionStartHour=True)
+        // result: 1
+        cmds.timeCode(query=1,productionStartMinute=True)
+        // result: 33
+    ```
 
     ---
     - Args:
@@ -65,6 +117,19 @@ def timeCode(msf: float = ..., psf: float = ..., psh: float = ..., psm: float = 
     
     Use this command to query and set the time code information in the file
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # set the production start time to 1 hour, 33 min, 52 seconds, and 23 frames
+        cmds.timeCode(productionStartHour=1,productionStartMinute=33,productionStartSecond=52,productionStartFrame=23)
+        # query the production start time
+        #
+        cmds.timeCode(query=1,productionStartHour=True)
+        // result: 1
+        cmds.timeCode(query=1,productionStartMinute=True)
+        // result: 33
+    ```
+
     ---
     - Args:
         - mayaStartFrame (msf): Sets the Maya start time of the time code, in frames. In query mode, returns the Maya start frame of the time code.
@@ -79,6 +144,19 @@ def timeCode(mayaStartFrame: float = ..., msf: float = ..., productionStartFrame
     """timeCode is undoable, queryable, and editable.
     
     Use this command to query and set the time code information in the file
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # set the production start time to 1 hour, 33 min, 52 seconds, and 23 frames
+        cmds.timeCode(productionStartHour=1,productionStartMinute=33,productionStartSecond=52,productionStartFrame=23)
+        # query the production start time
+        #
+        cmds.timeCode(query=1,productionStartHour=True)
+        // result: 1
+        cmds.timeCode(query=1,productionStartMinute=True)
+        // result: 33
+    ```
 
     ---
     - Args:
@@ -95,6 +173,19 @@ def timeCode(mayaStartFrame: float = ..., productionStartFrame: float = ..., pro
     
     Use this command to query and set the time code information in the file
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # set the production start time to 1 hour, 33 min, 52 seconds, and 23 frames
+        cmds.timeCode(productionStartHour=1,productionStartMinute=33,productionStartSecond=52,productionStartFrame=23)
+        # query the production start time
+        #
+        cmds.timeCode(query=1,productionStartHour=True)
+        // result: 1
+        cmds.timeCode(query=1,productionStartMinute=True)
+        // result: 33
+    ```
+
     ---
     - Args:
         - mayaStartFrame (msf): Sets the Maya start time of the time code, in frames. In query mode, returns the Maya start frame of the time code.
@@ -110,6 +201,19 @@ def timeCode(msf: float = ..., psf: float = ..., psh: float = ..., psm: float = 
     
     Use this command to query and set the time code information in the file
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # set the production start time to 1 hour, 33 min, 52 seconds, and 23 frames
+        cmds.timeCode(productionStartHour=1,productionStartMinute=33,productionStartSecond=52,productionStartFrame=23)
+        # query the production start time
+        #
+        cmds.timeCode(query=1,productionStartHour=True)
+        // result: 1
+        cmds.timeCode(query=1,productionStartMinute=True)
+        // result: 33
+    ```
+
     ---
     - Args:
         - mayaStartFrame (msf): Sets the Maya start time of the time code, in frames. In query mode, returns the Maya start frame of the time code.
@@ -124,6 +228,19 @@ def timeCode(mayaStartFrame: float = ..., msf: float = ..., productionStartFrame
     """timeCode is undoable, queryable, and editable.
     
     Use this command to query and set the time code information in the file
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # set the production start time to 1 hour, 33 min, 52 seconds, and 23 frames
+        cmds.timeCode(productionStartHour=1,productionStartMinute=33,productionStartSecond=52,productionStartFrame=23)
+        # query the production start time
+        #
+        cmds.timeCode(query=1,productionStartHour=True)
+        // result: 1
+        cmds.timeCode(query=1,productionStartMinute=True)
+        // result: 33
+    ```
 
     ---
     - Args:

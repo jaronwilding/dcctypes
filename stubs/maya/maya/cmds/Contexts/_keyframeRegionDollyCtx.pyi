@@ -8,6 +8,14 @@ def keyframeRegionDollyCtx(exists: bool = ..., history: bool = ..., image1: str 
     
     This command can be used to create a dolly context for the dope sheet editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a dolly view context for the dope sheet editor
+        #
+        cmds.keyframeRegionDollyCtx( 'keyframeRegionDollyContext' )
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -22,6 +30,14 @@ def keyframeRegionDollyCtx(ex: bool = ..., ch: bool = ..., i1: str = ..., i2: st
     """keyframeRegionDollyCtx is undoable, queryable, and editable.
     
     This command can be used to create a dolly context for the dope sheet editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a dolly view context for the dope sheet editor
+        #
+        cmds.keyframeRegionDollyCtx( 'keyframeRegionDollyContext' )
+    ```
 
     ---
     - Args:
@@ -38,6 +54,14 @@ def keyframeRegionDollyCtx(exists: bool = ..., ex: bool = ..., history: bool = .
     
     This command can be used to create a dolly context for the dope sheet editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a dolly view context for the dope sheet editor
+        #
+        cmds.keyframeRegionDollyCtx( 'keyframeRegionDollyContext' )
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -53,6 +77,14 @@ def keyframeRegionDollyCtx(image1: str = ..., image2: str = ..., image3: str = .
     
     This command can be used to create a dolly context for the dope sheet editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a dolly view context for the dope sheet editor
+        #
+        cmds.keyframeRegionDollyCtx( 'keyframeRegionDollyContext' )
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -65,6 +97,14 @@ def keyframeRegionDollyCtx(i1: str = ..., i2: str = ..., i3: str = ..., q: bool 
     """keyframeRegionDollyCtx is undoable, queryable, and editable.
     
     This command can be used to create a dolly context for the dope sheet editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a dolly view context for the dope sheet editor
+        #
+        cmds.keyframeRegionDollyCtx( 'keyframeRegionDollyContext' )
+    ```
 
     ---
     - Args:
@@ -79,6 +119,14 @@ def keyframeRegionDollyCtx(image1: str = ..., i1: str = ..., image2: str = ..., 
     
     This command can be used to create a dolly context for the dope sheet editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a dolly view context for the dope sheet editor
+        #
+        cmds.keyframeRegionDollyCtx( 'keyframeRegionDollyContext' )
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -91,6 +139,14 @@ def keyframeRegionDollyCtx(image1: str = ..., image2: str = ..., image3: str = .
     """keyframeRegionDollyCtx is undoable, queryable, and editable.
     
     This command can be used to create a dolly context for the dope sheet editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a dolly view context for the dope sheet editor
+        #
+        cmds.keyframeRegionDollyCtx( 'keyframeRegionDollyContext' )
+    ```
 
     ---
     - Args:
@@ -105,6 +161,14 @@ def keyframeRegionDollyCtx(i1: str = ..., i2: str = ..., i3: str = ..., e: bool 
     
     This command can be used to create a dolly context for the dope sheet editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a dolly view context for the dope sheet editor
+        #
+        cmds.keyframeRegionDollyCtx( 'keyframeRegionDollyContext' )
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -117,6 +181,14 @@ def keyframeRegionDollyCtx(image1: str = ..., i1: str = ..., image2: str = ..., 
     """keyframeRegionDollyCtx is undoable, queryable, and editable.
     
     This command can be used to create a dolly context for the dope sheet editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a dolly view context for the dope sheet editor
+        #
+        cmds.keyframeRegionDollyCtx( 'keyframeRegionDollyContext' )
+    ```
 
     ---
     - Args:

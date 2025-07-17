@@ -17,6 +17,12 @@ def scaleComponents(float float float [objects]: float float float [objects], pi
     
     Scale values are always relative, not absolute.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.scaleComponents( 2, 2, 2, pivot=(0, 10, 0), rotation=(30, 40, 50) )
+    ```
+
     ---
     - Args:
         - float float float [objects]: Input item(s).
@@ -38,6 +44,12 @@ def scaleComponents(float float float [objects]: float float float [objects], p:
     
     Scale values are always relative, not absolute.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.scaleComponents( 2, 2, 2, pivot=(0, 10, 0), rotation=(30, 40, 50) )
+    ```
+
     ---
     - Args:
         - float float float [objects]: Input item(s).
@@ -58,6 +70,12 @@ def scaleComponents(float float float [objects]: float float float [objects], pi
     object or world space as the regular scale allows.
     
     Scale values are always relative, not absolute.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.scaleComponents( 2, 2, 2, pivot=(0, 10, 0), rotation=(30, 40, 50) )
+    ```
 
     ---
     - Args:

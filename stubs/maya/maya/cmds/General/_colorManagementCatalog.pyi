@@ -11,6 +11,15 @@ def colorManagementCatalog(addTransform: str = ..., editUserTransformPath: str =
     color transform has been added to the catalog, it can be used in the same way
     as the builtin Autodesk native color transforms.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.colorManagementCatalog(addTransform='My Custom Viewing LUT', type='view', path='/path/to/myCustomViewingLUT.lut', transformConnection='ACES')
+        cmds.colorManagementCatalog(removeTransform='My Custom Viewing LUT', type='view')
+        cmds.colorManagementCatalog(listTransformConnections=True, type='view')
+        cmds.colorManagementCatalog(editUserTransformPath='/path/transforms')
+    ```
+
     ---
     - Args:
         - addTransform (adt): Add transform to collection.
@@ -32,6 +41,15 @@ def colorManagementCatalog(adt: str = ..., eut: str = ..., lse: bool = ..., ltc:
     color transform has been added to the catalog, it can be used in the same way
     as the builtin Autodesk native color transforms.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.colorManagementCatalog(addTransform='My Custom Viewing LUT', type='view', path='/path/to/myCustomViewingLUT.lut', transformConnection='ACES')
+        cmds.colorManagementCatalog(removeTransform='My Custom Viewing LUT', type='view')
+        cmds.colorManagementCatalog(listTransformConnections=True, type='view')
+        cmds.colorManagementCatalog(editUserTransformPath='/path/transforms')
+    ```
+
     ---
     - Args:
         - addTransform (adt): Add transform to collection.
@@ -52,6 +70,15 @@ def colorManagementCatalog(addTransform: str = ..., adt: str = ..., editUserTran
     transforms from the Autodesk native color transform catalog. Once a custom
     color transform has been added to the catalog, it can be used in the same way
     as the builtin Autodesk native color transforms.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.colorManagementCatalog(addTransform='My Custom Viewing LUT', type='view', path='/path/to/myCustomViewingLUT.lut', transformConnection='ACES')
+        cmds.colorManagementCatalog(removeTransform='My Custom Viewing LUT', type='view')
+        cmds.colorManagementCatalog(listTransformConnections=True, type='view')
+        cmds.colorManagementCatalog(editUserTransformPath='/path/transforms')
+    ```
 
     ---
     - Args:

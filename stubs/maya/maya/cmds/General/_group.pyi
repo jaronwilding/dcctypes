@@ -20,6 +20,20 @@ def group([objects...]: [objects...], absolute: bool = ..., empty: bool = ..., n
     If an object is grouped with another object that has the same name then one of
     the objects will be renamed by this command.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create an empty group node with no children
+        cmds.group( em=True, name='null1' )
+        # create some objects and group them
+        cmds.sphere( n='sphere1' )
+        cmds.circle( n='circle1' )
+        cmds.group( 'circle1', 'sphere1', n='group1' )
+        # create a group node under another node and move
+        # the sphere under the new group node.
+        cmds.group( 'sphere1', parent='null1' )
+    ```
+
     ---
     - Args:
         - [objects...]: Input item(s).
@@ -49,6 +63,20 @@ def group([objects...]: [objects...], a: bool = ..., em: bool = ..., n: str = ..
     If an object is grouped with another object that has the same name then one of
     the objects will be renamed by this command.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create an empty group node with no children
+        cmds.group( em=True, name='null1' )
+        # create some objects and group them
+        cmds.sphere( n='sphere1' )
+        cmds.circle( n='circle1' )
+        cmds.group( 'circle1', 'sphere1', n='group1' )
+        # create a group node under another node and move
+        # the sphere under the new group node.
+        cmds.group( 'sphere1', parent='null1' )
+    ```
+
     ---
     - Args:
         - [objects...]: Input item(s).
@@ -77,6 +105,20 @@ def group([objects...]: [objects...], absolute: bool = ..., a: bool = ..., empty
     
     If an object is grouped with another object that has the same name then one of
     the objects will be renamed by this command.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create an empty group node with no children
+        cmds.group( em=True, name='null1' )
+        # create some objects and group them
+        cmds.sphere( n='sphere1' )
+        cmds.circle( n='circle1' )
+        cmds.group( 'circle1', 'sphere1', n='group1' )
+        # create a group node under another node and move
+        # the sphere under the new group node.
+        cmds.group( 'sphere1', parent='null1' )
+    ```
 
     ---
     - Args:

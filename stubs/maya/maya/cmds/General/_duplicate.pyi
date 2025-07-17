@@ -33,6 +33,45 @@ def duplicate([objects...]: [objects...], fullPath: bool = ..., inputConnections
     
     See also: instance
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a hierarchy of two spheres;
+        cmds.sphere( n='sphere1' )
+        cmds.move( 3, 0, 0 )
+        cmds.sphere( n='sphere2' )
+        cmds.move( -3, 0, 0 )
+        cmds.group( 'sphere1', 'sphere2', n='group1' )
+        cmds.circle( n='circle1' )
+        # Create a duplicate of the group
+        cmds.duplicate( 'group1' )
+        # Result: group2 sphere1 sphere2 #
+        cmds.undo()
+        cmds.duplicate( 'group1', rr=True )
+        # Result: group2 #
+        # Create a row of 4 circles equally spaced using
+        # the -smartTransform flag.
+        cmds.duplicate( 'circle1' )
+        cmds.move( 3, 0, 0 )
+        cmds.duplicate( st=True )
+        cmds.duplicate( st=True )
+        # Duplicate a sphere along with its input connections.
+        # If animCurves were feeding into original transforms of the
+        # sphere, they will feed into the duplicated ones also.
+        # If the sphere has history (in this case it does),
+        # then the history is connected to the duplicate. Note that
+        # changing the radius for the makeNurbSphere for the sphere1
+        # affects the duplicated sphere.
+        #
+        cmds.duplicate( 'group1|sphere1', ic=True )
+        cmds.move( 0, 0, 0 )
+        cmds.setAttr( 'makeNurbSphere1.radius', 2 )
+        # Duplicate selected objects along with their upstream nodes
+        # and connections. This will duplicate the history.
+        cmds.select( 'group1|sphere2' )
+        cmds.duplicate( un=True )
+    ```
+
     ---
     - Args:
         - [objects...]: Input item(s).
@@ -79,6 +118,45 @@ def duplicate([objects...]: [objects...], f: bool = ..., ic: bool = ..., ilf: bo
     
     See also: instance
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a hierarchy of two spheres;
+        cmds.sphere( n='sphere1' )
+        cmds.move( 3, 0, 0 )
+        cmds.sphere( n='sphere2' )
+        cmds.move( -3, 0, 0 )
+        cmds.group( 'sphere1', 'sphere2', n='group1' )
+        cmds.circle( n='circle1' )
+        # Create a duplicate of the group
+        cmds.duplicate( 'group1' )
+        # Result: group2 sphere1 sphere2 #
+        cmds.undo()
+        cmds.duplicate( 'group1', rr=True )
+        # Result: group2 #
+        # Create a row of 4 circles equally spaced using
+        # the -smartTransform flag.
+        cmds.duplicate( 'circle1' )
+        cmds.move( 3, 0, 0 )
+        cmds.duplicate( st=True )
+        cmds.duplicate( st=True )
+        # Duplicate a sphere along with its input connections.
+        # If animCurves were feeding into original transforms of the
+        # sphere, they will feed into the duplicated ones also.
+        # If the sphere has history (in this case it does),
+        # then the history is connected to the duplicate. Note that
+        # changing the radius for the makeNurbSphere for the sphere1
+        # affects the duplicated sphere.
+        #
+        cmds.duplicate( 'group1|sphere1', ic=True )
+        cmds.move( 0, 0, 0 )
+        cmds.setAttr( 'makeNurbSphere1.radius', 2 )
+        # Duplicate selected objects along with their upstream nodes
+        # and connections. This will duplicate the history.
+        cmds.select( 'group1|sphere2' )
+        cmds.duplicate( un=True )
+    ```
+
     ---
     - Args:
         - [objects...]: Input item(s).
@@ -124,6 +202,45 @@ def duplicate([objects...]: [objects...], fullPath: bool = ..., f: bool = ..., i
     duplicated.
     
     See also: instance
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a hierarchy of two spheres;
+        cmds.sphere( n='sphere1' )
+        cmds.move( 3, 0, 0 )
+        cmds.sphere( n='sphere2' )
+        cmds.move( -3, 0, 0 )
+        cmds.group( 'sphere1', 'sphere2', n='group1' )
+        cmds.circle( n='circle1' )
+        # Create a duplicate of the group
+        cmds.duplicate( 'group1' )
+        # Result: group2 sphere1 sphere2 #
+        cmds.undo()
+        cmds.duplicate( 'group1', rr=True )
+        # Result: group2 #
+        # Create a row of 4 circles equally spaced using
+        # the -smartTransform flag.
+        cmds.duplicate( 'circle1' )
+        cmds.move( 3, 0, 0 )
+        cmds.duplicate( st=True )
+        cmds.duplicate( st=True )
+        # Duplicate a sphere along with its input connections.
+        # If animCurves were feeding into original transforms of the
+        # sphere, they will feed into the duplicated ones also.
+        # If the sphere has history (in this case it does),
+        # then the history is connected to the duplicate. Note that
+        # changing the radius for the makeNurbSphere for the sphere1
+        # affects the duplicated sphere.
+        #
+        cmds.duplicate( 'group1|sphere1', ic=True )
+        cmds.move( 0, 0, 0 )
+        cmds.setAttr( 'makeNurbSphere1.radius', 2 )
+        # Duplicate selected objects along with their upstream nodes
+        # and connections. This will duplicate the history.
+        cmds.select( 'group1|sphere2' )
+        cmds.duplicate( un=True )
+    ```
 
     ---
     - Args:

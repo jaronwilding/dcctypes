@@ -14,6 +14,28 @@ def rotate(float float float [objects]: float float float [objects], absolute: b
     The default behaviour, when no objects or flags are passed, is to do a
     absolute rotate on each currently selected object in the world space.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a circle and grouped cone to rotate;
+        cmds.circle( n='circle1' )
+        cmds.cone( ax=(0, 1, 0), n='cone1' )
+        cmds.group( 'cone1', n='group1' )
+        # rotate the active objects 45 degrees about the world space X axis
+        # centered at each object's rotate pivot point.
+        cmds.select( 'cone1' )
+        cmds.rotate( '45deg', 0, 0, r=True )
+        # Set the rotation values for group1 to (90, 0, 0). This is
+        # equivalent to:
+        #   cmds.setAttr('group1.rx',90)
+        #   cmds.setAttr('group1.ry',0)
+        #   cmds.setAttr('group1.rz',0)
+        cmds.rotate( '90deg', 0, 0, 'group1' )
+        # rotate the circle 180 degrees about its local space Y axis
+        # centered at the rotate pivot point 1 0 0.
+        cmds.rotate( 0, '180deg', 0, 'circle1', pivot=(1, 0, 0) )
+    ```
+
     ---
     - Args:
         - float float float [objects]: Input item(s).
@@ -64,6 +86,28 @@ def rotate(float float float [objects]: float float float [objects], a: bool = .
     The default behaviour, when no objects or flags are passed, is to do a
     absolute rotate on each currently selected object in the world space.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a circle and grouped cone to rotate;
+        cmds.circle( n='circle1' )
+        cmds.cone( ax=(0, 1, 0), n='cone1' )
+        cmds.group( 'cone1', n='group1' )
+        # rotate the active objects 45 degrees about the world space X axis
+        # centered at each object's rotate pivot point.
+        cmds.select( 'cone1' )
+        cmds.rotate( '45deg', 0, 0, r=True )
+        # Set the rotation values for group1 to (90, 0, 0). This is
+        # equivalent to:
+        #   cmds.setAttr('group1.rx',90)
+        #   cmds.setAttr('group1.ry',0)
+        #   cmds.setAttr('group1.rz',0)
+        cmds.rotate( '90deg', 0, 0, 'group1' )
+        # rotate the circle 180 degrees about its local space Y axis
+        # centered at the rotate pivot point 1 0 0.
+        cmds.rotate( 0, '180deg', 0, 'circle1', pivot=(1, 0, 0) )
+    ```
+
     ---
     - Args:
         - float float float [objects]: Input item(s).
@@ -113,6 +157,28 @@ def rotate(float float float [objects]: float float float [objects], absolute: b
     
     The default behaviour, when no objects or flags are passed, is to do a
     absolute rotate on each currently selected object in the world space.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create a circle and grouped cone to rotate;
+        cmds.circle( n='circle1' )
+        cmds.cone( ax=(0, 1, 0), n='cone1' )
+        cmds.group( 'cone1', n='group1' )
+        # rotate the active objects 45 degrees about the world space X axis
+        # centered at each object's rotate pivot point.
+        cmds.select( 'cone1' )
+        cmds.rotate( '45deg', 0, 0, r=True )
+        # Set the rotation values for group1 to (90, 0, 0). This is
+        # equivalent to:
+        #   cmds.setAttr('group1.rx',90)
+        #   cmds.setAttr('group1.ry',0)
+        #   cmds.setAttr('group1.rz',0)
+        cmds.rotate( '90deg', 0, 0, 'group1' )
+        # rotate the circle 180 degrees about its local space Y axis
+        # centered at the rotate pivot point 1 0 0.
+        cmds.rotate( 0, '180deg', 0, 'circle1', pivot=(1, 0, 0) )
+    ```
 
     ---
     - Args:

@@ -10,6 +10,30 @@ def hilite([objects]: [objects], replace: bool = ..., toggle: bool = ..., unHili
     possible to select the components of the object. If no objects are specified
     then the selection list is used.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Create a few objects.
+        #
+        sphere = cmds.sphere()
+        cmds.move( 0, 0, 3, relative=True )
+        cone = cmds.cone()
+        cmds.move( 0, 0, -3, relative=True )
+        cylinder = cmds.cylinder()
+        #    Select the sphere.
+        #
+        cmds.select( sphere, replace=True )
+        #    Add the cone and cylinder to the hilite list.
+        #
+        cmds.hilite( cone[0], cylinder[0] )
+        #    Toggle the hilite state of the cylinder.
+        #
+        cmds.hilite( cylinder[0], toggle=True )
+        #    Replace the hilite list with the current selected objects.
+        #
+        cmds.hilite( replace=True )
+    ```
+
     ---
     - Args:
         - [objects]: Input item(s).
@@ -25,6 +49,30 @@ def hilite([objects]: [objects], r: bool = ..., tgl: bool = ..., u: bool = ...) 
     possible to select the components of the object. If no objects are specified
     then the selection list is used.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Create a few objects.
+        #
+        sphere = cmds.sphere()
+        cmds.move( 0, 0, 3, relative=True )
+        cone = cmds.cone()
+        cmds.move( 0, 0, -3, relative=True )
+        cylinder = cmds.cylinder()
+        #    Select the sphere.
+        #
+        cmds.select( sphere, replace=True )
+        #    Add the cone and cylinder to the hilite list.
+        #
+        cmds.hilite( cone[0], cylinder[0] )
+        #    Toggle the hilite state of the cylinder.
+        #
+        cmds.hilite( cylinder[0], toggle=True )
+        #    Replace the hilite list with the current selected objects.
+        #
+        cmds.hilite( replace=True )
+    ```
+
     ---
     - Args:
         - [objects]: Input item(s).
@@ -39,6 +87,30 @@ def hilite([objects]: [objects], replace: bool = ..., r: bool = ..., toggle: boo
     Hilites/Unhilites the specified object(s). Hiliting an object makes it
     possible to select the components of the object. If no objects are specified
     then the selection list is used.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Create a few objects.
+        #
+        sphere = cmds.sphere()
+        cmds.move( 0, 0, 3, relative=True )
+        cone = cmds.cone()
+        cmds.move( 0, 0, -3, relative=True )
+        cylinder = cmds.cylinder()
+        #    Select the sphere.
+        #
+        cmds.select( sphere, replace=True )
+        #    Add the cone and cylinder to the hilite list.
+        #
+        cmds.hilite( cone[0], cylinder[0] )
+        #    Toggle the hilite state of the cylinder.
+        #
+        cmds.hilite( cylinder[0], toggle=True )
+        #    Replace the hilite list with the current selected objects.
+        #
+        cmds.hilite( replace=True )
+    ```
 
     ---
     - Args:

@@ -3,12 +3,19 @@
 from typing import Any, overload
 
 @overload #Overload for showManipCtx in ['create']
-def showManipCtx(string: str, exists: bool = ..., history: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., incSnap: [uint, boolean] = ..., incSnapRelative: [uint, boolean] = ..., incSnapValue: [uint, float] = ..., iveVisible: bool = ..., lockSelection: bool = ..., name: str = ..., toggleIncSnap: bool = ..., toolFinish: script = ..., toolStart: script = ...) -> str:
+def showManipCtx(string: str, exists: bool = ..., history: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., incSnap: [uint, boolean] = ..., incSnapRelative: [uint, boolean] = ..., incSnapValue: [uint, float] = ..., lockSelection: bool = ..., name: str = ..., toggleIncSnap: bool = ..., toolFinish: script = ..., toolStart: script = ...) -> str:
     """showManipCtx is undoable, queryable, and editable.
     
     This command can be used to create a show manip context. The show manip
     context will display manips for all selected objects that have valid manips
     defined for them.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Creates a new show manip context.
+        cmds.showManipCtx()
+    ```
 
     ---
     - Args:
@@ -21,7 +28,6 @@ def showManipCtx(string: str, exists: bool = ..., history: bool = ..., image1: s
         - incSnap: If true, the manipulator owned by the context will use incremental snapping for specified mode.
         - incSnapRelative (isr): If true, the manipulator owned by the context will use relative incremental snapping for specified mode.
         - incSnapValue (isv): Supply the step value which the manipulator owned by the context will use for specified mode.
-        - iveVisible (iv): Set the In View Editor visible or not.
         - lockSelection (ls): If true, this context will never change the current selection. By default this is set to false.
         - name (n): If this is a tool command, name the tool appropriately.
         - toggleIncSnap (tis): Toggles (enables/disables) snapping for all modes.
@@ -29,12 +35,19 @@ def showManipCtx(string: str, exists: bool = ..., history: bool = ..., image1: s
         - toolStart (ts): Supply the script that will be run when the user first enters the script
     """
 @overload #Overload for showManipCtx in ['create']
-def showManipCtx(string: str, ex: bool = ..., ch: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., isr: [uint, boolean] = ..., isv: [uint, float] = ..., iv: bool = ..., ls: bool = ..., n: str = ..., tis: bool = ..., tf: script = ..., ts: script = ...) -> str:
+def showManipCtx(string: str, ex: bool = ..., ch: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., isr: [uint, boolean] = ..., isv: [uint, float] = ..., ls: bool = ..., n: str = ..., tis: bool = ..., tf: script = ..., ts: script = ...) -> str:
     """showManipCtx is undoable, queryable, and editable.
     
     This command can be used to create a show manip context. The show manip
     context will display manips for all selected objects that have valid manips
     defined for them.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Creates a new show manip context.
+        cmds.showManipCtx()
+    ```
 
     ---
     - Args:
@@ -47,7 +60,6 @@ def showManipCtx(string: str, ex: bool = ..., ch: bool = ..., i1: str = ..., i2:
         - incSnap: If true, the manipulator owned by the context will use incremental snapping for specified mode.
         - incSnapRelative (isr): If true, the manipulator owned by the context will use relative incremental snapping for specified mode.
         - incSnapValue (isv): Supply the step value which the manipulator owned by the context will use for specified mode.
-        - iveVisible (iv): Set the In View Editor visible or not.
         - lockSelection (ls): If true, this context will never change the current selection. By default this is set to false.
         - name (n): If this is a tool command, name the tool appropriately.
         - toggleIncSnap (tis): Toggles (enables/disables) snapping for all modes.
@@ -55,12 +67,19 @@ def showManipCtx(string: str, ex: bool = ..., ch: bool = ..., i1: str = ..., i2:
         - toolStart (ts): Supply the script that will be run when the user first enters the script
     """
 @overload #Overload for showManipCtx in ['create']
-def showManipCtx(string: str, exists: bool = ..., ex: bool = ..., history: bool = ..., ch: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., incSnap: [uint, boolean] = ..., incSnapRelative: [uint, boolean] = ..., isr: [uint, boolean] = ..., incSnapValue: [uint, float] = ..., isv: [uint, float] = ..., iveVisible: bool = ..., iv: bool = ..., lockSelection: bool = ..., ls: bool = ..., name: str = ..., n: str = ..., toggleIncSnap: bool = ..., tis: bool = ..., toolFinish: script = ..., tf: script = ..., toolStart: script = ..., ts: script = ...) -> str:
+def showManipCtx(string: str, exists: bool = ..., ex: bool = ..., history: bool = ..., ch: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., incSnap: [uint, boolean] = ..., incSnapRelative: [uint, boolean] = ..., isr: [uint, boolean] = ..., incSnapValue: [uint, float] = ..., isv: [uint, float] = ..., lockSelection: bool = ..., ls: bool = ..., name: str = ..., n: str = ..., toggleIncSnap: bool = ..., tis: bool = ..., toolFinish: script = ..., tf: script = ..., toolStart: script = ..., ts: script = ...) -> str:
     """showManipCtx is undoable, queryable, and editable.
     
     This command can be used to create a show manip context. The show manip
     context will display manips for all selected objects that have valid manips
     defined for them.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Creates a new show manip context.
+        cmds.showManipCtx()
+    ```
 
     ---
     - Args:
@@ -73,7 +92,6 @@ def showManipCtx(string: str, exists: bool = ..., ex: bool = ..., history: bool 
         - incSnap: If true, the manipulator owned by the context will use incremental snapping for specified mode.
         - incSnapRelative (isr): If true, the manipulator owned by the context will use relative incremental snapping for specified mode.
         - incSnapValue (isv): Supply the step value which the manipulator owned by the context will use for specified mode.
-        - iveVisible (iv): Set the In View Editor visible or not.
         - lockSelection (ls): If true, this context will never change the current selection. By default this is set to false.
         - name (n): If this is a tool command, name the tool appropriately.
         - toggleIncSnap (tis): Toggles (enables/disables) snapping for all modes.
@@ -81,12 +99,19 @@ def showManipCtx(string: str, exists: bool = ..., ex: bool = ..., history: bool 
         - toolStart (ts): Supply the script that will be run when the user first enters the script
     """
 @overload #Overload for showManipCtx in ['query']
-def showManipCtx(string: str, currentNodeName: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., incSnap: [uint, boolean] = ..., incSnapRelative: [uint, boolean] = ..., incSnapUI: bool = ..., incSnapValue: [uint, float] = ..., iveVisible: bool = ..., lockSelection: bool = ..., selectedAttributes: bool = ..., toggleIncSnap: bool = ..., toolFinish: script = ..., toolStart: script = ..., query: bool = ...) -> str:
+def showManipCtx(string: str, currentNodeName: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., incSnap: [uint, boolean] = ..., incSnapRelative: [uint, boolean] = ..., incSnapUI: bool = ..., incSnapValue: [uint, float] = ..., iveVisible: bool = ..., lockSelection: bool = ..., selectedAttributes: bool = ..., toolFinish: script = ..., toolStart: script = ..., query: bool = ...) -> str:
     """showManipCtx is undoable, queryable, and editable.
     
     This command can be used to create a show manip context. The show manip
     context will display manips for all selected objects that have valid manips
     defined for them.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Creates a new show manip context.
+        cmds.showManipCtx()
+    ```
 
     ---
     - Args:
@@ -103,18 +128,24 @@ def showManipCtx(string: str, currentNodeName: bool = ..., image1: str = ..., im
         - iveVisible (iv): Set the In View Editor visible or not.
         - lockSelection (ls): If true, this context will never change the current selection. By default this is set to false.
         - selectedAttributes (sa): Returns a list of the names of the attributes that are currently visible in the In View Editor.
-        - toggleIncSnap (tis): Toggles (enables/disables) snapping for all modes.
         - toolFinish (tf): Supply the script that will be run when the user exits the script.
         - toolStart (ts): Supply the script that will be run when the user first enters the script
         - query (q): Query mode flag
     """
 @overload #Overload for showManipCtx in ['query']
-def showManipCtx(string: str, cnn: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., isr: [uint, boolean] = ..., isu: bool = ..., isv: [uint, float] = ..., iv: bool = ..., ls: bool = ..., sa: bool = ..., tis: bool = ..., tf: script = ..., ts: script = ..., q: bool = ...) -> str:
+def showManipCtx(string: str, cnn: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., isr: [uint, boolean] = ..., isu: bool = ..., isv: [uint, float] = ..., iv: bool = ..., ls: bool = ..., sa: bool = ..., tf: script = ..., ts: script = ..., q: bool = ...) -> str:
     """showManipCtx is undoable, queryable, and editable.
     
     This command can be used to create a show manip context. The show manip
     context will display manips for all selected objects that have valid manips
     defined for them.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Creates a new show manip context.
+        cmds.showManipCtx()
+    ```
 
     ---
     - Args:
@@ -131,18 +162,24 @@ def showManipCtx(string: str, cnn: bool = ..., i1: str = ..., i2: str = ..., i3:
         - iveVisible (iv): Set the In View Editor visible or not.
         - lockSelection (ls): If true, this context will never change the current selection. By default this is set to false.
         - selectedAttributes (sa): Returns a list of the names of the attributes that are currently visible in the In View Editor.
-        - toggleIncSnap (tis): Toggles (enables/disables) snapping for all modes.
         - toolFinish (tf): Supply the script that will be run when the user exits the script.
         - toolStart (ts): Supply the script that will be run when the user first enters the script
         - query (q): Query mode flag
     """
 @overload #Overload for showManipCtx in ['query']
-def showManipCtx(string: str, currentNodeName: bool = ..., cnn: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., incSnap: [uint, boolean] = ..., incSnapRelative: [uint, boolean] = ..., isr: [uint, boolean] = ..., incSnapUI: bool = ..., isu: bool = ..., incSnapValue: [uint, float] = ..., isv: [uint, float] = ..., iveVisible: bool = ..., iv: bool = ..., lockSelection: bool = ..., ls: bool = ..., selectedAttributes: bool = ..., sa: bool = ..., toggleIncSnap: bool = ..., tis: bool = ..., toolFinish: script = ..., tf: script = ..., toolStart: script = ..., ts: script = ..., query: bool = ..., q: bool = ...) -> str:
+def showManipCtx(string: str, currentNodeName: bool = ..., cnn: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., incSnap: [uint, boolean] = ..., incSnapRelative: [uint, boolean] = ..., isr: [uint, boolean] = ..., incSnapUI: bool = ..., isu: bool = ..., incSnapValue: [uint, float] = ..., isv: [uint, float] = ..., iveVisible: bool = ..., iv: bool = ..., lockSelection: bool = ..., ls: bool = ..., selectedAttributes: bool = ..., sa: bool = ..., toolFinish: script = ..., tf: script = ..., toolStart: script = ..., ts: script = ..., query: bool = ..., q: bool = ...) -> str:
     """showManipCtx is undoable, queryable, and editable.
     
     This command can be used to create a show manip context. The show manip
     context will display manips for all selected objects that have valid manips
     defined for them.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Creates a new show manip context.
+        cmds.showManipCtx()
+    ```
 
     ---
     - Args:
@@ -159,7 +196,6 @@ def showManipCtx(string: str, currentNodeName: bool = ..., cnn: bool = ..., imag
         - iveVisible (iv): Set the In View Editor visible or not.
         - lockSelection (ls): If true, this context will never change the current selection. By default this is set to false.
         - selectedAttributes (sa): Returns a list of the names of the attributes that are currently visible in the In View Editor.
-        - toggleIncSnap (tis): Toggles (enables/disables) snapping for all modes.
         - toolFinish (tf): Supply the script that will be run when the user exits the script.
         - toolStart (ts): Supply the script that will be run when the user first enters the script
         - query (q): Query mode flag
@@ -171,6 +207,13 @@ def showManipCtx(string: str, addAttr: str = ..., image1: str = ..., image2: str
     This command can be used to create a show manip context. The show manip
     context will display manips for all selected objects that have valid manips
     defined for them.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Creates a new show manip context.
+        cmds.showManipCtx()
+    ```
 
     ---
     - Args:
@@ -205,6 +248,13 @@ def showManipCtx(string: str, aa: str = ..., i1: str = ..., i2: str = ..., i3: s
     context will display manips for all selected objects that have valid manips
     defined for them.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Creates a new show manip context.
+        cmds.showManipCtx()
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -237,6 +287,13 @@ def showManipCtx(string: str, addAttr: str = ..., aa: str = ..., image1: str = .
     This command can be used to create a show manip context. The show manip
     context will display manips for all selected objects that have valid manips
     defined for them.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Creates a new show manip context.
+        cmds.showManipCtx()
+    ```
 
     ---
     - Args:

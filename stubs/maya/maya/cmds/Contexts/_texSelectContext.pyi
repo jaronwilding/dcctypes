@@ -8,6 +8,12 @@ def texSelectContext(exists: bool = ..., image1: str = ..., image2: str = ..., i
     
     Command used to register the texSelectCtx tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texSelectContext()
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -20,6 +26,12 @@ def texSelectContext(ex: bool = ..., i1: str = ..., i2: str = ..., i3: str = ...
     """texSelectContext is undoable, queryable, and editable.
     
     Command used to register the texSelectCtx tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texSelectContext()
+    ```
 
     ---
     - Args:
@@ -34,6 +46,12 @@ def texSelectContext(exists: bool = ..., ex: bool = ..., image1: str = ..., i1: 
     
     Command used to register the texSelectCtx tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texSelectContext()
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -46,6 +64,12 @@ def texSelectContext(image1: str = ..., image2: str = ..., image3: str = ..., qu
     """texSelectContext is undoable, queryable, and editable.
     
     Command used to register the texSelectCtx tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texSelectContext()
+    ```
 
     ---
     - Args:
@@ -60,6 +84,12 @@ def texSelectContext(i1: str = ..., i2: str = ..., i3: str = ..., q: bool = ...)
     
     Command used to register the texSelectCtx tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texSelectContext()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -72,6 +102,12 @@ def texSelectContext(image1: str = ..., i1: str = ..., image2: str = ..., i2: st
     """texSelectContext is undoable, queryable, and editable.
     
     Command used to register the texSelectCtx tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texSelectContext()
+    ```
 
     ---
     - Args:
@@ -86,6 +122,12 @@ def texSelectContext(image1: str = ..., image2: str = ..., image3: str = ..., ed
     
     Command used to register the texSelectCtx tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texSelectContext()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -99,6 +141,12 @@ def texSelectContext(i1: str = ..., i2: str = ..., i3: str = ..., e: bool = ...)
     
     Command used to register the texSelectCtx tool.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texSelectContext()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -111,6 +159,12 @@ def texSelectContext(image1: str = ..., i1: str = ..., image2: str = ..., i2: st
     """texSelectContext is undoable, queryable, and editable.
     
     Command used to register the texSelectCtx tool.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.texSelectContext()
+    ```
 
     ---
     - Args:

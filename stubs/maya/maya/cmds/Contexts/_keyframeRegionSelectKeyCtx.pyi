@@ -9,6 +9,14 @@ def keyframeRegionSelectKeyCtx(contextName: contextName, exists: bool = ..., his
     This command creates a context which may be used to select keyframes within
     the keyframe region of the dope sheet editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a select key context for the dope sheet editor
+        #
+        cmds.keyframeRegionSelectKeyCtx( 'keyframeRegionSelectKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -25,6 +33,14 @@ def keyframeRegionSelectKeyCtx(contextName: contextName, ex: bool = ..., ch: boo
     
     This command creates a context which may be used to select keyframes within
     the keyframe region of the dope sheet editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a select key context for the dope sheet editor
+        #
+        cmds.keyframeRegionSelectKeyCtx( 'keyframeRegionSelectKeyContext' )
+    ```
 
     ---
     - Args:
@@ -43,6 +59,14 @@ def keyframeRegionSelectKeyCtx(contextName: contextName, exists: bool = ..., ex:
     This command creates a context which may be used to select keyframes within
     the keyframe region of the dope sheet editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a select key context for the dope sheet editor
+        #
+        cmds.keyframeRegionSelectKeyCtx( 'keyframeRegionSelectKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -60,6 +84,14 @@ def keyframeRegionSelectKeyCtx(contextName: contextName, image1: str = ..., imag
     This command creates a context which may be used to select keyframes within
     the keyframe region of the dope sheet editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a select key context for the dope sheet editor
+        #
+        cmds.keyframeRegionSelectKeyCtx( 'keyframeRegionSelectKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -74,6 +106,14 @@ def keyframeRegionSelectKeyCtx(contextName: contextName, i1: str = ..., i2: str 
     
     This command creates a context which may be used to select keyframes within
     the keyframe region of the dope sheet editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a select key context for the dope sheet editor
+        #
+        cmds.keyframeRegionSelectKeyCtx( 'keyframeRegionSelectKeyContext' )
+    ```
 
     ---
     - Args:
@@ -90,6 +130,14 @@ def keyframeRegionSelectKeyCtx(contextName: contextName, image1: str = ..., i1: 
     This command creates a context which may be used to select keyframes within
     the keyframe region of the dope sheet editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a select key context for the dope sheet editor
+        #
+        cmds.keyframeRegionSelectKeyCtx( 'keyframeRegionSelectKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -104,6 +152,14 @@ def keyframeRegionSelectKeyCtx(contextName: contextName, image1: str = ..., imag
     
     This command creates a context which may be used to select keyframes within
     the keyframe region of the dope sheet editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a select key context for the dope sheet editor
+        #
+        cmds.keyframeRegionSelectKeyCtx( 'keyframeRegionSelectKeyContext' )
+    ```
 
     ---
     - Args:
@@ -120,6 +176,14 @@ def keyframeRegionSelectKeyCtx(contextName: contextName, i1: str = ..., i2: str 
     This command creates a context which may be used to select keyframes within
     the keyframe region of the dope sheet editor
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a select key context for the dope sheet editor
+        #
+        cmds.keyframeRegionSelectKeyCtx( 'keyframeRegionSelectKeyContext' )
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -134,6 +198,14 @@ def keyframeRegionSelectKeyCtx(contextName: contextName, image1: str = ..., i1: 
     
     This command creates a context which may be used to select keyframes within
     the keyframe region of the dope sheet editor
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a select key context for the dope sheet editor
+        #
+        cmds.keyframeRegionSelectKeyCtx( 'keyframeRegionSelectKeyContext' )
+    ```
 
     ---
     - Args:

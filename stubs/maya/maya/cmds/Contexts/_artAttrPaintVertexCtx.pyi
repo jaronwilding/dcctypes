@@ -3,7 +3,7 @@
 from typing import Any, overload
 
 @overload #Overload for artAttrPaintVertexCtx in ['create']
-def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., activeListChangedProc: str = ..., afterStrokeCmd: str = ..., alphaclamp: str = ..., alphaclamplower: float = ..., alphaclampupper: float = ..., beforeStrokeCmd: str = ..., brushalignment: bool = ..., brushfeedback: bool = ..., clamp: str = ..., clamplower: float = ..., clampupper: float = ..., clear: bool = ..., colorAlphaValue: float = ..., colorRGBAValue: [float, float, float, float] = ..., colorRGBValue: [float, float, float] = ..., colorRamp: str = ..., colorfeedback: bool = ..., colorfeedbackOverride: bool = ..., colorrangelower: float = ..., colorrangeupper: float = ..., dataTypeIndex: int = ..., disablelighting: bool = ..., dragSlider: str = ..., duringStrokeCmd: str = ..., dynclonemode: bool = ..., exists: bool = ..., expandfilename: bool = ..., exportaspectratio: float = ..., exportfilemode: str = ..., exportfilesizex: int = ..., exportfilesizey: int = ..., exportfiletype: str = ..., history: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., importfilemode: str = ..., importreassign: bool = ..., interactiveUpdate: bool = ..., lastRecorderCmd: str = ..., lastStampName: str = ..., lowerradius: float = ..., makeStroke: int = ..., mappressure: str = ..., maxvalue: float = ..., minvalue: float = ..., name: str = ..., numericColorRamp: str = ..., numericDisplayColor: [float, float, float] = ..., numericDisplayPrecision: int = ..., numericMaxColor: [float, float, float] = ..., numericMinColor: [float, float, float] = ..., opacity: float = ..., outline: bool = ..., outwhilepaint: bool = ..., paintChannel: str = ..., paintComponent: int = ..., paintNumChannels: int = ..., paintRGBA: bool = ..., paintVertexFace: bool = ..., paintmode: str = ..., paintoperationtype: str = ..., pickColor: bool = ..., pickValue: bool = ..., playbackCursor: [float, float] = ..., playbackPressure: float = ..., preserveclonesource: bool = ..., profileShapeFile: str = ..., projective: bool = ..., radius: float = ..., rampMaxColor: [float, float, float] = ..., rampMinColor: [float, float, float] = ..., record: bool = ..., reflection: bool = ..., reflectionaboutorigin: bool = ..., reflectionaxis: str = ..., screenRadius: float = ..., selectclonesource: bool = ..., selectedattroper: str = ..., showactive: bool = ..., stampDepth: float = ..., stampProfile: str = ..., stampSpacing: float = ..., strokesmooth: str = ..., surfaceConformedBrushVertices: bool = ..., tangentOutline: bool = ..., toolOffProc: str = ..., toolOnProc: str = ..., useColorRamp: bool = ..., useMaxMinColor: bool = ..., useNumericColorRamp: bool = ..., useNumericDisplay: bool = ..., usepressure: bool = ..., value: float = ..., vertexColorRange: bool = ..., vertexColorRangeLower: float = ..., vertexColorRangeUpper: float = ..., whichTool: str = ..., worldRadius: float = ...) -> None:
+def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., activeListChangedProc: str = ..., afterStrokeCmd: str = ..., alphaclamp: str = ..., alphaclamplower: float = ..., alphaclampupper: float = ..., beforeStrokeCmd: str = ..., brushalignment: bool = ..., brushfeedback: bool = ..., clamp: str = ..., clamplower: float = ..., clampupper: float = ..., clear: bool = ..., colorAlphaValue: float = ..., colorRGBAValue: [float, float, float, float] = ..., colorRGBValue: [float, float, float] = ..., colorRamp: str = ..., colorfeedback: bool = ..., colorfeedbackOverride: bool = ..., colorrangelower: float = ..., colorrangeupper: float = ..., disablelighting: bool = ..., dragSlider: str = ..., duringStrokeCmd: str = ..., dynclonemode: bool = ..., exists: bool = ..., expandfilename: bool = ..., exportaspectratio: float = ..., exportfilemode: str = ..., exportfilesizex: int = ..., exportfilesizey: int = ..., exportfiletype: str = ..., history: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., importfilemode: str = ..., importreassign: bool = ..., interactiveUpdate: bool = ..., lastRecorderCmd: str = ..., lastStampName: str = ..., lowerradius: float = ..., makeStroke: int = ..., mappressure: str = ..., maxvalue: float = ..., minvalue: float = ..., name: str = ..., numericColorRamp: str = ..., numericDisplayColor: [float, float, float] = ..., numericDisplayPrecision: int = ..., numericMaxColor: [float, float, float] = ..., numericMinColor: [float, float, float] = ..., opacity: float = ..., outline: bool = ..., outwhilepaint: bool = ..., paintChannel: str = ..., paintComponent: int = ..., paintNumChannels: int = ..., paintRGBA: bool = ..., paintVertexFace: bool = ..., paintmode: str = ..., paintoperationtype: str = ..., pickColor: bool = ..., pickValue: bool = ..., playbackCursor: [float, float] = ..., playbackPressure: float = ..., preserveclonesource: bool = ..., projective: bool = ..., radius: float = ..., rampMaxColor: [float, float, float] = ..., rampMinColor: [float, float, float] = ..., record: bool = ..., reflection: bool = ..., reflectionaboutorigin: bool = ..., reflectionaxis: str = ..., screenRadius: float = ..., selectclonesource: bool = ..., selectedattroper: str = ..., showactive: bool = ..., stampDepth: float = ..., stampProfile: str = ..., stampSpacing: float = ..., strokesmooth: str = ..., surfaceConformedBrushVertices: bool = ..., tangentOutline: bool = ..., toolOffProc: str = ..., toolOnProc: str = ..., useColorRamp: bool = ..., useMaxMinColor: bool = ..., useNumericColorRamp: bool = ..., useNumericDisplay: bool = ..., usepressure: bool = ..., value: float = ..., vertexColorRange: bool = ..., vertexColorRangeLower: float = ..., vertexColorRangeUpper: float = ..., whichTool: str = ..., worldRadius: float = ...) -> None:
     """artAttrPaintVertexCtx is undoable, queryable, and editable.
     
     This is a context command to set the flags on the artAttrContext, which is the
@@ -13,6 +13,14 @@ def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., activeLi
     
     This is a context command to set the flags on the Paint color on vertex Tool
     context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new vertexAttr paint context, then switch to it
+        cmds.artAttrPaintVertexCtx('artAttrPaintVertexCtx1')
+        cmds.setToolTo('artAttrPaintVertexCtx1')
+    ```
 
     ---
     - Args:
@@ -41,7 +49,6 @@ def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., activeLi
         - colorfeedbackOverride (cfo): Sets on/off the color feedback override. C: Default is FALSE.  Q: When queried, it returns a boolean.
         - colorrangelower (crl): Specifies the value that maps to black when color feedback mode is on. C: Default is 0.0.  Q: When queried, it returns a float.
         - colorrangeupper (cru): Specifies the value that maps to the maximum color when color feedback mode is on. C: Default is 1.0.  Q: When queried, it returns a float.
-        - dataTypeIndex (dti): When the selected paintable attribute is a vectorArray, it specifies which field to paint on.
         - disablelighting (dl): If color feedback is on, this flag determines whether lighting is disabled or not for the surfaces that are affected. C: Default is FALSE.  Q: When queried, it returns a boolean.
         - dragSlider (dsl): Sets the current brush drag state for resizing or offsetting the brush (like the 'b' and 'm' default hotkeys). The string argument is one of: "radius", "lowradius", "opacity", "value", "depth", "displacement", "uvvector" or "none". C:
             Default is "none".
@@ -92,7 +99,6 @@ def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., activeLi
         - playbackCursor (plc): Values for the playback cursor.
         - playbackPressure (plp): Valus for the playback pressure.
         - preserveclonesource (pcs): Whether or not to preserve a clone source.
-        - profileShapeFile (psf): Passes a name of the image file for the stamp shape profile.
         - projective (prm): Specifies the projective paint mode. C: Default is 'false'. Q: When queried, it returns a boolean.
         - radius (r): Sets the size of the brush. C: Default is 1.0 cm. Q: When queried, it returns a float.
         - rampMaxColor (rxc): Defines a special color to be used when the value is greater than or equal to the maximum value.
@@ -132,7 +138,7 @@ def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., activeLi
         - worldRadius (wlR): Radius in worldspace
     """
 @overload #Overload for artAttrPaintVertexCtx in ['create']
-def artAttrPaintVertexCtx([context]: [context], aco: bool = ..., alp: str = ..., asc: str = ..., alc: str = ..., acl: float = ..., acu: float = ..., bsc: str = ..., bra: bool = ..., brf: bool = ..., cl: str = ..., cll: float = ..., clu: float = ..., clr: bool = ..., cl1: float = ..., cl4: [float, float, float, float] = ..., cl3: [float, float, float] = ..., cr: str = ..., cf: bool = ..., cfo: bool = ..., crl: float = ..., cru: float = ..., dti: int = ..., dl: bool = ..., dsl: str = ..., dsk: str = ..., dcm: bool = ..., ex: bool = ..., eef: bool = ..., ear: float = ..., efm: str = ..., fsx: int = ..., fsy: int = ..., eft: str = ..., ch: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., ifm: str = ..., irm: bool = ..., iu: bool = ..., lrc: str = ..., lsn: str = ..., lr: float = ..., mst: int = ..., mp: str = ..., mxv: float = ..., miv: float = ..., n: str = ..., ncr: str = ..., ndc: [float, float, float] = ..., ndp: int = ..., nxc: [float, float, float] = ..., nmc: [float, float, float] = ..., op: float = ..., o: bool = ..., owp: bool = ..., pch: str = ..., pc: int = ..., pnc: int = ..., pc4: bool = ..., pvf: bool = ..., pm: str = ..., pot: str = ..., pcm: bool = ..., pv: bool = ..., plc: [float, float] = ..., plp: float = ..., pcs: bool = ..., psf: str = ..., prm: bool = ..., r: float = ..., rxc: [float, float, float] = ..., rmc: [float, float, float] = ..., rec: bool = ..., rn: bool = ..., rno: bool = ..., ra: str = ..., scR: float = ..., scs: bool = ..., sao: str = ..., sa: bool = ..., stD: float = ..., stP: str = ..., stS: float = ..., ssm: str = ..., scv: bool = ..., to: bool = ..., tfp: str = ..., top: str = ..., ucr: bool = ..., umc: bool = ..., unr: bool = ..., und: bool = ..., up: bool = ..., val: float = ..., vcr: bool = ..., vcl: float = ..., vcu: float = ..., wst: str = ..., wlR: float = ...) -> None:
+def artAttrPaintVertexCtx([context]: [context], aco: bool = ..., alp: str = ..., asc: str = ..., alc: str = ..., acl: float = ..., acu: float = ..., bsc: str = ..., bra: bool = ..., brf: bool = ..., cl: str = ..., cll: float = ..., clu: float = ..., clr: bool = ..., cl1: float = ..., cl4: [float, float, float, float] = ..., cl3: [float, float, float] = ..., cr: str = ..., cf: bool = ..., cfo: bool = ..., crl: float = ..., cru: float = ..., dl: bool = ..., dsl: str = ..., dsk: str = ..., dcm: bool = ..., ex: bool = ..., eef: bool = ..., ear: float = ..., efm: str = ..., fsx: int = ..., fsy: int = ..., eft: str = ..., ch: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., ifm: str = ..., irm: bool = ..., iu: bool = ..., lrc: str = ..., lsn: str = ..., lr: float = ..., mst: int = ..., mp: str = ..., mxv: float = ..., miv: float = ..., n: str = ..., ncr: str = ..., ndc: [float, float, float] = ..., ndp: int = ..., nxc: [float, float, float] = ..., nmc: [float, float, float] = ..., op: float = ..., o: bool = ..., owp: bool = ..., pch: str = ..., pc: int = ..., pnc: int = ..., pc4: bool = ..., pvf: bool = ..., pm: str = ..., pot: str = ..., pcm: bool = ..., pv: bool = ..., plc: [float, float] = ..., plp: float = ..., pcs: bool = ..., prm: bool = ..., r: float = ..., rxc: [float, float, float] = ..., rmc: [float, float, float] = ..., rec: bool = ..., rn: bool = ..., rno: bool = ..., ra: str = ..., scR: float = ..., scs: bool = ..., sao: str = ..., sa: bool = ..., stD: float = ..., stP: str = ..., stS: float = ..., ssm: str = ..., scv: bool = ..., to: bool = ..., tfp: str = ..., top: str = ..., ucr: bool = ..., umc: bool = ..., unr: bool = ..., und: bool = ..., up: bool = ..., val: float = ..., vcr: bool = ..., vcl: float = ..., vcu: float = ..., wst: str = ..., wlR: float = ...) -> None:
     """artAttrPaintVertexCtx is undoable, queryable, and editable.
     
     This is a context command to set the flags on the artAttrContext, which is the
@@ -142,6 +148,14 @@ def artAttrPaintVertexCtx([context]: [context], aco: bool = ..., alp: str = ...,
     
     This is a context command to set the flags on the Paint color on vertex Tool
     context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new vertexAttr paint context, then switch to it
+        cmds.artAttrPaintVertexCtx('artAttrPaintVertexCtx1')
+        cmds.setToolTo('artAttrPaintVertexCtx1')
+    ```
 
     ---
     - Args:
@@ -170,7 +184,6 @@ def artAttrPaintVertexCtx([context]: [context], aco: bool = ..., alp: str = ...,
         - colorfeedbackOverride (cfo): Sets on/off the color feedback override. C: Default is FALSE.  Q: When queried, it returns a boolean.
         - colorrangelower (crl): Specifies the value that maps to black when color feedback mode is on. C: Default is 0.0.  Q: When queried, it returns a float.
         - colorrangeupper (cru): Specifies the value that maps to the maximum color when color feedback mode is on. C: Default is 1.0.  Q: When queried, it returns a float.
-        - dataTypeIndex (dti): When the selected paintable attribute is a vectorArray, it specifies which field to paint on.
         - disablelighting (dl): If color feedback is on, this flag determines whether lighting is disabled or not for the surfaces that are affected. C: Default is FALSE.  Q: When queried, it returns a boolean.
         - dragSlider (dsl): Sets the current brush drag state for resizing or offsetting the brush (like the 'b' and 'm' default hotkeys). The string argument is one of: "radius", "lowradius", "opacity", "value", "depth", "displacement", "uvvector" or "none". C:
             Default is "none".
@@ -221,7 +234,6 @@ def artAttrPaintVertexCtx([context]: [context], aco: bool = ..., alp: str = ...,
         - playbackCursor (plc): Values for the playback cursor.
         - playbackPressure (plp): Valus for the playback pressure.
         - preserveclonesource (pcs): Whether or not to preserve a clone source.
-        - profileShapeFile (psf): Passes a name of the image file for the stamp shape profile.
         - projective (prm): Specifies the projective paint mode. C: Default is 'false'. Q: When queried, it returns a boolean.
         - radius (r): Sets the size of the brush. C: Default is 1.0 cm. Q: When queried, it returns a float.
         - rampMaxColor (rxc): Defines a special color to be used when the value is greater than or equal to the maximum value.
@@ -261,7 +273,7 @@ def artAttrPaintVertexCtx([context]: [context], aco: bool = ..., alp: str = ...,
         - worldRadius (wlR): Radius in worldspace
     """
 @overload #Overload for artAttrPaintVertexCtx in ['create']
-def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., aco: bool = ..., activeListChangedProc: str = ..., alp: str = ..., afterStrokeCmd: str = ..., asc: str = ..., alphaclamp: str = ..., alc: str = ..., alphaclamplower: float = ..., acl: float = ..., alphaclampupper: float = ..., acu: float = ..., beforeStrokeCmd: str = ..., bsc: str = ..., brushalignment: bool = ..., bra: bool = ..., brushfeedback: bool = ..., brf: bool = ..., clamp: str = ..., cl: str = ..., clamplower: float = ..., cll: float = ..., clampupper: float = ..., clu: float = ..., clear: bool = ..., clr: bool = ..., colorAlphaValue: float = ..., cl1: float = ..., colorRGBAValue: [float, float, float, float] = ..., cl4: [float, float, float, float] = ..., colorRGBValue: [float, float, float] = ..., cl3: [float, float, float] = ..., colorRamp: str = ..., cr: str = ..., colorfeedback: bool = ..., cf: bool = ..., colorfeedbackOverride: bool = ..., cfo: bool = ..., colorrangelower: float = ..., crl: float = ..., colorrangeupper: float = ..., cru: float = ..., dataTypeIndex: int = ..., dti: int = ..., disablelighting: bool = ..., dl: bool = ..., dragSlider: str = ..., dsl: str = ..., duringStrokeCmd: str = ..., dsk: str = ..., dynclonemode: bool = ..., dcm: bool = ..., exists: bool = ..., ex: bool = ..., expandfilename: bool = ..., eef: bool = ..., exportaspectratio: float = ..., ear: float = ..., exportfilemode: str = ..., efm: str = ..., exportfilesizex: int = ..., fsx: int = ..., exportfilesizey: int = ..., fsy: int = ..., exportfiletype: str = ..., eft: str = ..., history: bool = ..., ch: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., importfilemode: str = ..., ifm: str = ..., importreassign: bool = ..., irm: bool = ..., interactiveUpdate: bool = ..., iu: bool = ..., lastRecorderCmd: str = ..., lrc: str = ..., lastStampName: str = ..., lsn: str = ..., lowerradius: float = ..., lr: float = ..., makeStroke: int = ..., mst: int = ..., mappressure: str = ..., mp: str = ..., maxvalue: float = ..., mxv: float = ..., minvalue: float = ..., miv: float = ..., name: str = ..., n: str = ..., numericColorRamp: str = ..., ncr: str = ..., numericDisplayColor: [float, float, float] = ..., ndc: [float, float, float] = ..., numericDisplayPrecision: int = ..., ndp: int = ..., numericMaxColor: [float, float, float] = ..., nxc: [float, float, float] = ..., numericMinColor: [float, float, float] = ..., nmc: [float, float, float] = ..., opacity: float = ..., op: float = ..., outline: bool = ..., o: bool = ..., outwhilepaint: bool = ..., owp: bool = ..., paintChannel: str = ..., pch: str = ..., paintComponent: int = ..., pc: int = ..., paintNumChannels: int = ..., pnc: int = ..., paintRGBA: bool = ..., pc4: bool = ..., paintVertexFace: bool = ..., pvf: bool = ..., paintmode: str = ..., pm: str = ..., paintoperationtype: str = ..., pot: str = ..., pickColor: bool = ..., pcm: bool = ..., pickValue: bool = ..., pv: bool = ..., playbackCursor: [float, float] = ..., plc: [float, float] = ..., playbackPressure: float = ..., plp: float = ..., preserveclonesource: bool = ..., pcs: bool = ..., profileShapeFile: str = ..., psf: str = ..., projective: bool = ..., prm: bool = ..., radius: float = ..., r: float = ..., rampMaxColor: [float, float, float] = ..., rxc: [float, float, float] = ..., rampMinColor: [float, float, float] = ..., rmc: [float, float, float] = ..., record: bool = ..., rec: bool = ..., reflection: bool = ..., rn: bool = ..., reflectionaboutorigin: bool = ..., rno: bool = ..., reflectionaxis: str = ..., ra: str = ..., screenRadius: float = ..., scR: float = ..., selectclonesource: bool = ..., scs: bool = ..., selectedattroper: str = ..., sao: str = ..., showactive: bool = ..., sa: bool = ..., stampDepth: float = ..., stD: float = ..., stampProfile: str = ..., stP: str = ..., stampSpacing: float = ..., stS: float = ..., strokesmooth: str = ..., ssm: str = ..., surfaceConformedBrushVertices: bool = ..., scv: bool = ..., tangentOutline: bool = ..., to: bool = ..., toolOffProc: str = ..., tfp: str = ..., toolOnProc: str = ..., top: str = ..., useColorRamp: bool = ..., ucr: bool = ..., useMaxMinColor: bool = ..., umc: bool = ..., useNumericColorRamp: bool = ..., unr: bool = ..., useNumericDisplay: bool = ..., und: bool = ..., usepressure: bool = ..., up: bool = ..., value: float = ..., val: float = ..., vertexColorRange: bool = ..., vcr: bool = ..., vertexColorRangeLower: float = ..., vcl: float = ..., vertexColorRangeUpper: float = ..., vcu: float = ..., whichTool: str = ..., wst: str = ..., worldRadius: float = ..., wlR: float = ...) -> None:
+def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., aco: bool = ..., activeListChangedProc: str = ..., alp: str = ..., afterStrokeCmd: str = ..., asc: str = ..., alphaclamp: str = ..., alc: str = ..., alphaclamplower: float = ..., acl: float = ..., alphaclampupper: float = ..., acu: float = ..., beforeStrokeCmd: str = ..., bsc: str = ..., brushalignment: bool = ..., bra: bool = ..., brushfeedback: bool = ..., brf: bool = ..., clamp: str = ..., cl: str = ..., clamplower: float = ..., cll: float = ..., clampupper: float = ..., clu: float = ..., clear: bool = ..., clr: bool = ..., colorAlphaValue: float = ..., cl1: float = ..., colorRGBAValue: [float, float, float, float] = ..., cl4: [float, float, float, float] = ..., colorRGBValue: [float, float, float] = ..., cl3: [float, float, float] = ..., colorRamp: str = ..., cr: str = ..., colorfeedback: bool = ..., cf: bool = ..., colorfeedbackOverride: bool = ..., cfo: bool = ..., colorrangelower: float = ..., crl: float = ..., colorrangeupper: float = ..., cru: float = ..., disablelighting: bool = ..., dl: bool = ..., dragSlider: str = ..., dsl: str = ..., duringStrokeCmd: str = ..., dsk: str = ..., dynclonemode: bool = ..., dcm: bool = ..., exists: bool = ..., ex: bool = ..., expandfilename: bool = ..., eef: bool = ..., exportaspectratio: float = ..., ear: float = ..., exportfilemode: str = ..., efm: str = ..., exportfilesizex: int = ..., fsx: int = ..., exportfilesizey: int = ..., fsy: int = ..., exportfiletype: str = ..., eft: str = ..., history: bool = ..., ch: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., importfilemode: str = ..., ifm: str = ..., importreassign: bool = ..., irm: bool = ..., interactiveUpdate: bool = ..., iu: bool = ..., lastRecorderCmd: str = ..., lrc: str = ..., lastStampName: str = ..., lsn: str = ..., lowerradius: float = ..., lr: float = ..., makeStroke: int = ..., mst: int = ..., mappressure: str = ..., mp: str = ..., maxvalue: float = ..., mxv: float = ..., minvalue: float = ..., miv: float = ..., name: str = ..., n: str = ..., numericColorRamp: str = ..., ncr: str = ..., numericDisplayColor: [float, float, float] = ..., ndc: [float, float, float] = ..., numericDisplayPrecision: int = ..., ndp: int = ..., numericMaxColor: [float, float, float] = ..., nxc: [float, float, float] = ..., numericMinColor: [float, float, float] = ..., nmc: [float, float, float] = ..., opacity: float = ..., op: float = ..., outline: bool = ..., o: bool = ..., outwhilepaint: bool = ..., owp: bool = ..., paintChannel: str = ..., pch: str = ..., paintComponent: int = ..., pc: int = ..., paintNumChannels: int = ..., pnc: int = ..., paintRGBA: bool = ..., pc4: bool = ..., paintVertexFace: bool = ..., pvf: bool = ..., paintmode: str = ..., pm: str = ..., paintoperationtype: str = ..., pot: str = ..., pickColor: bool = ..., pcm: bool = ..., pickValue: bool = ..., pv: bool = ..., playbackCursor: [float, float] = ..., plc: [float, float] = ..., playbackPressure: float = ..., plp: float = ..., preserveclonesource: bool = ..., pcs: bool = ..., projective: bool = ..., prm: bool = ..., radius: float = ..., r: float = ..., rampMaxColor: [float, float, float] = ..., rxc: [float, float, float] = ..., rampMinColor: [float, float, float] = ..., rmc: [float, float, float] = ..., record: bool = ..., rec: bool = ..., reflection: bool = ..., rn: bool = ..., reflectionaboutorigin: bool = ..., rno: bool = ..., reflectionaxis: str = ..., ra: str = ..., screenRadius: float = ..., scR: float = ..., selectclonesource: bool = ..., scs: bool = ..., selectedattroper: str = ..., sao: str = ..., showactive: bool = ..., sa: bool = ..., stampDepth: float = ..., stD: float = ..., stampProfile: str = ..., stP: str = ..., stampSpacing: float = ..., stS: float = ..., strokesmooth: str = ..., ssm: str = ..., surfaceConformedBrushVertices: bool = ..., scv: bool = ..., tangentOutline: bool = ..., to: bool = ..., toolOffProc: str = ..., tfp: str = ..., toolOnProc: str = ..., top: str = ..., useColorRamp: bool = ..., ucr: bool = ..., useMaxMinColor: bool = ..., umc: bool = ..., useNumericColorRamp: bool = ..., unr: bool = ..., useNumericDisplay: bool = ..., und: bool = ..., usepressure: bool = ..., up: bool = ..., value: float = ..., val: float = ..., vertexColorRange: bool = ..., vcr: bool = ..., vertexColorRangeLower: float = ..., vcl: float = ..., vertexColorRangeUpper: float = ..., vcu: float = ..., whichTool: str = ..., wst: str = ..., worldRadius: float = ..., wlR: float = ...) -> None:
     """artAttrPaintVertexCtx is undoable, queryable, and editable.
     
     This is a context command to set the flags on the artAttrContext, which is the
@@ -271,6 +283,14 @@ def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., aco: boo
     
     This is a context command to set the flags on the Paint color on vertex Tool
     context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new vertexAttr paint context, then switch to it
+        cmds.artAttrPaintVertexCtx('artAttrPaintVertexCtx1')
+        cmds.setToolTo('artAttrPaintVertexCtx1')
+    ```
 
     ---
     - Args:
@@ -299,7 +319,6 @@ def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., aco: boo
         - colorfeedbackOverride (cfo): Sets on/off the color feedback override. C: Default is FALSE.  Q: When queried, it returns a boolean.
         - colorrangelower (crl): Specifies the value that maps to black when color feedback mode is on. C: Default is 0.0.  Q: When queried, it returns a float.
         - colorrangeupper (cru): Specifies the value that maps to the maximum color when color feedback mode is on. C: Default is 1.0.  Q: When queried, it returns a float.
-        - dataTypeIndex (dti): When the selected paintable attribute is a vectorArray, it specifies which field to paint on.
         - disablelighting (dl): If color feedback is on, this flag determines whether lighting is disabled or not for the surfaces that are affected. C: Default is FALSE.  Q: When queried, it returns a boolean.
         - dragSlider (dsl): Sets the current brush drag state for resizing or offsetting the brush (like the 'b' and 'm' default hotkeys). The string argument is one of: "radius", "lowradius", "opacity", "value", "depth", "displacement", "uvvector" or "none". C:
             Default is "none".
@@ -350,7 +369,6 @@ def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., aco: boo
         - playbackCursor (plc): Values for the playback cursor.
         - playbackPressure (plp): Valus for the playback pressure.
         - preserveclonesource (pcs): Whether or not to preserve a clone source.
-        - profileShapeFile (psf): Passes a name of the image file for the stamp shape profile.
         - projective (prm): Specifies the projective paint mode. C: Default is 'false'. Q: When queried, it returns a boolean.
         - radius (r): Sets the size of the brush. C: Default is 1.0 cm. Q: When queried, it returns a float.
         - rampMaxColor (rxc): Defines a special color to be used when the value is greater than or equal to the maximum value.
@@ -390,7 +408,7 @@ def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., aco: boo
         - worldRadius (wlR): Radius in worldspace
     """
 @overload #Overload for artAttrPaintVertexCtx in ['query']
-def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., activeListChangedProc: str = ..., afterStrokeCmd: str = ..., alphaclamp: str = ..., alphaclamplower: float = ..., alphaclampupper: float = ..., attrSelected: str = ..., beforeStrokeCmd: str = ..., brushalignment: bool = ..., brushfeedback: bool = ..., clamp: str = ..., clamplower: float = ..., clampupper: float = ..., clear: bool = ..., colorAlphaValue: float = ..., colorRGBAValue: [float, float, float, float] = ..., colorRGBValue: [float, float, float] = ..., colorRamp: str = ..., colorfeedback: bool = ..., colorfeedbackOverride: bool = ..., colorrangelower: float = ..., colorrangeupper: float = ..., dataTypeIndex: int = ..., disablelighting: bool = ..., dragSlider: str = ..., duringStrokeCmd: str = ..., dynclonemode: bool = ..., expandfilename: bool = ..., exportaspectratio: float = ..., exportfilemode: str = ..., exportfilesizex: int = ..., exportfilesizey: int = ..., exportfiletype: str = ..., image1: str = ..., image2: str = ..., image3: str = ..., importfilemode: str = ..., importreassign: bool = ..., interactiveUpdate: bool = ..., lastRecorderCmd: str = ..., lastStampName: str = ..., lowerradius: float = ..., makeStroke: int = ..., mappressure: str = ..., maxvalue: float = ..., minvalue: float = ..., numericColorRamp: str = ..., numericDisplayColor: [float, float, float] = ..., numericDisplayPrecision: int = ..., numericMaxColor: [float, float, float] = ..., numericMinColor: [float, float, float] = ..., objattrArray: str = ..., objattrArrayNoMenu: str = ..., opacity: float = ..., outline: bool = ..., outwhilepaint: bool = ..., paintChannel: str = ..., paintComponent: int = ..., paintNodeArray: str = ..., paintNumChannels: int = ..., paintRGBA: bool = ..., paintVertexFace: bool = ..., paintmode: str = ..., paintoperationtype: str = ..., pickColor: bool = ..., pickValue: bool = ..., playbackCursor: [float, float] = ..., playbackPressure: float = ..., preserveclonesource: bool = ..., profileShapeFile: str = ..., projective: bool = ..., radius: float = ..., rampMaxColor: [float, float, float] = ..., rampMinColor: [float, float, float] = ..., record: bool = ..., reflection: bool = ..., reflectionaboutorigin: bool = ..., reflectionaxis: str = ..., screenRadius: float = ..., selectclonesource: bool = ..., selectedattroper: str = ..., showactive: bool = ..., stampDepth: float = ..., stampProfile: str = ..., stampSpacing: float = ..., strokesmooth: str = ..., surfaceConformedBrushVertices: bool = ..., tablet: bool = ..., tangentOutline: bool = ..., toolOffProc: str = ..., toolOnProc: str = ..., useColorRamp: bool = ..., useMaxMinColor: bool = ..., useNumericColorRamp: bool = ..., useNumericDisplay: bool = ..., usepressure: bool = ..., value: float = ..., vertexColorRange: bool = ..., vertexColorRangeLower: float = ..., vertexColorRangeUpper: float = ..., whichTool: str = ..., worldRadius: float = ..., query: bool = ...) -> None:
+def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., activeListChangedProc: str = ..., afterStrokeCmd: str = ..., alphaclamp: str = ..., alphaclamplower: float = ..., alphaclampupper: float = ..., attrSelected: str = ..., beforeStrokeCmd: str = ..., brushalignment: bool = ..., brushfeedback: bool = ..., clamp: str = ..., clamplower: float = ..., clampupper: float = ..., colorAlphaValue: float = ..., colorRGBAValue: [float, float, float, float] = ..., colorRGBValue: [float, float, float] = ..., colorRamp: str = ..., colorfeedback: bool = ..., colorfeedbackOverride: bool = ..., colorrangelower: float = ..., colorrangeupper: float = ..., dataTypeIndex: int = ..., disablelighting: bool = ..., duringStrokeCmd: str = ..., dynclonemode: bool = ..., exportaspectratio: float = ..., exportfilemode: str = ..., exportfilesizex: int = ..., exportfilesizey: int = ..., exportfiletype: str = ..., image1: str = ..., image2: str = ..., image3: str = ..., importfilemode: str = ..., importreassign: bool = ..., interactiveUpdate: bool = ..., lastRecorderCmd: str = ..., lastStampName: str = ..., lowerradius: float = ..., makeStroke: int = ..., mappressure: str = ..., maxvalue: float = ..., minvalue: float = ..., numericColorRamp: str = ..., numericDisplayColor: [float, float, float] = ..., numericDisplayPrecision: int = ..., numericMaxColor: [float, float, float] = ..., numericMinColor: [float, float, float] = ..., objattrArray: str = ..., objattrArrayNoMenu: str = ..., opacity: float = ..., outline: bool = ..., outwhilepaint: bool = ..., paintChannel: str = ..., paintComponent: int = ..., paintNodeArray: str = ..., paintNumChannels: int = ..., paintRGBA: bool = ..., paintVertexFace: bool = ..., paintmode: str = ..., paintoperationtype: str = ..., pickColor: bool = ..., pickValue: bool = ..., playbackCursor: [float, float] = ..., playbackPressure: float = ..., preserveclonesource: bool = ..., profileShapeFile: str = ..., projective: bool = ..., radius: float = ..., rampMaxColor: [float, float, float] = ..., rampMinColor: [float, float, float] = ..., record: bool = ..., reflection: bool = ..., reflectionaboutorigin: bool = ..., reflectionaxis: str = ..., screenRadius: float = ..., selectclonesource: bool = ..., selectedattroper: str = ..., showactive: bool = ..., stampDepth: float = ..., stampProfile: str = ..., stampSpacing: float = ..., strokesmooth: str = ..., surfaceConformedBrushVertices: bool = ..., tablet: bool = ..., tangentOutline: bool = ..., toolOffProc: str = ..., toolOnProc: str = ..., useColorRamp: bool = ..., useMaxMinColor: bool = ..., useNumericColorRamp: bool = ..., useNumericDisplay: bool = ..., usepressure: bool = ..., value: float = ..., vertexColorRange: bool = ..., vertexColorRangeLower: float = ..., vertexColorRangeUpper: float = ..., whichTool: str = ..., worldRadius: float = ..., query: bool = ...) -> None:
     """artAttrPaintVertexCtx is undoable, queryable, and editable.
     
     This is a context command to set the flags on the artAttrContext, which is the
@@ -400,6 +418,14 @@ def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., activeLi
     
     This is a context command to set the flags on the Paint color on vertex Tool
     context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new vertexAttr paint context, then switch to it
+        cmds.artAttrPaintVertexCtx('artAttrPaintVertexCtx1')
+        cmds.setToolTo('artAttrPaintVertexCtx1')
+    ```
 
     ---
     - Args:
@@ -420,7 +446,6 @@ def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., activeLi
             clamps to the lower and upper bounds. C: Default is "none".  Q: When queried, it returns a string.
         - clamplower (cll): Specifies the lower bound for the values. C: Default is 0.0.  Q: When queried, it returns a float.
         - clampupper (clu): Specifies the upper bound for the values. C: Default is 1.0.  Q: When queried, it returns a float.
-        - clear (clr): Floods all cvs/vertices to the current value.
         - colorAlphaValue (cl1): The Alpha value of the color.
         - colorRGBAValue (cl4): The RGBA value of the color.
         - colorRGBValue (cl3): The RGB value of the color.
@@ -431,11 +456,8 @@ def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., activeLi
         - colorrangeupper (cru): Specifies the value that maps to the maximum color when color feedback mode is on. C: Default is 1.0.  Q: When queried, it returns a float.
         - dataTypeIndex (dti): When the selected paintable attribute is a vectorArray, it specifies which field to paint on.
         - disablelighting (dl): If color feedback is on, this flag determines whether lighting is disabled or not for the surfaces that are affected. C: Default is FALSE.  Q: When queried, it returns a boolean.
-        - dragSlider (dsl): Sets the current brush drag state for resizing or offsetting the brush (like the 'b' and 'm' default hotkeys). The string argument is one of: "radius", "lowradius", "opacity", "value", "depth", "displacement", "uvvector" or "none". C:
-            Default is "none".
         - duringStrokeCmd (dsk): The passed string is executed as a MEL command during the stroke, each time the mouse is dragged. C: Default is no command. Q: When queried, it returns the current command
         - dynclonemode (dcm): Enable or disable dynamic clone mode.
-        - expandfilename (eef): If true, it will expand the name of the export file and concatenate it with the surface name. Otherwise it will take the name as it is. C: Default is true.
         - exportaspectratio (ear): Value of aspect ratio for export
         - exportfilemode (efm): Specifies the export channel.The valid entries here are: "alpha", "luminance", "rgb", "rgba". C: Default is "luminance/rgb". Q: When queried, it returns a string.
         - exportfilesizex (fsx): Specifies the width of the attribute map to export. C: Default width is 256. Q: When queried, it returns an integer.
@@ -522,7 +544,7 @@ def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., activeLi
         - query (q): Query mode flag
     """
 @overload #Overload for artAttrPaintVertexCtx in ['query']
-def artAttrPaintVertexCtx([context]: [context], aco: bool = ..., alp: str = ..., asc: str = ..., alc: str = ..., acl: float = ..., acu: float = ..., asl: str = ..., bsc: str = ..., bra: bool = ..., brf: bool = ..., cl: str = ..., cll: float = ..., clu: float = ..., clr: bool = ..., cl1: float = ..., cl4: [float, float, float, float] = ..., cl3: [float, float, float] = ..., cr: str = ..., cf: bool = ..., cfo: bool = ..., crl: float = ..., cru: float = ..., dti: int = ..., dl: bool = ..., dsl: str = ..., dsk: str = ..., dcm: bool = ..., eef: bool = ..., ear: float = ..., efm: str = ..., fsx: int = ..., fsy: int = ..., eft: str = ..., i1: str = ..., i2: str = ..., i3: str = ..., ifm: str = ..., irm: bool = ..., iu: bool = ..., lrc: str = ..., lsn: str = ..., lr: float = ..., mst: int = ..., mp: str = ..., mxv: float = ..., miv: float = ..., ncr: str = ..., ndc: [float, float, float] = ..., ndp: int = ..., nxc: [float, float, float] = ..., nmc: [float, float, float] = ..., oaa: str = ..., oan: str = ..., op: float = ..., o: bool = ..., owp: bool = ..., pch: str = ..., pc: int = ..., pna: str = ..., pnc: int = ..., pc4: bool = ..., pvf: bool = ..., pm: str = ..., pot: str = ..., pcm: bool = ..., pv: bool = ..., plc: [float, float] = ..., plp: float = ..., pcs: bool = ..., psf: str = ..., prm: bool = ..., r: float = ..., rxc: [float, float, float] = ..., rmc: [float, float, float] = ..., rec: bool = ..., rn: bool = ..., rno: bool = ..., ra: str = ..., scR: float = ..., scs: bool = ..., sao: str = ..., sa: bool = ..., stD: float = ..., stP: str = ..., stS: float = ..., ssm: str = ..., scv: bool = ..., tab: bool = ..., to: bool = ..., tfp: str = ..., top: str = ..., ucr: bool = ..., umc: bool = ..., unr: bool = ..., und: bool = ..., up: bool = ..., val: float = ..., vcr: bool = ..., vcl: float = ..., vcu: float = ..., wst: str = ..., wlR: float = ..., q: bool = ...) -> None:
+def artAttrPaintVertexCtx([context]: [context], aco: bool = ..., alp: str = ..., asc: str = ..., alc: str = ..., acl: float = ..., acu: float = ..., asl: str = ..., bsc: str = ..., bra: bool = ..., brf: bool = ..., cl: str = ..., cll: float = ..., clu: float = ..., cl1: float = ..., cl4: [float, float, float, float] = ..., cl3: [float, float, float] = ..., cr: str = ..., cf: bool = ..., cfo: bool = ..., crl: float = ..., cru: float = ..., dti: int = ..., dl: bool = ..., dsk: str = ..., dcm: bool = ..., ear: float = ..., efm: str = ..., fsx: int = ..., fsy: int = ..., eft: str = ..., i1: str = ..., i2: str = ..., i3: str = ..., ifm: str = ..., irm: bool = ..., iu: bool = ..., lrc: str = ..., lsn: str = ..., lr: float = ..., mst: int = ..., mp: str = ..., mxv: float = ..., miv: float = ..., ncr: str = ..., ndc: [float, float, float] = ..., ndp: int = ..., nxc: [float, float, float] = ..., nmc: [float, float, float] = ..., oaa: str = ..., oan: str = ..., op: float = ..., o: bool = ..., owp: bool = ..., pch: str = ..., pc: int = ..., pna: str = ..., pnc: int = ..., pc4: bool = ..., pvf: bool = ..., pm: str = ..., pot: str = ..., pcm: bool = ..., pv: bool = ..., plc: [float, float] = ..., plp: float = ..., pcs: bool = ..., psf: str = ..., prm: bool = ..., r: float = ..., rxc: [float, float, float] = ..., rmc: [float, float, float] = ..., rec: bool = ..., rn: bool = ..., rno: bool = ..., ra: str = ..., scR: float = ..., scs: bool = ..., sao: str = ..., sa: bool = ..., stD: float = ..., stP: str = ..., stS: float = ..., ssm: str = ..., scv: bool = ..., tab: bool = ..., to: bool = ..., tfp: str = ..., top: str = ..., ucr: bool = ..., umc: bool = ..., unr: bool = ..., und: bool = ..., up: bool = ..., val: float = ..., vcr: bool = ..., vcl: float = ..., vcu: float = ..., wst: str = ..., wlR: float = ..., q: bool = ...) -> None:
     """artAttrPaintVertexCtx is undoable, queryable, and editable.
     
     This is a context command to set the flags on the artAttrContext, which is the
@@ -532,6 +554,14 @@ def artAttrPaintVertexCtx([context]: [context], aco: bool = ..., alp: str = ...,
     
     This is a context command to set the flags on the Paint color on vertex Tool
     context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new vertexAttr paint context, then switch to it
+        cmds.artAttrPaintVertexCtx('artAttrPaintVertexCtx1')
+        cmds.setToolTo('artAttrPaintVertexCtx1')
+    ```
 
     ---
     - Args:
@@ -552,7 +582,6 @@ def artAttrPaintVertexCtx([context]: [context], aco: bool = ..., alp: str = ...,
             clamps to the lower and upper bounds. C: Default is "none".  Q: When queried, it returns a string.
         - clamplower (cll): Specifies the lower bound for the values. C: Default is 0.0.  Q: When queried, it returns a float.
         - clampupper (clu): Specifies the upper bound for the values. C: Default is 1.0.  Q: When queried, it returns a float.
-        - clear (clr): Floods all cvs/vertices to the current value.
         - colorAlphaValue (cl1): The Alpha value of the color.
         - colorRGBAValue (cl4): The RGBA value of the color.
         - colorRGBValue (cl3): The RGB value of the color.
@@ -563,11 +592,8 @@ def artAttrPaintVertexCtx([context]: [context], aco: bool = ..., alp: str = ...,
         - colorrangeupper (cru): Specifies the value that maps to the maximum color when color feedback mode is on. C: Default is 1.0.  Q: When queried, it returns a float.
         - dataTypeIndex (dti): When the selected paintable attribute is a vectorArray, it specifies which field to paint on.
         - disablelighting (dl): If color feedback is on, this flag determines whether lighting is disabled or not for the surfaces that are affected. C: Default is FALSE.  Q: When queried, it returns a boolean.
-        - dragSlider (dsl): Sets the current brush drag state for resizing or offsetting the brush (like the 'b' and 'm' default hotkeys). The string argument is one of: "radius", "lowradius", "opacity", "value", "depth", "displacement", "uvvector" or "none". C:
-            Default is "none".
         - duringStrokeCmd (dsk): The passed string is executed as a MEL command during the stroke, each time the mouse is dragged. C: Default is no command. Q: When queried, it returns the current command
         - dynclonemode (dcm): Enable or disable dynamic clone mode.
-        - expandfilename (eef): If true, it will expand the name of the export file and concatenate it with the surface name. Otherwise it will take the name as it is. C: Default is true.
         - exportaspectratio (ear): Value of aspect ratio for export
         - exportfilemode (efm): Specifies the export channel.The valid entries here are: "alpha", "luminance", "rgb", "rgba". C: Default is "luminance/rgb". Q: When queried, it returns a string.
         - exportfilesizex (fsx): Specifies the width of the attribute map to export. C: Default width is 256. Q: When queried, it returns an integer.
@@ -654,7 +680,7 @@ def artAttrPaintVertexCtx([context]: [context], aco: bool = ..., alp: str = ...,
         - query (q): Query mode flag
     """
 @overload #Overload for artAttrPaintVertexCtx in ['query']
-def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., aco: bool = ..., activeListChangedProc: str = ..., alp: str = ..., afterStrokeCmd: str = ..., asc: str = ..., alphaclamp: str = ..., alc: str = ..., alphaclamplower: float = ..., acl: float = ..., alphaclampupper: float = ..., acu: float = ..., attrSelected: str = ..., asl: str = ..., beforeStrokeCmd: str = ..., bsc: str = ..., brushalignment: bool = ..., bra: bool = ..., brushfeedback: bool = ..., brf: bool = ..., clamp: str = ..., cl: str = ..., clamplower: float = ..., cll: float = ..., clampupper: float = ..., clu: float = ..., clear: bool = ..., clr: bool = ..., colorAlphaValue: float = ..., cl1: float = ..., colorRGBAValue: [float, float, float, float] = ..., cl4: [float, float, float, float] = ..., colorRGBValue: [float, float, float] = ..., cl3: [float, float, float] = ..., colorRamp: str = ..., cr: str = ..., colorfeedback: bool = ..., cf: bool = ..., colorfeedbackOverride: bool = ..., cfo: bool = ..., colorrangelower: float = ..., crl: float = ..., colorrangeupper: float = ..., cru: float = ..., dataTypeIndex: int = ..., dti: int = ..., disablelighting: bool = ..., dl: bool = ..., dragSlider: str = ..., dsl: str = ..., duringStrokeCmd: str = ..., dsk: str = ..., dynclonemode: bool = ..., dcm: bool = ..., expandfilename: bool = ..., eef: bool = ..., exportaspectratio: float = ..., ear: float = ..., exportfilemode: str = ..., efm: str = ..., exportfilesizex: int = ..., fsx: int = ..., exportfilesizey: int = ..., fsy: int = ..., exportfiletype: str = ..., eft: str = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., importfilemode: str = ..., ifm: str = ..., importreassign: bool = ..., irm: bool = ..., interactiveUpdate: bool = ..., iu: bool = ..., lastRecorderCmd: str = ..., lrc: str = ..., lastStampName: str = ..., lsn: str = ..., lowerradius: float = ..., lr: float = ..., makeStroke: int = ..., mst: int = ..., mappressure: str = ..., mp: str = ..., maxvalue: float = ..., mxv: float = ..., minvalue: float = ..., miv: float = ..., numericColorRamp: str = ..., ncr: str = ..., numericDisplayColor: [float, float, float] = ..., ndc: [float, float, float] = ..., numericDisplayPrecision: int = ..., ndp: int = ..., numericMaxColor: [float, float, float] = ..., nxc: [float, float, float] = ..., numericMinColor: [float, float, float] = ..., nmc: [float, float, float] = ..., objattrArray: str = ..., oaa: str = ..., objattrArrayNoMenu: str = ..., oan: str = ..., opacity: float = ..., op: float = ..., outline: bool = ..., o: bool = ..., outwhilepaint: bool = ..., owp: bool = ..., paintChannel: str = ..., pch: str = ..., paintComponent: int = ..., pc: int = ..., paintNodeArray: str = ..., pna: str = ..., paintNumChannels: int = ..., pnc: int = ..., paintRGBA: bool = ..., pc4: bool = ..., paintVertexFace: bool = ..., pvf: bool = ..., paintmode: str = ..., pm: str = ..., paintoperationtype: str = ..., pot: str = ..., pickColor: bool = ..., pcm: bool = ..., pickValue: bool = ..., pv: bool = ..., playbackCursor: [float, float] = ..., plc: [float, float] = ..., playbackPressure: float = ..., plp: float = ..., preserveclonesource: bool = ..., pcs: bool = ..., profileShapeFile: str = ..., psf: str = ..., projective: bool = ..., prm: bool = ..., radius: float = ..., r: float = ..., rampMaxColor: [float, float, float] = ..., rxc: [float, float, float] = ..., rampMinColor: [float, float, float] = ..., rmc: [float, float, float] = ..., record: bool = ..., rec: bool = ..., reflection: bool = ..., rn: bool = ..., reflectionaboutorigin: bool = ..., rno: bool = ..., reflectionaxis: str = ..., ra: str = ..., screenRadius: float = ..., scR: float = ..., selectclonesource: bool = ..., scs: bool = ..., selectedattroper: str = ..., sao: str = ..., showactive: bool = ..., sa: bool = ..., stampDepth: float = ..., stD: float = ..., stampProfile: str = ..., stP: str = ..., stampSpacing: float = ..., stS: float = ..., strokesmooth: str = ..., ssm: str = ..., surfaceConformedBrushVertices: bool = ..., scv: bool = ..., tablet: bool = ..., tab: bool = ..., tangentOutline: bool = ..., to: bool = ..., toolOffProc: str = ..., tfp: str = ..., toolOnProc: str = ..., top: str = ..., useColorRamp: bool = ..., ucr: bool = ..., useMaxMinColor: bool = ..., umc: bool = ..., useNumericColorRamp: bool = ..., unr: bool = ..., useNumericDisplay: bool = ..., und: bool = ..., usepressure: bool = ..., up: bool = ..., value: float = ..., val: float = ..., vertexColorRange: bool = ..., vcr: bool = ..., vertexColorRangeLower: float = ..., vcl: float = ..., vertexColorRangeUpper: float = ..., vcu: float = ..., whichTool: str = ..., wst: str = ..., worldRadius: float = ..., wlR: float = ..., query: bool = ..., q: bool = ...) -> None:
+def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., aco: bool = ..., activeListChangedProc: str = ..., alp: str = ..., afterStrokeCmd: str = ..., asc: str = ..., alphaclamp: str = ..., alc: str = ..., alphaclamplower: float = ..., acl: float = ..., alphaclampupper: float = ..., acu: float = ..., attrSelected: str = ..., asl: str = ..., beforeStrokeCmd: str = ..., bsc: str = ..., brushalignment: bool = ..., bra: bool = ..., brushfeedback: bool = ..., brf: bool = ..., clamp: str = ..., cl: str = ..., clamplower: float = ..., cll: float = ..., clampupper: float = ..., clu: float = ..., colorAlphaValue: float = ..., cl1: float = ..., colorRGBAValue: [float, float, float, float] = ..., cl4: [float, float, float, float] = ..., colorRGBValue: [float, float, float] = ..., cl3: [float, float, float] = ..., colorRamp: str = ..., cr: str = ..., colorfeedback: bool = ..., cf: bool = ..., colorfeedbackOverride: bool = ..., cfo: bool = ..., colorrangelower: float = ..., crl: float = ..., colorrangeupper: float = ..., cru: float = ..., dataTypeIndex: int = ..., dti: int = ..., disablelighting: bool = ..., dl: bool = ..., duringStrokeCmd: str = ..., dsk: str = ..., dynclonemode: bool = ..., dcm: bool = ..., exportaspectratio: float = ..., ear: float = ..., exportfilemode: str = ..., efm: str = ..., exportfilesizex: int = ..., fsx: int = ..., exportfilesizey: int = ..., fsy: int = ..., exportfiletype: str = ..., eft: str = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., importfilemode: str = ..., ifm: str = ..., importreassign: bool = ..., irm: bool = ..., interactiveUpdate: bool = ..., iu: bool = ..., lastRecorderCmd: str = ..., lrc: str = ..., lastStampName: str = ..., lsn: str = ..., lowerradius: float = ..., lr: float = ..., makeStroke: int = ..., mst: int = ..., mappressure: str = ..., mp: str = ..., maxvalue: float = ..., mxv: float = ..., minvalue: float = ..., miv: float = ..., numericColorRamp: str = ..., ncr: str = ..., numericDisplayColor: [float, float, float] = ..., ndc: [float, float, float] = ..., numericDisplayPrecision: int = ..., ndp: int = ..., numericMaxColor: [float, float, float] = ..., nxc: [float, float, float] = ..., numericMinColor: [float, float, float] = ..., nmc: [float, float, float] = ..., objattrArray: str = ..., oaa: str = ..., objattrArrayNoMenu: str = ..., oan: str = ..., opacity: float = ..., op: float = ..., outline: bool = ..., o: bool = ..., outwhilepaint: bool = ..., owp: bool = ..., paintChannel: str = ..., pch: str = ..., paintComponent: int = ..., pc: int = ..., paintNodeArray: str = ..., pna: str = ..., paintNumChannels: int = ..., pnc: int = ..., paintRGBA: bool = ..., pc4: bool = ..., paintVertexFace: bool = ..., pvf: bool = ..., paintmode: str = ..., pm: str = ..., paintoperationtype: str = ..., pot: str = ..., pickColor: bool = ..., pcm: bool = ..., pickValue: bool = ..., pv: bool = ..., playbackCursor: [float, float] = ..., plc: [float, float] = ..., playbackPressure: float = ..., plp: float = ..., preserveclonesource: bool = ..., pcs: bool = ..., profileShapeFile: str = ..., psf: str = ..., projective: bool = ..., prm: bool = ..., radius: float = ..., r: float = ..., rampMaxColor: [float, float, float] = ..., rxc: [float, float, float] = ..., rampMinColor: [float, float, float] = ..., rmc: [float, float, float] = ..., record: bool = ..., rec: bool = ..., reflection: bool = ..., rn: bool = ..., reflectionaboutorigin: bool = ..., rno: bool = ..., reflectionaxis: str = ..., ra: str = ..., screenRadius: float = ..., scR: float = ..., selectclonesource: bool = ..., scs: bool = ..., selectedattroper: str = ..., sao: str = ..., showactive: bool = ..., sa: bool = ..., stampDepth: float = ..., stD: float = ..., stampProfile: str = ..., stP: str = ..., stampSpacing: float = ..., stS: float = ..., strokesmooth: str = ..., ssm: str = ..., surfaceConformedBrushVertices: bool = ..., scv: bool = ..., tablet: bool = ..., tab: bool = ..., tangentOutline: bool = ..., to: bool = ..., toolOffProc: str = ..., tfp: str = ..., toolOnProc: str = ..., top: str = ..., useColorRamp: bool = ..., ucr: bool = ..., useMaxMinColor: bool = ..., umc: bool = ..., useNumericColorRamp: bool = ..., unr: bool = ..., useNumericDisplay: bool = ..., und: bool = ..., usepressure: bool = ..., up: bool = ..., value: float = ..., val: float = ..., vertexColorRange: bool = ..., vcr: bool = ..., vertexColorRangeLower: float = ..., vcl: float = ..., vertexColorRangeUpper: float = ..., vcu: float = ..., whichTool: str = ..., wst: str = ..., worldRadius: float = ..., wlR: float = ..., query: bool = ..., q: bool = ...) -> None:
     """artAttrPaintVertexCtx is undoable, queryable, and editable.
     
     This is a context command to set the flags on the artAttrContext, which is the
@@ -664,6 +690,14 @@ def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., aco: boo
     
     This is a context command to set the flags on the Paint color on vertex Tool
     context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new vertexAttr paint context, then switch to it
+        cmds.artAttrPaintVertexCtx('artAttrPaintVertexCtx1')
+        cmds.setToolTo('artAttrPaintVertexCtx1')
+    ```
 
     ---
     - Args:
@@ -684,7 +718,6 @@ def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., aco: boo
             clamps to the lower and upper bounds. C: Default is "none".  Q: When queried, it returns a string.
         - clamplower (cll): Specifies the lower bound for the values. C: Default is 0.0.  Q: When queried, it returns a float.
         - clampupper (clu): Specifies the upper bound for the values. C: Default is 1.0.  Q: When queried, it returns a float.
-        - clear (clr): Floods all cvs/vertices to the current value.
         - colorAlphaValue (cl1): The Alpha value of the color.
         - colorRGBAValue (cl4): The RGBA value of the color.
         - colorRGBValue (cl3): The RGB value of the color.
@@ -695,11 +728,8 @@ def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., aco: boo
         - colorrangeupper (cru): Specifies the value that maps to the maximum color when color feedback mode is on. C: Default is 1.0.  Q: When queried, it returns a float.
         - dataTypeIndex (dti): When the selected paintable attribute is a vectorArray, it specifies which field to paint on.
         - disablelighting (dl): If color feedback is on, this flag determines whether lighting is disabled or not for the surfaces that are affected. C: Default is FALSE.  Q: When queried, it returns a boolean.
-        - dragSlider (dsl): Sets the current brush drag state for resizing or offsetting the brush (like the 'b' and 'm' default hotkeys). The string argument is one of: "radius", "lowradius", "opacity", "value", "depth", "displacement", "uvvector" or "none". C:
-            Default is "none".
         - duringStrokeCmd (dsk): The passed string is executed as a MEL command during the stroke, each time the mouse is dragged. C: Default is no command. Q: When queried, it returns the current command
         - dynclonemode (dcm): Enable or disable dynamic clone mode.
-        - expandfilename (eef): If true, it will expand the name of the export file and concatenate it with the surface name. Otherwise it will take the name as it is. C: Default is true.
         - exportaspectratio (ear): Value of aspect ratio for export
         - exportfilemode (efm): Specifies the export channel.The valid entries here are: "alpha", "luminance", "rgb", "rgba". C: Default is "luminance/rgb". Q: When queried, it returns a string.
         - exportfilesizex (fsx): Specifies the width of the attribute map to export. C: Default width is 256. Q: When queried, it returns an integer.
@@ -796,6 +826,14 @@ def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., activeLi
     
     This is a context command to set the flags on the Paint color on vertex Tool
     context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new vertexAttr paint context, then switch to it
+        cmds.artAttrPaintVertexCtx('artAttrPaintVertexCtx1')
+        cmds.setToolTo('artAttrPaintVertexCtx1')
+    ```
 
     ---
     - Args:
@@ -928,6 +966,14 @@ def artAttrPaintVertexCtx([context]: [context], aco: bool = ..., alp: str = ...,
     This is a context command to set the flags on the Paint color on vertex Tool
     context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new vertexAttr paint context, then switch to it
+        cmds.artAttrPaintVertexCtx('artAttrPaintVertexCtx1')
+        cmds.setToolTo('artAttrPaintVertexCtx1')
+    ```
+
     ---
     - Args:
         - [context]: Input item(s).
@@ -1058,6 +1104,14 @@ def artAttrPaintVertexCtx([context]: [context], accopacity: bool = ..., aco: boo
     
     This is a context command to set the flags on the Paint color on vertex Tool
     context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new vertexAttr paint context, then switch to it
+        cmds.artAttrPaintVertexCtx('artAttrPaintVertexCtx1')
+        cmds.setToolTo('artAttrPaintVertexCtx1')
+    ```
 
     ---
     - Args:

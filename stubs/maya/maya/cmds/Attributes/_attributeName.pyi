@@ -13,6 +13,22 @@ def attributeName(leaf: bool = ..., long: bool = ..., nice: bool = ..., short: b
     English.) If more than one "node.attribute" specifier is given on the command
     line, only the first valid specifier is processed.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.attributeName( "persp.tx" )
+        # Result: Translate X #
+        cmds.attributeName( "persp.translateX", s=True )
+        # Result: tx #
+        cmds.attributeName( "persp.tx", l=True )
+        # Result: translateX #
+        cmds.attributeName( "nurbsSphere1.controlPoints[50].xv", leaf=True )
+        // Result: xValue //
+        cmds.attributeName( "nurbsSphere1.controlPoints[50].xv", leaf=False )
+        // Result: Control Points[50].X Value //
+    ```
+
     ---
     - Args:
         - leaf (lf): When false, shows parent multi attributes (like "controlPoints[2].xValue").  When true, shows only the leaf-level attribute name (like "xValue").  Default is true. Note that for incomplete attribute strings, like a missing multi-parent
@@ -32,6 +48,22 @@ def attributeName(lf: bool = ..., l: bool = ..., n: bool = ..., s: bool = ...) -
     English.) If more than one "node.attribute" specifier is given on the command
     line, only the first valid specifier is processed.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.attributeName( "persp.tx" )
+        # Result: Translate X #
+        cmds.attributeName( "persp.translateX", s=True )
+        # Result: tx #
+        cmds.attributeName( "persp.tx", l=True )
+        # Result: translateX #
+        cmds.attributeName( "nurbsSphere1.controlPoints[50].xv", leaf=True )
+        // Result: xValue //
+        cmds.attributeName( "nurbsSphere1.controlPoints[50].xv", leaf=False )
+        // Result: Control Points[50].X Value //
+    ```
+
     ---
     - Args:
         - leaf (lf): When false, shows parent multi attributes (like "controlPoints[2].xValue").  When true, shows only the leaf-level attribute name (like "xValue").  Default is true. Note that for incomplete attribute strings, like a missing multi-parent
@@ -50,6 +82,22 @@ def attributeName(leaf: bool = ..., lf: bool = ..., long: bool = ..., l: bool = 
     interface, and may be localized when running Maya in a language other than
     English.) If more than one "node.attribute" specifier is given on the command
     line, only the first valid specifier is processed.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        import maya.cmds as cmds
+        cmds.attributeName( "persp.tx" )
+        # Result: Translate X #
+        cmds.attributeName( "persp.translateX", s=True )
+        # Result: tx #
+        cmds.attributeName( "persp.tx", l=True )
+        # Result: translateX #
+        cmds.attributeName( "nurbsSphere1.controlPoints[50].xv", leaf=True )
+        // Result: xValue //
+        cmds.attributeName( "nurbsSphere1.controlPoints[50].xv", leaf=False )
+        // Result: Control Points[50].X Value //
+    ```
 
     ---
     - Args:

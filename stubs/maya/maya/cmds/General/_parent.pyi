@@ -28,6 +28,34 @@ def parent([dagObject...] [dagObject]: [dagObject...] [dagObject], absolute: boo
     that group with the same name then this command will rename the parented
     object.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create some objects
+        cmds.circle( name='circle1' )
+        cmds.move( 5, 0, 0 )
+        cmds.group( n='group1' )
+        cmds.move( -5, 0, 0 )
+        cmds.group( em=True, n='group2' )
+        # Move the circle under group2.
+        # Note that the circle remains where it is.
+        cmds.parent( 'circle1', 'group2' )
+        # Let's try that again with the -relative flag. This time
+        # the circle will move.
+        cmds.undo()
+        cmds.parent( 'circle1', 'group2', relative=True )
+        # Create an instance of the circle using the parent command.
+        # This makes circle1 a child of group1 and group2.
+        cmds.undo()
+        cmds.parent( 'circle1', 'group2', add=True )
+        # Remove group1 as a parent of the circle
+        cmds.parent( 'group1|circle1', removeObject=True )
+        # Move the circle to the top of the hierarchy
+        cmds.parent( 'group2|circle1', world=True )
+        # Remove an instance of a shape from a parent
+        cmds.parent('nurbsSphere3|nurbsSphereShape1',shape=True,rm=True)
+    ```
+
     ---
     - Args:
         - [dagObject...] [dagObject]: Input item(s).
@@ -70,6 +98,34 @@ def parent([dagObject...] [dagObject]: [dagObject...] [dagObject], a: bool = ...
     that group with the same name then this command will rename the parented
     object.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create some objects
+        cmds.circle( name='circle1' )
+        cmds.move( 5, 0, 0 )
+        cmds.group( n='group1' )
+        cmds.move( -5, 0, 0 )
+        cmds.group( em=True, n='group2' )
+        # Move the circle under group2.
+        # Note that the circle remains where it is.
+        cmds.parent( 'circle1', 'group2' )
+        # Let's try that again with the -relative flag. This time
+        # the circle will move.
+        cmds.undo()
+        cmds.parent( 'circle1', 'group2', relative=True )
+        # Create an instance of the circle using the parent command.
+        # This makes circle1 a child of group1 and group2.
+        cmds.undo()
+        cmds.parent( 'circle1', 'group2', add=True )
+        # Remove group1 as a parent of the circle
+        cmds.parent( 'group1|circle1', removeObject=True )
+        # Move the circle to the top of the hierarchy
+        cmds.parent( 'group2|circle1', world=True )
+        # Remove an instance of a shape from a parent
+        cmds.parent('nurbsSphere3|nurbsSphereShape1',shape=True,rm=True)
+    ```
+
     ---
     - Args:
         - [dagObject...] [dagObject]: Input item(s).
@@ -111,6 +167,34 @@ def parent([dagObject...] [dagObject]: [dagObject...] [dagObject], absolute: boo
     If an object is parented under a different group and there is an object in
     that group with the same name then this command will rename the parented
     object.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create some objects
+        cmds.circle( name='circle1' )
+        cmds.move( 5, 0, 0 )
+        cmds.group( n='group1' )
+        cmds.move( -5, 0, 0 )
+        cmds.group( em=True, n='group2' )
+        # Move the circle under group2.
+        # Note that the circle remains where it is.
+        cmds.parent( 'circle1', 'group2' )
+        # Let's try that again with the -relative flag. This time
+        # the circle will move.
+        cmds.undo()
+        cmds.parent( 'circle1', 'group2', relative=True )
+        # Create an instance of the circle using the parent command.
+        # This makes circle1 a child of group1 and group2.
+        cmds.undo()
+        cmds.parent( 'circle1', 'group2', add=True )
+        # Remove group1 as a parent of the circle
+        cmds.parent( 'group1|circle1', removeObject=True )
+        # Move the circle to the top of the hierarchy
+        cmds.parent( 'group2|circle1', world=True )
+        # Remove an instance of a shape from a parent
+        cmds.parent('nurbsSphere3|nurbsSphereShape1',shape=True,rm=True)
+    ```
 
     ---
     - Args:

@@ -3,7 +3,7 @@
 from typing import Any, overload
 
 @overload #Overload for artUserPaintCtx in ['create']
-def artUserPaintCtx(accopacity: bool = ..., activeListChangedProc: str = ..., afterStrokeCmd: str = ..., alphaclamp: str = ..., alphaclamplower: float = ..., alphaclampupper: float = ..., beforeStrokeCmd: str = ..., brushalignment: bool = ..., brushfeedback: bool = ..., chunkCommand: str = ..., clamp: str = ..., clamplower: float = ..., clampupper: float = ..., clear: bool = ..., colorAlphaValue: float = ..., colorRGBAValue: [float, float, float, float] = ..., colorRGBValue: [float, float, float] = ..., colorRamp: str = ..., colorfeedback: bool = ..., colorfeedbackOverride: bool = ..., colorrangelower: float = ..., colorrangeupper: float = ..., dataTypeIndex: int = ..., disablelighting: bool = ..., dragSlider: str = ..., duringStrokeCmd: str = ..., dynclonemode: bool = ..., exists: bool = ..., expandfilename: bool = ..., exportaspectratio: float = ..., exportfilemode: str = ..., exportfilesizex: int = ..., exportfilesizey: int = ..., exportfiletype: str = ..., finalizeCmd: str = ..., fullpaths: bool = ..., getArrayAttrCommand: str = ..., getSurfaceCommand: str = ..., getValueCommand: str = ..., history: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., importfilemode: str = ..., importreassign: bool = ..., initializeCmd: str = ..., interactiveUpdate: bool = ..., lastRecorderCmd: str = ..., lastStampName: str = ..., lowerradius: float = ..., makeStroke: int = ..., mappressure: str = ..., maxvalue: float = ..., minvalue: float = ..., name: str = ..., numericColorRamp: str = ..., numericDisplayColor: [float, float, float] = ..., numericDisplayPrecision: int = ..., numericMaxColor: [float, float, float] = ..., numericMinColor: [float, float, float] = ..., opacity: float = ..., outline: bool = ..., outwhilepaint: bool = ..., paintmode: str = ..., paintoperationtype: str = ..., pickColor: bool = ..., pickValue: bool = ..., playbackCursor: [float, float] = ..., playbackPressure: float = ..., preserveclonesource: bool = ..., profileShapeFile: str = ..., projective: bool = ..., radius: float = ..., rampMaxColor: [float, float, float] = ..., rampMinColor: [float, float, float] = ..., record: bool = ..., reflection: bool = ..., reflectionaboutorigin: bool = ..., reflectionaxis: str = ..., screenRadius: float = ..., selectclonesource: bool = ..., selectedattroper: str = ..., setArrayValueCommand: str = ..., setValueCommand: str = ..., showactive: bool = ..., stampDepth: float = ..., stampProfile: str = ..., stampSpacing: float = ..., strokesmooth: str = ..., surfaceConformedBrushVertices: bool = ..., tangentOutline: bool = ..., toolCleanupCmd: str = ..., toolOffProc: str = ..., toolOnProc: str = ..., toolSetupCmd: str = ..., useColorRamp: bool = ..., useMaxMinColor: bool = ..., useNumericColorRamp: bool = ..., useNumericDisplay: bool = ..., usepressure: bool = ..., value: float = ..., whichTool: str = ..., worldRadius: float = ...) -> str:
+def artUserPaintCtx(accopacity: bool = ..., activeListChangedProc: str = ..., afterStrokeCmd: str = ..., alphaclamp: str = ..., alphaclamplower: float = ..., alphaclampupper: float = ..., beforeStrokeCmd: str = ..., brushalignment: bool = ..., brushfeedback: bool = ..., chunkCommand: str = ..., clamp: str = ..., clamplower: float = ..., clampupper: float = ..., clear: bool = ..., colorAlphaValue: float = ..., colorRGBAValue: [float, float, float, float] = ..., colorRGBValue: [float, float, float] = ..., colorRamp: str = ..., colorfeedback: bool = ..., colorfeedbackOverride: bool = ..., colorrangelower: float = ..., colorrangeupper: float = ..., disablelighting: bool = ..., dragSlider: str = ..., duringStrokeCmd: str = ..., dynclonemode: bool = ..., exists: bool = ..., expandfilename: bool = ..., exportaspectratio: float = ..., exportfilemode: str = ..., exportfilesizex: int = ..., exportfilesizey: int = ..., exportfiletype: str = ..., finalizeCmd: str = ..., fullpaths: bool = ..., getArrayAttrCommand: str = ..., getSurfaceCommand: str = ..., getValueCommand: str = ..., history: bool = ..., image1: str = ..., image2: str = ..., image3: str = ..., importfilemode: str = ..., importreassign: bool = ..., initializeCmd: str = ..., interactiveUpdate: bool = ..., lastRecorderCmd: str = ..., lastStampName: str = ..., lowerradius: float = ..., makeStroke: int = ..., mappressure: str = ..., maxvalue: float = ..., minvalue: float = ..., name: str = ..., numericColorRamp: str = ..., numericDisplayColor: [float, float, float] = ..., numericDisplayPrecision: int = ..., numericMaxColor: [float, float, float] = ..., numericMinColor: [float, float, float] = ..., opacity: float = ..., outline: bool = ..., outwhilepaint: bool = ..., paintmode: str = ..., paintoperationtype: str = ..., pickColor: bool = ..., pickValue: bool = ..., playbackCursor: [float, float] = ..., playbackPressure: float = ..., preserveclonesource: bool = ..., projective: bool = ..., radius: float = ..., rampMaxColor: [float, float, float] = ..., rampMinColor: [float, float, float] = ..., record: bool = ..., reflection: bool = ..., reflectionaboutorigin: bool = ..., reflectionaxis: str = ..., screenRadius: float = ..., selectclonesource: bool = ..., selectedattroper: str = ..., setArrayValueCommand: str = ..., setValueCommand: str = ..., showactive: bool = ..., stampDepth: float = ..., stampProfile: str = ..., stampSpacing: float = ..., strokesmooth: str = ..., surfaceConformedBrushVertices: bool = ..., tangentOutline: bool = ..., toolCleanupCmd: str = ..., toolOffProc: str = ..., toolOnProc: str = ..., toolSetupCmd: str = ..., useColorRamp: bool = ..., useMaxMinColor: bool = ..., useNumericColorRamp: bool = ..., useNumericDisplay: bool = ..., usepressure: bool = ..., value: float = ..., whichTool: str = ..., worldRadius: float = ...) -> str:
     """artUserPaintCtx is undoable, queryable, and editable.
     
     This is a context command to set the flags on the artAttrContext, which is the
@@ -14,6 +14,15 @@ def artUserPaintCtx(accopacity: bool = ..., activeListChangedProc: str = ..., af
     This command executes a scriptable paint (Maya Artisan). It allows the user to
     apply Mel commands/scripts to modify cvs' attributes for all cvs under the
     paint brush.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create the context
+        cmds.artUserPaintCtx('artUserPaintCtx')
+        # set the init Mel script
+        cmds.artUserPaintCtx( 'artUserPaintCtx', e=True, ic='spherePaint' )
+    ```
 
     ---
     - Args:
@@ -42,7 +51,6 @@ def artUserPaintCtx(accopacity: bool = ..., activeListChangedProc: str = ..., af
         - colorfeedbackOverride (cfo): Sets on/off the color feedback override. C: Default is FALSE.  Q: When queried, it returns a boolean.
         - colorrangelower (crl): Specifies the value that maps to black when color feedback mode is on. C: Default is 0.0.  Q: When queried, it returns a float.
         - colorrangeupper (cru): Specifies the value that maps to the maximum color when color feedback mode is on. C: Default is 1.0.  Q: When queried, it returns a float.
-        - dataTypeIndex (dti): When the selected paintable attribute is a vectorArray, it specifies which field to paint on.
         - disablelighting (dl): If color feedback is on, this flag determines whether lighting is disabled or not for the surfaces that are affected. C: Default is FALSE.  Q: When queried, it returns a boolean.
         - dragSlider (dsl): Sets the current brush drag state for resizing or offsetting the brush (like the 'b' and 'm' default hotkeys). The string argument is one of: "radius", "lowradius", "opacity", "value", "depth", "displacement", "uvvector" or "none". C:
             Default is "none".
@@ -95,7 +103,6 @@ def artUserPaintCtx(accopacity: bool = ..., activeListChangedProc: str = ..., af
         - playbackCursor (plc): Values for the playback cursor.
         - playbackPressure (plp): Valus for the playback pressure.
         - preserveclonesource (pcs): Whether or not to preserve a clone source.
-        - profileShapeFile (psf): Passes a name of the image file for the stamp shape profile.
         - projective (prm): Specifies the projective paint mode. C: Default is 'false'. Q: When queried, it returns a boolean.
         - radius (r): Sets the size of the brush. C: Default is 1.0 cm. Q: When queried, it returns a float.
         - rampMaxColor (rxc): Defines a special color to be used when the value is greater than or equal to the maximum value.
@@ -137,7 +144,7 @@ def artUserPaintCtx(accopacity: bool = ..., activeListChangedProc: str = ..., af
         - worldRadius (wlR): Radius in worldspace
     """
 @overload #Overload for artUserPaintCtx in ['create']
-def artUserPaintCtx(aco: bool = ..., alp: str = ..., asc: str = ..., alc: str = ..., acl: float = ..., acu: float = ..., bsc: str = ..., bra: bool = ..., brf: bool = ..., cc: str = ..., cl: str = ..., cll: float = ..., clu: float = ..., clr: bool = ..., cl1: float = ..., cl4: [float, float, float, float] = ..., cl3: [float, float, float] = ..., cr: str = ..., cf: bool = ..., cfo: bool = ..., crl: float = ..., cru: float = ..., dti: int = ..., dl: bool = ..., dsl: str = ..., dsk: str = ..., dcm: bool = ..., ex: bool = ..., eef: bool = ..., ear: float = ..., efm: str = ..., fsx: int = ..., fsy: int = ..., eft: str = ..., fc: str = ..., fp: bool = ..., gac: str = ..., gsc: str = ..., gvc: str = ..., ch: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., ifm: str = ..., irm: bool = ..., ic: str = ..., iu: bool = ..., lrc: str = ..., lsn: str = ..., lr: float = ..., mst: int = ..., mp: str = ..., mxv: float = ..., miv: float = ..., n: str = ..., ncr: str = ..., ndc: [float, float, float] = ..., ndp: int = ..., nxc: [float, float, float] = ..., nmc: [float, float, float] = ..., op: float = ..., o: bool = ..., owp: bool = ..., pm: str = ..., pot: str = ..., pcm: bool = ..., pv: bool = ..., plc: [float, float] = ..., plp: float = ..., pcs: bool = ..., psf: str = ..., prm: bool = ..., r: float = ..., rxc: [float, float, float] = ..., rmc: [float, float, float] = ..., rec: bool = ..., rn: bool = ..., rno: bool = ..., ra: str = ..., scR: float = ..., scs: bool = ..., sao: str = ..., sac: str = ..., svc: str = ..., sa: bool = ..., stD: float = ..., stP: str = ..., stS: float = ..., ssm: str = ..., scv: bool = ..., to: bool = ..., tcc: str = ..., tfp: str = ..., top: str = ..., tsc: str = ..., ucr: bool = ..., umc: bool = ..., unr: bool = ..., und: bool = ..., up: bool = ..., val: float = ..., wst: str = ..., wlR: float = ...) -> str:
+def artUserPaintCtx(aco: bool = ..., alp: str = ..., asc: str = ..., alc: str = ..., acl: float = ..., acu: float = ..., bsc: str = ..., bra: bool = ..., brf: bool = ..., cc: str = ..., cl: str = ..., cll: float = ..., clu: float = ..., clr: bool = ..., cl1: float = ..., cl4: [float, float, float, float] = ..., cl3: [float, float, float] = ..., cr: str = ..., cf: bool = ..., cfo: bool = ..., crl: float = ..., cru: float = ..., dl: bool = ..., dsl: str = ..., dsk: str = ..., dcm: bool = ..., ex: bool = ..., eef: bool = ..., ear: float = ..., efm: str = ..., fsx: int = ..., fsy: int = ..., eft: str = ..., fc: str = ..., fp: bool = ..., gac: str = ..., gsc: str = ..., gvc: str = ..., ch: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., ifm: str = ..., irm: bool = ..., ic: str = ..., iu: bool = ..., lrc: str = ..., lsn: str = ..., lr: float = ..., mst: int = ..., mp: str = ..., mxv: float = ..., miv: float = ..., n: str = ..., ncr: str = ..., ndc: [float, float, float] = ..., ndp: int = ..., nxc: [float, float, float] = ..., nmc: [float, float, float] = ..., op: float = ..., o: bool = ..., owp: bool = ..., pm: str = ..., pot: str = ..., pcm: bool = ..., pv: bool = ..., plc: [float, float] = ..., plp: float = ..., pcs: bool = ..., prm: bool = ..., r: float = ..., rxc: [float, float, float] = ..., rmc: [float, float, float] = ..., rec: bool = ..., rn: bool = ..., rno: bool = ..., ra: str = ..., scR: float = ..., scs: bool = ..., sao: str = ..., sac: str = ..., svc: str = ..., sa: bool = ..., stD: float = ..., stP: str = ..., stS: float = ..., ssm: str = ..., scv: bool = ..., to: bool = ..., tcc: str = ..., tfp: str = ..., top: str = ..., tsc: str = ..., ucr: bool = ..., umc: bool = ..., unr: bool = ..., und: bool = ..., up: bool = ..., val: float = ..., wst: str = ..., wlR: float = ...) -> str:
     """artUserPaintCtx is undoable, queryable, and editable.
     
     This is a context command to set the flags on the artAttrContext, which is the
@@ -148,6 +155,15 @@ def artUserPaintCtx(aco: bool = ..., alp: str = ..., asc: str = ..., alc: str = 
     This command executes a scriptable paint (Maya Artisan). It allows the user to
     apply Mel commands/scripts to modify cvs' attributes for all cvs under the
     paint brush.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create the context
+        cmds.artUserPaintCtx('artUserPaintCtx')
+        # set the init Mel script
+        cmds.artUserPaintCtx( 'artUserPaintCtx', e=True, ic='spherePaint' )
+    ```
 
     ---
     - Args:
@@ -176,7 +192,6 @@ def artUserPaintCtx(aco: bool = ..., alp: str = ..., asc: str = ..., alc: str = 
         - colorfeedbackOverride (cfo): Sets on/off the color feedback override. C: Default is FALSE.  Q: When queried, it returns a boolean.
         - colorrangelower (crl): Specifies the value that maps to black when color feedback mode is on. C: Default is 0.0.  Q: When queried, it returns a float.
         - colorrangeupper (cru): Specifies the value that maps to the maximum color when color feedback mode is on. C: Default is 1.0.  Q: When queried, it returns a float.
-        - dataTypeIndex (dti): When the selected paintable attribute is a vectorArray, it specifies which field to paint on.
         - disablelighting (dl): If color feedback is on, this flag determines whether lighting is disabled or not for the surfaces that are affected. C: Default is FALSE.  Q: When queried, it returns a boolean.
         - dragSlider (dsl): Sets the current brush drag state for resizing or offsetting the brush (like the 'b' and 'm' default hotkeys). The string argument is one of: "radius", "lowradius", "opacity", "value", "depth", "displacement", "uvvector" or "none". C:
             Default is "none".
@@ -229,7 +244,6 @@ def artUserPaintCtx(aco: bool = ..., alp: str = ..., asc: str = ..., alc: str = 
         - playbackCursor (plc): Values for the playback cursor.
         - playbackPressure (plp): Valus for the playback pressure.
         - preserveclonesource (pcs): Whether or not to preserve a clone source.
-        - profileShapeFile (psf): Passes a name of the image file for the stamp shape profile.
         - projective (prm): Specifies the projective paint mode. C: Default is 'false'. Q: When queried, it returns a boolean.
         - radius (r): Sets the size of the brush. C: Default is 1.0 cm. Q: When queried, it returns a float.
         - rampMaxColor (rxc): Defines a special color to be used when the value is greater than or equal to the maximum value.
@@ -271,7 +285,7 @@ def artUserPaintCtx(aco: bool = ..., alp: str = ..., asc: str = ..., alc: str = 
         - worldRadius (wlR): Radius in worldspace
     """
 @overload #Overload for artUserPaintCtx in ['create']
-def artUserPaintCtx(accopacity: bool = ..., aco: bool = ..., activeListChangedProc: str = ..., alp: str = ..., afterStrokeCmd: str = ..., asc: str = ..., alphaclamp: str = ..., alc: str = ..., alphaclamplower: float = ..., acl: float = ..., alphaclampupper: float = ..., acu: float = ..., beforeStrokeCmd: str = ..., bsc: str = ..., brushalignment: bool = ..., bra: bool = ..., brushfeedback: bool = ..., brf: bool = ..., chunkCommand: str = ..., cc: str = ..., clamp: str = ..., cl: str = ..., clamplower: float = ..., cll: float = ..., clampupper: float = ..., clu: float = ..., clear: bool = ..., clr: bool = ..., colorAlphaValue: float = ..., cl1: float = ..., colorRGBAValue: [float, float, float, float] = ..., cl4: [float, float, float, float] = ..., colorRGBValue: [float, float, float] = ..., cl3: [float, float, float] = ..., colorRamp: str = ..., cr: str = ..., colorfeedback: bool = ..., cf: bool = ..., colorfeedbackOverride: bool = ..., cfo: bool = ..., colorrangelower: float = ..., crl: float = ..., colorrangeupper: float = ..., cru: float = ..., dataTypeIndex: int = ..., dti: int = ..., disablelighting: bool = ..., dl: bool = ..., dragSlider: str = ..., dsl: str = ..., duringStrokeCmd: str = ..., dsk: str = ..., dynclonemode: bool = ..., dcm: bool = ..., exists: bool = ..., ex: bool = ..., expandfilename: bool = ..., eef: bool = ..., exportaspectratio: float = ..., ear: float = ..., exportfilemode: str = ..., efm: str = ..., exportfilesizex: int = ..., fsx: int = ..., exportfilesizey: int = ..., fsy: int = ..., exportfiletype: str = ..., eft: str = ..., finalizeCmd: str = ..., fc: str = ..., fullpaths: bool = ..., fp: bool = ..., getArrayAttrCommand: str = ..., gac: str = ..., getSurfaceCommand: str = ..., gsc: str = ..., getValueCommand: str = ..., gvc: str = ..., history: bool = ..., ch: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., importfilemode: str = ..., ifm: str = ..., importreassign: bool = ..., irm: bool = ..., initializeCmd: str = ..., ic: str = ..., interactiveUpdate: bool = ..., iu: bool = ..., lastRecorderCmd: str = ..., lrc: str = ..., lastStampName: str = ..., lsn: str = ..., lowerradius: float = ..., lr: float = ..., makeStroke: int = ..., mst: int = ..., mappressure: str = ..., mp: str = ..., maxvalue: float = ..., mxv: float = ..., minvalue: float = ..., miv: float = ..., name: str = ..., n: str = ..., numericColorRamp: str = ..., ncr: str = ..., numericDisplayColor: [float, float, float] = ..., ndc: [float, float, float] = ..., numericDisplayPrecision: int = ..., ndp: int = ..., numericMaxColor: [float, float, float] = ..., nxc: [float, float, float] = ..., numericMinColor: [float, float, float] = ..., nmc: [float, float, float] = ..., opacity: float = ..., op: float = ..., outline: bool = ..., o: bool = ..., outwhilepaint: bool = ..., owp: bool = ..., paintmode: str = ..., pm: str = ..., paintoperationtype: str = ..., pot: str = ..., pickColor: bool = ..., pcm: bool = ..., pickValue: bool = ..., pv: bool = ..., playbackCursor: [float, float] = ..., plc: [float, float] = ..., playbackPressure: float = ..., plp: float = ..., preserveclonesource: bool = ..., pcs: bool = ..., profileShapeFile: str = ..., psf: str = ..., projective: bool = ..., prm: bool = ..., radius: float = ..., r: float = ..., rampMaxColor: [float, float, float] = ..., rxc: [float, float, float] = ..., rampMinColor: [float, float, float] = ..., rmc: [float, float, float] = ..., record: bool = ..., rec: bool = ..., reflection: bool = ..., rn: bool = ..., reflectionaboutorigin: bool = ..., rno: bool = ..., reflectionaxis: str = ..., ra: str = ..., screenRadius: float = ..., scR: float = ..., selectclonesource: bool = ..., scs: bool = ..., selectedattroper: str = ..., sao: str = ..., setArrayValueCommand: str = ..., sac: str = ..., setValueCommand: str = ..., svc: str = ..., showactive: bool = ..., sa: bool = ..., stampDepth: float = ..., stD: float = ..., stampProfile: str = ..., stP: str = ..., stampSpacing: float = ..., stS: float = ..., strokesmooth: str = ..., ssm: str = ..., surfaceConformedBrushVertices: bool = ..., scv: bool = ..., tangentOutline: bool = ..., to: bool = ..., toolCleanupCmd: str = ..., tcc: str = ..., toolOffProc: str = ..., tfp: str = ..., toolOnProc: str = ..., top: str = ..., toolSetupCmd: str = ..., tsc: str = ..., useColorRamp: bool = ..., ucr: bool = ..., useMaxMinColor: bool = ..., umc: bool = ..., useNumericColorRamp: bool = ..., unr: bool = ..., useNumericDisplay: bool = ..., und: bool = ..., usepressure: bool = ..., up: bool = ..., value: float = ..., val: float = ..., whichTool: str = ..., wst: str = ..., worldRadius: float = ..., wlR: float = ...) -> str:
+def artUserPaintCtx(accopacity: bool = ..., aco: bool = ..., activeListChangedProc: str = ..., alp: str = ..., afterStrokeCmd: str = ..., asc: str = ..., alphaclamp: str = ..., alc: str = ..., alphaclamplower: float = ..., acl: float = ..., alphaclampupper: float = ..., acu: float = ..., beforeStrokeCmd: str = ..., bsc: str = ..., brushalignment: bool = ..., bra: bool = ..., brushfeedback: bool = ..., brf: bool = ..., chunkCommand: str = ..., cc: str = ..., clamp: str = ..., cl: str = ..., clamplower: float = ..., cll: float = ..., clampupper: float = ..., clu: float = ..., clear: bool = ..., clr: bool = ..., colorAlphaValue: float = ..., cl1: float = ..., colorRGBAValue: [float, float, float, float] = ..., cl4: [float, float, float, float] = ..., colorRGBValue: [float, float, float] = ..., cl3: [float, float, float] = ..., colorRamp: str = ..., cr: str = ..., colorfeedback: bool = ..., cf: bool = ..., colorfeedbackOverride: bool = ..., cfo: bool = ..., colorrangelower: float = ..., crl: float = ..., colorrangeupper: float = ..., cru: float = ..., disablelighting: bool = ..., dl: bool = ..., dragSlider: str = ..., dsl: str = ..., duringStrokeCmd: str = ..., dsk: str = ..., dynclonemode: bool = ..., dcm: bool = ..., exists: bool = ..., ex: bool = ..., expandfilename: bool = ..., eef: bool = ..., exportaspectratio: float = ..., ear: float = ..., exportfilemode: str = ..., efm: str = ..., exportfilesizex: int = ..., fsx: int = ..., exportfilesizey: int = ..., fsy: int = ..., exportfiletype: str = ..., eft: str = ..., finalizeCmd: str = ..., fc: str = ..., fullpaths: bool = ..., fp: bool = ..., getArrayAttrCommand: str = ..., gac: str = ..., getSurfaceCommand: str = ..., gsc: str = ..., getValueCommand: str = ..., gvc: str = ..., history: bool = ..., ch: bool = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., importfilemode: str = ..., ifm: str = ..., importreassign: bool = ..., irm: bool = ..., initializeCmd: str = ..., ic: str = ..., interactiveUpdate: bool = ..., iu: bool = ..., lastRecorderCmd: str = ..., lrc: str = ..., lastStampName: str = ..., lsn: str = ..., lowerradius: float = ..., lr: float = ..., makeStroke: int = ..., mst: int = ..., mappressure: str = ..., mp: str = ..., maxvalue: float = ..., mxv: float = ..., minvalue: float = ..., miv: float = ..., name: str = ..., n: str = ..., numericColorRamp: str = ..., ncr: str = ..., numericDisplayColor: [float, float, float] = ..., ndc: [float, float, float] = ..., numericDisplayPrecision: int = ..., ndp: int = ..., numericMaxColor: [float, float, float] = ..., nxc: [float, float, float] = ..., numericMinColor: [float, float, float] = ..., nmc: [float, float, float] = ..., opacity: float = ..., op: float = ..., outline: bool = ..., o: bool = ..., outwhilepaint: bool = ..., owp: bool = ..., paintmode: str = ..., pm: str = ..., paintoperationtype: str = ..., pot: str = ..., pickColor: bool = ..., pcm: bool = ..., pickValue: bool = ..., pv: bool = ..., playbackCursor: [float, float] = ..., plc: [float, float] = ..., playbackPressure: float = ..., plp: float = ..., preserveclonesource: bool = ..., pcs: bool = ..., projective: bool = ..., prm: bool = ..., radius: float = ..., r: float = ..., rampMaxColor: [float, float, float] = ..., rxc: [float, float, float] = ..., rampMinColor: [float, float, float] = ..., rmc: [float, float, float] = ..., record: bool = ..., rec: bool = ..., reflection: bool = ..., rn: bool = ..., reflectionaboutorigin: bool = ..., rno: bool = ..., reflectionaxis: str = ..., ra: str = ..., screenRadius: float = ..., scR: float = ..., selectclonesource: bool = ..., scs: bool = ..., selectedattroper: str = ..., sao: str = ..., setArrayValueCommand: str = ..., sac: str = ..., setValueCommand: str = ..., svc: str = ..., showactive: bool = ..., sa: bool = ..., stampDepth: float = ..., stD: float = ..., stampProfile: str = ..., stP: str = ..., stampSpacing: float = ..., stS: float = ..., strokesmooth: str = ..., ssm: str = ..., surfaceConformedBrushVertices: bool = ..., scv: bool = ..., tangentOutline: bool = ..., to: bool = ..., toolCleanupCmd: str = ..., tcc: str = ..., toolOffProc: str = ..., tfp: str = ..., toolOnProc: str = ..., top: str = ..., toolSetupCmd: str = ..., tsc: str = ..., useColorRamp: bool = ..., ucr: bool = ..., useMaxMinColor: bool = ..., umc: bool = ..., useNumericColorRamp: bool = ..., unr: bool = ..., useNumericDisplay: bool = ..., und: bool = ..., usepressure: bool = ..., up: bool = ..., value: float = ..., val: float = ..., whichTool: str = ..., wst: str = ..., worldRadius: float = ..., wlR: float = ...) -> str:
     """artUserPaintCtx is undoable, queryable, and editable.
     
     This is a context command to set the flags on the artAttrContext, which is the
@@ -282,6 +296,15 @@ def artUserPaintCtx(accopacity: bool = ..., aco: bool = ..., activeListChangedPr
     This command executes a scriptable paint (Maya Artisan). It allows the user to
     apply Mel commands/scripts to modify cvs' attributes for all cvs under the
     paint brush.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create the context
+        cmds.artUserPaintCtx('artUserPaintCtx')
+        # set the init Mel script
+        cmds.artUserPaintCtx( 'artUserPaintCtx', e=True, ic='spherePaint' )
+    ```
 
     ---
     - Args:
@@ -310,7 +333,6 @@ def artUserPaintCtx(accopacity: bool = ..., aco: bool = ..., activeListChangedPr
         - colorfeedbackOverride (cfo): Sets on/off the color feedback override. C: Default is FALSE.  Q: When queried, it returns a boolean.
         - colorrangelower (crl): Specifies the value that maps to black when color feedback mode is on. C: Default is 0.0.  Q: When queried, it returns a float.
         - colorrangeupper (cru): Specifies the value that maps to the maximum color when color feedback mode is on. C: Default is 1.0.  Q: When queried, it returns a float.
-        - dataTypeIndex (dti): When the selected paintable attribute is a vectorArray, it specifies which field to paint on.
         - disablelighting (dl): If color feedback is on, this flag determines whether lighting is disabled or not for the surfaces that are affected. C: Default is FALSE.  Q: When queried, it returns a boolean.
         - dragSlider (dsl): Sets the current brush drag state for resizing or offsetting the brush (like the 'b' and 'm' default hotkeys). The string argument is one of: "radius", "lowradius", "opacity", "value", "depth", "displacement", "uvvector" or "none". C:
             Default is "none".
@@ -363,7 +385,6 @@ def artUserPaintCtx(accopacity: bool = ..., aco: bool = ..., activeListChangedPr
         - playbackCursor (plc): Values for the playback cursor.
         - playbackPressure (plp): Valus for the playback pressure.
         - preserveclonesource (pcs): Whether or not to preserve a clone source.
-        - profileShapeFile (psf): Passes a name of the image file for the stamp shape profile.
         - projective (prm): Specifies the projective paint mode. C: Default is 'false'. Q: When queried, it returns a boolean.
         - radius (r): Sets the size of the brush. C: Default is 1.0 cm. Q: When queried, it returns a float.
         - rampMaxColor (rxc): Defines a special color to be used when the value is greater than or equal to the maximum value.
@@ -405,7 +426,7 @@ def artUserPaintCtx(accopacity: bool = ..., aco: bool = ..., activeListChangedPr
         - worldRadius (wlR): Radius in worldspace
     """
 @overload #Overload for artUserPaintCtx in ['query']
-def artUserPaintCtx(accopacity: bool = ..., activeListChangedProc: str = ..., afterStrokeCmd: str = ..., alphaclamp: str = ..., alphaclamplower: float = ..., alphaclampupper: float = ..., attrSelected: str = ..., beforeStrokeCmd: str = ..., brushalignment: bool = ..., brushfeedback: bool = ..., chunkCommand: str = ..., clamp: str = ..., clamplower: float = ..., clampupper: float = ..., clear: bool = ..., colorAlphaValue: float = ..., colorRGBAValue: [float, float, float, float] = ..., colorRGBValue: [float, float, float] = ..., colorRamp: str = ..., colorfeedback: bool = ..., colorfeedbackOverride: bool = ..., colorrangelower: float = ..., colorrangeupper: float = ..., dataTypeIndex: int = ..., disablelighting: bool = ..., dragSlider: str = ..., duringStrokeCmd: str = ..., dynclonemode: bool = ..., expandfilename: bool = ..., exportaspectratio: float = ..., exportfilemode: str = ..., exportfilesizex: int = ..., exportfilesizey: int = ..., exportfiletype: str = ..., finalizeCmd: str = ..., fullpaths: bool = ..., getArrayAttrCommand: str = ..., getSurfaceCommand: str = ..., getValueCommand: str = ..., image1: str = ..., image2: str = ..., image3: str = ..., importfilemode: str = ..., importreassign: bool = ..., initializeCmd: str = ..., interactiveUpdate: bool = ..., lastRecorderCmd: str = ..., lastStampName: str = ..., lowerradius: float = ..., makeStroke: int = ..., mappressure: str = ..., maxvalue: float = ..., minvalue: float = ..., numericColorRamp: str = ..., numericDisplayColor: [float, float, float] = ..., numericDisplayPrecision: int = ..., numericMaxColor: [float, float, float] = ..., numericMinColor: [float, float, float] = ..., objattrArray: str = ..., objattrArrayNoMenu: str = ..., opacity: float = ..., outline: bool = ..., outwhilepaint: bool = ..., paintNodeArray: str = ..., paintmode: str = ..., paintoperationtype: str = ..., pickColor: bool = ..., pickValue: bool = ..., playbackCursor: [float, float] = ..., playbackPressure: float = ..., preserveclonesource: bool = ..., profileShapeFile: str = ..., projective: bool = ..., radius: float = ..., rampMaxColor: [float, float, float] = ..., rampMinColor: [float, float, float] = ..., record: bool = ..., reflection: bool = ..., reflectionaboutorigin: bool = ..., reflectionaxis: str = ..., screenRadius: float = ..., selectclonesource: bool = ..., selectedattroper: str = ..., setArrayValueCommand: str = ..., setValueCommand: str = ..., showactive: bool = ..., stampDepth: float = ..., stampProfile: str = ..., stampSpacing: float = ..., strokesmooth: str = ..., surfaceConformedBrushVertices: bool = ..., tablet: bool = ..., tangentOutline: bool = ..., toolCleanupCmd: str = ..., toolOffProc: str = ..., toolOnProc: str = ..., toolSetupCmd: str = ..., useColorRamp: bool = ..., useMaxMinColor: bool = ..., useNumericColorRamp: bool = ..., useNumericDisplay: bool = ..., usepressure: bool = ..., value: float = ..., whichTool: str = ..., worldRadius: float = ..., query: bool = ...) -> str:
+def artUserPaintCtx(accopacity: bool = ..., activeListChangedProc: str = ..., afterStrokeCmd: str = ..., alphaclamp: str = ..., alphaclamplower: float = ..., alphaclampupper: float = ..., attrSelected: str = ..., beforeStrokeCmd: str = ..., brushalignment: bool = ..., brushfeedback: bool = ..., chunkCommand: str = ..., clamp: str = ..., clamplower: float = ..., clampupper: float = ..., colorAlphaValue: float = ..., colorRGBAValue: [float, float, float, float] = ..., colorRGBValue: [float, float, float] = ..., colorRamp: str = ..., colorfeedback: bool = ..., colorfeedbackOverride: bool = ..., colorrangelower: float = ..., colorrangeupper: float = ..., dataTypeIndex: int = ..., disablelighting: bool = ..., duringStrokeCmd: str = ..., dynclonemode: bool = ..., exportaspectratio: float = ..., exportfilemode: str = ..., exportfilesizex: int = ..., exportfilesizey: int = ..., exportfiletype: str = ..., finalizeCmd: str = ..., fullpaths: bool = ..., getArrayAttrCommand: str = ..., getSurfaceCommand: str = ..., getValueCommand: str = ..., image1: str = ..., image2: str = ..., image3: str = ..., importfilemode: str = ..., importreassign: bool = ..., initializeCmd: str = ..., interactiveUpdate: bool = ..., lastRecorderCmd: str = ..., lastStampName: str = ..., lowerradius: float = ..., makeStroke: int = ..., mappressure: str = ..., maxvalue: float = ..., minvalue: float = ..., numericColorRamp: str = ..., numericDisplayColor: [float, float, float] = ..., numericDisplayPrecision: int = ..., numericMaxColor: [float, float, float] = ..., numericMinColor: [float, float, float] = ..., objattrArray: str = ..., objattrArrayNoMenu: str = ..., opacity: float = ..., outline: bool = ..., outwhilepaint: bool = ..., paintNodeArray: str = ..., paintmode: str = ..., paintoperationtype: str = ..., pickColor: bool = ..., pickValue: bool = ..., playbackCursor: [float, float] = ..., playbackPressure: float = ..., preserveclonesource: bool = ..., profileShapeFile: str = ..., projective: bool = ..., radius: float = ..., rampMaxColor: [float, float, float] = ..., rampMinColor: [float, float, float] = ..., record: bool = ..., reflection: bool = ..., reflectionaboutorigin: bool = ..., reflectionaxis: str = ..., screenRadius: float = ..., selectclonesource: bool = ..., selectedattroper: str = ..., setArrayValueCommand: str = ..., setValueCommand: str = ..., showactive: bool = ..., stampDepth: float = ..., stampProfile: str = ..., stampSpacing: float = ..., strokesmooth: str = ..., surfaceConformedBrushVertices: bool = ..., tablet: bool = ..., tangentOutline: bool = ..., toolCleanupCmd: str = ..., toolOffProc: str = ..., toolOnProc: str = ..., toolSetupCmd: str = ..., useColorRamp: bool = ..., useMaxMinColor: bool = ..., useNumericColorRamp: bool = ..., useNumericDisplay: bool = ..., usepressure: bool = ..., value: float = ..., whichTool: str = ..., worldRadius: float = ..., query: bool = ...) -> str:
     """artUserPaintCtx is undoable, queryable, and editable.
     
     This is a context command to set the flags on the artAttrContext, which is the
@@ -416,6 +437,15 @@ def artUserPaintCtx(accopacity: bool = ..., activeListChangedProc: str = ..., af
     This command executes a scriptable paint (Maya Artisan). It allows the user to
     apply Mel commands/scripts to modify cvs' attributes for all cvs under the
     paint brush.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create the context
+        cmds.artUserPaintCtx('artUserPaintCtx')
+        # set the init Mel script
+        cmds.artUserPaintCtx( 'artUserPaintCtx', e=True, ic='spherePaint' )
+    ```
 
     ---
     - Args:
@@ -436,7 +466,6 @@ def artUserPaintCtx(accopacity: bool = ..., activeListChangedProc: str = ..., af
             clamps to the lower and upper bounds. C: Default is "none".  Q: When queried, it returns a string.
         - clamplower (cll): Specifies the lower bound for the values. C: Default is 0.0.  Q: When queried, it returns a float.
         - clampupper (clu): Specifies the upper bound for the values. C: Default is 1.0.  Q: When queried, it returns a float.
-        - clear (clr): Floods all cvs/vertices to the current value.
         - colorAlphaValue (cl1): The Alpha value of the color.
         - colorRGBAValue (cl4): The RGBA value of the color.
         - colorRGBValue (cl3): The RGB value of the color.
@@ -447,11 +476,8 @@ def artUserPaintCtx(accopacity: bool = ..., activeListChangedProc: str = ..., af
         - colorrangeupper (cru): Specifies the value that maps to the maximum color when color feedback mode is on. C: Default is 1.0.  Q: When queried, it returns a float.
         - dataTypeIndex (dti): When the selected paintable attribute is a vectorArray, it specifies which field to paint on.
         - disablelighting (dl): If color feedback is on, this flag determines whether lighting is disabled or not for the surfaces that are affected. C: Default is FALSE.  Q: When queried, it returns a boolean.
-        - dragSlider (dsl): Sets the current brush drag state for resizing or offsetting the brush (like the 'b' and 'm' default hotkeys). The string argument is one of: "radius", "lowradius", "opacity", "value", "depth", "displacement", "uvvector" or "none". C:
-            Default is "none".
         - duringStrokeCmd (dsk): The passed string is executed as a MEL command during the stroke, each time the mouse is dragged. C: Default is no command. Q: When queried, it returns the current command
         - dynclonemode (dcm): Enable or disable dynamic clone mode.
-        - expandfilename (eef): If true, it will expand the name of the export file and concatenate it with the surface name. Otherwise it will take the name as it is. C: Default is true.
         - exportaspectratio (ear): Value of aspect ratio for export
         - exportfilemode (efm): Specifies the export channel.The valid entries here are: "alpha", "luminance", "rgb", "rgba". C: Default is "luminance/rgb". Q: When queried, it returns a string.
         - exportfilesizex (fsx): Specifies the width of the attribute map to export. C: Default width is 256. Q: When queried, it returns an integer.
@@ -542,7 +568,7 @@ def artUserPaintCtx(accopacity: bool = ..., activeListChangedProc: str = ..., af
         - query (q): Query mode flag
     """
 @overload #Overload for artUserPaintCtx in ['query']
-def artUserPaintCtx(aco: bool = ..., alp: str = ..., asc: str = ..., alc: str = ..., acl: float = ..., acu: float = ..., asl: str = ..., bsc: str = ..., bra: bool = ..., brf: bool = ..., cc: str = ..., cl: str = ..., cll: float = ..., clu: float = ..., clr: bool = ..., cl1: float = ..., cl4: [float, float, float, float] = ..., cl3: [float, float, float] = ..., cr: str = ..., cf: bool = ..., cfo: bool = ..., crl: float = ..., cru: float = ..., dti: int = ..., dl: bool = ..., dsl: str = ..., dsk: str = ..., dcm: bool = ..., eef: bool = ..., ear: float = ..., efm: str = ..., fsx: int = ..., fsy: int = ..., eft: str = ..., fc: str = ..., fp: bool = ..., gac: str = ..., gsc: str = ..., gvc: str = ..., i1: str = ..., i2: str = ..., i3: str = ..., ifm: str = ..., irm: bool = ..., ic: str = ..., iu: bool = ..., lrc: str = ..., lsn: str = ..., lr: float = ..., mst: int = ..., mp: str = ..., mxv: float = ..., miv: float = ..., ncr: str = ..., ndc: [float, float, float] = ..., ndp: int = ..., nxc: [float, float, float] = ..., nmc: [float, float, float] = ..., oaa: str = ..., oan: str = ..., op: float = ..., o: bool = ..., owp: bool = ..., pna: str = ..., pm: str = ..., pot: str = ..., pcm: bool = ..., pv: bool = ..., plc: [float, float] = ..., plp: float = ..., pcs: bool = ..., psf: str = ..., prm: bool = ..., r: float = ..., rxc: [float, float, float] = ..., rmc: [float, float, float] = ..., rec: bool = ..., rn: bool = ..., rno: bool = ..., ra: str = ..., scR: float = ..., scs: bool = ..., sao: str = ..., sac: str = ..., svc: str = ..., sa: bool = ..., stD: float = ..., stP: str = ..., stS: float = ..., ssm: str = ..., scv: bool = ..., tab: bool = ..., to: bool = ..., tcc: str = ..., tfp: str = ..., top: str = ..., tsc: str = ..., ucr: bool = ..., umc: bool = ..., unr: bool = ..., und: bool = ..., up: bool = ..., val: float = ..., wst: str = ..., wlR: float = ..., q: bool = ...) -> str:
+def artUserPaintCtx(aco: bool = ..., alp: str = ..., asc: str = ..., alc: str = ..., acl: float = ..., acu: float = ..., asl: str = ..., bsc: str = ..., bra: bool = ..., brf: bool = ..., cc: str = ..., cl: str = ..., cll: float = ..., clu: float = ..., cl1: float = ..., cl4: [float, float, float, float] = ..., cl3: [float, float, float] = ..., cr: str = ..., cf: bool = ..., cfo: bool = ..., crl: float = ..., cru: float = ..., dti: int = ..., dl: bool = ..., dsk: str = ..., dcm: bool = ..., ear: float = ..., efm: str = ..., fsx: int = ..., fsy: int = ..., eft: str = ..., fc: str = ..., fp: bool = ..., gac: str = ..., gsc: str = ..., gvc: str = ..., i1: str = ..., i2: str = ..., i3: str = ..., ifm: str = ..., irm: bool = ..., ic: str = ..., iu: bool = ..., lrc: str = ..., lsn: str = ..., lr: float = ..., mst: int = ..., mp: str = ..., mxv: float = ..., miv: float = ..., ncr: str = ..., ndc: [float, float, float] = ..., ndp: int = ..., nxc: [float, float, float] = ..., nmc: [float, float, float] = ..., oaa: str = ..., oan: str = ..., op: float = ..., o: bool = ..., owp: bool = ..., pna: str = ..., pm: str = ..., pot: str = ..., pcm: bool = ..., pv: bool = ..., plc: [float, float] = ..., plp: float = ..., pcs: bool = ..., psf: str = ..., prm: bool = ..., r: float = ..., rxc: [float, float, float] = ..., rmc: [float, float, float] = ..., rec: bool = ..., rn: bool = ..., rno: bool = ..., ra: str = ..., scR: float = ..., scs: bool = ..., sao: str = ..., sac: str = ..., svc: str = ..., sa: bool = ..., stD: float = ..., stP: str = ..., stS: float = ..., ssm: str = ..., scv: bool = ..., tab: bool = ..., to: bool = ..., tcc: str = ..., tfp: str = ..., top: str = ..., tsc: str = ..., ucr: bool = ..., umc: bool = ..., unr: bool = ..., und: bool = ..., up: bool = ..., val: float = ..., wst: str = ..., wlR: float = ..., q: bool = ...) -> str:
     """artUserPaintCtx is undoable, queryable, and editable.
     
     This is a context command to set the flags on the artAttrContext, which is the
@@ -553,6 +579,15 @@ def artUserPaintCtx(aco: bool = ..., alp: str = ..., asc: str = ..., alc: str = 
     This command executes a scriptable paint (Maya Artisan). It allows the user to
     apply Mel commands/scripts to modify cvs' attributes for all cvs under the
     paint brush.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create the context
+        cmds.artUserPaintCtx('artUserPaintCtx')
+        # set the init Mel script
+        cmds.artUserPaintCtx( 'artUserPaintCtx', e=True, ic='spherePaint' )
+    ```
 
     ---
     - Args:
@@ -573,7 +608,6 @@ def artUserPaintCtx(aco: bool = ..., alp: str = ..., asc: str = ..., alc: str = 
             clamps to the lower and upper bounds. C: Default is "none".  Q: When queried, it returns a string.
         - clamplower (cll): Specifies the lower bound for the values. C: Default is 0.0.  Q: When queried, it returns a float.
         - clampupper (clu): Specifies the upper bound for the values. C: Default is 1.0.  Q: When queried, it returns a float.
-        - clear (clr): Floods all cvs/vertices to the current value.
         - colorAlphaValue (cl1): The Alpha value of the color.
         - colorRGBAValue (cl4): The RGBA value of the color.
         - colorRGBValue (cl3): The RGB value of the color.
@@ -584,11 +618,8 @@ def artUserPaintCtx(aco: bool = ..., alp: str = ..., asc: str = ..., alc: str = 
         - colorrangeupper (cru): Specifies the value that maps to the maximum color when color feedback mode is on. C: Default is 1.0.  Q: When queried, it returns a float.
         - dataTypeIndex (dti): When the selected paintable attribute is a vectorArray, it specifies which field to paint on.
         - disablelighting (dl): If color feedback is on, this flag determines whether lighting is disabled or not for the surfaces that are affected. C: Default is FALSE.  Q: When queried, it returns a boolean.
-        - dragSlider (dsl): Sets the current brush drag state for resizing or offsetting the brush (like the 'b' and 'm' default hotkeys). The string argument is one of: "radius", "lowradius", "opacity", "value", "depth", "displacement", "uvvector" or "none". C:
-            Default is "none".
         - duringStrokeCmd (dsk): The passed string is executed as a MEL command during the stroke, each time the mouse is dragged. C: Default is no command. Q: When queried, it returns the current command
         - dynclonemode (dcm): Enable or disable dynamic clone mode.
-        - expandfilename (eef): If true, it will expand the name of the export file and concatenate it with the surface name. Otherwise it will take the name as it is. C: Default is true.
         - exportaspectratio (ear): Value of aspect ratio for export
         - exportfilemode (efm): Specifies the export channel.The valid entries here are: "alpha", "luminance", "rgb", "rgba". C: Default is "luminance/rgb". Q: When queried, it returns a string.
         - exportfilesizex (fsx): Specifies the width of the attribute map to export. C: Default width is 256. Q: When queried, it returns an integer.
@@ -679,7 +710,7 @@ def artUserPaintCtx(aco: bool = ..., alp: str = ..., asc: str = ..., alc: str = 
         - query (q): Query mode flag
     """
 @overload #Overload for artUserPaintCtx in ['query']
-def artUserPaintCtx(accopacity: bool = ..., aco: bool = ..., activeListChangedProc: str = ..., alp: str = ..., afterStrokeCmd: str = ..., asc: str = ..., alphaclamp: str = ..., alc: str = ..., alphaclamplower: float = ..., acl: float = ..., alphaclampupper: float = ..., acu: float = ..., attrSelected: str = ..., asl: str = ..., beforeStrokeCmd: str = ..., bsc: str = ..., brushalignment: bool = ..., bra: bool = ..., brushfeedback: bool = ..., brf: bool = ..., chunkCommand: str = ..., cc: str = ..., clamp: str = ..., cl: str = ..., clamplower: float = ..., cll: float = ..., clampupper: float = ..., clu: float = ..., clear: bool = ..., clr: bool = ..., colorAlphaValue: float = ..., cl1: float = ..., colorRGBAValue: [float, float, float, float] = ..., cl4: [float, float, float, float] = ..., colorRGBValue: [float, float, float] = ..., cl3: [float, float, float] = ..., colorRamp: str = ..., cr: str = ..., colorfeedback: bool = ..., cf: bool = ..., colorfeedbackOverride: bool = ..., cfo: bool = ..., colorrangelower: float = ..., crl: float = ..., colorrangeupper: float = ..., cru: float = ..., dataTypeIndex: int = ..., dti: int = ..., disablelighting: bool = ..., dl: bool = ..., dragSlider: str = ..., dsl: str = ..., duringStrokeCmd: str = ..., dsk: str = ..., dynclonemode: bool = ..., dcm: bool = ..., expandfilename: bool = ..., eef: bool = ..., exportaspectratio: float = ..., ear: float = ..., exportfilemode: str = ..., efm: str = ..., exportfilesizex: int = ..., fsx: int = ..., exportfilesizey: int = ..., fsy: int = ..., exportfiletype: str = ..., eft: str = ..., finalizeCmd: str = ..., fc: str = ..., fullpaths: bool = ..., fp: bool = ..., getArrayAttrCommand: str = ..., gac: str = ..., getSurfaceCommand: str = ..., gsc: str = ..., getValueCommand: str = ..., gvc: str = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., importfilemode: str = ..., ifm: str = ..., importreassign: bool = ..., irm: bool = ..., initializeCmd: str = ..., ic: str = ..., interactiveUpdate: bool = ..., iu: bool = ..., lastRecorderCmd: str = ..., lrc: str = ..., lastStampName: str = ..., lsn: str = ..., lowerradius: float = ..., lr: float = ..., makeStroke: int = ..., mst: int = ..., mappressure: str = ..., mp: str = ..., maxvalue: float = ..., mxv: float = ..., minvalue: float = ..., miv: float = ..., numericColorRamp: str = ..., ncr: str = ..., numericDisplayColor: [float, float, float] = ..., ndc: [float, float, float] = ..., numericDisplayPrecision: int = ..., ndp: int = ..., numericMaxColor: [float, float, float] = ..., nxc: [float, float, float] = ..., numericMinColor: [float, float, float] = ..., nmc: [float, float, float] = ..., objattrArray: str = ..., oaa: str = ..., objattrArrayNoMenu: str = ..., oan: str = ..., opacity: float = ..., op: float = ..., outline: bool = ..., o: bool = ..., outwhilepaint: bool = ..., owp: bool = ..., paintNodeArray: str = ..., pna: str = ..., paintmode: str = ..., pm: str = ..., paintoperationtype: str = ..., pot: str = ..., pickColor: bool = ..., pcm: bool = ..., pickValue: bool = ..., pv: bool = ..., playbackCursor: [float, float] = ..., plc: [float, float] = ..., playbackPressure: float = ..., plp: float = ..., preserveclonesource: bool = ..., pcs: bool = ..., profileShapeFile: str = ..., psf: str = ..., projective: bool = ..., prm: bool = ..., radius: float = ..., r: float = ..., rampMaxColor: [float, float, float] = ..., rxc: [float, float, float] = ..., rampMinColor: [float, float, float] = ..., rmc: [float, float, float] = ..., record: bool = ..., rec: bool = ..., reflection: bool = ..., rn: bool = ..., reflectionaboutorigin: bool = ..., rno: bool = ..., reflectionaxis: str = ..., ra: str = ..., screenRadius: float = ..., scR: float = ..., selectclonesource: bool = ..., scs: bool = ..., selectedattroper: str = ..., sao: str = ..., setArrayValueCommand: str = ..., sac: str = ..., setValueCommand: str = ..., svc: str = ..., showactive: bool = ..., sa: bool = ..., stampDepth: float = ..., stD: float = ..., stampProfile: str = ..., stP: str = ..., stampSpacing: float = ..., stS: float = ..., strokesmooth: str = ..., ssm: str = ..., surfaceConformedBrushVertices: bool = ..., scv: bool = ..., tablet: bool = ..., tab: bool = ..., tangentOutline: bool = ..., to: bool = ..., toolCleanupCmd: str = ..., tcc: str = ..., toolOffProc: str = ..., tfp: str = ..., toolOnProc: str = ..., top: str = ..., toolSetupCmd: str = ..., tsc: str = ..., useColorRamp: bool = ..., ucr: bool = ..., useMaxMinColor: bool = ..., umc: bool = ..., useNumericColorRamp: bool = ..., unr: bool = ..., useNumericDisplay: bool = ..., und: bool = ..., usepressure: bool = ..., up: bool = ..., value: float = ..., val: float = ..., whichTool: str = ..., wst: str = ..., worldRadius: float = ..., wlR: float = ..., query: bool = ..., q: bool = ...) -> str:
+def artUserPaintCtx(accopacity: bool = ..., aco: bool = ..., activeListChangedProc: str = ..., alp: str = ..., afterStrokeCmd: str = ..., asc: str = ..., alphaclamp: str = ..., alc: str = ..., alphaclamplower: float = ..., acl: float = ..., alphaclampupper: float = ..., acu: float = ..., attrSelected: str = ..., asl: str = ..., beforeStrokeCmd: str = ..., bsc: str = ..., brushalignment: bool = ..., bra: bool = ..., brushfeedback: bool = ..., brf: bool = ..., chunkCommand: str = ..., cc: str = ..., clamp: str = ..., cl: str = ..., clamplower: float = ..., cll: float = ..., clampupper: float = ..., clu: float = ..., colorAlphaValue: float = ..., cl1: float = ..., colorRGBAValue: [float, float, float, float] = ..., cl4: [float, float, float, float] = ..., colorRGBValue: [float, float, float] = ..., cl3: [float, float, float] = ..., colorRamp: str = ..., cr: str = ..., colorfeedback: bool = ..., cf: bool = ..., colorfeedbackOverride: bool = ..., cfo: bool = ..., colorrangelower: float = ..., crl: float = ..., colorrangeupper: float = ..., cru: float = ..., dataTypeIndex: int = ..., dti: int = ..., disablelighting: bool = ..., dl: bool = ..., duringStrokeCmd: str = ..., dsk: str = ..., dynclonemode: bool = ..., dcm: bool = ..., exportaspectratio: float = ..., ear: float = ..., exportfilemode: str = ..., efm: str = ..., exportfilesizex: int = ..., fsx: int = ..., exportfilesizey: int = ..., fsy: int = ..., exportfiletype: str = ..., eft: str = ..., finalizeCmd: str = ..., fc: str = ..., fullpaths: bool = ..., fp: bool = ..., getArrayAttrCommand: str = ..., gac: str = ..., getSurfaceCommand: str = ..., gsc: str = ..., getValueCommand: str = ..., gvc: str = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., importfilemode: str = ..., ifm: str = ..., importreassign: bool = ..., irm: bool = ..., initializeCmd: str = ..., ic: str = ..., interactiveUpdate: bool = ..., iu: bool = ..., lastRecorderCmd: str = ..., lrc: str = ..., lastStampName: str = ..., lsn: str = ..., lowerradius: float = ..., lr: float = ..., makeStroke: int = ..., mst: int = ..., mappressure: str = ..., mp: str = ..., maxvalue: float = ..., mxv: float = ..., minvalue: float = ..., miv: float = ..., numericColorRamp: str = ..., ncr: str = ..., numericDisplayColor: [float, float, float] = ..., ndc: [float, float, float] = ..., numericDisplayPrecision: int = ..., ndp: int = ..., numericMaxColor: [float, float, float] = ..., nxc: [float, float, float] = ..., numericMinColor: [float, float, float] = ..., nmc: [float, float, float] = ..., objattrArray: str = ..., oaa: str = ..., objattrArrayNoMenu: str = ..., oan: str = ..., opacity: float = ..., op: float = ..., outline: bool = ..., o: bool = ..., outwhilepaint: bool = ..., owp: bool = ..., paintNodeArray: str = ..., pna: str = ..., paintmode: str = ..., pm: str = ..., paintoperationtype: str = ..., pot: str = ..., pickColor: bool = ..., pcm: bool = ..., pickValue: bool = ..., pv: bool = ..., playbackCursor: [float, float] = ..., plc: [float, float] = ..., playbackPressure: float = ..., plp: float = ..., preserveclonesource: bool = ..., pcs: bool = ..., profileShapeFile: str = ..., psf: str = ..., projective: bool = ..., prm: bool = ..., radius: float = ..., r: float = ..., rampMaxColor: [float, float, float] = ..., rxc: [float, float, float] = ..., rampMinColor: [float, float, float] = ..., rmc: [float, float, float] = ..., record: bool = ..., rec: bool = ..., reflection: bool = ..., rn: bool = ..., reflectionaboutorigin: bool = ..., rno: bool = ..., reflectionaxis: str = ..., ra: str = ..., screenRadius: float = ..., scR: float = ..., selectclonesource: bool = ..., scs: bool = ..., selectedattroper: str = ..., sao: str = ..., setArrayValueCommand: str = ..., sac: str = ..., setValueCommand: str = ..., svc: str = ..., showactive: bool = ..., sa: bool = ..., stampDepth: float = ..., stD: float = ..., stampProfile: str = ..., stP: str = ..., stampSpacing: float = ..., stS: float = ..., strokesmooth: str = ..., ssm: str = ..., surfaceConformedBrushVertices: bool = ..., scv: bool = ..., tablet: bool = ..., tab: bool = ..., tangentOutline: bool = ..., to: bool = ..., toolCleanupCmd: str = ..., tcc: str = ..., toolOffProc: str = ..., tfp: str = ..., toolOnProc: str = ..., top: str = ..., toolSetupCmd: str = ..., tsc: str = ..., useColorRamp: bool = ..., ucr: bool = ..., useMaxMinColor: bool = ..., umc: bool = ..., useNumericColorRamp: bool = ..., unr: bool = ..., useNumericDisplay: bool = ..., und: bool = ..., usepressure: bool = ..., up: bool = ..., value: float = ..., val: float = ..., whichTool: str = ..., wst: str = ..., worldRadius: float = ..., wlR: float = ..., query: bool = ..., q: bool = ...) -> str:
     """artUserPaintCtx is undoable, queryable, and editable.
     
     This is a context command to set the flags on the artAttrContext, which is the
@@ -690,6 +721,15 @@ def artUserPaintCtx(accopacity: bool = ..., aco: bool = ..., activeListChangedPr
     This command executes a scriptable paint (Maya Artisan). It allows the user to
     apply Mel commands/scripts to modify cvs' attributes for all cvs under the
     paint brush.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create the context
+        cmds.artUserPaintCtx('artUserPaintCtx')
+        # set the init Mel script
+        cmds.artUserPaintCtx( 'artUserPaintCtx', e=True, ic='spherePaint' )
+    ```
 
     ---
     - Args:
@@ -710,7 +750,6 @@ def artUserPaintCtx(accopacity: bool = ..., aco: bool = ..., activeListChangedPr
             clamps to the lower and upper bounds. C: Default is "none".  Q: When queried, it returns a string.
         - clamplower (cll): Specifies the lower bound for the values. C: Default is 0.0.  Q: When queried, it returns a float.
         - clampupper (clu): Specifies the upper bound for the values. C: Default is 1.0.  Q: When queried, it returns a float.
-        - clear (clr): Floods all cvs/vertices to the current value.
         - colorAlphaValue (cl1): The Alpha value of the color.
         - colorRGBAValue (cl4): The RGBA value of the color.
         - colorRGBValue (cl3): The RGB value of the color.
@@ -721,11 +760,8 @@ def artUserPaintCtx(accopacity: bool = ..., aco: bool = ..., activeListChangedPr
         - colorrangeupper (cru): Specifies the value that maps to the maximum color when color feedback mode is on. C: Default is 1.0.  Q: When queried, it returns a float.
         - dataTypeIndex (dti): When the selected paintable attribute is a vectorArray, it specifies which field to paint on.
         - disablelighting (dl): If color feedback is on, this flag determines whether lighting is disabled or not for the surfaces that are affected. C: Default is FALSE.  Q: When queried, it returns a boolean.
-        - dragSlider (dsl): Sets the current brush drag state for resizing or offsetting the brush (like the 'b' and 'm' default hotkeys). The string argument is one of: "radius", "lowradius", "opacity", "value", "depth", "displacement", "uvvector" or "none". C:
-            Default is "none".
         - duringStrokeCmd (dsk): The passed string is executed as a MEL command during the stroke, each time the mouse is dragged. C: Default is no command. Q: When queried, it returns the current command
         - dynclonemode (dcm): Enable or disable dynamic clone mode.
-        - expandfilename (eef): If true, it will expand the name of the export file and concatenate it with the surface name. Otherwise it will take the name as it is. C: Default is true.
         - exportaspectratio (ear): Value of aspect ratio for export
         - exportfilemode (efm): Specifies the export channel.The valid entries here are: "alpha", "luminance", "rgb", "rgba". C: Default is "luminance/rgb". Q: When queried, it returns a string.
         - exportfilesizex (fsx): Specifies the width of the attribute map to export. C: Default width is 256. Q: When queried, it returns an integer.
@@ -827,6 +863,15 @@ def artUserPaintCtx(accopacity: bool = ..., activeListChangedProc: str = ..., af
     This command executes a scriptable paint (Maya Artisan). It allows the user to
     apply Mel commands/scripts to modify cvs' attributes for all cvs under the
     paint brush.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create the context
+        cmds.artUserPaintCtx('artUserPaintCtx')
+        # set the init Mel script
+        cmds.artUserPaintCtx( 'artUserPaintCtx', e=True, ic='spherePaint' )
+    ```
 
     ---
     - Args:
@@ -964,6 +1009,15 @@ def artUserPaintCtx(aco: bool = ..., alp: str = ..., asc: str = ..., alc: str = 
     apply Mel commands/scripts to modify cvs' attributes for all cvs under the
     paint brush.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create the context
+        cmds.artUserPaintCtx('artUserPaintCtx')
+        # set the init Mel script
+        cmds.artUserPaintCtx( 'artUserPaintCtx', e=True, ic='spherePaint' )
+    ```
+
     ---
     - Args:
         - accopacity (aco): Sets opacity accumulation on/off. C: Default is false (Except for sculpt tool for which it is true by default). Q: When queried, it returns a boolean.
@@ -1099,6 +1153,15 @@ def artUserPaintCtx(accopacity: bool = ..., aco: bool = ..., activeListChangedPr
     This command executes a scriptable paint (Maya Artisan). It allows the user to
     apply Mel commands/scripts to modify cvs' attributes for all cvs under the
     paint brush.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create the context
+        cmds.artUserPaintCtx('artUserPaintCtx')
+        # set the init Mel script
+        cmds.artUserPaintCtx( 'artUserPaintCtx', e=True, ic='spherePaint' )
+    ```
 
     ---
     - Args:

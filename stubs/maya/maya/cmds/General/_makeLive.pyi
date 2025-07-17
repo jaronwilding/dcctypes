@@ -20,6 +20,13 @@ def makeLive([surface...]: [surface...], none: bool = ..., registry: int = ..., 
     The command allows for a limited number of objects collections to be saved in
     a registry entry. These collections can be queried and/or made live.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.makeLive( 'surface1' )
+        cmds.makeLive( none=True )
+    ```
+
     ---
     - Args:
         - [surface...]: Input item(s).
@@ -45,6 +52,13 @@ def makeLive([surface...]: [surface...], n: bool = ..., r: int = ..., rr: bool =
     
     The command allows for a limited number of objects collections to be saved in
     a registry entry. These collections can be queried and/or made live.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.makeLive( 'surface1' )
+        cmds.makeLive( none=True )
+    ```
 
     ---
     - Args:
@@ -72,6 +86,13 @@ def makeLive([surface...]: [surface...], none: bool = ..., n: bool = ..., regist
     The command allows for a limited number of objects collections to be saved in
     a registry entry. These collections can be queried and/or made live.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.makeLive( 'surface1' )
+        cmds.makeLive( none=True )
+    ```
+
     ---
     - Args:
         - [surface...]: Input item(s).
@@ -97,6 +118,13 @@ def makeLive([surface...]: [surface...], registry: int = ..., registryCount: boo
     
     The command allows for a limited number of objects collections to be saved in
     a registry entry. These collections can be queried and/or made live.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.makeLive( 'surface1' )
+        cmds.makeLive( none=True )
+    ```
 
     ---
     - Args:
@@ -124,6 +152,13 @@ def makeLive([surface...]: [surface...], r: int = ..., rc: bool = ..., rs: int =
     The command allows for a limited number of objects collections to be saved in
     a registry entry. These collections can be queried and/or made live.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.makeLive( 'surface1' )
+        cmds.makeLive( none=True )
+    ```
+
     ---
     - Args:
         - [surface...]: Input item(s).
@@ -150,6 +185,13 @@ def makeLive([surface...]: [surface...], registry: int = ..., r: int = ..., regi
     The command allows for a limited number of objects collections to be saved in
     a registry entry. These collections can be queried and/or made live.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.makeLive( 'surface1' )
+        cmds.makeLive( none=True )
+    ```
+
     ---
     - Args:
         - [surface...]: Input item(s).
@@ -159,7 +201,7 @@ def makeLive([surface...]: [surface...], registry: int = ..., r: int = ..., regi
         - query (q): Query mode flag
     """
 @overload #Overload for makeLive in ['edit']
-def makeLive([surface...]: [surface...], addObjects: bool = ..., registry: int = ..., registrySize: int = ..., removeObjects: bool = ..., edit: bool = ...) -> None:
+def makeLive([surface...]: [surface...], addObjects: bool = ..., removeObjects: bool = ..., edit: bool = ...) -> None:
     """makeLive is undoable, queryable, and editable.
     
     This commmand makes one or several objects live. A live object defines the
@@ -176,17 +218,22 @@ def makeLive([surface...]: [surface...], addObjects: bool = ..., registry: int =
     The command allows for a limited number of objects collections to be saved in
     a registry entry. These collections can be queried and/or made live.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.makeLive( 'surface1' )
+        cmds.makeLive( none=True )
+    ```
+
     ---
     - Args:
         - [surface...]: Input item(s).
         - addObjects (ao): Add the listed object(s) to the current live list. If an object is already in the live list, it is ignored.
-        - registry (r): Make live the objects defined in the specified registry entry. In Query mode, return the list of objects defined in the specified registry entry.
-        - registrySize (rs): Defines the maximum number of registry entries that are remembered by the command. In Query mode, returns the maximum number currently set.
         - removeObjects (ro): Remove the listed object(s) from the current live list. If an object is not in the list, it is ignored.
         - edit (e): Edit mode flag
     """
 @overload #Overload for makeLive in ['edit']
-def makeLive([surface...]: [surface...], ao: bool = ..., r: int = ..., rs: int = ..., ro: bool = ..., e: bool = ...) -> None:
+def makeLive([surface...]: [surface...], ao: bool = ..., ro: bool = ..., e: bool = ...) -> None:
     """makeLive is undoable, queryable, and editable.
     
     This commmand makes one or several objects live. A live object defines the
@@ -203,17 +250,22 @@ def makeLive([surface...]: [surface...], ao: bool = ..., r: int = ..., rs: int =
     The command allows for a limited number of objects collections to be saved in
     a registry entry. These collections can be queried and/or made live.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.makeLive( 'surface1' )
+        cmds.makeLive( none=True )
+    ```
+
     ---
     - Args:
         - [surface...]: Input item(s).
         - addObjects (ao): Add the listed object(s) to the current live list. If an object is already in the live list, it is ignored.
-        - registry (r): Make live the objects defined in the specified registry entry. In Query mode, return the list of objects defined in the specified registry entry.
-        - registrySize (rs): Defines the maximum number of registry entries that are remembered by the command. In Query mode, returns the maximum number currently set.
         - removeObjects (ro): Remove the listed object(s) from the current live list. If an object is not in the list, it is ignored.
         - edit (e): Edit mode flag
     """
 @overload #Overload for makeLive in ['edit']
-def makeLive([surface...]: [surface...], addObjects: bool = ..., ao: bool = ..., registry: int = ..., r: int = ..., registrySize: int = ..., rs: int = ..., removeObjects: bool = ..., ro: bool = ..., edit: bool = ..., e: bool = ...) -> None:
+def makeLive([surface...]: [surface...], addObjects: bool = ..., ao: bool = ..., removeObjects: bool = ..., ro: bool = ..., edit: bool = ..., e: bool = ...) -> None:
     """makeLive is undoable, queryable, and editable.
     
     This commmand makes one or several objects live. A live object defines the
@@ -230,12 +282,17 @@ def makeLive([surface...]: [surface...], addObjects: bool = ..., ao: bool = ...,
     The command allows for a limited number of objects collections to be saved in
     a registry entry. These collections can be queried and/or made live.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.makeLive( 'surface1' )
+        cmds.makeLive( none=True )
+    ```
+
     ---
     - Args:
         - [surface...]: Input item(s).
         - addObjects (ao): Add the listed object(s) to the current live list. If an object is already in the live list, it is ignored.
-        - registry (r): Make live the objects defined in the specified registry entry. In Query mode, return the list of objects defined in the specified registry entry.
-        - registrySize (rs): Defines the maximum number of registry entries that are remembered by the command. In Query mode, returns the maximum number currently set.
         - removeObjects (ro): Remove the listed object(s) from the current live list. If an object is not in the list, it is ignored.
         - edit (e): Edit mode flag
     """

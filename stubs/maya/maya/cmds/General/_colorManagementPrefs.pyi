@@ -3,103 +3,85 @@
 from typing import Any, overload
 
 @overload #Overload for colorManagementPrefs in ['create']
-def colorManagementPrefs(cmConfigFileEnabled: bool = ..., cmEnabled: bool = ..., colorManageAllNodes: bool = ..., colorManagePots: bool = ..., configFilePath: str = ..., defaultInputSpaceName: str = ..., displayName: str = ..., exportPolicy: str = ..., inhibitEvents: bool = ..., loadPolicy: str = ..., ocioRulesEnabled: bool = ..., outputTarget: str = ..., outputTransformEnabled: bool = ..., outputTransformName: str = ..., outputTransformUseColorConversion: bool = ..., outputUseViewTransform: bool = ..., policyFileName: str = ..., refresh: bool = ..., renderingSpaceName: str = ..., restoreDefaults: bool = ..., viewName: str = ..., viewTransformName: str = ...) -> None:
+def colorManagementPrefs(colorManageAllNodes: bool = ..., exportPolicy: str = ..., inhibitEvents: bool = ..., loadPolicy: str = ..., refresh: bool = ..., restoreDefaults: bool = ...) -> None:
     """colorManagementPrefs is undoable, queryable, and editable.
     
     This command allows querying and editing the color management global data in a
     scene. It also allows for setting the view transform and rendering space which
     automatically configures the color processing in the enabled views.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        ws = cmds.colorManagementPrefs(q=True, renderingSpaceName=True)
+        cmds.colorManagementPrefs(e=True, viewTransformName="Log")
+        renderingSpaces = cmd.colorManagementPrefs(q=True, renderingSpaceNames=True)
+        viewingTransforms = cmd.colorManagementPrefs(q=True, viewTransformNames=True)
+        cmds.colorManagementPrefs(e=True, configFilePath="/project/local_config.ocio")
+    ```
+
     ---
     - Args:
-        - cmConfigFileEnabled (cfe): Turn on or off applying an OCIO configuration file.  If set, the color management configuration set in the preferences is used.
-        - cmEnabled (cme): Turn on or off color management in general.  If set, the color management configuration set in the preferences is used.
         - colorManageAllNodes (cma): Adds color management to all input nodes such as file texture nodes
-        - colorManagePots (cmp): Turn on or off color management of color pots in the UI.  If set, colors in color pots are taken to be in rendering space, and are displayed after being transformed by the view transform set in the preferences.
-        - configFilePath (cfp): The configuration file to be used, if color management is enabled.
-        - defaultInputSpaceName (din): This flag is obsolete.  See the colorManagementFileRules command for more information.
-        - displayName (dn): The display from the (display, view) pair, to be applied by color managed viewers and color managed UI controls.
         - exportPolicy (epy): Export the color management parameters to policy file
         - inhibitEvents (ie): Inhibit client-server notifications and event triggers which occur when changing the color management settings.
         - loadPolicy (lpy): Load the color management policy file. This file overides the color management settings.
-        - ocioRulesEnabled (ore): Turn on or off the use of colorspace assignment rules from the OCIO library.
-        - outputTarget (ott): Indicates to which output the outputTransformEnabled or the outputTransformName flags are to be applied. Valid values are "renderer" or "playblast".In query mode, this flag needs a value.
-        - outputTransformEnabled (ote): Turn on or off applying the output transform for out of viewport renders. If set, the output transform set in the preferences is used.
-        - outputTransformName (otn): The output transform to be applied for out of viewport renders.  Disables output use view transform mode.
-        - outputTransformUseColorConversion (otc): Turn on or off selecting the color space conversion for the output color space of viewport renders.  If set, a conversion color space is used; otherwise, a view transform is used.
-        - outputUseViewTransform (ovt): Turns use view transform mode on.  In this mode, the output transform is set to match the view transform.  To turn the mode off, set an output transform using the outputTransformName flag.
-        - policyFileName (pfn): Set the policy file name
         - refresh (rfr): Refresh the color management.
-        - renderingSpaceName (rsn): The color space to be used during rendering.  This is the source color space to the viewing transform, for color managed viewers and color managed UI controls, and the destination color space for color managed input pixels.
         - restoreDefaults (rde): Restore the color management settings to their default value.
-        - viewName (vn): The view from the (display, view) pair, to be applied by color managed viewers and color managed UI controls.
-        - viewTransformName (vtn): The view transform to be applied by color managed viewers and color managed UI controls.
     """
 @overload #Overload for colorManagementPrefs in ['create']
-def colorManagementPrefs(cfe: bool = ..., cme: bool = ..., cma: bool = ..., cmp: bool = ..., cfp: str = ..., din: str = ..., dn: str = ..., epy: str = ..., ie: bool = ..., lpy: str = ..., ore: bool = ..., ott: str = ..., ote: bool = ..., otn: str = ..., otc: bool = ..., ovt: bool = ..., pfn: str = ..., rfr: bool = ..., rsn: str = ..., rde: bool = ..., vn: str = ..., vtn: str = ...) -> None:
+def colorManagementPrefs(cma: bool = ..., epy: str = ..., ie: bool = ..., lpy: str = ..., rfr: bool = ..., rde: bool = ...) -> None:
     """colorManagementPrefs is undoable, queryable, and editable.
     
     This command allows querying and editing the color management global data in a
     scene. It also allows for setting the view transform and rendering space which
     automatically configures the color processing in the enabled views.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        ws = cmds.colorManagementPrefs(q=True, renderingSpaceName=True)
+        cmds.colorManagementPrefs(e=True, viewTransformName="Log")
+        renderingSpaces = cmd.colorManagementPrefs(q=True, renderingSpaceNames=True)
+        viewingTransforms = cmd.colorManagementPrefs(q=True, viewTransformNames=True)
+        cmds.colorManagementPrefs(e=True, configFilePath="/project/local_config.ocio")
+    ```
+
     ---
     - Args:
-        - cmConfigFileEnabled (cfe): Turn on or off applying an OCIO configuration file.  If set, the color management configuration set in the preferences is used.
-        - cmEnabled (cme): Turn on or off color management in general.  If set, the color management configuration set in the preferences is used.
         - colorManageAllNodes (cma): Adds color management to all input nodes such as file texture nodes
-        - colorManagePots (cmp): Turn on or off color management of color pots in the UI.  If set, colors in color pots are taken to be in rendering space, and are displayed after being transformed by the view transform set in the preferences.
-        - configFilePath (cfp): The configuration file to be used, if color management is enabled.
-        - defaultInputSpaceName (din): This flag is obsolete.  See the colorManagementFileRules command for more information.
-        - displayName (dn): The display from the (display, view) pair, to be applied by color managed viewers and color managed UI controls.
         - exportPolicy (epy): Export the color management parameters to policy file
         - inhibitEvents (ie): Inhibit client-server notifications and event triggers which occur when changing the color management settings.
         - loadPolicy (lpy): Load the color management policy file. This file overides the color management settings.
-        - ocioRulesEnabled (ore): Turn on or off the use of colorspace assignment rules from the OCIO library.
-        - outputTarget (ott): Indicates to which output the outputTransformEnabled or the outputTransformName flags are to be applied. Valid values are "renderer" or "playblast".In query mode, this flag needs a value.
-        - outputTransformEnabled (ote): Turn on or off applying the output transform for out of viewport renders. If set, the output transform set in the preferences is used.
-        - outputTransformName (otn): The output transform to be applied for out of viewport renders.  Disables output use view transform mode.
-        - outputTransformUseColorConversion (otc): Turn on or off selecting the color space conversion for the output color space of viewport renders.  If set, a conversion color space is used; otherwise, a view transform is used.
-        - outputUseViewTransform (ovt): Turns use view transform mode on.  In this mode, the output transform is set to match the view transform.  To turn the mode off, set an output transform using the outputTransformName flag.
-        - policyFileName (pfn): Set the policy file name
         - refresh (rfr): Refresh the color management.
-        - renderingSpaceName (rsn): The color space to be used during rendering.  This is the source color space to the viewing transform, for color managed viewers and color managed UI controls, and the destination color space for color managed input pixels.
         - restoreDefaults (rde): Restore the color management settings to their default value.
-        - viewName (vn): The view from the (display, view) pair, to be applied by color managed viewers and color managed UI controls.
-        - viewTransformName (vtn): The view transform to be applied by color managed viewers and color managed UI controls.
     """
 @overload #Overload for colorManagementPrefs in ['create']
-def colorManagementPrefs(cmConfigFileEnabled: bool = ..., cfe: bool = ..., cmEnabled: bool = ..., cme: bool = ..., colorManageAllNodes: bool = ..., cma: bool = ..., colorManagePots: bool = ..., cmp: bool = ..., configFilePath: str = ..., cfp: str = ..., defaultInputSpaceName: str = ..., din: str = ..., displayName: str = ..., dn: str = ..., exportPolicy: str = ..., epy: str = ..., inhibitEvents: bool = ..., ie: bool = ..., loadPolicy: str = ..., lpy: str = ..., ocioRulesEnabled: bool = ..., ore: bool = ..., outputTarget: str = ..., ott: str = ..., outputTransformEnabled: bool = ..., ote: bool = ..., outputTransformName: str = ..., otn: str = ..., outputTransformUseColorConversion: bool = ..., otc: bool = ..., outputUseViewTransform: bool = ..., ovt: bool = ..., policyFileName: str = ..., pfn: str = ..., refresh: bool = ..., rfr: bool = ..., renderingSpaceName: str = ..., rsn: str = ..., restoreDefaults: bool = ..., rde: bool = ..., viewName: str = ..., vn: str = ..., viewTransformName: str = ..., vtn: str = ...) -> None:
+def colorManagementPrefs(colorManageAllNodes: bool = ..., cma: bool = ..., exportPolicy: str = ..., epy: str = ..., inhibitEvents: bool = ..., ie: bool = ..., loadPolicy: str = ..., lpy: str = ..., refresh: bool = ..., rfr: bool = ..., restoreDefaults: bool = ..., rde: bool = ...) -> None:
     """colorManagementPrefs is undoable, queryable, and editable.
     
     This command allows querying and editing the color management global data in a
     scene. It also allows for setting the view transform and rendering space which
     automatically configures the color processing in the enabled views.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        ws = cmds.colorManagementPrefs(q=True, renderingSpaceName=True)
+        cmds.colorManagementPrefs(e=True, viewTransformName="Log")
+        renderingSpaces = cmd.colorManagementPrefs(q=True, renderingSpaceNames=True)
+        viewingTransforms = cmd.colorManagementPrefs(q=True, viewTransformNames=True)
+        cmds.colorManagementPrefs(e=True, configFilePath="/project/local_config.ocio")
+    ```
+
     ---
     - Args:
-        - cmConfigFileEnabled (cfe): Turn on or off applying an OCIO configuration file.  If set, the color management configuration set in the preferences is used.
-        - cmEnabled (cme): Turn on or off color management in general.  If set, the color management configuration set in the preferences is used.
         - colorManageAllNodes (cma): Adds color management to all input nodes such as file texture nodes
-        - colorManagePots (cmp): Turn on or off color management of color pots in the UI.  If set, colors in color pots are taken to be in rendering space, and are displayed after being transformed by the view transform set in the preferences.
-        - configFilePath (cfp): The configuration file to be used, if color management is enabled.
-        - defaultInputSpaceName (din): This flag is obsolete.  See the colorManagementFileRules command for more information.
-        - displayName (dn): The display from the (display, view) pair, to be applied by color managed viewers and color managed UI controls.
         - exportPolicy (epy): Export the color management parameters to policy file
         - inhibitEvents (ie): Inhibit client-server notifications and event triggers which occur when changing the color management settings.
         - loadPolicy (lpy): Load the color management policy file. This file overides the color management settings.
-        - ocioRulesEnabled (ore): Turn on or off the use of colorspace assignment rules from the OCIO library.
-        - outputTarget (ott): Indicates to which output the outputTransformEnabled or the outputTransformName flags are to be applied. Valid values are "renderer" or "playblast".In query mode, this flag needs a value.
-        - outputTransformEnabled (ote): Turn on or off applying the output transform for out of viewport renders. If set, the output transform set in the preferences is used.
-        - outputTransformName (otn): The output transform to be applied for out of viewport renders.  Disables output use view transform mode.
-        - outputTransformUseColorConversion (otc): Turn on or off selecting the color space conversion for the output color space of viewport renders.  If set, a conversion color space is used; otherwise, a view transform is used.
-        - outputUseViewTransform (ovt): Turns use view transform mode on.  In this mode, the output transform is set to match the view transform.  To turn the mode off, set an output transform using the outputTransformName flag.
-        - policyFileName (pfn): Set the policy file name
         - refresh (rfr): Refresh the color management.
-        - renderingSpaceName (rsn): The color space to be used during rendering.  This is the source color space to the viewing transform, for color managed viewers and color managed UI controls, and the destination color space for color managed input pixels.
         - restoreDefaults (rde): Restore the color management settings to their default value.
-        - viewName (vn): The view from the (display, view) pair, to be applied by color managed viewers and color managed UI controls.
-        - viewTransformName (vtn): The view transform to be applied by color managed viewers and color managed UI controls.
     """
 @overload #Overload for colorManagementPrefs in ['query']
 def colorManagementPrefs(cmConfigFileEnabled: bool = ..., cmEnabled: bool = ..., colorManagePots: bool = ..., colorManagedNodes: bool = ..., colorManagementSDKVersion: str = ..., configFilePath: str = ..., configFileVersion: str = ..., defaultInputSpaceName: str = ..., displayName: str = ..., displayNames: bool = ..., equalsToPolicyFile: str = ..., inputSpaceDescription: str = ..., inputSpaceFamilies: str = ..., inputSpaceNames: bool = ..., loadedDefaultInputSpaceName: str = ..., loadedDisplayName: str = ..., loadedOutputTransformName: str = ..., loadedRenderingSpaceName: str = ..., loadedViewName: str = ..., loadedViewTransformName: str = ..., missingColorSpaceNodes: bool = ..., ocioRulesEnabled: bool = ..., ociov2Enabled: bool = ..., outputTarget: str = ..., outputTransformEnabled: bool = ..., outputTransformName: str = ..., outputTransformNames: bool = ..., outputTransformUseColorConversion: bool = ..., outputUseViewTransform: bool = ..., policyFileName: str = ..., renderingSpaceName: str = ..., renderingSpaceNames: bool = ..., viewDisplayNames: str = ..., viewName: str = ..., viewNames: bool = ..., viewTransformName: str = ..., viewTransformNames: bool = ..., query: bool = ...) -> None:
@@ -108,6 +90,16 @@ def colorManagementPrefs(cmConfigFileEnabled: bool = ..., cmEnabled: bool = ...,
     This command allows querying and editing the color management global data in a
     scene. It also allows for setting the view transform and rendering space which
     automatically configures the color processing in the enabled views.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        ws = cmds.colorManagementPrefs(q=True, renderingSpaceName=True)
+        cmds.colorManagementPrefs(e=True, viewTransformName="Log")
+        renderingSpaces = cmd.colorManagementPrefs(q=True, renderingSpaceNames=True)
+        viewingTransforms = cmd.colorManagementPrefs(q=True, viewTransformNames=True)
+        cmds.colorManagementPrefs(e=True, configFilePath="/project/local_config.ocio")
+    ```
 
     ---
     - Args:
@@ -158,6 +150,16 @@ def colorManagementPrefs(cfe: bool = ..., cme: bool = ..., cmp: bool = ..., cmn:
     scene. It also allows for setting the view transform and rendering space which
     automatically configures the color processing in the enabled views.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        ws = cmds.colorManagementPrefs(q=True, renderingSpaceName=True)
+        cmds.colorManagementPrefs(e=True, viewTransformName="Log")
+        renderingSpaces = cmd.colorManagementPrefs(q=True, renderingSpaceNames=True)
+        viewingTransforms = cmd.colorManagementPrefs(q=True, viewTransformNames=True)
+        cmds.colorManagementPrefs(e=True, configFilePath="/project/local_config.ocio")
+    ```
+
     ---
     - Args:
         - cmConfigFileEnabled (cfe): Turn on or off applying an OCIO configuration file.  If set, the color management configuration set in the preferences is used.
@@ -206,6 +208,16 @@ def colorManagementPrefs(cmConfigFileEnabled: bool = ..., cfe: bool = ..., cmEna
     This command allows querying and editing the color management global data in a
     scene. It also allows for setting the view transform and rendering space which
     automatically configures the color processing in the enabled views.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        ws = cmds.colorManagementPrefs(q=True, renderingSpaceName=True)
+        cmds.colorManagementPrefs(e=True, viewTransformName="Log")
+        renderingSpaces = cmd.colorManagementPrefs(q=True, renderingSpaceNames=True)
+        viewingTransforms = cmd.colorManagementPrefs(q=True, viewTransformNames=True)
+        cmds.colorManagementPrefs(e=True, configFilePath="/project/local_config.ocio")
+    ```
 
     ---
     - Args:
@@ -256,6 +268,16 @@ def colorManagementPrefs(cmConfigFileEnabled: bool = ..., cmEnabled: bool = ...,
     scene. It also allows for setting the view transform and rendering space which
     automatically configures the color processing in the enabled views.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        ws = cmds.colorManagementPrefs(q=True, renderingSpaceName=True)
+        cmds.colorManagementPrefs(e=True, viewTransformName="Log")
+        renderingSpaces = cmd.colorManagementPrefs(q=True, renderingSpaceNames=True)
+        viewingTransforms = cmd.colorManagementPrefs(q=True, viewTransformNames=True)
+        cmds.colorManagementPrefs(e=True, configFilePath="/project/local_config.ocio")
+    ```
+
     ---
     - Args:
         - cmConfigFileEnabled (cfe): Turn on or off applying an OCIO configuration file.  If set, the color management configuration set in the preferences is used.
@@ -285,6 +307,16 @@ def colorManagementPrefs(cfe: bool = ..., cme: bool = ..., cmp: bool = ..., cfp:
     scene. It also allows for setting the view transform and rendering space which
     automatically configures the color processing in the enabled views.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        ws = cmds.colorManagementPrefs(q=True, renderingSpaceName=True)
+        cmds.colorManagementPrefs(e=True, viewTransformName="Log")
+        renderingSpaces = cmd.colorManagementPrefs(q=True, renderingSpaceNames=True)
+        viewingTransforms = cmd.colorManagementPrefs(q=True, viewTransformNames=True)
+        cmds.colorManagementPrefs(e=True, configFilePath="/project/local_config.ocio")
+    ```
+
     ---
     - Args:
         - cmConfigFileEnabled (cfe): Turn on or off applying an OCIO configuration file.  If set, the color management configuration set in the preferences is used.
@@ -313,6 +345,16 @@ def colorManagementPrefs(cmConfigFileEnabled: bool = ..., cfe: bool = ..., cmEna
     This command allows querying and editing the color management global data in a
     scene. It also allows for setting the view transform and rendering space which
     automatically configures the color processing in the enabled views.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        ws = cmds.colorManagementPrefs(q=True, renderingSpaceName=True)
+        cmds.colorManagementPrefs(e=True, viewTransformName="Log")
+        renderingSpaces = cmd.colorManagementPrefs(q=True, renderingSpaceNames=True)
+        viewingTransforms = cmd.colorManagementPrefs(q=True, viewTransformNames=True)
+        cmds.colorManagementPrefs(e=True, configFilePath="/project/local_config.ocio")
+    ```
 
     ---
     - Args:

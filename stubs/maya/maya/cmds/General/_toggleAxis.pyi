@@ -11,6 +11,19 @@ def toggleAxis(origin: bool = ..., view: bool = ...) -> bool:
     Note: the display of the axis in the bottom left corner has been rendered
     obsolete by the headsUpDisplay command.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Turns origin axis on
+        cmds.toggleAxis( o=True )
+        # Turns origin axis off.
+        cmds.toggleAxis( o=False )
+        # Returns true if the axis at the origin is on.
+        cmds.toggleAxis( q=True, o=True )
+        # Toggles the display of the axis
+        cmds.toggleAxis()
+    ```
+
     ---
     - Args:
         - origin (o): Turns display of the axis at the origin of the ground plane on or off.
@@ -24,6 +37,19 @@ def toggleAxis(o: bool = ..., v: bool = ...) -> bool:
     
     Note: the display of the axis in the bottom left corner has been rendered
     obsolete by the headsUpDisplay command.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Turns origin axis on
+        cmds.toggleAxis( o=True )
+        # Turns origin axis off.
+        cmds.toggleAxis( o=False )
+        # Returns true if the axis at the origin is on.
+        cmds.toggleAxis( q=True, o=True )
+        # Toggles the display of the axis
+        cmds.toggleAxis()
+    ```
 
     ---
     - Args:
@@ -39,6 +65,19 @@ def toggleAxis(origin: bool = ..., o: bool = ..., view: bool = ..., v: bool = ..
     Note: the display of the axis in the bottom left corner has been rendered
     obsolete by the headsUpDisplay command.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Turns origin axis on
+        cmds.toggleAxis( o=True )
+        # Turns origin axis off.
+        cmds.toggleAxis( o=False )
+        # Returns true if the axis at the origin is on.
+        cmds.toggleAxis( q=True, o=True )
+        # Toggles the display of the axis
+        cmds.toggleAxis()
+    ```
+
     ---
     - Args:
         - origin (o): Turns display of the axis at the origin of the ground plane on or off.
@@ -52,6 +91,19 @@ def toggleAxis(origin: bool = ..., view: bool = ..., query: bool = ...) -> bool:
     
     Note: the display of the axis in the bottom left corner has been rendered
     obsolete by the headsUpDisplay command.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Turns origin axis on
+        cmds.toggleAxis( o=True )
+        # Turns origin axis off.
+        cmds.toggleAxis( o=False )
+        # Returns true if the axis at the origin is on.
+        cmds.toggleAxis( q=True, o=True )
+        # Toggles the display of the axis
+        cmds.toggleAxis()
+    ```
 
     ---
     - Args:
@@ -68,6 +120,19 @@ def toggleAxis(o: bool = ..., v: bool = ..., q: bool = ...) -> bool:
     Note: the display of the axis in the bottom left corner has been rendered
     obsolete by the headsUpDisplay command.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Turns origin axis on
+        cmds.toggleAxis( o=True )
+        # Turns origin axis off.
+        cmds.toggleAxis( o=False )
+        # Returns true if the axis at the origin is on.
+        cmds.toggleAxis( q=True, o=True )
+        # Toggles the display of the axis
+        cmds.toggleAxis()
+    ```
+
     ---
     - Args:
         - origin (o): Turns display of the axis at the origin of the ground plane on or off.
@@ -83,54 +148,22 @@ def toggleAxis(origin: bool = ..., o: bool = ..., view: bool = ..., v: bool = ..
     Note: the display of the axis in the bottom left corner has been rendered
     obsolete by the headsUpDisplay command.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Turns origin axis on
+        cmds.toggleAxis( o=True )
+        # Turns origin axis off.
+        cmds.toggleAxis( o=False )
+        # Returns true if the axis at the origin is on.
+        cmds.toggleAxis( q=True, o=True )
+        # Toggles the display of the axis
+        cmds.toggleAxis()
+    ```
+
     ---
     - Args:
         - origin (o): Turns display of the axis at the origin of the ground plane on or off.
         - view (v): Turns display of the axis at the bottom left of each view on or off. (Obsolete - refer to the headsUpDisplay command)
         - query (q): Query mode flag
-    """
-@overload #Overload for toggleAxis in ['edit']
-def toggleAxis(origin: bool = ..., view: bool = ..., edit: bool = ...) -> bool:
-    """toggleAxis is undoable, queryable, and NOT editable.
-    
-    Toggles the state of the display axis.
-    
-    Note: the display of the axis in the bottom left corner has been rendered
-    obsolete by the headsUpDisplay command.
-
-    ---
-    - Args:
-        - origin (o): Turns display of the axis at the origin of the ground plane on or off.
-        - view (v): Turns display of the axis at the bottom left of each view on or off. (Obsolete - refer to the headsUpDisplay command)
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for toggleAxis in ['edit']
-def toggleAxis(o: bool = ..., v: bool = ..., e: bool = ...) -> bool:
-    """toggleAxis is undoable, queryable, and NOT editable.
-    
-    Toggles the state of the display axis.
-    
-    Note: the display of the axis in the bottom left corner has been rendered
-    obsolete by the headsUpDisplay command.
-
-    ---
-    - Args:
-        - origin (o): Turns display of the axis at the origin of the ground plane on or off.
-        - view (v): Turns display of the axis at the bottom left of each view on or off. (Obsolete - refer to the headsUpDisplay command)
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for toggleAxis in ['edit']
-def toggleAxis(origin: bool = ..., o: bool = ..., view: bool = ..., v: bool = ..., edit: bool = ..., e: bool = ...) -> bool:
-    """toggleAxis is undoable, queryable, and NOT editable.
-    
-    Toggles the state of the display axis.
-    
-    Note: the display of the axis in the bottom left corner has been rendered
-    obsolete by the headsUpDisplay command.
-
-    ---
-    - Args:
-        - origin (o): Turns display of the axis at the origin of the ground plane on or off.
-        - view (v): Turns display of the axis at the bottom left of each view on or off. (Obsolete - refer to the headsUpDisplay command)
-        - edit (e): Edit mode flag
     """

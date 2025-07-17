@@ -12,6 +12,17 @@ def listSets([object]: [object], allSets: bool = ..., extendToShape: bool = ...,
     To get a list of all sets in the scene then don't use an object in the command
     line but use one of the flags instead.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Get a list of all the sets which `nurbsSphere1` belongs to:
+        cmds.listSets( object='nurbsSphere1' )
+        # Get a list of all the deformer sets in the scene:
+        cmds.listSets( type=2 )
+        # Get a list of all the rendering sets which `coneShape1` belongs to:
+        cmds.listSets( type=1, object='coneShape1' )
+    ```
+
     ---
     - Args:
         - [object]: Input item(s).
@@ -30,6 +41,17 @@ def listSets([object]: [object], ets: bool = ..., o: name = ..., t: int = ...) -
     To get a list of all sets in the scene then don't use an object in the command
     line but use one of the flags instead.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Get a list of all the sets which `nurbsSphere1` belongs to:
+        cmds.listSets( object='nurbsSphere1' )
+        # Get a list of all the deformer sets in the scene:
+        cmds.listSets( type=2 )
+        # Get a list of all the rendering sets which `coneShape1` belongs to:
+        cmds.listSets( type=1, object='coneShape1' )
+    ```
+
     ---
     - Args:
         - [object]: Input item(s).
@@ -47,6 +69,17 @@ def listSets([object]: [object], allSets: bool = ..., extendToShape: bool = ...,
     
     To get a list of all sets in the scene then don't use an object in the command
     line but use one of the flags instead.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Get a list of all the sets which `nurbsSphere1` belongs to:
+        cmds.listSets( object='nurbsSphere1' )
+        # Get a list of all the deformer sets in the scene:
+        cmds.listSets( type=2 )
+        # Get a list of all the rendering sets which `coneShape1` belongs to:
+        cmds.listSets( type=1, object='coneShape1' )
+    ```
 
     ---
     - Args:

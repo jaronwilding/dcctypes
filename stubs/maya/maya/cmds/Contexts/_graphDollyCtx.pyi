@@ -8,6 +8,14 @@ def graphDollyCtx(exists: bool = ..., history: bool = ..., image1: str = ..., im
     
     This command can be used to create a dolly context for the graph editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a dolly view context for the graph editor
+        #
+        cmds.graphDollyCtx( 'graphDollyContext' )
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -22,6 +30,14 @@ def graphDollyCtx(ex: bool = ..., ch: bool = ..., i1: str = ..., i2: str = ..., 
     """graphDollyCtx is undoable, queryable, and editable.
     
     This command can be used to create a dolly context for the graph editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a dolly view context for the graph editor
+        #
+        cmds.graphDollyCtx( 'graphDollyContext' )
+    ```
 
     ---
     - Args:
@@ -38,6 +54,14 @@ def graphDollyCtx(exists: bool = ..., ex: bool = ..., history: bool = ..., ch: b
     
     This command can be used to create a dolly context for the graph editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a dolly view context for the graph editor
+        #
+        cmds.graphDollyCtx( 'graphDollyContext' )
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -53,6 +77,14 @@ def graphDollyCtx(image1: str = ..., image2: str = ..., image3: str = ..., query
     
     This command can be used to create a dolly context for the graph editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a dolly view context for the graph editor
+        #
+        cmds.graphDollyCtx( 'graphDollyContext' )
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -65,6 +97,14 @@ def graphDollyCtx(i1: str = ..., i2: str = ..., i3: str = ..., q: bool = ...) ->
     """graphDollyCtx is undoable, queryable, and editable.
     
     This command can be used to create a dolly context for the graph editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a dolly view context for the graph editor
+        #
+        cmds.graphDollyCtx( 'graphDollyContext' )
+    ```
 
     ---
     - Args:
@@ -79,6 +119,14 @@ def graphDollyCtx(image1: str = ..., i1: str = ..., image2: str = ..., i2: str =
     
     This command can be used to create a dolly context for the graph editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a dolly view context for the graph editor
+        #
+        cmds.graphDollyCtx( 'graphDollyContext' )
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -91,6 +139,14 @@ def graphDollyCtx(image1: str = ..., image2: str = ..., image3: str = ..., edit:
     """graphDollyCtx is undoable, queryable, and editable.
     
     This command can be used to create a dolly context for the graph editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a dolly view context for the graph editor
+        #
+        cmds.graphDollyCtx( 'graphDollyContext' )
+    ```
 
     ---
     - Args:
@@ -105,6 +161,14 @@ def graphDollyCtx(i1: str = ..., i2: str = ..., i3: str = ..., e: bool = ...) ->
     
     This command can be used to create a dolly context for the graph editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a dolly view context for the graph editor
+        #
+        cmds.graphDollyCtx( 'graphDollyContext' )
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -117,6 +181,14 @@ def graphDollyCtx(image1: str = ..., i1: str = ..., image2: str = ..., i2: str =
     """graphDollyCtx is undoable, queryable, and editable.
     
     This command can be used to create a dolly context for the graph editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a dolly view context for the graph editor
+        #
+        cmds.graphDollyCtx( 'graphDollyContext' )
+    ```
 
     ---
     - Args:

@@ -19,6 +19,18 @@ def transformLimits([object]: [object], remove: bool = ...) -> None:
     Default values are:
     ( -1, 1) for translation, ( -1, 1) for scaling, and (-45,45) for rotation.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create an object, e.g.
+        cmds.cone()
+        # 1. To set the limits for the translation of the cone to within
+        # a unit volume centered at the origin
+        cmds.transformLimits( tx=(-1, 1), ty=(-1, 1), tz=(-1, 1) )
+        # 2. To disable the lower limits
+        cmds.transformLimits( etx=(False, True), ety=(False, True), etz=(False, True ) )
+    ```
+
     ---
     - Args:
         - [object]: Input item(s).
@@ -40,6 +52,18 @@ def transformLimits([object]: [object], rm: bool = ...) -> None:
     
     Default values are:
     ( -1, 1) for translation, ( -1, 1) for scaling, and (-45,45) for rotation.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create an object, e.g.
+        cmds.cone()
+        # 1. To set the limits for the translation of the cone to within
+        # a unit volume centered at the origin
+        cmds.transformLimits( tx=(-1, 1), ty=(-1, 1), tz=(-1, 1) )
+        # 2. To disable the lower limits
+        cmds.transformLimits( etx=(False, True), ety=(False, True), etz=(False, True ) )
+    ```
 
     ---
     - Args:
@@ -63,6 +87,18 @@ def transformLimits([object]: [object], remove: bool = ..., rm: bool = ...) -> N
     Default values are:
     ( -1, 1) for translation, ( -1, 1) for scaling, and (-45,45) for rotation.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create an object, e.g.
+        cmds.cone()
+        # 1. To set the limits for the translation of the cone to within
+        # a unit volume centered at the origin
+        cmds.transformLimits( tx=(-1, 1), ty=(-1, 1), tz=(-1, 1) )
+        # 2. To disable the lower limits
+        cmds.transformLimits( etx=(False, True), ety=(False, True), etz=(False, True ) )
+    ```
+
     ---
     - Args:
         - [object]: Input item(s).
@@ -84,6 +120,18 @@ def transformLimits([object]: [object], enableRotationX: [boolean, boolean] = ..
     
     Default values are:
     ( -1, 1) for translation, ( -1, 1) for scaling, and (-45,45) for rotation.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create an object, e.g.
+        cmds.cone()
+        # 1. To set the limits for the translation of the cone to within
+        # a unit volume centered at the origin
+        cmds.transformLimits( tx=(-1, 1), ty=(-1, 1), tz=(-1, 1) )
+        # 2. To disable the lower limits
+        cmds.transformLimits( etx=(False, True), ety=(False, True), etz=(False, True ) )
+    ```
 
     ---
     - Args:
@@ -125,6 +173,18 @@ def transformLimits([object]: [object], erx: [boolean, boolean] = ..., ery: [boo
     Default values are:
     ( -1, 1) for translation, ( -1, 1) for scaling, and (-45,45) for rotation.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create an object, e.g.
+        cmds.cone()
+        # 1. To set the limits for the translation of the cone to within
+        # a unit volume centered at the origin
+        cmds.transformLimits( tx=(-1, 1), ty=(-1, 1), tz=(-1, 1) )
+        # 2. To disable the lower limits
+        cmds.transformLimits( etx=(False, True), ety=(False, True), etz=(False, True ) )
+    ```
+
     ---
     - Args:
         - [object]: Input item(s).
@@ -164,6 +224,18 @@ def transformLimits([object]: [object], enableRotationX: [boolean, boolean] = ..
     
     Default values are:
     ( -1, 1) for translation, ( -1, 1) for scaling, and (-45,45) for rotation.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create an object, e.g.
+        cmds.cone()
+        # 1. To set the limits for the translation of the cone to within
+        # a unit volume centered at the origin
+        cmds.transformLimits( tx=(-1, 1), ty=(-1, 1), tz=(-1, 1) )
+        # 2. To disable the lower limits
+        cmds.transformLimits( etx=(False, True), ety=(False, True), etz=(False, True ) )
+    ```
 
     ---
     - Args:

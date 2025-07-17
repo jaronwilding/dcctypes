@@ -24,6 +24,20 @@ def listRelatives([objects]: [objects], allDescendents: bool = ..., allParents: 
     The -ni/noIntermediate flag works with the -s/shapes flag. It causes any
     intermediate shapes among the descendents to be ignored.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create an object and an instance for queries
+        cmds.sphere( n='nexus' )
+        cmds.instance( n='ball' )
+        # List the name of the shape below the transform node.
+        shapes = cmds.listRelatives('nexus')
+        # list all parents of shape
+        # (The result of the command is shown)
+        cmds.listRelatives( shapes[0], allParents=True )
+        # Result:[u'nexus', u'ball'] #
+    ```
+
     ---
     - Args:
         - [objects]: Input item(s).
@@ -58,6 +72,20 @@ def listRelatives([objects]: [objects], ad: bool = ..., ap: bool = ..., c: bool 
     
     The -ni/noIntermediate flag works with the -s/shapes flag. It causes any
     intermediate shapes among the descendents to be ignored.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create an object and an instance for queries
+        cmds.sphere( n='nexus' )
+        cmds.instance( n='ball' )
+        # List the name of the shape below the transform node.
+        shapes = cmds.listRelatives('nexus')
+        # list all parents of shape
+        # (The result of the command is shown)
+        cmds.listRelatives( shapes[0], allParents=True )
+        # Result:[u'nexus', u'ball'] #
+    ```
 
     ---
     - Args:
@@ -94,6 +122,20 @@ def listRelatives([objects]: [objects], allDescendents: bool = ..., ad: bool = .
     The -ni/noIntermediate flag works with the -s/shapes flag. It causes any
     intermediate shapes among the descendents to be ignored.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # create an object and an instance for queries
+        cmds.sphere( n='nexus' )
+        cmds.instance( n='ball' )
+        # List the name of the shape below the transform node.
+        shapes = cmds.listRelatives('nexus')
+        # list all parents of shape
+        # (The result of the command is shown)
+        cmds.listRelatives( shapes[0], allParents=True )
+        # Result:[u'nexus', u'ball'] #
+    ```
+
     ---
     - Args:
         - [objects]: Input item(s).
@@ -106,172 +148,4 @@ def listRelatives([objects]: [objects], allDescendents: bool = ..., ad: bool = .
         - path (pa): Return a proper object name that can be passed to other commands.
         - shapes (s): List all the children of this dag node that are shapes (ie, not transforms)
         - type (typ): List all relatives of the specified type.
-    """
-@overload #Overload for listRelatives in ['query']
-def listRelatives([objects]: [objects], type: str = ..., query: bool = ...) -> list[str]:
-    """listRelatives is undoable, NOT queryable, and NOT editable.
-    
-    This command lists parents and children of DAG objects. The flags -c/children,
-    -ad/allDescendents, -s/shapes, -p/parent and -ap/allParents are mutually
-    exclusive. Only one can be used in a command.
-    
-    Unlike ls, this command does not return a unique path but simply returns the
-    object's name by default. To get a unique path the -path flag must be used.
-    
-    When listing parents of objects directly under the world, the command will
-    return an empty parent list. Listing parents of objects directly under a shape
-    (underworld objects) will return their containing shape node in the list of
-    parents. Listing parents of components of objects will return the object.
-    
-    When listing children, shape nodes will return their underworld objects in the
-    list of children. Listing children of components of objects returns nothing.
-    
-    The -ni/noIntermediate flag works with the -s/shapes flag. It causes any
-    intermediate shapes among the descendents to be ignored.
-
-    ---
-    - Args:
-        - [objects]: Input item(s).
-        - type (typ): List all relatives of the specified type.
-        - query (q): Query mode flag
-    """
-@overload #Overload for listRelatives in ['query']
-def listRelatives([objects]: [objects], typ: str = ..., q: bool = ...) -> list[str]:
-    """listRelatives is undoable, NOT queryable, and NOT editable.
-    
-    This command lists parents and children of DAG objects. The flags -c/children,
-    -ad/allDescendents, -s/shapes, -p/parent and -ap/allParents are mutually
-    exclusive. Only one can be used in a command.
-    
-    Unlike ls, this command does not return a unique path but simply returns the
-    object's name by default. To get a unique path the -path flag must be used.
-    
-    When listing parents of objects directly under the world, the command will
-    return an empty parent list. Listing parents of objects directly under a shape
-    (underworld objects) will return their containing shape node in the list of
-    parents. Listing parents of components of objects will return the object.
-    
-    When listing children, shape nodes will return their underworld objects in the
-    list of children. Listing children of components of objects returns nothing.
-    
-    The -ni/noIntermediate flag works with the -s/shapes flag. It causes any
-    intermediate shapes among the descendents to be ignored.
-
-    ---
-    - Args:
-        - [objects]: Input item(s).
-        - type (typ): List all relatives of the specified type.
-        - query (q): Query mode flag
-    """
-@overload #Overload for listRelatives in ['query']
-def listRelatives([objects]: [objects], type: str = ..., typ: str = ..., query: bool = ..., q: bool = ...) -> list[str]:
-    """listRelatives is undoable, NOT queryable, and NOT editable.
-    
-    This command lists parents and children of DAG objects. The flags -c/children,
-    -ad/allDescendents, -s/shapes, -p/parent and -ap/allParents are mutually
-    exclusive. Only one can be used in a command.
-    
-    Unlike ls, this command does not return a unique path but simply returns the
-    object's name by default. To get a unique path the -path flag must be used.
-    
-    When listing parents of objects directly under the world, the command will
-    return an empty parent list. Listing parents of objects directly under a shape
-    (underworld objects) will return their containing shape node in the list of
-    parents. Listing parents of components of objects will return the object.
-    
-    When listing children, shape nodes will return their underworld objects in the
-    list of children. Listing children of components of objects returns nothing.
-    
-    The -ni/noIntermediate flag works with the -s/shapes flag. It causes any
-    intermediate shapes among the descendents to be ignored.
-
-    ---
-    - Args:
-        - [objects]: Input item(s).
-        - type (typ): List all relatives of the specified type.
-        - query (q): Query mode flag
-    """
-@overload #Overload for listRelatives in ['edit']
-def listRelatives([objects]: [objects], type: str = ..., edit: bool = ...) -> list[str]:
-    """listRelatives is undoable, NOT queryable, and NOT editable.
-    
-    This command lists parents and children of DAG objects. The flags -c/children,
-    -ad/allDescendents, -s/shapes, -p/parent and -ap/allParents are mutually
-    exclusive. Only one can be used in a command.
-    
-    Unlike ls, this command does not return a unique path but simply returns the
-    object's name by default. To get a unique path the -path flag must be used.
-    
-    When listing parents of objects directly under the world, the command will
-    return an empty parent list. Listing parents of objects directly under a shape
-    (underworld objects) will return their containing shape node in the list of
-    parents. Listing parents of components of objects will return the object.
-    
-    When listing children, shape nodes will return their underworld objects in the
-    list of children. Listing children of components of objects returns nothing.
-    
-    The -ni/noIntermediate flag works with the -s/shapes flag. It causes any
-    intermediate shapes among the descendents to be ignored.
-
-    ---
-    - Args:
-        - [objects]: Input item(s).
-        - type (typ): List all relatives of the specified type.
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for listRelatives in ['edit']
-def listRelatives([objects]: [objects], typ: str = ..., e: bool = ...) -> list[str]:
-    """listRelatives is undoable, NOT queryable, and NOT editable.
-    
-    This command lists parents and children of DAG objects. The flags -c/children,
-    -ad/allDescendents, -s/shapes, -p/parent and -ap/allParents are mutually
-    exclusive. Only one can be used in a command.
-    
-    Unlike ls, this command does not return a unique path but simply returns the
-    object's name by default. To get a unique path the -path flag must be used.
-    
-    When listing parents of objects directly under the world, the command will
-    return an empty parent list. Listing parents of objects directly under a shape
-    (underworld objects) will return their containing shape node in the list of
-    parents. Listing parents of components of objects will return the object.
-    
-    When listing children, shape nodes will return their underworld objects in the
-    list of children. Listing children of components of objects returns nothing.
-    
-    The -ni/noIntermediate flag works with the -s/shapes flag. It causes any
-    intermediate shapes among the descendents to be ignored.
-
-    ---
-    - Args:
-        - [objects]: Input item(s).
-        - type (typ): List all relatives of the specified type.
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for listRelatives in ['edit']
-def listRelatives([objects]: [objects], type: str = ..., typ: str = ..., edit: bool = ..., e: bool = ...) -> list[str]:
-    """listRelatives is undoable, NOT queryable, and NOT editable.
-    
-    This command lists parents and children of DAG objects. The flags -c/children,
-    -ad/allDescendents, -s/shapes, -p/parent and -ap/allParents are mutually
-    exclusive. Only one can be used in a command.
-    
-    Unlike ls, this command does not return a unique path but simply returns the
-    object's name by default. To get a unique path the -path flag must be used.
-    
-    When listing parents of objects directly under the world, the command will
-    return an empty parent list. Listing parents of objects directly under a shape
-    (underworld objects) will return their containing shape node in the list of
-    parents. Listing parents of components of objects will return the object.
-    
-    When listing children, shape nodes will return their underworld objects in the
-    list of children. Listing children of components of objects returns nothing.
-    
-    The -ni/noIntermediate flag works with the -s/shapes flag. It causes any
-    intermediate shapes among the descendents to be ignored.
-
-    ---
-    - Args:
-        - [objects]: Input item(s).
-        - type (typ): List all relatives of the specified type.
-        - edit (e): Edit mode flag
     """

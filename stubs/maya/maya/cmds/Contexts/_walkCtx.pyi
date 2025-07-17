@@ -8,6 +8,12 @@ def walkCtx(alternateContext: bool = ..., crouchCount: float = ..., exists: bool
     
     This command can be used to create, edit, or query a walk context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.walkCtx( 'walkContext', ws=2.0 )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -29,6 +35,12 @@ def walkCtx(ac: bool = ..., wcc: float = ..., ex: bool = ..., ch: bool = ..., i1
     """walkCtx is undoable, queryable, and editable.
     
     This command can be used to create, edit, or query a walk context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.walkCtx( 'walkContext', ws=2.0 )
+    ```
 
     ---
     - Args:
@@ -52,6 +64,12 @@ def walkCtx(alternateContext: bool = ..., ac: bool = ..., crouchCount: float = .
     
     This command can be used to create, edit, or query a walk context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.walkCtx( 'walkContext', ws=2.0 )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -74,6 +92,12 @@ def walkCtx(alternateContext: bool = ..., crouchCount: float = ..., image1: str 
     
     This command can be used to create, edit, or query a walk context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.walkCtx( 'walkContext', ws=2.0 )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -93,6 +117,12 @@ def walkCtx(ac: bool = ..., wcc: float = ..., i1: str = ..., i2: str = ..., i3: 
     """walkCtx is undoable, queryable, and editable.
     
     This command can be used to create, edit, or query a walk context.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.walkCtx( 'walkContext', ws=2.0 )
+    ```
 
     ---
     - Args:
@@ -114,6 +144,12 @@ def walkCtx(alternateContext: bool = ..., ac: bool = ..., crouchCount: float = .
     
     This command can be used to create, edit, or query a walk context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.walkCtx( 'walkContext', ws=2.0 )
+    ```
+
     ---
     - Args:
         - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
@@ -129,19 +165,23 @@ def walkCtx(alternateContext: bool = ..., ac: bool = ..., crouchCount: float = .
         - query (q): Query mode flag
     """
 @overload #Overload for walkCtx in ['edit']
-def walkCtx(alternateContext: bool = ..., crouchCount: float = ..., image1: str = ..., image2: str = ..., image3: str = ..., toolName: str = ..., walkHeight: float = ..., walkSensitivity: float = ..., walkSpeed: float = ..., walkToolHud: bool = ..., edit: bool = ...) -> str:
+def walkCtx(crouchCount: float = ..., image1: str = ..., image2: str = ..., image3: str = ..., walkHeight: float = ..., walkSensitivity: float = ..., walkSpeed: float = ..., walkToolHud: bool = ..., edit: bool = ...) -> str:
     """walkCtx is undoable, queryable, and editable.
     
     This command can be used to create, edit, or query a walk context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.walkCtx( 'walkContext', ws=2.0 )
+    ```
+
     ---
     - Args:
-        - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
         - crouchCount (wcc): The camera crouch count.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
-        - toolName (tn): Name of the specific tool to which this command refers.
         - walkHeight (wh): The camera initial height.
         - walkSensitivity (wsv): The camera rotate sensitivity.
         - walkSpeed (ws): The camera move speed.
@@ -149,19 +189,23 @@ def walkCtx(alternateContext: bool = ..., crouchCount: float = ..., image1: str 
         - edit (e): Edit mode flag
     """
 @overload #Overload for walkCtx in ['edit']
-def walkCtx(ac: bool = ..., wcc: float = ..., i1: str = ..., i2: str = ..., i3: str = ..., tn: str = ..., wh: float = ..., wsv: float = ..., ws: float = ..., wth: bool = ..., e: bool = ...) -> str:
+def walkCtx(wcc: float = ..., i1: str = ..., i2: str = ..., i3: str = ..., wh: float = ..., wsv: float = ..., ws: float = ..., wth: bool = ..., e: bool = ...) -> str:
     """walkCtx is undoable, queryable, and editable.
     
     This command can be used to create, edit, or query a walk context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.walkCtx( 'walkContext', ws=2.0 )
+    ```
+
     ---
     - Args:
-        - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
         - crouchCount (wcc): The camera crouch count.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
-        - toolName (tn): Name of the specific tool to which this command refers.
         - walkHeight (wh): The camera initial height.
         - walkSensitivity (wsv): The camera rotate sensitivity.
         - walkSpeed (ws): The camera move speed.
@@ -169,19 +213,23 @@ def walkCtx(ac: bool = ..., wcc: float = ..., i1: str = ..., i2: str = ..., i3: 
         - edit (e): Edit mode flag
     """
 @overload #Overload for walkCtx in ['edit']
-def walkCtx(alternateContext: bool = ..., ac: bool = ..., crouchCount: float = ..., wcc: float = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., toolName: str = ..., tn: str = ..., walkHeight: float = ..., wh: float = ..., walkSensitivity: float = ..., wsv: float = ..., walkSpeed: float = ..., ws: float = ..., walkToolHud: bool = ..., wth: bool = ..., edit: bool = ..., e: bool = ...) -> str:
+def walkCtx(crouchCount: float = ..., wcc: float = ..., image1: str = ..., i1: str = ..., image2: str = ..., i2: str = ..., image3: str = ..., i3: str = ..., walkHeight: float = ..., wh: float = ..., walkSensitivity: float = ..., wsv: float = ..., walkSpeed: float = ..., ws: float = ..., walkToolHud: bool = ..., wth: bool = ..., edit: bool = ..., e: bool = ...) -> str:
     """walkCtx is undoable, queryable, and editable.
     
     This command can be used to create, edit, or query a walk context.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.walkCtx( 'walkContext', ws=2.0 )
+    ```
+
     ---
     - Args:
-        - alternateContext (ac): Set the ALT+MMB and ALT+SHIFT+MMB to refer to this context.
         - crouchCount (wcc): The camera crouch count.
         - image1 (i1): First of three possible icons representing the tool associated with the context.
         - image2 (i2): Second of three possible icons representing the tool associated with the context.
         - image3 (i3): Third of three possible icons representing the tool associated with the context.
-        - toolName (tn): Name of the specific tool to which this command refers.
         - walkHeight (wh): The camera initial height.
         - walkSensitivity (wsv): The camera rotate sensitivity.
         - walkSpeed (ws): The camera move speed.

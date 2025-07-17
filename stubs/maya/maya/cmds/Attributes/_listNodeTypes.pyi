@@ -11,6 +11,17 @@ def listNodeTypes(string: str, exclude: str = ...) -> list[str]:
     See the 'getClassification' command for a list of the standard classification
     strings.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # List all shader types in the system
+        cmds.listNodeTypes( 'shader' )
+        # List all 2D textures that are also shaders
+        cmds.listNodeTypes( 'texture/2D:shader' )
+        # List all volume shading nodes that are neither utility nodes nor particle nodes
+        cmds.listNodeTypes( 'shader/volume', ex='shader/volume/utility:shader/volume/particle' )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -25,6 +36,17 @@ def listNodeTypes(string: str, ex: str = ...) -> list[str]:
     See the 'getClassification' command for a list of the standard classification
     strings.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # List all shader types in the system
+        cmds.listNodeTypes( 'shader' )
+        # List all 2D textures that are also shaders
+        cmds.listNodeTypes( 'texture/2D:shader' )
+        # List all volume shading nodes that are neither utility nodes nor particle nodes
+        cmds.listNodeTypes( 'shader/volume', ex='shader/volume/utility:shader/volume/particle' )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -38,6 +60,17 @@ def listNodeTypes(string: str, exclude: str = ..., ex: str = ...) -> list[str]:
     
     See the 'getClassification' command for a list of the standard classification
     strings.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # List all shader types in the system
+        cmds.listNodeTypes( 'shader' )
+        # List all 2D textures that are also shaders
+        cmds.listNodeTypes( 'texture/2D:shader' )
+        # List all volume shading nodes that are neither utility nodes nor particle nodes
+        cmds.listNodeTypes( 'shader/volume', ex='shader/volume/utility:shader/volume/particle' )
+    ```
 
     ---
     - Args:

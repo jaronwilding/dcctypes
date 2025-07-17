@@ -10,6 +10,14 @@ def lassoContext(string: str, drawClosed: bool = ..., exists: bool = ..., histor
     selection regions, where the "marquee-style" select of the "selectContext" is
     inappropriate.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new lasso context, then switch to it
+        cmds.lassoContext('lassoContext1')
+        cmds.setToolTo('lassoContext1')
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -28,6 +36,14 @@ def lassoContext(string: str, dc: bool = ..., ex: bool = ..., ch: bool = ..., i1
     Creates a context to perform selection via a "lasso". Use for irregular
     selection regions, where the "marquee-style" select of the "selectContext" is
     inappropriate.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new lasso context, then switch to it
+        cmds.lassoContext('lassoContext1')
+        cmds.setToolTo('lassoContext1')
+    ```
 
     ---
     - Args:
@@ -48,6 +64,14 @@ def lassoContext(string: str, drawClosed: bool = ..., dc: bool = ..., exists: bo
     selection regions, where the "marquee-style" select of the "selectContext" is
     inappropriate.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new lasso context, then switch to it
+        cmds.lassoContext('lassoContext1')
+        cmds.setToolTo('lassoContext1')
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -67,6 +91,14 @@ def lassoContext(string: str, drawClosed: bool = ..., image1: str = ..., image2:
     selection regions, where the "marquee-style" select of the "selectContext" is
     inappropriate.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new lasso context, then switch to it
+        cmds.lassoContext('lassoContext1')
+        cmds.setToolTo('lassoContext1')
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -83,6 +115,14 @@ def lassoContext(string: str, dc: bool = ..., i1: str = ..., i2: str = ..., i3: 
     Creates a context to perform selection via a "lasso". Use for irregular
     selection regions, where the "marquee-style" select of the "selectContext" is
     inappropriate.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new lasso context, then switch to it
+        cmds.lassoContext('lassoContext1')
+        cmds.setToolTo('lassoContext1')
+    ```
 
     ---
     - Args:
@@ -101,6 +141,14 @@ def lassoContext(string: str, drawClosed: bool = ..., dc: bool = ..., image1: st
     selection regions, where the "marquee-style" select of the "selectContext" is
     inappropriate.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new lasso context, then switch to it
+        cmds.lassoContext('lassoContext1')
+        cmds.setToolTo('lassoContext1')
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -117,6 +165,14 @@ def lassoContext(string: str, drawClosed: bool = ..., image1: str = ..., image2:
     Creates a context to perform selection via a "lasso". Use for irregular
     selection regions, where the "marquee-style" select of the "selectContext" is
     inappropriate.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new lasso context, then switch to it
+        cmds.lassoContext('lassoContext1')
+        cmds.setToolTo('lassoContext1')
+    ```
 
     ---
     - Args:
@@ -135,6 +191,14 @@ def lassoContext(string: str, dc: bool = ..., i1: str = ..., i2: str = ..., i3: 
     selection regions, where the "marquee-style" select of the "selectContext" is
     inappropriate.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new lasso context, then switch to it
+        cmds.lassoContext('lassoContext1')
+        cmds.setToolTo('lassoContext1')
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -151,6 +215,14 @@ def lassoContext(string: str, drawClosed: bool = ..., dc: bool = ..., image1: st
     Creates a context to perform selection via a "lasso". Use for irregular
     selection regions, where the "marquee-style" select of the "selectContext" is
     inappropriate.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a new lasso context, then switch to it
+        cmds.lassoContext('lassoContext1')
+        cmds.setToolTo('lassoContext1')
+    ```
 
     ---
     - Args:

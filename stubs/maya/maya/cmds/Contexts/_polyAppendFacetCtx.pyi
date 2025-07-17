@@ -8,6 +8,16 @@ def polyAppendFacetCtx(append: bool = ..., exists: bool = ..., image1: str = ...
     
     Create a new context to append facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=10, sy=10, n='pPlane1')
+        # Create a new poly append facet context, set it to add four vertices per new edge, and then switch to it
+        cmds.polyAppendFacetCtx('polyAppendFacetCtx1', s=4)
+        cmds.setToolTo('polyAppendFacetCtx1')
+    ```
+
     ---
     - Args:
         - append (ap): Allows to switch to polyCreateFacetCtx tool
@@ -26,6 +36,16 @@ def polyAppendFacetCtx(ap: bool = ..., ex: bool = ..., i1: str = ..., i2: str = 
     """polyAppendFacetCtx is undoable, queryable, and editable.
     
     Create a new context to append facets on polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=10, sy=10, n='pPlane1')
+        # Create a new poly append facet context, set it to add four vertices per new edge, and then switch to it
+        cmds.polyAppendFacetCtx('polyAppendFacetCtx1', s=4)
+        cmds.setToolTo('polyAppendFacetCtx1')
+    ```
 
     ---
     - Args:
@@ -46,6 +66,16 @@ def polyAppendFacetCtx(append: bool = ..., ap: bool = ..., exists: bool = ..., e
     
     Create a new context to append facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=10, sy=10, n='pPlane1')
+        # Create a new poly append facet context, set it to add four vertices per new edge, and then switch to it
+        cmds.polyAppendFacetCtx('polyAppendFacetCtx1', s=4)
+        cmds.setToolTo('polyAppendFacetCtx1')
+    ```
+
     ---
     - Args:
         - append (ap): Allows to switch to polyCreateFacetCtx tool
@@ -64,6 +94,16 @@ def polyAppendFacetCtx(append: bool = ..., image1: str = ..., image2: str = ...,
     """polyAppendFacetCtx is undoable, queryable, and editable.
     
     Create a new context to append facets on polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=10, sy=10, n='pPlane1')
+        # Create a new poly append facet context, set it to add four vertices per new edge, and then switch to it
+        cmds.polyAppendFacetCtx('polyAppendFacetCtx1', s=4)
+        cmds.setToolTo('polyAppendFacetCtx1')
+    ```
 
     ---
     - Args:
@@ -85,6 +125,16 @@ def polyAppendFacetCtx(ap: bool = ..., i1: str = ..., i2: str = ..., i3: str = .
     
     Create a new context to append facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=10, sy=10, n='pPlane1')
+        # Create a new poly append facet context, set it to add four vertices per new edge, and then switch to it
+        cmds.polyAppendFacetCtx('polyAppendFacetCtx1', s=4)
+        cmds.setToolTo('polyAppendFacetCtx1')
+    ```
+
     ---
     - Args:
         - append (ap): Allows to switch to polyCreateFacetCtx tool
@@ -104,6 +154,16 @@ def polyAppendFacetCtx(append: bool = ..., ap: bool = ..., image1: str = ..., i1
     """polyAppendFacetCtx is undoable, queryable, and editable.
     
     Create a new context to append facets on polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=10, sy=10, n='pPlane1')
+        # Create a new poly append facet context, set it to add four vertices per new edge, and then switch to it
+        cmds.polyAppendFacetCtx('polyAppendFacetCtx1', s=4)
+        cmds.setToolTo('polyAppendFacetCtx1')
+    ```
 
     ---
     - Args:
@@ -125,6 +185,16 @@ def polyAppendFacetCtx(append: bool = ..., image1: str = ..., image2: str = ...,
     
     Create a new context to append facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=10, sy=10, n='pPlane1')
+        # Create a new poly append facet context, set it to add four vertices per new edge, and then switch to it
+        cmds.polyAppendFacetCtx('polyAppendFacetCtx1', s=4)
+        cmds.setToolTo('polyAppendFacetCtx1')
+    ```
+
     ---
     - Args:
         - append (ap): Allows to switch to polyCreateFacetCtx tool
@@ -144,6 +214,16 @@ def polyAppendFacetCtx(ap: bool = ..., i1: str = ..., i2: str = ..., i3: str = .
     
     Create a new context to append facets on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=10, sy=10, n='pPlane1')
+        # Create a new poly append facet context, set it to add four vertices per new edge, and then switch to it
+        cmds.polyAppendFacetCtx('polyAppendFacetCtx1', s=4)
+        cmds.setToolTo('polyAppendFacetCtx1')
+    ```
+
     ---
     - Args:
         - append (ap): Allows to switch to polyCreateFacetCtx tool
@@ -162,6 +242,16 @@ def polyAppendFacetCtx(append: bool = ..., ap: bool = ..., image1: str = ..., i1
     """polyAppendFacetCtx is undoable, queryable, and editable.
     
     Create a new context to append facets on polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=10, sy=10, n='pPlane1')
+        # Create a new poly append facet context, set it to add four vertices per new edge, and then switch to it
+        cmds.polyAppendFacetCtx('polyAppendFacetCtx1', s=4)
+        cmds.setToolTo('polyAppendFacetCtx1')
+    ```
 
     ---
     - Args:

@@ -13,6 +13,20 @@ def deleteAttr(node...|attribute...: node...|attribute..., attribute: str = ...)
     the complete compound attribute. This command has no edit capabilities. The
     only query ability is to list all the dynamic attributes of a node.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.createNode( 'planet', n='mars' )
+        cmds.addAttr( ln='martians', sn='mr', at='double' )
+        cmds.addAttr( ln='greenMen', sn='gm', at='double' )
+        # Delete an attribute named mr/martians.
+        cmds.deleteAttr( 'mars', at='mr' )
+        # Alternative syntax
+        cmds.deleteAttr( 'mars.greenMen' )
+        # Query for the list of dynamic attributes.
+        cmds.deleteAttr( 'mars', q=True )
+    ```
+
     ---
     - Args:
         - node...|attribute...: Input item(s).
@@ -29,6 +43,20 @@ def deleteAttr(node...|attribute...: node...|attribute..., at: str = ...) -> Non
     the complete compound attribute. This command has no edit capabilities. The
     only query ability is to list all the dynamic attributes of a node.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.createNode( 'planet', n='mars' )
+        cmds.addAttr( ln='martians', sn='mr', at='double' )
+        cmds.addAttr( ln='greenMen', sn='gm', at='double' )
+        # Delete an attribute named mr/martians.
+        cmds.deleteAttr( 'mars', at='mr' )
+        # Alternative syntax
+        cmds.deleteAttr( 'mars.greenMen' )
+        # Query for the list of dynamic attributes.
+        cmds.deleteAttr( 'mars', q=True )
+    ```
+
     ---
     - Args:
         - node...|attribute...: Input item(s).
@@ -44,6 +72,20 @@ def deleteAttr(node...|attribute...: node...|attribute..., attribute: str = ...,
     deleted. Children of a compound attribute cannot be deleted. You must delete
     the complete compound attribute. This command has no edit capabilities. The
     only query ability is to list all the dynamic attributes of a node.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.createNode( 'planet', n='mars' )
+        cmds.addAttr( ln='martians', sn='mr', at='double' )
+        cmds.addAttr( ln='greenMen', sn='gm', at='double' )
+        # Delete an attribute named mr/martians.
+        cmds.deleteAttr( 'mars', at='mr' )
+        # Alternative syntax
+        cmds.deleteAttr( 'mars.greenMen' )
+        # Query for the list of dynamic attributes.
+        cmds.deleteAttr( 'mars', q=True )
+    ```
 
     ---
     - Args:

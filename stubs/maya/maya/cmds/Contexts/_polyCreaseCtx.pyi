@@ -8,6 +8,16 @@ def polyCreaseCtx(exists: bool = ..., extendSelection: bool = ..., image1: str =
     
     Create a new context to crease components on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly crease context, then switch to it
+        cmds.polyCreaseCtx('polyCreaseCtx1')
+        cmds.setToolTo('polyCreaseCtx1')
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -22,6 +32,16 @@ def polyCreaseCtx(ex: bool = ..., es: bool = ..., i1: str = ..., i2: str = ..., 
     """polyCreaseCtx is undoable, queryable, and editable.
     
     Create a new context to crease components on polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly crease context, then switch to it
+        cmds.polyCreaseCtx('polyCreaseCtx1')
+        cmds.setToolTo('polyCreaseCtx1')
+    ```
 
     ---
     - Args:
@@ -38,6 +58,16 @@ def polyCreaseCtx(exists: bool = ..., ex: bool = ..., extendSelection: bool = ..
     
     Create a new context to crease components on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly crease context, then switch to it
+        cmds.polyCreaseCtx('polyCreaseCtx1')
+        cmds.setToolTo('polyCreaseCtx1')
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -52,6 +82,16 @@ def polyCreaseCtx(extendSelection: bool = ..., image1: str = ..., image2: str = 
     """polyCreaseCtx is undoable, queryable, and editable.
     
     Create a new context to crease components on polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly crease context, then switch to it
+        cmds.polyCreaseCtx('polyCreaseCtx1')
+        cmds.setToolTo('polyCreaseCtx1')
+    ```
 
     ---
     - Args:
@@ -68,6 +108,16 @@ def polyCreaseCtx(es: bool = ..., i1: str = ..., i2: str = ..., i3: str = ..., r
     
     Create a new context to crease components on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly crease context, then switch to it
+        cmds.polyCreaseCtx('polyCreaseCtx1')
+        cmds.setToolTo('polyCreaseCtx1')
+    ```
+
     ---
     - Args:
         - extendSelection (es): Enable/disable extending selection to all connected creased components.
@@ -83,6 +133,16 @@ def polyCreaseCtx(extendSelection: bool = ..., es: bool = ..., image1: str = ...
     
     Create a new context to crease components on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly crease context, then switch to it
+        cmds.polyCreaseCtx('polyCreaseCtx1')
+        cmds.setToolTo('polyCreaseCtx1')
+    ```
+
     ---
     - Args:
         - extendSelection (es): Enable/disable extending selection to all connected creased components.
@@ -97,6 +157,16 @@ def polyCreaseCtx(createSet: str = ..., extendSelection: bool = ..., image1: str
     """polyCreaseCtx is undoable, queryable, and editable.
     
     Create a new context to crease components on polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly crease context, then switch to it
+        cmds.polyCreaseCtx('polyCreaseCtx1')
+        cmds.setToolTo('polyCreaseCtx1')
+    ```
 
     ---
     - Args:
@@ -114,6 +184,16 @@ def polyCreaseCtx(cs: str = ..., es: bool = ..., i1: str = ..., i2: str = ..., i
     
     Create a new context to crease components on polygonal objects
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly crease context, then switch to it
+        cmds.polyCreaseCtx('polyCreaseCtx1')
+        cmds.setToolTo('polyCreaseCtx1')
+    ```
+
     ---
     - Args:
         - createSet (cs): Creates a set for the selected components.
@@ -129,6 +209,16 @@ def polyCreaseCtx(createSet: str = ..., cs: str = ..., extendSelection: bool = .
     """polyCreaseCtx is undoable, queryable, and editable.
     
     Create a new context to crease components on polygonal objects
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a poly plane
+        cmds.polyPlane(w=10, h=10, sx=1, sy=1, n='pPlane1')
+        # Create a new poly crease context, then switch to it
+        cmds.polyCreaseCtx('polyCreaseCtx1')
+        cmds.setToolTo('polyCreaseCtx1')
+    ```
 
     ---
     - Args:

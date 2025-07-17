@@ -9,6 +9,12 @@ def insertJointCtx(exists: bool = ..., image1: str = ..., image2: str = ..., ima
     The command will create an insert joint context. The insert joint tool inserts
     joints into an existing chain of joints.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.insertJointCtx()
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -22,6 +28,12 @@ def insertJointCtx(ex: bool = ..., i1: str = ..., i2: str = ..., i3: str = ...) 
     
     The command will create an insert joint context. The insert joint tool inserts
     joints into an existing chain of joints.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.insertJointCtx()
+    ```
 
     ---
     - Args:
@@ -37,6 +49,12 @@ def insertJointCtx(exists: bool = ..., ex: bool = ..., image1: str = ..., i1: st
     The command will create an insert joint context. The insert joint tool inserts
     joints into an existing chain of joints.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.insertJointCtx()
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -50,6 +68,12 @@ def insertJointCtx(image1: str = ..., image2: str = ..., image3: str = ..., quer
     
     The command will create an insert joint context. The insert joint tool inserts
     joints into an existing chain of joints.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.insertJointCtx()
+    ```
 
     ---
     - Args:
@@ -65,6 +89,12 @@ def insertJointCtx(i1: str = ..., i2: str = ..., i3: str = ..., q: bool = ...) -
     The command will create an insert joint context. The insert joint tool inserts
     joints into an existing chain of joints.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.insertJointCtx()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -78,6 +108,12 @@ def insertJointCtx(image1: str = ..., i1: str = ..., image2: str = ..., i2: str 
     
     The command will create an insert joint context. The insert joint tool inserts
     joints into an existing chain of joints.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.insertJointCtx()
+    ```
 
     ---
     - Args:
@@ -93,6 +129,12 @@ def insertJointCtx(image1: str = ..., image2: str = ..., image3: str = ..., edit
     The command will create an insert joint context. The insert joint tool inserts
     joints into an existing chain of joints.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.insertJointCtx()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -107,6 +149,12 @@ def insertJointCtx(i1: str = ..., i2: str = ..., i3: str = ..., e: bool = ...) -
     The command will create an insert joint context. The insert joint tool inserts
     joints into an existing chain of joints.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.insertJointCtx()
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -120,6 +168,12 @@ def insertJointCtx(image1: str = ..., i1: str = ..., image2: str = ..., i2: str 
     
     The command will create an insert joint context. The insert joint tool inserts
     joints into an existing chain of joints.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.insertJointCtx()
+    ```
 
     ---
     - Args:

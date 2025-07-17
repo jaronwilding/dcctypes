@@ -8,6 +8,18 @@ def threePointArcCtx(degree: int = ..., exists: bool = ..., history: bool = ...,
     
     The threePointArcCtx command creates a new context for creating 3 point arcs
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 1:
+        cmds.threePointArcCtx( "arcContext", degree=1 )
+        cmds.setToolTo("arcContext")
+        # To query the degree of an existing context:
+        cmds.threePointArcCtx( "arcContext", q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.threePointArcCtx( "arcContext", e=True, degree=3 )
+    ```
+
     ---
     - Args:
         - degree (d): VAlid values are 1 or 3. Default degree 3.
@@ -24,6 +36,18 @@ def threePointArcCtx(d: int = ..., ex: bool = ..., ch: bool = ..., i1: str = ...
     """threePointArcCtx is undoable, queryable, and editable.
     
     The threePointArcCtx command creates a new context for creating 3 point arcs
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 1:
+        cmds.threePointArcCtx( "arcContext", degree=1 )
+        cmds.setToolTo("arcContext")
+        # To query the degree of an existing context:
+        cmds.threePointArcCtx( "arcContext", q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.threePointArcCtx( "arcContext", e=True, degree=3 )
+    ```
 
     ---
     - Args:
@@ -42,6 +66,18 @@ def threePointArcCtx(degree: int = ..., d: int = ..., exists: bool = ..., ex: bo
     
     The threePointArcCtx command creates a new context for creating 3 point arcs
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 1:
+        cmds.threePointArcCtx( "arcContext", degree=1 )
+        cmds.setToolTo("arcContext")
+        # To query the degree of an existing context:
+        cmds.threePointArcCtx( "arcContext", q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.threePointArcCtx( "arcContext", e=True, degree=3 )
+    ```
+
     ---
     - Args:
         - degree (d): VAlid values are 1 or 3. Default degree 3.
@@ -59,6 +95,18 @@ def threePointArcCtx(degree: int = ..., image1: str = ..., image2: str = ..., im
     
     The threePointArcCtx command creates a new context for creating 3 point arcs
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 1:
+        cmds.threePointArcCtx( "arcContext", degree=1 )
+        cmds.setToolTo("arcContext")
+        # To query the degree of an existing context:
+        cmds.threePointArcCtx( "arcContext", q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.threePointArcCtx( "arcContext", e=True, degree=3 )
+    ```
+
     ---
     - Args:
         - degree (d): VAlid values are 1 or 3. Default degree 3.
@@ -73,6 +121,18 @@ def threePointArcCtx(d: int = ..., i1: str = ..., i2: str = ..., i3: str = ..., 
     """threePointArcCtx is undoable, queryable, and editable.
     
     The threePointArcCtx command creates a new context for creating 3 point arcs
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 1:
+        cmds.threePointArcCtx( "arcContext", degree=1 )
+        cmds.setToolTo("arcContext")
+        # To query the degree of an existing context:
+        cmds.threePointArcCtx( "arcContext", q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.threePointArcCtx( "arcContext", e=True, degree=3 )
+    ```
 
     ---
     - Args:
@@ -89,6 +149,18 @@ def threePointArcCtx(degree: int = ..., d: int = ..., image1: str = ..., i1: str
     
     The threePointArcCtx command creates a new context for creating 3 point arcs
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 1:
+        cmds.threePointArcCtx( "arcContext", degree=1 )
+        cmds.setToolTo("arcContext")
+        # To query the degree of an existing context:
+        cmds.threePointArcCtx( "arcContext", q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.threePointArcCtx( "arcContext", e=True, degree=3 )
+    ```
+
     ---
     - Args:
         - degree (d): VAlid values are 1 or 3. Default degree 3.
@@ -103,6 +175,18 @@ def threePointArcCtx(degree: int = ..., image1: str = ..., image2: str = ..., im
     """threePointArcCtx is undoable, queryable, and editable.
     
     The threePointArcCtx command creates a new context for creating 3 point arcs
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 1:
+        cmds.threePointArcCtx( "arcContext", degree=1 )
+        cmds.setToolTo("arcContext")
+        # To query the degree of an existing context:
+        cmds.threePointArcCtx( "arcContext", q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.threePointArcCtx( "arcContext", e=True, degree=3 )
+    ```
 
     ---
     - Args:
@@ -119,6 +203,18 @@ def threePointArcCtx(d: int = ..., i1: str = ..., i2: str = ..., i3: str = ..., 
     
     The threePointArcCtx command creates a new context for creating 3 point arcs
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 1:
+        cmds.threePointArcCtx( "arcContext", degree=1 )
+        cmds.setToolTo("arcContext")
+        # To query the degree of an existing context:
+        cmds.threePointArcCtx( "arcContext", q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.threePointArcCtx( "arcContext", e=True, degree=3 )
+    ```
+
     ---
     - Args:
         - degree (d): VAlid values are 1 or 3. Default degree 3.
@@ -133,6 +229,18 @@ def threePointArcCtx(degree: int = ..., d: int = ..., image1: str = ..., i1: str
     """threePointArcCtx is undoable, queryable, and editable.
     
     The threePointArcCtx command creates a new context for creating 3 point arcs
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # To create a new context that will create curves of degree 1:
+        cmds.threePointArcCtx( "arcContext", degree=1 )
+        cmds.setToolTo("arcContext")
+        # To query the degree of an existing context:
+        cmds.threePointArcCtx( "arcContext", q=True, degree=True )
+        # To edit the degree of an existing context:
+        cmds.threePointArcCtx( "arcContext", e=True, degree=3 )
+    ```
 
     ---
     - Args:

@@ -9,6 +9,12 @@ def clipEditorCurrentTimeCtx(contextName: contextName, exists: bool = ..., histo
     This command creates a context which may be used to change current time within
     the track area of a clip editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.clipEditorCurrentTimeCtx()
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -25,6 +31,12 @@ def clipEditorCurrentTimeCtx(contextName: contextName, ex: bool = ..., ch: bool 
     
     This command creates a context which may be used to change current time within
     the track area of a clip editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.clipEditorCurrentTimeCtx()
+    ```
 
     ---
     - Args:
@@ -43,6 +55,12 @@ def clipEditorCurrentTimeCtx(contextName: contextName, exists: bool = ..., ex: b
     This command creates a context which may be used to change current time within
     the track area of a clip editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.clipEditorCurrentTimeCtx()
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -60,6 +78,12 @@ def clipEditorCurrentTimeCtx(contextName: contextName, image1: str = ..., image2
     This command creates a context which may be used to change current time within
     the track area of a clip editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.clipEditorCurrentTimeCtx()
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -74,6 +98,12 @@ def clipEditorCurrentTimeCtx(contextName: contextName, i1: str = ..., i2: str = 
     
     This command creates a context which may be used to change current time within
     the track area of a clip editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.clipEditorCurrentTimeCtx()
+    ```
 
     ---
     - Args:
@@ -90,6 +120,12 @@ def clipEditorCurrentTimeCtx(contextName: contextName, image1: str = ..., i1: st
     This command creates a context which may be used to change current time within
     the track area of a clip editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.clipEditorCurrentTimeCtx()
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -104,6 +140,12 @@ def clipEditorCurrentTimeCtx(contextName: contextName, image1: str = ..., image2
     
     This command creates a context which may be used to change current time within
     the track area of a clip editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.clipEditorCurrentTimeCtx()
+    ```
 
     ---
     - Args:
@@ -120,6 +162,12 @@ def clipEditorCurrentTimeCtx(contextName: contextName, i1: str = ..., i2: str = 
     This command creates a context which may be used to change current time within
     the track area of a clip editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.clipEditorCurrentTimeCtx()
+    ```
+
     ---
     - Args:
         - contextName: Input item(s).
@@ -134,6 +182,12 @@ def clipEditorCurrentTimeCtx(contextName: contextName, image1: str = ..., i1: st
     
     This command creates a context which may be used to change current time within
     the track area of a clip editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.clipEditorCurrentTimeCtx()
+    ```
 
     ---
     - Args:

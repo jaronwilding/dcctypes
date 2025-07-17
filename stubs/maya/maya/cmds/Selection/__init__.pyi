@@ -13,7 +13,6 @@ from ._selectPriority import selectPriority
 from ._selectType import selectType
 from ._softSelect import softSelect
 from ._symmetricModelling import symmetricModelling
-
 __all__ = [
     "expandedSelection",
     "hilite",

@@ -9,6 +9,12 @@ def skinBindCtx(string: str, about: str = ..., axis: str = ..., colorRamp: str =
     This command creates a tool that can be used to edit volumes from an
     interactive bind.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.skinBindCtx( 'skinBindContext' )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -34,6 +40,12 @@ def skinBindCtx(string: str, a: str = ..., ax: str = ..., cr: str = ..., ci: str
     
     This command creates a tool that can be used to edit volumes from an
     interactive bind.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.skinBindCtx( 'skinBindContext' )
+    ```
 
     ---
     - Args:
@@ -61,6 +73,12 @@ def skinBindCtx(string: str, about: str = ..., a: str = ..., axis: str = ..., ax
     This command creates a tool that can be used to edit volumes from an
     interactive bind.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.skinBindCtx( 'skinBindContext' )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -87,6 +105,12 @@ def skinBindCtx(string: str, about: str = ..., axis: str = ..., colorRamp: str =
     This command creates a tool that can be used to edit volumes from an
     interactive bind.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.skinBindCtx( 'skinBindContext' )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -110,6 +134,12 @@ def skinBindCtx(string: str, a: str = ..., ax: str = ..., cr: str = ..., ci: str
     
     This command creates a tool that can be used to edit volumes from an
     interactive bind.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.skinBindCtx( 'skinBindContext' )
+    ```
 
     ---
     - Args:
@@ -135,6 +165,12 @@ def skinBindCtx(string: str, about: str = ..., a: str = ..., axis: str = ..., ax
     This command creates a tool that can be used to edit volumes from an
     interactive bind.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.skinBindCtx( 'skinBindContext' )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -158,6 +194,12 @@ def skinBindCtx(string: str, about: str = ..., axis: str = ..., colorRamp: str =
     
     This command creates a tool that can be used to edit volumes from an
     interactive bind.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.skinBindCtx( 'skinBindContext' )
+    ```
 
     ---
     - Args:
@@ -183,6 +225,12 @@ def skinBindCtx(string: str, a: str = ..., ax: str = ..., cr: str = ..., ci: str
     This command creates a tool that can be used to edit volumes from an
     interactive bind.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.skinBindCtx( 'skinBindContext' )
+    ```
+
     ---
     - Args:
         - string: Input item(s).
@@ -206,6 +254,12 @@ def skinBindCtx(string: str, about: str = ..., a: str = ..., axis: str = ..., ax
     
     This command creates a tool that can be used to edit volumes from an
     interactive bind.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.skinBindCtx( 'skinBindContext' )
+    ```
 
     ---
     - Args:

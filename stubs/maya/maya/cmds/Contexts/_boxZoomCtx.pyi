@@ -13,6 +13,12 @@ def boxZoomCtx(object: object, exists: bool = ..., history: bool = ..., image1: 
     control key can be used to enable box zoom. A box starting from left to right
     will zoom in, and a box starting from right to left will zoom out.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.boxZoomCtx( 'boxZoomContext', zs=1.0 )
+    ```
+
     ---
     - Args:
         - object: Input item(s).
@@ -34,6 +40,12 @@ def boxZoomCtx(object: object, ex: bool = ..., ch: bool = ..., i1: str = ..., i2
     point are changed. The left and middle mouse interactively zoom the view. The
     control key can be used to enable box zoom. A box starting from left to right
     will zoom in, and a box starting from right to left will zoom out.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.boxZoomCtx( 'boxZoomContext', zs=1.0 )
+    ```
 
     ---
     - Args:
@@ -57,6 +69,12 @@ def boxZoomCtx(object: object, exists: bool = ..., ex: bool = ..., history: bool
     control key can be used to enable box zoom. A box starting from left to right
     will zoom in, and a box starting from right to left will zoom out.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.boxZoomCtx( 'boxZoomContext', zs=1.0 )
+    ```
+
     ---
     - Args:
         - object: Input item(s).
@@ -79,6 +97,12 @@ def boxZoomCtx(object: object, image1: str = ..., image2: str = ..., image3: str
     control key can be used to enable box zoom. A box starting from left to right
     will zoom in, and a box starting from right to left will zoom out.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.boxZoomCtx( 'boxZoomContext', zs=1.0 )
+    ```
+
     ---
     - Args:
         - object: Input item(s).
@@ -98,6 +122,12 @@ def boxZoomCtx(object: object, i1: str = ..., i2: str = ..., i3: str = ..., zs: 
     point are changed. The left and middle mouse interactively zoom the view. The
     control key can be used to enable box zoom. A box starting from left to right
     will zoom in, and a box starting from right to left will zoom out.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.boxZoomCtx( 'boxZoomContext', zs=1.0 )
+    ```
 
     ---
     - Args:
@@ -119,6 +149,12 @@ def boxZoomCtx(object: object, image1: str = ..., i1: str = ..., image2: str = .
     control key can be used to enable box zoom. A box starting from left to right
     will zoom in, and a box starting from right to left will zoom out.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.boxZoomCtx( 'boxZoomContext', zs=1.0 )
+    ```
+
     ---
     - Args:
         - object: Input item(s).
@@ -138,6 +174,12 @@ def boxZoomCtx(object: object, image1: str = ..., image2: str = ..., image3: str
     point are changed. The left and middle mouse interactively zoom the view. The
     control key can be used to enable box zoom. A box starting from left to right
     will zoom in, and a box starting from right to left will zoom out.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.boxZoomCtx( 'boxZoomContext', zs=1.0 )
+    ```
 
     ---
     - Args:
@@ -159,6 +201,12 @@ def boxZoomCtx(object: object, i1: str = ..., i2: str = ..., i3: str = ..., zs: 
     control key can be used to enable box zoom. A box starting from left to right
     will zoom in, and a box starting from right to left will zoom out.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.boxZoomCtx( 'boxZoomContext', zs=1.0 )
+    ```
+
     ---
     - Args:
         - object: Input item(s).
@@ -178,6 +226,12 @@ def boxZoomCtx(object: object, image1: str = ..., i1: str = ..., image2: str = .
     point are changed. The left and middle mouse interactively zoom the view. The
     control key can be used to enable box zoom. A box starting from left to right
     will zoom in, and a box starting from right to left will zoom out.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.boxZoomCtx( 'boxZoomContext', zs=1.0 )
+    ```
 
     ---
     - Args:

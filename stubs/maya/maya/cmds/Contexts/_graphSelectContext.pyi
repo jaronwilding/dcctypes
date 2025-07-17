@@ -9,6 +9,14 @@ def graphSelectContext(exists: bool = ..., image1: str = ..., image2: str = ...,
     This command can be used to create a selection context for the hypergraph
     editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a selection context for the hypergraph editor.
+        #
+        cmds.graphSelectContext( 'hyperGraphSelectContext' )
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -22,6 +30,14 @@ def graphSelectContext(ex: bool = ..., i1: str = ..., i2: str = ..., i3: str = .
     
     This command can be used to create a selection context for the hypergraph
     editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a selection context for the hypergraph editor.
+        #
+        cmds.graphSelectContext( 'hyperGraphSelectContext' )
+    ```
 
     ---
     - Args:
@@ -37,6 +53,14 @@ def graphSelectContext(exists: bool = ..., ex: bool = ..., image1: str = ..., i1
     This command can be used to create a selection context for the hypergraph
     editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a selection context for the hypergraph editor.
+        #
+        cmds.graphSelectContext( 'hyperGraphSelectContext' )
+    ```
+
     ---
     - Args:
         - exists (ex): Returns true or false depending upon whether the specified object exists. Other flags are ignored.
@@ -50,6 +74,14 @@ def graphSelectContext(image1: str = ..., image2: str = ..., image3: str = ..., 
     
     This command can be used to create a selection context for the hypergraph
     editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a selection context for the hypergraph editor.
+        #
+        cmds.graphSelectContext( 'hyperGraphSelectContext' )
+    ```
 
     ---
     - Args:
@@ -65,6 +97,14 @@ def graphSelectContext(i1: str = ..., i2: str = ..., i3: str = ..., q: bool = ..
     This command can be used to create a selection context for the hypergraph
     editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a selection context for the hypergraph editor.
+        #
+        cmds.graphSelectContext( 'hyperGraphSelectContext' )
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -78,6 +118,14 @@ def graphSelectContext(image1: str = ..., i1: str = ..., image2: str = ..., i2: 
     
     This command can be used to create a selection context for the hypergraph
     editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a selection context for the hypergraph editor.
+        #
+        cmds.graphSelectContext( 'hyperGraphSelectContext' )
+    ```
 
     ---
     - Args:
@@ -93,6 +141,14 @@ def graphSelectContext(image1: str = ..., image2: str = ..., image3: str = ..., 
     This command can be used to create a selection context for the hypergraph
     editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a selection context for the hypergraph editor.
+        #
+        cmds.graphSelectContext( 'hyperGraphSelectContext' )
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -107,6 +163,14 @@ def graphSelectContext(i1: str = ..., i2: str = ..., i3: str = ..., e: bool = ..
     This command can be used to create a selection context for the hypergraph
     editor.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a selection context for the hypergraph editor.
+        #
+        cmds.graphSelectContext( 'hyperGraphSelectContext' )
+    ```
+
     ---
     - Args:
         - image1 (i1): First of three possible icons representing the tool associated with the context.
@@ -120,6 +184,14 @@ def graphSelectContext(image1: str = ..., i1: str = ..., image2: str = ..., i2: 
     
     This command can be used to create a selection context for the hypergraph
     editor.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Create a selection context for the hypergraph editor.
+        #
+        cmds.graphSelectContext( 'hyperGraphSelectContext' )
+    ```
 
     ---
     - Args:

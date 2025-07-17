@@ -10,6 +10,16 @@ def ikSplineHandleCtx(object: object, autoPriorityH: bool = ..., createCurve: bo
     ikSplineHandle tool. The options for the tool will be set to the flags the
     user specifies.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Edit an existing context to create an ikSplineHandle with
+        #    the curve parented to the corresponding joint.
+        #
+        if cmds.ikSplineHandleCtx( 'ikSplineHandleCtx', q=True, ex=True ):
+        cmds.ikSplineHandleCtx('ikSplineHandleCtx', e=True, parentCurve=True)
+    ```
+
     ---
     - Args:
         - object: Input item(s).
@@ -36,6 +46,16 @@ def ikSplineHandleCtx(object: object, apH: bool = ..., ccv: bool = ..., ex: bool
     The ikSplineHandle context command (ikSplineHandleCtx) updates parameters of
     ikSplineHandle tool. The options for the tool will be set to the flags the
     user specifies.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Edit an existing context to create an ikSplineHandle with
+        #    the curve parented to the corresponding joint.
+        #
+        if cmds.ikSplineHandleCtx( 'ikSplineHandleCtx', q=True, ex=True ):
+        cmds.ikSplineHandleCtx('ikSplineHandleCtx', e=True, parentCurve=True)
+    ```
 
     ---
     - Args:
@@ -64,6 +84,16 @@ def ikSplineHandleCtx(object: object, autoPriorityH: bool = ..., apH: bool = ...
     ikSplineHandle tool. The options for the tool will be set to the flags the
     user specifies.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Edit an existing context to create an ikSplineHandle with
+        #    the curve parented to the corresponding joint.
+        #
+        if cmds.ikSplineHandleCtx( 'ikSplineHandleCtx', q=True, ex=True ):
+        cmds.ikSplineHandleCtx('ikSplineHandleCtx', e=True, parentCurve=True)
+    ```
+
     ---
     - Args:
         - object: Input item(s).
@@ -91,6 +121,16 @@ def ikSplineHandleCtx(object: object, autoPriorityH: bool = ..., createCurve: bo
     ikSplineHandle tool. The options for the tool will be set to the flags the
     user specifies.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Edit an existing context to create an ikSplineHandle with
+        #    the curve parented to the corresponding joint.
+        #
+        if cmds.ikSplineHandleCtx( 'ikSplineHandleCtx', q=True, ex=True ):
+        cmds.ikSplineHandleCtx('ikSplineHandleCtx', e=True, parentCurve=True)
+    ```
+
     ---
     - Args:
         - object: Input item(s).
@@ -115,6 +155,16 @@ def ikSplineHandleCtx(object: object, apH: bool = ..., ccv: bool = ..., fsH: boo
     The ikSplineHandle context command (ikSplineHandleCtx) updates parameters of
     ikSplineHandle tool. The options for the tool will be set to the flags the
     user specifies.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Edit an existing context to create an ikSplineHandle with
+        #    the curve parented to the corresponding joint.
+        #
+        if cmds.ikSplineHandleCtx( 'ikSplineHandleCtx', q=True, ex=True ):
+        cmds.ikSplineHandleCtx('ikSplineHandleCtx', e=True, parentCurve=True)
+    ```
 
     ---
     - Args:
@@ -141,6 +191,16 @@ def ikSplineHandleCtx(object: object, autoPriorityH: bool = ..., apH: bool = ...
     ikSplineHandle tool. The options for the tool will be set to the flags the
     user specifies.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Edit an existing context to create an ikSplineHandle with
+        #    the curve parented to the corresponding joint.
+        #
+        if cmds.ikSplineHandleCtx( 'ikSplineHandleCtx', q=True, ex=True ):
+        cmds.ikSplineHandleCtx('ikSplineHandleCtx', e=True, parentCurve=True)
+    ```
+
     ---
     - Args:
         - object: Input item(s).
@@ -165,6 +225,16 @@ def ikSplineHandleCtx(object: object, autoPriorityH: bool = ..., createCurve: bo
     The ikSplineHandle context command (ikSplineHandleCtx) updates parameters of
     ikSplineHandle tool. The options for the tool will be set to the flags the
     user specifies.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Edit an existing context to create an ikSplineHandle with
+        #    the curve parented to the corresponding joint.
+        #
+        if cmds.ikSplineHandleCtx( 'ikSplineHandleCtx', q=True, ex=True ):
+        cmds.ikSplineHandleCtx('ikSplineHandleCtx', e=True, parentCurve=True)
+    ```
 
     ---
     - Args:
@@ -200,6 +270,16 @@ def ikSplineHandleCtx(object: object, apH: bool = ..., ccv: bool = ..., cra: boo
     ikSplineHandle tool. The options for the tool will be set to the flags the
     user specifies.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Edit an existing context to create an ikSplineHandle with
+        #    the curve parented to the corresponding joint.
+        #
+        if cmds.ikSplineHandleCtx( 'ikSplineHandleCtx', q=True, ex=True ):
+        cmds.ikSplineHandleCtx('ikSplineHandleCtx', e=True, parentCurve=True)
+    ```
+
     ---
     - Args:
         - object: Input item(s).
@@ -233,6 +313,16 @@ def ikSplineHandleCtx(object: object, autoPriorityH: bool = ..., apH: bool = ...
     The ikSplineHandle context command (ikSplineHandleCtx) updates parameters of
     ikSplineHandle tool. The options for the tool will be set to the flags the
     user specifies.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        #    Edit an existing context to create an ikSplineHandle with
+        #    the curve parented to the corresponding joint.
+        #
+        if cmds.ikSplineHandleCtx( 'ikSplineHandleCtx', q=True, ex=True ):
+        cmds.ikSplineHandleCtx('ikSplineHandleCtx', e=True, parentCurve=True)
+    ```
 
     ---
     - Args:

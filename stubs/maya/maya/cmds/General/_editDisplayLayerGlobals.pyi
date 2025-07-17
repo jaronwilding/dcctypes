@@ -10,6 +10,17 @@ def editDisplayLayerGlobals(baseId: int = ..., currentDisplayLayer: name = ..., 
     paremeters, eg. baseId and mergeType, are stored as preferences and some, eg.
     currentDisplayLayer, are stored in the file.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.editDisplayLayerGlobals( cdl='displayLayer1' )
+        cmds.editDisplayLayerGlobals( query=True, cdl=True )
+        # Result: displayLayer1
+        cmds.editDisplayLayerGlobals( 'bi', query=True )
+        # Result: 10
+        cmds.editDisplayLayerGlobals( useCurrent='on' )
+    ```
+
     ---
     - Args:
         - baseId (bi): Set base layer ID.  This is the number at which new layers start searching for a unique ID.
@@ -24,6 +35,17 @@ def editDisplayLayerGlobals(bi: int = ..., cdl: name = ..., mt: int = ..., uc: b
     Edit the parameter values common to all display layers. Some of these
     paremeters, eg. baseId and mergeType, are stored as preferences and some, eg.
     currentDisplayLayer, are stored in the file.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.editDisplayLayerGlobals( cdl='displayLayer1' )
+        cmds.editDisplayLayerGlobals( query=True, cdl=True )
+        # Result: displayLayer1
+        cmds.editDisplayLayerGlobals( 'bi', query=True )
+        # Result: 10
+        cmds.editDisplayLayerGlobals( useCurrent='on' )
+    ```
 
     ---
     - Args:
@@ -40,6 +62,17 @@ def editDisplayLayerGlobals(baseId: int = ..., bi: int = ..., currentDisplayLaye
     paremeters, eg. baseId and mergeType, are stored as preferences and some, eg.
     currentDisplayLayer, are stored in the file.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.editDisplayLayerGlobals( cdl='displayLayer1' )
+        cmds.editDisplayLayerGlobals( query=True, cdl=True )
+        # Result: displayLayer1
+        cmds.editDisplayLayerGlobals( 'bi', query=True )
+        # Result: 10
+        cmds.editDisplayLayerGlobals( useCurrent='on' )
+    ```
+
     ---
     - Args:
         - baseId (bi): Set base layer ID.  This is the number at which new layers start searching for a unique ID.
@@ -54,6 +87,17 @@ def editDisplayLayerGlobals(baseId: int = ..., currentDisplayLayer: name = ..., 
     Edit the parameter values common to all display layers. Some of these
     paremeters, eg. baseId and mergeType, are stored as preferences and some, eg.
     currentDisplayLayer, are stored in the file.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.editDisplayLayerGlobals( cdl='displayLayer1' )
+        cmds.editDisplayLayerGlobals( query=True, cdl=True )
+        # Result: displayLayer1
+        cmds.editDisplayLayerGlobals( 'bi', query=True )
+        # Result: 10
+        cmds.editDisplayLayerGlobals( useCurrent='on' )
+    ```
 
     ---
     - Args:
@@ -71,6 +115,17 @@ def editDisplayLayerGlobals(bi: int = ..., cdl: name = ..., mt: int = ..., uc: b
     paremeters, eg. baseId and mergeType, are stored as preferences and some, eg.
     currentDisplayLayer, are stored in the file.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.editDisplayLayerGlobals( cdl='displayLayer1' )
+        cmds.editDisplayLayerGlobals( query=True, cdl=True )
+        # Result: displayLayer1
+        cmds.editDisplayLayerGlobals( 'bi', query=True )
+        # Result: 10
+        cmds.editDisplayLayerGlobals( useCurrent='on' )
+    ```
+
     ---
     - Args:
         - baseId (bi): Set base layer ID.  This is the number at which new layers start searching for a unique ID.
@@ -87,6 +142,17 @@ def editDisplayLayerGlobals(baseId: int = ..., bi: int = ..., currentDisplayLaye
     paremeters, eg. baseId and mergeType, are stored as preferences and some, eg.
     currentDisplayLayer, are stored in the file.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.editDisplayLayerGlobals( cdl='displayLayer1' )
+        cmds.editDisplayLayerGlobals( query=True, cdl=True )
+        # Result: displayLayer1
+        cmds.editDisplayLayerGlobals( 'bi', query=True )
+        # Result: 10
+        cmds.editDisplayLayerGlobals( useCurrent='on' )
+    ```
+
     ---
     - Args:
         - baseId (bi): Set base layer ID.  This is the number at which new layers start searching for a unique ID.
@@ -94,52 +160,4 @@ def editDisplayLayerGlobals(baseId: int = ..., bi: int = ..., currentDisplayLaye
         - mergeType (mt): Set file import merge type.  Valid values are 0, none, 1, by number, and 2, by name.
         - useCurrent (uc): Set whether or not to enable usage of the current display layer as the destination for all new nodes.
         - query (q): Query mode flag
-    """
-@overload #Overload for editDisplayLayerGlobals in ['edit']
-def editDisplayLayerGlobals(baseId: int = ..., currentDisplayLayer: name = ..., mergeType: int = ..., useCurrent: bool = ..., edit: bool = ...) -> bool | str | int | int:
-    """editDisplayLayerGlobals is undoable, queryable, and NOT editable.
-    
-    Edit the parameter values common to all display layers. Some of these
-    paremeters, eg. baseId and mergeType, are stored as preferences and some, eg.
-    currentDisplayLayer, are stored in the file.
-
-    ---
-    - Args:
-        - baseId (bi): Set base layer ID.  This is the number at which new layers start searching for a unique ID.
-        - currentDisplayLayer (cdl): Set current display layer; ie. the one that all new objects are added to.
-        - mergeType (mt): Set file import merge type.  Valid values are 0, none, 1, by number, and 2, by name.
-        - useCurrent (uc): Set whether or not to enable usage of the current display layer as the destination for all new nodes.
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for editDisplayLayerGlobals in ['edit']
-def editDisplayLayerGlobals(bi: int = ..., cdl: name = ..., mt: int = ..., uc: bool = ..., e: bool = ...) -> bool | str | int | int:
-    """editDisplayLayerGlobals is undoable, queryable, and NOT editable.
-    
-    Edit the parameter values common to all display layers. Some of these
-    paremeters, eg. baseId and mergeType, are stored as preferences and some, eg.
-    currentDisplayLayer, are stored in the file.
-
-    ---
-    - Args:
-        - baseId (bi): Set base layer ID.  This is the number at which new layers start searching for a unique ID.
-        - currentDisplayLayer (cdl): Set current display layer; ie. the one that all new objects are added to.
-        - mergeType (mt): Set file import merge type.  Valid values are 0, none, 1, by number, and 2, by name.
-        - useCurrent (uc): Set whether or not to enable usage of the current display layer as the destination for all new nodes.
-        - edit (e): Edit mode flag
-    """
-@overload #Overload for editDisplayLayerGlobals in ['edit']
-def editDisplayLayerGlobals(baseId: int = ..., bi: int = ..., currentDisplayLayer: name = ..., cdl: name = ..., mergeType: int = ..., mt: int = ..., useCurrent: bool = ..., uc: bool = ..., edit: bool = ..., e: bool = ...) -> bool | str | int | int:
-    """editDisplayLayerGlobals is undoable, queryable, and NOT editable.
-    
-    Edit the parameter values common to all display layers. Some of these
-    paremeters, eg. baseId and mergeType, are stored as preferences and some, eg.
-    currentDisplayLayer, are stored in the file.
-
-    ---
-    - Args:
-        - baseId (bi): Set base layer ID.  This is the number at which new layers start searching for a unique ID.
-        - currentDisplayLayer (cdl): Set current display layer; ie. the one that all new objects are added to.
-        - mergeType (mt): Set file import merge type.  Valid values are 0, none, 1, by number, and 2, by name.
-        - useCurrent (uc): Set whether or not to enable usage of the current display layer as the destination for all new nodes.
-        - edit (e): Edit mode flag
     """

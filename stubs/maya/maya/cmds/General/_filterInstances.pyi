@@ -13,6 +13,15 @@ def filterInstances(shapes: bool = ...) -> list[str]:
     Returns a string array containing all matching selection items or true/false
     if the query flag is used.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Returns true if any selected object(s) are instances of another selected object.
+        cmds.filterInstances( q=True )
+        # Returns a new selection list with duplicate instances removed.
+        cmds.filterInstances()
+    ```
+
     ---
     - Args:
         - shapes (s): If this is true then the command will check for an instanced shapes below the selected transform(s) and use them to decide whether the parent transforms should be considered instances. Default is false.
@@ -28,6 +37,15 @@ def filterInstances(s: bool = ...) -> list[str]:
     Returns a string array containing all matching selection items or true/false
     if the query flag is used.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Returns true if any selected object(s) are instances of another selected object.
+        cmds.filterInstances( q=True )
+        # Returns a new selection list with duplicate instances removed.
+        cmds.filterInstances()
+    ```
+
     ---
     - Args:
         - shapes (s): If this is true then the command will check for an instanced shapes below the selected transform(s) and use them to decide whether the parent transforms should be considered instances. Default is false.
@@ -42,6 +60,15 @@ def filterInstances(shapes: bool = ..., s: bool = ...) -> list[str]:
     
     Returns a string array containing all matching selection items or true/false
     if the query flag is used.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        # Returns true if any selected object(s) are instances of another selected object.
+        cmds.filterInstances( q=True )
+        # Returns a new selection list with duplicate instances removed.
+        cmds.filterInstances()
+    ```
 
     ---
     - Args:

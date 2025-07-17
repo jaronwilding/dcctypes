@@ -12,6 +12,18 @@ def connectAttr(attribute attribute: attribute attribute, force: bool = ..., loc
     
     Refer to dependency node documentation.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.createNode( 'transform', n='firstGuy' )
+        cmds.createNode( 'transform', n='secondGuy' )
+        # Connect the translation of two nodes together
+        cmds.connectAttr( 'firstGuy.t', 'secondGuy.translate' )
+        # Connect the rotation of one node to the override colour
+        # of a second node.
+        cmds.connectAttr( 'firstGuy.rotate', 'secondGuy.overrideColor' )
+    ```
+
     ---
     - Args:
         - attribute attribute: Input item(s).
@@ -31,6 +43,18 @@ def connectAttr(attribute attribute: attribute attribute, f: bool = ..., l: bool
     
     Refer to dependency node documentation.
 
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.createNode( 'transform', n='firstGuy' )
+        cmds.createNode( 'transform', n='secondGuy' )
+        # Connect the translation of two nodes together
+        cmds.connectAttr( 'firstGuy.t', 'secondGuy.translate' )
+        # Connect the rotation of one node to the override colour
+        # of a second node.
+        cmds.connectAttr( 'firstGuy.rotate', 'secondGuy.overrideColor' )
+    ```
+
     ---
     - Args:
         - attribute attribute: Input item(s).
@@ -49,6 +73,18 @@ def connectAttr(attribute attribute: attribute attribute, force: bool = ..., f: 
     First argument is the source attribute, second one is the destination.
     
     Refer to dependency node documentation.
+
+    Example:
+    ```python
+        import maya.cmds as cmds
+        cmds.createNode( 'transform', n='firstGuy' )
+        cmds.createNode( 'transform', n='secondGuy' )
+        # Connect the translation of two nodes together
+        cmds.connectAttr( 'firstGuy.t', 'secondGuy.translate' )
+        # Connect the rotation of one node to the override colour
+        # of a second node.
+        cmds.connectAttr( 'firstGuy.rotate', 'secondGuy.overrideColor' )
+    ```
 
     ---
     - Args:
