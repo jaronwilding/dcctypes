@@ -18,6 +18,7 @@ from ._timeCode import timeCode
 from ._toggle import toggle
 from ._toggleDisplacement import toggleDisplacement
 from ._weightsColor import weightsColor
+
 __all__ = [
     "currentUnit",
     "curveRGBColor",
