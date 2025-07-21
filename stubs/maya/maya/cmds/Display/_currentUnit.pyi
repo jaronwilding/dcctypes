@@ -578,7 +578,7 @@ def currentUnit(time: str = ..., t: str = ..., updateAnimation: bool = ..., ua: 
 # [CREATE] Update Animation Overloads
 
 @overload
-def currentUnit(updateAnimation: bool = ...) -> str:
+def currentUnit(updateAnimation: bool = ...) -> None:
     """currentUnit is undoable, queryable, and NOT editable.
 
     This command allows you to change the units in which you will work in Maya.
@@ -642,7 +642,7 @@ def currentUnit(updateAnimation: bool = ...) -> str:
     """
 
 @overload
-def currentUnit(ua: bool = ...) -> str:
+def currentUnit(ua: bool = ...) -> None:
     """currentUnit is undoable, queryable, and NOT editable.
 
     This command allows you to change the units in which you will work in Maya.
@@ -706,7 +706,7 @@ def currentUnit(ua: bool = ...) -> str:
     """
 
 @overload
-def currentUnit(updateAnimation: bool = ..., ua: bool = ...) -> str:
+def currentUnit(updateAnimation: bool = ..., ua: bool = ...) -> None:
     """currentUnit is undoable, queryable, and NOT editable.
 
     This command allows you to change the units in which you will work in Maya.
@@ -981,7 +981,7 @@ def currentUnit(angle: str = ..., a: str = ..., linear: str = ..., l: str = ...,
 # [QUERY] Angle and Full Name Overloads
 
 @overload
-def currentUnit(angle: str = ..., fullName: bool = ..., query: bool = ...) -> str:
+def currentUnit(angle: bool = ..., fullName: bool = ..., query: bool = ...) -> str:
     """currentUnit is undoable, queryable, and NOT editable.
 
     This command allows you to change the units in which you will work in Maya.
@@ -1045,7 +1045,7 @@ def currentUnit(angle: str = ..., fullName: bool = ..., query: bool = ...) -> st
     """
 
 @overload
-def currentUnit(a: str = ..., f: bool = ..., q: bool = ...) -> str:
+def currentUnit(a: bool = ..., f: bool = ..., q: bool = ...) -> str:
     """currentUnit is undoable, queryable, and NOT editable.
 
     This command allows you to change the units in which you will work in Maya.
@@ -1109,7 +1109,7 @@ def currentUnit(a: str = ..., f: bool = ..., q: bool = ...) -> str:
     """
 
 @overload
-def currentUnit(angle: str = ..., a: str = ..., fullName: bool = ..., f: bool = ..., query: bool = ..., q: bool = ...) -> str:
+def currentUnit(angle: bool = ..., a: bool = ..., fullName: bool = ..., f: bool = ..., query: bool = ..., q: bool = ...) -> str:
     """currentUnit is undoable, queryable, and NOT editable.
 
     This command allows you to change the units in which you will work in Maya.
@@ -1175,7 +1175,7 @@ def currentUnit(angle: str = ..., a: str = ..., fullName: bool = ..., f: bool = 
 # [QUERY] Linear and Full Name Overloads
 
 @overload
-def currentUnit(fullName: bool = ..., linear: str = ..., query: bool = ...) -> str:
+def currentUnit(fullName: bool = ..., linear: bool = ..., query: bool = ...) -> str:
     """currentUnit is undoable, queryable, and NOT editable.
 
     This command allows you to change the units in which you will work in Maya.
@@ -1240,7 +1240,7 @@ def currentUnit(fullName: bool = ..., linear: str = ..., query: bool = ...) -> s
     """
 
 @overload
-def currentUnit(f: bool = ..., l: str = ..., q: bool = ...) -> str:
+def currentUnit(f: bool = ..., l: bool = ..., q: bool = ...) -> str:
     """currentUnit is undoable, queryable, and NOT editable.
 
     This command allows you to change the units in which you will work in Maya.
@@ -1305,7 +1305,7 @@ def currentUnit(f: bool = ..., l: str = ..., q: bool = ...) -> str:
     """
 
 @overload
-def currentUnit(fullName: bool = ..., f: str = ..., linear: str = ..., l: str = ..., query: bool = ..., q: bool = ...) -> str:
+def currentUnit(fullName: bool = ..., f: bool = ..., linear: bool = ..., l: bool = ..., query: bool = ..., q: bool = ...) -> str:
     """currentUnit is undoable, queryable, and NOT editable.
 
     This command allows you to change the units in which you will work in Maya.
@@ -1372,7 +1372,7 @@ def currentUnit(fullName: bool = ..., f: str = ..., linear: str = ..., l: str = 
 # [QUERY] Time Overloads
 
 @overload
-def currentUnit(time: str = ..., query: bool = ...) -> str:
+def currentUnit(time: bool = ..., query: bool = ...) -> str:
     """currentUnit is undoable, queryable, and NOT editable.
 
     This command allows you to change the units in which you will work in Maya.
@@ -1435,7 +1435,7 @@ def currentUnit(time: str = ..., query: bool = ...) -> str:
     """
 
 @overload
-def currentUnit(t: str = ..., q: bool = ...) -> str:
+def currentUnit(t: bool = ..., q: bool = ...) -> str:
     """currentUnit is undoable, queryable, and NOT editable.
 
     This command allows you to change the units in which you will work in Maya.
@@ -1498,7 +1498,7 @@ def currentUnit(t: str = ..., q: bool = ...) -> str:
     """
 
 @overload
-def currentUnit(time: str = ..., t: str = ..., query: bool = ..., q: bool = ...) -> str:
+def currentUnit(time: bool = ..., t: bool = ..., query: bool = ..., q: bool = ...) -> str:
     """currentUnit is undoable, queryable, and NOT editable.
 
     This command allows you to change the units in which you will work in Maya.
@@ -1563,7 +1563,7 @@ def currentUnit(time: str = ..., t: str = ..., query: bool = ..., q: bool = ...)
 # [QUERY] Default Overloads
 
 @overload
-def currentUnit(angle: str = ..., fullName: bool = ..., linear: str = ..., time: str = ..., query: bool = ...) -> str:
+def currentUnit(angle: bool = ..., fullName: bool = ..., linear: bool = ..., time: bool = ..., query: bool = ...) -> str:
     """currentUnit is undoable, queryable, and NOT editable.
 
     This command allows you to change the units in which you will work in Maya.
@@ -1631,7 +1631,7 @@ def currentUnit(angle: str = ..., fullName: bool = ..., linear: str = ..., time:
     """
 
 @overload
-def currentUnit(a: str = ..., f: bool = ..., l: str = ..., t: str = ..., q: bool = ...) -> str:
+def currentUnit(a: bool = ..., f: bool = ..., l: bool = ..., t: bool = ..., q: bool = ...) -> str:
     """currentUnit is undoable, queryable, and NOT editable.
 
     This command allows you to change the units in which you will work in Maya.
@@ -1699,7 +1699,7 @@ def currentUnit(a: str = ..., f: bool = ..., l: str = ..., t: str = ..., q: bool
     """
 
 @overload
-def currentUnit(angle: str = ..., a: str = ..., fullName: bool = ..., f: bool = ..., linear: str = ..., l: str = ..., time: str = ..., t: str = ..., query: bool = ..., q: bool = ...) -> str:
+def currentUnit(angle: bool = ..., a: bool = ..., fullName: bool = ..., f: bool = ..., linear: bool = ..., l: bool = ..., time: bool = ..., t: bool = ..., query: bool = ..., q: bool = ...) -> str:
     """currentUnit is undoable, queryable, and NOT editable.
 
     This command allows you to change the units in which you will work in Maya.
